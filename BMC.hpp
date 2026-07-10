@@ -3,6 +3,10 @@
 #include <chrono>
 #include <algorithm>
 #include <set>
+#include <vector>
+#include <climits>
+#include <unordered_map>
+#include <memory>
 #include "aig.hpp"
 #include "sat_solver.hpp"
 
@@ -25,7 +29,7 @@ public:
     vector<And> ands;
     vector<Node> nodes;
     
-    vector<vector<And>> hash_table; // hash_table[k] stores AND gate <output, k, neighbor> (store father of each child node)
+    std::unordered_map<int, std::vector<And>> hash_table; // sparse map: key=node index -> list of And gates referencing it
 
     UnfoldAiger(){
         ands.clear(); inputs.clear(); outputs.clear(); constraints.clear();
@@ -92,7 +96,7 @@ public:
     //for BMC unfold
     int nframes, max_nodes;
     vector<int> values;   // "real value of each node" corresponds to "variables"
-    int tempvalue[999999];
+    std::vector<int> tempvalue;
     bool check_init;
 
     //for BMC solve
@@ -102,7 +106,7 @@ public:
     vector<bool> lit_has_insert; 
     
     // Parameters & statistics
-    std::chrono::_V2::steady_clock::time_point start_time;
+    std::chrono::steady_clock::time_point start_time;
 
     // Parallel
     int thread_index;

@@ -1,6 +1,14 @@
 #include "BMC.hpp"
 #define value(rc) (rc > 0 ? values[rc] : -values[-rc])  //primitive variables ->unfold variables
 
+// helper: compact vector printing for show_* functions
+static void print_vec(const string &label, const vector<int> &v){
+    cout << "-------------" << label << "------------------" << endl;
+    cout << label << ": ";
+    for(size_t i=0;i<v.size();++i) cout << v[i] << " ";
+    cout << endl;
+}
+
 //  Log functions
 // --------------------------------------------
 double BMC::get_runtime(){
@@ -47,12 +55,7 @@ void BMC::show_nexts(){
 }
 
 void BMC::show_values(){
-    cout << "-------------show_values------------------" <<endl;
-    cout << "values.size() = " << values.size() << endl;
-    for(int i=0; i<values.size(); ++i){
-        cout << "values[" << i << "] = " << values[i] << " ";
-    }
-    cout << endl;
+    print_vec("show_values", values);
 }
 
 void BMC::show_bads(){
@@ -61,12 +64,7 @@ void BMC::show_bads(){
 }
 
 void BMC::show_constraints(){
-    cout << "-------------show_constraints------------------" <<endl;
-    cout << "constraints size = " << constraints.size() << endl;
-    for(int i=0; i<constraints.size(); i++){
-        cout << constraints[i] << " ";
-    }
-    cout << endl;
+    print_vec("show_constraints", constraints);
 }
 
 void BMC::encode_init_condition(SATSolver *s){
@@ -261,8 +259,8 @@ void BMC::initialize(){
 
     //for unfold
     uaiger = new UnfoldAiger;
-    (uaiger->hash_table).resize(99999999);
-    memset(tempvalue,0,sizeof(tempvalue));
+    // ensure tempvalue has space for latches and initialized to 0
+    tempvalue.assign(num_latches > 0 ? num_latches : 0, 0);
     bmc_frame_k = 0;
 
     //for solve
@@ -358,9 +356,6 @@ int BMC::solve_one_frame(){
 
     while(lit_has_insert.size() < (uaiger->ands).size()){
         lit_has_insert.push_back(0);
-    }
-    while((uaiger->hash_table).size() < (uaiger->nodes).size() + num_ands * 3){
-        (uaiger->hash_table).push_back(vector<And>());
     }
     
     bool use_coi = 1;

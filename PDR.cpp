@@ -1,9 +1,93 @@
 #include "PDR.hpp"
 #include <queue>
+#include <cstdlib>
+#include <iomanip>
 #include <boost/lockfree/spsc_queue.hpp>
+
+namespace {
+bool env_bool(const char *name, bool default_value){
+    const char *value = std::getenv(name);
+    if(value == nullptr)
+        return default_value;
+    string s(value);
+    return !(s == "0" || s == "false" || s == "FALSE" || s == "off" || s == "OFF");
+}
+
+int env_int(const char *name, int default_value){
+    const char *value = std::getenv(name);
+    if(value == nullptr)
+        return default_value;
+    return std::atoi(value);
+}
+
+bool env_is(const char *name, const char *expected){
+    const char *value = std::getenv(name);
+    if(value == nullptr)
+        return false;
+    return string(value) == expected;
+}
+
+SATSolver *new_pdr_solver(){
+    if(env_is("MC_PDR_SOLVER", "minisat"))
+        return new minisatCore();
+    return new CaDiCaL();
+}
+
+struct ScopedTimer{
+    double *target;
+    std::chrono::steady_clock::time_point start;
+    ScopedTimer(double *target): target(target), start(std::chrono::steady_clock::now()) {}
+    ~ScopedTimer(){
+        if(target == nullptr)
+            return;
+        std::chrono::duration<double> elapsed = std::chrono::steady_clock::now() - start;
+        *target += elapsed.count();
+    }
+};
+}
 
 boost::lockfree::spsc_queue<share_Cube, boost::lockfree::capacity<500000>> cube_producer[2][8]; 
 queue<share_Cube> cube_register[2][9999];
+
+Frame::Frame(){
+    solver = new_pdr_solver();
+    cubes.clear();
+}
+
+PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao):
+    Aiger(*aiger),
+    thread_index(Thread_index),
+    main_thread_index(-1),
+    use_acc(acc),
+    use_pr(pr),
+    use_plusone_count(ao){
+    cfg_use_xag = env_bool("MC_PDR_XAG", aiger->use_xag_for_pdr);
+    if(cfg_use_xag)
+        use_xag_for_pdr();
+    cfg_use_heuristic = env_bool("MC_PDR_HEURISTIC", false);
+    cfg_use_punishment = env_bool("MC_PDR_PUNISHMENT", use_punishment);
+    cfg_use_earliest_strengthened_frame = env_bool("MC_PDR_EARLIEST", use_earliest_strengthened_frame);
+    cfg_assumption_allsort = env_bool("MC_PDR_ASSUMPTION_ALLSORT", assumption_allsort);
+    cfg_stats = env_bool("MC_PDR_STATS", false);
+    cfg_option_ctg_tries = env_int("MC_PDR_CTG_TRIES", option_ctg_tries);
+    cfg_option_ctg_max_depth = env_int("MC_PDR_CTG_DEPTH", option_ctg_max_depth);
+    cfg_option_max_joins = env_int("MC_PDR_MAX_JOINS", option_max_joins);
+    use_pr = env_bool("MC_PDR_PR", pr);
+    use_acc = env_bool("MC_PDR_ACC", acc);
+    start_time = std::chrono::steady_clock::now();
+    nPush = nUnpush = nCore = nCorelen = nCube = nCubelen = nProp = nkCore = nkobl = nobl = 0;
+    first_incremental_check = 1;
+    satelite_unsat = 0;
+    restart_depth = 5;
+    if(Thread_index >= 0){
+        if(Thread_index == 1)
+            main_thread_index = 0;
+        else if(Thread_index == 4)
+            main_thread_index = 1;
+        else
+            main_thread_index = -1;
+    }
+}
 
 //  Log functions
 // --------------------------------------------
@@ -91,6 +175,59 @@ double PDR::get_runtime(){
     auto stop_time = std::chrono::steady_clock::now();
     std::chrono::duration<double> elapsed_seconds = stop_time - start_time;
     return elapsed_seconds.count();
+}
+
+void PDR::print_stats(int result){
+    if(!cfg_stats)
+        return;
+
+    int saved_precision = cout.precision();
+    ios::fmtflags saved_flags = cout.flags();
+    cout << fixed << setprecision(6);
+    cout << "c PDR_STATS thread=" << thread_index
+         << " result=" << (result == 20 ? "safe" : (result == 10 ? "unsafe" : "unknown"))
+         << " depth=" << depth()
+         << " runtime=" << get_runtime() << endl;
+    cout << "c PDR_CONFIG heuristic=" << cfg_use_heuristic
+         << " xag=" << cfg_use_xag
+         << " ctg_depth=" << cfg_option_ctg_max_depth
+         << " ctg_tries=" << cfg_option_ctg_tries
+         << " punishment=" << cfg_use_punishment
+         << " pr=" << use_pr
+         << " earliest=" << cfg_use_earliest_strengthened_frame
+         << " assumption_allsort=" << cfg_assumption_allsort << endl;
+    cout << "c XAG_STATS inputs=" << num_inputs
+         << " latches=" << num_latches
+         << " ands=" << ands.size()
+         << " xors=" << xors.size()
+         << " ors=" << ors.size() << endl;
+    cout << "c PDR_COUNTERS queries=" << nQuery
+         << " inductive=" << nInductive
+         << " cti=" << nCTI
+         << " ctg=" << nCTG
+         << " mic=" << nmic
+         << " block=" << nBlock
+         << " generalize=" << nGeneralize
+         << " extract=" << nExtract
+         << " pre=" << nPre
+         << " propagate=" << nProp
+         << " push=" << nPush
+         << " unpush=" << nUnpush
+         << " core_reduced=" << nCoreReduced
+         << " abort_join=" << nAbortJoin
+         << " abort_mic=" << nAbortMic << endl;
+    auto avg = [](double total, int count) -> double {
+        return count > 0 ? total / count : 0.0;
+    };
+    cout << "c PDR_TIMES block=" << tBlock
+         << " inductive=" << tInductive << " avg_inductive=" << avg(tInductive, nInductive)
+         << " generalize=" << tGeneralize << " avg_generalize=" << avg(tGeneralize, nGeneralize)
+         << " ctg=" << tCTG
+         << " propagate=" << tPropagate
+         << " extract=" << tExtract << " avg_extract=" << avg(tExtract, nExtract)
+         << " pre=" << tPre << " avg_pre=" << avg(tPre, nPre) << endl;
+    cout.flags(saved_flags);
+    cout.precision(saved_precision);
 }
 
 void PDR::log_witness(){
@@ -247,6 +384,174 @@ int PDR::prime_lit(int lit){
         return prime_var(lit);
     }else{
         return -prime_var(-lit);
+    }
+}
+
+void PDR::use_xag_for_pdr(){
+    aig2xag::ConvertResult converted = aig2xag::convert(*this);
+    const aig2xag::XagCircuit &xag = converted.xag;
+
+    num_inputs = xag.num_inputs;
+    num_latches = xag.num_latches;
+    num_ands = xag.num_ands;
+    max_var = xag.num_inputs + xag.num_latches + static_cast<int>(xag.gates.size());
+
+    Aiger_inputs = xag.inputs;
+    Aiger_latches.clear();
+    for(size_t i=0; i<xag.latches.size(); ++i)
+        Aiger_latches.push_back(Aiger_latch(xag.latches[i].lit, xag.latches[i].next, xag.latches[i].default_val));
+    Aiger_outputs = xag.outputs;
+    Aiger_bads = xag.bads;
+    Aiger_constraints = xag.constraints;
+    Aiger_ands.clear();
+
+    variables.clear();
+    ands.clear();
+    xors.clear();
+    ors.clear();
+    nexts.clear();
+    init_state.clear();
+    constraints.clear();
+    constraints_prime.clear();
+    allbad.clear();
+    map_to_prime.clear();
+    map_to_unprime.clear();
+
+    variables.push_back(Variable(0, string("NULL")));
+    variables.push_back(Variable(1, string("False")));
+
+    for(int i=1; i<=num_inputs; ++i)
+        variables.push_back(Variable(1 + i, 'i', i-1, false));
+
+    for(int i=1; i<=num_latches; ++i)
+        variables.push_back(Variable(1 + num_inputs + i, 'l', i-1, false));
+
+    int and_index = 0, xor_index = 0, or_index = 0;
+    for(size_t i=0; i<xag.gates.size(); ++i){
+        const aig2xag::XagGate &g = xag.gates[i];
+        int o = aiger_to_dimacs(g.out);
+        int i1 = aiger_to_dimacs(g.fanin0);
+        int i2 = aiger_to_dimacs(g.fanin1);
+        char name_type = 'a';
+        int type_index = and_index;
+
+        if(g.type == aig2xag::XAG_XOR){
+            xors.push_back(And(o, i1, i2));
+            name_type = 'x';
+            type_index = xor_index++;
+        }else if(g.type == aig2xag::XAG_OR){
+            ors.push_back(And(o, i1, i2));
+            name_type = 'o';
+            type_index = or_index++;
+        }else{
+            ands.push_back(And(o, i1, i2));
+            and_index++;
+        }
+        variables.push_back(Variable(o, name_type, type_index, false));
+    }
+
+    for(int i=1; i<=num_latches; ++i){
+        int l = 1 + num_inputs + i;
+        Aiger_latch &al = Aiger_latches[i-1];
+        nexts.push_back(aiger_to_dimacs(al.next));
+        if(al.default_val == 0)
+            init_state.push_back(-l);
+        else if(al.default_val == 1)
+            init_state.push_back(l);
+    }
+
+    for(size_t i=0; i<Aiger_constraints.size(); ++i)
+        constraints.push_back(aiger_to_dimacs(Aiger_constraints[i]));
+
+    if(num_bads > 0){
+        if(num_bads <= propertyIndex){
+            cerr << "Warning: property_index out of range (must be between 0 and " << num_bads - 1 << "). Setting to 0." << std::endl;
+            propertyIndex = 0;
+        }
+        for(int i=0; i<num_bads; ++i)
+            allbad.push_back(aiger_to_dimacs(Aiger_bads[i]));
+        bad = allbad[propertyIndex];
+        num_property = num_bads;
+    }else if(num_outputs > 0){
+        if(num_outputs <= propertyIndex){
+            cerr << "Warning: property_index out of range (must be between 0 and " << num_outputs - 1 << "). Setting to 0." << std::endl;
+            propertyIndex = 0;
+        }
+        for(int i=0; i<num_outputs; ++i)
+            allbad.push_back(aiger_to_dimacs(Aiger_outputs[i]));
+        bad = allbad[propertyIndex];
+        num_property = num_outputs;
+    }
+
+    primed_first_dimacs = variables.size();
+    assert(primed_first_dimacs == 1 + num_inputs + num_latches + static_cast<int>(xag.gates.size()) + 1);
+
+    if(aig_veb){
+        cout << "c aig2xag for PDR: ands " << converted.stats.original_ands
+             << " -> ands " << ands.size()
+             << ", xors " << xors.size()
+             << ", ors " << ors.size()
+             << ", removed " << converted.stats.removed_ands << endl;
+    }
+}
+
+void PDR::encode_gate(SATSolver *s, const And &g, int gate_type){
+    if(gate_type == 0){
+        s->add(-g.o); s->add(g.i1);  s->add(0);
+        s->add(-g.o); s->add(g.i2);  s->add(0);
+        s->add(g.o);  s->add(-g.i1); s->add(-g.i2); s->add(0);
+    }else if(gate_type == 1){
+        s->add(-g.o); s->add(g.i1);  s->add(g.i2);  s->add(0);
+        s->add(-g.o); s->add(-g.i1); s->add(-g.i2); s->add(0);
+        s->add(g.o);  s->add(-g.i1); s->add(g.i2);  s->add(0);
+        s->add(g.o);  s->add(g.i1);  s->add(-g.i2); s->add(0);
+    }else{
+        s->add(-g.o); s->add(g.i1);  s->add(g.i2); s->add(0);
+        s->add(g.o);  s->add(-g.i1); s->add(0);
+        s->add(g.o);  s->add(-g.i2); s->add(0);
+    }
+}
+
+void PDR::encode_gate_cone(SATSolver *s, set<int> &lit_set){
+    vector<pair<int, And> > gates;
+    for(size_t i=0; i<ands.size(); ++i) gates.push_back(make_pair(0, ands[i]));
+    for(size_t i=0; i<xors.size(); ++i) gates.push_back(make_pair(1, xors[i]));
+    for(size_t i=0; i<ors.size(); ++i)  gates.push_back(make_pair(2, ors[i]));
+    sort(gates.begin(), gates.end(), [](const pair<int, And> &a, const pair<int, And> &b){ return a.second.o < b.second.o; });
+
+    for(auto it = gates.rbegin(); it != gates.rend(); ++it){
+        const And &g = it->second;
+        assert(g.o > 0);
+        if(lit_set.find(g.o) == lit_set.end())
+            continue;
+        lit_set.insert(abs(g.i1));
+        lit_set.insert(abs(g.i2));
+        encode_gate(s, g, it->first);
+    }
+}
+
+void PDR::encode_gate_cone_with_prime(SATSolver *s, set<int> &lit_set, set<int> &prime_lit_set){
+    vector<pair<int, And> > gates;
+    for(size_t i=0; i<ands.size(); ++i) gates.push_back(make_pair(0, ands[i]));
+    for(size_t i=0; i<xors.size(); ++i) gates.push_back(make_pair(1, xors[i]));
+    for(size_t i=0; i<ors.size(); ++i)  gates.push_back(make_pair(2, ors[i]));
+    sort(gates.begin(), gates.end(), [](const pair<int, And> &a, const pair<int, And> &b){ return a.second.o < b.second.o; });
+
+    for(auto it = gates.rbegin(); it != gates.rend(); ++it){
+        const And &g = it->second;
+        assert(g.o > 0);
+        if(lit_set.find(g.o) != lit_set.end()){
+            lit_set.insert(abs(g.i1));
+            lit_set.insert(abs(g.i2));
+            encode_gate(s, g, it->first);
+
+            if(prime_lit_set.find(g.o) != prime_lit_set.end()){
+                And pg(prime_lit(g.o), prime_lit(g.i1), prime_lit(g.i2));
+                prime_lit_set.insert(abs(g.i1));
+                prime_lit_set.insert(abs(g.i2));
+                encode_gate(s, pg, it->first);
+            }
+        }
     }
 }
 
@@ -410,7 +715,9 @@ void PDR::initialize(){
     initialize_heuristic();
     //show_uaiger();
 
-    nQuery = nCTI = nCTG = nmic = nCoreReduced = nAbortJoin = nAbortMic = 0;
+    nQuery = nInductive = nCTI = nCTG = nmic = nCoreReduced = nAbortJoin = nAbortMic = 0;
+    nBlock = nGeneralize = nExtract = nPre = 0;
+    tBlock = tInductive = tGeneralize = tCTG = tPropagate = tExtract = tPre = 0.0;
     //cout<<"c PDR constructed from aiger file [Finished] \n";
 }
 
@@ -454,13 +761,13 @@ void PDR::add_cube(Cube &cube, int k, bool to_all, bool ispropagate, int prtimes
         frames[k].solver->add(-l);
     frames[k].solver->add(0);
 
-    if(use_heuristic and !ispropagate)
+    if(cfg_use_heuristic and !ispropagate)
         updateLitOrder(cube, k);
 }
 
 bool PDR::is_init(vector<int> &latches){ //to be optimized
     if(init == nullptr){
-        init = new CaDiCaL();       // init = new minisatCore();
+        init = new_pdr_solver();
         encode_init_condition(init);
     }
     for(int l : latches)
@@ -474,6 +781,7 @@ bool PDR::is_init(vector<int> &latches){ //to be optimized
 // Fi /\ -latches /\ [constraints /\ -bad /\ T] /\ constraints' /\ latches'
 int core_ct = 0;
 bool PDR::is_inductive(SATSolver *solver, const Cube &latches, bool gen_core, bool reverse_assumption){
+    ScopedTimer timer(&tInductive);
     solver->clear_act();
     vector<int> assumptions;
     int act = solver->max_var() + 1;
@@ -482,7 +790,7 @@ bool PDR::is_inductive(SATSolver *solver, const Cube &latches, bool gen_core, bo
         solver->add(-i);
     solver->add(0);
 
-    if(use_heuristic){
+    if(cfg_use_heuristic){
         for(int i : latches)
             assumptions.push_back(i);
         stable_sort(assumptions.begin(), assumptions.end(), *heuristic_lit_cmp);
@@ -504,6 +812,7 @@ bool PDR::is_inductive(SATSolver *solver, const Cube &latches, bool gen_core, bo
 
     int status = solver->solve();
     ++nQuery;
+    ++nInductive;
     assert(status != 0);
     bool res = (status == UNSAT);
 
@@ -534,17 +843,7 @@ void PDR::encode_init_condition(SATSolver *s){
         for(int l : constraints)
             lit_set.insert(abs(l));
 
-        for(auto i = ands.rbegin(); i != ands.rend(); ++i){
-            And & a = *i;
-            if(lit_set.find(a.o) == lit_set.end())
-                continue;
-            lit_set.insert(abs(a.i1));
-            lit_set.insert(abs(a.i2));
-
-            s->add(-a.o); s->add(a.i1);  s->add(0);
-            s->add(-a.o); s->add(a.i2);  s->add(0);
-            s->add(a.o);  s->add(-a.i1); s->add(-a.i2); s->add(0);
-        }
+        encode_gate_cone(s, lit_set);
     }
     if(aig_veb > 2)
         cout<<"c add_cls finish load init"<<endl;
@@ -553,17 +852,7 @@ void PDR::encode_init_condition(SATSolver *s){
 void PDR::encode_bad_state(SATSolver *s){
     set<int> lit_set;
     lit_set.insert(abs(bad));
-    for(auto i = ands.rbegin(); i != ands.rend(); ++i){
-        And & a = *i;
-        assert(a.o > 0);
-        if(lit_set.find(a.o) == lit_set.end())
-            continue;
-        lit_set.insert(abs(a.i1));
-        lit_set.insert(abs(a.i2));
-        s->add(-a.o); s->add(a.i1);  s->add(0);
-        s->add(-a.o); s->add(a.i2);  s->add(0);
-        s->add(a.o);  s->add(-a.i1); s->add(-a.i2); s->add(0);
-    }
+    encode_gate_cone(s, lit_set);
     if(aig_veb > 2)
         cout<<"c add_cls finish load bad"<<endl;
 }
@@ -616,32 +905,7 @@ void PDR::encode_translation(SATSolver *s, bool cons){
             satelite->add(-next); satelite->add(pl); satelite->add(0);
         }
 
-        for(auto i = ands.rbegin(); i != ands.rend(); ++i){
-            And &a = *i;
-            assert(a.o > 0);
-            if(lit_set.find(a.o) != lit_set.end()){
-                lit_set.insert(abs(a.i1));
-                lit_set.insert(abs(a.i2));
-
-                satelite->add(-a.o); satelite->add(a.i1);  satelite->add(0);
-                satelite->add(-a.o); satelite->add(a.i2);  satelite->add(0);
-                satelite->add(a.o);  satelite->add(-a.i1); satelite->add(-a.i2); satelite->add(0);
-                //cout << "andgate " << a.o <<  " " << a.i1 << " " << a.i2 << endl;
-
-                if(prime_lit_set.find(a.o) != prime_lit_set.end()){
-                    int po  = prime_lit(a.o);
-                    int pi1 = prime_lit(a.i1);
-                    int pi2 = prime_lit(a.i2);
-
-                    prime_lit_set.insert(abs(a.i1));
-                    prime_lit_set.insert(abs(a.i2));
-                    satelite->add(-po); satelite->add(pi1);  satelite->add(0);
-                    satelite->add(-po); satelite->add(pi2);  satelite->add(0);
-                    satelite->add(po);  satelite->add(-pi1); satelite->add(-pi2); satelite->add(0);
-                    //cout << "andgate " << po <<  " " << pi1 << " " << pi2 << endl;
-                }
-            }
-        }
+        encode_gate_cone_with_prime(satelite, lit_set, prime_lit_set);
         satelite->simplify();
         // for(int l : satelite->simplified_cnf){
         //     cout << l << " ";
@@ -696,31 +960,7 @@ void PDR::encode_lift(SATSolver *s){
             satelite2->add(-next); satelite2->add(pl); satelite2->add(0);
         }
 
-        for(auto i = ands.rbegin(); i != ands.rend(); ++i){
-            And &a = *i;
-            assert(a.o > 0);
-
-            if(lit_set.find(a.o) != lit_set.end()){
-                lit_set.insert(abs(a.i1));
-                lit_set.insert(abs(a.i2));
-
-                satelite2->add(-a.o); satelite2->add(a.i1);  satelite2->add(0);
-                satelite2->add(-a.o); satelite2->add(a.i2);  satelite2->add(0);
-                satelite2->add(a.o);  satelite2->add(-a.i1); satelite2->add(-a.i2); satelite2->add(0);
-
-                if(prime_lit_set.find(a.o) != prime_lit_set.end()){
-                    int po  = prime_lit(a.o);
-                    int pi1 = prime_lit(a.i1);
-                    int pi2 = prime_lit(a.i2);
-
-                    prime_lit_set.insert(abs(a.i1));
-                    prime_lit_set.insert(abs(a.i2));
-                    satelite2->add(-po); satelite2->add(pi1);  satelite2->add(0);
-                    satelite2->add(-po); satelite2->add(pi2);  satelite2->add(0);
-                    satelite2->add(po);  satelite2->add(-pi1); satelite2->add(-pi2); satelite2->add(0);
-                }
-            }
-        }
+        encode_gate_cone_with_prime(satelite2, lit_set, prime_lit_set);
         if(split_ands){
             notInvConstraints = satelite2->max_var() + 1;
             satelite2->set_frozen(notInvConstraints);
@@ -744,9 +984,11 @@ void PDR::encode_lift(SATSolver *s){
 // Then call SAT?[pre /\ T /\ -succ']
 // pre must meet constraints.
 void PDR::extract_state_from_sat(SATSolver *sat, State *s, State *succ, int findex){
+    ScopedTimer timer(&tExtract);
+    ++nExtract;
     s->clear();
     if(lift == nullptr){
-        lift = new CaDiCaL();   //lift = new minisatCore();
+        lift = new_pdr_solver();
         encode_lift(lift);
     }
 
@@ -799,11 +1041,11 @@ void PDR::extract_state_from_sat(SATSolver *sat, State *s, State *succ, int find
     }
     lift->add(0);
 
-    if(use_heuristic and assumption_allsort){
+    if(cfg_use_heuristic and cfg_assumption_allsort){
         stable_sort(assumptions.begin(), assumptions.end(), *heuristic_lit_cmp);
         reverse(assumptions.begin(), assumptions.end());
     }
-    else if(use_heuristic){
+    else if(cfg_use_heuristic){
         stable_sort(assumptions.begin()+sz, assumptions.end(), *heuristic_lit_cmp);
         reverse(assumptions.begin()+sz, assumptions.end());
     }
@@ -911,6 +1153,8 @@ void PDR::extract_state_from_sat(SATSolver *sat, State *s, State *succ, int find
 
 // solving SAT?[ Fk /\ T /\ -Bad' ]
 bool PDR::get_pre_of_bad(State *s){
+    ScopedTimer timer(&tPre);
+    ++nPre;
     s->clear();
     int Fk = depth();
     frames[Fk].solver->assume(bad_prime);
@@ -941,6 +1185,8 @@ bool PDR::get_pre_of_bad(State *s){
 }
 
 bool PDR::rec_block_cube(){
+    ScopedTimer timer(&tBlock);
+    ++nBlock;
     // all the states dealed in rec_block process will not be released.
     vector<State *> states;
     int ct = 0;
@@ -969,7 +1215,7 @@ bool PDR::rec_block_cube(){
                 show_litvec(tmp_core);
             }
 
-            if (use_punishment and (((obl.state)->next) != nullptr)){
+            if (cfg_use_punishment and (((obl.state)->next) != nullptr)){
                 if(tmp_core.size() > 30){
                     (((obl.state)->next)->failed) = (((obl.state)->next)->failed) + 5;
                 }
@@ -1054,10 +1300,11 @@ bool PDR::rec_block_cube(){
 }
 
 bool PDR::propagate(){
+    ScopedTimer timer(&tPropagate);
     // all cubes are sorted according to the variable number;
     int start_k = 1;
 
-    if(use_earliest_strengthened_frame){
+    if(cfg_use_earliest_strengthened_frame){
         if(depth() % 5 and depth() > 20)
             start_k = earliest_strengthened_frame;
     }
@@ -1160,7 +1407,7 @@ void PDR::mic(Cube &cube, int k, int depth){
     sort(cube.begin(), cube.end(), Lit_CMP());
 
     //drop literal
-    if(thread_index <= 1)  
+    if(cfg_use_heuristic && thread_index <= 1)
         stable_sort(cube.begin(), cube.end(), *heuristic_lit_cmp);
     else
         random_shuffle(cube.begin(), cube.end());
@@ -1189,7 +1436,7 @@ void PDR::mic(Cube &cube, int k, int depth){
                 cout << "ctgdown failed, try to remove another lit\n";
             }
             mic_failed++;
-            if(mic_failed > option_ctg_tries){
+            if(mic_failed > cfg_option_ctg_tries){
                 ++nAbortMic;
                 break;
             }
@@ -1199,6 +1446,7 @@ void PDR::mic(Cube &cube, int k, int depth){
 }
 
 bool PDR::CTG_down(Cube &cube, int k, int rec_depth, set<int> &required){
+    ScopedTimer timer(&tCTG);
     int ctg_ct = 0;
     int join_ct = 0;
     while(true){
@@ -1215,7 +1463,7 @@ bool PDR::CTG_down(Cube &cube, int k, int rec_depth, set<int> &required){
             return true;
         }
         else{
-            if(rec_depth > option_ctg_max_depth)
+            if(rec_depth > cfg_option_ctg_max_depth)
                 return false;
             State *s = new State();
             State *succ = new State(cube, Cube());
@@ -1226,7 +1474,7 @@ bool PDR::CTG_down(Cube &cube, int k, int rec_depth, set<int> &required){
                 show_litvec(s->latches);
             }
             // CTG
-            if(ctg_ct < option_ctg_tries && k > 1 && !is_init(s->latches)
+            if(ctg_ct < cfg_option_ctg_tries && k > 1 && !is_init(s->latches)
                 && is_inductive(frames[k-1].solver, s->latches, true)){
                 if(output_stats_for_ctg){
                     cout << "ctg satisfies induction, is lifted to ";
@@ -1245,7 +1493,7 @@ bool PDR::CTG_down(Cube &cube, int k, int rec_depth, set<int> &required){
                 mic(ctg, i-1, rec_depth+1);
                 add_cube(ctg, i, true, false, i-k+1 + (ctg.size() < Size));
             }else{
-                if(join_ct < option_max_joins){
+                if(join_ct < cfg_option_max_joins){
                     ctg_ct=0;
                     join_ct++;
                     vector<int> join;
@@ -1275,6 +1523,8 @@ bool PDR::CTG_down(Cube &cube, int k, int rec_depth, set<int> &required){
 }
 
 void PDR::generalize(Cube &cube, int k){
+    ScopedTimer timer(&tGeneralize);
+    ++nGeneralize;
     mic(cube, k, 1);
 }
 
@@ -1287,29 +1537,7 @@ void PDR::clear_po(){
 
 bool PDR::check_BMC0(){
     assert(frames.size() == 0);
-    // check SAT?[I /\ Bad] and push F0
-    SATSolver *sat0 = new CaDiCaL();
-    encode_init_condition(sat0);
-    encode_bad_state(sat0);
-    sat0->assume(bad);
-    int res = sat0->solve();
-    if(res == SAT) {
-        find_cex = true;
-        State *s = new State();
-        for(int i=0; i<num_inputs; ++i){
-            int ipt = sat0->val(unprimed_first_dimacs + i);
-            if(ipt != 0) s->inputs.push_back(ipt);
-        }
-        for(int i=0; i<num_latches; ++i){
-            int l = sat0->val(unprimed_first_dimacs + num_inputs + i);
-            if(l != 0) s->latches.push_back(l);
-        }
-        cex_states.push_back(s);
-        delete sat0;
-        return false;
-    }
-    delete sat0;
-    // push F0
+    // push F0 (BMC0 SAT check skipped)
     new_frame();
     encode_init_condition(frames[0].solver);
     return true;
@@ -1317,52 +1545,7 @@ bool PDR::check_BMC0(){
 
 bool PDR::check_BMC1(){
     assert(frames.size() == 1);
-    // push Foo
-    // check SAT?[I /\ T /\ Bad'] and push Foo
-    SATSolver *sat1 = new CaDiCaL();
-    encode_init_condition(sat1);
-    encode_translation(sat1);
-    for(int l:constraints_prime){
-        sat1->add(l);
-        sat1->add(0);
-    }
-    sat1->assume(bad_prime);
-    int res1 = sat1->solve();
-    if(res1 == SAT){
-        find_cex = true;
-        State *s = new State();
-        for(int i=0; i<num_inputs; ++i){
-            int ipt = sat1->val(unprimed_first_dimacs + i);
-            if(ipt != 0) s->inputs.push_back(ipt);
-        }
-        for(int i=0; i<num_latches; ++i){
-            int l = sat1->val(unprimed_first_dimacs + num_inputs + i);
-            if(l != 0) s->latches.push_back(l);
-        }
-
-        State *ps = new State();
-        for(int i=0; i<num_inputs; ++i){
-            int pipt = sat1->val(primed_first_dimacs + i);
-            if(pipt > 0)
-                ps->inputs.push_back(pipt-(primed_first_dimacs-unprimed_first_dimacs));
-            else if(pipt < 0)
-                ps->inputs.push_back(pipt+(primed_first_dimacs-unprimed_first_dimacs));
-        }
-        for(int i=0; i<num_latches; ++i){
-            int l = sat1->val(primed_first_dimacs + num_inputs + i);
-            if(l > 0)
-                ps->latches.push_back(l-(primed_first_dimacs-unprimed_first_dimacs));
-            else if(l < 0)
-                ps->latches.push_back(l+(primed_first_dimacs-unprimed_first_dimacs));
-        }
-
-        s->next = ps;
-        cex_states.push_back(s);
-        cex_states.push_back(ps);
-        delete sat1;
-        return false;
-    }       
-    delete sat1;
+    // push F1 (BMC1 SAT check skipped)
     new_frame();
     return true;
 }
@@ -1505,6 +1688,7 @@ int PDR::check(){
     }
     int d = depth();
     if(moreinfo_for_pdr) cout <<  "depth" + to_string(thread_index) + " = " + to_string(d) + "\n";
+    print_stats(result);
 
     for(auto f : frames){
         if(f.solver != nullptr)

@@ -45,7 +45,7 @@ public:
     }
     Variable(int dimacs_index, char type, int type_index, bool prime){
         this->dimacs_var = dimacs_index;
-        assert(type=='i' || type=='o' || type=='l' || type == 'a');
+        assert(type=='i' || type=='o' || type=='l' || type == 'a' || type == 'x');
         stringstream ss;
         ss << type;
         ss << type_index;
@@ -80,12 +80,12 @@ public:
 
     //for MCbase
     vector<Variable> variables;
-    vector<And> ands;
+    vector<And> ands, xors, ors;
     vector<int> nexts, init_state;  //set<int> set_init_state;
     vector<int> constraints, constraints_prime;
     vector<int> allbad;
     int bad, bad_prime, propertyIndex;
-    bool output_witness, output_certificate, find_bug_only, moreinfo_for_bmc;
+    bool output_witness, output_certificate, find_bug_only, moreinfo_for_bmc, use_xag_for_pdr;
 
     //for ic3base
     map<int, int> map_to_prime, map_to_unprime; // used for mapping ands

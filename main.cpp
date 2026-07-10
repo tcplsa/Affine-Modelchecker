@@ -36,6 +36,8 @@ int main(int argc, char **argv){
                      "  -bmc <bmc_thread>        Set the number of BMC threads (0-12). Default: 0\n"
                      "  -pdr <pdr_thread>        Set the number of PDR threads (0-4). Default: 0\n"
                      "  -pindex <property_index> Specify the property index for verification. Default: 0\n"
+                     "  -xag                     Run PDR on AIG-to-XAG converted structure. Default: on\n"
+                     "  -aig                     Run PDR on original AIG structure.\n"
                      "  -witness                 Output witness if a bug is found. Default: off\n"
                      "  -certificate             Output certificate if the circuit is safe. Default: off\n"
                      "  -uc                      Enable CPO-Driven UNSAT Core Generation (single-threaded PDR only)\n"
@@ -49,7 +51,7 @@ int main(int argc, char **argv){
     // cout << "USAGE: ./modelchecker [OPTIONS] <aig-file>\n";
     // cout << "Try './modelchecker -h' for more details.\n";
     int property_index = 0;
-    bool pr = 0, uc = 0, witness = 0, certificate = 0, find_bug_only = 0, log = 0;
+    bool pr = 0, uc = 0, witness = 0, certificate = 0, find_bug_only = 0, log = 0, use_xag_for_pdr = 1;
     for (int i = 1; i < argc-1; ++i){
         string arg = argv[i];
         if (arg == "-pr")
@@ -62,6 +64,10 @@ int main(int argc, char **argv){
             certificate = 1;
         else if (arg == "-v")
             log = 1;
+        else if (arg == "-xag")
+            use_xag_for_pdr = 1;
+        else if (arg == "-aig")
+            use_xag_for_pdr = 0;
         else if (arg == "-findbug"){
             find_bug_only = 1;
             if (i + 1 < argc && isdigit(argv[i + 1][0])){
@@ -84,6 +90,7 @@ int main(int argc, char **argv){
         }
     }
     Aiger *aiger = load_aiger_from_file(string(argv[argc-1]), property_index, witness, certificate, find_bug_only, log);
+    aiger->use_xag_for_pdr = use_xag_for_pdr;
     aiger->translate_to_dimacs();
 
     if(find_bug_only){
@@ -120,29 +127,27 @@ int main(int argc, char **argv){
     }
 
     if(find_bug_only){
-        if(RESULT  != 10)
-            cout << "2" << endl;
-        else if(RESULT  == 10)
-            cout << "1" << endl;
-        else if(RESULT  == 20)
+        if(RESULT == 20)
             cout << "0" << endl;
+        else if(RESULT == 10)
+            cout << "1" << endl;
+        else
+            cout << "2" << endl;
     }else{
-        if(RESULT  != 10)
-            cout << "No output asserted in " << nframes << " frames.\n";
-        else if(RESULT  == 10)
+        if(RESULT == 10)
             cout << "result: unsafe\n";
-        else if(RESULT  == 20)
+        else if(RESULT == 20)
             cout << "result: safe\n";
+        else
+            cout << "result: unknown\n";
     }
 
     delete aiger;
     auto t_end = system_clock::now();
     auto duration = duration_cast<microseconds>(t_end - t_begin);
     double time_in_sec = double(duration.count()) * microseconds::period::num / microseconds::period::den;
-    if(RESULT  != 10){
-        if(!find_bug_only){
-            cout << "time = "<< time_in_sec << "s\n";
-        }
+    if(!find_bug_only){
+        cout << "time = "<< time_in_sec << "s\n";
     } 
     return 0;
 }

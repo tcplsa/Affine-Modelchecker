@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <set>
 #include "aig.hpp"
+#include "aig2xag.hpp"
 #include "sat_solver.hpp"
 //#include <atomic>
 
@@ -126,11 +127,7 @@ class Frame{
 public:
     set<Cube, Cube_CMP> cubes;
     SATSolver *solver = nullptr;
-    Frame(){
-        this->solver = new CaDiCaL();
-        // this->solver = new minisatCore();
-        cubes.clear();
-    }
+    Frame();
 };
 
 
@@ -145,9 +142,9 @@ class PDR : public Aiger
     // for IC3
     minisatSimp *satelite = nullptr;
     minisatSimp *satelite2 = nullptr;
-    CaDiCaL *lift = nullptr;
-    CaDiCaL *init = nullptr;
-    CaDiCaL *checker = nullptr;
+    SATSolver *lift = nullptr;
+    SATSolver *init = nullptr;
+    SATSolver *checker = nullptr;
     //minisatCore *lift = nullptr;
     // minisatCore *init = nullptr;
     int notInvConstraints, restart_depth;
@@ -174,9 +171,14 @@ public:
     std::chrono::_V2::steady_clock::time_point start_time;
     const int option_mic_tries = 3;
     const int option_ctg_tries = 3;
-    const int option_ctg_max_depth = 1;
+    const int option_ctg_max_depth = 0;
     const int option_max_joins = 1<<20;
-    int nQuery, nCTI, nCTG, nmic, nCoreReduced, nAbortJoin, nAbortMic;
+    bool cfg_use_xag, cfg_use_heuristic, cfg_use_punishment, cfg_use_earliest_strengthened_frame;
+    bool cfg_assumption_allsort, cfg_stats;
+    int cfg_option_ctg_tries, cfg_option_ctg_max_depth, cfg_option_max_joins;
+    int nQuery, nInductive, nCTI, nCTG, nmic, nCoreReduced, nAbortJoin, nAbortMic;
+    int nBlock, nGeneralize, nExtract, nPre;
+    double tBlock, tInductive, tGeneralize, tCTG, tPropagate, tExtract, tPre;
 
     heuristic_Lit_CMP* heuristic_lit_cmp = nullptr;
     int earliest_strengthened_frame;
@@ -184,18 +186,7 @@ public:
     // for incremental check
     bool first_incremental_check;
 
-    PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao): Aiger(*aiger), thread_index(Thread_index), use_acc(acc), use_pr(pr), use_plusone_count(ao){
-        start_time = std::chrono::steady_clock::now();
-        nPush = nUnpush = nCore = nCorelen = nCube = nCubelen = nProp = nkCore = nkobl = nobl = 0;
-        first_incremental_check = 1;
-        satelite_unsat = 0;
-        restart_depth = 5;
-        if(Thread_index >= 0){
-            if(Thread_index == 1)   main_thread_index = 0;
-                else if(Thread_index == 4)   main_thread_index = 1;
-                else main_thread_index = -1;
-        }
-    }
+    PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao);
     ~PDR(){
         if(satelite != nullptr) delete satelite;
         if(lift != nullptr) delete lift;
@@ -203,6 +194,7 @@ public:
     }
 
     // Aiger
+    void use_xag_for_pdr();
     void simplify_aiger();
     void initialize(); 
     void translate_to_dimacs();
@@ -227,11 +219,15 @@ public:
     bool check_BMC0();
     bool check_BMC1();
     int check();
+    void print_stats(int result);
 
     void encode_init_condition(SATSolver *s);   // I
     void encode_bad_state(SATSolver *s);        // Bad cone, used for test SAT?[I/\-B]
     void encode_translation(SATSolver *s, bool cons = true);      // Latches' Cone + Bad' cone, -Bad must hold
     void encode_lift(SATSolver *s);
+    void encode_gate(SATSolver *s, const And &g, int gate_type);
+    void encode_gate_cone(SATSolver *s, set<int> &lit_set);
+    void encode_gate_cone_with_prime(SATSolver *s, set<int> &lit_set, set<int> &prime_lit_set);
 
     void clear_po();
     void add_cube(Cube &cube, int k, bool to_all=true, bool ispropagate = false, int prtimes = 0);
@@ -260,4 +256,3 @@ public:
     void restart_heuristic();
     void updateLitOrder(Cube &cube, int level);
 };
-

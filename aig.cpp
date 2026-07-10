@@ -6,6 +6,7 @@ int RESULT = 0; // 0 means safe in PORTFOLIO; 10 finds a bug; 20 proves safety
 
 Aiger::Aiger(){
     max_var = num_inputs = num_outputs = num_bads = num_ands = num_constraints = num_latches = binaryMode = 0;
+    use_xag_for_pdr = true;
 
     Aiger_ands.clear();
     Aiger_latches.clear();
@@ -18,6 +19,8 @@ Aiger::Aiger(){
     //for MCbase
     variables.clear();
     ands.clear();
+    xors.clear();
+    ors.clear();
     nexts.clear();
     init_state.clear();
     constraints.clear();
