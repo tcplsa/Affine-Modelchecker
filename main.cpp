@@ -1,5 +1,6 @@
 #include "PDR.hpp"
 #include "BMC.hpp"
+#include "pdr_perturb.hpp"
 #include <stdio.h>
 #include <pthread.h>
 #include <errno.h>
@@ -90,6 +91,7 @@ int main(int argc, char **argv){
         }
     }
     Aiger *aiger = load_aiger_from_file(string(argv[argc-1]), property_index, witness, certificate, find_bug_only, log);
+    apply_pdr_perturbations(aiger);
     aiger->use_xag_for_pdr = use_xag_for_pdr;
     aiger->translate_to_dimacs();
 
