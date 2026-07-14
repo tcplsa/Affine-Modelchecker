@@ -12,10 +12,6 @@
 #define assumption_allsort 0 //0 better
 #define restart 0            //Temporarily 0
 
-//for interaction
-#define share_memory 0     
-#define share_memory_test 0   
-
 //for PDR log
 #define moreinfo_for_pdr 0
 #define output_witness_with_latch 0

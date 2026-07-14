@@ -91,23 +91,6 @@ public:
 
 typedef vector<int> Cube; // the lits in the cube must be sorted
 
-class share_Cube{
-public:
-    bool toall;
-    int frame;
-    Cube share_cube;
-    share_Cube(){
-        toall = 1;
-        frame = 1;
-        share_cube.clear();
-    }
-    share_Cube(bool b, int i, Cube c){
-        toall = b;
-        frame = i;
-        share_cube = c;
-    }
-};
-
 class Cube_CMP{
 public:
     bool operator()(const Cube &a, const Cube &b) const{
@@ -137,7 +120,6 @@ class PDR : public Aiger
     
     // the interal data structure for Aiger (in CNF dimacs format).
     int thread_index;
-    int main_thread_index;
     
     // for IC3
     minisatSimp *satelite = nullptr;
