@@ -1,8 +1,8 @@
 #include "aig.hpp"
 
 std::mutex result_mutex;  
-unsigned long long state_count = 0;
-int RESULT = 0; // 0 means safe in PORTFOLIO; 10 finds a bug; 20 proves safety
+std::atomic<unsigned long long> state_count(0);
+std::atomic<int> RESULT(0); // 0 means running; 10 unsafe; 20 safe
 
 Aiger::Aiger(){
     max_var = num_inputs = num_outputs = num_bads = num_ands = num_constraints = num_latches = binaryMode = 0;

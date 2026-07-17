@@ -11,6 +11,7 @@ using std::vector;
 #define UNKNOWN 0
 class SATSolver{
 public:
+    typedef int (*TerminateCallback)(void *);
     virtual ~SATSolver() = default;
     virtual void add(int dimacs_lit)=0;
     virtual void assume(int assumption_lit)=0;
@@ -18,6 +19,7 @@ public:
     virtual int failed(int lit)=0;
     virtual int val(int lit)=0;
     virtual int max_var()=0;
+    virtual void set_terminate(void *state, TerminateCallback callback) {}
     void set_clear_act(){};
     void clear_act(){};
     virtual void show_info()=0;
@@ -56,6 +58,9 @@ public:
     }
     int solve(){
         return ipasir_solve(s);
+    }
+    void set_terminate(void *state, TerminateCallback callback){
+        ipasir_set_terminate(s, state, callback);
     }
     int failed(int lit){
         return ipasir_failed(s, lit);
@@ -332,4 +337,3 @@ public:
         cout<<"show_lift clauses end"<<endl;
     }
 };
-

@@ -5,12 +5,13 @@
 #include <vector>
 #include <map>
 #include <mutex>
+#include <atomic>
 #include <assert.h> //#include <cassert>
 #include "basic.hpp"
 #ifndef TIMESTAMP
 #define TIMESTAMP
-    extern unsigned long long state_count;
-    extern int RESULT; // 0 means safe in PORTFOLIO; 10 finds a bug; 20 proves safety
+    extern std::atomic<unsigned long long> state_count;
+    extern std::atomic<int> RESULT; // 0 means running; 10 unsafe; 20 safe
     extern std::mutex result_mutex;  
 #endif
 
