@@ -113,6 +113,14 @@ enum class PDRDirection{
     Reverse
 };
 
+enum class PDRRepresentation{
+    Default = -1,
+    Aig = 0,
+    Xag = 1,
+    CompactAig = 2,
+    LoweredXag = 3
+};
+
 struct TraceFrame{
     vector<int> latches;
     vector<int> inputs;
@@ -165,6 +173,7 @@ class PDR : public Aiger
     int notInvConstraints, restart_depth;
     bool satelite_unsat, use_pr, use_acc, use_plusone_count;
     PDRDirection direction;
+    PDRRepresentation representation = PDRRepresentation::Xag;
     bool cooperative_mode = false;
     bool engine_started = false;
     int engine_result = 0;
@@ -191,6 +200,11 @@ class PDR : public Aiger
     int nReverseLiftSuccess = 0;
     int nReverseLiftFallback = 0;
     int nReverseLiftRestart = 0;
+    int conversion_original_ands = 0;
+    int conversion_recognized_xors = 0;
+    int conversion_removed_ands = 0;
+    long long nEncodedGates = 0;
+    long long nEncodedClauses = 0;
 
     State *cex_state_idx = nullptr;
     bool find_cex = false;
@@ -232,7 +246,7 @@ public:
 
     PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
         PDRDirection direction = PDRDirection::Forward,
-        int representation_override = -1);
+        PDRRepresentation representation_override = PDRRepresentation::Default);
     ~PDR(){
         release_frames();
         if(satelite != nullptr) delete satelite;
@@ -244,6 +258,7 @@ public:
 
     // Aiger
     void use_xag_for_pdr();
+    void use_converted_for_pdr(const aig2xag::ConvertOptions &options);
     void simplify_aiger();
     void initialize(); 
     void translate_to_dimacs();
@@ -305,7 +320,7 @@ public:
     double get_runtime();
     bool is_reverse() const { return direction == PDRDirection::Reverse; }
     const char *direction_name() const { return is_reverse() ? "reverse" : "forward"; }
-    const char *representation_name() const { return cfg_use_xag ? "xag" : "aig"; }
+    const char *representation_name() const;
     bool cancellation_pending() const;
 
     // log

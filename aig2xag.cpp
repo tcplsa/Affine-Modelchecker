@@ -131,7 +131,7 @@ unsigned remap_lit(const XagCircuit &xag, unsigned lit) {
 
 } // namespace
 
-ConvertResult convert(const Aiger &aig, bool sweep_unused_gates) {
+ConvertResult convert(const Aiger &aig, const ConvertOptions &options) {
     ConvertResult result;
     result.stats.original_inputs = aig.num_inputs;
     result.stats.original_latches = aig.num_latches;
@@ -157,7 +157,7 @@ ConvertResult convert(const Aiger &aig, bool sweep_unused_gates) {
         raw[var].fanin0 = gate.i1;
         raw[var].fanin1 = gate.i2;
 
-        if (is_xor_output(aig, gate, lit0, lit1)) {
+        if (options.recognize_xors && is_xor_output(aig, gate, lit0, lit1)) {
             raw[var].type = XAG_XOR;
             raw[var].fanin0 = lit0;
             raw[var].fanin1 = lit1;
@@ -185,7 +185,7 @@ ConvertResult convert(const Aiger &aig, bool sweep_unused_gates) {
         add_fanout(raw, raw[var].fanin1, var);
     }
 
-    if (sweep_unused_gates) {
+    if (options.sweep_unused_gates) {
         std::queue<unsigned> work;
         for (unsigned var = 1; var < raw.size(); ++var) {
             if ((raw[var].type == XAG_AND || raw[var].type == XAG_XOR)
@@ -235,6 +235,11 @@ ConvertResult convert(const Aiger &aig, bool sweep_unused_gates) {
             continue;
         if (raw[orig_var].type != XAG_AND && raw[orig_var].type != XAG_XOR)
             continue;
+        if (raw[orig_var].type == XAG_XOR && options.lower_xors_to_ands) {
+            // Reserve two canonical child ANDs before the original XOR output.
+            // The original output mapping remains stable for every downstream gate.
+            next_var += 2;
+        }
         xag.orig_to_xag_var[orig_var] = next_var++;
     }
 
@@ -254,18 +259,49 @@ ConvertResult convert(const Aiger &aig, bool sweep_unused_gates) {
         if (raw[orig_var].type != XAG_AND && raw[orig_var].type != XAG_XOR)
             continue;
 
-        XagGate gate;
-        gate.type = raw[orig_var].type;
-        gate.original_out = aig.Aiger_ands[i].o;
-        gate.out = remap_lit(xag, aig.Aiger_ands[i].o);
-        gate.fanin0 = remap_lit(xag, raw[orig_var].fanin0);
-        gate.fanin1 = remap_lit(xag, raw[orig_var].fanin1);
-        xag.gates.push_back(gate);
+        unsigned out = remap_lit(xag, aig.Aiger_ands[i].o);
+        unsigned fanin0 = remap_lit(xag, raw[orig_var].fanin0);
+        unsigned fanin1 = remap_lit(xag, raw[orig_var].fanin1);
+        if (raw[orig_var].type == XAG_XOR && options.lower_xors_to_ands) {
+            unsigned out_var = lit_var(out);
+            unsigned negative_pair = (out_var - 2) << 1;
+            unsigned positive_pair = (out_var - 1) << 1;
+            XagGate negative_gate;
+            negative_gate.type = XAG_AND;
+            negative_gate.out = negative_pair;
+            negative_gate.fanin0 = invert_lit(fanin0);
+            negative_gate.fanin1 = invert_lit(fanin1);
+            xag.gates.push_back(negative_gate);
 
-        if (gate.type == XAG_XOR)
-            xag.num_xors++;
-        else
-            xag.num_ands++;
+            XagGate positive_gate;
+            positive_gate.type = XAG_AND;
+            positive_gate.out = positive_pair;
+            positive_gate.fanin0 = fanin0;
+            positive_gate.fanin1 = fanin1;
+            xag.gates.push_back(positive_gate);
+
+            XagGate output_gate;
+            output_gate.type = XAG_AND;
+            output_gate.out = out;
+            output_gate.fanin0 = invert_lit(negative_pair);
+            output_gate.fanin1 = invert_lit(positive_pair);
+            output_gate.original_out = aig.Aiger_ands[i].o;
+            xag.gates.push_back(output_gate);
+            xag.num_ands += 3;
+        } else {
+            XagGate gate;
+            gate.type = raw[orig_var].type;
+            gate.original_out = aig.Aiger_ands[i].o;
+            gate.out = out;
+            gate.fanin0 = fanin0;
+            gate.fanin1 = fanin1;
+            xag.gates.push_back(gate);
+
+            if (gate.type == XAG_XOR)
+                xag.num_xors++;
+            else
+                xag.num_ands++;
+        }
     }
 
     for (int i = 0; i < aig.num_outputs; ++i)
@@ -281,6 +317,12 @@ ConvertResult convert(const Aiger &aig, bool sweep_unused_gates) {
     result.stats.removed_ands = aig.num_ands - xag.num_ands - xag.num_xors;
 
     return result;
+}
+
+ConvertResult convert(const Aiger &aig, bool sweep_unused_gates) {
+    ConvertOptions options;
+    options.sweep_unused_gates = sweep_unused_gates;
+    return convert(aig, options);
 }
 
 } // namespace aig2xag

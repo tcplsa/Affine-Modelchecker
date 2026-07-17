@@ -94,10 +94,14 @@ MC_BIDIR_MEET_INTERVAL=1 MC_BIDIR_BRIDGE_BUDGET=4 \
     --reverse-aig 1 --reverse-xag 1 example.aig
 ```
 
-Each lane option takes a count from `0` to `128`. Counts can be asymmetric, and
+Each lane option takes a count from `0` to `128`. In addition to AIG/XAG,
+`--forward-aig-compact`, `--forward-xag-lowered`,
+`--reverse-aig-compact`, and `--reverse-xag-lowered` expose the representation
+ablation controls. Counts can be asymmetric, and
 inductive lemma sharing can be enabled whenever one direction has more than one lane. If none of
-the four options is supplied, or all supplied counts are zero, the program runs
-one ordinary forward PDR using the representation selected by `-aig`/`-xag`.
+the lane options is supplied, or all supplied counts are zero, the program runs
+one ordinary forward PDR using the representation selected by `-aig`,
+`-aig-compact`, `-xag-lowered`, or `-xag`.
 Lane creation is incremental: when an already started lane publishes SAFE or
 UNSAFE, remaining lane configurations are not started.
 

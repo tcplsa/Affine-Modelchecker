@@ -25,9 +25,15 @@ make -j
 - `-pindex <property_index>`  — Specify the property index for verification. Default: 0  
 - `-engine <mode>` — Select single-PDR `forward` or `reverse` mode. Default: `forward`.
 - `--forward-aig <count>` — Number of forward AIG PDR lanes.
+- `--forward-aig-compact <count>` — Forward lanes with sweep/renumber only.
+- `--forward-xag-lowered <count>` — Forward lanes that recover XORs and lower them back to ANDs.
 - `--forward-xag <count>` — Number of forward XAG PDR lanes.
 - `--reverse-aig <count>` — Number of reverse AIG PDR lanes.
+- `--reverse-aig-compact <count>` — Reverse lanes with sweep/renumber only.
+- `--reverse-xag-lowered <count>` — Reverse lanes that recover XORs and lower them back to ANDs.
 - `--reverse-xag <count>` — Number of reverse XAG PDR lanes.
+- `-aig-compact` — Single-lane sweep/renumber control without XOR recovery.
+- `-xag-lowered` — Single-lane XOR-recovery control using canonical three-AND lowering.
 - `-witness`  — Output witness if a bug is found. Default: off  
 - `-certificate`  — Output certificate if the circuit is safe. Default: off  
 - `-uc`  — Enable CPO-Driven UNSAT Core Generation (only for single-threaded PDR)  
@@ -65,6 +71,27 @@ This runs Modelchecker with 4 BMC threads, 2 PDR threads, and checks property in
 It is a cooperative bidirectional symbolic search, not an exact BDD-style BFS.
 See [BIDIRECTIONAL_PDR.md](BIDIRECTIONAL_PDR.md) for the formulas, witness
 orientation, controls, and current limitations.
+
+### XAG mechanism ablation
+
+The four forward modes isolate different parts of the AIG-to-XAG pipeline:
+
+```sh
+./modelchecker -aig example.aig
+./modelchecker -aig-compact example.aig
+./modelchecker -xag-lowered example.aig
+./modelchecker -xag example.aig
+```
+
+- `aig` keeps the original AIG.
+- `aig-compact` performs unused-gate sweep and compact renumbering without XOR recovery.
+- `xag-lowered` performs the same XOR recognition and sweep as XAG, then rebuilds
+  each XOR as a canonical three-AND network (three gate variables and nine clauses).
+- `xag` retains one native XOR gate (one gate variable and four clauses).
+
+With `MC_PDR_STATS=1`, `PDR_REPRESENTATION` reports recognized XORs,
+structural variables/clauses, and the number of gate instances actually encoded
+across PDR's incremental SAT solvers.
 
 
 ## **Output Explanation**

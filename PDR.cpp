@@ -62,18 +62,31 @@ Frame::Frame(){
 }
 
 PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
-         PDRDirection search_direction, int representation_override):
+         PDRDirection search_direction, PDRRepresentation representation_override):
     Aiger(*aiger),
     thread_index(Thread_index),
     use_acc(acc),
     use_pr(pr),
     use_plusone_count(ao),
     direction(search_direction){
-    cfg_use_xag = representation_override < 0
-        ? env_bool("MC_PDR_XAG", aiger->use_xag_for_pdr)
-        : representation_override != 0;
-    if(cfg_use_xag)
+    conversion_original_ands = aiger->num_ands;
+    representation = representation_override == PDRRepresentation::Default
+        ? (env_bool("MC_PDR_XAG", aiger->use_xag_for_pdr)
+            ? PDRRepresentation::Xag : PDRRepresentation::Aig)
+        : representation_override;
+    cfg_use_xag = representation == PDRRepresentation::Xag
+        || representation == PDRRepresentation::LoweredXag;
+    if(representation == PDRRepresentation::Xag){
         use_xag_for_pdr();
+    }else if(representation == PDRRepresentation::CompactAig){
+        aig2xag::ConvertOptions options;
+        options.recognize_xors = false;
+        use_converted_for_pdr(options);
+    }else if(representation == PDRRepresentation::LoweredXag){
+        aig2xag::ConvertOptions options;
+        options.lower_xors_to_ands = true;
+        use_converted_for_pdr(options);
+    }
     cfg_use_heuristic = env_bool("MC_PDR_HEURISTIC", false);
     cfg_use_punishment = env_bool("MC_PDR_PUNISHMENT", use_punishment);
     cfg_use_earliest_strengthened_frame = env_bool("MC_PDR_EARLIEST", use_earliest_strengthened_frame);
@@ -214,6 +227,21 @@ double PDR::get_runtime(){
     return elapsed_seconds.count();
 }
 
+const char *PDR::representation_name() const{
+    switch(representation){
+    case PDRRepresentation::Aig:
+        return "aig";
+    case PDRRepresentation::CompactAig:
+        return "aig-compact";
+    case PDRRepresentation::LoweredXag:
+        return "xag-lowered";
+    case PDRRepresentation::Xag:
+    case PDRRepresentation::Default:
+        return "xag";
+    }
+    return "unknown";
+}
+
 void PDR::print_stats(int result){
     if(!cfg_stats)
         return;
@@ -238,6 +266,16 @@ void PDR::print_stats(int result){
          << " seed=" << active_random_seed
          << " seed_mode=" << ((!randomize_lane_seed || cfg_random_seed_explicit)
                                   ? "fixed" : "random") << endl;
+    long long structural_clauses = 3LL * ands.size() + 4LL * xors.size()
+                                   + 3LL * ors.size();
+    cout << "c PDR_REPRESENTATION mode=" << representation_name()
+         << " original_ands=" << conversion_original_ands
+         << " recognized_xors=" << conversion_recognized_xors
+         << " removed_ands=" << conversion_removed_ands
+         << " structural_gate_vars=" << (ands.size() + xors.size() + ors.size())
+         << " structural_gate_clauses=" << structural_clauses
+         << " encoded_gate_instances=" << nEncodedGates
+         << " encoded_gate_clauses=" << nEncodedClauses << endl;
     cout << "c PDR_SHARE published=" << shared_published
          << " received=" << shared_received
          << " imported=" << shared_imported
@@ -467,8 +505,16 @@ int PDR::prime_lit(int lit){
 }
 
 void PDR::use_xag_for_pdr(){
-    aig2xag::ConvertResult converted = aig2xag::convert(*this);
+    aig2xag::ConvertOptions options;
+    use_converted_for_pdr(options);
+}
+
+void PDR::use_converted_for_pdr(const aig2xag::ConvertOptions &options){
+    aig2xag::ConvertResult converted = aig2xag::convert(*this, options);
     const aig2xag::XagCircuit &xag = converted.xag;
+    conversion_original_ands = converted.stats.original_ands;
+    conversion_recognized_xors = converted.stats.recognized_xors;
+    conversion_removed_ands = converted.stats.removed_ands;
 
     num_inputs = xag.num_inputs;
     num_latches = xag.num_latches;
@@ -565,6 +611,17 @@ void PDR::use_xag_for_pdr(){
     primed_first_dimacs = variables.size();
     assert(primed_first_dimacs == 1 + num_inputs + num_latches + static_cast<int>(xag.gates.size()) + 1);
 
+    if(env_bool("MC_PDR_DUMP_REP", false)){
+        cout << "c PDR_REP_DUMP mode=" << representation_name()
+             << " bad=" << bad << " nexts=";
+        for(int next : nexts) cout << next << ",";
+        cout << endl;
+        for(const And &gate : ands)
+            cout << "c PDR_REP_GATE and " << gate.o << " " << gate.i1 << " " << gate.i2 << endl;
+        for(const And &gate : xors)
+            cout << "c PDR_REP_GATE xor " << gate.o << " " << gate.i1 << " " << gate.i2 << endl;
+    }
+
     if(aig_veb){
         cout << "c aig2xag for PDR: ands " << converted.stats.original_ands
              << " -> ands " << ands.size()
@@ -575,16 +632,20 @@ void PDR::use_xag_for_pdr(){
 }
 
 void PDR::encode_gate(SATSolver *s, const And &g, int gate_type){
+    ++nEncodedGates;
     if(gate_type == 0){
+        nEncodedClauses += 3;
         s->add(-g.o); s->add(g.i1);  s->add(0);
         s->add(-g.o); s->add(g.i2);  s->add(0);
         s->add(g.o);  s->add(-g.i1); s->add(-g.i2); s->add(0);
     }else if(gate_type == 1){
+        nEncodedClauses += 4;
         s->add(-g.o); s->add(g.i1);  s->add(g.i2);  s->add(0);
         s->add(-g.o); s->add(-g.i1); s->add(-g.i2); s->add(0);
         s->add(g.o);  s->add(-g.i1); s->add(g.i2);  s->add(0);
         s->add(g.o);  s->add(g.i1);  s->add(-g.i2); s->add(0);
     }else{
+        nEncodedClauses += 3;
         s->add(-g.o); s->add(g.i1);  s->add(g.i2); s->add(0);
         s->add(g.o);  s->add(-g.i1); s->add(0);
         s->add(g.o);  s->add(-g.i2); s->add(0);

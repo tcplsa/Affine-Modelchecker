@@ -63,6 +63,13 @@ struct ConvertResult {
     ConvertStats stats;
 };
 
+struct ConvertOptions {
+    bool recognize_xors = true;
+    bool sweep_unused_gates = true;
+    bool lower_xors_to_ands = false;
+};
+
+ConvertResult convert(const Aiger &aig, const ConvertOptions &options);
 ConvertResult convert(const Aiger &aig, bool sweep_unused_gates = true);
 
 } // namespace aig2xag

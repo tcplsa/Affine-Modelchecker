@@ -15,6 +15,7 @@ struct ThreadArgs{
     Aiger* aiger;
     int thread_index;
     PDRDirection direction;
+    PDRRepresentation representation;
 };
 
 void *thread_start_bmc(void *arg){
@@ -32,7 +33,7 @@ void *thread_start_pdr(void *arg){
     auto *args = static_cast<ThreadArgs *>(arg);
     Aiger* aiger_data = args->aiger;
     int thread_index = args->thread_index;
-    PDR pdr(aiger_data, thread_index, 1, 1, 1, args->direction);
+    PDR pdr(aiger_data, thread_index, 1, 1, 1, args->direction, args->representation);
     pdr.set_randomized_seed(pdr_thread > 1);
     int res_pdr = pdr.check();   
     if(moreinfo_for_pdr and res_pdr) 
@@ -53,21 +54,41 @@ struct ParallelPDRState{
 
 struct PDRLaneCounts{
     int forward_aig = 0;
+    int forward_compact_aig = 0;
+    int forward_lowered_xag = 0;
     int forward_xag = 0;
     int reverse_aig = 0;
+    int reverse_compact_aig = 0;
+    int reverse_lowered_xag = 0;
     int reverse_xag = 0;
     bool explicit_counts = false;
 
     int total() const {
-        return forward_aig + forward_xag + reverse_aig + reverse_xag;
+        return forward_aig + forward_compact_aig + forward_lowered_xag + forward_xag
+            + reverse_aig + reverse_compact_aig + reverse_lowered_xag + reverse_xag;
     }
 };
 
 struct PDRLaneConfig{
     PDRDirection direction;
-    int representation;
+    PDRRepresentation representation;
     string name;
 };
+
+const char *pdr_representation_name(PDRRepresentation representation){
+    switch(representation){
+    case PDRRepresentation::Aig:
+        return "aig";
+    case PDRRepresentation::CompactAig:
+        return "aig-compact";
+    case PDRRepresentation::LoweredXag:
+        return "xag-lowered";
+    case PDRRepresentation::Xag:
+    case PDRRepresentation::Default:
+        return "xag";
+    }
+    return "unknown";
+}
 
 int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
                      const PDRLaneCounts &lane_counts){
@@ -87,25 +108,35 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
     };
 
     bool share_enabled = env_enabled("MC_PDR_SHARE", true);
-    const int forward_lane_count = lane_counts.forward_aig + lane_counts.forward_xag;
-    const int reverse_lane_count = lane_counts.reverse_aig + lane_counts.reverse_xag;
+    const int forward_lane_count = lane_counts.forward_aig + lane_counts.forward_compact_aig
+        + lane_counts.forward_lowered_xag + lane_counts.forward_xag;
+    const int reverse_lane_count = lane_counts.reverse_aig + lane_counts.reverse_compact_aig
+        + lane_counts.reverse_lowered_xag + lane_counts.reverse_xag;
     LemmaExchange lemma_exchange(
         env_size("MC_PDR_SHARE_QUEUE", 100000),
         env_size("MC_PDR_SHARE_MAX_CUBE", 64),
         env_size("MC_PDR_SHARE_BATCH", 256));
 
     vector<PDRLaneConfig> lane_configs;
-    auto add_group = [&](PDRDirection direction, int representation, int count){
+    auto add_group = [&](PDRDirection direction, PDRRepresentation representation, int count){
         string base_name = string(direction == PDRDirection::Reverse ? "reverse-" : "forward-") +
-                           (representation ? "xag" : "aig");
+                           pdr_representation_name(representation);
         for(int instance=0; instance<count; ++instance)
             lane_configs.push_back(PDRLaneConfig{
                 direction, representation, base_name + "-" + to_string(instance)});
     };
-    add_group(PDRDirection::Forward, 0, lane_counts.forward_aig);
-    add_group(PDRDirection::Forward, 1, lane_counts.forward_xag);
-    add_group(PDRDirection::Reverse, 0, lane_counts.reverse_aig);
-    add_group(PDRDirection::Reverse, 1, lane_counts.reverse_xag);
+    add_group(PDRDirection::Forward, PDRRepresentation::Aig, lane_counts.forward_aig);
+    add_group(PDRDirection::Forward, PDRRepresentation::CompactAig,
+              lane_counts.forward_compact_aig);
+    add_group(PDRDirection::Forward, PDRRepresentation::LoweredXag,
+              lane_counts.forward_lowered_xag);
+    add_group(PDRDirection::Forward, PDRRepresentation::Xag, lane_counts.forward_xag);
+    add_group(PDRDirection::Reverse, PDRRepresentation::Aig, lane_counts.reverse_aig);
+    add_group(PDRDirection::Reverse, PDRRepresentation::CompactAig,
+              lane_counts.reverse_compact_aig);
+    add_group(PDRDirection::Reverse, PDRRepresentation::LoweredXag,
+              lane_counts.reverse_lowered_xag);
+    add_group(PDRDirection::Reverse, PDRRepresentation::Xag, lane_counts.reverse_xag);
 
     std::atomic<bool> cancel_requested(false);
     vector<std::unique_ptr<PDR>> engines;
@@ -387,10 +418,16 @@ int main(int argc, char **argv){
                      "  -pindex <property_index> Specify the property index for verification. Default: 0\n"
                      "  -engine <mode>           Single PDR direction: forward or reverse. Default: forward\n"
                      "  --forward-aig <count>    Number of forward AIG PDR lanes.\n"
+                     "  --forward-aig-compact <count> Number of forward swept/renumbered AIG lanes.\n"
+                     "  --forward-xag-lowered <count> Number of forward XAG-to-AND control lanes.\n"
                      "  --forward-xag <count>    Number of forward XAG PDR lanes.\n"
                      "  --reverse-aig <count>    Number of reverse AIG PDR lanes.\n"
+                     "  --reverse-aig-compact <count> Number of reverse swept/renumbered AIG lanes.\n"
+                     "  --reverse-xag-lowered <count> Number of reverse XAG-to-AND control lanes.\n"
                      "  --reverse-xag <count>    Number of reverse XAG PDR lanes.\n"
                      "  -xag                     Run PDR on AIG-to-XAG converted structure. Default: on\n"
+                     "  -xag-lowered             Recover XORs, then lower them to canonical AND networks.\n"
+                     "  -aig-compact             Sweep and compact the AIG without recovering XORs.\n"
                      "  -aig                     Run PDR on original AIG structure.\n"
                      "  -witness                 Output witness if a bug is found. Default: off\n"
                      "  -certificate             Output certificate if the circuit is safe. Default: off\n"
@@ -405,7 +442,8 @@ int main(int argc, char **argv){
     // cout << "USAGE: ./modelchecker [OPTIONS] <aig-file>\n";
     // cout << "Try './modelchecker -h' for more details.\n";
     int property_index = 0;
-    bool pr = 0, uc = 0, witness = 0, certificate = 0, find_bug_only = 0, log = 0, use_xag_for_pdr = 1;
+    bool pr = 0, uc = 0, witness = 0, certificate = 0, find_bug_only = 0, log = 0;
+    PDRRepresentation selected_representation = PDRRepresentation::Xag;
     string engine = "forward";
     PDRLaneCounts lane_counts;
     for (int i = 1; i < argc-1; ++i){
@@ -421,9 +459,13 @@ int main(int argc, char **argv){
         else if (arg == "-v")
             log = 1;
         else if (arg == "-xag")
-            use_xag_for_pdr = 1;
+            selected_representation = PDRRepresentation::Xag;
+        else if (arg == "-xag-lowered")
+            selected_representation = PDRRepresentation::LoweredXag;
+        else if (arg == "-aig-compact")
+            selected_representation = PDRRepresentation::CompactAig;
         else if (arg == "-aig")
-            use_xag_for_pdr = 0;
+            selected_representation = PDRRepresentation::Aig;
         else if (arg == "-findbug"){
             find_bug_only = 1;
             if (i + 1 < argc && isdigit(argv[i + 1][0])){
@@ -433,7 +475,9 @@ int main(int argc, char **argv){
         }
         else if (arg == "-bmc" || arg == "-pdr" || arg == "-pindex" || arg == "-engine" ||
                  arg == "--forward-aig" || arg == "--forward-xag" ||
-                 arg == "--reverse-aig" || arg == "--reverse-xag"){
+                 arg == "--forward-aig-compact" || arg == "--forward-xag-lowered" ||
+                 arg == "--reverse-aig" || arg == "--reverse-xag" ||
+                 arg == "--reverse-aig-compact" || arg == "--reverse-xag-lowered"){
             if (i + 1 >= argc) {
                 cerr << "Error: Missing value for " << arg << ". Defaulting to 0.\n";
                 continue;
@@ -456,15 +500,19 @@ int main(int argc, char **argv){
                 int count = validateInput(arg, value, 0, 128, 0);
                 lane_counts.explicit_counts = true;
                 if(arg == "--forward-aig") lane_counts.forward_aig = count;
+                else if(arg == "--forward-aig-compact") lane_counts.forward_compact_aig = count;
+                else if(arg == "--forward-xag-lowered") lane_counts.forward_lowered_xag = count;
                 else if(arg == "--forward-xag") lane_counts.forward_xag = count;
                 else if(arg == "--reverse-aig") lane_counts.reverse_aig = count;
+                else if(arg == "--reverse-aig-compact") lane_counts.reverse_compact_aig = count;
+                else if(arg == "--reverse-xag-lowered") lane_counts.reverse_lowered_xag = count;
                 else lane_counts.reverse_xag = count;
             }
         }
     }
     Aiger *aiger = load_aiger_from_file(string(argv[argc-1]), property_index, witness, certificate, find_bug_only, log);
     // apply_pdr_perturbations(aiger);
-    aiger->use_xag_for_pdr = use_xag_for_pdr;
+    aiger->use_xag_for_pdr = selected_representation == PDRRepresentation::Xag;
     aiger->translate_to_dimacs();
 
     if(certificate && (engine != "forward" || lane_counts.total() > 0)){
@@ -479,7 +527,7 @@ int main(int argc, char **argv){
         aiger->output_witness = 1;
         aiger->moreinfo_for_bmc = 0;
         for(int t = 0; t < aiger->num_property; t++){
-            bmc_args[t] = {aiger, t, PDRDirection::Forward};
+            bmc_args[t] = {aiger, t, PDRDirection::Forward, selected_representation};
             // aiger->bad = aiger->allbad[t];
             // aiger->propertyIndex = 0;
             int ret_bmc = pthread_create (&tbug[t], NULL, thread_start_bmc, &bmc_args[t]);
@@ -493,12 +541,12 @@ int main(int argc, char **argv){
     else if(lane_counts.explicit_counts || engine == "bidirectional"){
         if(engine == "bidirectional" && !lane_counts.explicit_counts)
             cerr << "Warning: -engine bidirectional requires explicit lane counts; defaulting to single-threaded forward PDR." << endl;
-        PDR pdr(aiger, -1, uc, pr, 1, PDRDirection::Forward);
+        PDR pdr(aiger, -1, uc, pr, 1, PDRDirection::Forward, selected_representation);
         int res_pdr = pdr.check();
     }
     else if(pdr_thread == 0 and bmc_thread == 0){
         PDRDirection direction = engine == "reverse" ? PDRDirection::Reverse : PDRDirection::Forward;
-        PDR pdr(aiger, -1, uc, pr, 1, direction);
+        PDR pdr(aiger, -1, uc, pr, 1, direction, selected_representation);
         int res_pdr = pdr.check();  
     }
     else{
@@ -507,11 +555,11 @@ int main(int argc, char **argv){
         pthread_t tpdr[8], tbmc[16];
         for(int t = 0; t < pdr_thread; t++){
             PDRDirection direction = engine == "reverse" ? PDRDirection::Reverse : PDRDirection::Forward;
-            pdr_args[t] = {aiger, t, direction};
+            pdr_args[t] = {aiger, t, direction, selected_representation};
             int ret_pdr = pthread_create (&tpdr[t], NULL, thread_start_pdr, &pdr_args[t]);
         }
         for(int t = 0; t < bmc_thread; t++){
-            bmc_args[t] = {aiger, t, PDRDirection::Forward};
+            bmc_args[t] = {aiger, t, PDRDirection::Forward, selected_representation};
             int ret_bmc = pthread_create (&tbmc[t], NULL, thread_start_bmc, &bmc_args[t]);
         }
         

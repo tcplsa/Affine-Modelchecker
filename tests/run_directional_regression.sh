@@ -25,7 +25,7 @@ run_case() {
     echo "PASS: $fixture repr=$representation engine=$engine result=$expected"
 }
 
-for representation in -aig -xag; do
+for representation in -aig -aig-compact -xag-lowered -xag; do
   for engine in forward reverse bidirectional; do
     run_case unsafe_at_init.aag unsafe "$engine" "$representation"
     run_case unsafe_one_step.aag unsafe "$engine" "$representation"
@@ -35,8 +35,34 @@ for representation in -aig -xag; do
     run_case safe_input_bad.aag safe "$engine" "$representation"
     run_case safe_three_latches.aag safe "$engine" "$representation"
     run_case safe_self_inductive.aag safe "$engine" "$representation"
+    run_case unsafe_xor_one_step.aag unsafe "$engine" "$representation"
   done
 done
+
+for representation in -aig -aig-compact -xag-lowered -xag; do
+    xor_output=$(MC_PDR_STATS=1 "$MC" "$representation" \
+        "$ROOT/tests/fixtures/unsafe_xor_one_step.aag" 2>&1)
+    case "$representation" in
+      -xag)
+        expected="mode=xag .*recognized_xors=1 .*structural_gate_vars=1 structural_gate_clauses=4"
+        ;;
+      -xag-lowered)
+        expected="mode=xag-lowered .*recognized_xors=1 .*structural_gate_vars=3 structural_gate_clauses=9"
+        ;;
+      -aig-compact)
+        expected="mode=aig-compact .*recognized_xors=0 .*structural_gate_vars=3 structural_gate_clauses=9"
+        ;;
+      *)
+        expected="mode=aig .*recognized_xors=0 .*structural_gate_vars=3 structural_gate_clauses=9"
+        ;;
+    esac
+    if ! grep -Eq "c PDR_REPRESENTATION $expected" <<<"$xor_output"; then
+        echo "FAIL: $representation did not produce the expected XOR ablation structure"
+        echo "$xor_output"
+        exit 1
+    fi
+done
+echo "PASS: XOR ablation modes produce distinct expected CNF structures"
 
 meeting_output=$(MC_PDR_STATS=1 MC_BIDIR_MEET_INTERVAL=1 MC_BIDIR_BRIDGE_BUDGET=32 \
     "$MC" --forward-aig 1 --reverse-xag 1 \
