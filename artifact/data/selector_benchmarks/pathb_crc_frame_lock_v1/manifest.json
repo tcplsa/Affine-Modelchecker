@@ -1,0 +1,1634 @@
+[
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "confirm_headers": 2,
+      "seed": 986362
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 2,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "3778c5449d628bce57136350c6ec19da24ca0f800d4bcb83764cfb174b4eda0b",
+    "blif_sha256": "9da3138eb4a0d333fc879f128a94635a84c741e4222c836fda2ebdd3d3502c1c",
+    "aag_lines": 2459,
+    "blif_lines": 3375,
+    "stats": {
+      "inputs": 19,
+      "latches": 67,
+      "ands": 266,
+      "xors": 670,
+      "ors": 162,
+      "nots": 135,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7158119658119658,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed986362_symbol_bits16_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed986362_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial79764919_seed986362_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "confirm_headers": 4,
+      "seed": 986364
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 4,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "a04223312b27c2841eb0973a19f01a34d1f690e4fee4287e771d1a6e9cc68864",
+    "blif_sha256": "ba76cc293faf430a856fa4ea2b80f81fb17deb40043641492ba21fbff4594b01",
+    "aag_lines": 2465,
+    "blif_lines": 3399,
+    "stats": {
+      "inputs": 19,
+      "latches": 69,
+      "ands": 272,
+      "xors": 670,
+      "ors": 164,
+      "nots": 137,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7112526539278131,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed986364_symbol_bits16_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed986364_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial79764919_seed986364_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "confirm_headers": 8,
+      "seed": 986368
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 8,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "8a0ea25f9bab5825374a2bcfa8c0aee0bb60910f2dcaed7840f89c00b2db8d18",
+    "blif_sha256": "560ef3f8d9f0d3d67bbfdbe5373f9986fcb71692672bec724c2f1de82dfa2377",
+    "aag_lines": 2477,
+    "blif_lines": 3447,
+    "stats": {
+      "inputs": 19,
+      "latches": 73,
+      "ands": 284,
+      "xors": 670,
+      "ors": 168,
+      "nots": 141,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7023060796645703,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed986368_symbol_bits16_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed986368_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial79764919_seed986368_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "confirm_headers": 16,
+      "seed": 986376
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 16,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "dc0e7e3dd63eeea0c40923e32edcf82f20523c3317beca2b866a6a259528b392",
+    "blif_sha256": "5511a37ac674a09225c79dda46a386db6ca7b15b46990cf6656c32fd17bbcf25",
+    "aag_lines": 2501,
+    "blif_lines": 3543,
+    "stats": {
+      "inputs": 19,
+      "latches": 81,
+      "ands": 308,
+      "xors": 670,
+      "ors": 176,
+      "nots": 149,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6850715746421268,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed986376_symbol_bits16_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed986376_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial79764919_seed986376_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "confirm_headers": 2,
+      "seed": 986522
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 2,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "9dff78accfbc9506b96683d0b61d477523d358254e874f37b941a3e8d5f1b6ca",
+    "blif_sha256": "bd2587eb82a4d6361930c724e7b6cbc892b7fd6cee11324c86f4f659414be32d",
+    "aag_lines": 4521,
+    "blif_lines": 5421,
+    "stats": {
+      "inputs": 35,
+      "latches": 67,
+      "ands": 266,
+      "xors": 1352,
+      "ors": 162,
+      "nots": 135,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8355995055624228,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed986522_symbol_bits32_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed986522_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial79764919_seed986522_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "confirm_headers": 4,
+      "seed": 986524
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 4,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "5eb464437446417f32b98f70646b8b581a19442d486091a9a33beeb7b68f4fbc",
+    "blif_sha256": "93e0e2b124dc732eac4abe9ddc55225ace6dff39c73578582a95ea6e239ced3e",
+    "aag_lines": 4527,
+    "blif_lines": 5445,
+    "stats": {
+      "inputs": 35,
+      "latches": 69,
+      "ands": 272,
+      "xors": 1352,
+      "ors": 164,
+      "nots": 137,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8325123152709359,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed986524_symbol_bits32_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed986524_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial79764919_seed986524_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "confirm_headers": 8,
+      "seed": 986528
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 8,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "6f5cf639218080ef4b5888492445ca8ce26b3f55702b6178a392e7a55d375e83",
+    "blif_sha256": "bde7368a3101bf9ad4f4656b93226f5fcf9a10fb19ecd6587cef47e66f5804d1",
+    "aag_lines": 4539,
+    "blif_lines": 5493,
+    "stats": {
+      "inputs": 35,
+      "latches": 73,
+      "ands": 284,
+      "xors": 1352,
+      "ors": 168,
+      "nots": 141,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8264058679706602,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed986528_symbol_bits32_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed986528_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial79764919_seed986528_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "confirm_headers": 16,
+      "seed": 986536
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 16,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "c7250bc32df687b46f8dc4d0aa8e8d7c1797829e41b159926af7030e4d21ea48",
+    "blif_sha256": "646703342956f1d6996989496c34e9087828f3d1dad4a7505789ac61b371db71",
+    "aag_lines": 4563,
+    "blif_lines": 5589,
+    "stats": {
+      "inputs": 35,
+      "latches": 81,
+      "ands": 308,
+      "xors": 1352,
+      "ors": 176,
+      "nots": 149,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8144578313253013,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed986536_symbol_bits32_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed986536_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial79764919_seed986536_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "confirm_headers": 2,
+      "seed": 986842
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 2,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "62377e5592956ec641a4dad18eb82d63e7d8ea45deb584164be56b4302803051",
+    "blif_sha256": "b0bfbedef291fc317e06b1fc6ecdf7e9270e75d569035370234a8077684ae2b0",
+    "aag_lines": 7451,
+    "blif_lines": 8319,
+    "stats": {
+      "inputs": 67,
+      "latches": 67,
+      "ands": 266,
+      "xors": 2318,
+      "ors": 162,
+      "nots": 135,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8970588235294118,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed986842_symbol_bits64_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed986842_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial79764919_seed986842_symbol_bits64_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "confirm_headers": 4,
+      "seed": 986844
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 4,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "371d290a1b89ed2d081f5a44550a8ce9c0905cd9224b42618cd97a25e5de0114",
+    "blif_sha256": "32c4b0a0a43e713336fcdf6dd668b5a6032afe197da1726a9048ca08afde433c",
+    "aag_lines": 7457,
+    "blif_lines": 8343,
+    "stats": {
+      "inputs": 67,
+      "latches": 69,
+      "ands": 272,
+      "xors": 2318,
+      "ors": 164,
+      "nots": 137,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.894980694980695,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed986844_symbol_bits64_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed986844_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial79764919_seed986844_symbol_bits64_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "confirm_headers": 8,
+      "seed": 986848
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 8,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "a19619a2d5c325927b7d75dbe5ffd82f833091d9beca869f438e50bfda28a7ac",
+    "blif_sha256": "330b0575fa5caa21685904b0ee3660b8a6f3703275915f6754d3b2715f42b4c4",
+    "aag_lines": 7469,
+    "blif_lines": 8391,
+    "stats": {
+      "inputs": 67,
+      "latches": 73,
+      "ands": 284,
+      "xors": 2318,
+      "ors": 168,
+      "nots": 141,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8908531898539584,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed986848_symbol_bits64_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed986848_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial79764919_seed986848_symbol_bits64_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "confirm_headers": 16,
+      "seed": 986856
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 16,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "d2afb97cd9552da5f9ec27ae7066bfff96d7218b3783633d45f7d819d0a98aa3",
+    "blif_sha256": "2ca69d8d5061b725f0994dd99221ab6b39f529b0b0753a818c69ae9251226dcb",
+    "aag_lines": 7493,
+    "blif_lines": 8487,
+    "stats": {
+      "inputs": 67,
+      "latches": 81,
+      "ands": 308,
+      "xors": 2318,
+      "ors": 176,
+      "nots": 149,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8827113480578828,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed986856_symbol_bits64_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed986856_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial79764919_seed986856_symbol_bits64_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 96,
+      "confirm_headers": 2,
+      "seed": 987162
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 2,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "16b24cca88ef5f031795715e5ecf6b455c265a1f5509c67cd43ef7a49beb2125",
+    "blif_sha256": "c8215be1c50a90e47533f6da6a160ed91089fcd2b1bbd528ea137698b0311e08",
+    "aag_lines": 10390,
+    "blif_lines": 11226,
+    "stats": {
+      "inputs": 99,
+      "latches": 67,
+      "ands": 266,
+      "xors": 3287,
+      "ors": 162,
+      "nots": 135,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9251336898395722,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed987162_symbol_bits96_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed987162_symbol_bits96_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial79764919_seed987162_symbol_bits96_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 96,
+      "confirm_headers": 4,
+      "seed": 987164
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 4,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "0b4fb13f66f766b0d4e1dd12ec3045343bd65dcc34faa06e6c01cf7ef6480c32",
+    "blif_sha256": "cd130d07edf4584ec33f49541f9acd57cef18fc76a5a04c1d7233117d79836ab",
+    "aag_lines": 10396,
+    "blif_lines": 11250,
+    "stats": {
+      "inputs": 99,
+      "latches": 69,
+      "ands": 272,
+      "xors": 3287,
+      "ors": 164,
+      "nots": 137,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9235740376510255,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed987164_symbol_bits96_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed987164_symbol_bits96_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial79764919_seed987164_symbol_bits96_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 96,
+      "confirm_headers": 8,
+      "seed": 987168
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 8,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "059c947b941a2dabed240f8b3ef5073175957260f8328ab95eea2fa3c243872e",
+    "blif_sha256": "09620ac3be9c09ccc7f574ec33913d6e453c4323d809b1e5b0a38e0932ee923a",
+    "aag_lines": 10408,
+    "blif_lines": 11298,
+    "stats": {
+      "inputs": 99,
+      "latches": 73,
+      "ands": 284,
+      "xors": 3287,
+      "ors": 168,
+      "nots": 141,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9204704564547745,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed987168_symbol_bits96_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed987168_symbol_bits96_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial79764919_seed987168_symbol_bits96_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 96,
+      "confirm_headers": 16,
+      "seed": 987176
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 16,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "26613bb4983798c9e5231497c6c6db081b4966e43f03fd41249cba7b69c7a367",
+    "blif_sha256": "cefa0746be97a1af838c01b4d91edcd2c223590c27858070462f9492bdbb833c",
+    "aag_lines": 10432,
+    "blif_lines": 11394,
+    "stats": {
+      "inputs": 99,
+      "latches": 81,
+      "ands": 308,
+      "xors": 3287,
+      "ors": 176,
+      "nots": 149,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9143254520166898,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed987176_symbol_bits96_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial79764919_seed987176_symbol_bits96_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial79764919_seed987176_symbol_bits96_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 16,
+      "confirm_headers": 2,
+      "seed": 984762
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 2,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "38091fa2eb792d524fddc421517b28d2dcd3f0c3ca84c3ce78426e2978aea35e",
+    "blif_sha256": "6081864a540258c4bc513d4c498ec470955d473c22334226a84f0815d08db2e1",
+    "aag_lines": 913,
+    "blif_lines": 1381,
+    "stats": {
+      "inputs": 19,
+      "latches": 35,
+      "ands": 138,
+      "xors": 224,
+      "ors": 82,
+      "nots": 71,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6187845303867403,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed984762_symbol_bits16_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed984762_symbol_bits16_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial4129_seed984762_symbol_bits16_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 16,
+      "confirm_headers": 4,
+      "seed": 984764
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 4,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "ebbf123723870a586aaeb708d9a71f76e83cc8e2d170a5fb76a9ff1b3bd97911",
+    "blif_sha256": "c13b0fca62907d78928dd2f0e63b0bf9059dff92609c71833507a59c2478a2da",
+    "aag_lines": 919,
+    "blif_lines": 1405,
+    "stats": {
+      "inputs": 19,
+      "latches": 37,
+      "ands": 144,
+      "xors": 224,
+      "ors": 84,
+      "nots": 73,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6086956521739131,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed984764_symbol_bits16_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed984764_symbol_bits16_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial4129_seed984764_symbol_bits16_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 16,
+      "confirm_headers": 8,
+      "seed": 984768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 8,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "9648058c34bdd9154b02168d2a9f23918c40a76dfed0a1b7bec0e35e1e5384eb",
+    "blif_sha256": "9282daac2dd9cf082a2cb40af92de2e240631d61575d75079eb7f43c8b73c3f8",
+    "aag_lines": 931,
+    "blif_lines": 1453,
+    "stats": {
+      "inputs": 19,
+      "latches": 41,
+      "ands": 156,
+      "xors": 224,
+      "ors": 88,
+      "nots": 77,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5894736842105263,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed984768_symbol_bits16_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed984768_symbol_bits16_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial4129_seed984768_symbol_bits16_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 16,
+      "confirm_headers": 16,
+      "seed": 984776
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 16,
+      "confirm_headers": 16,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "2214d75afa18ebc46ca9c51020fc4d4b07fa56839fac5868be0463a238831b4f",
+    "blif_sha256": "632c504966305a8c82d7ebb36f0306723415eee82a808075f1a916173ee21900",
+    "aag_lines": 955,
+    "blif_lines": 1549,
+    "stats": {
+      "inputs": 19,
+      "latches": 49,
+      "ands": 180,
+      "xors": 224,
+      "ors": 96,
+      "nots": 85,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5544554455445545,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed984776_symbol_bits16_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed984776_symbol_bits16_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial4129_seed984776_symbol_bits16_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "confirm_headers": 2,
+      "seed": 984922
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 2,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "f5d7be39b8264c5c59b1ab69e2b812506a7fbfdaefab41eb6bf8b20c12bea448",
+    "blif_sha256": "b4eb57a11b29ea1f8472e82b58d1bc9d140332adddfd678a08730f43a4b472b8",
+    "aag_lines": 1589,
+    "blif_lines": 2041,
+    "stats": {
+      "inputs": 35,
+      "latches": 35,
+      "ands": 138,
+      "xors": 444,
+      "ors": 82,
+      "nots": 71,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7628865979381443,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed984922_symbol_bits32_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed984922_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial4129_seed984922_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "confirm_headers": 4,
+      "seed": 984924
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 4,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "6769a2e01ea18cd2e59ebfa4ca8ea5ae8a7c1444f6a29508944053b0ad58a64e",
+    "blif_sha256": "d0f2b0db2dadf7b7a641f5a6e377c4670cc145515d7e03400d62b0adcf8661e5",
+    "aag_lines": 1595,
+    "blif_lines": 2065,
+    "stats": {
+      "inputs": 35,
+      "latches": 37,
+      "ands": 144,
+      "xors": 444,
+      "ors": 84,
+      "nots": 73,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7551020408163265,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed984924_symbol_bits32_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed984924_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial4129_seed984924_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "confirm_headers": 8,
+      "seed": 984928
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 8,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "cda26846c81ff005d7d666648255dd1fbf4eaa507326a2a0e45f35eecc1b0b93",
+    "blif_sha256": "9013e4c8029be3c66e0c4c548f49805cea74f056378658e4ca5dd72520d4cf44",
+    "aag_lines": 1607,
+    "blif_lines": 2113,
+    "stats": {
+      "inputs": 35,
+      "latches": 41,
+      "ands": 156,
+      "xors": 444,
+      "ors": 88,
+      "nots": 77,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.74,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed984928_symbol_bits32_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed984928_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial4129_seed984928_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "confirm_headers": 16,
+      "seed": 984936
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "confirm_headers": 16,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "997a2e9a90febbb2c62048aca7d983f7006848dbfbf57a8a34e065fe05cff035",
+    "blif_sha256": "2c2f6fb786c56b2b25c2c1edcf1c29ec7a84cf98b2adb3767a3ef824f6024295",
+    "aag_lines": 1631,
+    "blif_lines": 2209,
+    "stats": {
+      "inputs": 35,
+      "latches": 49,
+      "ands": 180,
+      "xors": 444,
+      "ors": 96,
+      "nots": 85,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7115384615384616,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed984936_symbol_bits32_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed984936_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial4129_seed984936_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "confirm_headers": 2,
+      "seed": 985242
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 2,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "3fe955efcfb6aa708af09e27fa9281b42f9bb125031b610b127724bd2e9fb8ae",
+    "blif_sha256": "27f79617c6c03ad4a16ad5f74491a5dede75f2662b7be3d3066aec662090505c",
+    "aag_lines": 2641,
+    "blif_lines": 3061,
+    "stats": {
+      "inputs": 67,
+      "latches": 35,
+      "ands": 138,
+      "xors": 784,
+      "ors": 82,
+      "nots": 71,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8503253796095445,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed985242_symbol_bits64_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed985242_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial4129_seed985242_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "confirm_headers": 4,
+      "seed": 985244
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 4,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "bb9a5e52e532fd74a406054abd6044c630c54a73808c9657777c74da0a197946",
+    "blif_sha256": "c50b63f1b8f3b1137eceef61f226c9818eefc5cc36d7124a36a185cc31e450ad",
+    "aag_lines": 2647,
+    "blif_lines": 3085,
+    "stats": {
+      "inputs": 67,
+      "latches": 37,
+      "ands": 144,
+      "xors": 784,
+      "ors": 84,
+      "nots": 73,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8448275862068966,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed985244_symbol_bits64_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed985244_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial4129_seed985244_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "confirm_headers": 8,
+      "seed": 985248
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 8,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "f0c7c3ce99924b3858644965e0a43a82a7f861ba9d50b6880734284be20510bd",
+    "blif_sha256": "f4e44ecb4914babac4dd252904ad64e9b9535cc79787515ebcc4757e3ebaf428",
+    "aag_lines": 2659,
+    "blif_lines": 3133,
+    "stats": {
+      "inputs": 67,
+      "latches": 41,
+      "ands": 156,
+      "xors": 784,
+      "ors": 88,
+      "nots": 77,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8340425531914893,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed985248_symbol_bits64_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed985248_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial4129_seed985248_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "confirm_headers": 16,
+      "seed": 985256
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "confirm_headers": 16,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "dcbbd05a90a8cec7f1943e2d3c0caaa868d722b82c0cd5b64d19a8b7e8100b19",
+    "blif_sha256": "a71ee3e629e1613b16644d2abd735cf0579ade39f6583785c707a196a283071a",
+    "aag_lines": 2683,
+    "blif_lines": 3229,
+    "stats": {
+      "inputs": 67,
+      "latches": 49,
+      "ands": 180,
+      "xors": 784,
+      "ors": 96,
+      "nots": 85,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8132780082987552,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed985256_symbol_bits64_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed985256_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial4129_seed985256_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 96,
+      "confirm_headers": 2,
+      "seed": 985562
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 2,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "16bb4afb630787540288d58f9394ab293559d21b341f4f45459cbd9758e5470d",
+    "blif_sha256": "9cc015ddd2194c147f400e1250743a4ca9f21f6e68917fffcf85b09a4d1e58fd",
+    "aag_lines": 3657,
+    "blif_lines": 4045,
+    "stats": {
+      "inputs": 99,
+      "latches": 35,
+      "ands": 138,
+      "xors": 1112,
+      "ors": 82,
+      "nots": 71,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8896,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed985562_symbol_bits96_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed985562_symbol_bits96_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial4129_seed985562_symbol_bits96_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 96,
+      "confirm_headers": 4,
+      "seed": 985564
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 4,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "614354fa7f12a28496edaf0ddcf0481305d3ccadce6c02ae804df21791f2aaed",
+    "blif_sha256": "3f1421d24c1a6e2094be5ee8858ffce28459b49d2d3fa1a28285a9319da67547",
+    "aag_lines": 3663,
+    "blif_lines": 4069,
+    "stats": {
+      "inputs": 99,
+      "latches": 37,
+      "ands": 144,
+      "xors": 1112,
+      "ors": 84,
+      "nots": 73,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8853503184713376,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed985564_symbol_bits96_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed985564_symbol_bits96_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial4129_seed985564_symbol_bits96_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 96,
+      "confirm_headers": 8,
+      "seed": 985568
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 8,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "e9b64070255fa8f942cbc0f87a9541b0f22619d8ef4ccc489e15cf1f6f5c9cc2",
+    "blif_sha256": "462c3079866b7434ae0a80ada1c489cdd5fbb665ca0c48194d8a96aad782939b",
+    "aag_lines": 3675,
+    "blif_lines": 4117,
+    "stats": {
+      "inputs": 99,
+      "latches": 41,
+      "ands": 156,
+      "xors": 1112,
+      "ors": 88,
+      "nots": 77,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8769716088328076,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed985568_symbol_bits96_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed985568_symbol_bits96_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial4129_seed985568_symbol_bits96_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 96,
+      "confirm_headers": 16,
+      "seed": 985576
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "receiver block-lock recovery with serial/matrix CRC alignment",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 96,
+      "confirm_headers": 16,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "0ccb4c25ae70b08f72bd5fc3e91d012e5753f4b2f946060a0125636c25cc02f8",
+    "blif_sha256": "df46f7b70515d184731149050d46dea14ad365926b8d890491cf3dff1c95abea",
+    "aag_lines": 3699,
+    "blif_lines": 4213,
+    "stats": {
+      "inputs": 99,
+      "latches": 49,
+      "ands": 180,
+      "xors": 1112,
+      "ors": 96,
+      "nots": 85,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8606811145510835,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed985576_symbol_bits96_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_lock_v1/benchmarks/crc_frame_lock_confirm_headers16_polynomial4129_seed985576_symbol_bits96_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers16_polynomial4129_seed985576_symbol_bits96_width16"
+  }
+]

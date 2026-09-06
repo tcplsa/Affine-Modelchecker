@@ -1,0 +1,1491 @@
+[
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 768,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1410768
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 768,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "05aa941f13fed0b18db3f775557c9249868a389d1a716979944d1f60a0bb4b99",
+    "blif_sha256": "33097d8e82cb15cd7f76223c2f6e1cc93b3af5a6760723771ee7befa04aad41c",
+    "aag_lines": 3376,
+    "blif_lines": 3443,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 1094,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1410768_steps768_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1410768_steps768_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1410768_steps768_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 1024,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1411024
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 1024,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "5636d0e7bba7bcf10fa68192a9d21d0352eccba6b2e7e172b03b81b8a536a7b0",
+    "blif_sha256": "f55caa30cebb18318521c288b1fde9e3fee342c69bd62344b02cc5fbc5e4427a",
+    "aag_lines": 3403,
+    "blif_lines": 3470,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 1103,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1411024_steps1024_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1411024_steps1024_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1411024_steps1024_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 1536,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1411536
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 1536,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "76d4d5f5404f7eca4fef4d15b80d7211695ad7520833f32720828a3f8ab1b25a",
+    "blif_sha256": "d6c475d9dddaffdc7a7b0aa9c38d49b4dd031a11ae98dbdcfa1dbc369ac27e56",
+    "aag_lines": 5575,
+    "blif_lines": 5642,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 1827,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1411536_steps1536_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1411536_steps1536_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1411536_steps1536_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 2048,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1412048
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 2048,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "1fb589ae91d35da81d9cc4515c310ce868d56076f3eff76a4de778539494ded9",
+    "blif_sha256": "9612fbad0993f4ead46a0464f9cba532d67c9a3bf60deeb1a74464933756a9fa",
+    "aag_lines": 6532,
+    "blif_lines": 6599,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 2146,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1412048_steps2048_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1412048_steps2048_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1412048_steps2048_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 3072,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1413072
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "PRBS31 jump-ahead scale margin",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 3072,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "1251c82bc80ce4340355dabbf07c35b2ead70538e526d7bb6e37f9e80c5a9117",
+    "blif_sha256": "1bb7c38e95f09e5a50d6367f6d2ee9711163f1fc364958b0c2f3bbe6986b3eaf",
+    "aag_lines": 9949,
+    "blif_lines": 10016,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 3285,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1413072_steps3072_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/lfsr_jump_equiv_seed1413072_steps3072_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1413072_steps3072_taps[30, 27]_width31"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 768,
+      "seed": 1420768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 768
+    },
+    "aag_sha256": "c220ca169d88c177e3f3e2d44a5c9aae1a38912236f2bf26c41db154d85ad540",
+    "blif_sha256": "c1ad920b434f7e1889a204ad1671c54689f131231feb962d230615c7fb58968b",
+    "aag_lines": 20365,
+    "blif_lines": 19719,
+    "stats": {
+      "inputs": 768,
+      "latches": 116,
+      "ands": 0,
+      "xors": 6474,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1420768_symbol_bits768.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1420768_symbol_bits768.blif"
+    },
+    "stem": "scrambler_equiv_seed1420768_symbol_bits768"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 1024,
+      "seed": 1421024
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 1024
+    },
+    "aag_sha256": "6d48b5cdc8cdbf849be63e7c01e97e4aee5aad98a65b4e37be59f578abea3f47",
+    "blif_sha256": "362fd450d7914f820644a2aa466d02a22a1607db2cb619451c28ca12f517fadd",
+    "aag_lines": 28121,
+    "blif_lines": 27219,
+    "stats": {
+      "inputs": 1024,
+      "latches": 116,
+      "ands": 0,
+      "xors": 8974,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1421024_symbol_bits1024.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1421024_symbol_bits1024.blif"
+    },
+    "stem": "scrambler_equiv_seed1421024_symbol_bits1024"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 1536,
+      "seed": 1421536
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 1536
+    },
+    "aag_sha256": "f5e1f69afcab41751ed8fd013b22504cf4c369dc29335ae4e18a9b23b0452041",
+    "blif_sha256": "5fcabed05fab9f2ba04442e052627de6e1ca924168517d18bc07a69d291b2826",
+    "aag_lines": 52693,
+    "blif_lines": 51279,
+    "stats": {
+      "inputs": 1536,
+      "latches": 116,
+      "ands": 0,
+      "xors": 16994,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1421536_symbol_bits1536.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1421536_symbol_bits1536.blif"
+    },
+    "stem": "scrambler_equiv_seed1421536_symbol_bits1536"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 2048,
+      "seed": 1422048
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b parallel scrambler scale margin",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 2048
+    },
+    "aag_sha256": "e747d2b0b46004d11bb9a0ce0df103624bd66883330eff02bb2bd5009add07a6",
+    "blif_sha256": "78278faf662d416b804dbbcf924e15a691e163be8a51e023b65f265eaa0fc6ab",
+    "aag_lines": 74685,
+    "blif_lines": 72759,
+    "stats": {
+      "inputs": 2048,
+      "latches": 116,
+      "ands": 0,
+      "xors": 24154,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1422048_symbol_bits2048.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/scrambler_equiv_seed1422048_symbol_bits2048.blif"
+    },
+    "stem": "scrambler_equiv_seed1422048_symbol_bits2048"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 768,
+      "seed": 1446768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 768,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "ff3053cf25756e53d67b87dd03c47ae01ad0f82c72c89226c28f150afa965cd3",
+    "blif_sha256": "e9056619755d3dd8f3188bf19c0713c97206cf8ca7f907276753f5c1e8d9f7b6",
+    "aag_lines": 26770,
+    "blif_lines": 26459,
+    "stats": {
+      "inputs": 770,
+      "latches": 33,
+      "ands": 129,
+      "xors": 8596,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9852148997134671,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1446768_symbol_bits768_width16.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1446768_symbol_bits768_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1446768_symbol_bits768_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 1024,
+      "seed": 1447024
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 1024,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "f70ddb2e308a602f534cd0ac92b1603e7c788a10e860e2d88a87a2e4772ebd75",
+    "blif_sha256": "1cd6e93157b4ad96a56f4721fc8e6c8ed72c4e8de3f1625c9922218c08e32565",
+    "aag_lines": 35684,
+    "blif_lines": 35117,
+    "stats": {
+      "inputs": 1026,
+      "latches": 33,
+      "ands": 129,
+      "xors": 11482,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9888898458358453,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1447024_symbol_bits1024_width16.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1447024_symbol_bits1024_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1447024_symbol_bits1024_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 1536,
+      "seed": 1447536
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 1536,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "3c5436787a8e0e55c57b91ac77bd403c7f25d1b638ca49f6ac96daf2d1ec24c1",
+    "blif_sha256": "04e8956f4f2eae6323d5cc8d15123afd72b2b7e4d1899b9729c85e5009044e96",
+    "aag_lines": 52516,
+    "blif_lines": 51437,
+    "stats": {
+      "inputs": 1538,
+      "latches": 33,
+      "ands": 129,
+      "xors": 16922,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9924344613219166,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1447536_symbol_bits1536_width16.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1447536_symbol_bits1536_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1447536_symbol_bits1536_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 304,
+      "seed": 1462304
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 304,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "39237e7c5fc71da2301f0ed86a35a6fc3a91413c5ba00586af1e4c39eb76492b",
+    "blif_sha256": "844984cbde11e7fec5cdc56038c66fe23f8b080fdac4cd84b6c73fb4124c4960",
+    "aag_lines": 29229,
+    "blif_lines": 29830,
+    "stats": {
+      "inputs": 306,
+      "latches": 65,
+      "ands": 257,
+      "xors": 9501,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9736626357860217,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462304_symbol_bits304_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462304_symbol_bits304_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1462304_symbol_bits304_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 320,
+      "seed": 1462320
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 320,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "47f0657754f0a58c7d183fa99b049a090f9ac41b9fb7cae74fd9a5785be3f65c",
+    "blif_sha256": "990778ba81c935c269db71a8565880fab812a7409353774e1549e15b99954e66",
+    "aag_lines": 30802,
+    "blif_lines": 31387,
+    "stats": {
+      "inputs": 322,
+      "latches": 65,
+      "ands": 257,
+      "xors": 10020,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.974992702150433,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462320_symbol_bits320_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462320_symbol_bits320_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1462320_symbol_bits320_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 384,
+      "seed": 1462384
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 384,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "ad69ef508099e904d11d69d7fe7f495a3940ec8c6a24d1ab9d42f7bec4b5c1f5",
+    "blif_sha256": "7d94e3efe30da8fa171a9556c38d4a55c9340327485b18a4fb36408b74682061",
+    "aag_lines": 36389,
+    "blif_lines": 36910,
+    "stats": {
+      "inputs": 386,
+      "latches": 65,
+      "ands": 257,
+      "xors": 11861,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9787918798481597,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462384_symbol_bits384_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462384_symbol_bits384_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1462384_symbol_bits384_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 512,
+      "seed": 1462512
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 512,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "a2de3705d6a60b52b82ed2908a59a002f3e53edc1bfbce9bd889bee78d30f492",
+    "blif_sha256": "cccdbe278a1d41299a65c488b08d07747888674dc4f10cf1776945793f80b504",
+    "aag_lines": 47974,
+    "blif_lines": 48367,
+    "stats": {
+      "inputs": 514,
+      "latches": 65,
+      "ands": 257,
+      "xors": 15680,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9838740038903181,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462512_symbol_bits512_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1462512_symbol_bits512_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1462512_symbol_bits512_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA",
+      "width": 64,
+      "polynomial": 4823603603198064275,
+      "symbol_bits": 120,
+      "seed": 1494120
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x42f0e1eba9ea3693",
+      "state_width": 64,
+      "symbol_bits_per_cycle": 120,
+      "reset_seed": "0xffffffffffffffff"
+    },
+    "aag_sha256": "7d630f114a53c0f8c7a5aa5c635ddd342d744c2d473f75b2045b791e64833c26",
+    "blif_sha256": "5bd97572497b93850907c2f086d7a1c85999b2b8999326b44070e7bc81c8a0ea",
+    "aag_lines": 30802,
+    "blif_lines": 32483,
+    "stats": {
+      "inputs": 122,
+      "latches": 129,
+      "ands": 513,
+      "xors": 9948,
+      "ors": 320,
+      "nots": 257,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9509607112130771,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494120_symbol_bits120_width64.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494120_symbol_bits120_width64.blif"
+    },
+    "stem": "crc_frame_align_polynomial4823603603198064275_seed1494120_symbol_bits120_width64"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA",
+      "width": 64,
+      "polynomial": 4823603603198064275,
+      "symbol_bits": 124,
+      "seed": 1494124
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x42f0e1eba9ea3693",
+      "state_width": 64,
+      "symbol_bits_per_cycle": 124,
+      "reset_seed": "0xffffffffffffffff"
+    },
+    "aag_sha256": "3601a0fcdb5fdec6be42d41b7d6e2a9e26de3871fe2cd310a9b2cf9d26d1a765",
+    "blif_sha256": "deb53cfe150368c01b09cd27d55ffb90ad776266a8c6161c81d3c8c71feee0e4",
+    "aag_lines": 31586,
+    "blif_lines": 33263,
+    "stats": {
+      "inputs": 126,
+      "latches": 129,
+      "ands": 513,
+      "xors": 10208,
+      "ors": 320,
+      "nots": 257,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9521499860087679,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494124_symbol_bits124_width64.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494124_symbol_bits124_width64.blif"
+    },
+    "stem": "crc_frame_align_polynomial4823603603198064275_seed1494124_symbol_bits124_width64"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA",
+      "width": 64,
+      "polynomial": 4823603603198064275,
+      "symbol_bits": 160,
+      "seed": 1494160
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x42f0e1eba9ea3693",
+      "state_width": 64,
+      "symbol_bits_per_cycle": 160,
+      "reset_seed": "0xffffffffffffffff"
+    },
+    "aag_sha256": "676b163ceac4016837a97fc83c4856f83b65e0eea444bfd74341dfc9c8116a80",
+    "blif_sha256": "3c5e86228a9e2d213c74cd90fc9b41041b6f4af029f47af8364a79b59bf8dcda",
+    "aag_lines": 39176,
+    "blif_lines": 40817,
+    "stats": {
+      "inputs": 162,
+      "latches": 129,
+      "ands": 513,
+      "xors": 12726,
+      "ors": 320,
+      "nots": 257,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9612508497620667,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494160_symbol_bits160_width64.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494160_symbol_bits160_width64.blif"
+    },
+    "stem": "crc_frame_align_polynomial4823603603198064275_seed1494160_symbol_bits160_width64"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA",
+      "width": 64,
+      "polynomial": 4823603603198064275,
+      "symbol_bits": 256,
+      "seed": 1494256
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC scale margin",
+      "standard": "CRC-64-ECMA"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x42f0e1eba9ea3693",
+      "state_width": 64,
+      "symbol_bits_per_cycle": 256,
+      "reset_seed": "0xffffffffffffffff"
+    },
+    "aag_sha256": "66a3c3dbf6bf5b2a13a720611aa1ac53d6303294092ff4a68a03fd84ef25da11",
+    "blif_sha256": "288d7dfa1f5e7ab7f8f9a590474434fd4ba42e27c570e7ad00fc2a9745f99aad",
+    "aag_lines": 57692,
+    "blif_lines": 59237,
+    "stats": {
+      "inputs": 258,
+      "latches": 129,
+      "ands": 513,
+      "xors": 18866,
+      "ors": 320,
+      "nots": 257,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9735280458227978,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494256_symbol_bits256_width64.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed1494256_symbol_bits256_width64.blif"
+    },
+    "stem": "crc_frame_align_polynomial4823603603198064275_seed1494256_symbol_bits256_width64"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 32,
+      "data_bits": 768,
+      "row_weight": 193,
+      "seed": 1440768
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 768,
+      "row_weight": 193,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "4bfed89d2ab6c6dd49f4c63833f6bb0b1054e815b490b53d789dd7a65611f558",
+    "blif_sha256": "ca8b59e532300f42fbc132a8278a6dd9da993c38e866dcd8097d0de64304fc9f",
+    "aag_lines": 38017,
+    "blif_lines": 37319,
+    "stats": {
+      "inputs": 768,
+      "latches": 64,
+      "ands": 0,
+      "xors": 12384,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits768_row_weight193_seed1440768.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits768_row_weight193_seed1440768.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits768_row_weight193_seed1440768"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 32,
+      "data_bits": 1024,
+      "row_weight": 257,
+      "seed": 1441024
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 1024,
+      "row_weight": 257,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "1ef7b4695fb7c35c974b826d5baf514206547b95c35e006bea594af60dce4cf3",
+    "blif_sha256": "19488c45fb4fc9df266aa417ba6dd2d585afcf853c247ce13935cc9578253c6b",
+    "aag_lines": 50561,
+    "blif_lines": 49607,
+    "stats": {
+      "inputs": 1024,
+      "latches": 64,
+      "ands": 0,
+      "xors": 16480,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits1024_row_weight257_seed1441024.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits1024_row_weight257_seed1441024.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits1024_row_weight257_seed1441024"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 32,
+      "data_bits": 1536,
+      "row_weight": 385,
+      "seed": 1441536
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 1536,
+      "row_weight": 385,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "e2808c375c632140ea2331775d6b54d65fa17a9d7c38b717f5783d45403f132a",
+    "blif_sha256": "9010109964b288f6b63a88463d972e0769205d53f196a16c74299679789e4200",
+    "aag_lines": 75649,
+    "blif_lines": 74183,
+    "stats": {
+      "inputs": 1536,
+      "latches": 64,
+      "ands": 0,
+      "xors": 24672,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits1536_row_weight385_seed1441536.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits1536_row_weight385_seed1441536.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits1536_row_weight385_seed1441536"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 32,
+      "data_bits": 2048,
+      "row_weight": 513,
+      "seed": 1442048
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "dense streaming syndrome scale margin",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 2048,
+      "row_weight": 513,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "66033bd8ba7bdd26a27eba6cfb6823603c493e352564a56e7326aa89c6f69546",
+    "blif_sha256": "abab5f5c4bb837e31a56c08b0531fd414635821f11eec4ea32028d1c84a252de",
+    "aag_lines": 100737,
+    "blif_lines": 98759,
+    "stats": {
+      "inputs": 2048,
+      "latches": 64,
+      "ands": 0,
+      "xors": 32864,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits2048_row_weight513_seed1442048.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/syndrome_equiv_check_bits32_data_bits2048_row_weight513_seed1442048.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits2048_row_weight513_seed1442048"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary",
+      "width": 20,
+      "weight": 9,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 1453320
+    },
+    "classification": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        20,
+        20,
+        20
+      ]
+    },
+    "aag_sha256": "6c93c596eaf71264cb09c52706ab6061a5ab5cbbb7c15147bb8ee4ae4055cf4f",
+    "blif_sha256": "afff2025d7ac40dc460d3d426d772a7aa62720a8081f3e9cd9cd2b803390102e",
+    "aag_lines": 3215,
+    "blif_lines": 3260,
+    "stats": {
+      "inputs": 4,
+      "latches": 44,
+      "ands": 1,
+      "xors": 1048,
+      "ors": 20,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9990467111534795,
+    "bad_cone_xor_density": 0.98,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453320_topologybalanced_weight9_width20.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453320_topologybalanced_weight9_width20.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed1453320_topologybalanced_weight9_width20"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary",
+      "width": 24,
+      "weight": 9,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 1453324
+    },
+    "classification": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        24,
+        24,
+        24
+      ]
+    },
+    "aag_sha256": "73654bf3a8854ef8c10abb3008663f142b57c653c7171b6e084cd90cf965b634",
+    "blif_sha256": "2899376b947625ec370513f0cf990cb31d38cb87ddd023168191e31c49aa3e1d",
+    "aag_lines": 3878,
+    "blif_lines": 3931,
+    "stats": {
+      "inputs": 4,
+      "latches": 52,
+      "ands": 1,
+      "xors": 1265,
+      "ors": 24,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9992101105845181,
+    "bad_cone_xor_density": 0.9857142857142858,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453324_topologybalanced_weight9_width24.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453324_topologybalanced_weight9_width24.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed1453324_topologybalanced_weight9_width24"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary",
+      "width": 28,
+      "weight": 9,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 1453328
+    },
+    "classification": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        28,
+        28,
+        28
+      ]
+    },
+    "aag_sha256": "6a53287db2187f667df65849945531388c2f16cb4cc49dde8cfc14be0451b19a",
+    "blif_sha256": "95a68860a6407cdde532038774b14175b45ee4d115e845c2fb7b82f491110e78",
+    "aag_lines": 4523,
+    "blif_lines": 4584,
+    "stats": {
+      "inputs": 4,
+      "latches": 60,
+      "ands": 1,
+      "xors": 1476,
+      "ors": 28,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.999322951929587,
+    "bad_cone_xor_density": 0.9873417721518988,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453328_topologybalanced_weight9_width28.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453328_topologybalanced_weight9_width28.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed1453328_topologybalanced_weight9_width28"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary",
+      "width": 32,
+      "weight": 9,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 1453332
+    },
+    "classification": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        32,
+        32,
+        32
+      ]
+    },
+    "aag_sha256": "69c18a2f1ded0d522b45ef739fb28cfa32bab32a0bee28946f0624ecca460dcf",
+    "blif_sha256": "cdb517615ae0a635d2305b03401ba538bd9e3faccba6f35f054bc001eef68d4d",
+    "aag_lines": 5141,
+    "blif_lines": 5210,
+    "stats": {
+      "inputs": 4,
+      "latches": 68,
+      "ands": 1,
+      "xors": 1678,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9994044073853484,
+    "bad_cone_xor_density": 0.9878048780487805,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453332_topologybalanced_weight9_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed1453332_topologybalanced_weight9_width32.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed1453332_topologybalanced_weight9_width32"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary",
+      "width": 24,
+      "weight": 9,
+      "rounds": 4,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 1453424
+    },
+    "classification": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    "aag_sha256": "2cdf76da2bd4ce417c6ba73419a33d472a8c0a63788bbf4753897de165dbeab9",
+    "blif_sha256": "9933ea796ad6f4bce35c0581587d41e190b4ade0246e18bd7881f5783bf89657",
+    "aag_lines": 5081,
+    "blif_lines": 5134,
+    "stats": {
+      "inputs": 4,
+      "latches": 52,
+      "ands": 1,
+      "xors": 1666,
+      "ors": 24,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9994001199760048,
+    "bad_cone_xor_density": 0.9852941176470589,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds4_seed1453424_topologybalanced_weight9_width24.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds4_seed1453424_topologybalanced_weight9_width24.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds4_seed1453424_topologybalanced_weight9_width24"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary",
+      "width": 32,
+      "weight": 9,
+      "rounds": 4,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 1453432
+    },
+    "classification": {
+      "category": "controlled-affine",
+      "semantic": "delayed affine synchronization control boundary"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    "aag_sha256": "d52550887ca784016d5d2fe852d7dd14a3adfe6e95c09ce684ac5ce0fce19138",
+    "blif_sha256": "8e1485d35834c55a56a25912c7085f7ce6b29cef899c91bf78452a1f4da8d785",
+    "aag_lines": 6734,
+    "blif_lines": 6803,
+    "stats": {
+      "inputs": 4,
+      "latches": 68,
+      "ands": 1,
+      "xors": 2209,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9995475113122172,
+    "bad_cone_xor_density": 0.9875,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds4_seed1453432_topologybalanced_weight9_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_summary_margin_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds4_seed1453432_topologybalanced_weight9_width32.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds4_seed1453432_topologybalanced_weight9_width32"
+  }
+]

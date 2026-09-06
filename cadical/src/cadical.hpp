@@ -626,6 +626,10 @@ public:
   //   ensure (!DELETING)
   //
   void statistics ();   // print statistics
+  int64_t conflicts () const;
+  int64_t decisions () const;
+  int64_t propagations () const;
+  int64_t restarts () const;
   void resources ();    // print resource usage (time and memory)
 
   //   require (VALID)

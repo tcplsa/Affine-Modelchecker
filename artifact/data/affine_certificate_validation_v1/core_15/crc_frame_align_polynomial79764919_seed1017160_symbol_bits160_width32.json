@@ -1,0 +1,38 @@
+{
+  "affine_next_equations": 0,
+  "ands": 15974,
+  "blocked_cubes": 0,
+  "invariant": null,
+  "latches": 65,
+  "model": "/home/wudl/test_tools/compare/results/pathb_crc_gauss_boundary_v1/benchmarks/crc_frame_align_polynomial79764919_seed1017160_symbol_bits160_width32.aag",
+  "model_sha256": "998ad7fb17b159439630887f7195cd3937837344964581fdfbf18e128d62a154",
+  "obligations": [
+    {
+      "conflicts": 0,
+      "decisions": 0,
+      "label": "init_implies_property",
+      "propagations": 0,
+      "result": 20,
+      "seconds": 0.07584959268569946
+    },
+    {
+      "conflicts": 568,
+      "decisions": 3176,
+      "label": "invariant_implies_next_property",
+      "propagations": 154911,
+      "result": 20,
+      "seconds": 0.20335540175437927
+    }
+  ],
+  "property_index": 0,
+  "recognized_xors": 5207,
+  "schema": "affine-pdr-independent-certificate-v1",
+  "status": "PASS",
+  "total_seconds": 0.9420291483402252,
+  "xor_validation": {
+    "assignments_checked": 20828,
+    "equations": 5207,
+    "method": "exhaustive-local-truth-table",
+    "seconds": 0.06334279477596283
+  }
+}

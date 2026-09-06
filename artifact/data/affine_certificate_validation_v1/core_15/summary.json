@@ -1,0 +1,13 @@
+{
+  "checker_sha256": "671a5f3ab802e66198369c6571a2aec696a2980ecaa50438b1e3e6f8347a5eab",
+  "cmsat_library_sha256": "2d3b8bd0254d653fde985d53dbee33b974e7661e16bcbde0fc31725e69606266",
+  "failed": 0,
+  "manifest": "/home/wudl/test_tools/paper/data/pathb_crc_gauss_boundary_1800_confirm_v1/seed985011.tsv",
+  "manifest_sha256": "78879936da28dadcae4613a85fbac3cee12cdbe747e55998e5239103a7c661bb",
+  "models": 15,
+  "passed": 15,
+  "schema": "affine-pdr-independent-certificate-batch-v1",
+  "seed": 20260825,
+  "wrapper_sha256": "21acabd49b51fb3478613ccf9c13568da11c3c21474835b5e91fcde387391787",
+  "wrapper_source_sha256": "c80d19e751508d6c53f96792565c46de37291fb6f8356eec9d6c67fe8592e764"
+}

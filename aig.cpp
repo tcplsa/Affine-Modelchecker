@@ -6,6 +6,11 @@ std::atomic<int> RESULT(0); // 0 means running; 10 unsafe; 20 safe
 
 Aiger::Aiger(){
     max_var = num_inputs = num_outputs = num_bads = num_ands = num_constraints = num_latches = binaryMode = 0;
+    input_order_runtime = 0.0;
+    input_order = "original";
+    input_order_seed = 1;
+    perturb_modes = "none";
+    perturb_seed = 1;
     use_xag_for_pdr = true;
 
     Aiger_ands.clear();
@@ -23,6 +28,7 @@ Aiger::Aiger(){
     ors.clear();
     nexts.clear();
     init_state.clear();
+    init_equalities.clear();
     constraints.clear();
     constraints_prime.clear();
     allbad.clear();
@@ -68,6 +74,9 @@ void Aiger::translate_to_dimacs(){
             init_state.push_back(-l);
         }else if(al.default_val==1){
             init_state.push_back(l);
+        }else if(al.default_val != al.l){
+            init_equalities.push_back(
+                make_pair(l, aiger_to_dimacs(al.default_val)));
         }
     }
 
@@ -270,54 +279,41 @@ Aiger* load_aiger_from_file(string str, int pi, bool witness, bool certificate, 
 
     }
 
-    // read symbols
+    // Read AIGER 1.9 symbols. A constraint symbol starts with "c<index>",
+    // while the comment section starts with a line containing only "c".
     string tstr;
     bool comments = false;
-    if(!binary_mode)
-        while(*fbuf != '\n') {fbuf++;}
-    if((char *)fbuf - tbuf < len-1){
-        if(binary_mode) fbuf--;
-        while(true){
+    unsigned char *end = reinterpret_cast<unsigned char *>(tbuf + len);
+    while(fbuf < end && *fbuf != '\n')
+        fbuf++;
+    while(fbuf + 1 < end){
+        fbuf++;
+        if(*fbuf == 'c' && fbuf + 1 < end && fbuf[1] == '\n'){
+            comments = true;
             fbuf++;
-            tstr = "";
-            if(*fbuf == 'i'){
-                int v = read_literal(&fbuf);
-                fbuf++;
-                while(*fbuf != '\n'){
-                    tstr += *fbuf;
-                    fbuf++;
-                }
-                aiger->symbols[v] = tstr;
-                if(aig_veb == 2)
-                    cout << "i" << v << " " << tstr << endl;
-            }else if(*fbuf == 'l'){
-                int v = read_literal(&fbuf);
-                fbuf++;
-                while(*fbuf != '\n'){
-                    tstr += *fbuf;
-                    fbuf++;
-                }
-                aiger->symbols[v] = tstr;
-                if(aig_veb == 2)
-                    cout<< "l" << v<<" "<<tstr<<endl;
-            }else if(*fbuf == 'o'){
-                int v = read_literal(&fbuf);
-                fbuf++;
-                while(*fbuf != '\n'){
-                    tstr += *fbuf;
-                    fbuf++;
-                }
-                aiger->symbols[v] = tstr;
-                if(aig_veb == 2)
-                    cout<<"o"<<v<<" "<<tstr<<endl;
-            }else if(*fbuf == 'c'){
-                comments = true;
-                fbuf++;
-                break;
-            }else{
-                break;
-            }
+            break;
         }
+        char kind = static_cast<char>(*fbuf);
+        bool symbol_kind =
+            kind == 'i' || kind == 'l' || kind == 'o' || kind == 'b'
+            || kind == 'c' || kind == 'j' || kind == 'f';
+        if(!symbol_kind || fbuf + 1 >= end
+           || fbuf[1] < '0' || fbuf[1] > '9')
+            break;
+        fbuf++;
+        int v = read_literal(&fbuf);
+        if(fbuf < end && *fbuf == ' ')
+            fbuf++;
+        tstr = "";
+        while(fbuf < end && *fbuf != '\n'){
+            tstr += static_cast<char>(*fbuf);
+            fbuf++;
+        }
+        // Existing consumers only address input/latch/output symbols by index.
+        if(kind == 'i' || kind == 'l' || kind == 'o')
+            aiger->symbols[v] = tstr;
+        if(aig_veb == 2)
+            cout << kind << v << " " << tstr << endl;
     }
 
     aiger->comments = "";

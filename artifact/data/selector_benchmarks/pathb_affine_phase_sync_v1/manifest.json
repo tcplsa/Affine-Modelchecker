@@ -1,0 +1,888 @@
+[
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 12,
+      "weight": 9,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        12,
+        12
+      ]
+    },
+    "aag_sha256": "13c4e200a6152252e13035cc4cd57485774bd2e83cd857861b745f8a457847fc",
+    "blif_sha256": "e33018c62be12641db7f3c0fb8f5aadca7a15a3509f21a1009e622d72c6345c5",
+    "aag_lines": 1315,
+    "blif_lines": 1344,
+    "stats": {
+      "inputs": 4,
+      "latches": 27,
+      "ands": 1,
+      "xors": 423,
+      "ors": 12,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9976415094339622,
+    "bad_cone_xor_density": 0.9615384615384616,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight9_width12.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight9_width12.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight9_width12"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 16,
+      "weight": 13,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        16,
+        16
+      ]
+    },
+    "aag_sha256": "a9586372470aeacd199c3ebee339079772049f085214e0d31dd559a2718d2f9e",
+    "blif_sha256": "42ad89d5fb0a9c154510aa7ae6704d50fde0501543abfce5b86141dbf003a5ad",
+    "aag_lines": 2539,
+    "blif_lines": 2576,
+    "stats": {
+      "inputs": 4,
+      "latches": 35,
+      "ands": 1,
+      "xors": 827,
+      "ors": 16,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.998792270531401,
+    "bad_cone_xor_density": 0.9736842105263158,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight13_width16.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight13_width16.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight13_width16"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 20,
+      "weight": 15,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        20,
+        20
+      ]
+    },
+    "aag_sha256": "97606bf5aed22604fd338ebba3efeb0fb90710b0422e49cbefff77cab9c4c59f",
+    "blif_sha256": "fa13753a9050847df5051d9d2534835b483b98e06206b2165d499ec22d0ae37c",
+    "aag_lines": 3640,
+    "blif_lines": 3685,
+    "stats": {
+      "inputs": 4,
+      "latches": 43,
+      "ands": 1,
+      "xors": 1190,
+      "ors": 20,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9991603694374476,
+    "bad_cone_xor_density": 0.9791666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight15_width20.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight15_width20.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight15_width20"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 24,
+      "weight": 19,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        24,
+        24
+      ]
+    },
+    "aag_sha256": "a56bc3aa8843026a57e96ac335cf11cecf0162e98b223b459ae62c2a0beb156a",
+    "blif_sha256": "cf39b0442b3f3a13c8378995185560e5483ab53a0000223a797222c5a2af6337",
+    "aag_lines": 5512,
+    "blif_lines": 5565,
+    "stats": {
+      "inputs": 4,
+      "latches": 51,
+      "ands": 1,
+      "xors": 1810,
+      "ors": 24,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9994478188845941,
+    "bad_cone_xor_density": 0.9821428571428571,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight19_width24.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight19_width24.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight19_width24"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 28,
+      "weight": 21,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        28,
+        28
+      ]
+    },
+    "aag_sha256": "1eb32fb63ecb6352275712976f11b30d2fa1d296db34a41f9b5509364599954e",
+    "blif_sha256": "77e32a63ef7a09c5b2ef7924e9a039a6fbf120a13284cc327cf19a2d886f1321",
+    "aag_lines": 7117,
+    "blif_lines": 7178,
+    "stats": {
+      "inputs": 4,
+      "latches": 59,
+      "ands": 1,
+      "xors": 2341,
+      "ors": 28,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9995730145175064,
+    "bad_cone_xor_density": 0.9848484848484849,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight21_width28.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight21_width28.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight21_width28"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 32,
+      "weight": 25,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        32,
+        32
+      ]
+    },
+    "aag_sha256": "714252aff4c3e7dd259016fb5cd616d5bd7a2d733866d91790ce50f968c0d0ad",
+    "blif_sha256": "1f802fea7b1a44b6ce65ee749dab574f1d6c44ac8ecea2323a72d9bf5d6c6108",
+    "aag_lines": 9649,
+    "blif_lines": 9718,
+    "stats": {
+      "inputs": 4,
+      "latches": 67,
+      "ands": 1,
+      "xors": 3181,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9996857322438718,
+    "bad_cone_xor_density": 0.9864864864864865,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight25_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight25_width32.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight25_width32"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 40,
+      "weight": 31,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        40,
+        40
+      ]
+    },
+    "aag_sha256": "9e1c982ea7f314bdb693e398c39244675473102076090112e2ab6dfd57e463b0",
+    "blif_sha256": "6c2a00d0d1bc617ff5231fc8e6ce2754b2779f125e9d3348c072cd2e0ffec055",
+    "aag_lines": 14938,
+    "blif_lines": 15023,
+    "stats": {
+      "inputs": 4,
+      "latches": 83,
+      "ands": 1,
+      "xors": 4936,
+      "ors": 40,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9997974478428195,
+    "bad_cone_xor_density": 0.9895833333333334,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight31_width40.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight31_width40.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed840001_topologybalanced_weight31_width40"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 12,
+      "weight": 9,
+      "rounds": 2,
+      "delay": 4,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 4,
+      "matrix_ranks": [
+        12,
+        12
+      ]
+    },
+    "aag_sha256": "3602b07cbaf8db236a25d014cee75bf87ccdcb87c192984812b2d482b99c0174",
+    "blif_sha256": "1c8aa01ae877c03f31b5f00ef61403c0fbbe44e77d64e96710cc615cb095ee92",
+    "aag_lines": 1347,
+    "blif_lines": 1376,
+    "stats": {
+      "inputs": 4,
+      "latches": 29,
+      "ands": 1,
+      "xors": 433,
+      "ors": 12,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9976958525345622,
+    "bad_cone_xor_density": 0.9705882352941176,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight9_width12.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight9_width12.blif"
+    },
+    "stem": "affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight9_width12"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 16,
+      "weight": 13,
+      "rounds": 2,
+      "delay": 4,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 4,
+      "matrix_ranks": [
+        16,
+        16
+      ]
+    },
+    "aag_sha256": "136d2f31400ba07964ae8d272b909e08ebf6009014be6fe5d0891572bd878e90",
+    "blif_sha256": "2a9a117e276b99d4c52b0713260264a1430bc0f24949ba451d7cdd9e371f734d",
+    "aag_lines": 2607,
+    "blif_lines": 2644,
+    "stats": {
+      "inputs": 4,
+      "latches": 37,
+      "ands": 1,
+      "xors": 849,
+      "ors": 16,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9988235294117647,
+    "bad_cone_xor_density": 0.9827586206896551,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight13_width16.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight13_width16.blif"
+    },
+    "stem": "affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight13_width16"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 20,
+      "weight": 15,
+      "rounds": 2,
+      "delay": 4,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 4,
+      "matrix_ranks": [
+        20,
+        20
+      ]
+    },
+    "aag_sha256": "35e81facf058f9eac7dece153b3da482db79a4b04bf8b2d47227cb4c4b23d690",
+    "blif_sha256": "39ba3ca68edae08d89b0f68dfdbdb725cf6046934771eb7fb8912e40c877c614",
+    "aag_lines": 3717,
+    "blif_lines": 3762,
+    "stats": {
+      "inputs": 4,
+      "latches": 45,
+      "ands": 1,
+      "xors": 1215,
+      "ors": 20,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9991776315789473,
+    "bad_cone_xor_density": 0.9855072463768116,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight15_width20.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight15_width20.blif"
+    },
+    "stem": "affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight15_width20"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 24,
+      "weight": 19,
+      "rounds": 2,
+      "delay": 4,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 4,
+      "matrix_ranks": [
+        24,
+        24
+      ]
+    },
+    "aag_sha256": "3fe5f4d6a5d21be6fe9db5388472815614cfb528194897983db832d83e150294",
+    "blif_sha256": "8f2282394832f43716842b5bc0c14b13166e7dca1b2df09dd703c4afa8c80d70",
+    "aag_lines": 5583,
+    "blif_lines": 5636,
+    "stats": {
+      "inputs": 4,
+      "latches": 53,
+      "ands": 1,
+      "xors": 1833,
+      "ors": 24,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9994547437295529,
+    "bad_cone_xor_density": 0.987012987012987,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight19_width24.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight19_width24.blif"
+    },
+    "stem": "affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight19_width24"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 28,
+      "weight": 21,
+      "rounds": 2,
+      "delay": 4,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 4,
+      "matrix_ranks": [
+        28,
+        28
+      ]
+    },
+    "aag_sha256": "4c87cd607d7d53c90f17e19c294ef1232604a938e8d3b99c60f529dd72ca13ad",
+    "blif_sha256": "bbcaeae50c4625ca296cab28263e961aad2bcada4ce917bac835de00870feda3",
+    "aag_lines": 7170,
+    "blif_lines": 7231,
+    "stats": {
+      "inputs": 4,
+      "latches": 61,
+      "ands": 1,
+      "xors": 2358,
+      "ors": 28,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9995760915642221,
+    "bad_cone_xor_density": 0.9878048780487805,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight21_width28.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight21_width28.blif"
+    },
+    "stem": "affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight21_width28"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 32,
+      "weight": 25,
+      "rounds": 2,
+      "delay": 4,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 4,
+      "matrix_ranks": [
+        32,
+        32
+      ]
+    },
+    "aag_sha256": "a2bfbfd4ddb8bcb33134ce4a20369d9a5ad597d4a6a276e82e198aafc7afcaa8",
+    "blif_sha256": "af65e6dde3981f2ed1661d3c8a0800725e7479c36ca371332b07c249870af0cd",
+    "aag_lines": 9741,
+    "blif_lines": 9810,
+    "stats": {
+      "inputs": 4,
+      "latches": 69,
+      "ands": 1,
+      "xors": 3211,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9996886674968867,
+    "bad_cone_xor_density": 0.9896907216494846,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight25_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight25_width32.blif"
+    },
+    "stem": "affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight25_width32"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 40,
+      "weight": 31,
+      "rounds": 2,
+      "delay": 4,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 4,
+      "matrix_ranks": [
+        40,
+        40
+      ]
+    },
+    "aag_sha256": "51984e700eb20e2acec85e1527240ba2ea8b6428bbadcc0f9d05fafcb7d37d06",
+    "blif_sha256": "d1adef5e5ef156a0d6d4b2bf5ca2d8a4198ce4efed1b837b34e35a287710d02c",
+    "aag_lines": 15060,
+    "blif_lines": 15145,
+    "stats": {
+      "inputs": 4,
+      "latches": 85,
+      "ands": 1,
+      "xors": 4976,
+      "ors": 40,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9997990757484428,
+    "bad_cone_xor_density": 0.9918032786885246,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight31_width40.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight31_width40.blif"
+    },
+    "stem": "affine_phase_sync_delay4_inputs4_rounds2_seed840001_topologybalanced_weight31_width40"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 12,
+      "weight": 9,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        12,
+        12,
+        12
+      ]
+    },
+    "aag_sha256": "749733d5a45d4cdac3650e968792d277e2adc2b67e1f40deaca88c65873d72da",
+    "blif_sha256": "94859f94fdda813fc1964570bf7c8143fa0684c89cc0e4a55300e650c9e40507",
+    "aag_lines": 1925,
+    "blif_lines": 1954,
+    "stats": {
+      "inputs": 4,
+      "latches": 28,
+      "ands": 1,
+      "xors": 626,
+      "ors": 12,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9984051036682615,
+    "bad_cone_xor_density": 0.9655172413793104,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight9_width12.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight9_width12.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight9_width12"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 16,
+      "weight": 13,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        16,
+        16,
+        16
+      ]
+    },
+    "aag_sha256": "168b40889756fb4c5dd88e3e230e461ac2ec7c956f11c0be84e1ed7962292f31",
+    "blif_sha256": "04485e1c247788f2219b747fbb32652869c8dd74d6d67fa9f273f7f75d6672c3",
+    "aag_lines": 3740,
+    "blif_lines": 3777,
+    "stats": {
+      "inputs": 4,
+      "latches": 36,
+      "ands": 1,
+      "xors": 1227,
+      "ors": 16,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.999185667752443,
+    "bad_cone_xor_density": 0.9767441860465116,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight13_width16.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight13_width16.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight13_width16"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 20,
+      "weight": 15,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        20,
+        20,
+        20
+      ]
+    },
+    "aag_sha256": "eee315b5728c0ef715b20d73b6bc72f226023ba5e3ca0ab635f398919213fe67",
+    "blif_sha256": "fcff7aa60db27f479c2ec29f96fdab54fac601638bd54619aebd1b0625d4e545",
+    "aag_lines": 5372,
+    "blif_lines": 5417,
+    "stats": {
+      "inputs": 4,
+      "latches": 44,
+      "ands": 1,
+      "xors": 1767,
+      "ors": 20,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9994343891402715,
+    "bad_cone_xor_density": 0.9803921568627451,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight15_width20.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight15_width20.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight15_width20"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 24,
+      "weight": 19,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        24,
+        24,
+        24
+      ]
+    },
+    "aag_sha256": "9fa79f7cf7676ece332d184882f5c3a4b71b7af65a7e71f63c5188b232cdf4d1",
+    "blif_sha256": "18494de708027f57bcdbc2f3b280d5fd03d2ce4995764acfaa974cd6922f79d9",
+    "aag_lines": 8189,
+    "blif_lines": 8242,
+    "stats": {
+      "inputs": 4,
+      "latches": 52,
+      "ands": 1,
+      "xors": 2702,
+      "ors": 24,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9996300406955235,
+    "bad_cone_xor_density": 0.9846153846153847,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight19_width24.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight19_width24.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight19_width24"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 28,
+      "weight": 21,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        28,
+        28,
+        28
+      ]
+    },
+    "aag_sha256": "296751b533937cf96e2997e1a4dc2b40806d67d6da20e80fcaa28ba9e4c5c507",
+    "blif_sha256": "aec2258db6cfe1c84a46dcb0a41b12b3bc844320e661d776617256e9343d333f",
+    "aag_lines": 10559,
+    "blif_lines": 10620,
+    "stats": {
+      "inputs": 4,
+      "latches": 60,
+      "ands": 1,
+      "xors": 3488,
+      "ors": 28,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.999713384924047,
+    "bad_cone_xor_density": 0.9863013698630136,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight21_width28.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight21_width28.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight21_width28"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "width": 32,
+      "weight": 25,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 840001
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        32,
+        32,
+        32
+      ]
+    },
+    "aag_sha256": "f14056a06627c15e8f376fbd66083a458d84d0df142dfa5ca11c95a7a80088f8",
+    "blif_sha256": "9f4e99a26e3ea27b13145d0b59a6fd61b2a17c63d54a11bef1568715f22f8802",
+    "aag_lines": 14369,
+    "blif_lines": 14438,
+    "stats": {
+      "inputs": 4,
+      "latches": 68,
+      "ands": 1,
+      "xors": 4754,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9997896950578339,
+    "bad_cone_xor_density": 0.9879518072289156,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight25_width32.aag",
+      "blif": "test_tools/compare/results/pathb_affine_phase_sync_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight25_width32.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed840001_topologybalanced_weight25_width32"
+  }
+]

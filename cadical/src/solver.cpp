@@ -950,6 +950,13 @@ void Solver::statistics () {
   LOG_API_CALL_END ("stats");
 }
 
+int64_t Solver::conflicts () const { return internal->stats.conflicts; }
+int64_t Solver::decisions () const { return internal->stats.decisions; }
+int64_t Solver::propagations () const {
+  return internal->stats.propagations.search;
+}
+int64_t Solver::restarts () const { return internal->stats.restarts; }
+
 void Solver::resources () {
   if (state () == DELETING) return;
   TRACE ("resources");

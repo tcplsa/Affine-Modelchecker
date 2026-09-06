@@ -1,0 +1,12 @@
+{
+  "schema": "pathb-crc-gauss-frozen-confirmation-v1",
+  "models": 15,
+  "launches": 2,
+  "seeds": [985011, 985021],
+  "timeout_seconds": 1800,
+  "lanes_per_configuration": 4,
+  "strict_gaussian_only": 15,
+  "frozen_binary_sha256": "83d12c19856951adc32a1187f6253f45c2cb8cd44969cad4130d752d669bd7d8",
+  "seed985011_tsv_sha256": "34f54a504a198f52605e5341de6a02bdd3ea8c330c568bc4782225cf3e3b5339",
+  "seed985021_tsv_sha256": "db7a53dc8332ca1db4a197e12463860077c1902695c59ffe3f1fac20b83de959"
+}

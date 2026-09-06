@@ -34,6 +34,22 @@ int ipasir_failed (void * solver, int lit) {
   return ccadical_failed ((CCaDiCaL *) solver, lit);
 }
 
+int64_t ipasir_conflicts (void * solver) {
+  return ccadical_conflicts ((CCaDiCaL *) solver);
+}
+
+int64_t ipasir_decisions (void * solver) {
+  return ccadical_decisions ((CCaDiCaL *) solver);
+}
+
+int64_t ipasir_propagations (void * solver) {
+  return ccadical_propagations ((CCaDiCaL *) solver);
+}
+
+int64_t ipasir_restarts (void * solver) {
+  return ccadical_restarts ((CCaDiCaL *) solver);
+}
+
 void ipasir_set_terminate (void * solver,
                            void * state, int (*terminate)(void * state)) {
   ccadical_set_terminate ((CCaDiCaL *) solver, state, terminate);

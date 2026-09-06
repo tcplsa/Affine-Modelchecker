@@ -1,0 +1,66 @@
+{
+  "schema": "pathb-affine-phase-sweep-v1",
+  "manifest": "test_tools/compare/results/pathb_real_xor_apps_v1/gauss_only_manifest.json",
+  "timeout": 1800.0,
+  "four_core_budget": true,
+  "results": [
+    {
+      "stem": "crc_frame_align_polynomial79764919_seed981352_symbol_bits32_width32",
+      "family": "crc_frame_align",
+      "params": {
+        "category": "link-coding",
+        "semantic": "serial-versus-parallel CRC alignment after SOF",
+        "source": "CRC-32/IEEE",
+        "width": 32,
+        "polynomial": 79764919,
+        "symbol_bits": 32,
+        "seed": 981352
+      },
+      "stats": {
+        "inputs": 34,
+        "latches": 65,
+        "ands": 257,
+        "xors": 1352,
+        "ors": 160,
+        "nots": 129,
+        "bad": 1,
+        "outputs": 0,
+        "constraints": 0
+      },
+      "config": "ric3",
+      "result": "timeout",
+      "wall_seconds": 1800.025459267199,
+      "returncode": 124,
+      "winner_replica": -1
+    },
+    {
+      "stem": "crc_frame_align_polynomial79764919_seed981384_symbol_bits64_width32",
+      "family": "crc_frame_align",
+      "params": {
+        "category": "link-coding",
+        "semantic": "serial-versus-parallel CRC alignment after SOF",
+        "source": "CRC-32/IEEE",
+        "width": 32,
+        "polynomial": 79764919,
+        "symbol_bits": 64,
+        "seed": 981384
+      },
+      "stats": {
+        "inputs": 66,
+        "latches": 65,
+        "ands": 257,
+        "xors": 2318,
+        "ors": 160,
+        "nots": 129,
+        "bad": 1,
+        "outputs": 0,
+        "constraints": 0
+      },
+      "config": "ric3",
+      "result": "timeout",
+      "wall_seconds": 1800.0346036627889,
+      "returncode": 124,
+      "winner_replica": -1
+    }
+  ]
+}

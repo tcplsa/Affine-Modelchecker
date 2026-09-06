@@ -72,6 +72,11 @@ public:
     int num_justice;       // the number of justices.
     int num_fairness;      // the number of fairness.
     bool binaryMode;
+    double input_order_runtime;
+    string input_order;
+    unsigned input_order_seed;
+    string perturb_modes;
+    unsigned perturb_seed;
 
     vector<unsigned> Aiger_inputs, Aiger_outputs, Aiger_bads, Aiger_constraints;
     vector<Aiger_latch> Aiger_latches;
@@ -82,7 +87,9 @@ public:
     //for MCbase
     vector<Variable> variables;
     vector<And> ands, xors, ors;
-    vector<int> nexts, init_state;  //set<int> set_init_state;
+    vector<int> nexts, init_state;  // Constant latch resets.
+    // Non-trivial AIGER 1.9 resets, represented as latch == reset literal.
+    vector<pair<int, int> > init_equalities;
     vector<int> constraints, constraints_prime;
     vector<int> allbad;
     int bad, bad_prime, propertyIndex;
@@ -95,6 +102,7 @@ public:
 
     Aiger();
     void translate_to_dimacs();
+    bool has_reset_functions() const { return !init_equalities.empty(); }
 };
 
 Aiger* load_aiger_from_file(string str, int pi, bool witness, bool certificate, bool findbug, bool log);

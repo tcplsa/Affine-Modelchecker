@@ -1,0 +1,5085 @@
+[
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07",
+      "width": 8,
+      "polynomial": 7,
+      "symbol_bits": 1,
+      "updates": 1,
+      "seed": 910811
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x7",
+      "symbol_bits_per_cycle": 1,
+      "updates_per_transition": 1,
+      "state_width": 8
+    },
+    "aag_sha256": "5d9d2330a19e4fab0d0f9d683abd433055844d4eb6be89bdc0e405c26af79a55",
+    "blif_sha256": "e3dafbd554039a977f3cc8b84dfa5d33ae1b0cfd7008b9d8eee275b3ac4b237d",
+    "aag_lines": 74,
+    "blif_lines": 95,
+    "stats": {
+      "inputs": 1,
+      "latches": 16,
+      "ands": 0,
+      "xors": 16,
+      "ors": 7,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910811_symbol_bits1_updates1_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910811_symbol_bits1_updates1_width8.blif"
+    },
+    "stem": "crc_equiv_polynomial7_seed910811_symbol_bits1_updates1_width8"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07",
+      "width": 8,
+      "polynomial": 7,
+      "symbol_bits": 1,
+      "updates": 2,
+      "seed": 910812
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x7",
+      "symbol_bits_per_cycle": 1,
+      "updates_per_transition": 2,
+      "state_width": 8
+    },
+    "aag_sha256": "9725f5d21596a05708f4e04537179c4e1fadee8bd0348ab405917d79736e3e69",
+    "blif_sha256": "c296bd86d4344cf4f16036fa3662f5dfde13e76ff41eedfa9d384d3790075070",
+    "aag_lines": 98,
+    "blif_lines": 119,
+    "stats": {
+      "inputs": 1,
+      "latches": 16,
+      "ands": 0,
+      "xors": 24,
+      "ors": 7,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910812_symbol_bits1_updates2_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910812_symbol_bits1_updates2_width8.blif"
+    },
+    "stem": "crc_equiv_polynomial7_seed910812_symbol_bits1_updates2_width8"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07",
+      "width": 8,
+      "polynomial": 7,
+      "symbol_bits": 4,
+      "updates": 1,
+      "seed": 910841
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x7",
+      "symbol_bits_per_cycle": 4,
+      "updates_per_transition": 1,
+      "state_width": 8
+    },
+    "aag_sha256": "f52658b4c306efaf916748291baad8af8228f384ae8a79311fb3ec6e696e2d67",
+    "blif_sha256": "fb36625f83eb262d165e2eea2430578e916f529c7cddc60c7addabe0d9aac9a4",
+    "aag_lines": 149,
+    "blif_lines": 167,
+    "stats": {
+      "inputs": 4,
+      "latches": 16,
+      "ands": 0,
+      "xors": 40,
+      "ors": 7,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910841_symbol_bits4_updates1_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910841_symbol_bits4_updates1_width8.blif"
+    },
+    "stem": "crc_equiv_polynomial7_seed910841_symbol_bits4_updates1_width8"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07",
+      "width": 8,
+      "polynomial": 7,
+      "symbol_bits": 4,
+      "updates": 2,
+      "seed": 910842
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x7",
+      "symbol_bits_per_cycle": 4,
+      "updates_per_transition": 2,
+      "state_width": 8
+    },
+    "aag_sha256": "2b9542e9de8fdf6f63b49435641eb2248b069f92d133108f49a247a66344c3cb",
+    "blif_sha256": "fd0f7d20c6959dd94618000236b840fe62394b82772bae3bca5fc88c13bedc0f",
+    "aag_lines": 245,
+    "blif_lines": 263,
+    "stats": {
+      "inputs": 4,
+      "latches": 16,
+      "ands": 0,
+      "xors": 72,
+      "ors": 7,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910842_symbol_bits4_updates2_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910842_symbol_bits4_updates2_width8.blif"
+    },
+    "stem": "crc_equiv_polynomial7_seed910842_symbol_bits4_updates2_width8"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07",
+      "width": 8,
+      "polynomial": 7,
+      "symbol_bits": 8,
+      "updates": 1,
+      "seed": 910881
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x7",
+      "symbol_bits_per_cycle": 8,
+      "updates_per_transition": 1,
+      "state_width": 8
+    },
+    "aag_sha256": "c028ef176a25b22aaa35636180a542f335375d0efe639d04fd5cf785d481700d",
+    "blif_sha256": "0a54a492629631e679b85172866939a2917f80990428178d0e66f46d74466d86",
+    "aag_lines": 261,
+    "blif_lines": 275,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 0,
+      "xors": 76,
+      "ors": 7,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910881_symbol_bits8_updates1_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910881_symbol_bits8_updates1_width8.blif"
+    },
+    "stem": "crc_equiv_polynomial7_seed910881_symbol_bits8_updates1_width8"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07",
+      "width": 8,
+      "polynomial": 7,
+      "symbol_bits": 8,
+      "updates": 2,
+      "seed": 910882
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-8 polynomial 0x07"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x7",
+      "symbol_bits_per_cycle": 8,
+      "updates_per_transition": 2,
+      "state_width": 8
+    },
+    "aag_sha256": "ffe3da605800bb266929aeaa5e11dad6666cc511f1e60740242362db731c2213",
+    "blif_sha256": "04da240651b7b074d031802734993f2f00c85c2dbb83b0a3c298e6f54651f582",
+    "aag_lines": 465,
+    "blif_lines": 479,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 0,
+      "xors": 144,
+      "ors": 7,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910882_symbol_bits8_updates2_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial7_seed910882_symbol_bits8_updates2_width8.blif"
+    },
+    "stem": "crc_equiv_polynomial7_seed910882_symbol_bits8_updates2_width8"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 1,
+      "updates": 1,
+      "seed": 911611
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x1021",
+      "symbol_bits_per_cycle": 1,
+      "updates_per_transition": 1,
+      "state_width": 16
+    },
+    "aag_sha256": "d31fc3a862e67584b82234426f4ce121a8c58bf200fa80700e58cf10f3bac84a",
+    "blif_sha256": "bf33846a4996737f394ca7b54a462d99bdc9d50f8826c262970af1a798af65c8",
+    "aag_lines": 122,
+    "blif_lines": 159,
+    "stats": {
+      "inputs": 1,
+      "latches": 32,
+      "ands": 0,
+      "xors": 24,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911611_symbol_bits1_updates1_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911611_symbol_bits1_updates1_width16.blif"
+    },
+    "stem": "crc_equiv_polynomial4129_seed911611_symbol_bits1_updates1_width16"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 1,
+      "updates": 2,
+      "seed": 911612
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x1021",
+      "symbol_bits_per_cycle": 1,
+      "updates_per_transition": 2,
+      "state_width": 16
+    },
+    "aag_sha256": "dce22d442b33725906a528a13503cf6cf5f87ca30e96fb22526bf2072d204b53",
+    "blif_sha256": "0f97fd36838eed297d17869a50e38ecc3c5b64cb0e8ecef0c098d089e5c34cde",
+    "aag_lines": 146,
+    "blif_lines": 183,
+    "stats": {
+      "inputs": 1,
+      "latches": 32,
+      "ands": 0,
+      "xors": 32,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911612_symbol_bits1_updates2_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911612_symbol_bits1_updates2_width16.blif"
+    },
+    "stem": "crc_equiv_polynomial4129_seed911612_symbol_bits1_updates2_width16"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 4,
+      "updates": 1,
+      "seed": 911641
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x1021",
+      "symbol_bits_per_cycle": 4,
+      "updates_per_transition": 1,
+      "state_width": 16
+    },
+    "aag_sha256": "2d2b2a40fc014aeb949be1a57ce7d0f07474ccc1375e84a4ac6e94b086ed662c",
+    "blif_sha256": "0af23b321b2705ea0183a1e8888dd51a1224393fda06faae3ef950924c22acfc",
+    "aag_lines": 197,
+    "blif_lines": 231,
+    "stats": {
+      "inputs": 4,
+      "latches": 32,
+      "ands": 0,
+      "xors": 48,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911641_symbol_bits4_updates1_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911641_symbol_bits4_updates1_width16.blif"
+    },
+    "stem": "crc_equiv_polynomial4129_seed911641_symbol_bits4_updates1_width16"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 4,
+      "updates": 2,
+      "seed": 911642
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x1021",
+      "symbol_bits_per_cycle": 4,
+      "updates_per_transition": 2,
+      "state_width": 16
+    },
+    "aag_sha256": "702e69b37cb57d5c95fca67eff2b92d7b42ea2e18e62a779f1dc6d3cf3f5f31b",
+    "blif_sha256": "3ac00e6223988f891d75374383657a89462ded23cf94e541579453d5867f8218",
+    "aag_lines": 293,
+    "blif_lines": 327,
+    "stats": {
+      "inputs": 4,
+      "latches": 32,
+      "ands": 0,
+      "xors": 80,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911642_symbol_bits4_updates2_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911642_symbol_bits4_updates2_width16.blif"
+    },
+    "stem": "crc_equiv_polynomial4129_seed911642_symbol_bits4_updates2_width16"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 8,
+      "updates": 1,
+      "seed": 911681
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x1021",
+      "symbol_bits_per_cycle": 8,
+      "updates_per_transition": 1,
+      "state_width": 16
+    },
+    "aag_sha256": "5dd11a8b972cbd79a161033a5b609767a92adfbfd81a6093f61446b344ae981b",
+    "blif_sha256": "0062d0977dffcc71373c762cc06a7c074556b9544f190f272dc22d1479d6f2da",
+    "aag_lines": 345,
+    "blif_lines": 375,
+    "stats": {
+      "inputs": 8,
+      "latches": 32,
+      "ands": 0,
+      "xors": 96,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911681_symbol_bits8_updates1_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911681_symbol_bits8_updates1_width16.blif"
+    },
+    "stem": "crc_equiv_polynomial4129_seed911681_symbol_bits8_updates1_width16"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 8,
+      "updates": 2,
+      "seed": 911682
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-16-CCITT polynomial 0x1021"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x1021",
+      "symbol_bits_per_cycle": 8,
+      "updates_per_transition": 2,
+      "state_width": 16
+    },
+    "aag_sha256": "8893ccf5e8b87d3fb481e5971ab39046d2b28b24bdc81939cf091ba3e4db3f0b",
+    "blif_sha256": "6c59909a1376de9cf7c8450d377fe1028fffc5e3ebf8e8b0af67bb10ae6fa117",
+    "aag_lines": 585,
+    "blif_lines": 615,
+    "stats": {
+      "inputs": 8,
+      "latches": 32,
+      "ands": 0,
+      "xors": 176,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911682_symbol_bits8_updates2_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial4129_seed911682_symbol_bits8_updates2_width16.blif"
+    },
+    "stem": "crc_equiv_polynomial4129_seed911682_symbol_bits8_updates2_width16"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 1,
+      "updates": 1,
+      "seed": 913211
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x4c11db7",
+      "symbol_bits_per_cycle": 1,
+      "updates_per_transition": 1,
+      "state_width": 32
+    },
+    "aag_sha256": "3658b35c6a3fb67d8d4a0a912bece69a0680cf28b4921b78059734bc3eb1f6f7",
+    "blif_sha256": "f3d7342fd3b333fd2ec198f8e09be544e9743141d4dac818608e25fbb1814fd4",
+    "aag_lines": 317,
+    "blif_lines": 386,
+    "stats": {
+      "inputs": 1,
+      "latches": 64,
+      "ands": 0,
+      "xors": 73,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913211_symbol_bits1_updates1_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913211_symbol_bits1_updates1_width32.blif"
+    },
+    "stem": "crc_equiv_polynomial79764919_seed913211_symbol_bits1_updates1_width32"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 1,
+      "updates": 2,
+      "seed": 913212
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x4c11db7",
+      "symbol_bits_per_cycle": 1,
+      "updates_per_transition": 2,
+      "state_width": 32
+    },
+    "aag_sha256": "80ed09dc48f9f80832999910729e78be1bf6b4e684701bf55e67ae6d8aabe131",
+    "blif_sha256": "6da5d8db547c1c47a2ee012ac2e935ec5b98ee6a0fca0a306c5549d774ea7042",
+    "aag_lines": 440,
+    "blif_lines": 509,
+    "stats": {
+      "inputs": 1,
+      "latches": 64,
+      "ands": 0,
+      "xors": 114,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913212_symbol_bits1_updates2_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913212_symbol_bits1_updates2_width32.blif"
+    },
+    "stem": "crc_equiv_polynomial79764919_seed913212_symbol_bits1_updates2_width32"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 4,
+      "updates": 1,
+      "seed": 913241
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x4c11db7",
+      "symbol_bits_per_cycle": 4,
+      "updates_per_transition": 1,
+      "state_width": 32
+    },
+    "aag_sha256": "9fcbe5671ad0c888b72c6e509ffe620eb88f0e8bca920c8426c33268016c1549",
+    "blif_sha256": "5111a7f689db90a5709ef31ddaf61193653246ecd01a5ebc709ee0226d37976b",
+    "aag_lines": 689,
+    "blif_lines": 755,
+    "stats": {
+      "inputs": 4,
+      "latches": 64,
+      "ands": 0,
+      "xors": 196,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913241_symbol_bits4_updates1_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913241_symbol_bits4_updates1_width32.blif"
+    },
+    "stem": "crc_equiv_polynomial79764919_seed913241_symbol_bits4_updates1_width32"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 4,
+      "updates": 2,
+      "seed": 913242
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x4c11db7",
+      "symbol_bits_per_cycle": 4,
+      "updates_per_transition": 2,
+      "state_width": 32
+    },
+    "aag_sha256": "212328e65c92e1dc006c00e8595c491e1e29c5915ecea14d8692a23232c915cb",
+    "blif_sha256": "e00b5e0b3851e1104c16658c8016a328cb5d074681e6f237746677ba58f2e277",
+    "aag_lines": 1181,
+    "blif_lines": 1247,
+    "stats": {
+      "inputs": 4,
+      "latches": 64,
+      "ands": 0,
+      "xors": 360,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913242_symbol_bits4_updates2_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913242_symbol_bits4_updates2_width32.blif"
+    },
+    "stem": "crc_equiv_polynomial79764919_seed913242_symbol_bits4_updates2_width32"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 8,
+      "updates": 1,
+      "seed": 913281
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x4c11db7",
+      "symbol_bits_per_cycle": 8,
+      "updates_per_transition": 1,
+      "state_width": 32
+    },
+    "aag_sha256": "7fb70ac514e661455867edd91948f0e4dab82c154d1a6ad12a05396e2d53783c",
+    "blif_sha256": "be5c4abcc97025df3032107abc50f6b564b397604ab1effd9a03e467c4fc82f2",
+    "aag_lines": 1197,
+    "blif_lines": 1259,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 0,
+      "xors": 364,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913281_symbol_bits8_updates1_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913281_symbol_bits8_updates1_width32.blif"
+    },
+    "stem": "crc_equiv_polynomial79764919_seed913281_symbol_bits8_updates1_width32"
+  },
+  {
+    "family": "crc_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 8,
+      "updates": 2,
+      "seed": 913282
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "serial-vs-matrix CRC state equivalence",
+      "source": "CRC-32 polynomial 0x04C11DB7"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_crc_state == matrix_expanded_crc_state",
+      "standard_polynomial": "0x4c11db7",
+      "symbol_bits_per_cycle": 8,
+      "updates_per_transition": 2,
+      "state_width": 32
+    },
+    "aag_sha256": "e50fd1c74df48c931b0742a1fd30b3c856a918522bc6cee62f49852af757902c",
+    "blif_sha256": "b90d70a4edc3f058edb2ede3cc211044b063d5e1d2abbaf2bd5e30faf99c3892",
+    "aag_lines": 2193,
+    "blif_lines": 2255,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 0,
+      "xors": 696,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913282_symbol_bits8_updates2_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/crc_equiv_polynomial79764919_seed913282_symbol_bits8_updates2_width32.blif"
+    },
+    "stem": "crc_equiv_polynomial79764919_seed913282_symbol_bits8_updates2_width32"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 1,
+      "rounds": 1,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 920110
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 1,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "fe77d003930f479e24121243a0cffc21c4c298d2761fcbfbe04514cb060e2e37",
+    "blif_sha256": "0c3c446a50866b1b3d29ae4bc509f509bfaced70a8b62b9bf9d080c76f559760",
+    "aag_lines": 1233,
+    "blif_lines": 1295,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 0,
+      "xors": 376,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920110_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920110_variant0.blif"
+    },
+    "stem": "aes_linear_equiv_columns1_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920110_variant0"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 1,
+      "rounds": 1,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 920111
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 1,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "f715bde4b5f783b19b96d132869c00c2e85b588ae8b4f1bceba852d8f8c294fe",
+    "blif_sha256": "884a66c309d4475ea0e00be0fa543dd96019ddfdc627e821aaf6caa8fe56d52f",
+    "aag_lines": 1233,
+    "blif_lines": 1295,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 0,
+      "xors": 376,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920111_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920111_variant1.blif"
+    },
+    "stem": "aes_linear_equiv_columns1_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920111_variant1"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 1,
+      "rounds": 2,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 920120
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 1,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "7171784d12ca5e6f9357c1fcb1a455c6ac86bc8807daa62d4b105385095059fe",
+    "blif_sha256": "297932587952ab0dcee06199e8bcf8b0f5b581ccfa0eb7f4d8419c3edc7b8e1e",
+    "aag_lines": 2265,
+    "blif_lines": 2327,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 0,
+      "xors": 720,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920120_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920120_variant0.blif"
+    },
+    "stem": "aes_linear_equiv_columns1_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920120_variant0"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 1,
+      "rounds": 2,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 920121
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 1,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "4219868697a35bb94c2695843b9f90e420fd31fdbe4d89bbdfe1ecab257f8ced",
+    "blif_sha256": "840cd7ad42aa82490f24506ad582ba33998c2dad1ee9b9085d37e222207bc5eb",
+    "aag_lines": 2265,
+    "blif_lines": 2327,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 0,
+      "xors": 720,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920121_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns1_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920121_variant1.blif"
+    },
+    "stem": "aes_linear_equiv_columns1_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920121_variant1"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 2,
+      "rounds": 1,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 920210
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 2,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "0a414327c1f3d924fb535a871c9f3525b0a60ad0bb551dcc7129cb475546e554",
+    "blif_sha256": "e12abdda50ec5244345807fd005ef86b22ceeef50395af151eba8d623423dd83",
+    "aag_lines": 2457,
+    "blif_lines": 2583,
+    "stats": {
+      "inputs": 8,
+      "latches": 128,
+      "ands": 0,
+      "xors": 752,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920210_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920210_variant0.blif"
+    },
+    "stem": "aes_linear_equiv_columns2_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920210_variant0"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 2,
+      "rounds": 1,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 920211
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 2,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "b4cb4a0f389c6894d8a7f512aafd0f0582172d0e54b4204b8cf452cc24ea2cb5",
+    "blif_sha256": "4bc8d8d013023a27e3e8c4d78a8964d074e1cd4e851d0438dfd432b65016df31",
+    "aag_lines": 2457,
+    "blif_lines": 2583,
+    "stats": {
+      "inputs": 8,
+      "latches": 128,
+      "ands": 0,
+      "xors": 752,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920211_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920211_variant1.blif"
+    },
+    "stem": "aes_linear_equiv_columns2_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920211_variant1"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 2,
+      "rounds": 2,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 920220
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 2,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "199146cfe9bf10951497956dcee188f0960bf3630f2fb36b8e0489b5e76c0f9f",
+    "blif_sha256": "ec343201b7c273c05c99daaa63f116bbdee121d71e0dc173720182a40429dd57",
+    "aag_lines": 4521,
+    "blif_lines": 4647,
+    "stats": {
+      "inputs": 8,
+      "latches": 128,
+      "ands": 0,
+      "xors": 1440,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920220_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920220_variant0.blif"
+    },
+    "stem": "aes_linear_equiv_columns2_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920220_variant0"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 2,
+      "rounds": 2,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 920221
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 2,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "a8c54046d04d45c4eea8f632124df74b78cd274a22d29e58fcb29320f4c3673a",
+    "blif_sha256": "f743fdb33516d35559636d1b772bb1b2c444ed440a670c838052b20269f039e7",
+    "aag_lines": 4521,
+    "blif_lines": 4647,
+    "stats": {
+      "inputs": 8,
+      "latches": 128,
+      "ands": 0,
+      "xors": 1440,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920221_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns2_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920221_variant1.blif"
+    },
+    "stem": "aes_linear_equiv_columns2_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920221_variant1"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 4,
+      "rounds": 1,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 920410
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 4,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "913816310bbca9ecaba80bfc57d365b5228f05a711d05a2ae31bf12fbe310b65",
+    "blif_sha256": "5dae76f581b8aac6dba49fa441b7f789d5652278806c625adc4ee6dbdfb92bd4",
+    "aag_lines": 4905,
+    "blif_lines": 5159,
+    "stats": {
+      "inputs": 8,
+      "latches": 256,
+      "ands": 0,
+      "xors": 1504,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920410_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920410_variant0.blif"
+    },
+    "stem": "aes_linear_equiv_columns4_input_bits8_left_topologyserial_right_topologybalanced_rounds1_seed920410_variant0"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 4,
+      "rounds": 1,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 920411
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 4,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "2d71f274fbba35a27dc3a97bedc4d6c19dcefae01c0a6a157494f751434ac4f5",
+    "blif_sha256": "707dd80ebb692ce641d048a0e400a5c84790cd2cd422c21a868263dc0edbe795",
+    "aag_lines": 4905,
+    "blif_lines": 5159,
+    "stats": {
+      "inputs": 8,
+      "latches": 256,
+      "ands": 0,
+      "xors": 1504,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920411_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920411_variant1.blif"
+    },
+    "stem": "aes_linear_equiv_columns4_input_bits8_left_topologybalanced_right_topologyserial_rounds1_seed920411_variant1"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 4,
+      "rounds": 2,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 920420
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 4,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "fd744bc86d7b68a5eae946abe3c260c898749256700ff6e98af21b7ab2b5aac9",
+    "blif_sha256": "d832c6e4d0433e0d8ae2abc017f037a937b16bde02a222b80f0b73788ff40ea1",
+    "aag_lines": 9033,
+    "blif_lines": 9287,
+    "stats": {
+      "inputs": 8,
+      "latches": 256,
+      "ands": 0,
+      "xors": 2880,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920420_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920420_variant0.blif"
+    },
+    "stem": "aes_linear_equiv_columns4_input_bits8_left_topologyserial_right_topologybalanced_rounds2_seed920420_variant0"
+  },
+  {
+    "family": "aes_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns",
+      "columns": 4,
+      "rounds": 2,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 920421
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of AES MixColumns",
+      "source": "FIPS 197 MixColumns"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "two AES MixColumns implementations remain equivalent",
+      "standard": "FIPS 197 MixColumns over GF(2^8), modulus 0x11b",
+      "columns": 4,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "2445c4216fa2265acd3b4b000a6057c1c1f89def728077ce825c95844e8a332a",
+    "blif_sha256": "5e00719e255d5927be93c41bbe24aece72ef8e2556394a0b7420cfcc1c993dbd",
+    "aag_lines": 9033,
+    "blif_lines": 9287,
+    "stats": {
+      "inputs": 8,
+      "latches": 256,
+      "ands": 0,
+      "xors": 2880,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920421_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/aes_linear_equiv_columns4_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920421_variant1.blif"
+    },
+    "stem": "aes_linear_equiv_columns4_input_bits8_left_topologybalanced_right_topologyserial_rounds2_seed920421_variant1"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 2,
+      "rounds": 1,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 930210
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 2,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "91845ec265bbff0b6e987d9924012dbe63d2fc731de39d4ae5883422385dc9b4",
+    "blif_sha256": "9ad13cd4a4987de14ca172e61558dbe07011771eb51cb00da6618b36df8a0ab9",
+    "aag_lines": 1209,
+    "blif_lines": 1307,
+    "stats": {
+      "inputs": 8,
+      "latches": 100,
+      "ands": 0,
+      "xors": 350,
+      "ors": 49,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologyserial_right_topologybalanced_rounds1_seed930210_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologyserial_right_topologybalanced_rounds1_seed930210_variant0.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width2_left_topologyserial_right_topologybalanced_rounds1_seed930210_variant0"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 2,
+      "rounds": 1,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 930211
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 2,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "daf5c40018ee7b783f36a45c0cfb077b5a7b33e23195c8ccafedd09642fad62a",
+    "blif_sha256": "b8f120eee7f2c895f75e487c759a9b750a6f6e5c79898d9367fb4e87388b3a1e",
+    "aag_lines": 1209,
+    "blif_lines": 1307,
+    "stats": {
+      "inputs": 8,
+      "latches": 100,
+      "ands": 0,
+      "xors": 350,
+      "ors": 49,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologybalanced_right_topologyserial_rounds1_seed930211_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologybalanced_right_topologyserial_rounds1_seed930211_variant1.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width2_left_topologybalanced_right_topologyserial_rounds1_seed930211_variant1"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 2,
+      "rounds": 2,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 930220
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 2,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "086e79c16e8606c8851a5453f3a27185608870831c72491c464ee63a393f3098",
+    "blif_sha256": "e3361d169c292e227a5e2f322bf4aedce1685255f9880c407cdc93c62d5f92b7",
+    "aag_lines": 2109,
+    "blif_lines": 2207,
+    "stats": {
+      "inputs": 8,
+      "latches": 100,
+      "ands": 0,
+      "xors": 650,
+      "ors": 49,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologyserial_right_topologybalanced_rounds2_seed930220_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologyserial_right_topologybalanced_rounds2_seed930220_variant0.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width2_left_topologyserial_right_topologybalanced_rounds2_seed930220_variant0"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 2,
+      "rounds": 2,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 930221
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 2,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "add174d5f5098582e6e897101fd1e1adc9ac5da1b1acc3b83a1c522cb4091a78",
+    "blif_sha256": "e2504d692f9f9a5e482e95430a0347cc2e9689782a7dfbcc3cbad62f0bb061d9",
+    "aag_lines": 2109,
+    "blif_lines": 2207,
+    "stats": {
+      "inputs": 8,
+      "latches": 100,
+      "ands": 0,
+      "xors": 650,
+      "ors": 49,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologybalanced_right_topologyserial_rounds2_seed930221_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width2_left_topologybalanced_right_topologyserial_rounds2_seed930221_variant1.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width2_left_topologybalanced_right_topologyserial_rounds2_seed930221_variant1"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 4,
+      "rounds": 1,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 930410
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 4,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "57f4f0f95c1c7b071cbabad9836d94fb450dfcaea54c49c30763eaf696058bd0",
+    "blif_sha256": "ecae63e6123cd10a02f3ce2d0f8eb554a3a01fc5e04a00cf30926a0ea172fc93",
+    "aag_lines": 2409,
+    "blif_lines": 2607,
+    "stats": {
+      "inputs": 8,
+      "latches": 200,
+      "ands": 0,
+      "xors": 700,
+      "ors": 99,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologyserial_right_topologybalanced_rounds1_seed930410_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologyserial_right_topologybalanced_rounds1_seed930410_variant0.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width4_left_topologyserial_right_topologybalanced_rounds1_seed930410_variant0"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 4,
+      "rounds": 1,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 930411
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 4,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "2c34392a8770d1755661641ad4549c51880af2ab734eb633d51365cb048a309b",
+    "blif_sha256": "ace226fb5f522a870122059c400c63737a840e31ad2f59c121895b16c634fd6d",
+    "aag_lines": 2409,
+    "blif_lines": 2607,
+    "stats": {
+      "inputs": 8,
+      "latches": 200,
+      "ands": 0,
+      "xors": 700,
+      "ors": 99,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologybalanced_right_topologyserial_rounds1_seed930411_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologybalanced_right_topologyserial_rounds1_seed930411_variant1.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width4_left_topologybalanced_right_topologyserial_rounds1_seed930411_variant1"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 4,
+      "rounds": 2,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 930420
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 4,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "4d75a3e7d2b9c0a0e2e9c665cf1e0ba2f7728221d9cb6c3c722a149141b7e47c",
+    "blif_sha256": "1a56eed638a92259b710184a511a5675835c829533ef52ae60ac81a1ee075ca9",
+    "aag_lines": 4209,
+    "blif_lines": 4407,
+    "stats": {
+      "inputs": 8,
+      "latches": 200,
+      "ands": 0,
+      "xors": 1300,
+      "ors": 99,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologyserial_right_topologybalanced_rounds2_seed930420_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologyserial_right_topologybalanced_rounds2_seed930420_variant0.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width4_left_topologyserial_right_topologybalanced_rounds2_seed930420_variant0"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 4,
+      "rounds": 2,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 930421
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 4,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "64069fdf4eb3408aec6bcda7702fb02ca86089c5e8cd8b9716a7277817a93f42",
+    "blif_sha256": "4f29e241b81414d2678a78910827615a4ff13a7d9a5108edf8349ad36261f208",
+    "aag_lines": 4209,
+    "blif_lines": 4407,
+    "stats": {
+      "inputs": 8,
+      "latches": 200,
+      "ands": 0,
+      "xors": 1300,
+      "ors": 99,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologybalanced_right_topologyserial_rounds2_seed930421_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width4_left_topologybalanced_right_topologyserial_rounds2_seed930421_variant1.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width4_left_topologybalanced_right_topologyserial_rounds2_seed930421_variant1"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 8,
+      "rounds": 1,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 930810
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 8,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "db1e671c5c1edf5fca4a371d4f65144c118797e924863554986194dc33564c83",
+    "blif_sha256": "3e74e38cc806156ba12c630940f6c8b2bda87be0d6c111b7383d32df258a9843",
+    "aag_lines": 4809,
+    "blif_lines": 5207,
+    "stats": {
+      "inputs": 8,
+      "latches": 400,
+      "ands": 0,
+      "xors": 1400,
+      "ors": 199,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologyserial_right_topologybalanced_rounds1_seed930810_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologyserial_right_topologybalanced_rounds1_seed930810_variant0.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width8_left_topologyserial_right_topologybalanced_rounds1_seed930810_variant0"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 8,
+      "rounds": 1,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 930811
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 8,
+      "rounds_per_transition": 1
+    },
+    "aag_sha256": "f045404d45b6359be63223811a576a95e8bd881af5f1c34124e968b3369b070d",
+    "blif_sha256": "40f78cf1290d3e18a613675bedcbac2bd28100b92361588b282c88718717c1e7",
+    "aag_lines": 4809,
+    "blif_lines": 5207,
+    "stats": {
+      "inputs": 8,
+      "latches": 400,
+      "ands": 0,
+      "xors": 1400,
+      "ors": 199,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologybalanced_right_topologyserial_rounds1_seed930811_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologybalanced_right_topologyserial_rounds1_seed930811_variant1.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width8_left_topologybalanced_right_topologyserial_rounds1_seed930811_variant1"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 8,
+      "rounds": 2,
+      "left_topology": "serial",
+      "right_topology": "balanced",
+      "input_bits": 8,
+      "variant": 0,
+      "seed": 930820
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 8,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "0de25d8191578eaa282366abec777e86b68d119a086ea8fbeb40ec2bc60b4ee2",
+    "blif_sha256": "561c6e6bcc2743bfedd2702bd316acff4731088a9042f714f98f925b9c31a1a8",
+    "aag_lines": 8409,
+    "blif_lines": 8807,
+    "stats": {
+      "inputs": 8,
+      "latches": 400,
+      "ands": 0,
+      "xors": 2600,
+      "ors": 199,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologyserial_right_topologybalanced_rounds2_seed930820_variant0.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologyserial_right_topologybalanced_rounds2_seed930820_variant0.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width8_left_topologyserial_right_topologybalanced_rounds2_seed930820_variant0"
+  },
+  {
+    "family": "keccak_linear_equiv",
+    "params": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps",
+      "lane_width": 8,
+      "rounds": 2,
+      "left_topology": "balanced",
+      "right_topology": "serial",
+      "input_bits": 8,
+      "variant": 1,
+      "seed": 930821
+    },
+    "classification": {
+      "category": "crypto-linear",
+      "semantic": "dual implementation of Keccak theta-rho-pi",
+      "source": "FIPS 202 Keccak-f linear steps"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial and balanced Keccak linear layers remain equivalent",
+      "standard": "FIPS 202 Keccak-f theta, rho, and pi steps (chi/iota omitted)",
+      "lane_width": 8,
+      "rounds_per_transition": 2
+    },
+    "aag_sha256": "efcdf1a2bdaba29865363dadd387740664eb462d2a92439d0d2e13aad9e4352d",
+    "blif_sha256": "5fb8e2509e8de7177283ddf7ce9bf5f22b2a5a22a7c4d306e55a1fccf9fb5f68",
+    "aag_lines": 8409,
+    "blif_lines": 8807,
+    "stats": {
+      "inputs": 8,
+      "latches": 400,
+      "ands": 0,
+      "xors": 2600,
+      "ors": 199,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologybalanced_right_topologyserial_rounds2_seed930821_variant1.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/keccak_linear_equiv_input_bits8_lane_width8_left_topologybalanced_right_topologyserial_rounds2_seed930821_variant1.blif"
+    },
+    "stem": "keccak_linear_equiv_input_bits8_lane_width8_left_topologybalanced_right_topologyserial_rounds2_seed930821_variant1"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 8,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 940810
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 8,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "f20fe19a5017251c92fa6c0083f420ebb41649a16c43009fb7a7556618407f83",
+    "blif_sha256": "02222da16a55733b78590bbcb3af6354a2282954d704b3c46329f890fc847ebe",
+    "aag_lines": 977,
+    "blif_lines": 1323,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 128,
+      "xors": 236,
+      "ors": 95,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6483516483516484,
+    "bad_cone_xor_density": 0.6638655462184874,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed940810_variant0_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed940810_variant0_width8.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed940810_variant0_width8"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 8,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 940811
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 8,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "7502ddc1c979ad912d2ad9590460c5f70ba20b3b30d2eeefbf71d68faf1810f8",
+    "blif_sha256": "0dfdbd6cbb1863e34ae7c089edca2fd178d9445223fde8560741beabe8778904",
+    "aag_lines": 1069,
+    "blif_lines": 1751,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 192,
+      "xors": 304,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6129032258064516,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed940811_variant1_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed940811_variant1_width8.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed940811_variant1_width8"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 8,
+      "rounds": 2,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 940820
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 8,
+      "rounds_per_transition": 2,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "e1ebd7ec41ba9c27941ab85d2e278f0406e5e1888f2d42c1f603ab1d97aaf70d",
+    "blif_sha256": "fa4104abf415185ef2d9da46d315dcb8eb7a5be3de869e90ad3f20245251b9b4",
+    "aag_lines": 1753,
+    "blif_lines": 2383,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 256,
+      "xors": 440,
+      "ors": 159,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.632183908045977,
+    "bad_cone_xor_density": 0.6638655462184874,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed940820_variant0_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed940820_variant0_width8.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed940820_variant0_width8"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 8,
+      "rounds": 2,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 940821
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 8,
+      "rounds_per_transition": 2,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "09cbec3a3b98bf7b9d01f8245ac67cc2cf2a8377014aa73e51a257e3c000936e",
+    "blif_sha256": "9a344c1d8ebcba202ff19cd6d2b67b7badf03b200b4b034f6c33871d872b45d3",
+    "aag_lines": 1937,
+    "blif_lines": 3239,
+    "stats": {
+      "inputs": 8,
+      "latches": 64,
+      "ands": 384,
+      "xors": 576,
+      "ors": 223,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed940821_variant1_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed940821_variant1_width8.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed940821_variant1_width8"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 16,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 941610
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 16,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "f1bed863b5fa48c29d27d7260c963d8b14067a468f0157067bf214507c567d57",
+    "blif_sha256": "19801eb7408b00802af075c20b337a192280366cdd1d82456fe303a7632ed8ec",
+    "aag_lines": 1993,
+    "blif_lines": 2651,
+    "stats": {
+      "inputs": 16,
+      "latches": 128,
+      "ands": 256,
+      "xors": 476,
+      "ors": 191,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6502732240437158,
+    "bad_cone_xor_density": 0.6652719665271967,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed941610_variant0_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed941610_variant0_width16.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed941610_variant0_width16"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 16,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 941611
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 16,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "a0c16884c9655a93e60e89ff2a493a31cf6bce293748fe8494e4c30e345d0965",
+    "blif_sha256": "f5e781e2ed60ece82e04f8bf136a0e53754a57a83de854940e4140db57f572ba",
+    "aag_lines": 2213,
+    "blif_lines": 3495,
+    "stats": {
+      "inputs": 16,
+      "latches": 128,
+      "ands": 384,
+      "xors": 608,
+      "ors": 255,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6129032258064516,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed941611_variant1_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed941611_variant1_width16.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed941611_variant1_width16"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 16,
+      "rounds": 2,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 941620
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 16,
+      "rounds_per_transition": 2,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "c91dd9ba39c86380d4b3a2f4073884d6793c357db557c3d744f2cf475a501f77",
+    "blif_sha256": "6ed72d284d801607575fc85a2b490fc189e9cbd8e98a625b65efd00723b22e49",
+    "aag_lines": 3585,
+    "blif_lines": 4783,
+    "stats": {
+      "inputs": 16,
+      "latches": 128,
+      "ands": 512,
+      "xors": 888,
+      "ors": 319,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6342857142857142,
+    "bad_cone_xor_density": 0.6652719665271967,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed941620_variant0_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed941620_variant0_width16.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed941620_variant0_width16"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 16,
+      "rounds": 2,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 941621
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 16,
+      "rounds_per_transition": 2,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "e7b1db875c8fd71dc845cd32baee0a3c33a71325b9b06545d2a12498c329de3a",
+    "blif_sha256": "952a86ab0d283b62149ba118f64d75469c7009fa9c74efc5b1f80052336d5729",
+    "aag_lines": 4025,
+    "blif_lines": 6471,
+    "stats": {
+      "inputs": 16,
+      "latches": 128,
+      "ands": 768,
+      "xors": 1152,
+      "ors": 447,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed941621_variant1_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed941621_variant1_width16.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed941621_variant1_width16"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 32,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 943210
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 32,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "b45a0ed37a4d348f4cf7167e098eeb9af93a5cdbbb8b814491027844aa9ab967",
+    "blif_sha256": "ea86388d60f0a02451533c988570325014b5e24bc6ac62e7cc41322d1fed4f9f",
+    "aag_lines": 4025,
+    "blif_lines": 5307,
+    "stats": {
+      "inputs": 32,
+      "latches": 256,
+      "ands": 512,
+      "xors": 956,
+      "ors": 383,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6512261580381471,
+    "bad_cone_xor_density": 0.6659707724425887,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed943210_variant0_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed943210_variant0_width32.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds1_seed943210_variant0_width32"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 32,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 943211
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 32,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "3d3573eb265daabc160ec4f335fc6f2cb59998668251a97c90115cb7beff7fb4",
+    "blif_sha256": "7fe7d05c341e80174fca0d0153991ec5685998346e8500e0479309ba81c13ee7",
+    "aag_lines": 4501,
+    "blif_lines": 6983,
+    "stats": {
+      "inputs": 32,
+      "latches": 256,
+      "ands": 768,
+      "xors": 1216,
+      "ors": 511,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6129032258064516,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed943211_variant1_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed943211_variant1_width32.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds1_seed943211_variant1_width32"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 32,
+      "rounds": 2,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 943220
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 32,
+      "rounds_per_transition": 2,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "22c13121d7b123687ac471ed46cea1f6f8641d0e5c7050f205afbf2d88522402",
+    "blif_sha256": "5ad5a6d752e5f1a1461830545c3d10dc0d5c311a28ad282a08bfcc816cab15ac",
+    "aag_lines": 7249,
+    "blif_lines": 9583,
+    "stats": {
+      "inputs": 32,
+      "latches": 256,
+      "ands": 1024,
+      "xors": 1784,
+      "ors": 639,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6353276353276354,
+    "bad_cone_xor_density": 0.6659707724425887,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed943220_variant0_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed943220_variant0_width32.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structprefix_rounds2_seed943220_variant0_width32"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled",
+      "primitive": "chacha",
+      "width": 32,
+      "rounds": 2,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 943221
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "ChaCha quarter-round state equivalence",
+      "source": "RFC 8439 structure; reduced-width variants are labeled"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "chacha",
+      "standard": "RFC 8439 ChaCha quarter-round structure; rotations scaled for reduced widths",
+      "width": 32,
+      "rounds_per_transition": 2,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "a56960d24b2e3f7c5383ef1573fed93a86e70df7874dafdd9ab3e57dd6b0f7ab",
+    "blif_sha256": "8d08a77be4c0a97f91341b2fce4e5912a123ea0c1b8a41f36fafe3d38e4c4906",
+    "aag_lines": 8201,
+    "blif_lines": 12935,
+    "stats": {
+      "inputs": 32,
+      "latches": 256,
+      "ands": 1536,
+      "xors": 2304,
+      "ors": 895,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed943221_variant1_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed943221_variant1_width32.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivechacha_right_structcarrysave_rounds2_seed943221_variant1_width32"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants",
+      "primitive": "speck",
+      "width": 16,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 946600
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "speck",
+      "standard": "Speck ARX round structure; reduced word widths are verification variants",
+      "width": 16,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "4deeaa30c66638e26d51d25a5713dc54a26523987f363ade43bd88828f4758cc",
+    "blif_sha256": "054425f7bbd8638740f73a1873590a6461fdd0177393599aa7cf6b60599b65ab",
+    "aag_lines": 679,
+    "blif_lines": 868,
+    "stats": {
+      "inputs": 16,
+      "latches": 64,
+      "ands": 64,
+      "xors": 159,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7130044843049327,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed946600_variant0_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed946600_variant0_width16.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed946600_variant0_width16"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants",
+      "primitive": "speck",
+      "width": 16,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 946601
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "speck",
+      "standard": "Speck ARX round structure; reduced word widths are verification variants",
+      "width": 16,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "a155a1324ad6e544ea14ff1330036abffa7ae3ce74d5d484e5a172c261c04192",
+    "blif_sha256": "9d8d61467decaae61457498983f8ea9721b85ec3f014f2b0bd2f93758abdbe8d",
+    "aag_lines": 734,
+    "blif_lines": 1079,
+    "stats": {
+      "inputs": 16,
+      "latches": 64,
+      "ands": 96,
+      "xors": 192,
+      "ors": 79,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6666666666666666,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed946601_variant1_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed946601_variant1_width16.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed946601_variant1_width16"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants",
+      "primitive": "speck",
+      "width": 24,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 947400
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "speck",
+      "standard": "Speck ARX round structure; reduced word widths are verification variants",
+      "width": 24,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "b7b36d8b226762482c3bdcdc2ee8176c1458913dad57d231742702218d054631",
+    "blif_sha256": "31d1036598e6d63067fcbd2665797b727cd76183ed8a44bae192f7b541a9c558",
+    "aag_lines": 1023,
+    "blif_lines": 1300,
+    "stats": {
+      "inputs": 24,
+      "latches": 96,
+      "ands": 96,
+      "xors": 239,
+      "ors": 95,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7134328358208956,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed947400_variant0_width24.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed947400_variant0_width24.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed947400_variant0_width24"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants",
+      "primitive": "speck",
+      "width": 24,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 947401
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "speck",
+      "standard": "Speck ARX round structure; reduced word widths are verification variants",
+      "width": 24,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "0a26ffc169be577d0d603f63e60d1d99a18320bc3e9cf57300bd74c1108c0c95",
+    "blif_sha256": "bcfc3249279f95e86324a6a064b403cbb64ea85c1d80746e2d4ec16a1c9fe6c8",
+    "aag_lines": 1110,
+    "blif_lines": 1615,
+    "stats": {
+      "inputs": 24,
+      "latches": 96,
+      "ands": 144,
+      "xors": 288,
+      "ors": 119,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6666666666666666,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed947401_variant1_width24.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed947401_variant1_width24.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed947401_variant1_width24"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants",
+      "primitive": "speck",
+      "width": 32,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "variant": 0,
+      "seed": 948200
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "speck",
+      "standard": "Speck ARX round structure; reduced word widths are verification variants",
+      "width": 32,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "prefix"
+    },
+    "aag_sha256": "635ff56df99150156e5cf78dbe1f1274ed66d6678ede0d122a96360505b5f9aa",
+    "blif_sha256": "22a4203a452d71ca22bf8a211917317c618fbe0a36de030bc65593d2411adc5d",
+    "aag_lines": 1367,
+    "blif_lines": 1732,
+    "stats": {
+      "inputs": 32,
+      "latches": 128,
+      "ands": 128,
+      "xors": 319,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7136465324384788,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed948200_variant0_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed948200_variant0_width32.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivespeck_right_structprefix_rounds1_seed948200_variant0_width32"
+  },
+  {
+    "family": "arx_equiv",
+    "params": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants",
+      "primitive": "speck",
+      "width": 32,
+      "rounds": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "variant": 1,
+      "seed": 948201
+    },
+    "classification": {
+      "category": "crypto-arx",
+      "semantic": "Speck-style round state equivalence",
+      "source": "Speck ARX round structure; reduced-width verification variants"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "ARX states using distinct adder structures remain equal",
+      "primitive": "speck",
+      "standard": "Speck ARX round structure; reduced word widths are verification variants",
+      "width": 32,
+      "rounds_per_transition": 1,
+      "left_struct": "ripple",
+      "right_struct": "carrysave"
+    },
+    "aag_sha256": "4087ca6f61f237413e5d10005acdce83f165510e92e49e2718ceac6242402225",
+    "blif_sha256": "eebc2de747577710af42fddb8641c0a2709002aa541cff2003060a3d70af14f9",
+    "aag_lines": 1486,
+    "blif_lines": 2151,
+    "stats": {
+      "inputs": 32,
+      "latches": 128,
+      "ands": 192,
+      "xors": 384,
+      "ors": 159,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6666666666666666,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed948201_variant1_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed948201_variant1_width32.blif"
+    },
+    "stem": "arx_equiv_left_structripple_primitivespeck_right_structcarrysave_rounds1_seed948201_variant1_width32"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 8,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "rounds": 1,
+      "variant": 0,
+      "seed": 950800
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 8,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "ec90240a34d1b6b68486af83ec80f60778a4e4adeef69341d265b978db15629f",
+    "blif_sha256": "29b829e69b5a79008f2209c003faf523bf3c08ccaf1ce5bae2abb9f5bb61347d",
+    "aag_lines": 191,
+    "blif_lines": 276,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 32,
+      "xors": 39,
+      "ors": 23,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5492957746478874,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed950800_variant0_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed950800_variant0_width8.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structprefix_rounds1_seed950800_variant0_width8"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 8,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 1,
+      "seed": 950801
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 8,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "37090df911d3fdac064cd7940fcf1ac3d69e36ccc77d360a45f483a4664c72e1",
+    "blif_sha256": "f379cdbe67b029e9f4e1f2d724811abbde716c18be04a5ce26cc03146f8814f8",
+    "aag_lines": 214,
+    "blif_lines": 383,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 48,
+      "xors": 56,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5384615384615384,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed950801_variant1_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed950801_variant1_width8.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structcarrysave_rounds1_seed950801_variant1_width8"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 8,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 2,
+      "seed": 950802
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 8,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "dd37efeb49956e6a4eba84f539d7a1784ab3da0fd6299d09a0290a81b1e4d92b",
+    "blif_sha256": "bb58fb827ec1a9a7896b3c6739ee6f92fc3885ef3f78612110ea865df96a46c1",
+    "aag_lines": 214,
+    "blif_lines": 380,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 48,
+      "xors": 55,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5339805825242718,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed950802_variant2_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed950802_variant2_width8.blif"
+    },
+    "stem": "adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed950802_variant2_width8"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 12,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "rounds": 1,
+      "variant": 0,
+      "seed": 951200
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 12,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "d8060d93f6716ee1504acd5f6a4926d028cd70d40a459c5d1a610e26043c2c2b",
+    "blif_sha256": "fd8ff1f09be1ea00835d7681d790bebd7a138b750551ac7bc86bfbf8b3645af9",
+    "aag_lines": 291,
+    "blif_lines": 412,
+    "stats": {
+      "inputs": 12,
+      "latches": 24,
+      "ands": 48,
+      "xors": 59,
+      "ors": 35,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5514018691588785,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed951200_variant0_width12.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed951200_variant0_width12.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structprefix_rounds1_seed951200_variant0_width12"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 12,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 1,
+      "seed": 951201
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 12,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "a379c41b1fffdd29f3a4905e467f70ea7fffc97f8a8aeb47f09694a6cb37a9ef",
+    "blif_sha256": "b6cc00415b4d683a4eb982fea09c810291ea796079d8435103b8773efbbd7151",
+    "aag_lines": 330,
+    "blif_lines": 571,
+    "stats": {
+      "inputs": 12,
+      "latches": 24,
+      "ands": 72,
+      "xors": 84,
+      "ors": 47,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5384615384615384,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed951201_variant1_width12.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed951201_variant1_width12.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structcarrysave_rounds1_seed951201_variant1_width12"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 12,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 2,
+      "seed": 951202
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 12,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "65d3c35b276aac4707e0e0cd1d7d70b2a75e87172ee0a9ba94ff4cac52bc042f",
+    "blif_sha256": "a4532c62e916c7acfb0094c542a08a3c7edfd0ab235cdfecb6364f51cff67c7b",
+    "aag_lines": 330,
+    "blif_lines": 568,
+    "stats": {
+      "inputs": 12,
+      "latches": 24,
+      "ands": 72,
+      "xors": 83,
+      "ors": 47,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.535483870967742,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed951202_variant2_width12.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed951202_variant2_width12.blif"
+    },
+    "stem": "adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed951202_variant2_width12"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 16,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "rounds": 1,
+      "variant": 0,
+      "seed": 951600
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 16,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "44129fc14dc6cd2d4da200d3f7a258ac6f69b24c1ff5769983bcd6849ec33e20",
+    "blif_sha256": "ac2ab05a9b864371e2a6e9eab03dd307ba92d2417911546da8e6db1861076e38",
+    "aag_lines": 391,
+    "blif_lines": 548,
+    "stats": {
+      "inputs": 16,
+      "latches": 32,
+      "ands": 64,
+      "xors": 79,
+      "ors": 47,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5524475524475524,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed951600_variant0_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed951600_variant0_width16.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structprefix_rounds1_seed951600_variant0_width16"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 16,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 1,
+      "seed": 951601
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 16,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "9033ee45120a95e5e9d377f4d1639b2e2bd4050a874853c40d3cb4bb88a4c710",
+    "blif_sha256": "e69ece270b4505fe33a6f39684aae92643e42bb61c6d72adc4bed9da44233081",
+    "aag_lines": 446,
+    "blif_lines": 759,
+    "stats": {
+      "inputs": 16,
+      "latches": 32,
+      "ands": 96,
+      "xors": 112,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5384615384615384,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed951601_variant1_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed951601_variant1_width16.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structcarrysave_rounds1_seed951601_variant1_width16"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 16,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 2,
+      "seed": 951602
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 16,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "7c757bfc12fd3562c27bec62abb7054a1fe768dc17415523ae53124d9b6f4b83",
+    "blif_sha256": "e0e92be9c538da236e41d0b76106e718d03818305707d99041858d2981db614a",
+    "aag_lines": 446,
+    "blif_lines": 756,
+    "stats": {
+      "inputs": 16,
+      "latches": 32,
+      "ands": 96,
+      "xors": 111,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5362318840579711,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed951602_variant2_width16.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed951602_variant2_width16.blif"
+    },
+    "stem": "adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed951602_variant2_width16"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 24,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "rounds": 1,
+      "variant": 0,
+      "seed": 952400
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 24,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "855f04e6fda2a23770c141e3ffcad871c7d8ee177e3c2a391fba385e5ee14c9a",
+    "blif_sha256": "17d4e9a5d56d2cc84bfcd569da2ab55027a4cec763649f2a97a3b89478b65dc4",
+    "aag_lines": 591,
+    "blif_lines": 820,
+    "stats": {
+      "inputs": 24,
+      "latches": 48,
+      "ands": 96,
+      "xors": 119,
+      "ors": 71,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5534883720930233,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed952400_variant0_width24.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed952400_variant0_width24.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structprefix_rounds1_seed952400_variant0_width24"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 24,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 1,
+      "seed": 952401
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 24,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "e4bf3eb5fe8edf4f6677c07760103a74e36ef6d2af9b23df649b1c7abd9aa0d4",
+    "blif_sha256": "e9e93217d6096153e4e003e2f074534374f4fc04bc7a2d90d97148e08f3ea978",
+    "aag_lines": 678,
+    "blif_lines": 1135,
+    "stats": {
+      "inputs": 24,
+      "latches": 48,
+      "ands": 144,
+      "xors": 168,
+      "ors": 95,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5384615384615384,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed952401_variant1_width24.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed952401_variant1_width24.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structcarrysave_rounds1_seed952401_variant1_width24"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 24,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 2,
+      "seed": 952402
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 24,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "6b85079cd3a5a7d4b34c2a931ad1ec90c5b96b465cd8ebcee6f87a138918c43a",
+    "blif_sha256": "a94ab146ac6b7e2593de9e783c28ae7f6dd6abd04756168e37aa504212207b64",
+    "aag_lines": 678,
+    "blif_lines": 1132,
+    "stats": {
+      "inputs": 24,
+      "latches": 48,
+      "ands": 144,
+      "xors": 167,
+      "ors": 95,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5369774919614148,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed952402_variant2_width24.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed952402_variant2_width24.blif"
+    },
+    "stem": "adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed952402_variant2_width24"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 32,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "rounds": 1,
+      "variant": 0,
+      "seed": 953200
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 32,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "f7d26bb4c1a158d5c826a34b977dec13a9d73863f47837578276e32531d9f684",
+    "blif_sha256": "d721586d6da56d298e62c7e764fe3114697669e55b9c4995d46cab9277b3c550",
+    "aag_lines": 791,
+    "blif_lines": 1092,
+    "stats": {
+      "inputs": 32,
+      "latches": 64,
+      "ands": 128,
+      "xors": 159,
+      "ors": 95,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.554006968641115,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed953200_variant0_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed953200_variant0_width32.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structprefix_rounds1_seed953200_variant0_width32"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 32,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 1,
+      "seed": 953201
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 32,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "6895cec5272034520677a5c3d9902c8399a0a7f0dad8e84c5f105a683b4cedb8",
+    "blif_sha256": "43b8de43d2c22cc5f7333f6f3248140a43e29ebe10d6bbaa847e6a5164c36115",
+    "aag_lines": 910,
+    "blif_lines": 1511,
+    "stats": {
+      "inputs": 32,
+      "latches": 64,
+      "ands": 192,
+      "xors": 224,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5384615384615384,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed953201_variant1_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed953201_variant1_width32.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structcarrysave_rounds1_seed953201_variant1_width32"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 32,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 2,
+      "seed": 953202
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 32,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "d43726a58a1aeac58f25c6a71d16c6d6066ce23eecd9236addb6b9b18fcfcf60",
+    "blif_sha256": "90e9f40daf62f97254280f7ad712c9284fe1e5ba5638866e26c2763be16bcdc8",
+    "aag_lines": 910,
+    "blif_lines": 1508,
+    "stats": {
+      "inputs": 32,
+      "latches": 64,
+      "ands": 192,
+      "xors": 223,
+      "ors": 127,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5373493975903615,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed953202_variant2_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed953202_variant2_width32.blif"
+    },
+    "stem": "adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed953202_variant2_width32"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 40,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "rounds": 1,
+      "variant": 0,
+      "seed": 954000
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 40,
+      "left_struct": "ripple",
+      "right_struct": "prefix",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "0aada24d21a3766d29454457e989fbcc9af712cb1d3e177a089119cdf4c9aca6",
+    "blif_sha256": "8079de462d21871370fc354175b6372c027526feadf75a92dc06b4e4979a10eb",
+    "aag_lines": 991,
+    "blif_lines": 1364,
+    "stats": {
+      "inputs": 40,
+      "latches": 80,
+      "ands": 160,
+      "xors": 199,
+      "ors": 119,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5543175487465181,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed954000_variant0_width40.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structprefix_rounds1_seed954000_variant0_width40.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structprefix_rounds1_seed954000_variant0_width40"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 40,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 1,
+      "seed": 954001
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 40,
+      "left_struct": "ripple",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "9d3f5a0a9992a10ecc50022cfc8424dfff57b1ad3ce5c524e37f99c8ec2df1ca",
+    "blif_sha256": "f83c1af9bc1ee70ee32b0f2eb6c537eaeaa887740498e4ef6dac4d94c678fee8",
+    "aag_lines": 1142,
+    "blif_lines": 1887,
+    "stats": {
+      "inputs": 40,
+      "latches": 80,
+      "ands": 240,
+      "xors": 280,
+      "ors": 159,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5384615384615384,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed954001_variant1_width40.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structripple_right_structcarrysave_rounds1_seed954001_variant1_width40.blif"
+    },
+    "stem": "adder_equiv_left_structripple_right_structcarrysave_rounds1_seed954001_variant1_width40"
+  },
+  {
+    "family": "adder_equiv",
+    "params": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model",
+      "width": 40,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "rounds": 1,
+      "variant": 2,
+      "seed": 954002
+    },
+    "classification": {
+      "category": "arithmetic-add",
+      "semantic": "sequential accumulator equivalence across adder structures",
+      "source": "parameterized arithmetic RTL model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "accumulators using distinct adder structures remain equal modulo 2^width",
+      "width": 40,
+      "left_struct": "prefix",
+      "right_struct": "carrysave",
+      "adds_per_transition": 1
+    },
+    "aag_sha256": "5a8ac70efda68585d5d6b13d096fe8b63ea173ae11da72733ab0dd7f795dd9d8",
+    "blif_sha256": "4d488f444ade83c1eb9f80f16a0d7c6346e8992919d3788bf3b89dcebd308db3",
+    "aag_lines": 1142,
+    "blif_lines": 1884,
+    "stats": {
+      "inputs": 40,
+      "latches": 80,
+      "ands": 240,
+      "xors": 279,
+      "ors": 159,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5375722543352601,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed954002_variant2_width40.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed954002_variant2_width40.blif"
+    },
+    "stem": "adder_equiv_left_structprefix_right_structcarrysave_rounds1_seed954002_variant2_width40"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 4,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix",
+      "variant": 0,
+      "seed": 960400
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 4,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "0a28afc22e86665feb05403a7f1063190dd5f0dc56399b1246a1209652c34695",
+    "blif_sha256": "30c75a4782ec507834eba9d744e415ab4025056d7f4c3d292f5e1204048ca179",
+    "aag_lines": 399,
+    "blif_lines": 1065,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 176,
+      "xors": 150,
+      "ors": 79,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4601226993865031,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960400_variant0_width4.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960400_variant0_width4.blif"
+    },
+    "stem": "mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960400_variant0_width4"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 4,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple",
+      "variant": 1,
+      "seed": 960401
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 4,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple"
+    },
+    "aag_sha256": "245c12ce017c6b8a34643bdc5261988263a7c3dc2cf6362a9a64d5a5e7866563",
+    "blif_sha256": "748b39dfeb09c15c82ac6b3ee266b90770d7b8d5b2115988d45fd5a2bee659a9",
+    "aag_lines": 399,
+    "blif_lines": 1056,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 176,
+      "xors": 147,
+      "ors": 79,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4551083591331269,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960401_variant1_width4.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960401_variant1_width4.blif"
+    },
+    "stem": "mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960401_variant1_width4"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 4,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix",
+      "variant": 2,
+      "seed": 960402
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 4,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "e21eef874cb6005500111d5fdd06dde7c1115028727f796c4eea3608534ab954",
+    "blif_sha256": "56362e82cdac9a42348b7824de0476ce59e3affa57ded6ac2cbb8a674dbbacd8",
+    "aag_lines": 457,
+    "blif_lines": 1585,
+    "stats": {
+      "inputs": 8,
+      "latches": 16,
+      "ands": 256,
+      "xors": 230,
+      "ors": 119,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4732510288065844,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960402_variant2_width4.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960402_variant2_width4.blif"
+    },
+    "stem": "mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960402_variant2_width4"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 6,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix",
+      "variant": 0,
+      "seed": 960600
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 6,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "6883f2a6c22eb4b16c54d392b18bd1431bd715135bffe4ed085a701d463c6119",
+    "blif_sha256": "596333218b1d8359e31996b51851a1d2bba58208c35eef9f8732029762722410",
+    "aag_lines": 854,
+    "blif_lines": 2269,
+    "stats": {
+      "inputs": 12,
+      "latches": 24,
+      "ands": 384,
+      "xors": 322,
+      "ors": 167,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.45609065155807366,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960600_variant0_width6.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960600_variant0_width6.blif"
+    },
+    "stem": "mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960600_variant0_width6"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 6,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple",
+      "variant": 1,
+      "seed": 960601
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 6,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple"
+    },
+    "aag_sha256": "11511f07518cc7063e6716ec855a2fc5edde2bb0cc26a87f983ac2b067d736a9",
+    "blif_sha256": "36d76fc278a23ede4af4df91a93b14d772a9b8b3af57d03b53b7ab96e252b268",
+    "aag_lines": 854,
+    "blif_lines": 2254,
+    "stats": {
+      "inputs": 12,
+      "latches": 24,
+      "ands": 384,
+      "xors": 317,
+      "ors": 167,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4522111269614836,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960601_variant1_width6.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960601_variant1_width6.blif"
+    },
+    "stem": "mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960601_variant1_width6"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 6,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix",
+      "variant": 2,
+      "seed": 960602
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 6,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "4eee8a55e0e4668c74422d90ff303b13c4b27c91336eeae5569f162475b0d2f4",
+    "blif_sha256": "05aff2adb3e8eb8df68dfbc81845359f7161c514d809081be156880d903a20f0",
+    "aag_lines": 1000,
+    "blif_lines": 3361,
+    "stats": {
+      "inputs": 12,
+      "latches": 24,
+      "ands": 552,
+      "xors": 490,
+      "ors": 251,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.47024952015355087,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960602_variant2_width6.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960602_variant2_width6.blif"
+    },
+    "stem": "mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960602_variant2_width6"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 8,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix",
+      "variant": 0,
+      "seed": 960800
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 8,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "93750cb7e418f36575b3522a54c6fd4597f9a01d04f0e5dec2290836cd89f238",
+    "blif_sha256": "c94bc6121c465ad796f4ea2ccde29e5bdef63a3a791ab47375757980a23f5006",
+    "aag_lines": 1474,
+    "blif_lines": 3921,
+    "stats": {
+      "inputs": 16,
+      "latches": 32,
+      "ands": 672,
+      "xors": 558,
+      "ors": 287,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.45365853658536587,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960800_variant0_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960800_variant0_width8.blif"
+    },
+    "stem": "mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960800_variant0_width8"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 8,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple",
+      "variant": 1,
+      "seed": 960801
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 8,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple"
+    },
+    "aag_sha256": "ac5e2a3eb3aada2957894d8ce39161dff1d0164d7d405caf09167f3e2f069b1a",
+    "blif_sha256": "862801383297678167e8ac2af145304a89c65e6f2d8a67c1b871a6de3bfa512a",
+    "aag_lines": 1474,
+    "blif_lines": 3900,
+    "stats": {
+      "inputs": 16,
+      "latches": 32,
+      "ands": 672,
+      "xors": 551,
+      "ors": 287,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.45053147996729354,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960801_variant1_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960801_variant1_width8.blif"
+    },
+    "stem": "mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed960801_variant1_width8"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 8,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix",
+      "variant": 2,
+      "seed": 960802
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 8,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "bc2c1561839a94c97304f63c5b5e875d18eda787bc31a757de5d51f89742b209",
+    "blif_sha256": "45c69dc6862631566ab9288de15a34480ddcc92b48f3fe96a7211e9bf755c731",
+    "aag_lines": 1740,
+    "blif_lines": 5793,
+    "stats": {
+      "inputs": 16,
+      "latches": 32,
+      "ands": 960,
+      "xors": 846,
+      "ors": 431,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4684385382059801,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960802_variant2_width8.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960802_variant2_width8.blif"
+    },
+    "stem": "mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed960802_variant2_width8"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 10,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix",
+      "variant": 0,
+      "seed": 961000
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 10,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "38675b125c345bcc28dddb0c019ecc49d869a2b2f578ba491d3e890e4a104dcb",
+    "blif_sha256": "49891c98c8ed8fd23e7266f4c38d835dac3cf0d4d2a834bb3b7e3e35db9f4fb4",
+    "aag_lines": 2270,
+    "blif_lines": 6021,
+    "stats": {
+      "inputs": 20,
+      "latches": 40,
+      "ands": 1040,
+      "xors": 858,
+      "ors": 439,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4520547945205479,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961000_variant0_width10.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961000_variant0_width10.blif"
+    },
+    "stem": "mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961000_variant0_width10"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 10,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple",
+      "variant": 1,
+      "seed": 961001
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 10,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple"
+    },
+    "aag_sha256": "ab9dfd8fea8efd5dd454e1e4653ed8efc6f29220f1b68c864ae186788a175c96",
+    "blif_sha256": "cd181ee76568f216fddba831968e6307901871de0905551ef466aeff642e8293",
+    "aag_lines": 2270,
+    "blif_lines": 5994,
+    "stats": {
+      "inputs": 20,
+      "latches": 40,
+      "ands": 1040,
+      "xors": 849,
+      "ors": 439,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4494441503440974,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed961001_variant1_width10.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed961001_variant1_width10.blif"
+    },
+    "stem": "mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed961001_variant1_width10"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 10,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix",
+      "variant": 2,
+      "seed": 961002
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 10,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "e51736b4f9db66f6097b6b7862acc17a03c627193bd1e0c5465d324fe2d8ee49",
+    "blif_sha256": "fdca382fc3d6f9c7497912a2011936bb3f355a2a4c3a11db5faa8752fae889b5",
+    "aag_lines": 2688,
+    "blif_lines": 8881,
+    "stats": {
+      "inputs": 20,
+      "latches": 40,
+      "ands": 1480,
+      "xors": 1298,
+      "ors": 659,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.46724262059035276,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961002_variant2_width10.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961002_variant2_width10.blif"
+    },
+    "stem": "mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961002_variant2_width10"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 12,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix",
+      "variant": 0,
+      "seed": 961200
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 12,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "ripple",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "6d7f2efc345b52a5d0c4f487bbb6822197efc9fe290390058bc6b83c2961a3a2",
+    "blif_sha256": "c956a99f182adc445ce9036750ff92db7c28741bb6362eae597736aed7f08a3e",
+    "aag_lines": 3218,
+    "blif_lines": 8569,
+    "stats": {
+      "inputs": 24,
+      "latches": 48,
+      "ands": 1488,
+      "xors": 1222,
+      "ors": 623,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.45092250922509225,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961200_variant0_width12.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961200_variant0_width12.blif"
+    },
+    "stem": "mac_equiv_left_adderripple_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961200_variant0_width12"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 12,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple",
+      "variant": 1,
+      "seed": 961201
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 12,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "prefix",
+      "right_adder": "ripple"
+    },
+    "aag_sha256": "db2b990781a004bf32e491fa549c0e0c14e0887cfdf69c95364700f9279742d8",
+    "blif_sha256": "8936e16a19afaca969ffae41ef284e72cab8ab50c6789c1759ee07dbedaa3d01",
+    "aag_lines": 3218,
+    "blif_lines": 8536,
+    "stats": {
+      "inputs": 24,
+      "latches": 48,
+      "ands": 1488,
+      "xors": 1211,
+      "ors": 623,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4486846980363097,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed961201_variant1_width12.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed961201_variant1_width12.blif"
+    },
+    "stem": "mac_equiv_left_adderprefix_left_multiplierschoolbook_right_adderripple_right_multiplierwallace_seed961201_variant1_width12"
+  },
+  {
+    "family": "mac_equiv",
+    "params": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier",
+      "width": 12,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix",
+      "variant": 2,
+      "seed": 961202
+    },
+    "classification": {
+      "category": "arithmetic-mul",
+      "semantic": "sequential multiply-accumulate architecture equivalence",
+      "source": "parameterized unsigned schoolbook/Wallace-style multiplier"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "multiply-accumulate results remain equal modulo 2^(2*width)",
+      "operand_width": 12,
+      "left_multiplier": "schoolbook",
+      "right_multiplier": "wallace",
+      "left_adder": "carrysave",
+      "right_adder": "prefix"
+    },
+    "aag_sha256": "016e9c35010d4565c4631315c2352fe548ab8f04bb2e71a36f2dfe1cb14f7c63",
+    "blif_sha256": "74d360fbd83575cc7c90fecd03249a941519e1d775d8fe51c506449e857497c0",
+    "aag_lines": 3820,
+    "blif_lines": 12625,
+    "stats": {
+      "inputs": 24,
+      "latches": 48,
+      "ands": 2112,
+      "xors": 1846,
+      "ors": 935,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.46639717028802424,
+    "bad_cone_xor_density": 0.6666666666666666,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961202_variant2_width12.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961202_variant2_width12.blif"
+    },
+    "stem": "mac_equiv_left_addercarrysave_left_multiplierschoolbook_right_adderprefix_right_multiplierwallace_seed961202_variant2_width12"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model",
+      "width": 24,
+      "weight": 19,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 970001
+    },
+    "classification": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        24,
+        24
+      ]
+    },
+    "aag_sha256": "cfd71afd94eb69b8a3d2cb1cfc7b77d48918602caf9b82537a4fa33fb7d56da0",
+    "blif_sha256": "fd9fa44589fbfdf6ea1393eac43ad41c2915ae9e4c3f41f3ea049419033ea024",
+    "aag_lines": 5509,
+    "blif_lines": 5562,
+    "stats": {
+      "inputs": 4,
+      "latches": 51,
+      "ands": 1,
+      "xors": 1809,
+      "ors": 24,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9994475138121547,
+    "bad_cone_xor_density": 0.9818181818181818,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970001_topologybalanced_weight19_width24.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970001_topologybalanced_weight19_width24.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed970001_topologybalanced_weight19_width24"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model",
+      "width": 28,
+      "weight": 21,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 970002
+    },
+    "classification": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        28,
+        28
+      ]
+    },
+    "aag_sha256": "9023972e91ef22dad524abf39394edb700c920ae3d440039e3031ed9a691548a",
+    "blif_sha256": "99977406564c2cb34dbc98c8583327573f43b114844dcca02b3a32ffd7d7601b",
+    "aag_lines": 7099,
+    "blif_lines": 7160,
+    "stats": {
+      "inputs": 4,
+      "latches": 59,
+      "ands": 1,
+      "xors": 2335,
+      "ors": 28,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9995719178082192,
+    "bad_cone_xor_density": 0.984375,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970002_topologybalanced_weight21_width28.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970002_topologybalanced_weight21_width28.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed970002_topologybalanced_weight21_width28"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model",
+      "width": 32,
+      "weight": 25,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 970003
+    },
+    "classification": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        32,
+        32
+      ]
+    },
+    "aag_sha256": "ee5d95fa757c04f401c2d6bc040b29c6432db94ca2a888371e4ebf1c0e4d33e9",
+    "blif_sha256": "f28ff81389a96e2c77d1cc05ebc50224e170e945da34f867ac8cbba846093756",
+    "aag_lines": 9634,
+    "blif_lines": 9703,
+    "stats": {
+      "inputs": 4,
+      "latches": 67,
+      "ands": 1,
+      "xors": 3176,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9996852376455776,
+    "bad_cone_xor_density": 0.9857142857142858,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970003_topologybalanced_weight25_width32.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970003_topologybalanced_weight25_width32.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed970003_topologybalanced_weight25_width32"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model",
+      "width": 40,
+      "weight": 31,
+      "rounds": 2,
+      "delay": 2,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 970004
+    },
+    "classification": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 2,
+      "matrix_ranks": [
+        40,
+        40
+      ]
+    },
+    "aag_sha256": "86eb2ef2546e00cdc8d0e639494ad0e60d3b989e1415c35f7dc11300dc73bb1b",
+    "blif_sha256": "638ebc862815d9f334987e5e3e4d3ccc9e7ae1c2bf88996100743673a26d5d4d",
+    "aag_lines": 14965,
+    "blif_lines": 15050,
+    "stats": {
+      "inputs": 4,
+      "latches": 83,
+      "ands": 1,
+      "xors": 4945,
+      "ors": 40,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9997978164173069,
+    "bad_cone_xor_density": 0.9894736842105263,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970004_topologybalanced_weight31_width40.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay2_inputs4_rounds2_seed970004_topologybalanced_weight31_width40.blif"
+    },
+    "stem": "affine_phase_sync_delay2_inputs4_rounds2_seed970004_topologybalanced_weight31_width40"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model",
+      "width": 20,
+      "weight": 15,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 970005
+    },
+    "classification": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        20,
+        20,
+        20
+      ]
+    },
+    "aag_sha256": "54310fe23324c396ec3dc332151e7818e06b29872208a6cd9cf4d0256d612ec7",
+    "blif_sha256": "aa595f4ea621f8e084b227376498783f8a949c2b82cbd217161767b0cb0ed184",
+    "aag_lines": 5390,
+    "blif_lines": 5435,
+    "stats": {
+      "inputs": 4,
+      "latches": 44,
+      "ands": 1,
+      "xors": 1773,
+      "ors": 20,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9994363021420518,
+    "bad_cone_xor_density": 0.9807692307692307,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed970005_topologybalanced_weight15_width20.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed970005_topologybalanced_weight15_width20.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed970005_topologybalanced_weight15_width20"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model",
+      "width": 24,
+      "weight": 19,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 970006
+    },
+    "classification": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        24,
+        24,
+        24
+      ]
+    },
+    "aag_sha256": "4e9a742493258845b4746532e4eb26e82b36ef7b7623b44f06b44fdfa9c787f5",
+    "blif_sha256": "aa193c2ee09fd7180b5d80ab3f64bbc4394afd89eee1b71aaab09605aae6c799",
+    "aag_lines": 8174,
+    "blif_lines": 8227,
+    "stats": {
+      "inputs": 4,
+      "latches": 52,
+      "ands": 1,
+      "xors": 2697,
+      "ors": 24,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9996293550778355,
+    "bad_cone_xor_density": 0.9841269841269841,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed970006_topologybalanced_weight19_width24.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed970006_topologybalanced_weight19_width24.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed970006_topologybalanced_weight19_width24"
+  },
+  {
+    "family": "affine_phase_sync",
+    "params": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model",
+      "width": 28,
+      "weight": 21,
+      "rounds": 3,
+      "delay": 3,
+      "inputs": 4,
+      "topology": "balanced",
+      "seed": 970007
+    },
+    "classification": {
+      "category": "coding-affine",
+      "semantic": "duplicated linear scrambler resynchronization safety",
+      "source": "controlled full-rank GF(2) state-transform model"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "done implies left[i] == right[i] for every state bit",
+      "first_enabled_step": 3,
+      "matrix_ranks": [
+        28,
+        28,
+        28
+      ]
+    },
+    "aag_sha256": "d4985aca3d991db34b2f1a478b2fb8868709033d1fe2d1806d9bedc5caec03c8",
+    "blif_sha256": "36b044a13387c19a0c4c682d2b8bbf7ab767c44e36638bd698f17f3ea2dc658d",
+    "aag_lines": 10577,
+    "blif_lines": 10638,
+    "stats": {
+      "inputs": 4,
+      "latches": 60,
+      "ands": 1,
+      "xors": 3494,
+      "ors": 28,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9997138769670959,
+    "bad_cone_xor_density": 0.9873417721518988,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed970007_topologybalanced_weight21_width28.aag",
+      "blif": "test_tools/compare/results/pathb_semantic_100_v1/benchmarks/affine_phase_sync_delay3_inputs4_rounds3_seed970007_topologybalanced_weight21_width28.blif"
+    },
+    "stem": "affine_phase_sync_delay3_inputs4_rounds3_seed970007_topologybalanced_weight21_width28"
+  }
+]

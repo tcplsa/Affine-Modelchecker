@@ -1,0 +1,19 @@
+split=holdout
+models=131
+structure_groups=16
+common_solves=74
+policy=32/0.75/2
+gmean_ratio=0.677276
+group_bootstrap_95ci=[0.348763, 1.055654]
+bootstrap_samples=10000
+bootstrap_seed=20260825
+
+train:
+models=256
+structure_groups=26
+common_solves=115
+policy=32/0.75/2
+gmean_ratio=0.599892
+group_bootstrap_95ci=[0.400328, 0.854458]
+bootstrap_samples=10000
+bootstrap_seed=20260825

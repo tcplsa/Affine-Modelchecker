@@ -1,2 +1,10 @@
 minisat_revised/
 run.sh
+modelchecker-*
+modelchecker.tmp
+libcmsat_wrapper.so
+certificate.aag
+certificate.aig
+*.log
+__pycache__/
+*.pyc

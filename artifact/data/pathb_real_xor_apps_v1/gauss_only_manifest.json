@@ -1,0 +1,100 @@
+[
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "seed": 981352
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "3f1d2b291bd1a01257a19124391cd3129f50ee79cb5cd76412bc6af1a66f2d9f",
+    "blif_sha256": "618f5ecfa63ca1e33881bdad80a11c6a0303c4439431139e8f3e29d8a526f52a",
+    "aag_lines": 4510,
+    "blif_lines": 5383,
+    "stats": {
+      "inputs": 34,
+      "latches": 65,
+      "ands": 257,
+      "xors": 1352,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8402734617775015,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981352_symbol_bits32_width32.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981352_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed981352_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "seed": 981384
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "011ba864b43558d10760fc1b39ce6c83c5b73a02a6e6af78e27efea48ca91b84",
+    "blif_sha256": "b0efff9a60efc08d1c2686418a1216f93ba91f762461a06b9b37950084a4856d",
+    "aag_lines": 7440,
+    "blif_lines": 8281,
+    "stats": {
+      "inputs": 66,
+      "latches": 65,
+      "ands": 257,
+      "xors": 2318,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9001941747572816,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981384_symbol_bits64_width32.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981384_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed981384_symbol_bits64_width32"
+  }
+]

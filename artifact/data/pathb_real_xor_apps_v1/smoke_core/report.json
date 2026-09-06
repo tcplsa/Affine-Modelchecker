@@ -1,0 +1,134 @@
+{
+  "schema": "pathb-affine-phase-sweep-v1",
+  "manifest": "test_tools/compare/results/pathb_real_xor_apps_v1/smoke_manifest.json",
+  "timeout": 15.0,
+  "four_core_budget": true,
+  "results": [
+    {
+      "stem": "crc_frame_align_polynomial4129_seed981168_symbol_bits8_width16",
+      "family": "crc_frame_align",
+      "params": {
+        "category": "link-coding",
+        "semantic": "serial-versus-parallel CRC alignment after SOF",
+        "source": "CRC-16-CCITT",
+        "width": 16,
+        "polynomial": 4129,
+        "symbol_bits": 8,
+        "seed": 981168
+      },
+      "stats": {
+        "inputs": 10,
+        "latches": 33,
+        "ands": 129,
+        "xors": 96,
+        "ors": 80,
+        "nots": 65,
+        "bad": 1,
+        "outputs": 0,
+        "constraints": 0
+      },
+      "config": "mc-xag",
+      "result": "safe",
+      "wall_seconds": 0.019475199282169342,
+      "returncode": 0,
+      "winner_replica": -1,
+      "depth": 1,
+      "conflicts": 540,
+      "decisions": 2206,
+      "propagations": 8581,
+      "recognized_xors": 96,
+      "first_pre_seconds": 0.003103
+    },
+    {
+      "stem": "crc_frame_align_polynomial4129_seed981168_symbol_bits8_width16",
+      "family": "crc_frame_align",
+      "params": {
+        "category": "link-coding",
+        "semantic": "serial-versus-parallel CRC alignment after SOF",
+        "source": "CRC-16-CCITT",
+        "width": 16,
+        "polynomial": 4129,
+        "symbol_bits": 8,
+        "seed": 981168
+      },
+      "stats": {
+        "inputs": 10,
+        "latches": 33,
+        "ands": 129,
+        "xors": 96,
+        "ors": 80,
+        "nots": 65,
+        "bad": 1,
+        "outputs": 0,
+        "constraints": 0
+      },
+      "config": "ric3",
+      "result": "safe",
+      "wall_seconds": 0.051125869154930115,
+      "returncode": 0,
+      "winner_replica": 0
+    },
+    {
+      "stem": "scrambler_recovery_seed980001_symbol_bits1_topologyserial",
+      "family": "scrambler_recovery",
+      "params": {
+        "category": "link-coding",
+        "semantic": "64b/66b self-synchronous scrambler lock recovery",
+        "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+        "symbol_bits": 1,
+        "topology": "serial",
+        "seed": 980001
+      },
+      "stats": {
+        "inputs": 1,
+        "latches": 175,
+        "ands": 1,
+        "xors": 5,
+        "ors": 1,
+        "nots": 0,
+        "bad": 1,
+        "outputs": 0,
+        "constraints": 0
+      },
+      "config": "mc-xag",
+      "result": "safe",
+      "wall_seconds": 4.6247164234519005,
+      "returncode": 0,
+      "winner_replica": -1,
+      "depth": 58,
+      "conflicts": 293,
+      "decisions": 26436991,
+      "propagations": 33169440,
+      "recognized_xors": 5,
+      "first_pre_seconds": 4.4e-05
+    },
+    {
+      "stem": "scrambler_recovery_seed980001_symbol_bits1_topologyserial",
+      "family": "scrambler_recovery",
+      "params": {
+        "category": "link-coding",
+        "semantic": "64b/66b self-synchronous scrambler lock recovery",
+        "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+        "symbol_bits": 1,
+        "topology": "serial",
+        "seed": 980001
+      },
+      "stats": {
+        "inputs": 1,
+        "latches": 175,
+        "ands": 1,
+        "xors": 5,
+        "ors": 1,
+        "nots": 0,
+        "bad": 1,
+        "outputs": 0,
+        "constraints": 0
+      },
+      "config": "ric3",
+      "result": "safe",
+      "wall_seconds": 0.4010816067457199,
+      "returncode": 0,
+      "winner_replica": 3
+    }
+  ]
+}

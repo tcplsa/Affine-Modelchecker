@@ -87,6 +87,14 @@ int ccadical_constraint_failed (CCaDiCaL * wrapper) {
   return ((Wrapper*) wrapper)->solver->constraint_failed ();
 }
 
+void ccadical_phase (CCaDiCaL * wrapper, int lit) {
+  ((Wrapper*) wrapper)->solver->phase (lit);
+}
+
+void ccadical_unphase (CCaDiCaL * wrapper, int lit) {
+  ((Wrapper*) wrapper)->solver->unphase (lit);
+}
+
 void ccadical_set_option (CCaDiCaL * wrapper,
                           const char * name, int val) {
   ((Wrapper*) wrapper)->solver->set (name, val);
@@ -117,6 +125,26 @@ int ccadical_simplify (CCaDiCaL * wrapper) {
   return ((Wrapper*) wrapper)->solver->simplify ();
 }
 
+int ccadical_simplify_rounds (CCaDiCaL * wrapper, int rounds) {
+  return ((Wrapper*) wrapper)->solver->simplify (rounds);
+}
+
+struct CClauseIterator : ClauseIterator {
+  void * state;
+  ccadical_clause_callback callback;
+  CClauseIterator (void * s, ccadical_clause_callback cb) :
+    state (s), callback (cb) { }
+  bool clause (const std::vector<int> & literals) {
+    return callback (state, literals.data (), (int) literals.size ());
+  }
+};
+
+int ccadical_traverse_clauses (CCaDiCaL * wrapper, void * state,
+                               ccadical_clause_callback callback) {
+  CClauseIterator iterator (state, callback);
+  return ((Wrapper*) wrapper)->solver->traverse_clauses (iterator);
+}
+
 int ccadical_val (CCaDiCaL * wrapper, int lit) {
   return ((Wrapper*) wrapper)->solver->val (lit);
 }
@@ -127,6 +155,22 @@ int ccadical_failed (CCaDiCaL * wrapper, int lit) {
 
 void ccadical_print_statistics (CCaDiCaL * wrapper) {
   ((Wrapper*) wrapper)->solver->statistics ();
+}
+
+int64_t ccadical_conflicts (CCaDiCaL * wrapper) {
+  return ((Wrapper*) wrapper)->solver->conflicts ();
+}
+
+int64_t ccadical_decisions (CCaDiCaL * wrapper) {
+  return ((Wrapper*) wrapper)->solver->decisions ();
+}
+
+int64_t ccadical_propagations (CCaDiCaL * wrapper) {
+  return ((Wrapper*) wrapper)->solver->propagations ();
+}
+
+int64_t ccadical_restarts (CCaDiCaL * wrapper) {
+  return ((Wrapper*) wrapper)->solver->restarts ();
 }
 
 void ccadical_terminate (CCaDiCaL * wrapper) {

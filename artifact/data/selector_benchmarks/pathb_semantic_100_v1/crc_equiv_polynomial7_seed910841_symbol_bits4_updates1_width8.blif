@@ -1,0 +1,167 @@
+.model top
+.inputs s2 s3 s4 s5
+.outputs bad0
+.names _const0
+0
+.names _const1
+1
+.names s13 s2 s22
+01 1
+10 1
+.names s6 s22 s23
+01 1
+10 1
+.names s7 s22 s24
+01 1
+10 1
+.names s12 s3 s25
+01 1
+10 1
+.names s22 s25 s26
+01 1
+10 1
+.names s23 s25 s27
+01 1
+10 1
+.names s11 s4 s28
+01 1
+10 1
+.names s25 s28 s29
+01 1
+10 1
+.names s26 s28 s30
+01 1
+10 1
+.names s10 s5 s31
+01 1
+10 1
+.names s28 s31 s32
+01 1
+10 1
+.names s29 s31 s33
+01 1
+10 1
+.names s18 s5 s34
+01 1
+10 1
+.names s18 s19 s35
+01 1
+10 1
+.names s4 s5 s36
+01 1
+10 1
+.names s35 s36 s37
+01 1
+10 1
+.names s18 s19 s38
+01 1
+10 1
+.names s20 s3 s39
+01 1
+10 1
+.names s4 s5 s40
+01 1
+10 1
+.names s38 s39 s41
+01 1
+10 1
+.names s41 s40 s42
+01 1
+10 1
+.names s19 s20 s43
+01 1
+10 1
+.names s21 s2 s44
+01 1
+10 1
+.names s3 s4 s45
+01 1
+10 1
+.names s43 s44 s46
+01 1
+10 1
+.names s46 s45 s47
+01 1
+10 1
+.names s14 s20 s48
+01 1
+10 1
+.names s21 s2 s49
+01 1
+10 1
+.names s48 s49 s50
+01 1
+10 1
+.names s50 s3 s51
+01 1
+10 1
+.names s15 s21 s52
+01 1
+10 1
+.names s52 s2 s53
+01 1
+10 1
+.names s6 s14 s54
+01 1
+10 1
+.names s7 s15 s55
+01 1
+10 1
+.names s8 s16 s56
+01 1
+10 1
+.names s9 s17 s57
+01 1
+10 1
+.names s10 s18 s58
+01 1
+10 1
+.names s11 s19 s59
+01 1
+10 1
+.names s12 s20 s60
+01 1
+10 1
+.names s13 s21 s61
+01 1
+10 1
+.names s54 s55 s62
+1- 1
+-1 1
+.names s62 s56 s63
+1- 1
+-1 1
+.names s63 s57 s64
+1- 1
+-1 1
+.names s64 s58 s65
+1- 1
+-1 1
+.names s65 s59 s66
+1- 1
+-1 1
+.names s66 s60 s67
+1- 1
+-1 1
+.names s67 s61 s68
+1- 1
+-1 1
+.names s68 bad0
+1 1
+.latch s31 s6 1
+.latch s32 s7 1
+.latch s33 s8 0
+.latch s30 s9 0
+.latch s27 s10 0
+.latch s24 s11 1
+.latch s8 s12 1
+.latch s9 s13 1
+.latch s34 s14 1
+.latch s37 s15 1
+.latch s42 s16 0
+.latch s47 s17 0
+.latch s51 s18 0
+.latch s53 s19 1
+.latch s16 s20 1
+.latch s17 s21 1
+.end

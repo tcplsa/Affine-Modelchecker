@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "description": "Public-source affine RTL converted to sequential AIGER safety models",
+  "yosys": "Yosys 0.40 (git sha1 a1bb0255d, g++ 13.1.0-8ubuntu1~20.04.2 -fPIC -Os)",
+  "models": [
+    {
+      "name": "opentitan_prim_lfsr_transition_w8_e8",
+      "family": "opentitan_prim_lfsr",
+      "category": "public-rtl-controlled-affine",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/opentitan_prim_lfsr_transition_w8_e8.aag",
+      "params": {
+        "width": 8,
+        "entropy_width": 8,
+        "coefficients": "0xb8"
+      },
+      "source": "https://github.com/lowRISC/opentitan",
+      "source_commit": "01a04ddc0759d0ce5425e5ee5dc2ddf804b23060",
+      "source_file": "hw/ip/prim/rtl/prim_lfsr.sv",
+      "source_sha256": "c61632878728613ba0403f2d068c03a5103165663b58d8dd50892ef032dec916",
+      "derived_rtl_sha256": "e7a4f9abf9388db5485959978558a31b8d586f65cb49206faaa87f11136ee6f9",
+      "aag_sha256": "ccd85b72b43c90246442524ec13bbf7527f69e815b6f3273b07b83431c770cc9",
+      "aiger": {
+        "maxvar": 521,
+        "inputs": 20,
+        "latches": 35,
+        "outputs": 0,
+        "ands": 466,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "opentitan_prim_lfsr_transition_w16_e8",
+      "family": "opentitan_prim_lfsr",
+      "category": "public-rtl-controlled-affine",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/opentitan_prim_lfsr_transition_w16_e8.aag",
+      "params": {
+        "width": 16,
+        "entropy_width": 8,
+        "coefficients": "0xd008"
+      },
+      "source": "https://github.com/lowRISC/opentitan",
+      "source_commit": "01a04ddc0759d0ce5425e5ee5dc2ddf804b23060",
+      "source_file": "hw/ip/prim/rtl/prim_lfsr.sv",
+      "source_sha256": "c61632878728613ba0403f2d068c03a5103165663b58d8dd50892ef032dec916",
+      "derived_rtl_sha256": "e7a4f9abf9388db5485959978558a31b8d586f65cb49206faaa87f11136ee6f9",
+      "aag_sha256": "aa39d2d2ad8b0a3fc2dfc12e7af388e2117af351c2d311146ecc06f59acf43c1",
+      "aiger": {
+        "maxvar": 889,
+        "inputs": 28,
+        "latches": 59,
+        "outputs": 0,
+        "ands": 802,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "opentitan_prim_lfsr_transition_w24_e8",
+      "family": "opentitan_prim_lfsr",
+      "category": "public-rtl-controlled-affine",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/opentitan_prim_lfsr_transition_w24_e8.aag",
+      "params": {
+        "width": 24,
+        "entropy_width": 8,
+        "coefficients": "0xe10000"
+      },
+      "source": "https://github.com/lowRISC/opentitan",
+      "source_commit": "01a04ddc0759d0ce5425e5ee5dc2ddf804b23060",
+      "source_file": "hw/ip/prim/rtl/prim_lfsr.sv",
+      "source_sha256": "c61632878728613ba0403f2d068c03a5103165663b58d8dd50892ef032dec916",
+      "derived_rtl_sha256": "e7a4f9abf9388db5485959978558a31b8d586f65cb49206faaa87f11136ee6f9",
+      "aag_sha256": "01e9c3118a7a941feb50b712ad583716e265903f9fd09aa1d2182af7723f5fd6",
+      "aiger": {
+        "maxvar": 1257,
+        "inputs": 36,
+        "latches": 83,
+        "outputs": 0,
+        "ands": 1138,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "opentitan_prim_lfsr_transition_w32_e8",
+      "family": "opentitan_prim_lfsr",
+      "category": "public-rtl-controlled-affine",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/opentitan_prim_lfsr_transition_w32_e8.aag",
+      "params": {
+        "width": 32,
+        "entropy_width": 8,
+        "coefficients": "0x80200003"
+      },
+      "source": "https://github.com/lowRISC/opentitan",
+      "source_commit": "01a04ddc0759d0ce5425e5ee5dc2ddf804b23060",
+      "source_file": "hw/ip/prim/rtl/prim_lfsr.sv",
+      "source_sha256": "c61632878728613ba0403f2d068c03a5103165663b58d8dd50892ef032dec916",
+      "derived_rtl_sha256": "e7a4f9abf9388db5485959978558a31b8d586f65cb49206faaa87f11136ee6f9",
+      "aag_sha256": "2312b4067abb8716955d6774512b2434b080262a78f1c30cdd820e3959f5483d",
+      "aiger": {
+        "maxvar": 1625,
+        "inputs": 44,
+        "latches": 107,
+        "outputs": 0,
+        "ands": 1474,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "opentitan_prim_lfsr_transition_w64_e8",
+      "family": "opentitan_prim_lfsr",
+      "category": "public-rtl-controlled-affine",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/opentitan_prim_lfsr_transition_w64_e8.aag",
+      "params": {
+        "width": 64,
+        "entropy_width": 8,
+        "coefficients": "0xd800000000000000"
+      },
+      "source": "https://github.com/lowRISC/opentitan",
+      "source_commit": "01a04ddc0759d0ce5425e5ee5dc2ddf804b23060",
+      "source_file": "hw/ip/prim/rtl/prim_lfsr.sv",
+      "source_sha256": "c61632878728613ba0403f2d068c03a5103165663b58d8dd50892ef032dec916",
+      "derived_rtl_sha256": "e7a4f9abf9388db5485959978558a31b8d586f65cb49206faaa87f11136ee6f9",
+      "aag_sha256": "b20735108a783cefc545db551f9acc4d795aa73662dbfee81d4cfd3f46637d04",
+      "aiger": {
+        "maxvar": 3097,
+        "inputs": 76,
+        "latches": 203,
+        "outputs": 0,
+        "ands": 2818,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "opentitan_prim_lfsr_transition_w128_e8",
+      "family": "opentitan_prim_lfsr",
+      "category": "public-rtl-controlled-affine",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/opentitan_prim_lfsr_transition_w128_e8.aag",
+      "params": {
+        "width": 128,
+        "entropy_width": 8,
+        "coefficients": "0xa0000014000000000000000000000000"
+      },
+      "source": "https://github.com/lowRISC/opentitan",
+      "source_commit": "01a04ddc0759d0ce5425e5ee5dc2ddf804b23060",
+      "source_file": "hw/ip/prim/rtl/prim_lfsr.sv",
+      "source_sha256": "c61632878728613ba0403f2d068c03a5103165663b58d8dd50892ef032dec916",
+      "derived_rtl_sha256": "e7a4f9abf9388db5485959978558a31b8d586f65cb49206faaa87f11136ee6f9",
+      "aag_sha256": "1296030438f8501b98af3bbcc94993a5145f1b4a82c04486b56ef13c5bc6a44a",
+      "aiger": {
+        "maxvar": 6041,
+        "inputs": 140,
+        "latches": 395,
+        "outputs": 0,
+        "ands": 5506,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "verilog_lfsr_style_crc16_ccitt_w16_d8",
+      "family": "verilog_lfsr_style_equivalence",
+      "category": "public-rtl-linear-datapath",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/verilog_lfsr_style_crc16_ccitt_w16_d8.aag",
+      "params": {
+        "application": "crc16_ccitt",
+        "width": 16,
+        "data_width": 8,
+        "polynomial": "0x1021",
+        "configuration": "GALOIS",
+        "reverse": 0
+      },
+      "source": "https://github.com/alexforencich/verilog-lfsr",
+      "source_commit": "c1f86d036745935f3812ec6ddc7821c70ef4c9de",
+      "source_file": "rtl/lfsr.v",
+      "source_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079",
+      "derived_wrapper_sha256": "98306bae70c3f7c0d752abfd05a7e0d6e53bc4765460fff5a0e315a02c0068ac",
+      "aag_sha256": "e3496a1ab2c020b6bfffb0f9a5dd364b20f9d88ac38a9230a8487c4c9214a6b2",
+      "aiger": {
+        "maxvar": 697,
+        "inputs": 11,
+        "latches": 32,
+        "outputs": 0,
+        "ands": 654,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "verilog_lfsr_style_crc16_ibm_w16_d16",
+      "family": "verilog_lfsr_style_equivalence",
+      "category": "public-rtl-linear-datapath",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/verilog_lfsr_style_crc16_ibm_w16_d16.aag",
+      "params": {
+        "application": "crc16_ibm",
+        "width": 16,
+        "data_width": 16,
+        "polynomial": "0x8005",
+        "configuration": "GALOIS",
+        "reverse": 1
+      },
+      "source": "https://github.com/alexforencich/verilog-lfsr",
+      "source_commit": "c1f86d036745935f3812ec6ddc7821c70ef4c9de",
+      "source_file": "rtl/lfsr.v",
+      "source_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079",
+      "derived_wrapper_sha256": "98306bae70c3f7c0d752abfd05a7e0d6e53bc4765460fff5a0e315a02c0068ac",
+      "aag_sha256": "36295398b8aaa212682758e28679ca41469ef1831858e9184cd42f229537f8ce",
+      "aiger": {
+        "maxvar": 1534,
+        "inputs": 19,
+        "latches": 32,
+        "outputs": 0,
+        "ands": 1483,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "verilog_lfsr_style_crc32_ethernet_w32_d8",
+      "family": "verilog_lfsr_style_equivalence",
+      "category": "public-rtl-linear-datapath",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/verilog_lfsr_style_crc32_ethernet_w32_d8.aag",
+      "params": {
+        "application": "crc32_ethernet",
+        "width": 32,
+        "data_width": 8,
+        "polynomial": "0x4c11db7",
+        "configuration": "GALOIS",
+        "reverse": 1
+      },
+      "source": "https://github.com/alexforencich/verilog-lfsr",
+      "source_commit": "c1f86d036745935f3812ec6ddc7821c70ef4c9de",
+      "source_file": "rtl/lfsr.v",
+      "source_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079",
+      "derived_wrapper_sha256": "98306bae70c3f7c0d752abfd05a7e0d6e53bc4765460fff5a0e315a02c0068ac",
+      "aag_sha256": "8e41d786d887ca440a6fe62dc6279bacb830e9b85faefed84eb360cf115337f4",
+      "aiger": {
+        "maxvar": 1820,
+        "inputs": 11,
+        "latches": 64,
+        "outputs": 0,
+        "ands": 1745,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "verilog_lfsr_style_crc32c_w32_d16",
+      "family": "verilog_lfsr_style_equivalence",
+      "category": "public-rtl-linear-datapath",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/verilog_lfsr_style_crc32c_w32_d16.aag",
+      "params": {
+        "application": "crc32c",
+        "width": 32,
+        "data_width": 16,
+        "polynomial": "0x1edc6f41",
+        "configuration": "GALOIS",
+        "reverse": 1
+      },
+      "source": "https://github.com/alexforencich/verilog-lfsr",
+      "source_commit": "c1f86d036745935f3812ec6ddc7821c70ef4c9de",
+      "source_file": "rtl/lfsr.v",
+      "source_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079",
+      "derived_wrapper_sha256": "98306bae70c3f7c0d752abfd05a7e0d6e53bc4765460fff5a0e315a02c0068ac",
+      "aag_sha256": "af373a490121498858e40c8029fdac9d18fcb94bf3b7e47918bc2f63a6b97fad",
+      "aiger": {
+        "maxvar": 3311,
+        "inputs": 19,
+        "latches": 64,
+        "outputs": 0,
+        "ands": 3228,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "verilog_lfsr_style_prbs31_w31_d8",
+      "family": "verilog_lfsr_style_equivalence",
+      "category": "public-rtl-linear-datapath",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/verilog_lfsr_style_prbs31_w31_d8.aag",
+      "params": {
+        "application": "prbs31",
+        "width": 31,
+        "data_width": 8,
+        "polynomial": "0x10000001",
+        "configuration": "FIBONACCI",
+        "reverse": 0
+      },
+      "source": "https://github.com/alexforencich/verilog-lfsr",
+      "source_commit": "c1f86d036745935f3812ec6ddc7821c70ef4c9de",
+      "source_file": "rtl/lfsr.v",
+      "source_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079",
+      "derived_wrapper_sha256": "54cb19f3eee65c40cad69cc0b2253e3e4a2bbf92dd24800a8733799090253966",
+      "aag_sha256": "4abf82e7f1e0f216fbcf1429a4d4a241380e9cc058c689d9738bc8a8c01e1004",
+      "aiger": {
+        "maxvar": 702,
+        "inputs": 11,
+        "latches": 62,
+        "outputs": 0,
+        "ands": 629,
+        "bad": 1,
+        "constraints": 0
+      }
+    },
+    {
+      "name": "verilog_lfsr_style_scrambler_64b66b_w58_d16",
+      "family": "verilog_lfsr_style_equivalence",
+      "category": "public-rtl-linear-datapath",
+      "expected": "SAFE",
+      "path": "/home/wudl/test_tools/compare/results/pathb_public_affine_rtl_v1/aiger/verilog_lfsr_style_scrambler_64b66b_w58_d16.aag",
+      "params": {
+        "application": "scrambler_64b66b",
+        "width": 58,
+        "data_width": 16,
+        "polynomial": "0x8000000001",
+        "configuration": "FIBONACCI",
+        "reverse": 1
+      },
+      "source": "https://github.com/alexforencich/verilog-lfsr",
+      "source_commit": "c1f86d036745935f3812ec6ddc7821c70ef4c9de",
+      "source_file": "rtl/lfsr.v",
+      "source_sha256": "5502c8203b0dfc7246c1a2de93e60c199ded3c1d7840b106350d714f72a9a079",
+      "derived_wrapper_sha256": "54cb19f3eee65c40cad69cc0b2253e3e4a2bbf92dd24800a8733799090253966",
+      "aag_sha256": "595bff9148901f14cf4488102970f1522b28ed4695ad38024934ea9d0e69b91c",
+      "aiger": {
+        "maxvar": 1330,
+        "inputs": 19,
+        "latches": 116,
+        "outputs": 0,
+        "ands": 1195,
+        "bad": 1,
+        "constraints": 0
+      }
+    }
+  ]
+}

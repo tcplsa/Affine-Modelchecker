@@ -1,0 +1,2570 @@
+[
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15",
+      "width": 15,
+      "steps": 128,
+      "taps": [
+        14,
+        13
+      ],
+      "seed": 1025128
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 15,
+      "steps_per_cycle": 128,
+      "taps": [
+        14,
+        13
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "d97ccd51f75dcfc91c03482f3b3aee7998908b0577e03795f15b4e27f8086edc",
+    "blif_sha256": "6106f85186b11b96a71c9b79d1327ed4ed6e0e2ddd0fc05a2ba54283ec01c034",
+    "aag_lines": 592,
+    "blif_lines": 627,
+    "stats": {
+      "inputs": 0,
+      "latches": 30,
+      "ands": 0,
+      "xors": 182,
+      "ors": 14,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025128_steps128_taps[14, 13]_width15.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025128_steps128_taps[14, 13]_width15.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1025128_steps128_taps[14, 13]_width15"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15",
+      "width": 15,
+      "steps": 256,
+      "taps": [
+        14,
+        13
+      ],
+      "seed": 1025256
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 15,
+      "steps_per_cycle": 256,
+      "taps": [
+        14,
+        13
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "6ff249324c8d687e957c50198fb2d2b161dd68fcbf98775c2c3f3d5cb5d55368",
+    "blif_sha256": "dc4651627a15c24dc95f60ca451336ef2572e7a77e4b4751aba4e9d69e8277f4",
+    "aag_lines": 919,
+    "blif_lines": 954,
+    "stats": {
+      "inputs": 0,
+      "latches": 30,
+      "ands": 0,
+      "xors": 291,
+      "ors": 14,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025256_steps256_taps[14, 13]_width15.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025256_steps256_taps[14, 13]_width15.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1025256_steps256_taps[14, 13]_width15"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15",
+      "width": 15,
+      "steps": 512,
+      "taps": [
+        14,
+        13
+      ],
+      "seed": 1025512
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 15,
+      "steps_per_cycle": 512,
+      "taps": [
+        14,
+        13
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "495f391b8fdff195d6ae1921bdfa5e3d6ea0ac02fd89d34add1cbada91d7ee21",
+    "blif_sha256": "a7d3de6efe30fe4cb22280eb092cf03d65fe8c30a270b9c4f8e32cd8b1d67245",
+    "aag_lines": 1702,
+    "blif_lines": 1737,
+    "stats": {
+      "inputs": 0,
+      "latches": 30,
+      "ands": 0,
+      "xors": 552,
+      "ors": 14,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025512_steps512_taps[14, 13]_width15.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025512_steps512_taps[14, 13]_width15.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1025512_steps512_taps[14, 13]_width15"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15",
+      "width": 15,
+      "steps": 768,
+      "taps": [
+        14,
+        13
+      ],
+      "seed": 1025768
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS15"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 15,
+      "steps_per_cycle": 768,
+      "taps": [
+        14,
+        13
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "b16156862d4cf13f801e847dce9fb3b840168a96c7f26327e5fcd680fdba3390",
+    "blif_sha256": "3a8dde964a4e0ef3bc025260cc414ec903608064bf0e6ec01acf13a0838e54ed",
+    "aag_lines": 2620,
+    "blif_lines": 2655,
+    "stats": {
+      "inputs": 0,
+      "latches": 30,
+      "ands": 0,
+      "xors": 858,
+      "ors": 14,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025768_steps768_taps[14, 13]_width15.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1025768_steps768_taps[14, 13]_width15.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1025768_steps768_taps[14, 13]_width15"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23",
+      "width": 23,
+      "steps": 128,
+      "taps": [
+        22,
+        17
+      ],
+      "seed": 1033128
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 23,
+      "steps_per_cycle": 128,
+      "taps": [
+        22,
+        17
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "4b10ae4bce2f67034af416bf1d988fe900d10361aa58626d02b9e5da63b451b0",
+    "blif_sha256": "90bdeee55211cfae0efaa9019587114f3fe16a8aa443db30dda5ab897022af3e",
+    "aag_lines": 841,
+    "blif_lines": 892,
+    "stats": {
+      "inputs": 0,
+      "latches": 46,
+      "ands": 0,
+      "xors": 257,
+      "ors": 22,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033128_steps128_taps[22, 17]_width23.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033128_steps128_taps[22, 17]_width23.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1033128_steps128_taps[22, 17]_width23"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23",
+      "width": 23,
+      "steps": 256,
+      "taps": [
+        22,
+        17
+      ],
+      "seed": 1033256
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 23,
+      "steps_per_cycle": 256,
+      "taps": [
+        22,
+        17
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "385c8f9e525e5061364fd311078c7d36573d4e13c1b1228481edad24c1d1bbb7",
+    "blif_sha256": "173a6f6d97ff45942d16aec730c5a5cf9c83c85854c361a35cf6a46177e65a3f",
+    "aag_lines": 1396,
+    "blif_lines": 1447,
+    "stats": {
+      "inputs": 0,
+      "latches": 46,
+      "ands": 0,
+      "xors": 442,
+      "ors": 22,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033256_steps256_taps[22, 17]_width23.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033256_steps256_taps[22, 17]_width23.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1033256_steps256_taps[22, 17]_width23"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23",
+      "width": 23,
+      "steps": 512,
+      "taps": [
+        22,
+        17
+      ],
+      "seed": 1033512
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 23,
+      "steps_per_cycle": 512,
+      "taps": [
+        22,
+        17
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "1a16116d52a1f65cb6db83b3cd33e220b37f49e548e5b2c95a9a6d3e9027fec8",
+    "blif_sha256": "2fd1cda98eb144a2e40c077ef037b00452b2d0134ba22b036d86accebbb34986",
+    "aag_lines": 2218,
+    "blif_lines": 2269,
+    "stats": {
+      "inputs": 0,
+      "latches": 46,
+      "ands": 0,
+      "xors": 716,
+      "ors": 22,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033512_steps512_taps[22, 17]_width23.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033512_steps512_taps[22, 17]_width23.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1033512_steps512_taps[22, 17]_width23"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23",
+      "width": 23,
+      "steps": 768,
+      "taps": [
+        22,
+        17
+      ],
+      "seed": 1033768
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS23"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 23,
+      "steps_per_cycle": 768,
+      "taps": [
+        22,
+        17
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "1c3afda0820602ba83e0e6fc464873bda5ad1be3070d8547fb0aa8b8cf634f4d",
+    "blif_sha256": "8eb75fa7e880584ffa3a00bf9d619bcce1953f1d7c08445883b0cc7ab98fecab",
+    "aag_lines": 2800,
+    "blif_lines": 2851,
+    "stats": {
+      "inputs": 0,
+      "latches": 46,
+      "ands": 0,
+      "xors": 910,
+      "ors": 22,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033768_steps768_taps[22, 17]_width23.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1033768_steps768_taps[22, 17]_width23.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1033768_steps768_taps[22, 17]_width23"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 128,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1041128
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 128,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "97f0e6fbb8132fff942e1c8baf7f0c8eb44bf708f4abc531fe64c5da1fc58924",
+    "blif_sha256": "2d1f480fd5d097bfa4b486ceac14a43d5303b9c55d0da56cba3bd4ac8ff68751",
+    "aag_lines": 724,
+    "blif_lines": 791,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 210,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041128_steps128_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041128_steps128_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1041128_steps128_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 256,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1041256
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 256,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "ce2b4291e9c05795924f37eaee6899ac530688dce735e934d4e5e4029a7fbc7c",
+    "blif_sha256": "e65a669ef022df1cbc80eb410fb69077099600972d60ecba58e530169c29e7c0",
+    "aag_lines": 1174,
+    "blif_lines": 1241,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 360,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041256_steps256_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041256_steps256_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1041256_steps256_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 512,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1041512
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 512,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "9299cd0dcded502fba6766ca979683f2f7530f5716f53d3214bd01b44065b9e2",
+    "blif_sha256": "a78cd7b8c531a027212aa07c42fe00e0598263e4ebaf840ad5722a56b35182b1",
+    "aag_lines": 1987,
+    "blif_lines": 2054,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 631,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041512_steps512_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041512_steps512_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1041512_steps512_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31",
+      "width": 31,
+      "steps": 768,
+      "taps": [
+        30,
+        27
+      ],
+      "seed": 1041768
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS31"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 31,
+      "steps_per_cycle": 768,
+      "taps": [
+        30,
+        27
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "fa13d587d18e95cfabbef7ebb9a370bca4a3d648df9fe8af865cc7804ed5f471",
+    "blif_sha256": "e0b7cb931550f315471be3ca9b0b9dbbda517b45cd0b6aecbba20969fb233703",
+    "aag_lines": 3376,
+    "blif_lines": 3443,
+    "stats": {
+      "inputs": 0,
+      "latches": 62,
+      "ands": 0,
+      "xors": 1094,
+      "ors": 30,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041768_steps768_taps[30, 27]_width31.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1041768_steps768_taps[30, 27]_width31.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1041768_steps768_taps[30, 27]_width31"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63",
+      "width": 63,
+      "steps": 64,
+      "taps": [
+        62,
+        61
+      ],
+      "seed": 1073064
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 63,
+      "steps_per_cycle": 64,
+      "taps": [
+        62,
+        61
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "d44318085ab35f8a12152881717f04f16d732ec6e55117af918816dcbbca7aca",
+    "blif_sha256": "7d1ef511b2140c59841caf66a743f0825439603c30081e2279cae0e718977421",
+    "aag_lines": 763,
+    "blif_lines": 894,
+    "stats": {
+      "inputs": 0,
+      "latches": 126,
+      "ands": 0,
+      "xors": 191,
+      "ors": 62,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073064_steps64_taps[62, 61]_width63.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073064_steps64_taps[62, 61]_width63.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1073064_steps64_taps[62, 61]_width63"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63",
+      "width": 63,
+      "steps": 128,
+      "taps": [
+        62,
+        61
+      ],
+      "seed": 1073128
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 63,
+      "steps_per_cycle": 128,
+      "taps": [
+        62,
+        61
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "93861030bb9eb65a75fd07c53d22be10c6559cc11f5c47085ff678f04a8c0a97",
+    "blif_sha256": "98b806ad6585eaeb5b6cf42f8c234f5296cc710bfbe174108a0ac504881e4d3c",
+    "aag_lines": 970,
+    "blif_lines": 1101,
+    "stats": {
+      "inputs": 0,
+      "latches": 126,
+      "ands": 0,
+      "xors": 260,
+      "ors": 62,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073128_steps128_taps[62, 61]_width63.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073128_steps128_taps[62, 61]_width63.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1073128_steps128_taps[62, 61]_width63"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63",
+      "width": 63,
+      "steps": 256,
+      "taps": [
+        62,
+        61
+      ],
+      "seed": 1073256
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 63,
+      "steps_per_cycle": 256,
+      "taps": [
+        62,
+        61
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "65e638ae11e133cfea009dbaa5512bcb9e97d708ddbe2399f672fc9a6bed14ea",
+    "blif_sha256": "7e6528df60c69011c219de0f79b5352eeecb5bfffc1f84c0f8584948cefe4264",
+    "aag_lines": 1372,
+    "blif_lines": 1503,
+    "stats": {
+      "inputs": 0,
+      "latches": 126,
+      "ands": 0,
+      "xors": 394,
+      "ors": 62,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073256_steps256_taps[62, 61]_width63.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073256_steps256_taps[62, 61]_width63.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1073256_steps256_taps[62, 61]_width63"
+  },
+  {
+    "family": "lfsr_jump_equiv",
+    "params": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63",
+      "width": 63,
+      "steps": 384,
+      "taps": [
+        62,
+        61
+      ],
+      "seed": 1073384
+    },
+    "classification": {
+      "category": "prbs",
+      "semantic": "iterative versus matrix jump-ahead PRBS generator",
+      "standard": "PRBS63"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "iterative_lfsr_state == jump_ahead_matrix_state",
+      "state_width": 63,
+      "steps_per_cycle": 384,
+      "taps": [
+        62,
+        61
+      ],
+      "application": "parallel PRBS/LFSR generation and state advance"
+    },
+    "aag_sha256": "482afa17c09529df00fa90f19b27e4d2c4f37db23a39937616e65923eed25f55",
+    "blif_sha256": "a7202ef38a909b8e9c669524ef0063c9a97cc1e7cc4572f29cb9778034005de2",
+    "aag_lines": 2206,
+    "blif_lines": 2337,
+    "stats": {
+      "inputs": 0,
+      "latches": 126,
+      "ands": 0,
+      "xors": 672,
+      "ors": 62,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073384_steps384_taps[62, 61]_width63.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/lfsr_jump_equiv_seed1073384_steps384_taps[62, 61]_width63.blif"
+    },
+    "stem": "lfsr_jump_equiv_seed1073384_steps384_taps[62, 61]_width63"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 256,
+      "seed": 1100256
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 256
+    },
+    "aag_sha256": "48d7ba42f78b22647c9677395cdda32f9edb55d352633467cc813121a117d2ae",
+    "blif_sha256": "c8147c769c62b0d9516d23d7b9547ca15b994aebea0089edf81f12a405fa046d",
+    "aag_lines": 4853,
+    "blif_lines": 4719,
+    "stats": {
+      "inputs": 256,
+      "latches": 116,
+      "ands": 0,
+      "xors": 1474,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100256_symbol_bits256.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100256_symbol_bits256.blif"
+    },
+    "stem": "scrambler_equiv_seed1100256_symbol_bits256"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 384,
+      "seed": 1100384
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 384
+    },
+    "aag_sha256": "bff7cb19b1171e3b16ea4f947eeb80ed42a136604bd323af4ae95cc5e6cd5a79",
+    "blif_sha256": "14378d4a7a238d559acbc606709c664e7d69914caaa09f9010d6d050d7d790d9",
+    "aag_lines": 8323,
+    "blif_lines": 8061,
+    "stats": {
+      "inputs": 384,
+      "latches": 116,
+      "ands": 0,
+      "xors": 2588,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100384_symbol_bits384.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100384_symbol_bits384.blif"
+    },
+    "stem": "scrambler_equiv_seed1100384_symbol_bits384"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 512,
+      "seed": 1100512
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 512
+    },
+    "aag_sha256": "9c23869900665c4eee422b3aeea6694f5106d6c2f31aeb8190d3142a556e4395",
+    "blif_sha256": "d0ec47aa42315eaf769b0be8ec91b44dc4053ca1b11a8230894087adc12da554",
+    "aag_lines": 11181,
+    "blif_lines": 10791,
+    "stats": {
+      "inputs": 512,
+      "latches": 116,
+      "ands": 0,
+      "xors": 3498,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100512_symbol_bits512.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100512_symbol_bits512.blif"
+    },
+    "stem": "scrambler_equiv_seed1100512_symbol_bits512"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 768,
+      "seed": 1100768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 768
+    },
+    "aag_sha256": "57b0231ff8eb7cf0b4dcb8f676f0ddb74ed0d019b847eb09f8e798706c75d96b",
+    "blif_sha256": "ef7c427526f4534f8dbb36c362dd4bd96979c4d850e766a110cafe57af33ff2d",
+    "aag_lines": 20365,
+    "blif_lines": 19719,
+    "stats": {
+      "inputs": 768,
+      "latches": 116,
+      "ands": 0,
+      "xors": 6474,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100768_symbol_bits768.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1100768_symbol_bits768.blif"
+    },
+    "stem": "scrambler_equiv_seed1100768_symbol_bits768"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 256,
+      "seed": 1101256
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 256
+    },
+    "aag_sha256": "497fea8e0f6822ca9a5aaa7321983d9a24ab79b014bea05733c761fd20c773a3",
+    "blif_sha256": "d267eca763cc7561e2f49f3d62e734218e951816221719d84a4defd06d810831",
+    "aag_lines": 4853,
+    "blif_lines": 4719,
+    "stats": {
+      "inputs": 256,
+      "latches": 116,
+      "ands": 0,
+      "xors": 1474,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101256_symbol_bits256.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101256_symbol_bits256.blif"
+    },
+    "stem": "scrambler_equiv_seed1101256_symbol_bits256"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 384,
+      "seed": 1101384
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 384
+    },
+    "aag_sha256": "234011e7f8dbd3b44a38255623987308ef2615ddb29301ce6e1d0fcb8c5617d8",
+    "blif_sha256": "7c35b6610926b442a092ace695b94f8c90088a603e296305d1cccf087b25ed9b",
+    "aag_lines": 8323,
+    "blif_lines": 8061,
+    "stats": {
+      "inputs": 384,
+      "latches": 116,
+      "ands": 0,
+      "xors": 2588,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101384_symbol_bits384.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101384_symbol_bits384.blif"
+    },
+    "stem": "scrambler_equiv_seed1101384_symbol_bits384"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 512,
+      "seed": 1101512
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 512
+    },
+    "aag_sha256": "47086d832da49612bf512b410a582a45a9531b8376ca36683591d340124b2ce4",
+    "blif_sha256": "c9bc88a1a170a855886f2c8a919720daa28b94ca3165aa250068a80bdd878290",
+    "aag_lines": 11181,
+    "blif_lines": 10791,
+    "stats": {
+      "inputs": 512,
+      "latches": 116,
+      "ands": 0,
+      "xors": 3498,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101512_symbol_bits512.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101512_symbol_bits512.blif"
+    },
+    "stem": "scrambler_equiv_seed1101512_symbol_bits512"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 768,
+      "seed": 1101768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 768
+    },
+    "aag_sha256": "8a6de8e89de673d73d621a0f73e83546ae9bf4ea6c4d5a93c9f0a161366f51ac",
+    "blif_sha256": "e725ef124700cbf30533f5f06392deb5f2b2c74fc67a7c782f664c7dbdb23c5f",
+    "aag_lines": 20365,
+    "blif_lines": 19719,
+    "stats": {
+      "inputs": 768,
+      "latches": 116,
+      "ands": 0,
+      "xors": 6474,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101768_symbol_bits768.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1101768_symbol_bits768.blif"
+    },
+    "stem": "scrambler_equiv_seed1101768_symbol_bits768"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 256,
+      "seed": 1102256
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 256
+    },
+    "aag_sha256": "c4ef7e18c97ed38b76225134be5426a4359af38bdbd10683a7e7c845525114b6",
+    "blif_sha256": "c817ff81570bfb1acdf3154f4b4e31875a32b8c0a784a51a2ac4b2e2167ea70b",
+    "aag_lines": 4853,
+    "blif_lines": 4719,
+    "stats": {
+      "inputs": 256,
+      "latches": 116,
+      "ands": 0,
+      "xors": 1474,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102256_symbol_bits256.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102256_symbol_bits256.blif"
+    },
+    "stem": "scrambler_equiv_seed1102256_symbol_bits256"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 384,
+      "seed": 1102384
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 384
+    },
+    "aag_sha256": "1dde7711c872735669b3837595bc4c7522aeaf949cfb95ded6a5f9609c9995a1",
+    "blif_sha256": "3ea52ab686accbe6f0850be75597fe6b319fbf4cbb29e484df24737330d0387e",
+    "aag_lines": 8323,
+    "blif_lines": 8061,
+    "stats": {
+      "inputs": 384,
+      "latches": 116,
+      "ands": 0,
+      "xors": 2588,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102384_symbol_bits384.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102384_symbol_bits384.blif"
+    },
+    "stem": "scrambler_equiv_seed1102384_symbol_bits384"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 512,
+      "seed": 1102512
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 512
+    },
+    "aag_sha256": "9cac0032488f36b8aa89874b28262927c31d25a0b6b7004bd8e6a201377134f8",
+    "blif_sha256": "c8d00f6b2c9193a87b9f55ff09189c74284a3bbe3b6e4ee3294effb30243e694",
+    "aag_lines": 11181,
+    "blif_lines": 10791,
+    "stats": {
+      "inputs": 512,
+      "latches": 116,
+      "ands": 0,
+      "xors": 3498,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102512_symbol_bits512.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102512_symbol_bits512.blif"
+    },
+    "stem": "scrambler_equiv_seed1102512_symbol_bits512"
+  },
+  {
+    "family": "scrambler_equiv",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58",
+      "symbol_bits": 768,
+      "seed": 1102768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel 64b/66b PCS scrambler",
+      "standard": "IEEE 802.3 polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_scrambler_history == parallel_matrix_history",
+      "standard": "IEEE 802.3 64b/66b PCS",
+      "polynomial": "1 + x^39 + x^58",
+      "symbol_bits_per_cycle": 768
+    },
+    "aag_sha256": "86d707b0e96877b4a679d9a4f5d6db3682c43ec85fabe4aae106663d6c62eff4",
+    "blif_sha256": "0172473b1f416582b4ce11b1793a22855547dc8670121ed14008296867128fd3",
+    "aag_lines": 20365,
+    "blif_lines": 19719,
+    "stats": {
+      "inputs": 768,
+      "latches": 116,
+      "ands": 0,
+      "xors": 6474,
+      "ors": 57,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102768_symbol_bits768.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/scrambler_equiv_seed1102768_symbol_bits768.blif"
+    },
+    "stem": "scrambler_equiv_seed1102768_symbol_bits768"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse",
+      "check_bits": 16,
+      "data_bits": 256,
+      "row_weight": 17,
+      "seed": 1216272
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 16,
+      "data_bits_per_cycle": 256,
+      "row_weight": 17,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "4055ce23260487beabb22ebb197b831f304c092fa1cadae50b126953a7c43cb6",
+    "blif_sha256": "37c561bc98ab00c66805fb81bdd6dc8b3e32e99e2a8476dec5cbdba2f509bb51",
+    "aag_lines": 1985,
+    "blif_lines": 1767,
+    "stats": {
+      "inputs": 256,
+      "latches": 32,
+      "ands": 0,
+      "xors": 560,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits256_row_weight17_seed1216272.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits256_row_weight17_seed1216272.blif"
+    },
+    "stem": "syndrome_equiv_check_bits16_data_bits256_row_weight17_seed1216272"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 16,
+      "data_bits": 256,
+      "row_weight": 65,
+      "seed": 1216260
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 16,
+      "data_bits_per_cycle": 256,
+      "row_weight": 65,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "e7433333978357f02c1b2ab716b9291b1d96b5b19351b52707d438311631cef5",
+    "blif_sha256": "3df44832fe1d5e75c1169315c40f5753cc2b4e64dbb1bca7c4382f8571fe3186",
+    "aag_lines": 6593,
+    "blif_lines": 6375,
+    "stats": {
+      "inputs": 256,
+      "latches": 32,
+      "ands": 0,
+      "xors": 2096,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits256_row_weight65_seed1216260.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits256_row_weight65_seed1216260.blif"
+    },
+    "stem": "syndrome_equiv_check_bits16_data_bits256_row_weight65_seed1216260"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse",
+      "check_bits": 16,
+      "data_bits": 512,
+      "row_weight": 33,
+      "seed": 1216528
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 16,
+      "data_bits_per_cycle": 512,
+      "row_weight": 33,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "bd2fa070984f5f18a9ccec85c35b2d7cf1548b5a6315ff89fe5755b7be5b34ca",
+    "blif_sha256": "a75eedfc8a7592010dacf34303c860fcecdc6fac281f0ee55019cca7765cf62c",
+    "aag_lines": 3777,
+    "blif_lines": 3303,
+    "stats": {
+      "inputs": 512,
+      "latches": 32,
+      "ands": 0,
+      "xors": 1072,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits512_row_weight33_seed1216528.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits512_row_weight33_seed1216528.blif"
+    },
+    "stem": "syndrome_equiv_check_bits16_data_bits512_row_weight33_seed1216528"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 16,
+      "data_bits": 512,
+      "row_weight": 129,
+      "seed": 1216516
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 16,
+      "data_bits_per_cycle": 512,
+      "row_weight": 129,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "1b53f218bbe7d5c92e7f01c65431157532868da0b903ad5360161875baaaf3f0",
+    "blif_sha256": "6f0459f4af2bb93d7748c8285f61c300639e25237b86c35405c9624ae0f11b8c",
+    "aag_lines": 12993,
+    "blif_lines": 12519,
+    "stats": {
+      "inputs": 512,
+      "latches": 32,
+      "ands": 0,
+      "xors": 4144,
+      "ors": 15,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits512_row_weight129_seed1216516.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits16_data_bits512_row_weight129_seed1216516.blif"
+    },
+    "stem": "syndrome_equiv_check_bits16_data_bits512_row_weight129_seed1216516"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse",
+      "check_bits": 32,
+      "data_bits": 256,
+      "row_weight": 17,
+      "seed": 1232272
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 256,
+      "row_weight": 17,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "83975c77f0cfc8b979357645f9e8d9f31961e90ee902b6245faa5f21bdfa66ea",
+    "blif_sha256": "779010d8077d8f7635d0d1eaee2917b49a8c4ee5911a746ecd9f5c09cc4770d7",
+    "aag_lines": 3713,
+    "blif_lines": 3527,
+    "stats": {
+      "inputs": 256,
+      "latches": 64,
+      "ands": 0,
+      "xors": 1120,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits256_row_weight17_seed1232272.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits256_row_weight17_seed1232272.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits256_row_weight17_seed1232272"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 32,
+      "data_bits": 256,
+      "row_weight": 65,
+      "seed": 1232260
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 256,
+      "row_weight": 65,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "ab0d8776dfa5ea4d334defefe11556dfc46bf6eefe4528f79ea391d8ebd57246",
+    "blif_sha256": "1f74e4fd10153725ad4bc70d0b3099a09f7a684d712660a2ac6f72dd84b57112",
+    "aag_lines": 12929,
+    "blif_lines": 12743,
+    "stats": {
+      "inputs": 256,
+      "latches": 64,
+      "ands": 0,
+      "xors": 4192,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits256_row_weight65_seed1232260.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits256_row_weight65_seed1232260.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits256_row_weight65_seed1232260"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse",
+      "check_bits": 32,
+      "data_bits": 512,
+      "row_weight": 33,
+      "seed": 1232528
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 512,
+      "row_weight": 33,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "4ceb2ea8f589959d1f4e6c05e4d62ac84aa84463848dfb94a534e335bfc2dc21",
+    "blif_sha256": "1f3d2d9bd44aad733bb3a386e852c46ee8c6eb74dd0d6e318410c99d86f4ee47",
+    "aag_lines": 7041,
+    "blif_lines": 6599,
+    "stats": {
+      "inputs": 512,
+      "latches": 64,
+      "ands": 0,
+      "xors": 2144,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits512_row_weight33_seed1232528.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits512_row_weight33_seed1232528.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits512_row_weight33_seed1232528"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 32,
+      "data_bits": 512,
+      "row_weight": 129,
+      "seed": 1232516
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 32,
+      "data_bits_per_cycle": 512,
+      "row_weight": 129,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "bc158e7865955a8f65efef08d13586eb204b64e5742e3d3996f7ffe261f2647c",
+    "blif_sha256": "8b1a75924d1f3fb3a513b024508b0d5bee87fbfd4885c66836a0eccdc117fa69",
+    "aag_lines": 25473,
+    "blif_lines": 25031,
+    "stats": {
+      "inputs": 512,
+      "latches": 64,
+      "ands": 0,
+      "xors": 8288,
+      "ors": 31,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits512_row_weight129_seed1232516.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits32_data_bits512_row_weight129_seed1232516.blif"
+    },
+    "stem": "syndrome_equiv_check_bits32_data_bits512_row_weight129_seed1232516"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse",
+      "check_bits": 64,
+      "data_bits": 256,
+      "row_weight": 17,
+      "seed": 1264272
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 64,
+      "data_bits_per_cycle": 256,
+      "row_weight": 17,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "55575a535f5fffec70fc175d91c785c42f26d7d822bc0eac284ab5a4e0d56218",
+    "blif_sha256": "94b17b24b77570fb92c64000fb3a2220f0317954b76e4201db8fbb443c66b3c3",
+    "aag_lines": 7169,
+    "blif_lines": 7047,
+    "stats": {
+      "inputs": 256,
+      "latches": 128,
+      "ands": 0,
+      "xors": 2240,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits256_row_weight17_seed1264272.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits256_row_weight17_seed1264272.blif"
+    },
+    "stem": "syndrome_equiv_check_bits64_data_bits256_row_weight17_seed1264272"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 64,
+      "data_bits": 256,
+      "row_weight": 65,
+      "seed": 1264260
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 64,
+      "data_bits_per_cycle": 256,
+      "row_weight": 65,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "c2a5b1197dce44f14a1d0dd2c8b97ed780de4bf565afa749d0161fd034db4186",
+    "blif_sha256": "a762b87bc6f3413ce15b43631fc5a51207be2b58dc049364d80b2160c2b6c606",
+    "aag_lines": 25601,
+    "blif_lines": 25479,
+    "stats": {
+      "inputs": 256,
+      "latches": 128,
+      "ands": 0,
+      "xors": 8384,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits256_row_weight65_seed1264260.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits256_row_weight65_seed1264260.blif"
+    },
+    "stem": "syndrome_equiv_check_bits64_data_bits256_row_weight65_seed1264260"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse",
+      "check_bits": 64,
+      "data_bits": 512,
+      "row_weight": 33,
+      "seed": 1264528
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-sparse"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 64,
+      "data_bits_per_cycle": 512,
+      "row_weight": 33,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "f0ff285f1a45a85d321a04f3eec8407660da460c6d9ecc93fdba2cd8300964ea",
+    "blif_sha256": "96f3e9924f2c69111053c6d21401d80b743948ab184f2b580fe458080893bff4",
+    "aag_lines": 13569,
+    "blif_lines": 13191,
+    "stats": {
+      "inputs": 512,
+      "latches": 128,
+      "ands": 0,
+      "xors": 4288,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits512_row_weight33_seed1264528.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits512_row_weight33_seed1264528.blif"
+    },
+    "stem": "syndrome_equiv_check_bits64_data_bits512_row_weight33_seed1264528"
+  },
+  {
+    "family": "syndrome_equiv",
+    "params": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense",
+      "check_bits": 64,
+      "data_bits": 512,
+      "row_weight": 129,
+      "seed": 1264516
+    },
+    "classification": {
+      "category": "ecc",
+      "semantic": "streaming binary-code syndrome network equivalence",
+      "standard": "generic-full-rank-dense"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "serial_syndrome == balanced_tree_syndrome",
+      "check_bits": 64,
+      "data_bits_per_cycle": 512,
+      "row_weight": 129,
+      "application": "streaming linear-code parity-check/syndrome hardware"
+    },
+    "aag_sha256": "0edf5bc00ed1abf81d6a6f8a4e1d0163accc94d1fad446bc03ff77418c2a3763",
+    "blif_sha256": "625fdf35c6f66bec471f3a686769c03f5beff3626b59814e568812966165c811",
+    "aag_lines": 50433,
+    "blif_lines": 50055,
+    "stats": {
+      "inputs": 512,
+      "latches": 128,
+      "ands": 0,
+      "xors": 16576,
+      "ors": 63,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 1.0,
+    "bad_cone_xor_density": 1.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits512_row_weight129_seed1264516.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/syndrome_equiv_check_bits64_data_bits512_row_weight129_seed1264516.blif"
+    },
+    "stem": "syndrome_equiv_check_bits64_data_bits512_row_weight129_seed1264516"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "seed": 1316097
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "78dff3fe0fe0e275ad7b06004376f6bbaf1fec9ebe0de638dc69333d570a351b",
+    "blif_sha256": "237d3df74ddf8984655c9078e2c82e82448535dfa21d2c590f4ffa3d8305d87e",
+    "aag_lines": 2630,
+    "blif_lines": 3023,
+    "stats": {
+      "inputs": 66,
+      "latches": 33,
+      "ands": 129,
+      "xors": 784,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8587075575027382,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial4129_seed1316097_symbol_bits64_width16.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial4129_seed1316097_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1316097_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 96,
+      "seed": 1316129
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 96,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "723dbc044b2a056fdd5850f6d8f857e4c1d49ba5a3e904273cf44fecf0edbf0c",
+    "blif_sha256": "1ab3728997d01ee06218228e0489e09dd7a702ffbd367899494545e7db0e0ad6",
+    "aag_lines": 3646,
+    "blif_lines": 4007,
+    "stats": {
+      "inputs": 98,
+      "latches": 33,
+      "ands": 129,
+      "xors": 1112,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8960515713134569,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial4129_seed1316129_symbol_bits96_width16.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial4129_seed1316129_symbol_bits96_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1316129_symbol_bits96_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 192,
+      "seed": 1316225
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 192,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "cbc8f213fdf7c004c8ee860d1037ee1ac918d99acb27615238462217e068f083",
+    "blif_sha256": "8fb79e144db7eee988c9356b309c1ba92049d80c6fbda45b7eec78514d0c6db8",
+    "aag_lines": 6856,
+    "blif_lines": 7121,
+    "stats": {
+      "inputs": 194,
+      "latches": 33,
+      "ands": 129,
+      "xors": 2150,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9433962264150944,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial4129_seed1316225_symbol_bits192_width16.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial4129_seed1316225_symbol_bits192_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1316225_symbol_bits192_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-IBM",
+      "width": 16,
+      "polynomial": 32773,
+      "symbol_bits": 64,
+      "seed": 1316069
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-IBM"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x8005",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "74e749fe6cbd85e8bbac9db6febb839898012c411cc2c334726fecdc07594b7e",
+    "blif_sha256": "c76af2d6c2074fe6467b4e1848f7eafbc54d4147dea73d38ad491837798fb3a6",
+    "aag_lines": 2030,
+    "blif_lines": 2423,
+    "stats": {
+      "inputs": 66,
+      "latches": 33,
+      "ands": 129,
+      "xors": 584,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8190743338008415,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial32773_seed1316069_symbol_bits64_width16.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial32773_seed1316069_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial32773_seed1316069_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-IBM",
+      "width": 16,
+      "polynomial": 32773,
+      "symbol_bits": 96,
+      "seed": 1316101
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-IBM"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x8005",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 96,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "770d556848b511359c22f0c15174d01ebdded3c8f5c981e002df373c007faf64",
+    "blif_sha256": "21387939e6851ad32c6fcf9b3b799ce1c3511519ad9eb2020927d3d6be6ee026",
+    "aag_lines": 3190,
+    "blif_lines": 3551,
+    "stats": {
+      "inputs": 98,
+      "latches": 33,
+      "ands": 129,
+      "xors": 960,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8815426997245179,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial32773_seed1316101_symbol_bits96_width16.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial32773_seed1316101_symbol_bits96_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial32773_seed1316101_symbol_bits96_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-IBM",
+      "width": 16,
+      "polynomial": 32773,
+      "symbol_bits": 192,
+      "seed": 1316197
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-16-IBM"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x8005",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 192,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "0356248b367b66eae449c868b6bb47137ea061e8041b294a4ee1cccfe86e5068",
+    "blif_sha256": "e5355d4e0a823582b94903d9ec49a842bc070020e82b8ac874577a9b83ca7c40",
+    "aag_lines": 6112,
+    "blif_lines": 6377,
+    "stats": {
+      "inputs": 194,
+      "latches": 33,
+      "ands": 129,
+      "xors": 1902,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9364844903988183,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial32773_seed1316197_symbol_bits192_width16.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial32773_seed1316197_symbol_bits192_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial32773_seed1316197_symbol_bits192_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 128,
+      "seed": 1332311
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 128,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "83afd892a432c1f95d6d95bdb610a3bb7c1b90c319bf8ca71f74fa98ada118f9",
+    "blif_sha256": "3838cfd86af23d9f86edcceea3ef3fb3ad41dfb58cf11acd54d9ecad464b34a3",
+    "aag_lines": 13576,
+    "blif_lines": 14353,
+    "stats": {
+      "inputs": 130,
+      "latches": 65,
+      "ands": 257,
+      "xors": 4342,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.94411828658404,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial79764919_seed1332311_symbol_bits128_width32.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial79764919_seed1332311_symbol_bits128_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1332311_symbol_bits128_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 256,
+      "seed": 1332439
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "1c5f0a9d849b3f562f676d3e107de95ff52809491bb01bb57e7f0419cc5a24a1",
+    "blif_sha256": "cf1b5f58b4a56427a30e81244b6de45ba24cb0ed429dd582ee8a52adcf4bec90",
+    "aag_lines": 24798,
+    "blif_lines": 25447,
+    "stats": {
+      "inputs": 258,
+      "latches": 65,
+      "ands": 257,
+      "xors": 8040,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9690249487766662,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial79764919_seed1332439_symbol_bits256_width32.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial79764919_seed1332439_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1332439_symbol_bits256_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 384,
+      "seed": 1332567
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 384,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "b4e6d5b19eb3c9aa3c3ab47dfe7172c7cda137f24390b7efa524e4414d04c0c8",
+    "blif_sha256": "6c38b00ca19e9ecedce0eb93917d2449f2970455f389b6da9d3e8ad8eab4e609",
+    "aag_lines": 36389,
+    "blif_lines": 36910,
+    "stats": {
+      "inputs": 386,
+      "latches": 65,
+      "ands": 257,
+      "xors": 11861,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9787918798481597,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial79764919_seed1332567_symbol_bits384_width32.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial79764919_seed1332567_symbol_bits384_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1332567_symbol_bits384_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 128,
+      "seed": 1332193
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 128,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "2088df9bba01c6576aff111b661207644beb17378844d164ed836721eb2d18d8",
+    "blif_sha256": "4b5f3e361694660813cc941ee5fb09c0953fdd86f46d4a7ff524f5bf9b1f2c1a",
+    "aag_lines": 14644,
+    "blif_lines": 15421,
+    "stats": {
+      "inputs": 130,
+      "latches": 65,
+      "ands": 257,
+      "xors": 4698,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.948133198789102,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial517762881_seed1332193_symbol_bits128_width32.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial517762881_seed1332193_symbol_bits128_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial517762881_seed1332193_symbol_bits128_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 256,
+      "seed": 1332321
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "ae806a50dabf1efae6e817457a80f3e33995d18de89f7eac182c837fd79522dd",
+    "blif_sha256": "a9ea3e5205e581267943d6a14ee5e0230104d69356c8873de385b50125552740",
+    "aag_lines": 27822,
+    "blif_lines": 28471,
+    "stats": {
+      "inputs": 258,
+      "latches": 65,
+      "ands": 257,
+      "xors": 9048,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9723804406233207,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial517762881_seed1332321_symbol_bits256_width32.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial517762881_seed1332321_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial517762881_seed1332321_symbol_bits256_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 384,
+      "seed": 1332449
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial versus parallel CRC state alignment",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 384,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "533aa5c1329134a1f8d889beaf59d305bd535be01488d5abf230e8b8556de3d3",
+    "blif_sha256": "ad06f3a81111cae88c34419c852e6888e344e16c93aba858fae90ce477b29915",
+    "aag_lines": 40556,
+    "blif_lines": 41077,
+    "stats": {
+      "inputs": 386,
+      "latches": 65,
+      "ands": 257,
+      "xors": 13250,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9809728289035315,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial517762881_seed1332449_symbol_bits384_width32.aag",
+      "blif": "test_tools/compare/results/pathb_linear_scope_generalization_v1/benchmarks/crc_frame_align_polynomial517762881_seed1332449_symbol_bits384_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial517762881_seed1332449_symbol_bits384_width32"
+  }
+]

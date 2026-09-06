@@ -22,6 +22,8 @@ void ccadical_assume (CCaDiCaL *, int lit);
 int ccadical_solve (CCaDiCaL *);
 int ccadical_val (CCaDiCaL *, int lit);
 int ccadical_failed (CCaDiCaL *, int lit);
+void ccadical_phase (CCaDiCaL *, int lit);
+void ccadical_unphase (CCaDiCaL *, int lit);
 
 void ccadical_set_terminate (CCaDiCaL *,
   void * state, int (*terminate)(void * state));
@@ -39,6 +41,10 @@ void ccadical_set_option (CCaDiCaL *, const char * name, int val);
 void ccadical_limit (CCaDiCaL *, const char * name, int limit);
 int ccadical_get_option (CCaDiCaL *, const char * name);
 void ccadical_print_statistics (CCaDiCaL *);
+int64_t ccadical_conflicts (CCaDiCaL *);
+int64_t ccadical_decisions (CCaDiCaL *);
+int64_t ccadical_propagations (CCaDiCaL *);
+int64_t ccadical_restarts (CCaDiCaL *);
 int64_t ccadical_active (CCaDiCaL *);
 int64_t ccadical_irredundant (CCaDiCaL *);
 int ccadical_fixed (CCaDiCaL *, int lit);
@@ -47,6 +53,11 @@ void ccadical_freeze (CCaDiCaL *, int lit);
 int ccadical_frozen (CCaDiCaL *, int lit);
 void ccadical_melt (CCaDiCaL *, int lit);
 int ccadical_simplify (CCaDiCaL *);
+int ccadical_simplify_rounds (CCaDiCaL *, int rounds);
+typedef int (*ccadical_clause_callback) (
+  void * state, const int * literals, int size);
+int ccadical_traverse_clauses (
+  CCaDiCaL *, void * state, ccadical_clause_callback);
 
 /*------------------------------------------------------------------------*/
 

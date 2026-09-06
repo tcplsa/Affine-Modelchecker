@@ -1,0 +1,956 @@
+[
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "seed": 987362
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "ec9f6eb88e28c1834ab22260867e43729e5d70838d51d7fe50ce513f5f308835",
+    "blif_sha256": "2438452c59ab5df855d0de63caba1cb6b7766caaf805a1d29cae20b66e674118",
+    "aag_lines": 2583,
+    "blif_lines": 3790,
+    "stats": {
+      "inputs": 16,
+      "latches": 69,
+      "ands": 321,
+      "xors": 704,
+      "ors": 191,
+      "nots": 192,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.686829268292683,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987362_symbol_bits16_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987362_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987362_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "seed": 987364
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "ef2f9403ea96f372fd5b7c6e7ce8a25d5cd6a0a3f4ecbce38ef4a01a1f01f00f",
+    "blif_sha256": "478b3873bac7005e1daa61962cbc9a5d03432253a5ca9c0949e235c5d938291c",
+    "aag_lines": 2777,
+    "blif_lines": 4368,
+    "stats": {
+      "inputs": 16,
+      "latches": 71,
+      "ands": 449,
+      "xors": 704,
+      "ors": 255,
+      "nots": 256,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6105810928013877,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987364_symbol_bits16_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987364_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987364_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "seed": 987368
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "ad857d7d6a3f45c0f4838ff174191942d59bd30d3f87bc035756eefd835eab6d",
+    "blif_sha256": "f1342f722e67e29a7ec558e3634ff22df1741df08de7a652e8a58ddbf510e77c",
+    "aag_lines": 3165,
+    "blif_lines": 5524,
+    "stats": {
+      "inputs": 16,
+      "latches": 75,
+      "ands": 705,
+      "xors": 704,
+      "ors": 383,
+      "nots": 384,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.49964513839602553,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987368_symbol_bits16_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987368_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987368_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "seed": 987522
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "dc09a0ba923bc8dddc4048acb016ac577763f8ef2aafc0f8520a6ecf684d8229",
+    "blif_sha256": "c9a046f7cc33ea22ea777b34f1380639952fdd004014c07d30cef662bfde1c83",
+    "aag_lines": 3271,
+    "blif_lines": 4462,
+    "stats": {
+      "inputs": 32,
+      "latches": 69,
+      "ands": 321,
+      "xors": 928,
+      "ors": 191,
+      "nots": 192,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7429943955164131,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987522_symbol_bits32_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987522_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987522_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "seed": 987524
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "1ef277f61045af2830cfa9f315a983899f66a3feaddf928e70d6e6d53be46162",
+    "blif_sha256": "5bd4cda7272f1d3978aea603a7e9134f062858b2d489281290a543a37ad3ac69",
+    "aag_lines": 3465,
+    "blif_lines": 5040,
+    "stats": {
+      "inputs": 32,
+      "latches": 71,
+      "ands": 449,
+      "xors": 928,
+      "ors": 255,
+      "nots": 256,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6739288307915758,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987524_symbol_bits32_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987524_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987524_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "seed": 987528
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "b3b2770fc7adb32e00a422a9fd45b54fa570bf2d4aea4e50a60649fe47bc41a1",
+    "blif_sha256": "cf690622f8ebffea5b6fd0fc1dc48de8e762a2699016781626ed6027f732fda2",
+    "aag_lines": 3853,
+    "blif_lines": 6196,
+    "stats": {
+      "inputs": 32,
+      "latches": 75,
+      "ands": 705,
+      "xors": 928,
+      "ors": 383,
+      "nots": 384,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5682792406613595,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987528_symbol_bits32_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987528_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987528_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "seed": 987842
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "c3de8aa283543f4eb4b288b023446f461af4d161835614727deeac9a29586b7a",
+    "blif_sha256": "792785a435c70287c5803097d1987baf5698e083116f1ba0d5c85cded671d5e5",
+    "aag_lines": 4647,
+    "blif_lines": 5806,
+    "stats": {
+      "inputs": 64,
+      "latches": 69,
+      "ands": 321,
+      "xors": 1376,
+      "ors": 191,
+      "nots": 192,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8108426635238657,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987842_symbol_bits64_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987842_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed987842_symbol_bits64_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "seed": 987844
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "f3a4b73d5c1787038863920e5269104add7e906922f06f83dbdb5786d840374f",
+    "blif_sha256": "1717814c06cc578fc46cbcf6ca6c8712cc6cead34959905b1d92ede45a41ca2c",
+    "aag_lines": 4841,
+    "blif_lines": 6384,
+    "stats": {
+      "inputs": 64,
+      "latches": 71,
+      "ands": 449,
+      "xors": 1376,
+      "ors": 255,
+      "nots": 256,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.753972602739726,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987844_symbol_bits64_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987844_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed987844_symbol_bits64_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "seed": 987848
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "0f9661e4808ba83d4eceb5fd6d5199a34edd0d236c918424b552a690b2af447e",
+    "blif_sha256": "41654c747d35bdc959fac3f2a1753934d4ee930f16cbede583f58c3e3bd833ab",
+    "aag_lines": 5229,
+    "blif_lines": 7540,
+    "stats": {
+      "inputs": 64,
+      "latches": 75,
+      "ands": 705,
+      "xors": 1376,
+      "ors": 383,
+      "nots": 384,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6612205670350793,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987848_symbol_bits64_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987848_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed987848_symbol_bits64_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 96,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "seed": 988162
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 96,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "09da7234e1d71d271bfea00ce8f017efe3f7fb8ba9012ee152bae308c7e2c5da",
+    "blif_sha256": "6a9e6eb8078f6f7d0cc32e44302e149c4d7cd62934e16655a703080c55e2564b",
+    "aag_lines": 6023,
+    "blif_lines": 7150,
+    "stats": {
+      "inputs": 96,
+      "latches": 69,
+      "ands": 321,
+      "xors": 1824,
+      "ors": 191,
+      "nots": 192,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8503496503496504,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed988162_symbol_bits96_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed988162_symbol_bits96_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial79764919_seed988162_symbol_bits96_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 96,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "seed": 988164
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 96,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "708293b78f40370d5b203fe861dd04e591e0e8f9d2707f6ade8249a1076e551b",
+    "blif_sha256": "931baaf4c07f9f37b945598b554ce35740153bce819651cdaa8aac36a6a84043",
+    "aag_lines": 6217,
+    "blif_lines": 7728,
+    "stats": {
+      "inputs": 96,
+      "latches": 71,
+      "ands": 449,
+      "xors": 1824,
+      "ors": 255,
+      "nots": 256,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8024637043554773,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed988164_symbol_bits96_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed988164_symbol_bits96_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial79764919_seed988164_symbol_bits96_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 96,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "seed": 988168
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 96,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "cef1a866a14b88ac6509c574ec534029c326573aa3557114542c33d04e5308d6",
+    "blif_sha256": "c5e320f9a60f22b1b73c187b35110a3dea254225b0f069f0903ccc3ae2fb597e",
+    "aag_lines": 6605,
+    "blif_lines": 8884,
+    "stats": {
+      "inputs": 96,
+      "latches": 75,
+      "ands": 705,
+      "xors": 1824,
+      "ors": 383,
+      "nots": 384,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7212336892052195,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed988168_symbol_bits96_width32.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed988168_symbol_bits96_width32.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial79764919_seed988168_symbol_bits96_width32"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "seed": 985922
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "b49a0906a7d94784672e748e48d2f6ed2c404fd409c7abae7d754f58841e38ba",
+    "blif_sha256": "30d6a565c14f5ee6d078da9cbd73d78750fdd73b2faa742f53375a5240ae3f11",
+    "aag_lines": 743,
+    "blif_lines": 1326,
+    "stats": {
+      "inputs": 32,
+      "latches": 37,
+      "ands": 161,
+      "xors": 160,
+      "ors": 95,
+      "nots": 96,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4984423676012461,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial4129_seed985922_symbol_bits32_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial4129_seed985922_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial4129_seed985922_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "seed": 985924
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "f7049fbebe88ae0410a9399f6532b49a10d1cdd1e3644cfdfaa5155d26ebe844",
+    "blif_sha256": "3d44e1502751af35d89f17ffe831241b6443a5a0a709402eb0360cfc2914d897",
+    "aag_lines": 841,
+    "blif_lines": 1616,
+    "stats": {
+      "inputs": 32,
+      "latches": 39,
+      "ands": 225,
+      "xors": 160,
+      "ors": 127,
+      "nots": 128,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4155844155844156,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial4129_seed985924_symbol_bits32_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial4129_seed985924_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial4129_seed985924_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "seed": 985928
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "b3d129e97d435eca536fdf59374819c1f4611f6f466703ffa68b53ed4e5b0154",
+    "blif_sha256": "b0a65c7a9202ff699462ed6807b4c55c539d3789d015349fd0722bd4ddd1a7f0",
+    "aag_lines": 1037,
+    "blif_lines": 2196,
+    "stats": {
+      "inputs": 32,
+      "latches": 43,
+      "ands": 353,
+      "xors": 160,
+      "ors": 191,
+      "nots": 192,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.31189083820662766,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial4129_seed985928_symbol_bits32_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial4129_seed985928_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial4129_seed985928_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "seed": 986242
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "payload_cycles": 2,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "5fa08f1038565dd794b9e7f5520ce9fd99d5f56f9eda930eb97ff7980c18dd68",
+    "blif_sha256": "dbae5c3dcf7de96098e03e6db05081d8093e5cf38ab943c99fdfce798b2bbfa9",
+    "aag_lines": 1063,
+    "blif_lines": 1614,
+    "stats": {
+      "inputs": 64,
+      "latches": 37,
+      "ands": 161,
+      "xors": 256,
+      "ors": 95,
+      "nots": 96,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6139088729016786,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial4129_seed986242_symbol_bits64_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial4129_seed986242_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles2_polynomial4129_seed986242_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "seed": 986244
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "payload_cycles": 4,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "369ebf4c49681152df37b090205a67216c99be65dd253e4d58809c8553f84161",
+    "blif_sha256": "44e73dfc2202856bf1906b4a3b42528596124462463b2b9a6737bc6300291cbf",
+    "aag_lines": 1161,
+    "blif_lines": 1904,
+    "stats": {
+      "inputs": 64,
+      "latches": 39,
+      "ands": 225,
+      "xors": 256,
+      "ors": 127,
+      "nots": 128,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5322245322245323,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial4129_seed986244_symbol_bits64_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial4129_seed986244_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles4_polynomial4129_seed986244_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_residue",
+    "params": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "seed": 986248
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "fixed-length frame CRC residue after a delayed derived FCS",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "at check phase, CRC(payload followed by derived FCS) == zero",
+      "protocol": "fixed-length CRC frame with delayed FCS residue check",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "payload_cycles": 8,
+      "fcs_topology": "balanced",
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "9742174129f6d5e532b457a62e3a9f6d2b78a8eba30b0409b7d142aeedd7048f",
+    "blif_sha256": "2b8026ab63d66fe6dc485b54da08b1c5a9e23f9a3580774b69287c4eb872027b",
+    "aag_lines": 1357,
+    "blif_lines": 2484,
+    "stats": {
+      "inputs": 64,
+      "latches": 43,
+      "ands": 353,
+      "xors": 256,
+      "ors": 191,
+      "nots": 192,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.42036124794745483,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial4129_seed986248_symbol_bits64_width16.aag",
+      "blif": "/home/wudl/test_tools/compare/results/pathb_crc_frame_residue_v1/benchmarks/crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial4129_seed986248_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_residue_fcs_topologybalanced_payload_cycles8_polynomial4129_seed986248_symbol_bits64_width16"
+  }
+]

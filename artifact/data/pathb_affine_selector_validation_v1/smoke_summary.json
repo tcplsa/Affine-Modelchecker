@@ -1,0 +1,620 @@
+{
+  "models": 4,
+  "train": 0,
+  "holdout": 4,
+  "selected_policy": {
+    "support": 16,
+    "coverage": 0.5,
+    "controls": 1
+  },
+  "default_policy": {
+    "support": 32,
+    "coverage": 0.75,
+    "controls": 2
+  },
+  "grid": [
+    {
+      "policy": [
+        16,
+        0.5,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        0.5,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        0.5,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        0.75,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        0.75,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        0.75,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        1.0,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        1.0,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        16,
+        1.0,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        0.5,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        0.5,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        0.5,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        0.75,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        0.75,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        0.75,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        1.0,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        1.0,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        32,
+        1.0,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        0.5,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        0.5,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        0.5,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        0.75,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        0.75,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        0.75,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        1.0,
+        1
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        1.0,
+        2
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    },
+    {
+      "policy": [
+        64,
+        1.0,
+        3
+      ],
+      "train": {
+        "solved": 0,
+        "par2": 0,
+        "gmean_vs_cadical": NaN,
+        "common": 0
+      },
+      "holdout": {
+        "solved": 4,
+        "par2": 1.652663,
+        "gmean_vs_cadical": 1.0,
+        "common": 4
+      }
+    }
+  ],
+  "policy_evaluation": [
+    {
+      "label": "train-selected",
+      "policy": [
+        16,
+        0.5,
+        1
+      ],
+      "split": "train",
+      "solved": 0,
+      "par2": 0,
+      "gmean_vs_cadical": NaN,
+      "common": 0,
+      "wrong": 0,
+      "missed": 0,
+      "changed": 0,
+      "reasons": {},
+      "ci95": [
+        NaN,
+        NaN
+      ]
+    },
+    {
+      "label": "train-selected",
+      "policy": [
+        16,
+        0.5,
+        1
+      ],
+      "split": "holdout",
+      "solved": 4,
+      "par2": 1.652663,
+      "gmean_vs_cadical": 1.0,
+      "common": 4,
+      "wrong": 0,
+      "missed": 2,
+      "changed": 0,
+      "reasons": {
+        "fallback": 4
+      },
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "label": "paper-default",
+      "policy": [
+        32,
+        0.75,
+        2
+      ],
+      "split": "train",
+      "solved": 0,
+      "par2": 0,
+      "gmean_vs_cadical": NaN,
+      "common": 0,
+      "wrong": 0,
+      "missed": 0,
+      "changed": 0,
+      "reasons": {},
+      "ci95": [
+        NaN,
+        NaN
+      ]
+    },
+    {
+      "label": "paper-default",
+      "policy": [
+        32,
+        0.75,
+        2
+      ],
+      "split": "holdout",
+      "solved": 4,
+      "par2": 1.652663,
+      "gmean_vs_cadical": 1.0,
+      "common": 4,
+      "wrong": 0,
+      "missed": 2,
+      "changed": 0,
+      "reasons": {
+        "fallback": 4
+      },
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

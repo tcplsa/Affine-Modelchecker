@@ -69,6 +69,7 @@ class SimpSolver : public Solver {
     bool    solve       (Lit p, Lit q,        bool do_simp = true, bool turn_off_simp = false);
     bool    solve       (Lit p, Lit q, Lit r, bool do_simp = true, bool turn_off_simp = false);
     bool    eliminate   (bool turn_off_elim = false);  // Perform variable elimination based simplification. 
+    void    setElimTieBreak(int mode);
 
     // Memory managment:
     //
@@ -90,6 +91,7 @@ class SimpSolver : public Solver {
     int     grow;              // Allow a variable elimination step to grow by a number of clauses (default to zero).
     int     clause_lim;        // Variables are not eliminated if it produces a resolvent with a length above this limit.
                                // -1 means no limit.
+    int     elim_width_weight; // Extra cost for each literal beyond a binary clause during BVE.
     int     subsumption_lim;   // Do not check if subsumption against a clause larger than this. -1 means no limit.
     double  simp_garbage_frac; // A different limit for when to issue a GC during simplification (Also see 'garbage_frac').
 
@@ -103,6 +105,15 @@ class SimpSolver : public Solver {
     int     merges;
     int     asymm_lits;
     int     eliminated_vars;
+    uint64_t elim_attempted_vars;
+    uint64_t elim_rejected_growth;
+    uint64_t elim_rejected_clause_limit;
+    uint64_t elim_removed_clauses;
+    uint64_t elim_resolvents;
+    uint64_t elim_resolvent_literals;
+    uint64_t elim_positive_occurrences;
+    uint64_t elim_negative_occurrences;
+    uint64_t elim_max_resolvent_size;
 
  protected:
 
@@ -110,12 +121,26 @@ class SimpSolver : public Solver {
     //
     struct ElimLt {
         const LMap<int>& n_occ;
-        explicit ElimLt(const LMap<int>& no) : n_occ(no) {}
+        const int& tie_break;
+        ElimLt(const LMap<int>& no, const int& tb) : n_occ(no), tie_break(tb) {}
 
         // TODO: are 64-bit operations here noticably bad on 32-bit platforms? Could use a saturating
         // 32-bit implementation instead then, but this will have to do for now.
         uint64_t cost  (Var x)        const { return (uint64_t)n_occ[mkLit(x)] * (uint64_t)n_occ[~mkLit(x)]; }
-        bool operator()(Var x, Var y) const { return cost(x) < cost(y); }
+        uint64_t sum(Var x) const {
+            return (uint64_t)n_occ[mkLit(x)] + (uint64_t)n_occ[~mkLit(x)];
+        }
+        bool operator()(Var x, Var y) const {
+            const uint64_t cx = cost(x), cy = cost(y);
+            if (cx != cy) return cx < cy;
+            if (tie_break >= 3){
+                const uint64_t sx = sum(x), sy = sum(y);
+                if (sx != sy) return sx < sy;
+            }
+            if (tie_break == 1 || tie_break == 3) return x < y;
+            if (tie_break == 2 || tie_break == 4) return x > y;
+            return false;
+        }
         
         // TODO: investigate this order alternative more.
         // bool operator()(Var x, Var y) const { 
@@ -136,6 +161,7 @@ class SimpSolver : public Solver {
     Var                 max_simp_var;        // Max variable at the point simplification was turned off.
     vec<uint32_t>       elimclauses;
     VMap<char>          touched;
+    int                 elim_tie_break;
     OccLists<Var, vec<CRef>, ClauseDeleted>
                         occurs;
     LMap<int>           n_occ;

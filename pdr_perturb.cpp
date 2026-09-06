@@ -2,6 +2,7 @@
 
 #include "aig.hpp"
 #include <algorithm>
+#include <cstdint>
 #include <cstdlib>
 #include <iostream>
 #include <random>
@@ -127,6 +128,85 @@ bool perturb_input_by_score(Aiger *aiger, bool reverse, unsigned seed){
         seed);
 }
 
+vector<std::uint64_t> input_cone_scores(
+    const Aiger *aiger,
+    const vector<unsigned> &roots
+){
+    const std::uint64_t limit = UINT64_C(1000000000000);
+    vector<std::uint64_t> score(aiger->max_var + 1, 0);
+    for(unsigned lit : roots){
+        unsigned var = lit >> 1;
+        if(var > 0 && var < score.size() && score[var] < limit)
+            ++score[var];
+    }
+    for(auto it = aiger->Aiger_ands.rbegin();
+        it != aiger->Aiger_ands.rend(); ++it){
+        unsigned out = it->o >> 1;
+        if(out >= score.size() || score[out] == 0)
+            continue;
+        unsigned fanins[] = {it->i1 >> 1, it->i2 >> 1};
+        for(unsigned fanin : fanins){
+            if(fanin == 0 || fanin >= score.size())
+                continue;
+            score[fanin] = std::min(limit, score[fanin] + score[out]);
+        }
+    }
+    return score;
+}
+
+bool perturb_input_by_cone(
+    Aiger *aiger,
+    const string &cone,
+    bool reverse,
+    unsigned seed
+){
+    if(aiger == nullptr || aiger->num_inputs <= 1)
+        return false;
+
+    vector<unsigned> bad_roots = aiger->Aiger_bads.empty()
+        ? aiger->Aiger_outputs : aiger->Aiger_bads;
+    bad_roots.insert(
+        bad_roots.end(),
+        aiger->Aiger_constraints.begin(),
+        aiger->Aiger_constraints.end());
+    vector<unsigned> next_roots;
+    next_roots.reserve(aiger->Aiger_latches.size());
+    for(const auto &latch : aiger->Aiger_latches)
+        next_roots.push_back(latch.next);
+
+    vector<std::uint64_t> bad = input_cone_scores(aiger, bad_roots);
+    vector<std::uint64_t> next = input_cone_scores(aiger, next_roots);
+    vector<std::uint64_t> score(aiger->num_inputs + 1, 0);
+    for(int var = 1; var <= aiger->num_inputs; ++var){
+        if(cone == "bad")
+            score[var] = bad[var];
+        else if(cone == "next")
+            score[var] = next[var];
+        else
+            score[var] = std::min(bad[var], next[var]);
+    }
+
+    vector<unsigned> ordered;
+    ordered.reserve(aiger->num_inputs);
+    for(int var = 1; var <= aiger->num_inputs; ++var)
+        ordered.push_back(var);
+    std::sort(ordered.begin(), ordered.end(),
+        [&](unsigned left, unsigned right){
+            if(score[left] != score[right])
+                return reverse
+                    ? score[left] < score[right]
+                    : score[left] > score[right];
+            return left < right;
+        });
+
+    vector<unsigned> input_var_map(aiger->num_inputs + 1, 0);
+    for(size_t index = 0; index < ordered.size(); ++index)
+        input_var_map[ordered[index]] = static_cast<unsigned>(index + 1);
+    string tag = "INPUT_" + cone + (reverse ? "_LAST" : "_FIRST");
+    return apply_input_var_map(
+        aiger, input_var_map, tag.c_str(), seed);
+}
+
 bool perturb_input_swap(Aiger *aiger, unsigned seed){
     if(aiger == nullptr || aiger->num_inputs <= 1)
         return false;
@@ -152,6 +232,17 @@ bool perturb_input_swap(Aiger *aiger, unsigned seed){
     input_var_map[right] = left;
 
     return apply_input_var_map(aiger, input_var_map, "INPUT_SWAP", seed);
+}
+
+bool perturb_input_random_swap(Aiger *aiger, unsigned seed){
+    if(aiger == nullptr || aiger->num_inputs <= 1)
+        return false;
+
+    unsigned pairs = static_cast<unsigned>(
+        aiger->num_inputs * (aiger->num_inputs - 1) / 2);
+    std::mt19937 rng(seed);
+    unsigned selected = pairs == 0 ? 0 : rng() % pairs;
+    return perturb_input_swap(aiger, selected);
 }
 
 bool perturb_latch_variables(Aiger *aiger, unsigned seed){
@@ -262,10 +353,24 @@ void apply_pdr_perturbations(Aiger *aiger, const std::string &modes, unsigned se
         any = perturb_input_variables(aiger, seed) || any;
     if(perturb_has_mode(modes, "input-swap"))
         any = perturb_input_swap(aiger, seed) || any;
+    if(perturb_has_mode(modes, "input-swap-random"))
+        any = perturb_input_random_swap(aiger, seed) || any;
     if(perturb_has_mode(modes, "input-fanout"))
         any = perturb_input_by_score(aiger, false, seed) || any;
     if(perturb_has_mode(modes, "input-fanout-rev"))
         any = perturb_input_by_score(aiger, true, seed) || any;
+    if(perturb_has_mode(modes, "input-bad"))
+        any = perturb_input_by_cone(aiger, "bad", false, seed) || any;
+    if(perturb_has_mode(modes, "input-bad-rev"))
+        any = perturb_input_by_cone(aiger, "bad", true, seed) || any;
+    if(perturb_has_mode(modes, "input-next"))
+        any = perturb_input_by_cone(aiger, "next", false, seed) || any;
+    if(perturb_has_mode(modes, "input-next-rev"))
+        any = perturb_input_by_cone(aiger, "next", true, seed) || any;
+    if(perturb_has_mode(modes, "input-shared"))
+        any = perturb_input_by_cone(aiger, "shared", false, seed) || any;
+    if(perturb_has_mode(modes, "input-shared-rev"))
+        any = perturb_input_by_cone(aiger, "shared", true, seed) || any;
     if(perturb_has_mode(modes, "latch"))
         any = perturb_latch_variables(aiger, seed + 0x9e3779b9U) || any;
     if(perturb_has_mode(modes, "gate-run"))

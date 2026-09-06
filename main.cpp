@@ -57,6 +57,7 @@ struct PDRLaneCounts{
     int forward_compact_aig = 0;
     int forward_lowered_xag = 0;
     int forward_xag = 0;
+    int forward_auto = 0;
     int reverse_aig = 0;
     int reverse_compact_aig = 0;
     int reverse_lowered_xag = 0;
@@ -65,7 +66,23 @@ struct PDRLaneCounts{
 
     int total() const {
         return forward_aig + forward_compact_aig + forward_lowered_xag + forward_xag
+            + forward_auto
             + reverse_aig + reverse_compact_aig + reverse_lowered_xag + reverse_xag;
+    }
+
+    int reverse_total() const {
+        return reverse_aig + reverse_compact_aig + reverse_lowered_xag + reverse_xag;
+    }
+
+    void convert_reverse_to_forward() {
+        forward_aig += reverse_aig;
+        forward_compact_aig += reverse_compact_aig;
+        forward_lowered_xag += reverse_lowered_xag;
+        forward_xag += reverse_xag;
+        reverse_aig = 0;
+        reverse_compact_aig = 0;
+        reverse_lowered_xag = 0;
+        reverse_xag = 0;
     }
 };
 
@@ -83,6 +100,8 @@ const char *pdr_representation_name(PDRRepresentation representation){
         return "aig-compact";
     case PDRRepresentation::LoweredXag:
         return "xag-lowered";
+    case PDRRepresentation::Auto:
+        return "auto";
     case PDRRepresentation::Xag:
     case PDRRepresentation::Default:
         return "xag";
@@ -109,7 +128,8 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
 
     bool share_enabled = env_enabled("MC_PDR_SHARE", true);
     const int forward_lane_count = lane_counts.forward_aig + lane_counts.forward_compact_aig
-        + lane_counts.forward_lowered_xag + lane_counts.forward_xag;
+        + lane_counts.forward_lowered_xag + lane_counts.forward_xag
+        + lane_counts.forward_auto;
     const int reverse_lane_count = lane_counts.reverse_aig + lane_counts.reverse_compact_aig
         + lane_counts.reverse_lowered_xag + lane_counts.reverse_xag;
     LemmaExchange lemma_exchange(
@@ -131,6 +151,7 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
     add_group(PDRDirection::Forward, PDRRepresentation::LoweredXag,
               lane_counts.forward_lowered_xag);
     add_group(PDRDirection::Forward, PDRRepresentation::Xag, lane_counts.forward_xag);
+    add_group(PDRDirection::Forward, PDRRepresentation::Auto, lane_counts.forward_auto);
     add_group(PDRDirection::Reverse, PDRRepresentation::Aig, lane_counts.reverse_aig);
     add_group(PDRDirection::Reverse, PDRRepresentation::CompactAig,
               lane_counts.reverse_compact_aig);
@@ -159,8 +180,11 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
     int forward_blocks = 0;
     int reverse_blocks = 0;
     bool print_stats = std::getenv("MC_PDR_STATS") != nullptr;
+    int progress_stats_seconds = 0;
     int bridge_budget = 1;
     int meet_interval = 8;
+    if(const char *value = std::getenv("MC_PDR_PROGRESS_SECONDS"))
+        progress_stats_seconds = std::max(0, std::atoi(value));
     if(const char *value = std::getenv("MC_BIDIR_BRIDGE_BUDGET"))
         bridge_budget = std::max(0, std::atoi(value));
     if(const char *value = std::getenv("MC_BIDIR_MEET_INTERVAL"))
@@ -180,18 +204,22 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
         return true;
     };
 
+    // Publish terminal results under the lane lock so the bridge cannot clear
+    // or replace the winning PDR state before main consumes its witness.
     auto run_engine = [&](ParallelPDRState *state, int index){
         int result = -1;
         if(!cancel_requested.load()){
             std::lock_guard<std::mutex> lock(state->mutex);
-            if(!cancel_requested.load())
+            if(!cancel_requested.load()){
                 result = state->pdr->start(true);
+                state->result.store(result);
+                if(result > 0)
+                    publish_result(index, result);
+            }
         }
         state->result.store(result);
         state->started.store(true);
         event_cv.notify_all();
-        if(result > 0)
-            publish_result(index, result);
 
         while(result == 0 && !cancel_requested.load()){
             {
@@ -207,13 +235,13 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
                 if(cancel_requested.load())
                     break;
                 result = state->pdr->step();
+                state->result.store(result);
+                if(result == 0)
+                    ++state->completed_steps;
+                else if(result > 0)
+                    publish_result(index, result);
             }
-            state->result.store(result);
-            if(result == 0)
-                ++state->completed_steps;
             event_cv.notify_all();
-            if(result > 0)
-                publish_result(index, result);
             std::this_thread::yield();
         }
     };
@@ -264,6 +292,8 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
     };
 
     int next_bridge_round = meet_interval - 1;
+    auto next_progress_stats = steady_clock::now()
+        + seconds(std::max(1, progress_stats_seconds));
     while(winner_result.load() == 0){
         {
             std::unique_lock<std::mutex> lock(event_mutex);
@@ -271,6 +301,19 @@ int run_parallel_pdr(Aiger *aiger, bool uc, bool pr,
         }
         if(winner_result.load() != 0)
             break;
+        if(print_stats && progress_stats_seconds > 0
+           && steady_clock::now() >= next_progress_stats){
+            for(size_t lane=0; lane<states.size(); ++lane){
+                std::unique_lock<std::mutex> lane_lock(
+                    states[lane]->mutex, std::try_to_lock);
+                if(!lane_lock.owns_lock() || !states[lane]->started.load()
+                   || states[lane]->result.load() != 0)
+                    continue;
+                engines[lane]->print_stats(0);
+            }
+            next_progress_stats = steady_clock::now()
+                + seconds(progress_stats_seconds);
+        }
         if(bridge_budget == 0)
             continue;
         int forward_lane = best_lane(forward_lanes);
@@ -421,11 +464,13 @@ int main(int argc, char **argv){
                      "  --forward-aig-compact <count> Number of forward swept/renumbered AIG lanes.\n"
                      "  --forward-xag-lowered <count> Number of forward XAG-to-AND control lanes.\n"
                      "  --forward-xag <count>    Number of forward XAG PDR lanes.\n"
+                     "  --forward-auto <count>   Number of statically selected AIG/XAG lanes.\n"
                      "  --reverse-aig <count>    Number of reverse AIG PDR lanes.\n"
                      "  --reverse-aig-compact <count> Number of reverse swept/renumbered AIG lanes.\n"
                      "  --reverse-xag-lowered <count> Number of reverse XAG-to-AND control lanes.\n"
                      "  --reverse-xag <count>    Number of reverse XAG PDR lanes.\n"
-                     "  -xag                     Run PDR on AIG-to-XAG converted structure. Default: on\n"
+                     "  -auto                    Select AIG/XAG from static circuit structure. Default.\n"
+                     "  -xag                     Run PDR on AIG-to-XAG converted structure.\n"
                      "  -xag-lowered             Recover XORs, then lower them to canonical AND networks.\n"
                      "  -aig-compact             Sweep and compact the AIG without recovering XORs.\n"
                      "  -aig                     Run PDR on original AIG structure.\n"
@@ -443,7 +488,7 @@ int main(int argc, char **argv){
     // cout << "Try './modelchecker -h' for more details.\n";
     int property_index = 0;
     bool pr = 0, uc = 0, witness = 0, certificate = 0, find_bug_only = 0, log = 0;
-    PDRRepresentation selected_representation = PDRRepresentation::Xag;
+    PDRRepresentation selected_representation = PDRRepresentation::Auto;
     string engine = "forward";
     PDRLaneCounts lane_counts;
     for (int i = 1; i < argc-1; ++i){
@@ -460,6 +505,8 @@ int main(int argc, char **argv){
             log = 1;
         else if (arg == "-xag")
             selected_representation = PDRRepresentation::Xag;
+        else if (arg == "-auto")
+            selected_representation = PDRRepresentation::Auto;
         else if (arg == "-xag-lowered")
             selected_representation = PDRRepresentation::LoweredXag;
         else if (arg == "-aig-compact")
@@ -475,6 +522,7 @@ int main(int argc, char **argv){
         }
         else if (arg == "-bmc" || arg == "-pdr" || arg == "-pindex" || arg == "-engine" ||
                  arg == "--forward-aig" || arg == "--forward-xag" ||
+                 arg == "--forward-auto" ||
                  arg == "--forward-aig-compact" || arg == "--forward-xag-lowered" ||
                  arg == "--reverse-aig" || arg == "--reverse-xag" ||
                  arg == "--reverse-aig-compact" || arg == "--reverse-xag-lowered"){
@@ -503,6 +551,7 @@ int main(int argc, char **argv){
                 else if(arg == "--forward-aig-compact") lane_counts.forward_compact_aig = count;
                 else if(arg == "--forward-xag-lowered") lane_counts.forward_lowered_xag = count;
                 else if(arg == "--forward-xag") lane_counts.forward_xag = count;
+                else if(arg == "--forward-auto") lane_counts.forward_auto = count;
                 else if(arg == "--reverse-aig") lane_counts.reverse_aig = count;
                 else if(arg == "--reverse-aig-compact") lane_counts.reverse_compact_aig = count;
                 else if(arg == "--reverse-xag-lowered") lane_counts.reverse_lowered_xag = count;
@@ -511,13 +560,108 @@ int main(int argc, char **argv){
         }
     }
     Aiger *aiger = load_aiger_from_file(string(argv[argc-1]), property_index, witness, certificate, find_bug_only, log);
-    // apply_pdr_perturbations(aiger);
-    aiger->use_xag_for_pdr = selected_representation == PDRRepresentation::Xag;
+    const char *input_order = std::getenv("MC_PDR_INPUT_ORDER");
+    const char *extra_perturb = std::getenv("MC_PDR_PERTURB");
+    bool has_input_order = input_order != nullptr && string(input_order) != "original";
+    bool has_extra_perturb = extra_perturb != nullptr && string(extra_perturb) != "";
+    if(has_input_order || has_extra_perturb){
+        auto input_order_start = std::chrono::steady_clock::now();
+        if(has_input_order){
+            string perturb_mode;
+            if(string(input_order) == "fanout-desc")
+                perturb_mode = "input-fanout";
+            else if(string(input_order) == "fanout-asc")
+                perturb_mode = "input-fanout-rev";
+            else if(string(input_order) == "swap")
+                perturb_mode = "input-swap-random";
+            else if(string(input_order) == "random")
+                perturb_mode = "input";
+            else if(string(input_order) == "bad-first")
+                perturb_mode = "input-bad";
+            else if(string(input_order) == "bad-last")
+                perturb_mode = "input-bad-rev";
+            else if(string(input_order) == "next-first")
+                perturb_mode = "input-next";
+            else if(string(input_order) == "next-last")
+                perturb_mode = "input-next-rev";
+            else if(string(input_order) == "shared-first")
+                perturb_mode = "input-shared";
+            else if(string(input_order) == "shared-last")
+                perturb_mode = "input-shared-rev";
+            else{
+                cerr << "Error: MC_PDR_INPUT_ORDER must be original, fanout-desc, "
+                        "fanout-asc, swap, random, bad-first, bad-last, "
+                        "next-first, next-last, shared-first, or shared-last.\n";
+                delete aiger;
+                return 2;
+            }
+            unsigned perturb_seed = 1;
+            const char *seed_value = std::getenv("MC_PDR_INPUT_ORDER_SEED");
+            if(seed_value != nullptr)
+                perturb_seed = static_cast<unsigned>(
+                    std::strtoul(seed_value, nullptr, 10));
+            apply_pdr_perturbations(aiger, perturb_mode, perturb_seed);
+            aiger->input_order = input_order;
+            aiger->input_order_seed = perturb_seed;
+        }
+        if(has_extra_perturb){
+            unsigned perturb_seed = 1;
+            const char *seed_value = std::getenv("MC_PDR_PERTURB_SEED");
+            if(seed_value != nullptr)
+                perturb_seed = static_cast<unsigned>(
+                    std::strtoul(seed_value, nullptr, 10));
+            apply_pdr_perturbations(aiger, extra_perturb, perturb_seed);
+            aiger->perturb_modes = extra_perturb;
+            aiger->perturb_seed = perturb_seed;
+        }
+        aiger->input_order_runtime =
+            std::chrono::duration<double>(
+                std::chrono::steady_clock::now() - input_order_start).count();
+    }
+    aiger->use_xag_for_pdr = selected_representation != PDRRepresentation::Aig;
     aiger->translate_to_dimacs();
+
+    if(aiger->has_reset_functions()){
+        cerr << "c AIGER19_RESET_FUNCTIONS count="
+             << aiger->init_equalities.size() << endl;
+        if(find_bug_only){
+            cerr << "Error: BMC unfolding does not yet support non-constant "
+                    "AIGER 1.9 reset functions; use forward PDR.\n";
+            delete aiger;
+            return 2;
+        }
+        if(bmc_thread > 0){
+            cerr << "Warning: disabling BMC lanes because their unfolding does "
+                    "not yet support non-constant AIGER 1.9 reset functions.\n";
+            bmc_thread = 0;
+        }
+        if(engine == "reverse"){
+            cerr << "Warning: reverse PDR currently requires a cube-shaped Init; "
+                    "using forward PDR for this reset-function model.\n";
+            engine = "forward";
+        }
+        if(lane_counts.reverse_total() > 0){
+            cerr << "Warning: converting reverse PDR lanes to equivalent "
+                    "forward lanes because this model has non-constant reset "
+                    "functions.\n";
+            lane_counts.convert_reverse_to_forward();
+        }
+    }
 
     if(certificate && (engine != "forward" || lane_counts.total() > 0)){
         cerr << "Warning: certificate output is only supported by the forward engine; disabling it.\n";
         aiger->output_certificate = false;
+    }
+
+    const char *preprocess_only_value = std::getenv("MC_PDR_PREPROCESS_ONLY");
+    bool preprocess_only = preprocess_only_value != nullptr
+        && preprocess_only_value[0] != '\0' && preprocess_only_value[0] != '0';
+    if(preprocess_only){
+        PDR pdr(aiger, -1, uc, pr, 1, PDRDirection::Forward,
+                selected_representation);
+        pdr.probe_preprocessing();
+        delete aiger;
+        return 0;
     }
 
     if(find_bug_only){

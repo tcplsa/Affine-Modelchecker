@@ -1,0 +1,183 @@
+.model top
+.inputs s2
+.outputs bad0
+.names _const0
+0
+.names _const1
+1
+.names s18 s2 s35
+01 1
+10 1
+.names s7 s35 s36
+01 1
+10 1
+.names s14 s35 s37
+01 1
+10 1
+.names s34 s2 s38
+01 1
+10 1
+.names s23 s34 s39
+01 1
+10 1
+.names s39 s2 s40
+01 1
+10 1
+.names s30 s34 s41
+01 1
+10 1
+.names s41 s2 s42
+01 1
+10 1
+.names s17 s2 s43
+01 1
+10 1
+.names s6 s43 s44
+01 1
+10 1
+.names s13 s43 s45
+01 1
+10 1
+.names s33 s2 s46
+01 1
+10 1
+.names s22 s33 s47
+01 1
+10 1
+.names s47 s2 s48
+01 1
+10 1
+.names s29 s33 s49
+01 1
+10 1
+.names s49 s2 s50
+01 1
+10 1
+.names s3 s19 s51
+01 1
+10 1
+.names s4 s20 s52
+01 1
+10 1
+.names s5 s21 s53
+01 1
+10 1
+.names s6 s22 s54
+01 1
+10 1
+.names s7 s23 s55
+01 1
+10 1
+.names s8 s24 s56
+01 1
+10 1
+.names s9 s25 s57
+01 1
+10 1
+.names s10 s26 s58
+01 1
+10 1
+.names s11 s27 s59
+01 1
+10 1
+.names s12 s28 s60
+01 1
+10 1
+.names s13 s29 s61
+01 1
+10 1
+.names s14 s30 s62
+01 1
+10 1
+.names s15 s31 s63
+01 1
+10 1
+.names s16 s32 s64
+01 1
+10 1
+.names s17 s33 s65
+01 1
+10 1
+.names s18 s34 s66
+01 1
+10 1
+.names s51 s52 s67
+1- 1
+-1 1
+.names s67 s53 s68
+1- 1
+-1 1
+.names s68 s54 s69
+1- 1
+-1 1
+.names s69 s55 s70
+1- 1
+-1 1
+.names s70 s56 s71
+1- 1
+-1 1
+.names s71 s57 s72
+1- 1
+-1 1
+.names s72 s58 s73
+1- 1
+-1 1
+.names s73 s59 s74
+1- 1
+-1 1
+.names s74 s60 s75
+1- 1
+-1 1
+.names s75 s61 s76
+1- 1
+-1 1
+.names s76 s62 s77
+1- 1
+-1 1
+.names s77 s63 s78
+1- 1
+-1 1
+.names s78 s64 s79
+1- 1
+-1 1
+.names s79 s65 s80
+1- 1
+-1 1
+.names s80 s66 s81
+1- 1
+-1 1
+.names s81 bad0
+1 1
+.latch s43 s3 0
+.latch s35 s4 1
+.latch s3 s5 0
+.latch s4 s6 0
+.latch s5 s7 1
+.latch s44 s8 1
+.latch s36 s9 1
+.latch s8 s10 0
+.latch s9 s11 1
+.latch s10 s12 1
+.latch s11 s13 0
+.latch s12 s14 1
+.latch s45 s15 0
+.latch s37 s16 0
+.latch s15 s17 0
+.latch s16 s18 1
+.latch s46 s19 0
+.latch s38 s20 1
+.latch s19 s21 0
+.latch s20 s22 0
+.latch s21 s23 1
+.latch s48 s24 1
+.latch s40 s25 1
+.latch s24 s26 0
+.latch s25 s27 1
+.latch s26 s28 1
+.latch s27 s29 0
+.latch s28 s30 1
+.latch s50 s31 0
+.latch s42 s32 0
+.latch s31 s33 0
+.latch s32 s34 1
+.end

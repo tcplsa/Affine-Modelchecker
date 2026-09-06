@@ -1,0 +1,281 @@
+.model top
+.inputs s2 s3 s4 s5 s6 s7 s8 s9
+.outputs bad0
+.names _const0
+0
+.names _const1
+1
+.names s2 s48 s126
+01 1
+10 1
+.names s126 s67 s127
+01 1
+10 1
+.names s127 s106 s128
+01 1
+10 1
+.names s128 s125 s129
+01 1
+10 1
+.names s129 s2 s130
+01 1
+10 1
+.names s3 s47 s131
+01 1
+10 1
+.names s131 s66 s132
+01 1
+10 1
+.names s132 s105 s133
+01 1
+10 1
+.names s133 s124 s134
+01 1
+10 1
+.names s134 s3 s135
+01 1
+10 1
+.names s4 s46 s136
+01 1
+10 1
+.names s136 s65 s137
+01 1
+10 1
+.names s137 s104 s138
+01 1
+10 1
+.names s138 s123 s139
+01 1
+10 1
+.names s139 s4 s140
+01 1
+10 1
+.names s5 s45 s141
+01 1
+10 1
+.names s141 s64 s142
+01 1
+10 1
+.names s142 s103 s143
+01 1
+10 1
+.names s143 s122 s144
+01 1
+10 1
+.names s144 s5 s145
+01 1
+10 1
+.names s6 s44 s146
+01 1
+10 1
+.names s146 s63 s147
+01 1
+10 1
+.names s147 s102 s148
+01 1
+10 1
+.names s148 s121 s149
+01 1
+10 1
+.names s149 s6 s150
+01 1
+10 1
+.names s7 s43 s151
+01 1
+10 1
+.names s151 s62 s152
+01 1
+10 1
+.names s152 s101 s153
+01 1
+10 1
+.names s153 s120 s154
+01 1
+10 1
+.names s154 s7 s155
+01 1
+10 1
+.names s8 s42 s156
+01 1
+10 1
+.names s156 s61 s157
+01 1
+10 1
+.names s157 s100 s158
+01 1
+10 1
+.names s158 s119 s159
+01 1
+10 1
+.names s159 s8 s160
+01 1
+10 1
+.names s9 s41 s161
+01 1
+10 1
+.names s161 s60 s162
+01 1
+10 1
+.names s162 s99 s163
+01 1
+10 1
+.names s163 s118 s164
+01 1
+10 1
+.names s164 s9 s165
+01 1
+10 1
+.names s174 s173 s175
+1- 1
+-1 1
+.names s130 s135 s176
+1- 1
+-1 1
+.names s176 s140 s177
+1- 1
+-1 1
+.names s177 s145 s178
+1- 1
+-1 1
+.names s178 s150 s179
+1- 1
+-1 1
+.names s179 s155 s180
+1- 1
+-1 1
+.names s180 s160 s181
+1- 1
+-1 1
+.names s181 s165 s182
+1- 1
+-1 1
+.names s174 s182 s183
+11 1
+.names s183 bad0
+1 1
+.latch s162 s10 0
+.latch s157 s11 1
+.latch s152 s12 1
+.latch s147 s13 1
+.latch s142 s14 1
+.latch s137 s15 1
+.latch s132 s16 1
+.latch s127 s17 1
+.latch s10 s18 1
+.latch s11 s19 1
+.latch s12 s20 1
+.latch s13 s21 0
+.latch s14 s22 1
+.latch s15 s23 1
+.latch s16 s24 1
+.latch s17 s25 1
+.latch s18 s26 0
+.latch s19 s27 0
+.latch s20 s28 1
+.latch s21 s29 0
+.latch s22 s30 1
+.latch s23 s31 1
+.latch s24 s32 1
+.latch s25 s33 1
+.latch s26 s34 1
+.latch s27 s35 0
+.latch s28 s36 1
+.latch s29 s37 1
+.latch s30 s38 0
+.latch s31 s39 0
+.latch s32 s40 0
+.latch s33 s41 1
+.latch s34 s42 1
+.latch s35 s43 1
+.latch s36 s44 0
+.latch s37 s45 0
+.latch s38 s46 1
+.latch s39 s47 0
+.latch s40 s48 0
+.latch s41 s49 1
+.latch s42 s50 0
+.latch s43 s51 1
+.latch s44 s52 0
+.latch s45 s53 0
+.latch s46 s54 1
+.latch s47 s55 1
+.latch s48 s56 1
+.latch s49 s57 0
+.latch s50 s58 1
+.latch s51 s59 1
+.latch s52 s60 0
+.latch s53 s61 0
+.latch s54 s62 0
+.latch s55 s63 0
+.latch s56 s64 1
+.latch s57 s65 1
+.latch s58 s66 1
+.latch s59 s67 0
+.latch s162 s68 1
+.latch s157 s69 0
+.latch s152 s70 0
+.latch s147 s71 1
+.latch s142 s72 0
+.latch s137 s73 1
+.latch s132 s74 0
+.latch s127 s75 0
+.latch s68 s76 0
+.latch s69 s77 1
+.latch s70 s78 1
+.latch s71 s79 1
+.latch s72 s80 1
+.latch s73 s81 1
+.latch s74 s82 1
+.latch s75 s83 0
+.latch s76 s84 1
+.latch s77 s85 0
+.latch s78 s86 0
+.latch s79 s87 0
+.latch s80 s88 1
+.latch s81 s89 1
+.latch s82 s90 0
+.latch s83 s91 1
+.latch s84 s92 1
+.latch s85 s93 1
+.latch s86 s94 1
+.latch s87 s95 1
+.latch s88 s96 1
+.latch s89 s97 1
+.latch s90 s98 1
+.latch s91 s99 0
+.latch s92 s100 0
+.latch s93 s101 1
+.latch s94 s102 1
+.latch s95 s103 1
+.latch s96 s104 1
+.latch s97 s105 1
+.latch s98 s106 1
+.latch s99 s107 0
+.latch s100 s108 0
+.latch s101 s109 0
+.latch s102 s110 0
+.latch s103 s111 0
+.latch s104 s112 0
+.latch s105 s113 1
+.latch s106 s114 0
+.latch s107 s115 0
+.latch s108 s116 1
+.latch s109 s117 0
+.latch s110 s118 0
+.latch s111 s119 0
+.latch s112 s120 0
+.latch s113 s121 0
+.latch s114 s122 1
+.latch s115 s123 0
+.latch s116 s124 0
+.latch s117 s125 1
+.latch _const0 s166 1
+.latch s166 s167 0
+.latch s167 s168 0
+.latch s168 s169 0
+.latch s169 s170 0
+.latch s170 s171 0
+.latch s171 s172 0
+.latch s172 s173 0
+.latch s175 s174 0
+.end

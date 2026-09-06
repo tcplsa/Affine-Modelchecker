@@ -1,6 +1,8 @@
 #ifndef _ipasir_h_INCLUDED
 #define _ipasir_h_INCLUDED
 
+#include <stdint.h>
+
 /*------------------------------------------------------------------------*/
 #ifdef __cplusplus
 extern "C" {
@@ -21,6 +23,10 @@ void ipasir_assume (void * solver, int lit);
 int ipasir_solve (void * solver);
 int ipasir_val (void * solver, int lit);
 int ipasir_failed (void * solver, int lit);
+int64_t ipasir_conflicts (void * solver);
+int64_t ipasir_decisions (void * solver);
+int64_t ipasir_propagations (void * solver);
+int64_t ipasir_restarts (void * solver);
 
 void ipasir_set_terminate (void * solver,
                            void * state, int (*terminate)(void * state));

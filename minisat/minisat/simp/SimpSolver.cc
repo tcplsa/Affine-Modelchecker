@@ -46,6 +46,7 @@ static DoubleOption opt_simp_garbage_frac(_cat, "simp-gc-frac", "The fraction of
 SimpSolver::SimpSolver() :
     grow               (opt_grow)
   , clause_lim         (opt_clause_lim)
+  , elim_width_weight  (0)
   , subsumption_lim    (opt_subsumption_lim)
   , simp_garbage_frac  (opt_simp_garbage_frac)
   , use_asymm          (opt_use_asymm)
@@ -55,10 +56,20 @@ SimpSolver::SimpSolver() :
   , merges             (0)
   , asymm_lits         (0)
   , eliminated_vars    (0)
+  , elim_attempted_vars(0)
+  , elim_rejected_growth(0)
+  , elim_rejected_clause_limit(0)
+  , elim_removed_clauses(0)
+  , elim_resolvents(0)
+  , elim_resolvent_literals(0)
+  , elim_positive_occurrences(0)
+  , elim_negative_occurrences(0)
+  , elim_max_resolvent_size(0)
   , elimorder          (1)
   , use_simplification (true)
+  , elim_tie_break     (0)
   , occurs             (ClauseDeleted(ca))
-  , elim_heap          (ElimLt(n_occ))
+  , elim_heap          (ElimLt(n_occ, elim_tie_break))
   , bwdsub_assigns     (0)
   , n_touched          (0)
 {
@@ -66,6 +77,16 @@ SimpSolver::SimpSolver() :
     ca.extra_clause_field = true; // NOTE: must happen before allocating the dummy clause below.
     bwdsub_tmpunit        = ca.alloc(dummy);
     remove_satisfied      = false;
+}
+
+
+void SimpSolver::setElimTieBreak(int mode)
+{
+    assert(0 <= mode && mode <= 4);
+    elim_tie_break = mode;
+    if (!use_simplification) return;
+    for (Var v = 0; v < nVars(); ++v)
+        if (elim_heap.inHeap(v)) elim_heap.update(v);
 }
 
 
@@ -494,23 +515,42 @@ bool SimpSolver::eliminateVar(Var v)
     vec<CRef>        pos, neg;
     for (int i = 0; i < cls.size(); i++)
         (find(ca[cls[i]], mkLit(v)) ? pos : neg).push(cls[i]);
+    elim_attempted_vars++;
+    elim_positive_occurrences += pos.size();
+    elim_negative_occurrences += neg.size();
 
     // Check wether the increase in number of clauses stays within the allowed ('grow'). Moreover, no
     // clause must exceed the limit on the maximal clause size (if it is set):
     //
     int cnt         = 0;
     int clause_size = 0;
+    int64_t removed_cost = 0;
+    for (int i = 0; i < cls.size(); i++)
+        removed_cost += 1 + (int64_t)elim_width_weight * std::max(ca[cls[i]].size() - 2, 0);
+    const int64_t weighted_budget = removed_cost + grow;
+    int64_t generated_cost = 0;
 
     for (int i = 0; i < pos.size(); i++)
         for (int j = 0; j < neg.size(); j++)
-            if (merge(ca[pos[i]], ca[neg[j]], v, clause_size) && 
-                (++cnt > cls.size() + grow || (clause_lim != -1 && clause_size > clause_lim)))
-                return true;
+            if (merge(ca[pos[i]], ca[neg[j]], v, clause_size)) {
+                ++cnt;
+                generated_cost += 1 + (int64_t)elim_width_weight * std::max(clause_size - 2, 0);
+                if (generated_cost > weighted_budget) {
+                    elim_rejected_growth++;
+                    return true;
+                }
+                if (clause_lim != -1 && clause_size > clause_lim) {
+                    elim_rejected_clause_limit++;
+                    return true;
+                }
+            }
 
     // Delete and store old clauses:
     eliminated[v] = true;
     setDecisionVar(v, false);
     eliminated_vars++;
+    elim_removed_clauses += cls.size();
+    elim_resolvents += cnt;
 
     if (pos.size() > neg.size()){
         for (int i = 0; i < neg.size(); i++)
@@ -529,8 +569,13 @@ bool SimpSolver::eliminateVar(Var v)
     vec<Lit>& resolvent = add_tmp;
     for (int i = 0; i < pos.size(); i++)
         for (int j = 0; j < neg.size(); j++)
-            if (merge(ca[pos[i]], ca[neg[j]], v, resolvent) && !addClause_(resolvent))
-                return false;
+            if (merge(ca[pos[i]], ca[neg[j]], v, resolvent)) {
+                elim_resolvent_literals += resolvent.size();
+                if ((uint64_t) resolvent.size() > elim_max_resolvent_size)
+                    elim_max_resolvent_size = resolvent.size();
+                if (!addClause_(resolvent))
+                    return false;
+            }
 
     // Free occurs list for this variable:
     occurs[v].clear(true);

@@ -1,0 +1,1098 @@
+[
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 2048,
+      "seed": 1672048
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 2048,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "527cef5758e0bf5ae7402f29d287284caaf10c21c7e1bd1f2f44f1732079767f",
+    "blif_sha256": "0c1730b65b8ee8be6338c73ff0ca6efc5e1e77018d75c97ec7b055a953862c6c",
+    "aag_lines": 70236,
+    "blif_lines": 68645,
+    "stats": {
+      "inputs": 2050,
+      "latches": 33,
+      "ands": 129,
+      "xors": 22658,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9943388774301136,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1672048_symbol_bits2048_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1672048_symbol_bits2048_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1672048_symbol_bits2048_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 3072,
+      "seed": 1673072
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 3072,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "f0df4bcee569a5fd7ce75a542a4a96f239c2b957af5b720ab311783798e548db",
+    "blif_sha256": "b431c6ed0dda29aaaac3437ffea363858aab9b4df36428c00ad2dbe2f8d2b23a",
+    "aag_lines": 105688,
+    "blif_lines": 103073,
+    "stats": {
+      "inputs": 3074,
+      "latches": 33,
+      "ands": 129,
+      "xors": 34134,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9962350056912704,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1673072_symbol_bits3072_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1673072_symbol_bits3072_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1673072_symbol_bits3072_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 4096,
+      "seed": 1674096
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 4096,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "96616b3fbc81e1aec2f9acd8acef913ae0f9b27e59b7b5155c13c615e365f27c",
+    "blif_sha256": "cdd95a6976aea58bbe097488989ad1fb3a069d0694a04b8dab8aae147812679c",
+    "aag_lines": 140036,
+    "blif_lines": 136397,
+    "stats": {
+      "inputs": 4098,
+      "latches": 33,
+      "ands": 129,
+      "xors": 45242,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9971567741508893,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1674096_symbol_bits4096_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4129_seed1674096_symbol_bits4096_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed1674096_symbol_bits4096_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-IBM",
+      "width": 16,
+      "polynomial": 32773,
+      "symbol_bits": 2048,
+      "seed": 1672048
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-IBM"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x8005",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 2048,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "e6fbff6a158d0a240c52f2242fb9987cde772beee82783b4149869fd1b97d30b",
+    "blif_sha256": "21ee29b415a30f06fea8a678baffffbba5e66eb2f755150ea1cfbda86a290ce3",
+    "aag_lines": 67278,
+    "blif_lines": 65687,
+    "stats": {
+      "inputs": 2050,
+      "latches": 33,
+      "ands": 129,
+      "xors": 21672,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9940828402366864,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial32773_seed1672048_symbol_bits2048_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial32773_seed1672048_symbol_bits2048_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial32773_seed1672048_symbol_bits2048_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-IBM",
+      "width": 16,
+      "polynomial": 32773,
+      "symbol_bits": 3072,
+      "seed": 1673072
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-16-IBM"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x8005",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 3072,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "4c327cd62c0a86e0bd021d0469239e51675c54950ac384f1306796bc051b40a0",
+    "blif_sha256": "2f07ccfbd45d42456d9201b362e8a7d222a4b6a295e3ff75ef7c7675832742c8",
+    "aag_lines": 102100,
+    "blif_lines": 99485,
+    "stats": {
+      "inputs": 3074,
+      "latches": 33,
+      "ands": 129,
+      "xors": 32938,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9960988296488946,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial32773_seed1673072_symbol_bits3072_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial32773_seed1673072_symbol_bits3072_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial32773_seed1673072_symbol_bits3072_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 768,
+      "seed": 1830768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 768,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "052ea7927d67fa22adbf1d3e21518eba24c84f16e6db5510f33445a0dcc562b3",
+    "blif_sha256": "58d319ea9ecc52bf9d93c2a81b03877acce97f9c4eeb7f43978fda586d057cca",
+    "aag_lines": 71234,
+    "blif_lines": 71371,
+    "stats": {
+      "inputs": 770,
+      "latches": 65,
+      "ands": 257,
+      "xors": 23348,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.989112476170303,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1830768_symbol_bits768_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1830768_symbol_bits768_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1830768_symbol_bits768_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 1024,
+      "seed": 1831024
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 1024,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "a2e31209861fa97d0f3301207a3d04482285b7e2dee1013e9e967a5a70104ed1",
+    "blif_sha256": "33f2ecbe9daccce0f4f75e1c2734897f4b39481658281e30bab8843a7e1eff2c",
+    "aag_lines": 94782,
+    "blif_lines": 94663,
+    "stats": {
+      "inputs": 1026,
+      "latches": 65,
+      "ands": 257,
+      "xors": 31112,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9918071981892952,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1831024_symbol_bits1024_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1831024_symbol_bits1024_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1831024_symbol_bits1024_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 1536,
+      "seed": 1831536
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 1536,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "ebea4742fb980ad3e5cc42a2e38c354586282c5fb8b2b7f53ef655b69b11d094",
+    "blif_sha256": "2f9624b36bed8384bb7789a9e23aff1807acb2c08e59858af975aa0a7999c2b3",
+    "aag_lines": 141197,
+    "blif_lines": 140566,
+    "stats": {
+      "inputs": 1538,
+      "latches": 65,
+      "ands": 257,
+      "xors": 46413,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9944932504821085,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1831536_symbol_bits1536_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial79764919_seed1831536_symbol_bits1536_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed1831536_symbol_bits1536_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 768,
+      "seed": 1830768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 768,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "50464b43efe0686806deb33bf39552fd5b1873718663a9313483731da13e53f6",
+    "blif_sha256": "e960b175e19062e2782292a5d7f1fb86e77b2e810be566e684021c3cd223dabe",
+    "aag_lines": 78662,
+    "blif_lines": 78799,
+    "stats": {
+      "inputs": 770,
+      "latches": 65,
+      "ands": 257,
+      "xors": 25824,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9901460833556995,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial517762881_seed1830768_symbol_bits768_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial517762881_seed1830768_symbol_bits768_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial517762881_seed1830768_symbol_bits768_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 1024,
+      "seed": 1831024
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 1024,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "5c2768239876bc06885586a00d83dbd7a54f41298a7589f2b010169b73e0019e",
+    "blif_sha256": "379df10918de89e53961274a274b4ee84cba9b340b978d3727d47c4c7b091838",
+    "aag_lines": 104040,
+    "blif_lines": 103921,
+    "stats": {
+      "inputs": 1026,
+      "latches": 65,
+      "ands": 257,
+      "xors": 34198,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9925409955013786,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial517762881_seed1831024_symbol_bits1024_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial517762881_seed1831024_symbol_bits1024_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial517762881_seed1831024_symbol_bits1024_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-64-ECMA",
+      "width": 64,
+      "polynomial": 4823603603198064275,
+      "symbol_bits": 384,
+      "seed": 2150384
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-64-ECMA"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x42f0e1eba9ea3693",
+      "state_width": 64,
+      "symbol_bits_per_cycle": 384,
+      "reset_seed": "0xffffffffffffffff"
+    },
+    "aag_sha256": "bd8135730adb1a9d8f5df68f3e87f60c0671b5e43d9d3b56ca305b3bd963507e",
+    "blif_sha256": "2c279f6f8d267408a9007171f3bc49fcd86d8994447b414b622b2fea437761ad",
+    "aag_lines": 82876,
+    "blif_lines": 84293,
+    "stats": {
+      "inputs": 386,
+      "latches": 129,
+      "ands": 513,
+      "xors": 27218,
+      "ors": 320,
+      "nots": 257,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9815008474270672,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed2150384_symbol_bits384_width64.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed2150384_symbol_bits384_width64.blif"
+    },
+    "stem": "crc_frame_align_polynomial4823603603198064275_seed2150384_symbol_bits384_width64"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-64-ECMA",
+      "width": 64,
+      "polynomial": 4823603603198064275,
+      "symbol_bits": 512,
+      "seed": 2150512
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-64-ECMA"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x42f0e1eba9ea3693",
+      "state_width": 64,
+      "symbol_bits_per_cycle": 512,
+      "reset_seed": "0xffffffffffffffff"
+    },
+    "aag_sha256": "c0b896daad1f75156e7e8f6afa76fd7fb6e40af405a102299b5c31a46adce629",
+    "blif_sha256": "a885e305051858037909aa20352b794d38150c81ef9c4e6333368f5649ebbfe5",
+    "aag_lines": 107880,
+    "blif_lines": 109169,
+    "stats": {
+      "inputs": 514,
+      "latches": 129,
+      "ands": 513,
+      "xors": 35510,
+      "ors": 320,
+      "nots": 257,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9857590983538295,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed2150512_symbol_bits512_width64.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed2150512_symbol_bits512_width64.blif"
+    },
+    "stem": "crc_frame_align_polynomial4823603603198064275_seed2150512_symbol_bits512_width64"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-64-ECMA",
+      "width": 64,
+      "polynomial": 4823603603198064275,
+      "symbol_bits": 768,
+      "seed": 2150768
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "guarded CRC frame alignment scale margin",
+      "standard": "CRC-64-ECMA"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x42f0e1eba9ea3693",
+      "state_width": 64,
+      "symbol_bits_per_cycle": 768,
+      "reset_seed": "0xffffffffffffffff"
+    },
+    "aag_sha256": "fd30dc4ad25d89162d2fdde11c4898986ccab2bc22729f568ba13264e8404085",
+    "blif_sha256": "bc79038a5a2682528217a3b59318a8b27fae6525f40cad18de1d1db8fec12769",
+    "aag_lines": 158140,
+    "blif_lines": 159173,
+    "stats": {
+      "inputs": 770,
+      "latches": 129,
+      "ands": 513,
+      "xors": 52178,
+      "ors": 320,
+      "nots": 257,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.990263991953085,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed2150768_symbol_bits768_width64.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_align_polynomial4823603603198064275_seed2150768_symbol_bits768_width64.blif"
+    },
+    "stem": "crc_frame_align_polynomial4823603603198064275_seed2150768_symbol_bits768_width64"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 512,
+      "confirm_headers": 2,
+      "seed": 1685122
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 512,
+      "confirm_headers": 2,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "d32f3efa10e796dc489262364bcffe58d91ef3022cba6c06220460aa491eb605",
+    "blif_sha256": "56ebad8c4087452d6d4032ddc2c441a84e807e000255b573519832430d856ac4",
+    "aag_lines": 18029,
+    "blif_lines": 18001,
+    "stats": {
+      "inputs": 515,
+      "latches": 35,
+      "ands": 138,
+      "xors": 5764,
+      "ors": 82,
+      "nots": 71,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9766180955608268,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed1685122_symbol_bits512_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial4129_seed1685122_symbol_bits512_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial4129_seed1685122_symbol_bits512_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 512,
+      "confirm_headers": 4,
+      "seed": 1685124
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 512,
+      "confirm_headers": 4,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "2f0eef710b3e0ee0ee8a2e96fada1252e5190845a8853afdfcc3dbd0335b6e3c",
+    "blif_sha256": "d2c9b41d0cdfd59998ca6984502f218d4005db2361577610c4e3640fb3c925a4",
+    "aag_lines": 18035,
+    "blif_lines": 18025,
+    "stats": {
+      "inputs": 515,
+      "latches": 37,
+      "ands": 144,
+      "xors": 5764,
+      "ors": 84,
+      "nots": 73,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.975626269465132,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed1685124_symbol_bits512_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial4129_seed1685124_symbol_bits512_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial4129_seed1685124_symbol_bits512_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 512,
+      "confirm_headers": 8,
+      "seed": 1685128
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 512,
+      "confirm_headers": 8,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "238f67da465b7075c00603eb5f47871515a3e076d04dde7160bcd78b498c8f9c",
+    "blif_sha256": "95836ba635f88b7574c691e493e951b02495220ca1b74d86fc8e90a02e03b5b1",
+    "aag_lines": 18047,
+    "blif_lines": 18073,
+    "stats": {
+      "inputs": 515,
+      "latches": 41,
+      "ands": 156,
+      "xors": 5764,
+      "ors": 88,
+      "nots": 77,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9736486486486486,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed1685128_symbol_bits512_width16.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial4129_seed1685128_symbol_bits512_width16.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial4129_seed1685128_symbol_bits512_width16"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 256,
+      "confirm_headers": 2,
+      "seed": 1842562
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "confirm_headers": 2,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "2593d2f95340bc92cb6750dfc67df9af77e5182f8c55ebd554d2319d0933ef8e",
+    "blif_sha256": "0a2277b82d233e46591b043f3b1479c2c0fcfa9896e7ae21807a3ec8309c601b",
+    "aag_lines": 24809,
+    "blif_lines": 25485,
+    "stats": {
+      "inputs": 259,
+      "latches": 67,
+      "ands": 266,
+      "xors": 8040,
+      "ors": 162,
+      "nots": 135,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9679749578617867,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed1842562_symbol_bits256_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial79764919_seed1842562_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial79764919_seed1842562_symbol_bits256_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 256,
+      "confirm_headers": 4,
+      "seed": 1842564
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "confirm_headers": 4,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "d299ad666a826faeb992e80a4259b2c8bcf744b086f10233c9b30729f6e8609c",
+    "blif_sha256": "ac8956d47b551b043ea3c43bd81edba58049c3bf4ce31fe464848f307e602679",
+    "aag_lines": 24815,
+    "blif_lines": 25509,
+    "stats": {
+      "inputs": 259,
+      "latches": 69,
+      "ands": 272,
+      "xors": 8040,
+      "ors": 164,
+      "nots": 137,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9672762271414822,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed1842564_symbol_bits256_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial79764919_seed1842564_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial79764919_seed1842564_symbol_bits256_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32-IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 256,
+      "confirm_headers": 8,
+      "seed": 1842568
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32-IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "confirm_headers": 8,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "af34cb27db3a6e2ded43d29a5ef2d42d2da62866a9bcaf3dc9206b70370766a9",
+    "blif_sha256": "cb86313236c554f36d40a56ac2bde67fdfe40cf034f4434551a9a9feb0a5f7ef",
+    "aag_lines": 24827,
+    "blif_lines": 25557,
+    "stats": {
+      "inputs": 259,
+      "latches": 73,
+      "ands": 284,
+      "xors": 8040,
+      "ors": 168,
+      "nots": 141,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9658817876021144,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed1842568_symbol_bits256_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial79764919_seed1842568_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial79764919_seed1842568_symbol_bits256_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 256,
+      "confirm_headers": 2,
+      "seed": 1842562
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "confirm_headers": 2,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "8195f5d89ff9ac9d40f98a0640944704d1826986392d3eada35b174cc0e4f5d4",
+    "blif_sha256": "5b315b4486455f927c4d056345aaf433aa995334812d916f0d9c22227f654c58",
+    "aag_lines": 27833,
+    "blif_lines": 28509,
+    "stats": {
+      "inputs": 259,
+      "latches": 67,
+      "ands": 266,
+      "xors": 9048,
+      "ors": 162,
+      "nots": 135,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9714408417436118,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial517762881_seed1842562_symbol_bits256_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers2_polynomial517762881_seed1842562_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers2_polynomial517762881_seed1842562_symbol_bits256_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 256,
+      "confirm_headers": 4,
+      "seed": 1842564
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "confirm_headers": 4,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "779fec7b911d7c8098d89a3d09a53b3be81cc0012c96767de11862ea9dc91741",
+    "blif_sha256": "d2a13c96f5b6cec6fe50b1a336663bb71821ec0216d9056a4fd53c58599a992c",
+    "aag_lines": 27839,
+    "blif_lines": 28533,
+    "stats": {
+      "inputs": 259,
+      "latches": 69,
+      "ands": 272,
+      "xors": 9048,
+      "ors": 164,
+      "nots": 137,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9708154506437768,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial517762881_seed1842564_symbol_bits256_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers4_polynomial517762881_seed1842564_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers4_polynomial517762881_seed1842564_symbol_bits256_width32"
+  },
+  {
+    "family": "crc_frame_lock",
+    "params": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32C-Castagnoli",
+      "width": 32,
+      "polynomial": 517762881,
+      "symbol_bits": 256,
+      "confirm_headers": 8,
+      "seed": 1842568
+    },
+    "classification": {
+      "category": "link-control",
+      "semantic": "CRC recovery after multi-block lock acquisition",
+      "standard": "CRC-32C-Castagnoli"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "block_lock implies serial_crc == matrix_crc",
+      "protocol": "multi-block receiver lock acquisition followed by CRC frame reset",
+      "polynomial": "0x1edc6f41",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 256,
+      "confirm_headers": 8,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "c45ba5e0500b877b395f3e13204bebe140943bd9d9afecab118b8a94ba3d0af4",
+    "blif_sha256": "22e330edea2bd696417a99c54ceae102f0ecc297178d6adca4aaf72e89d1a021",
+    "aag_lines": 27851,
+    "blif_lines": 28581,
+    "stats": {
+      "inputs": 259,
+      "latches": 73,
+      "ands": 284,
+      "xors": 9048,
+      "ors": 168,
+      "nots": 141,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9695670810115731,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial517762881_seed1842568_symbol_bits256_width32.aag",
+      "blif": "results/pathb_guarded_affine_margin_v1/benchmarks/crc_frame_lock_confirm_headers8_polynomial517762881_seed1842568_symbol_bits256_width32.blif"
+    },
+    "stem": "crc_frame_lock_confirm_headers8_polynomial517762881_seed1842568_symbol_bits256_width32"
+  }
+]

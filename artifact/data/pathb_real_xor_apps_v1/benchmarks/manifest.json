@@ -1,0 +1,1146 @@
+[
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 1,
+      "topology": "serial",
+      "seed": 980001
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 58
+    },
+    "aag_sha256": "831d16bee82f8e2c1f282778549607c6f40666c1b9016316a5d0d4401622d40c",
+    "blif_sha256": "ee8f5209822ec44108ba04533bf8fc0c31fe4426cf071e3a99535965aa2fca56",
+    "aag_lines": 195,
+    "blif_lines": 205,
+    "stats": {
+      "inputs": 1,
+      "latches": 175,
+      "ands": 1,
+      "xors": 5,
+      "ors": 1,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8333333333333334,
+    "bad_cone_xor_density": 0.8333333333333334,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980001_symbol_bits1_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980001_symbol_bits1_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980001_symbol_bits1_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 1,
+      "topology": "balanced",
+      "seed": 980501
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 58
+    },
+    "aag_sha256": "09c1b3874fea808db25c59413b0566cd1015075900d8537e777e1765de24dcba",
+    "blif_sha256": "34f21b2413a9a6cf33f9934a660474c2793ef20350e0bd36b66576dde58b9eef",
+    "aag_lines": 195,
+    "blif_lines": 205,
+    "stats": {
+      "inputs": 1,
+      "latches": 175,
+      "ands": 1,
+      "xors": 5,
+      "ors": 1,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8333333333333334,
+    "bad_cone_xor_density": 0.8333333333333334,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980501_symbol_bits1_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980501_symbol_bits1_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980501_symbol_bits1_topologybalanced"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 4,
+      "topology": "serial",
+      "seed": 980004
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 15
+    },
+    "aag_sha256": "f39772a39a809379be633c74b9f7f98752b0b5d30169d719e08d50c9570ab13d",
+    "blif_sha256": "86b1df95a6067517dc11919517c0f1af1915d5c45863602eee6ec8f5b0467f41",
+    "aag_lines": 203,
+    "blif_lines": 216,
+    "stats": {
+      "inputs": 4,
+      "latches": 132,
+      "ands": 1,
+      "xors": 20,
+      "ors": 4,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9523809523809523,
+    "bad_cone_xor_density": 0.9523809523809523,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980004_symbol_bits4_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980004_symbol_bits4_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980004_symbol_bits4_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 4,
+      "topology": "balanced",
+      "seed": 980504
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 15
+    },
+    "aag_sha256": "ad66849cd994ef1faebaad7ed9f8349fa86623f8e149253b1dc53db567d52153",
+    "blif_sha256": "f6b376668a6c4e83bf99ca5fa9673067114a6a5d2a9fce34f0eb8dc0ff987af0",
+    "aag_lines": 203,
+    "blif_lines": 216,
+    "stats": {
+      "inputs": 4,
+      "latches": 132,
+      "ands": 1,
+      "xors": 20,
+      "ors": 4,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9523809523809523,
+    "bad_cone_xor_density": 0.9523809523809523,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980504_symbol_bits4_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980504_symbol_bits4_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980504_symbol_bits4_topologybalanced"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 8,
+      "topology": "serial",
+      "seed": 980008
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 8
+    },
+    "aag_sha256": "92445a29b7eb6127e7fc79fc3cf6e0c599a3e2fd8f710fce798d9aeabf58550e",
+    "blif_sha256": "29456a3199c13ff1135a23d953da755874a891181a1b80726b6190fd701230c9",
+    "aag_lines": 264,
+    "blif_lines": 281,
+    "stats": {
+      "inputs": 8,
+      "latches": 125,
+      "ands": 1,
+      "xors": 40,
+      "ors": 8,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.975609756097561,
+    "bad_cone_xor_density": 0.975609756097561,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980008_symbol_bits8_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980008_symbol_bits8_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980008_symbol_bits8_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 8,
+      "topology": "balanced",
+      "seed": 980508
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 8
+    },
+    "aag_sha256": "d0bdc296a381c20734ce73ab7c07556afaae1b9d9bb1bc8c0d34c0a533755a03",
+    "blif_sha256": "4c2ad7078ebb812eb750548d34c6a3ed327a0edff596f0393d6d13c426dca067",
+    "aag_lines": 264,
+    "blif_lines": 281,
+    "stats": {
+      "inputs": 8,
+      "latches": 125,
+      "ands": 1,
+      "xors": 40,
+      "ors": 8,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.975609756097561,
+    "bad_cone_xor_density": 0.975609756097561,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980508_symbol_bits8_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980508_symbol_bits8_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980508_symbol_bits8_topologybalanced"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 16,
+      "topology": "serial",
+      "seed": 980016
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 4
+    },
+    "aag_sha256": "592c09118cd4db7ffd66660702ab39d3c1ef326492c83c0c66eaae5be83fefd1",
+    "blif_sha256": "783a32ef7380c761bc798d33c2fe9481b32c94658542754fc93bdaee58d61d52",
+    "aag_lines": 396,
+    "blif_lines": 421,
+    "stats": {
+      "inputs": 16,
+      "latches": 121,
+      "ands": 1,
+      "xors": 80,
+      "ors": 16,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9876543209876543,
+    "bad_cone_xor_density": 0.9876543209876543,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980016_symbol_bits16_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980016_symbol_bits16_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980016_symbol_bits16_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 16,
+      "topology": "balanced",
+      "seed": 980516
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 4
+    },
+    "aag_sha256": "28bf64c5aea9b00db35dd738e013c49598a0fabd71ee700a1b872a3eec62d28d",
+    "blif_sha256": "1c8bcae075375f0110ee583e09cbe5dfd199afff310b64a6d356b1b2082c1660",
+    "aag_lines": 396,
+    "blif_lines": 421,
+    "stats": {
+      "inputs": 16,
+      "latches": 121,
+      "ands": 1,
+      "xors": 80,
+      "ors": 16,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9876543209876543,
+    "bad_cone_xor_density": 0.9876543209876543,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980516_symbol_bits16_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980516_symbol_bits16_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980516_symbol_bits16_topologybalanced"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 32,
+      "topology": "serial",
+      "seed": 980032
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 2
+    },
+    "aag_sha256": "91931598716e7d702cd7247bf5f64412ce2ebd9f19dc99c9a9153771b0c1dae5",
+    "blif_sha256": "064da5f7d9fd75596734cfc59638858d7401d1d2500a24a54753d3c052b69f5b",
+    "aag_lines": 666,
+    "blif_lines": 707,
+    "stats": {
+      "inputs": 32,
+      "latches": 119,
+      "ands": 1,
+      "xors": 160,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9937888198757764,
+    "bad_cone_xor_density": 0.9932432432432432,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980032_symbol_bits32_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980032_symbol_bits32_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980032_symbol_bits32_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 32,
+      "topology": "balanced",
+      "seed": 980532
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 2
+    },
+    "aag_sha256": "caa00a32c2f524acd6fec5493e39106252aa08d8a61b393a0d7a70d160776324",
+    "blif_sha256": "13e9ad0e857fdd75b6047e7e7a31edbbeae4bc7e8d09bee2ba56b84c39b39df1",
+    "aag_lines": 666,
+    "blif_lines": 707,
+    "stats": {
+      "inputs": 32,
+      "latches": 119,
+      "ands": 1,
+      "xors": 160,
+      "ors": 32,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9937888198757764,
+    "bad_cone_xor_density": 0.9932432432432432,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980532_symbol_bits32_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980532_symbol_bits32_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980532_symbol_bits32_topologybalanced"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 64,
+      "topology": "serial",
+      "seed": 980064
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 1
+    },
+    "aag_sha256": "bccff9e9886944764e02c4fd72641d7c5391021836c0fb0ddab06475b315d33a",
+    "blif_sha256": "7cd36845677c483989d9bcc1b90c92832dfdb670eaeaa17d25373f91c81072d2",
+    "aag_lines": 1209,
+    "blif_lines": 1282,
+    "stats": {
+      "inputs": 64,
+      "latches": 118,
+      "ands": 1,
+      "xors": 320,
+      "ors": 64,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9968847352024922,
+    "bad_cone_xor_density": 0.996031746031746,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980064_symbol_bits64_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980064_symbol_bits64_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980064_symbol_bits64_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 64,
+      "topology": "balanced",
+      "seed": 980564
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 1
+    },
+    "aag_sha256": "33d56eb00c1e163ef5886c343de2a0f68746441dfea124ed25c5ddacf50b51c1",
+    "blif_sha256": "93e07d2bfa1c110b9a57954e0168ec184c1eb6d7251a6d13e71d507540062b63",
+    "aag_lines": 1209,
+    "blif_lines": 1282,
+    "stats": {
+      "inputs": 64,
+      "latches": 118,
+      "ands": 1,
+      "xors": 320,
+      "ors": 64,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9968847352024922,
+    "bad_cone_xor_density": 0.996031746031746,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980564_symbol_bits64_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980564_symbol_bits64_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980564_symbol_bits64_topologybalanced"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 96,
+      "topology": "serial",
+      "seed": 980096
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 1
+    },
+    "aag_sha256": "210c24c64ec755f7c2a9e3c8d77c4aecf0c7b05b1e2af8fa2920ad9fb2ce8970",
+    "blif_sha256": "52edc11038488aecd9b06e0dbfcf9d4331e2fafdbd0a2ab056ddf1db05564888",
+    "aag_lines": 1753,
+    "blif_lines": 1858,
+    "stats": {
+      "inputs": 96,
+      "latches": 118,
+      "ands": 1,
+      "xors": 480,
+      "ors": 96,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.997920997920998,
+    "bad_cone_xor_density": 0.996031746031746,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980096_symbol_bits96_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980096_symbol_bits96_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980096_symbol_bits96_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 96,
+      "topology": "balanced",
+      "seed": 980596
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 1
+    },
+    "aag_sha256": "3dd1a10f1934f061b8f9917388bfc0622a3dd61b62e8b1113f2ac9ca4afbbe76",
+    "blif_sha256": "44c59039c54579e0a7ff43765b38963a742da7aa09c119343d31cff8692c317a",
+    "aag_lines": 1753,
+    "blif_lines": 1858,
+    "stats": {
+      "inputs": 96,
+      "latches": 118,
+      "ands": 1,
+      "xors": 480,
+      "ors": 96,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.997920997920998,
+    "bad_cone_xor_density": 0.996031746031746,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980596_symbol_bits96_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980596_symbol_bits96_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980596_symbol_bits96_topologybalanced"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 128,
+      "topology": "serial",
+      "seed": 980128
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 1
+    },
+    "aag_sha256": "0917f755cc59c3656a9dc38878c025cf8ab28b98b4dfa108ca8f823d56067390",
+    "blif_sha256": "6fc41fd9173a61378288ad46f19535ca64847367ecaaa04042148f08ead24b9c",
+    "aag_lines": 2297,
+    "blif_lines": 2434,
+    "stats": {
+      "inputs": 128,
+      "latches": 118,
+      "ands": 1,
+      "xors": 640,
+      "ors": 128,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9984399375975039,
+    "bad_cone_xor_density": 0.996031746031746,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980128_symbol_bits128_topologyserial.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980128_symbol_bits128_topologyserial.blif"
+    },
+    "stem": "scrambler_recovery_seed980128_symbol_bits128_topologyserial"
+  },
+  {
+    "family": "scrambler_recovery",
+    "params": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+      "symbol_bits": 128,
+      "topology": "balanced",
+      "seed": 980628
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "64b/66b self-synchronous scrambler lock recovery",
+      "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "recovered implies descrambled payload equals input payload",
+      "standard": "IEEE 802.3 64b/66b PCS self-synchronous scrambler",
+      "polynomial": "1 + x^39 + x^58",
+      "flush_bits": 58,
+      "flush_cycles": 1
+    },
+    "aag_sha256": "4cfb9aef90bd68d840efb342fe179038b1dffb1ec8706c946edffde9896db447",
+    "blif_sha256": "ed64f5dd8c5fbab1088d9dc249f63040647d871d60a842eab939588b179e80f7",
+    "aag_lines": 2297,
+    "blif_lines": 2434,
+    "stats": {
+      "inputs": 128,
+      "latches": 118,
+      "ands": 1,
+      "xors": 640,
+      "ors": 128,
+      "nots": 0,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9984399375975039,
+    "bad_cone_xor_density": 0.996031746031746,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980628_symbol_bits128_topologybalanced.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/scrambler_recovery_seed980628_symbol_bits128_topologybalanced.blif"
+    },
+    "stem": "scrambler_recovery_seed980628_symbol_bits128_topologybalanced"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 8,
+      "seed": 981168
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 8,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "22153bddefba1a7a087583b931d3f42db5946ae810424eab5c4f6c4ab11def84",
+    "blif_sha256": "f7c48d46b7db23cb3b9690bbfc2bbf06bd96f135d93334922557745ba9c0e8c9",
+    "aag_lines": 510,
+    "blif_lines": 959,
+    "stats": {
+      "inputs": 10,
+      "latches": 33,
+      "ands": 129,
+      "xors": 96,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.4266666666666667,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981168_symbol_bits8_width16.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981168_symbol_bits8_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed981168_symbol_bits8_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 16,
+      "seed": 981176
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 16,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "c80319cfa83b7516942fffac60dee333cef1fe11e67c5e03bef952b9dcfa5384",
+    "blif_sha256": "75dffe0e1b6d2d38043a6628c7dd221d1fec6be17fcaf8f6326ff5dff9f94cda",
+    "aag_lines": 902,
+    "blif_lines": 1343,
+    "stats": {
+      "inputs": 18,
+      "latches": 33,
+      "ands": 129,
+      "xors": 224,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.6345609065155807,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981176_symbol_bits16_width16.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981176_symbol_bits16_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed981176_symbol_bits16_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 32,
+      "seed": 981192
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 32,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "a48b1f9b444ff660e64277bb63a137de4ae8eab86e1e4c988d5ee0114bcd47e0",
+    "blif_sha256": "bfedbce7fec94e295e6c37b6d30479b74066a58c904f12d25effb6559a5f628e",
+    "aag_lines": 1578,
+    "blif_lines": 2003,
+    "stats": {
+      "inputs": 34,
+      "latches": 33,
+      "ands": 129,
+      "xors": 444,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.774869109947644,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981192_symbol_bits32_width16.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981192_symbol_bits32_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed981192_symbol_bits32_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT",
+      "width": 16,
+      "polynomial": 4129,
+      "symbol_bits": 64,
+      "seed": 981224
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-16-CCITT"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x1021",
+      "state_width": 16,
+      "symbol_bits_per_cycle": 64,
+      "reset_seed": "0xffff"
+    },
+    "aag_sha256": "d9f7f9bcd6c49426ca68a3cc28ef11f13d6c1bd6f423d2b6ed46087e217363f1",
+    "blif_sha256": "ad35c75d16df2fd691a2b7558ed7ccbd50b844f189e0b0cb4abda72f0067a029",
+    "aag_lines": 2630,
+    "blif_lines": 3023,
+    "stats": {
+      "inputs": 66,
+      "latches": 33,
+      "ands": 129,
+      "xors": 784,
+      "ors": 80,
+      "nots": 65,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8587075575027382,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981224_symbol_bits64_width16.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial4129_seed981224_symbol_bits64_width16.blif"
+    },
+    "stem": "crc_frame_align_polynomial4129_seed981224_symbol_bits64_width16"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 8,
+      "seed": 981328
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 8,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "584aa57bb5ffb71c16dcc90ac20b66d00ea11583d7071c7b7b815a1ec5585ca8",
+    "blif_sha256": "7e109fef694daf15b5838c4c70d669ca1ea1c7ff148f00f0fa5e2688e9aba1d3",
+    "aag_lines": 1522,
+    "blif_lines": 2419,
+    "stats": {
+      "inputs": 10,
+      "latches": 65,
+      "ands": 257,
+      "xors": 364,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.5861513687600645,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981328_symbol_bits8_width32.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981328_symbol_bits8_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed981328_symbol_bits8_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 16,
+      "seed": 981336
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 16,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "c6c108457fe8057221a46ed8dcb9ef9328b4f40643083975ba7fb746fb01c8db",
+    "blif_sha256": "1dbf5f5c95590a9ca8c7185cd75816effc6e211fa46a8eaacdbc4f027b215459",
+    "aag_lines": 2448,
+    "blif_lines": 3337,
+    "stats": {
+      "inputs": 18,
+      "latches": 65,
+      "ands": 257,
+      "xors": 670,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.7227615965480043,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981336_symbol_bits16_width32.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981336_symbol_bits16_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed981336_symbol_bits16_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 32,
+      "seed": 981352
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 32,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "3f1d2b291bd1a01257a19124391cd3129f50ee79cb5cd76412bc6af1a66f2d9f",
+    "blif_sha256": "618f5ecfa63ca1e33881bdad80a11c6a0303c4439431139e8f3e29d8a526f52a",
+    "aag_lines": 4510,
+    "blif_lines": 5383,
+    "stats": {
+      "inputs": 34,
+      "latches": 65,
+      "ands": 257,
+      "xors": 1352,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.8402734617775015,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981352_symbol_bits32_width32.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981352_symbol_bits32_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed981352_symbol_bits32_width32"
+  },
+  {
+    "family": "crc_frame_align",
+    "params": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE",
+      "width": 32,
+      "polynomial": 79764919,
+      "symbol_bits": 64,
+      "seed": 981384
+    },
+    "classification": {
+      "category": "link-coding",
+      "semantic": "serial-versus-parallel CRC alignment after SOF",
+      "source": "CRC-32/IEEE"
+    },
+    "expected": "SAFE",
+    "reference": {
+      "expected": "SAFE",
+      "invariant": "seen_sof implies serial_crc == matrix_crc",
+      "standard": "CRC frame-boundary reinitialization",
+      "polynomial": "0x4c11db7",
+      "state_width": 32,
+      "symbol_bits_per_cycle": 64,
+      "reset_seed": "0xffffffff"
+    },
+    "aag_sha256": "011ba864b43558d10760fc1b39ce6c83c5b73a02a6e6af78e27efea48ca91b84",
+    "blif_sha256": "b0efff9a60efc08d1c2686418a1216f93ba91f762461a06b9b37950084a4856d",
+    "aag_lines": 7440,
+    "blif_lines": 8281,
+    "stats": {
+      "inputs": 66,
+      "latches": 65,
+      "ands": 257,
+      "xors": 2318,
+      "ors": 160,
+      "nots": 129,
+      "bad": 1,
+      "outputs": 0,
+      "constraints": 0
+    },
+    "xor_density": 0.9001941747572816,
+    "bad_cone_xor_density": 0.0,
+    "paths": {
+      "aag": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981384_symbol_bits64_width32.aag",
+      "blif": "test_tools/compare/results/pathb_real_xor_apps_v1/benchmarks/crc_frame_align_polynomial79764919_seed981384_symbol_bits64_width32.blif"
+    },
+    "stem": "crc_frame_align_polynomial79764919_seed981384_symbol_bits64_width32"
+  }
+]
