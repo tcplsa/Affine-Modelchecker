@@ -19,6 +19,7 @@ JSON 或日志。
 | 387 模型 selector、256/131 冻结划分和 27 个阈值 | `data/pathb_affine_selector_validation_v1/` |
 | selector 所需生成 AIGER | `data/selector_benchmarks/` |
 | 12 个公开 RTL 的来源、转换产物和日志 | `data/pathb_public_affine_rtl_v1/` |
+| HAVEN Ethernet CRC 与 OpenTitan SECDED 整体性质样例 | `data/public_affine_case_studies_v1/` |
 
 `reports/` 是解释性材料，不替代上述原始数据。`code/pathb/` 保存生成器、运行器和
 分析脚本；项目根目录保存当前实现，`third_party/` 保存 CryptoMiniSat 接口扩展。
@@ -28,6 +29,9 @@ JSON 或日志。
 selector 原始 manifest 保持不变以保存证据；可移植副本为
 `data/pathb_affine_selector_validation_v1/manifest.relative.json`，其中 387 个输入
 已逐一通过 SHA256 校验。
+
+新增公开案例目录只包含按一个完整转移系统求解的单性质模型；BCH/RS 分块、CAN
+合约复用及其他组合式验证样例没有纳入本 artifact。
 
 冻结二进制的 15 点双启动重跑已经完成，二进制 SHA256 为
 `83d12c19856951adc32a1187f6253f45c2cb8cd44969cad4130d752d669bd7d8`。
