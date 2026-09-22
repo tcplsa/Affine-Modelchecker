@@ -1,0 +1,493 @@
+{
+  "models": [
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s45",
+      "id": "2015__6s45",
+      "mc_previously_run": true,
+      "name": "6s45",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s45.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 18360,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "bobsmmips",
+      "id": "2015__bobsmmips",
+      "mc_previously_run": true,
+      "name": "bobsmmips",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/bobsmmips.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 131985,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "eijkbs",
+      "id": "2015__eijkbs6669",
+      "mc_previously_run": true,
+      "name": "eijkbs6669",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/eijkbs6669.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 13644,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 86.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "ndista",
+      "id": "2015__ndista262144",
+      "mc_previously_run": true,
+      "name": "ndista262144",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/ndista262144.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 455,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "nusmvdme",
+      "id": "2015__nusmvdme116",
+      "mc_previously_run": true,
+      "name": "nusmvdme116",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/nusmvdme116.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 6416,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a14b02s",
+      "mc_previously_run": true,
+      "name": "oski15a14b02s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a14b02s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 166981,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 86.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "shift",
+      "id": "2015__shift1add262144",
+      "mc_previously_run": true,
+      "name": "shift1add262144",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/shift1add262144.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 473,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 85.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "shift",
+      "id": "2015__shift1add524288",
+      "mc_previously_run": true,
+      "name": "shift1add524288",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/shift1add524288.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 491,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "intel",
+      "id": "2017__intel032",
+      "mc_previously_run": true,
+      "name": "intel032",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/intel032.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 47967,
+      "structural_class": "affine-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gmd7acc",
+      "mc_previously_run": true,
+      "name": "oc8051gmd7acc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gmd7acc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36379,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 37.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "ponylink",
+      "id": "2019__ponylink-slaveTXlen-sat",
+      "mc_previously_run": true,
+      "name": "ponylink-slaveTXlen-sat",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/ponylink-slaveTXlen-sat.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 197737,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "krebs",
+      "id": "2020__krebs.3.prop1-func-interl",
+      "mc_previously_run": true,
+      "name": "krebs.3.prop1-func-interl",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/beem/krebs.3.prop1-func-interl.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 6584,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 30.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "ponylink",
+      "id": "2020__ponylink-slaveTXlen-unsat",
+      "mc_previously_run": true,
+      "name": "ponylink-slaveTXlen-unsat",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2018D/ponylink-slaveTXlen-unsat.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 197893,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "ridecore",
+      "id": "2020__ridecore",
+      "mc_previously_run": true,
+      "name": "ridecore",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/mann/unknown/ridecore.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 6342412,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 12.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p075",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p075",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/vgasim_imgfifo-p075.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67131,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 73.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p088",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p088",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/vgasim_imgfifo-p088.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67131,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SUB_sanity",
+      "id": "2024__ILA_Flute_SUB_sanity",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_SUB_sanity",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_SUB_sanity.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16489518,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem16_label07",
+      "mc_previously_run": true,
+      "name": "Problem16_label07",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem16_label07.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1101831,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 133.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "gauss_sum",
+      "id": "2024__gauss_sum.i.p+lhb-reducer",
+      "mc_previously_run": true,
+      "name": "gauss_sum.i.p+lhb-reducer",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-new/gauss_sum.i.p+lhb-reducer.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36370,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 10.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "jm",
+      "id": "2024__jm2006.c.i.v+cfa-reducer",
+      "mc_previously_run": true,
+      "name": "jm2006.c.i.v+cfa-reducer",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-lit/jm2006.c.i.v+cfa-reducer.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 29028,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "loop",
+      "id": "2024__loop3",
+      "mc_previously_run": true,
+      "name": "loop3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-floats-scientific-comp/loop3.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 300575,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 83.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "mono",
+      "id": "2024__mono-crafted_8",
+      "mc_previously_run": true,
+      "name": "mono-crafted_8",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loops-crafted-1/mono-crafted_8.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 11478,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 42.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "ponylink",
+      "id": "2024__ponylink-slaveTXlen-sat",
+      "mc_previously_run": true,
+      "name": "ponylink-slaveTXlen-sat",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2019/wolf/2018D/ponylink-slaveTXlen-sat.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 197942,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 169.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "Mono",
+      "id": "2025__Mono6_1",
+      "mc_previously_run": true,
+      "name": "Mono6_1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/loops-crafted-1/Mono6_1.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 11644,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 149.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "rast",
+      "id": "2025__rast-p16",
+      "mc_previously_run": true,
+      "name": "rast-p16",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/rast-p16.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39105,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "rast",
+      "id": "2025__rast-p17",
+      "mc_previously_run": true,
+      "name": "rast-p17",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/rast-p17.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39092,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 18.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "rast",
+      "id": "2025__rast-p20",
+      "mc_previously_run": true,
+      "name": "rast-p20",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/rast-p20.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39097,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 103.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "sumt",
+      "id": "2025__sumt3",
+      "mc_previously_run": true,
+      "name": "sumt3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/loops-crafted-1/sumt3.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 38186,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    }
+  ],
+  "schema": "mc-hard-diagnostic-progress-v1"
+}

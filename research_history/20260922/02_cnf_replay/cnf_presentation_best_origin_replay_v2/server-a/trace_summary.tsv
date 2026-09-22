@@ -1,0 +1,16 @@
+model_id	name	year	tier	category	run	paired_seed	config	representation	origin	translation_order	lift_order	status	wall_seconds	timeout_seconds	exit_code	winner_thread	trace_key	trace_files	trace_bytes
+2015__oski15a14b13s	oski15a14b13s	2015	medium	stable-loss	1	120000	xag_canonical-cnf	xag	numeric__first	numeric	first	UNSAFE	8.631871	60.000000	0	0	8c144bbcff87819f339e	6	90175786
+2024__a10-p53	a10-p53	2024	medium	stable-loss	4	350000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	7.661468	60.000000	0	0	db2aa49f6fabc5929a04	7	65901811
+2020__zipcpu-zipmmu-p26	zipcpu-zipmmu-p26	2020	medium	seed-reversal	1	120000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	19.268050	60.000000	-15	0	364aa13f827a8a011aa8	18	139170968
+2020__zipcpu-zipmmu-p26	zipcpu-zipmmu-p26	2020	medium	seed-reversal	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	19.961144	60.000000	-15	0	f6bb5c83ad9b303eaa7d	13	138033308
+2017__6s380b511	6s380b511	2017	timeout	seed-reversal	4	350000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	21.870233	60.000000	-15	0	1f13f48b1efa1667b080	21	135442213
+2017__6s380b511	6s380b511	2017	timeout	seed-reversal	6	370000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	21.870049	60.000000	-15	0	5d230816876ecee65f9e	21	142572244
+2025__NO_04	NO_04	2025	slow	stable-win	3	140000	xag_canonical-cnf	xag	numeric__first	numeric	first	UNSAFE	7.007482	60.000000	0	0	2a6108818c5bb9a9ddd6	10	57783665
+2019__lamport_nonatomic.5.prop1-func-interl	lamport_nonatomic.5.prop1-func-interl	2019	timeout	seed-reversal	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	31.219085	60.000000	-15	0	1903317ca9832d84a26a	17	137883295
+2019__lamport_nonatomic.5.prop1-func-interl	lamport_nonatomic.5.prop1-func-interl	2019	timeout	seed-reversal	6	370000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	31.232817	60.000000	-15	0	44ef2cf1d8ba371adc44	17	136260518
+2015__6s164	6s164	2015	slow	seed-reversal	3	140000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	41.015224	60.000000	0	0	4d8d89c03670dff9ca11	32	116667006
+2024__fib_30	fib_30	2024	timeout	seed-reversal	1	120000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	41.330273	60.000000	-15	0	8cf9159dd6eafd4e4311	107	137065520
+2024__fib_30	fib_30	2024	timeout	seed-reversal	6	370000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	42.320915	60.000000	-15	0	bc0f1278f92065702dda	105	135383660
+2015__6s164	6s164	2015	slow	seed-reversal	4	350000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	45.099047	60.000000	-15	0	f1e14f85b5ad954636ee	45	136316068
+2020__vis_arrays_buf_bug	vis_arrays_buf_bug	2020	timeout	stable-loss	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	TIMEOUT	60.032348	60.000000	-15	0	31cf9fc8efdc1d3c13e7	19	51857981
+2020__mul7	mul7	2020	timeout	stable-win	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	TIMEOUT	60.070512	60.000000	-15	0	dc76c4590d9536504865	6	46594678

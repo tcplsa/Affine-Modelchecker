@@ -1,0 +1,46 @@
+{
+  "models": [
+    {
+      "confirmation_strategy": "source-init",
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "a",
+      "id": "2024__a07-p14",
+      "mc_previously_run": true,
+      "name": "a07-p14",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/x-epic/a07-p14.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 7017921,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "confirmation_strategy": "heuristic",
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "dijkstra",
+      "id": "2024__dijkstra-u_valuebound1",
+      "mc_previously_run": true,
+      "name": "dijkstra-u_valuebound1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/nla-digbench-scaling/dijkstra-u_valuebound1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 329727,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    }
+  ],
+  "schema": "mc-hard-confirmation-v1",
+  "strategy": "baseline"
+}

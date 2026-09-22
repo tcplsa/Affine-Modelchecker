@@ -1,0 +1,5 @@
+config	models	median_cost_sum	improvement_of_retain248_pct	solved_runs	solved_models_any_run	models_solved_all_runs
+aig	144	10761.299706	-5.884684	549	139	135
+compact_aig	144	10387.212979	-9.156342	552	140	136
+full_xag	144	11920.863213	4.256534	549	141	134
+retain248	144	11434.164138	0.000000	549	140	135

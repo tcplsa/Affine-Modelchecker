@@ -1,0 +1,3933 @@
+{
+  "description": "Unseen concurrent rIC3 BVE-order validation set",
+  "ids": [
+    "2015__139442p0",
+    "2015__beemlup1b1",
+    "2015__bjrb07amba1andenv",
+    "2015__bob2",
+    "2015__bobmiterbm1and",
+    "2015__bobtuint08neg",
+    "2015__bobtuintand",
+    "2015__bobtuintorneg",
+    "2015__cmugigamax",
+    "2015__eijks208o",
+    "2015__kenflashp13",
+    "2015__kenoopp1",
+    "2015__nusmvreactorp1",
+    "2015__nusmvsyncarb10p2",
+    "2015__pdtpmstwo",
+    "2015__pdtvisgigamax3",
+    "2015__pdtvisminmax0",
+    "2015__pdtvisminmaxr1",
+    "2015__pdtvisretherrtf1",
+    "2015__pdtvistwoall3",
+    "2015__139443p0",
+    "2015__139444p0",
+    "2015__139454p0",
+    "2015__139463p0",
+    "2015__6s120",
+    "2015__6s159",
+    "2015__6s325rb072",
+    "2015__6s355rb08740",
+    "2015__6s355rb11080",
+    "2015__6s362rb1",
+    "2015__6s391rb379",
+    "2015__6s421rb083",
+    "2015__beemcycschd3b1",
+    "2015__beemelev2f1",
+    "2015__bj08amba2g3f3",
+    "2015__bobsmdct",
+    "2015__bobsynth09neg",
+    "2015__bobtuint09neg",
+    "2015__bobuns2p10d100l",
+    "2015__eijks298",
+    "2015__6s108",
+    "2015__6s206rb025",
+    "2015__6s271rb045",
+    "2015__6s271rb079",
+    "2015__6s273b37",
+    "2015__6s276rb342",
+    "2015__6s277rb292",
+    "2015__6s307rb09",
+    "2015__6s326rb08",
+    "2015__6s372rb26",
+    "2015__6s380b129",
+    "2015__6s405rb611",
+    "2015__6s406rb067",
+    "2015__beemmsmie1f1",
+    "2015__beemskbn3f1",
+    "2015__bjrb07amba4andenv",
+    "2015__bob3",
+    "2015__bobsm5378d2",
+    "2015__bobsynthetic2",
+    "2015__cmuperiodic",
+    "2015__6s164",
+    "2015__6s173",
+    "2015__6s306rb03",
+    "2015__6s317b14",
+    "2015__6s344rb150",
+    "2015__6s385rb444",
+    "2015__bc57sensorsp0",
+    "2015__beemlann2f1",
+    "2015__beemlmprt8f1",
+    "2015__beemmcs6f1",
+    "2015__bob9234spec4neg",
+    "2015__bobcohdoptdcd4",
+    "2015__boblivea",
+    "2015__oski15a14b07s",
+    "2015__pdtpmscoherence",
+    "2015__pdtpmsns2",
+    "2015__pdtswvtma6x4p1",
+    "2015__pj2018",
+    "2015__power2sum256",
+    "2015__prodcellp0neg",
+    "2015__6s340rb27",
+    "2015__6s340rb63",
+    "2015__6s341r",
+    "2015__6s342rb122",
+    "2015__6s342rb131",
+    "2015__6s350rb35",
+    "2015__6s350rb46",
+    "2015__6s362rb0",
+    "2015__6s377r",
+    "2015__6s404rb1",
+    "2015__6s43",
+    "2015__6s52",
+    "2015__beemandrsn4b1",
+    "2015__beembkry8b1",
+    "2015__beembrptwo6b1",
+    "2015__beemcmbrdg7f2",
+    "2015__beemextnc1f1",
+    "2015__beemfwt2b2",
+    "2015__beemhanoi4b1",
+    "2015__beemkrebs4b1",
+    "2017__6s515rb1",
+    "2017__bj08aut82",
+    "2017__bob9234specand",
+    "2017__bobmiterbm1or",
+    "2017__bobtuint24",
+    "2017__brpp1",
+    "2017__counterp0",
+    "2017__intel001",
+    "2017__kenflashp08",
+    "2017__mutexp0",
+    "2017__neclaftp5001",
+    "2017__nusmvsyncarb5p2",
+    "2017__pcip1",
+    "2017__pdtpmsarbiter",
+    "2017__pdtpmsrotate32",
+    "2017__pdtpmss1269b",
+    "2017__pdtpmsusbphy",
+    "2017__pdtvisgigamax4",
+    "2017__pdtvisgray0",
+    "2017__pdtvishuffman1",
+    "2017__139442p1",
+    "2017__139443p5",
+    "2017__139452p0",
+    "2017__139453p0",
+    "2017__139462p0",
+    "2017__139464p0",
+    "2017__6s210b037",
+    "2017__6s344rb054",
+    "2017__6s389b02",
+    "2017__6s400rb07819",
+    "2017__bj08amba3g1",
+    "2017__bobcount",
+    "2017__bobsynth13",
+    "2017__bobsynthand",
+    "2017__bobsynthor",
+    "2017__bobunr2p10d40l",
+    "2017__dme6p1",
+    "2017__eijks349",
+    "2017__intel003",
+    "2017__mentorbm1or",
+    "2017__139444p22",
+    "2017__6s206rb103",
+    "2017__6s209b0",
+    "2017__6s215rb0",
+    "2017__6s216rb0",
+    "2017__6s275rb318",
+    "2017__6s384rb024",
+    "2017__6s403rb1342",
+    "2017__abp4p2ff",
+    "2017__bj08amba2g4f3",
+    "2017__bobsmi2c",
+    "2017__csmacdp2",
+    "2017__intel056",
+    "2017__mentorbm1p02",
+    "2017__neclabakery001",
+    "2017__neclaftp4002",
+    "2017__neclatcas1a001",
+    "2017__nusmvbrp",
+    "2017__pdtpmsretherrtf",
+    "2017__intel061",
+    "2017__6s374b114",
+    "2017__bc57sensorsp2",
+    "2017__bob05",
+    "2017__intel026",
+    "2017__irstdme6",
+    "2017__pj2016",
+    "2017__productioncellp0",
+    "2017__intel007",
+    "2017__6s351rb15",
+    "2017__6s37",
+    "2017__6s404rb4",
+    "2017__6s41",
+    "2017__6s42",
+    "2017__beemandrsn6b1",
+    "2017__beemcmbrdg1b1",
+    "2017__beemptrsn4b1",
+    "2017__cmudme2",
+    "2017__intel047",
+    "2017__mentorbm1and",
+    "2017__oc8051gm49acc",
+    "2017__pdtswvtma6x6p3",
+    "2017__intel044",
+    "2017__oc8051gm4dacc",
+    "2017__intel046",
+    "2017__oc8051gm4biram",
+    "2017__intel025",
+    "2017__oc8051gm49pc",
+    "2017__intel066",
+    "2019__cal10",
+    "2019__gen32",
+    "2019__qspiflash_dualflexpress_divfive-p017",
+    "2019__qspiflash_qflexpress_divfive-p023",
+    "2019__vcegar_QF_BV_itc99_b13_p06",
+    "2019__vis_arrays_am2910_p1",
+    "2019__zipversa_composecrc_prf-p11",
+    "2019__cal9",
+    "2019__qspiflash_dualflexpress_divfive-p142",
+    "2019__qspiflash_qflexpress_divfive-p057",
+    "2019__cal3",
+    "2019__cal21",
+    "2019__cal32",
+    "2019__analog_estimation_convergence",
+    "2019__cal180",
+    "2019__gen33",
+    "2019__h_TreeArb",
+    "2019__h_b05",
+    "2019__picorv32-check-p09",
+    "2019__qspiflash_dualflexpress_divfive-p018",
+    "2019__qspiflash_dualflexpress_divthree-p086",
+    "2019__qspiflash_qflexpress_divfive-p072",
+    "2019__vcegar_QF_BV_usb_phy_1",
+    "2019__vgasim_imgfifo-p047",
+    "2019__zipcpu-busdelay-p18",
+    "2019__zipversa_composecrc_prf-p04",
+    "2019__cal42",
+    "2019__gen25",
+    "2019__qspiflash_dualflexpress_divfive-p060",
+    "2019__qspiflash_dualflexpress_divthree-p089",
+    "2019__qspiflash_qflexpress_divfive-p034",
+    "2019__vgasim_imgfifo-p085",
+    "2019__zipcpu-busdelay-p43",
+    "2019__Heap",
+    "2019__brp.2.prop1-func-interl",
+    "2019__cal27",
+    "2019__frogs.2.prop1-back-serstep",
+    "2019__gen44",
+    "2019__marlann_compute_cp_fail2-p0",
+    "2019__marlann_compute_cp_pass-p2",
+    "2019__picorv32-check-p18",
+    "2019__qspiflash_dualflexpress_divfive-p036",
+    "2019__qspiflash_dualflexpress_divthree-p112",
+    "2019__qspiflash_qflexpress_divfive-p008",
+    "2019__vgasim_imgfifo-p105",
+    "2019__vis_arrays_two_p1",
+    "2019__zipcpu-busdelay-p20",
+    "2019__zipversa_composecrc_prf-p06",
+    "2019__cal78",
+    "2019__frogs.5.prop1-func-interl",
+    "2019__gen43",
+    "2019__marlann_compute_cp_fail1-p2",
+    "2019__picorv32-check-p22",
+    "2019__adding.5.prop1-func-interl",
+    "2019__cal89",
+    "2019__picorv32-check-p06",
+    "2019__qspiflash_dualflexpress_divfive-p137",
+    "2019__qspiflash_dualflexpress_divthree-p048",
+    "2019__qspiflash_qflexpress_divfive-p058",
+    "2019__vgasim_imgfifo-p070",
+    "2019__zipcpu-zipmmu-p39",
+    "2019__cal140",
+    "2019__picorv32-check-p12",
+    "2019__qspiflash_dualflexpress_divfive-p120",
+    "2019__qspiflash_qflexpress_divfive-p128",
+    "2019__zipcpu-pfcache-p13",
+    "2019__cal142",
+    "2019__qspiflash_dualflexpress_divfive-p012",
+    "2019__zipcpu-pfcache-p15",
+    "2019__cal143",
+    "2019__zipcpu-pfcache-p20",
+    "2019__cal128",
+    "2019__cal100",
+    "2019__VexRiscv-regch0-20-p0",
+    "2019__arbitrated_top_n3_w16_d64_e0",
+    "2019__cal93",
+    "2019__circular_pointer_top_w16_d64_e0",
+    "2019__dspfilters_fastfir_second-p29",
+    "2019__mul3",
+    "2019__picorv32_mutAY_nomem-p8",
+    "2019__qspiflash_dualflexpress_divfive-p057",
+    "2019__qspiflash_dualflexpress_divthree-p094",
+    "2019__qspiflash_qflexpress_divfive-p005",
+    "2019__rether.4.prop1-back-serstep",
+    "2019__shift_register_top_w64_d8_e0",
+    "2019__synapse.7.prop1-func-interl",
+    "2019__telephony.6.prop1-func-interl",
+    "2019__vcegar_arrays_itc99_b12_p2",
+    "2019__vgasim_imgfifo-p039",
+    "2019__vis_arrays_buf_bug",
+    "2019__vis_arrays_bufferAlloc",
+    "2019__zipcpu-busdelay-p24",
+    "2019__zipversa_composecrc_prf-p03",
+    "2020__gen21",
+    "2020__qspiflash_dualflexpress_divfive-p143",
+    "2020__qspiflash_dualflexpress_divthree-p143",
+    "2020__simple_alu",
+    "2020__vcegar_QF_BV_itc99_b13_p10",
+    "2020__vis_arrays_am2910_p2",
+    "2020__zipversa_composecrc_prf-p00",
+    "2020__vis_arrays_am2910_p1",
+    "2020__zipversa_composecrc_prf-p11",
+    "2020__vis_arrays_am2910_p3",
+    "2020__zipversa_composecrc_prf-p07",
+    "2020__anderson.3.prop1-back-serstep",
+    "2020__cal21",
+    "2020__elevator.4.prop1-func-interl",
+    "2020__gen10",
+    "2020__h_TreeArb",
+    "2020__miim",
+    "2020__picorv32-check-p09",
+    "2020__qspiflash_dualflexpress_divfive-p022",
+    "2020__qspiflash_dualflexpress_divthree-p158",
+    "2020__qspiflash_qflexpress_divfive-p048",
+    "2020__rast-p04",
+    "2020__stack-p1",
+    "2020__vgasim_imgfifo-p047",
+    "2020__vis_arrays_am2901",
+    "2020__zipcpu-busdelay-p43",
+    "2020__zipversa_composecrc_prf-p15",
+    "2020__cal41",
+    "2020__gen12",
+    "2020__picorv32-check-p19",
+    "2020__qspiflash_dualflexpress_divfive-p016",
+    "2020__cal34",
+    "2020__gen44",
+    "2020__marlann_compute_cp_fail2-p0",
+    "2020__marlann_compute_cp_pass-p2",
+    "2020__paper_v3",
+    "2020__picorv32-check-p05",
+    "2020__qspiflash_dualflexpress_divfive-p079",
+    "2020__qspiflash_dualflexpress_divthree-p006",
+    "2020__qspiflash_qflexpress_divfive-p036",
+    "2020__shift_register_top_w16_d8_e0",
+    "2020__stack-p2",
+    "2020__vcegar_QF_BV_ar",
+    "2020__vgasim_imgfifo-p082",
+    "2020__zipcpu-busdelay-p00",
+    "2020__cal81",
+    "2020__gen43",
+    "2020__marlann_compute_cp_fail1-p2",
+    "2020__picorv32-check-p12",
+    "2020__qspiflash_dualflexpress_divfive-p092",
+    "2020__qspiflash_dualflexpress_divthree-p046",
+    "2020__cal84",
+    "2020__dspfilters_fastfir_second-p21",
+    "2020__qspiflash_dualflexpress_divfive-p164",
+    "2020__qspiflash_dualflexpress_divthree-p111",
+    "2020__qspiflash_qflexpress_divfive-p139",
+    "2020__shift_register_top_w32_d8_e0",
+    "2020__vgasim_imgfifo-p099",
+    "2020__zipcpu-busdelay-p15",
+    "2020__cal86",
+    "2020__dspfilters_fastfir_second-p04",
+    "2020__qspiflash_dualflexpress_divthree-p141",
+    "2020__qspiflash_qflexpress_divfive-p121",
+    "2020__vgasim_imgfifo-p109",
+    "2020__zipcpu-zipmmu-p39",
+    "2020__cal87",
+    "2020__qspiflash_dualflexpress_divthree-p164",
+    "2020__qspiflash_qflexpress_divfive-p113",
+    "2020__zipcpu-pfcache-p13",
+    "2020__cal90",
+    "2020__qspiflash_dualflexpress_divthree-p005",
+    "2020__VexRiscv-regch0-30-p1",
+    "2020__arbitrated_top_n4_w8_d64_e0",
+    "2020__cal107",
+    "2020__circular_pointer_top_w32_d32_e0",
+    "2020__dspfilters_fastfir_second-p42",
+    "2020__mul3",
+    "2020__pgm_protocol.7.prop1-back-serstep",
+    "2020__picorv32-pcregs-p2",
+    "2020__ponylink-slaveTXlen-unsat",
+    "2020__qspiflash_dualflexpress_divfive-p007",
+    "2020__qspiflash_dualflexpress_divthree-p007",
+    "2020__qspiflash_qflexpress_divfive-p094",
+    "2020__rast-p00",
+    "2020__rushhour.4.prop1-func-interl",
+    "2020__shift_register_top_w64_d8_e0",
+    "2020__vcegar_arrays_itc99_b12_p2",
+    "2020__vgasim_imgfifo-p036",
+    "2020__vis_arrays_bufferAlloc",
+    "2020__zipcpu-zipmmu-p48",
+    "2020__zipversa_composecrc_prf-p03",
+    "2024__2019__mann__unsafe__analog_estimation_convergence",
+    "2024__bin-suffix-5",
+    "2024__cal178",
+    "2024__float_req_bl_1071",
+    "2024__h_Arbiter",
+    "2024__qspiflash_dualflexpress_divfive-p020",
+    "2024__qspiflash_dualflexpress_divthree-p132",
+    "2024__qspiflash_qflexpress_divfive-p025",
+    "2024__trex02-1",
+    "2024__vgasim_imgfifo-p020",
+    "2024__vis_arrays_bpbs_p2",
+    "2024__zipcpu-busdelay-p09",
+    "2024__cal75",
+    "2024__float_req_bl_1092a",
+    "2024__vgasim_imgfifo-p061",
+    "2024__ILA_AES_START_ENCRYPT_problem",
+    "2024__Problem02_label10",
+    "2024__a16-p113",
+    "2024__cal41",
+    "2024__dspfilters_fastfir_second-p24",
+    "2024__elevator.3.prop1-back-serstep",
+    "2024__float8",
+    "2024__minepump_spec1_product14.cil",
+    "2024__phases_2-1",
+    "2024__picorv32-check-p09",
+    "2024__psyco_io_1",
+    "2024__rast-p10",
+    "2024__s3_srvr_1b.cil",
+    "2024__vgasim_imgfifo-p040",
+    "2024__vis_arrays_vsa16a_p6",
+    "2024__zipcpu-busdelay-p10",
+    "2024__zipversa_composecrc_prf-p12",
+    "2024__a16-p126",
+    "2024__minepump_spec4_product16.cil",
+    "2024__zipcpu-zipmmu-p27",
+    "2024__a16-p098",
+    "2024__2019__mann__safe__analog_estimation_convergence",
+    "2024__anderson.3.prop1-func-interl",
+    "2024__cal27",
+    "2024__cancel_var_through_overflow",
+    "2024__freire1_valuebound1",
+    "2024__gcd_2+newton_3_7",
+    "2024__gen45",
+    "2024__marlann_compute_cp_fail2-p1",
+    "2024__minepump_spec2_product54.cil",
+    "2024__qspiflash_qflexpress_divfive-p112",
+    "2024__stack-p2",
+    "2024__sw_ball2004_2",
+    "2024__yosyshq_appnote_123_veer-p15",
+    "2024__a16-p139",
+    "2024__cal182",
+    "2024__gen102",
+    "2024__yosyshq_appnote_123_veer_axi-p32",
+    "2024__a10-p04",
+    "2024__gen112",
+    "2024__Problem04_label27",
+    "2024__brp2.3.prop2-func-interl",
+    "2024__gen103",
+    "2024__newton_1_5",
+    "2024__qspiflash_dualflexpress_divfive-p040",
+    "2024__zipcpu-zipmmu-p12",
+    "2024__zonotope_2",
+    "2024__Problem07_label01",
+    "2024__gen53",
+    "2024__ILA_Piccolo_LHU_problem",
+    "2024__ILA_Piccolo_LHU_sanity",
+    "2024__ILA_Piccolo_LW_sanity",
+    "2024__ILA_Piccolo_SRLI_sanity",
+    "2024__ILA_Piccolo_SW_sanity",
+    "2024__ILA_Ridecore_ANDI_sanity",
+    "2024__ILA_Ridecore_AND_sanity",
+    "2024__ILA_Ridecore_LBU_problem",
+    "2024__ILA_Ridecore_SLT_sanity",
+    "2024__ILA_Ridecore_SRAI_sanity",
+    "2024__ILA_Ridecore_SRLI_problem",
+    "2024__ILA_Ridecore_SW_problem",
+    "2024__ILA_Ridecore_XOR_sanity",
+    "2024__Problem10_label08",
+    "2024__a16-p012",
+    "2024__arbitrated_top_n5_w128_d128_e0",
+    "2024__cal97",
+    "2024__egcd3-ll_unwindbound2",
+    "2024__fib_30",
+    "2024__gauss_sum.i.p+lhb-reducer",
+    "2025__77.c",
+    "2025__a16-p89",
+    "2025__cal14",
+    "2025__dblclockfft_butterfly_ck1-p46",
+    "2025__gen26",
+    "2025__microban_44",
+    "2025__minepump_spec5_product10.cil",
+    "2025__qspiflash_dualflexpress_divfive-p130",
+    "2025__qspiflash_qflexpress_divfive-p20",
+    "2025__simple_alu",
+    "2025__vis_QF_BV_bcuvis32",
+    "2025__vis_QF_BV_vlunc",
+    "2025__vis_arrays_am2910_p3",
+    "2025__zipcpu-zipmmu-p44",
+    "2025__cal76",
+    "2025__dblclockfft_butterfly_ck1-p119",
+    "2025__gen18",
+    "2025__qspiflash_qflexpress_divfive-p85",
+    "2025__cal49",
+    "2025__dblclockfft_butterfly_ck3_r0-p82",
+    "2025__ILA_AES_LOAD_problem",
+    "2025__Problem02_label43",
+    "2025__a16-p47",
+    "2025__benchmarks_output_btor2_example_212_miter_miter",
+    "2025__cal42",
+    "2025__dblclockfft_butterfly_ck3_r1-p50",
+    "2025__gen22",
+    "2025__jain_4-2",
+    "2025__loopv3",
+    "2025__safety__2025__ntu__sat__microban__microban_1",
+    "2025__minepump_spec4_product33.cil",
+    "2025__rast-p12",
+    "2025__stack-p2",
+    "2025__yosyshq_appnote_123_cv32e40x-p161",
+    "2025__zipcpu-zipmmu-p15",
+    "2025__a16-p114",
+    "2025__benchmarks_output_btor2_example_227_miter_miter",
+    "2025__cal40",
+    "2025__dblclockfft_butterfly_ck3_r1-p73",
+    "2025__safety__2025__ntu__unsat__microban_1",
+    "2025__Problem10_label21",
+    "2025__benchmarks_output_btor2_example_186_miter_miter",
+    "2025__cal78",
+    "2025__collision.1.prop1-func-interl",
+    "2025__dblclockfft_butterfly_ck1-p428",
+    "2025__elevator_spec3_product19.cil",
+    "2025__fib_05",
+    "2025__microban_33",
+    "2025__minepump_spec3_product49.cil",
+    "2025__qspiflash_dualflexpress_divfive-p41",
+    "2025__qspiflash_dualflexpress_divthree-p120",
+    "2025__yosyshq_appnote_123_cv32e40x-p368",
+    "2025__benchmarks_output_btor2_example_56_miter_miter",
+    "2025__dblclockfft_butterfly_ck1-p160",
+    "2025__elevator_spec3_product18.cil",
+    "2025__microban_82",
+    "2025__qspiflash_dualflexpress_divfive-p80",
+    "2025__yosyshq_appnote_123_cv32e40x-p179",
+    "2025__benchmarks_output_btor2_example_230_miter_miter",
+    "2025__microban_48",
+    "2025__AllInterval-020",
+    "2025__NO_04",
+    "2025__Problem03_label05",
+    "2025__arbitrated_top_n4_w16_d8_e0",
+    "2025__benchmarks_output_btor2_example_410_miter_miter",
+    "2025__cal90",
+    "2025__dblclockfft_butterfly_ck2_r0-p229",
+    "2025__dspfilters_fastfir_second-p50",
+    "2025__gen119",
+    "2025__geo1-u_valuebound100",
+    "2025__pc_sfifo_3.cil+token_ring.01.cil-2",
+    "2025__qspiflash_dualflexpress_divthree-p46",
+    "2025__qspiflash_qflexpress_divfive-p39",
+    "2025__yosyshq_appnote_123_cv32e40x-p724",
+    "2025__benchmarks_output_btor2_example_162_miter_miter",
+    "2025__cal86",
+    "2025__gen93",
+    "2025__qspiflash_dualflexpress_divthree-p161",
+    "2025__qspiflash_qflexpress_divfive-p128",
+    "2025__benchmarks_output_btor2_example_110_miter_miter",
+    "2025__Problem01_label22",
+    "2025__a16-p1",
+    "2025__arbitrated_top_n4_w128_d8_e0",
+    "2025__benchmarks_initial_output_btor2_example_10_miter_miter",
+    "2025__benchmarks_output_btor2_example_494_miter_miter",
+    "2025__cal206",
+    "2025__circular_pointer_top_w128_d8_e0",
+    "2025__level_5",
+    "2025__mem_slave_tlm.4.cil",
+    "2025__microban_64",
+    "2025__pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label00",
+    "2025__pals_opt-floodmax.4.ufo.UNBOUNDED.pals",
+    "2025__pc_sfifo_2.cil-2+token_ring.09.cil-1",
+    "2025__pgm_protocol.8.prop6-func-interl",
+    "2025__prodbin-ll_unwindbound50",
+    "2025__qspiflash_dualflexpress_divfive-p133",
+    "2025__rast-p17",
+    "2025__rocket_1937",
+    "2025__shift_register_top_w128_d16_e0",
+    "2025__sqrt1-ll_valuebound100"
+  ],
+  "models": [
+    {
+      "family": "139442p0",
+      "id": "2015__139442p0",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "beemlup",
+      "id": "2015__beemlup1b1",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "bjrb",
+      "id": "2015__bjrb07amba1andenv",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "bob",
+      "id": "2015__bob2",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "bobmiterbm",
+      "id": "2015__bobmiterbm1and",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "bobtuint",
+      "id": "2015__bobtuint08neg",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "bobtuintand",
+      "id": "2015__bobtuintand",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "bobtuintorneg",
+      "id": "2015__bobtuintorneg",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "cmugigamax",
+      "id": "2015__cmugigamax",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "eijks",
+      "id": "2015__eijks208o",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "kenflashp",
+      "id": "2015__kenflashp13",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "kenoopp",
+      "id": "2015__kenoopp1",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "nusmvreactorp",
+      "id": "2015__nusmvreactorp1",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "nusmvsyncarb",
+      "id": "2015__nusmvsyncarb10p2",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "pdtpmstwo",
+      "id": "2015__pdtpmstwo",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "pdtvisgigamax",
+      "id": "2015__pdtvisgigamax3",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "pdtvisminmax",
+      "id": "2015__pdtvisminmax0",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "pdtvisminmaxr",
+      "id": "2015__pdtvisminmaxr1",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "pdtvisretherrtf",
+      "id": "2015__pdtvisretherrtf1",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "pdtvistwoall",
+      "id": "2015__pdtvistwoall3",
+      "tier": "trivial",
+      "year": 2015
+    },
+    {
+      "family": "139443p0",
+      "id": "2015__139443p0",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "139444p0",
+      "id": "2015__139444p0",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "139454p0",
+      "id": "2015__139454p0",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "139463p0",
+      "id": "2015__139463p0",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s120",
+      "id": "2015__6s120",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s159",
+      "id": "2015__6s159",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s325rb072",
+      "id": "2015__6s325rb072",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s355rb08740",
+      "id": "2015__6s355rb08740",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s355rb11080",
+      "id": "2015__6s355rb11080",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s362rb1",
+      "id": "2015__6s362rb1",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s391rb379",
+      "id": "2015__6s391rb379",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s421rb083",
+      "id": "2015__6s421rb083",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "beemcycschd",
+      "id": "2015__beemcycschd3b1",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "beemelev",
+      "id": "2015__beemelev2f1",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "bj",
+      "id": "2015__bj08amba2g3f3",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "bobsmdct",
+      "id": "2015__bobsmdct",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "bobsynth",
+      "id": "2015__bobsynth09neg",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "bobtuint",
+      "id": "2015__bobtuint09neg",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "bobuns",
+      "id": "2015__bobuns2p10d100l",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "eijks",
+      "id": "2015__eijks298",
+      "tier": "fast",
+      "year": 2015
+    },
+    {
+      "family": "6s108",
+      "id": "2015__6s108",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s206rb025",
+      "id": "2015__6s206rb025",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s271rb045",
+      "id": "2015__6s271rb045",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s271rb079",
+      "id": "2015__6s271rb079",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s273b37",
+      "id": "2015__6s273b37",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s276rb342",
+      "id": "2015__6s276rb342",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s277rb292",
+      "id": "2015__6s277rb292",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s307rb09",
+      "id": "2015__6s307rb09",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s326rb08",
+      "id": "2015__6s326rb08",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s372rb26",
+      "id": "2015__6s372rb26",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s380b129",
+      "id": "2015__6s380b129",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s405rb611",
+      "id": "2015__6s405rb611",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s406rb067",
+      "id": "2015__6s406rb067",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "beemmsmie",
+      "id": "2015__beemmsmie1f1",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "beemskbn",
+      "id": "2015__beemskbn3f1",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "bjrb",
+      "id": "2015__bjrb07amba4andenv",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "bob",
+      "id": "2015__bob3",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "bobsm",
+      "id": "2015__bobsm5378d2",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "bobsynthetic",
+      "id": "2015__bobsynthetic2",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "cmuperiodic",
+      "id": "2015__cmuperiodic",
+      "tier": "medium",
+      "year": 2015
+    },
+    {
+      "family": "6s164",
+      "id": "2015__6s164",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "6s173",
+      "id": "2015__6s173",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "6s306rb03",
+      "id": "2015__6s306rb03",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "6s317b14",
+      "id": "2015__6s317b14",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "6s344rb150",
+      "id": "2015__6s344rb150",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "6s385rb444",
+      "id": "2015__6s385rb444",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "bc",
+      "id": "2015__bc57sensorsp0",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "beemlann",
+      "id": "2015__beemlann2f1",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "beemlmprt",
+      "id": "2015__beemlmprt8f1",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "beemmcs",
+      "id": "2015__beemmcs6f1",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "bob",
+      "id": "2015__bob9234spec4neg",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "bobcohdoptdcd",
+      "id": "2015__bobcohdoptdcd4",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "boblivea",
+      "id": "2015__boblivea",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "oski",
+      "id": "2015__oski15a14b07s",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "pdtpmscoherence",
+      "id": "2015__pdtpmscoherence",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "pdtpmsns",
+      "id": "2015__pdtpmsns2",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "pdtswvtma",
+      "id": "2015__pdtswvtma6x4p1",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "pj",
+      "id": "2015__pj2018",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "power",
+      "id": "2015__power2sum256",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "prodcellp",
+      "id": "2015__prodcellp0neg",
+      "tier": "slow",
+      "year": 2015
+    },
+    {
+      "family": "6s340rb27",
+      "id": "2015__6s340rb27",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s340rb63",
+      "id": "2015__6s340rb63",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s341r",
+      "id": "2015__6s341r",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s342rb122",
+      "id": "2015__6s342rb122",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s342rb131",
+      "id": "2015__6s342rb131",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s350rb35",
+      "id": "2015__6s350rb35",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s350rb46",
+      "id": "2015__6s350rb46",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s362rb0",
+      "id": "2015__6s362rb0",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s377r",
+      "id": "2015__6s377r",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s404rb1",
+      "id": "2015__6s404rb1",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s43",
+      "id": "2015__6s43",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s52",
+      "id": "2015__6s52",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beemandrsn",
+      "id": "2015__beemandrsn4b1",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beembkry",
+      "id": "2015__beembkry8b1",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beembrptwo",
+      "id": "2015__beembrptwo6b1",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beemcmbrdg",
+      "id": "2015__beemcmbrdg7f2",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beemextnc",
+      "id": "2015__beemextnc1f1",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beemfwt",
+      "id": "2015__beemfwt2b2",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beemhanoi",
+      "id": "2015__beemhanoi4b1",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "beemkrebs",
+      "id": "2015__beemkrebs4b1",
+      "tier": "timeout",
+      "year": 2015
+    },
+    {
+      "family": "6s515rb1",
+      "id": "2017__6s515rb1",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "bj",
+      "id": "2017__bj08aut82",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "bob",
+      "id": "2017__bob9234specand",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "bobmiterbm",
+      "id": "2017__bobmiterbm1or",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "bobtuint",
+      "id": "2017__bobtuint24",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "brpp",
+      "id": "2017__brpp1",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "counterp",
+      "id": "2017__counterp0",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel001",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "kenflashp",
+      "id": "2017__kenflashp08",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "mutexp",
+      "id": "2017__mutexp0",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "neclaftp",
+      "id": "2017__neclaftp5001",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "nusmvsyncarb",
+      "id": "2017__nusmvsyncarb5p2",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pcip",
+      "id": "2017__pcip1",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pdtpmsarbiter",
+      "id": "2017__pdtpmsarbiter",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pdtpmsrotate",
+      "id": "2017__pdtpmsrotate32",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pdtpmss",
+      "id": "2017__pdtpmss1269b",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pdtpmsusbphy",
+      "id": "2017__pdtpmsusbphy",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pdtvisgigamax",
+      "id": "2017__pdtvisgigamax4",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pdtvisgray",
+      "id": "2017__pdtvisgray0",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "pdtvishuffman",
+      "id": "2017__pdtvishuffman1",
+      "tier": "trivial",
+      "year": 2017
+    },
+    {
+      "family": "139442p1",
+      "id": "2017__139442p1",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "139443p5",
+      "id": "2017__139443p5",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "139452p0",
+      "id": "2017__139452p0",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "139453p0",
+      "id": "2017__139453p0",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "139462p0",
+      "id": "2017__139462p0",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "139464p0",
+      "id": "2017__139464p0",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "6s210b037",
+      "id": "2017__6s210b037",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "6s344rb054",
+      "id": "2017__6s344rb054",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "6s389b02",
+      "id": "2017__6s389b02",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "6s400rb07819",
+      "id": "2017__6s400rb07819",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "bj",
+      "id": "2017__bj08amba3g1",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "bobcount",
+      "id": "2017__bobcount",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "bobsynth",
+      "id": "2017__bobsynth13",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "bobsynthand",
+      "id": "2017__bobsynthand",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "bobsynthor",
+      "id": "2017__bobsynthor",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "bobunr",
+      "id": "2017__bobunr2p10d40l",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "dme",
+      "id": "2017__dme6p1",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "eijks",
+      "id": "2017__eijks349",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel003",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "mentorbm",
+      "id": "2017__mentorbm1or",
+      "tier": "fast",
+      "year": 2017
+    },
+    {
+      "family": "139444p22",
+      "id": "2017__139444p22",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s206rb103",
+      "id": "2017__6s206rb103",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s209b0",
+      "id": "2017__6s209b0",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s215rb0",
+      "id": "2017__6s215rb0",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s216rb0",
+      "id": "2017__6s216rb0",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s275rb318",
+      "id": "2017__6s275rb318",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s384rb024",
+      "id": "2017__6s384rb024",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s403rb1342",
+      "id": "2017__6s403rb1342",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "abp",
+      "id": "2017__abp4p2ff",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "bj",
+      "id": "2017__bj08amba2g4f3",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "bobsmi",
+      "id": "2017__bobsmi2c",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "csmacdp",
+      "id": "2017__csmacdp2",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel056",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "mentorbm",
+      "id": "2017__mentorbm1p02",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "neclabakery",
+      "id": "2017__neclabakery001",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "neclaftp",
+      "id": "2017__neclaftp4002",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "neclatcas",
+      "id": "2017__neclatcas1a001",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "nusmvbrp",
+      "id": "2017__nusmvbrp",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "pdtpmsretherrtf",
+      "id": "2017__pdtpmsretherrtf",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel061",
+      "tier": "medium",
+      "year": 2017
+    },
+    {
+      "family": "6s374b114",
+      "id": "2017__6s374b114",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "bc",
+      "id": "2017__bc57sensorsp2",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "bob",
+      "id": "2017__bob05",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel026",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "irstdme",
+      "id": "2017__irstdme6",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "pj",
+      "id": "2017__pj2016",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "productioncellp",
+      "id": "2017__productioncellp0",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel007",
+      "tier": "slow",
+      "year": 2017
+    },
+    {
+      "family": "6s351rb15",
+      "id": "2017__6s351rb15",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "6s37",
+      "id": "2017__6s37",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "6s404rb4",
+      "id": "2017__6s404rb4",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "6s41",
+      "id": "2017__6s41",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "6s42",
+      "id": "2017__6s42",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "beemandrsn",
+      "id": "2017__beemandrsn6b1",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "beemcmbrdg",
+      "id": "2017__beemcmbrdg1b1",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "beemptrsn",
+      "id": "2017__beemptrsn4b1",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "cmudme",
+      "id": "2017__cmudme2",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel047",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "mentorbm",
+      "id": "2017__mentorbm1and",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "oc",
+      "id": "2017__oc8051gm49acc",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "pdtswvtma",
+      "id": "2017__pdtswvtma6x6p3",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel044",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "oc",
+      "id": "2017__oc8051gm4dacc",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel046",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "oc",
+      "id": "2017__oc8051gm4biram",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel025",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "oc",
+      "id": "2017__oc8051gm49pc",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "intel",
+      "id": "2017__intel066",
+      "tier": "timeout",
+      "year": 2017
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal10",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "gen",
+      "id": "2019__gen32",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p017",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p023",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "vcegar_QF_BV_itc",
+      "id": "2019__vcegar_QF_BV_itc99_b13_p06",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "vis_arrays_am",
+      "id": "2019__vis_arrays_am2910_p1",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2019__zipversa_composecrc_prf-p11",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal9",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p142",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p057",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal3",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal21",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal32",
+      "tier": "trivial",
+      "year": 2019
+    },
+    {
+      "family": "analog_estimation_convergence",
+      "id": "2019__analog_estimation_convergence",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal180",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "gen",
+      "id": "2019__gen33",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "h_TreeArb",
+      "id": "2019__h_TreeArb",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "h_b",
+      "id": "2019__h_b05",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "picorv",
+      "id": "2019__picorv32-check-p09",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p018",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2019__qspiflash_dualflexpress_divthree-p086",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p072",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "vcegar_QF_BV_usb_phy_",
+      "id": "2019__vcegar_QF_BV_usb_phy_1",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p047",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-busdelay-p18",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2019__zipversa_composecrc_prf-p04",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal42",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "gen",
+      "id": "2019__gen25",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p060",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2019__qspiflash_dualflexpress_divthree-p089",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p034",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p085",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-busdelay-p43",
+      "tier": "fast",
+      "year": 2019
+    },
+    {
+      "family": "Heap",
+      "id": "2019__Heap",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "brp",
+      "id": "2019__brp.2.prop1-func-interl",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal27",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "frogs",
+      "id": "2019__frogs.2.prop1-back-serstep",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "gen",
+      "id": "2019__gen44",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "marlann_compute_cp_fail",
+      "id": "2019__marlann_compute_cp_fail2-p0",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "marlann_compute_cp_pass",
+      "id": "2019__marlann_compute_cp_pass-p2",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "picorv",
+      "id": "2019__picorv32-check-p18",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p036",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2019__qspiflash_dualflexpress_divthree-p112",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p008",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p105",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "vis_arrays_two_p",
+      "id": "2019__vis_arrays_two_p1",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-busdelay-p20",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2019__zipversa_composecrc_prf-p06",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal78",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "frogs",
+      "id": "2019__frogs.5.prop1-func-interl",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "gen",
+      "id": "2019__gen43",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "marlann_compute_cp_fail",
+      "id": "2019__marlann_compute_cp_fail1-p2",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "picorv",
+      "id": "2019__picorv32-check-p22",
+      "tier": "medium",
+      "year": 2019
+    },
+    {
+      "family": "adding",
+      "id": "2019__adding.5.prop1-func-interl",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal89",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "picorv",
+      "id": "2019__picorv32-check-p06",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p137",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2019__qspiflash_dualflexpress_divthree-p048",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p058",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p070",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-zipmmu-p39",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal140",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "picorv",
+      "id": "2019__picorv32-check-p12",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p120",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p128",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-pfcache-p13",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal142",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p012",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-pfcache-p15",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal143",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-pfcache-p20",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal128",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal100",
+      "tier": "slow",
+      "year": 2019
+    },
+    {
+      "family": "VexRiscv",
+      "id": "2019__VexRiscv-regch0-20-p0",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n3_w16_d64_e0",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "cal",
+      "id": "2019__cal93",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "circular_pointer_top_w",
+      "id": "2019__circular_pointer_top_w16_d64_e0",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "dspfilters_fastfir_second",
+      "id": "2019__dspfilters_fastfir_second-p29",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "mul",
+      "id": "2019__mul3",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "picorv",
+      "id": "2019__picorv32_mutAY_nomem-p8",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p057",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2019__qspiflash_dualflexpress_divthree-p094",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2019__qspiflash_qflexpress_divfive-p005",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "rether",
+      "id": "2019__rether.4.prop1-back-serstep",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "shift_register_top_w",
+      "id": "2019__shift_register_top_w64_d8_e0",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "synapse",
+      "id": "2019__synapse.7.prop1-func-interl",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "telephony",
+      "id": "2019__telephony.6.prop1-func-interl",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "vcegar_arrays_itc",
+      "id": "2019__vcegar_arrays_itc99_b12_p2",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p039",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "vis_arrays_buf_bug",
+      "id": "2019__vis_arrays_buf_bug",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "vis_arrays_bufferAlloc",
+      "id": "2019__vis_arrays_bufferAlloc",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "zipcpu",
+      "id": "2019__zipcpu-busdelay-p24",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2019__zipversa_composecrc_prf-p03",
+      "tier": "timeout",
+      "year": 2019
+    },
+    {
+      "family": "gen",
+      "id": "2020__gen21",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2020__qspiflash_dualflexpress_divfive-p143",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p143",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "simple_alu",
+      "id": "2020__simple_alu",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "vcegar_QF_BV_itc",
+      "id": "2020__vcegar_QF_BV_itc99_b13_p10",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "vis_arrays_am",
+      "id": "2020__vis_arrays_am2910_p2",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p00",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "vis_arrays_am",
+      "id": "2020__vis_arrays_am2910_p1",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p11",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "vis_arrays_am",
+      "id": "2020__vis_arrays_am2910_p3",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p07",
+      "tier": "trivial",
+      "year": 2020
+    },
+    {
+      "family": "anderson",
+      "id": "2020__anderson.3.prop1-back-serstep",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal21",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "elevator",
+      "id": "2020__elevator.4.prop1-func-interl",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "gen",
+      "id": "2020__gen10",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "h_TreeArb",
+      "id": "2020__h_TreeArb",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "miim",
+      "id": "2020__miim",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "picorv",
+      "id": "2020__picorv32-check-p09",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2020__qspiflash_dualflexpress_divfive-p022",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p158",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2020__qspiflash_qflexpress_divfive-p048",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "rast",
+      "id": "2020__rast-p04",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "stack",
+      "id": "2020__stack-p1",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p047",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "vis_arrays_am",
+      "id": "2020__vis_arrays_am2901",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "zipcpu",
+      "id": "2020__zipcpu-busdelay-p43",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p15",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal41",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "gen",
+      "id": "2020__gen12",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "picorv",
+      "id": "2020__picorv32-check-p19",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2020__qspiflash_dualflexpress_divfive-p016",
+      "tier": "fast",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal34",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "gen",
+      "id": "2020__gen44",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "marlann_compute_cp_fail",
+      "id": "2020__marlann_compute_cp_fail2-p0",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "marlann_compute_cp_pass",
+      "id": "2020__marlann_compute_cp_pass-p2",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "paper_v",
+      "id": "2020__paper_v3",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "picorv",
+      "id": "2020__picorv32-check-p05",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2020__qspiflash_dualflexpress_divfive-p079",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p006",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2020__qspiflash_qflexpress_divfive-p036",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w16_d8_e0",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "stack",
+      "id": "2020__stack-p2",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "vcegar_QF_BV_ar",
+      "id": "2020__vcegar_QF_BV_ar",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p082",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "zipcpu",
+      "id": "2020__zipcpu-busdelay-p00",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal81",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "gen",
+      "id": "2020__gen43",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "marlann_compute_cp_fail",
+      "id": "2020__marlann_compute_cp_fail1-p2",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "picorv",
+      "id": "2020__picorv32-check-p12",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2020__qspiflash_dualflexpress_divfive-p092",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p046",
+      "tier": "medium",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal84",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p21",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2020__qspiflash_dualflexpress_divfive-p164",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p111",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2020__qspiflash_qflexpress_divfive-p139",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w32_d8_e0",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p099",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "zipcpu",
+      "id": "2020__zipcpu-busdelay-p15",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal86",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p04",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p141",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2020__qspiflash_qflexpress_divfive-p121",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p109",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "zipcpu",
+      "id": "2020__zipcpu-zipmmu-p39",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal87",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p164",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2020__qspiflash_qflexpress_divfive-p113",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "zipcpu",
+      "id": "2020__zipcpu-pfcache-p13",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal90",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p005",
+      "tier": "slow",
+      "year": 2020
+    },
+    {
+      "family": "VexRiscv",
+      "id": "2020__VexRiscv-regch0-30-p1",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n4_w8_d64_e0",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "cal",
+      "id": "2020__cal107",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "circular_pointer_top_w",
+      "id": "2020__circular_pointer_top_w32_d32_e0",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p42",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "mul",
+      "id": "2020__mul3",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "pgm_protocol",
+      "id": "2020__pgm_protocol.7.prop1-back-serstep",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "picorv",
+      "id": "2020__picorv32-pcregs-p2",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "ponylink",
+      "id": "2020__ponylink-slaveTXlen-unsat",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2020__qspiflash_dualflexpress_divfive-p007",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2020__qspiflash_dualflexpress_divthree-p007",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2020__qspiflash_qflexpress_divfive-p094",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "rast",
+      "id": "2020__rast-p00",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "rushhour",
+      "id": "2020__rushhour.4.prop1-func-interl",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w64_d8_e0",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "vcegar_arrays_itc",
+      "id": "2020__vcegar_arrays_itc99_b12_p2",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p036",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "vis_arrays_bufferAlloc",
+      "id": "2020__vis_arrays_bufferAlloc",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "zipcpu",
+      "id": "2020__zipcpu-zipmmu-p48",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p03",
+      "tier": "timeout",
+      "year": 2020
+    },
+    {
+      "family": "analog_estimation_convergence",
+      "id": "2024__2019__mann__unsafe__analog_estimation_convergence",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "bin",
+      "id": "2024__bin-suffix-5",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "cal",
+      "id": "2024__cal178",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "float_req_bl_",
+      "id": "2024__float_req_bl_1071",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "h_Arbiter",
+      "id": "2024__h_Arbiter",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2024__qspiflash_dualflexpress_divfive-p020",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2024__qspiflash_dualflexpress_divthree-p132",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2024__qspiflash_qflexpress_divfive-p025",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "trex",
+      "id": "2024__trex02-1",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2024__vgasim_imgfifo-p020",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "vis_arrays_bpbs_p",
+      "id": "2024__vis_arrays_bpbs_p2",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "zipcpu",
+      "id": "2024__zipcpu-busdelay-p09",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "cal",
+      "id": "2024__cal75",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "float_req_bl_",
+      "id": "2024__float_req_bl_1092a",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2024__vgasim_imgfifo-p061",
+      "tier": "trivial",
+      "year": 2024
+    },
+    {
+      "family": "ILA_AES_START_ENCRYPT_problem",
+      "id": "2024__ILA_AES_START_ENCRYPT_problem",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "Problem",
+      "id": "2024__Problem02_label10",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "a",
+      "id": "2024__a16-p113",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "cal",
+      "id": "2024__cal41",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "dspfilters_fastfir_second",
+      "id": "2024__dspfilters_fastfir_second-p24",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "elevator",
+      "id": "2024__elevator.3.prop1-back-serstep",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "float",
+      "id": "2024__float8",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "minepump_spec",
+      "id": "2024__minepump_spec1_product14.cil",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "phases_",
+      "id": "2024__phases_2-1",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "picorv",
+      "id": "2024__picorv32-check-p09",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "psyco_io_",
+      "id": "2024__psyco_io_1",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "rast",
+      "id": "2024__rast-p10",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "s",
+      "id": "2024__s3_srvr_1b.cil",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "vgasim_imgfifo",
+      "id": "2024__vgasim_imgfifo-p040",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "vis_arrays_vsa",
+      "id": "2024__vis_arrays_vsa16a_p6",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "zipcpu",
+      "id": "2024__zipcpu-busdelay-p10",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "zipversa_composecrc_prf",
+      "id": "2024__zipversa_composecrc_prf-p12",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "a",
+      "id": "2024__a16-p126",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "minepump_spec",
+      "id": "2024__minepump_spec4_product16.cil",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "zipcpu",
+      "id": "2024__zipcpu-zipmmu-p27",
+      "tier": "fast",
+      "year": 2024
+    },
+    {
+      "family": "a",
+      "id": "2024__a16-p098",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "analog_estimation_convergence",
+      "id": "2024__2019__mann__safe__analog_estimation_convergence",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "anderson",
+      "id": "2024__anderson.3.prop1-func-interl",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "cal",
+      "id": "2024__cal27",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "cancel_var_through_overflow",
+      "id": "2024__cancel_var_through_overflow",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "freire",
+      "id": "2024__freire1_valuebound1",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "gcd_",
+      "id": "2024__gcd_2+newton_3_7",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "gen",
+      "id": "2024__gen45",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "marlann_compute_cp_fail",
+      "id": "2024__marlann_compute_cp_fail2-p1",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "minepump_spec",
+      "id": "2024__minepump_spec2_product54.cil",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2024__qspiflash_qflexpress_divfive-p112",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "stack",
+      "id": "2024__stack-p2",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "sw_ball",
+      "id": "2024__sw_ball2004_2",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_veer-p15",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "a",
+      "id": "2024__a16-p139",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "cal",
+      "id": "2024__cal182",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "gen",
+      "id": "2024__gen102",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_veer_axi-p32",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "a",
+      "id": "2024__a10-p04",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "gen",
+      "id": "2024__gen112",
+      "tier": "medium",
+      "year": 2024
+    },
+    {
+      "family": "Problem",
+      "id": "2024__Problem04_label27",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "brp",
+      "id": "2024__brp2.3.prop2-func-interl",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "gen",
+      "id": "2024__gen103",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "newton_",
+      "id": "2024__newton_1_5",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2024__qspiflash_dualflexpress_divfive-p040",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "zipcpu",
+      "id": "2024__zipcpu-zipmmu-p12",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "zonotope_",
+      "id": "2024__zonotope_2",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "Problem",
+      "id": "2024__Problem07_label01",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "gen",
+      "id": "2024__gen53",
+      "tier": "slow",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Piccolo_LHU_problem",
+      "id": "2024__ILA_Piccolo_LHU_problem",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Piccolo_LHU_sanity",
+      "id": "2024__ILA_Piccolo_LHU_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Piccolo_LW_sanity",
+      "id": "2024__ILA_Piccolo_LW_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Piccolo_SRLI_sanity",
+      "id": "2024__ILA_Piccolo_SRLI_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Piccolo_SW_sanity",
+      "id": "2024__ILA_Piccolo_SW_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_ANDI_sanity",
+      "id": "2024__ILA_Ridecore_ANDI_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_AND_sanity",
+      "id": "2024__ILA_Ridecore_AND_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_LBU_problem",
+      "id": "2024__ILA_Ridecore_LBU_problem",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_SLT_sanity",
+      "id": "2024__ILA_Ridecore_SLT_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_SRAI_sanity",
+      "id": "2024__ILA_Ridecore_SRAI_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_SRLI_problem",
+      "id": "2024__ILA_Ridecore_SRLI_problem",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_SW_problem",
+      "id": "2024__ILA_Ridecore_SW_problem",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "ILA_Ridecore_XOR_sanity",
+      "id": "2024__ILA_Ridecore_XOR_sanity",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "Problem",
+      "id": "2024__Problem10_label08",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "a",
+      "id": "2024__a16-p012",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "arbitrated_top_n",
+      "id": "2024__arbitrated_top_n5_w128_d128_e0",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "cal",
+      "id": "2024__cal97",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "egcd",
+      "id": "2024__egcd3-ll_unwindbound2",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "fib_",
+      "id": "2024__fib_30",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "gauss_sum",
+      "id": "2024__gauss_sum.i.p+lhb-reducer",
+      "tier": "timeout",
+      "year": 2024
+    },
+    {
+      "family": "77.c",
+      "id": "2025__77.c",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "a",
+      "id": "2025__a16-p89",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal14",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck1-p46",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "gen",
+      "id": "2025__gen26",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "microban_",
+      "id": "2025__microban_44",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "minepump_spec",
+      "id": "2025__minepump_spec5_product10.cil",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2025__qspiflash_dualflexpress_divfive-p130",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2025__qspiflash_qflexpress_divfive-p20",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "simple_alu",
+      "id": "2025__simple_alu",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "vis_QF_BV_bcuvis",
+      "id": "2025__vis_QF_BV_bcuvis32",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "vis_QF_BV_vlunc",
+      "id": "2025__vis_QF_BV_vlunc",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "vis_arrays_am",
+      "id": "2025__vis_arrays_am2910_p3",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "zipcpu",
+      "id": "2025__zipcpu-zipmmu-p44",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal76",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck1-p119",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "gen",
+      "id": "2025__gen18",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2025__qspiflash_qflexpress_divfive-p85",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal49",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck3_r0-p82",
+      "tier": "trivial",
+      "year": 2025
+    },
+    {
+      "family": "ILA_AES_LOAD_problem",
+      "id": "2025__ILA_AES_LOAD_problem",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "Problem",
+      "id": "2025__Problem02_label43",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "a",
+      "id": "2025__a16-p47",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_212_miter_miter",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal42",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck3_r1-p50",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "gen",
+      "id": "2025__gen22",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "jain_",
+      "id": "2025__jain_4-2",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "loopv",
+      "id": "2025__loopv3",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "microban_",
+      "id": "2025__safety__2025__ntu__sat__microban__microban_1",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "minepump_spec",
+      "id": "2025__minepump_spec4_product33.cil",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "rast",
+      "id": "2025__rast-p12",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "stack",
+      "id": "2025__stack-p2",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "yosyshq_appnote_",
+      "id": "2025__yosyshq_appnote_123_cv32e40x-p161",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "zipcpu",
+      "id": "2025__zipcpu-zipmmu-p15",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "a",
+      "id": "2025__a16-p114",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_227_miter_miter",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal40",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck3_r1-p73",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "microban_",
+      "id": "2025__safety__2025__ntu__unsat__microban_1",
+      "tier": "fast",
+      "year": 2025
+    },
+    {
+      "family": "Problem",
+      "id": "2025__Problem10_label21",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_186_miter_miter",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal78",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "collision",
+      "id": "2025__collision.1.prop1-func-interl",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck1-p428",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "elevator_spec",
+      "id": "2025__elevator_spec3_product19.cil",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "fib_",
+      "id": "2025__fib_05",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "microban_",
+      "id": "2025__microban_33",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "minepump_spec",
+      "id": "2025__minepump_spec3_product49.cil",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2025__qspiflash_dualflexpress_divfive-p41",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2025__qspiflash_dualflexpress_divthree-p120",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "yosyshq_appnote_",
+      "id": "2025__yosyshq_appnote_123_cv32e40x-p368",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_56_miter_miter",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck1-p160",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "elevator_spec",
+      "id": "2025__elevator_spec3_product18.cil",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "microban_",
+      "id": "2025__microban_82",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2025__qspiflash_dualflexpress_divfive-p80",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "yosyshq_appnote_",
+      "id": "2025__yosyshq_appnote_123_cv32e40x-p179",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_230_miter_miter",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "microban_",
+      "id": "2025__microban_48",
+      "tier": "medium",
+      "year": 2025
+    },
+    {
+      "family": "AllInterval",
+      "id": "2025__AllInterval-020",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "NO_",
+      "id": "2025__NO_04",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "Problem",
+      "id": "2025__Problem03_label05",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n4_w16_d8_e0",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_410_miter_miter",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal90",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck2_r0-p229",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "dspfilters_fastfir_second",
+      "id": "2025__dspfilters_fastfir_second-p50",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "gen",
+      "id": "2025__gen119",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "geo",
+      "id": "2025__geo1-u_valuebound100",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "pc_sfifo_",
+      "id": "2025__pc_sfifo_3.cil+token_ring.01.cil-2",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2025__qspiflash_dualflexpress_divthree-p46",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2025__qspiflash_qflexpress_divfive-p39",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "yosyshq_appnote_",
+      "id": "2025__yosyshq_appnote_123_cv32e40x-p724",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_162_miter_miter",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal86",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "gen",
+      "id": "2025__gen93",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_dualflexpress_divthree",
+      "id": "2025__qspiflash_dualflexpress_divthree-p161",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_qflexpress_divfive",
+      "id": "2025__qspiflash_qflexpress_divfive-p128",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_110_miter_miter",
+      "tier": "slow",
+      "year": 2025
+    },
+    {
+      "family": "Problem",
+      "id": "2025__Problem01_label22",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "a",
+      "id": "2025__a16-p1",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n4_w128_d8_e0",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_initial_output_btor",
+      "id": "2025__benchmarks_initial_output_btor2_example_10_miter_miter",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_494_miter_miter",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "cal",
+      "id": "2025__cal206",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "circular_pointer_top_w",
+      "id": "2025__circular_pointer_top_w128_d8_e0",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "level_",
+      "id": "2025__level_5",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "mem_slave_tlm",
+      "id": "2025__mem_slave_tlm.4.cil",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "microban_",
+      "id": "2025__microban_64",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "pals_lcr",
+      "id": "2025__pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label00",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "pals_opt",
+      "id": "2025__pals_opt-floodmax.4.ufo.UNBOUNDED.pals",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "pc_sfifo_",
+      "id": "2025__pc_sfifo_2.cil-2+token_ring.09.cil-1",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "pgm_protocol",
+      "id": "2025__pgm_protocol.8.prop6-func-interl",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "prodbin",
+      "id": "2025__prodbin-ll_unwindbound50",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2025__qspiflash_dualflexpress_divfive-p133",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "rast",
+      "id": "2025__rast-p17",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "rocket_",
+      "id": "2025__rocket_1937",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "shift_register_top_w",
+      "id": "2025__shift_register_top_w128_d16_e0",
+      "tier": "timeout",
+      "year": 2025
+    },
+    {
+      "family": "sqrt",
+      "id": "2025__sqrt1-ll_valuebound100",
+      "tier": "timeout",
+      "year": 2025
+    }
+  ],
+  "selection_rule": "up to 20 models per year/tier stratum; exclude all BVE-width development and validation models",
+  "stratum_counts": {
+    "2015:fast": 20,
+    "2015:medium": 20,
+    "2015:slow": 20,
+    "2015:timeout": 20,
+    "2015:trivial": 20,
+    "2017:fast": 20,
+    "2017:medium": 20,
+    "2017:slow": 8,
+    "2017:timeout": 20,
+    "2017:trivial": 20,
+    "2019:fast": 20,
+    "2019:medium": 20,
+    "2019:slow": 20,
+    "2019:timeout": 20,
+    "2019:trivial": 13,
+    "2020:fast": 20,
+    "2020:medium": 20,
+    "2020:slow": 20,
+    "2020:timeout": 20,
+    "2020:trivial": 11,
+    "2024:fast": 20,
+    "2024:medium": 20,
+    "2024:slow": 9,
+    "2024:timeout": 20,
+    "2024:trivial": 15,
+    "2025:fast": 20,
+    "2025:medium": 20,
+    "2025:slow": 20,
+    "2025:timeout": 20,
+    "2025:trivial": 20
+  },
+  "version": 1
+}

@@ -1,0 +1,557 @@
+name	size_bytes	year	group	model_id	family	tier	seed_block	winner	outcome	outcome_conflict	benchmark_wall_seconds	timeout_seconds	ric3_legacy_status	ric3_legacy_wall_seconds	ric3_legacy_exit_code	ric3_legacy_replica	ric3_product_sum_high_status	ric3_product_sum_high_wall_seconds	ric3_product_sum_high_exit_code	ric3_product_sum_high_replica
+139442p0	10485	mixed	trivial	2015__139442p0	139442p0	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.266388	1800.000000	SAFE	0.119616	0	1	SAFE	0.093942	0	4
+bobtuintand	6858	mixed	trivial	2015__bobtuintand	bobtuintand	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.212315	1800.000000	SAFE	0.067099	0	1	SAFE	0.024624	0	1
+eijks208o	427	mixed	trivial	2015__eijks208o	eijks	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.198007	1800.000000	SAFE	0.045151	0	1	SAFE	0.028057	0	1
+hwmcc2015__data__bob2	450	mixed	trivial	2015__bob2	bob	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.264656	1800.000000	SAFE	0.037818	0	1	SAFE	0.031255	0	3
+bobtuintorneg	6877	mixed	trivial	2015__bobtuintorneg	bobtuintorneg	trivial	1120001	rIC3 Native legacy	SAFE	0	0.215732	1800.000000	SAFE	0.038783	0	1	SAFE	0.076379	0	1
+bobmiterbm1and	12637	mixed	trivial	2015__bobmiterbm1and	bobmiterbm	trivial	1120001	rIC3 Native legacy	SAFE	0	0.266679	1800.000000	SAFE	0.032639	0	2	SAFE	0.045102	0	1
+nusmvreactorp1	3738	mixed	trivial	2015__nusmvreactorp1	nusmvreactorp	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.158319	1800.000000	SAFE	0.070160	0	1	SAFE	0.039855	0	1
+kenoopp1	1639	mixed	trivial	2015__kenoopp1	kenoopp	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.258000	1800.000000	SAFE	0.059976	0	2	SAFE	0.054677	0	2
+bjrb07amba1andenv	2937	mixed	trivial	2015__bjrb07amba1andenv	bjrb	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.356120	1800.000000	SAFE	0.098195	0	1	SAFE	0.043357	0	2
+cmugigamax	1675	mixed	trivial	2015__cmugigamax	cmugigamax	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.301265	1800.000000	SAFE	0.072647	0	1	SAFE	0.038064	0	1
+bobtuint08neg	6765	mixed	trivial	2015__bobtuint08neg	bobtuint	trivial	1120001	rIC3 Native legacy	SAFE	0	0.375164	1800.000000	SAFE	0.115784	0	1	SAFE	0.124165	0	3
+hwmcc2015__data__kenflashp13	3107	mixed	trivial	2015__kenflashp13	kenflashp	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.327162	1800.000000	SAFE	0.036173	0	1	SAFE	0.017655	0	1
+nusmvsyncarb10p2	431	mixed	trivial	2015__nusmvsyncarb10p2	nusmvsyncarb	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.305445	1800.000000	SAFE	0.057765	0	4	SAFE	0.045702	0	2
+beemlup1b1	6324	mixed	trivial	2015__beemlup1b1	beemlup	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.544838	1800.000000	SAFE	0.282411	0	3	SAFE	0.200358	0	4
+pdtpmstwo	2521	mixed	trivial	2015__pdtpmstwo	pdtpmstwo	trivial	1120001	rIC3 Native legacy	SAFE	0	0.304345	1800.000000	SAFE	0.089177	0	1	SAFE	0.103949	0	2
+6s515rb1	12453	mixed	trivial	2017__6s515rb1	6s515rb1	trivial	1120001	rIC3 Native legacy	SAFE	0	0.320821	1800.000000	SAFE	0.038663	0	4	SAFE	0.041499	0	4
+pdtvisretherrtf1	3664	mixed	trivial	2015__pdtvisretherrtf1	pdtvisretherrtf	trivial	1120001	rIC3 Native legacy	SAFE	0	0.348397	1800.000000	SAFE	0.090687	0	4	SAFE	0.129230	0	1
+bj08aut82	949	mixed	trivial	2017__bj08aut82	bj	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.266651	1800.000000	SAFE	0.056012	0	1	SAFE	0.054155	0	1
+pdtvisgigamax3	2652	mixed	trivial	2015__pdtvisgigamax3	pdtvisgigamax	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.365439	1800.000000	SAFE	0.095372	0	3	SAFE	0.083262	0	1
+pdtvisminmaxr1	1574	mixed	trivial	2015__pdtvisminmaxr1	pdtvisminmaxr	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.385054	1800.000000	SAFE	0.156252	0	1	SAFE	0.141397	0	4
+pdtvistwoall3	4730	mixed	trivial	2015__pdtvistwoall3	pdtvistwoall	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.401204	1800.000000	SAFE	0.119908	0	1	SAFE	0.043251	0	1
+bob9234specand	2415	mixed	trivial	2017__bob9234specand	bob	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.412331	1800.000000	SAFE	0.091454	0	1	SAFE	0.077829	0	1
+bobmiterbm1or	12592	mixed	trivial	2017__bobmiterbm1or	bobmiterbm	trivial	1120001	rIC3 Native legacy	UNSAFE	0	0.406578	1800.000000	UNSAFE	0.063703	0	2	UNSAFE	0.070425	0	2
+brpp1	4034	mixed	trivial	2017__brpp1	brpp	trivial	1120001	rIC3 Native legacy	UNSAFE	0	0.362359	1800.000000	UNSAFE	0.073054	0	4	UNSAFE	0.077549	0	4
+counterp0	266	mixed	trivial	2017__counterp0	counterp	trivial	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.357639	1800.000000	UNSAFE	0.040404	0	2	UNSAFE	0.026164	0	2
+bobtuint24	6765	mixed	trivial	2017__bobtuint24	bobtuint	trivial	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.387274	1800.000000	UNSAFE	0.124746	0	2	UNSAFE	0.110975	0	3
+intel001	762	mixed	trivial	2017__intel001	intel	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.359300	1800.000000	SAFE	0.063787	0	1	SAFE	0.026939	0	1
+neclaftp5001	243	mixed	trivial	2017__neclaftp5001	neclaftp	trivial	1120001	rIC3 Native legacy	SAFE	0	0.292786	1800.000000	SAFE	0.028323	0	2	SAFE	0.060970	0	1
+pdtpmsarbiter	748	mixed	trivial	2017__pdtpmsarbiter	pdtpmsarbiter	trivial	1120001	rIC3 Native legacy	SAFE	0	0.281025	1800.000000	SAFE	0.026818	0	3	SAFE	0.047545	0	1
+mutexp0	462	mixed	trivial	2017__mutexp0	mutexp	trivial	1120001	rIC3 Native legacy	UNSAFE	0	0.350756	1800.000000	UNSAFE	0.049027	0	3	UNSAFE	0.055649	0	4
+nusmvsyncarb5p2	155	mixed	trivial	2017__nusmvsyncarb5p2	nusmvsyncarb	trivial	1120001	rIC3 Native legacy	SAFE	0	0.335570	1800.000000	SAFE	0.022493	0	1	SAFE	0.043854	0	2
+pcip1	6390	mixed	trivial	2017__pcip1	pcip	trivial	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.397994	1800.000000	UNSAFE	0.105111	0	4	UNSAFE	0.089663	0	4
+pdtvisminmax0	1542	mixed	trivial	2015__pdtvisminmax0	pdtvisminmax	trivial	1120001	rIC3 Native legacy	SAFE	0	0.765052	1800.000000	SAFE	0.309185	0	2	SAFE	0.384229	0	2
+kenflashp08	4414	mixed	trivial	2017__kenflashp08	kenflashp	trivial	1120001	rIC3 Native legacy	SAFE	0	0.467922	1800.000000	SAFE	0.049766	0	1	SAFE	0.062493	0	3
+pdtpmsusbphy	2884	mixed	trivial	2017__pdtpmsusbphy	pdtpmsusbphy	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.339924	1800.000000	SAFE	0.090291	0	2	SAFE	0.082395	0	1
+pdtvisgray0	55	mixed	trivial	2017__pdtvisgray0	pdtvisgray	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.319287	1800.000000	SAFE	0.064253	0	1	SAFE	0.055183	0	1
+pdtpmsrotate32	4002	mixed	trivial	2017__pdtpmsrotate32	pdtpmsrotate	trivial	1120001	rIC3 Native legacy	SAFE	0	0.456913	1800.000000	SAFE	0.071189	0	1	SAFE	0.106464	0	1
+pdtvisgigamax4	2652	mixed	trivial	2017__pdtvisgigamax4	pdtvisgigamax	trivial	1120001	rIC3 Native legacy	SAFE	0	0.365235	1800.000000	SAFE	0.063606	0	4	SAFE	0.085484	0	3
+pdtvishuffman1	2921	mixed	trivial	2017__pdtvishuffman1	pdtvishuffman	trivial	1120001	rIC3 Native legacy	SAFE	0	0.345913	1800.000000	SAFE	0.032323	0	1	SAFE	0.051799	0	3
+pdtpmss1269b	2647	mixed	trivial	2017__pdtpmss1269b	pdtpmss	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.472290	1800.000000	SAFE	0.059788	0	1	SAFE	0.053343	0	2
+cal3	2057	mixed	trivial	2019__cal3	cal	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.327574	1800.000000	SAFE	0.100112	0	2	SAFE	0.090522	0	3
+cal10	1971	mixed	trivial	2019__cal10	cal	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.364256	1800.000000	SAFE	0.115950	0	2	SAFE	0.112415	0	2
+cal32	12444	mixed	trivial	2019__cal32	cal	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.328735	1800.000000	SAFE	0.088842	0	1	SAFE	0.087136	0	2
+qspiflash_dualflexpress_divfive-p017	32800	mixed	trivial	2019__qspiflash_dualflexpress_divfive-p017	qspiflash_dualflexpress_divfive	trivial	1120001	rIC3 Native legacy	SAFE	0	0.250921	1800.000000	SAFE	0.076595	0	4	SAFE	0.097203	0	1
+hwmcc2019__data__cal21	2131	mixed	trivial	2019__cal21	cal	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.387147	1800.000000	SAFE	0.102040	0	3	SAFE	0.100185	0	2
+gen32	19592	mixed	trivial	2019__gen32	gen	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.284132	1800.000000	SAFE	0.071258	0	1	SAFE	0.051956	0	1
+vcegar_QF_BV_itc99_b13_p06	847	mixed	trivial	2019__vcegar_QF_BV_itc99_b13_p06	vcegar_QF_BV_itc	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.313531	1800.000000	SAFE	0.065952	0	2	SAFE	0.034528	0	1
+qspiflash_qflexpress_divfive-p023	30127	mixed	trivial	2019__qspiflash_qflexpress_divfive-p023	qspiflash_qflexpress_divfive	trivial	1120001	rIC3 Native legacy	SAFE	0	0.333077	1800.000000	SAFE	0.060378	0	2	SAFE	0.066063	0	1
+qspiflash_dualflexpress_divfive-p142	32803	mixed	trivial	2019__qspiflash_dualflexpress_divfive-p142	qspiflash_dualflexpress_divfive	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.416616	1800.000000	SAFE	0.095952	0	1	SAFE	0.089596	0	3
+qspiflash_qflexpress_divfive-p057	30133	mixed	trivial	2019__qspiflash_qflexpress_divfive-p057	qspiflash_qflexpress_divfive	trivial	1120001	rIC3 Native legacy	SAFE	0	0.335814	1800.000000	SAFE	0.080481	0	1	SAFE	0.088637	0	1
+hwmcc2019__data__zipversa_composecrc_prf-p11	18044	mixed	trivial	2019__zipversa_composecrc_prf-p11	zipversa_composecrc_prf	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.318595	1800.000000	SAFE	0.090544	0	1	SAFE	0.073545	0	2
+cal9	1974	mixed	trivial	2019__cal9	cal	trivial	1120001	rIC3 Native legacy	SAFE	0	0.528417	1800.000000	SAFE	0.093004	0	1	SAFE	0.111550	0	1
+vcegar_QF_BV_itc99_b13_p10	848	mixed	trivial	2020__vcegar_QF_BV_itc99_b13_p10	vcegar_QF_BV_itc	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.266741	1800.000000	SAFE	0.034391	0	3	SAFE	0.030802	0	4
+qspiflash_dualflexpress_divthree-p143	32849	mixed	trivial	2020__qspiflash_dualflexpress_divthree-p143	qspiflash_dualflexpress_divthree	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.338426	1800.000000	SAFE	0.080420	0	4	SAFE	0.066757	0	3
+hwmcc2019__data__vis_arrays_am2910_p1	7135	mixed	trivial	2019__vis_arrays_am2910_p1	vis_arrays_am	trivial	1120001	rIC3 Native legacy	SAFE	0	0.463424	1800.000000	SAFE	0.047312	0	1	SAFE	0.068628	0	1
+gen21	20168	mixed	trivial	2020__gen21	gen	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.415018	1800.000000	SAFE	0.085661	0	2	SAFE	0.054934	0	3
+qspiflash_dualflexpress_divfive-p143	32764	mixed	trivial	2020__qspiflash_dualflexpress_divfive-p143	qspiflash_dualflexpress_divfive	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.404814	1800.000000	SAFE	0.121059	0	3	SAFE	0.085556	0	1
+vis_arrays_am2910_p2	991	mixed	trivial	2020__vis_arrays_am2910_p2	vis_arrays_am	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.370919	1800.000000	SAFE	0.071095	0	2	SAFE	0.062401	0	1
+hwmcc2020__data__2019__goel__opensource__vis_arrays_am2910_p1__vis_arrays_am2910_p1	7122	mixed	trivial	2020__vis_arrays_am2910_p1	vis_arrays_am	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.426769	1800.000000	SAFE	0.078279	0	2	SAFE	0.077654	0	3
+hwmcc2020__data__2020__mann__simple_alu	1132	mixed	trivial	2020__simple_alu	simple_alu	trivial	1120001	rIC3 Native legacy	SAFE	0	0.508640	1800.000000	SAFE	0.033759	0	2	SAFE	0.045514	0	4
+zipversa_composecrc_prf-p07	18041	mixed	trivial	2020__zipversa_composecrc_prf-p07	zipversa_composecrc_prf	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.346032	1800.000000	SAFE	0.086054	0	3	SAFE	0.077190	0	2
+bin-suffix-5	6215	mixed	trivial	2024__bin-suffix-5	bin	trivial	1120001	rIC3 Native legacy	SAFE	0	0.333787	1800.000000	SAFE	0.054424	0	1	SAFE	0.090025	0	3
+hwmcc2020__data__2019__goel__opensource__vis_arrays_am2910_p3__vis_arrays_am2910_p3	8623	mixed	trivial	2020__vis_arrays_am2910_p3	vis_arrays_am	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.401956	1800.000000	SAFE	0.086529	0	1	SAFE	0.074820	0	4
+zipversa_composecrc_prf-p00	17954	mixed	trivial	2020__zipversa_composecrc_prf-p00	zipversa_composecrc_prf	trivial	1120001	rIC3 Native legacy	SAFE	0	0.440333	1800.000000	SAFE	0.091378	0	4	SAFE	0.092223	0	3
+cal178	8354	mixed	trivial	2024__cal178	cal	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.389017	1800.000000	SAFE	0.058585	0	3	SAFE	0.051044	0	4
+hwmcc2020__data__2019__wolf__2019C__zipversa_composecrc_prf-p11	17964	mixed	trivial	2020__zipversa_composecrc_prf-p11	zipversa_composecrc_prf	trivial	1120001	rIC3 Native legacy	SAFE	0	0.500072	1800.000000	SAFE	0.078382	0	4	SAFE	0.095448	0	1
+qspiflash_dualflexpress_divfive-p020	32727	mixed	trivial	2024__qspiflash_dualflexpress_divfive-p020	qspiflash_dualflexpress_divfive	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.311683	1800.000000	SAFE	0.081173	0	2	SAFE	0.056458	0	1
+hwmcc2024__data__2019__mann__unsafe__analog_estimation_convergence	2010	mixed	trivial	2024__2019__mann__unsafe__analog_estimation_convergence	analog_estimation_convergence	trivial	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.536359	1800.000000	UNSAFE	0.056530	0	1	UNSAFE	0.055562	0	1
+float_req_bl_1071	26348	mixed	trivial	2024__float_req_bl_1071	float_req_bl_	trivial	1120001	rIC3 Native legacy	SAFE	0	0.405724	1800.000000	SAFE	0.058206	0	1	SAFE	0.128651	0	2
+h_Arbiter	1321	mixed	trivial	2024__h_Arbiter	h_Arbiter	trivial	1120001	rIC3 Native legacy	SAFE	0	0.359207	1800.000000	SAFE	0.026412	0	4	SAFE	0.050394	0	1
+hwmcc2024__data__2019__goel__industry__cal75__cal75	10246	mixed	trivial	2024__cal75	cal	trivial	1120001	rIC3 Native legacy	SAFE	0	0.441954	1800.000000	SAFE	0.054949	0	1	SAFE	0.077360	0	1
+trex02-1	10511	mixed	trivial	2024__trex02-1	trex	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.273528	1800.000000	SAFE	0.063753	0	4	SAFE	0.048470	0	3
+float_req_bl_1092a	43118	mixed	trivial	2024__float_req_bl_1092a	float_req_bl_	trivial	1120001	rIC3 Native legacy	SAFE	0	0.500222	1800.000000	SAFE	0.085013	0	1	SAFE	0.132017	0	3
+qspiflash_qflexpress_divfive-p025	30008	mixed	trivial	2024__qspiflash_qflexpress_divfive-p025	qspiflash_qflexpress_divfive	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.386366	1800.000000	SAFE	0.089286	0	3	SAFE	0.050525	0	1
+qspiflash_dualflexpress_divthree-p132	32721	mixed	trivial	2024__qspiflash_dualflexpress_divthree-p132	qspiflash_dualflexpress_divthree	trivial	1120001	rIC3 Native legacy	SAFE	0	0.477095	1800.000000	SAFE	0.074402	0	4	SAFE	0.095624	0	1
+vis_arrays_bpbs_p2	4288	mixed	trivial	2024__vis_arrays_bpbs_p2	vis_arrays_bpbs_p	trivial	1120001	rIC3 Native legacy	UNSAFE	0	0.335246	1800.000000	UNSAFE	0.033955	0	1	UNSAFE	0.035781	0	1
+77.c	1292	mixed	trivial	2025__77.c	77.c	trivial	1120001	rIC3 Native legacy	SAFE	0	0.300262	1800.000000	SAFE	0.038346	0	4	SAFE	0.048299	0	1
+cal76	8764	mixed	trivial	2025__cal76	cal	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.289762	1800.000000	SAFE	0.054964	0	2	SAFE	0.053322	0	2
+vgasim_imgfifo-p020	67137	mixed	trivial	2024__vgasim_imgfifo-p020	vgasim_imgfifo	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.535698	1800.000000	SAFE	0.256847	0	1	SAFE	0.238525	0	2
+zipcpu-busdelay-p09	38281	mixed	trivial	2024__zipcpu-busdelay-p09	zipcpu	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.437348	1800.000000	SAFE	0.083494	0	3	SAFE	0.073710	0	3
+cal14	1980	mixed	trivial	2025__cal14	cal	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.372777	1800.000000	SAFE	0.126806	0	1	SAFE	0.105568	0	4
+cal49	9069	mixed	trivial	2025__cal49	cal	trivial	1120001	rIC3 Native legacy	SAFE	0	0.371970	1800.000000	SAFE	0.057537	0	2	SAFE	0.068368	0	1
+gen26	20008	mixed	trivial	2025__gen26	gen	trivial	1120001	rIC3 Native legacy	SAFE	0	0.191010	1800.000000	SAFE	0.023331	0	1	SAFE	0.032581	0	2
+dblclockfft_butterfly_ck1-p46	14661	mixed	trivial	2025__dblclockfft_butterfly_ck1-p46	dblclockfft_butterfly_ck	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.354713	1800.000000	SAFE	0.124207	0	2	SAFE	0.119773	0	3
+microban_44	225	mixed	trivial	2025__microban_44	microban_	trivial	1120001	rIC3 Native legacy	UNSAFE	0	0.238629	1800.000000	UNSAFE	0.028134	0	2	UNSAFE	0.039146	0	3
+dblclockfft_butterfly_ck1-p119	15366	mixed	trivial	2025__dblclockfft_butterfly_ck1-p119	dblclockfft_butterfly_ck	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.433520	1800.000000	SAFE	0.158085	0	2	SAFE	0.133193	0	4
+a16-p89	19790	mixed	trivial	2025__a16-p89	a	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.526297	1800.000000	SAFE	0.165452	0	1	SAFE	0.135135	-15	2
+dblclockfft_butterfly_ck3_r0-p82	16299	mixed	trivial	2025__dblclockfft_butterfly_ck3_r0-p82	dblclockfft_butterfly_ck	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.384364	1800.000000	SAFE	0.103975	0	1	SAFE	0.091023	0	3
+minepump_spec5_product10.cil	47575	mixed	trivial	2025__minepump_spec5_product10.cil	minepump_spec	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.282726	1800.000000	SAFE	0.115914	0	4	SAFE	0.086537	0	3
+gen18	20610	mixed	trivial	2025__gen18	gen	trivial	1120001	rIC3 Native legacy	SAFE	0	0.377874	1800.000000	SAFE	0.030599	0	1	SAFE	0.064726	0	1
+qspiflash_dualflexpress_divfive-p130	9767	mixed	trivial	2025__qspiflash_dualflexpress_divfive-p130	qspiflash_dualflexpress_divfive	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.294889	1800.000000	SAFE	0.077329	0	3	SAFE	0.070989	0	3
+qspiflash_qflexpress_divfive-p85	9691	mixed	trivial	2025__qspiflash_qflexpress_divfive-p85	qspiflash_qflexpress_divfive	trivial	1120001	rIC3 Native legacy	SAFE	0	0.398835	1800.000000	SAFE	0.052819	0	3	SAFE	0.063071	0	2
+qspiflash_qflexpress_divfive-p20	9658	mixed	trivial	2025__qspiflash_qflexpress_divfive-p20	qspiflash_qflexpress_divfive	trivial	1120001	rIC3 Native legacy	SAFE	0	0.430399	1800.000000	SAFE	0.059591	0	1	SAFE	0.076184	0	1
+vis_QF_BV_bcuvis32	3329	mixed	trivial	2025__vis_QF_BV_bcuvis32	vis_QF_BV_bcuvis	trivial	1120001	rIC3 Native legacy	SAFE	0	0.398414	1800.000000	SAFE	0.035448	0	3	SAFE	0.038048	0	1
+hwmcc2025__data__safety__2020__mann__simple_alu	1151	mixed	trivial	2025__simple_alu	simple_alu	trivial	1120001	rIC3 Native legacy	SAFE	0	0.478180	1800.000000	SAFE	0.037184	0	4	SAFE	0.043096	0	3
+vis_QF_BV_vlunc	610	mixed	trivial	2025__vis_QF_BV_vlunc	vis_QF_BV_vlunc	trivial	1120001	rIC3 Native legacy	SAFE	0	0.466855	1800.000000	SAFE	0.042131	0	2	SAFE	0.044607	0	3
+zipcpu-zipmmu-p44	29017	mixed	trivial	2025__zipcpu-zipmmu-p44	zipcpu	trivial	1120001	rIC3 Native product-sum-high	SAFE	0	0.413698	1800.000000	SAFE	0.220912	0	1	SAFE	0.191223	0	3
+hwmcc2025__data__safety__2019__goel__opensource__vis_arrays_am2910_p3__vis_arrays_am2910_p3	8560	mixed	trivial	2025__vis_arrays_am2910_p3	vis_arrays_am	trivial	1120001	rIC3 Native legacy	SAFE	0	0.464018	1800.000000	SAFE	0.054094	0	2	SAFE	0.078484	0	1
+vgasim_imgfifo-p061	67340	mixed	trivial	2024__vgasim_imgfifo-p061	vgasim_imgfifo	trivial	1120001	rIC3 Native legacy	SAFE	0	1.099791	1800.000000	SAFE	0.779128	0	3	SAFE	0.799265	0	4
+6s159	5501	mixed	fast	2015__6s159	6s159	fast	1120001	rIC3 Native legacy	SAFE	0	0.374190	1800.000000	SAFE	0.140789	0	1	SAFE	0.144316	0	2
+139454p0	37142	mixed	fast	2015__139454p0	139454p0	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.463195	1800.000000	SAFE	0.261758	0	1	SAFE	0.257203	0	1
+139443p0	16400	mixed	fast	2015__139443p0	139443p0	fast	1120001	rIC3 Native legacy	SAFE	0	0.551850	1800.000000	SAFE	0.141431	0	1	SAFE	0.169687	0	3
+139444p0	22906	mixed	fast	2015__139444p0	139444p0	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.537119	1800.000000	SAFE	0.190269	0	1	SAFE	0.189933	0	2
+6s325rb072	66614	mixed	fast	2015__6s325rb072	6s325rb072	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.357036	1800.000000	SAFE	0.058520	0	4	SAFE	0.049418	0	3
+139463p0	42911	mixed	fast	2015__139463p0	139463p0	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.679067	1800.000000	SAFE	0.352847	0	2	SAFE	0.338040	0	1
+beemelev2f1	5722	mixed	fast	2015__beemelev2f1	beemelev	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.354142	1800.000000	SAFE	0.116814	0	2	SAFE	0.107503	0	1
+bj08amba2g3f3	3876	mixed	fast	2015__bj08amba2g3f3	bj	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.349103	1800.000000	SAFE	0.115727	0	1	SAFE	0.111917	0	2
+beemcycschd3b1	10029	mixed	fast	2015__beemcycschd3b1	beemcycschd	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.494211	1800.000000	SAFE	0.205053	0	1	SAFE	0.186511	0	2
+bobsmdct	3788	mixed	fast	2015__bobsmdct	bobsmdct	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.385456	1800.000000	SAFE	0.199478	0	4	SAFE	0.169405	0	2
+hwmcc2015__data__6s120	6761	mixed	fast	2015__6s120	6s120	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.882477	1800.000000	SAFE	0.590530	0	1	SAFE	0.573063	0	2
+hwmcc2015__data__6s391rb379	60415	mixed	fast	2015__6s391rb379	6s391rb379	fast	1120001	rIC3 Native legacy	SAFE	0	0.635300	1800.000000	SAFE	0.393598	0	2	SAFE	0.411427	0	1
+eijks298	733	mixed	fast	2015__eijks298	eijks	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.284128	1800.000000	SAFE	0.091065	0	2	SAFE	0.086712	0	1
+bobtuint09neg	6765	mixed	fast	2015__bobtuint09neg	bobtuint	fast	1120001	rIC3 Native legacy	SAFE	0	0.447249	1800.000000	SAFE	0.140535	0	3	SAFE	0.167692	0	1
+bobsynth09neg	67455	mixed	fast	2015__bobsynth09neg	bobsynth	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.496318	1800.000000	SAFE	0.142951	0	2	SAFE	0.126088	0	1
+6s362rb1	34839	mixed	fast	2015__6s362rb1	6s362rb1	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.874006	1800.000000	SAFE	0.634451	0	4	SAFE	0.596947	0	1
+139442p1	10588	mixed	fast	2017__139442p1	139442p1	fast	1120001	rIC3 Native legacy	UNSAFE	0	0.435151	1800.000000	UNSAFE	0.167060	0	1	UNSAFE	0.191103	0	2
+139452p0	17140	mixed	fast	2017__139452p0	139452p0	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.362264	1800.000000	SAFE	0.145296	0	4	SAFE	0.143392	0	1
+139453p0	26500	mixed	fast	2017__139453p0	139453p0	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.374849	1800.000000	SAFE	0.205211	0	4	SAFE	0.189242	0	2
+139443p5	16563	mixed	fast	2017__139443p5	139443p5	fast	1120001	rIC3 Native legacy	UNSAFE	0	0.648118	1800.000000	UNSAFE	0.322340	0	4	UNSAFE	0.363926	0	1
+139462p0	29168	mixed	fast	2017__139462p0	139462p0	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.556049	1800.000000	SAFE	0.265928	0	2	SAFE	0.230498	0	1
+6s210b037	26463	mixed	fast	2017__6s210b037	6s210b037	fast	1120001	rIC3 Native legacy	UNSAFE	0	0.497532	1800.000000	UNSAFE	0.142079	0	4	UNSAFE	0.186298	0	1
+bobsynth13	67456	mixed	fast	2017__bobsynth13	bobsynth	fast	1120001	rIC3 Native legacy	UNSAFE	0	0.358234	1800.000000	UNSAFE	0.123167	0	1	UNSAFE	0.169070	0	2
+bj08amba3g1	27843	mixed	fast	2017__bj08amba3g1	bj	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.401554	1800.000000	SAFE	0.175799	0	1	SAFE	0.173211	-15	4
+bobcount	230	mixed	fast	2017__bobcount	bobcount	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.390496	1800.000000	SAFE	0.103409	0	1	SAFE	0.090531	0	3
+139464p0	59926	mixed	fast	2017__139464p0	139464p0	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.685187	1800.000000	SAFE	0.541604	0	4	SAFE	0.447311	0	1
+bobsynthand	67510	mixed	fast	2017__bobsynthand	bobsynthand	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.221949	1800.000000	SAFE	0.110327	0	4	SAFE	0.107321	0	1
+dme6p1	7739	mixed	fast	2017__dme6p1	dme	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.335781	1800.000000	UNSAFE	0.180800	0	2	UNSAFE	0.098862	0	2
+eijks349	918	mixed	fast	2017__eijks349	eijks	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.321374	1800.000000	SAFE	0.237253	0	3	SAFE	0.226427	0	1
+intel003	2593	mixed	fast	2017__intel003	intel	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.326699	1800.000000	SAFE	0.111501	0	2	SAFE	0.067923	0	3
+cal180	2884	mixed	fast	2019__cal180	cal	fast	1120001	rIC3 Native legacy	SAFE	0	0.192417	1800.000000	SAFE	0.095140	0	1	SAFE	0.111996	0	1
+hwmcc2019__data__cal42	6109	mixed	fast	2019__cal42	cal	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.203010	1800.000000	SAFE	0.111521	0	3	SAFE	0.101796	0	2
+gen25	19734	mixed	fast	2019__gen25	gen	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.239734	1800.000000	SAFE	0.047775	0	1	SAFE	0.038109	0	2
+gen33	19643	mixed	fast	2019__gen33	gen	fast	1120001	rIC3 Native legacy	SAFE	0	0.138447	1800.000000	SAFE	0.027838	0	1	SAFE	0.035343	0	3
+hwmcc2019__data__h_TreeArb	4061	mixed	fast	2019__h_TreeArb	h_TreeArb	fast	1120001	rIC3 Native legacy	SAFE	0	0.176677	1800.000000	SAFE	0.070607	0	2	SAFE	0.098941	0	1
+h_b05	47826	mixed	fast	2019__h_b05	h_b	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.177620	1800.000000	UNSAFE	0.085466	0	3	UNSAFE	0.066465	0	1
+hwmcc2019__data__analog_estimation_convergence	3655	mixed	fast	2019__analog_estimation_convergence	analog_estimation_convergence	fast	1120001	rIC3 Native legacy	SAFE	0	0.740886	1800.000000	SAFE	0.435929	0	3	SAFE	0.458438	0	2
+qspiflash_dualflexpress_divfive-p018	32796	mixed	fast	2019__qspiflash_dualflexpress_divfive-p018	qspiflash_dualflexpress_divfive	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.144066	1800.000000	SAFE	0.076642	0	3	SAFE	0.073006	0	3
+bobsynthor	67510	mixed	fast	2017__bobsynthor	bobsynthor	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	1.052229	1800.000000	UNSAFE	0.856816	0	2	UNSAFE	0.841347	0	2
+bobuns2p10d100l	50174	mixed	fast	2015__bobuns2p10d100l	bobuns	fast	1120001	rIC3 Native product-sum-high	SAFE	0	1.980406	1800.000000	SAFE	1.834267	0	3	SAFE	1.708251	0	4
+qspiflash_dualflexpress_divfive-p060	32796	mixed	fast	2019__qspiflash_dualflexpress_divfive-p060	qspiflash_dualflexpress_divfive	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.229811	1800.000000	SAFE	0.131588	0	2	SAFE	0.126100	0	4
+hwmcc2019__data__picorv32-check-p09	123482	mixed	fast	2019__picorv32-check-p09	picorv	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.325452	1800.000000	SAFE	0.279646	0	1	SAFE	0.251390	0	2
+qspiflash_dualflexpress_divthree-p086	32716	mixed	fast	2019__qspiflash_dualflexpress_divthree-p086	qspiflash_dualflexpress_divthree	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.196978	1800.000000	SAFE	0.109177	0	4	SAFE	0.093554	0	4
+qspiflash_dualflexpress_divthree-p089	32716	mixed	fast	2019__qspiflash_dualflexpress_divthree-p089	qspiflash_dualflexpress_divthree	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.313636	1800.000000	SAFE	0.146052	0	2	SAFE	0.113800	0	1
+qspiflash_qflexpress_divfive-p034	30128	mixed	fast	2019__qspiflash_qflexpress_divfive-p034	qspiflash_qflexpress_divfive	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.256808	1800.000000	SAFE	0.130151	0	2	SAFE	0.100350	0	1
+vcegar_QF_BV_usb_phy_1	5486	mixed	fast	2019__vcegar_QF_BV_usb_phy_1	vcegar_QF_BV_usb_phy_	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.263072	1800.000000	UNSAFE	0.123662	0	1	UNSAFE	0.108039	0	4
+6s389b02	124458	mixed	fast	2017__6s389b02	6s389b02	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	1.848327	1800.000000	UNSAFE	1.440427	0	2	UNSAFE	1.380268	0	3
+qspiflash_qflexpress_divfive-p072	30127	mixed	fast	2019__qspiflash_qflexpress_divfive-p072	qspiflash_qflexpress_divfive	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.286449	1800.000000	SAFE	0.110749	0	4	SAFE	0.081289	0	3
+zipcpu-busdelay-p18	38378	mixed	fast	2019__zipcpu-busdelay-p18	zipcpu	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.258044	1800.000000	SAFE	0.076979	0	2	SAFE	0.060238	0	2
+hwmcc2019__data__zipcpu-busdelay-p43	38378	mixed	fast	2019__zipcpu-busdelay-p43	zipcpu	fast	1120001	rIC3 Native legacy	SAFE	0	0.257697	1800.000000	SAFE	0.056611	0	2	SAFE	0.067425	0	4
+hwmcc2019__data__vgasim_imgfifo-p047	66837	mixed	fast	2019__vgasim_imgfifo-p047	vgasim_imgfifo	fast	1120001	rIC3 Native legacy	SAFE	0	0.445821	1800.000000	SAFE	0.258137	0	3	SAFE	0.281329	0	3
+mentorbm1or	133446	mixed	fast	2017__mentorbm1or	mentorbm	fast	1120001	rIC3 Native product-sum-high	SAFE	0	1.381765	1800.000000	SAFE	1.166724	0	1	SAFE	1.131113	0	2
+zipversa_composecrc_prf-p04	18035	mixed	fast	2019__zipversa_composecrc_prf-p04	zipversa_composecrc_prf	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.218425	1800.000000	SAFE	0.135385	0	1	SAFE	0.105726	0	2
+vgasim_imgfifo-p085	66968	mixed	fast	2019__vgasim_imgfifo-p085	vgasim_imgfifo	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.477425	1800.000000	SAFE	0.283938	0	4	SAFE	0.274859	0	4
+hwmcc2020__data__2019__goel__industry__cal21__cal21	2145	mixed	fast	2020__cal21	cal	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.440768	1800.000000	SAFE	0.128882	0	1	SAFE	0.093828	0	2
+anderson.3.prop1-back-serstep	10040	mixed	fast	2020__anderson.3.prop1-back-serstep	anderson	fast	1120001	rIC3 Native legacy	UNSAFE	0	0.462460	1800.000000	UNSAFE	0.169617	0	1	UNSAFE	0.180542	0	1
+hwmcc2020__data__2019__goel__industry__cal41__cal41	6102	mixed	fast	2020__cal41	cal	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.289286	1800.000000	SAFE	0.128906	0	4	SAFE	0.116439	0	4
+gen12	20607	mixed	fast	2020__gen12	gen	fast	1120001	rIC3 Native legacy	SAFE	0	0.293042	1800.000000	SAFE	0.051716	0	2	SAFE	0.054033	0	4
+elevator.4.prop1-func-interl	14951	mixed	fast	2020__elevator.4.prop1-func-interl	elevator	fast	1120001	rIC3 Native legacy	SAFE	0	0.343014	1800.000000	SAFE	0.136831	0	1	SAFE	0.141957	0	2
+gen10	20236	mixed	fast	2020__gen10	gen	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.358698	1800.000000	SAFE	0.058129	0	1	SAFE	0.044480	0	1
+miim	2662	mixed	fast	2020__miim	miim	fast	1120001	rIC3 Native legacy	SAFE	0	0.503417	1800.000000	SAFE	0.031648	0	4	SAFE	0.037578	0	2
+hwmcc2020__data__2019__goel__opensource__h_TreeArb__h_TreeArb	4082	mixed	fast	2020__h_TreeArb	h_TreeArb	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.557097	1800.000000	SAFE	0.078393	0	1	SAFE	0.070877	0	2
+qspiflash_dualflexpress_divfive-p016	32762	mixed	fast	2020__qspiflash_dualflexpress_divfive-p016	qspiflash_dualflexpress_divfive	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.432323	1800.000000	SAFE	0.139571	0	2	SAFE	0.089289	0	1
+qspiflash_dualflexpress_divfive-p022	32755	mixed	fast	2020__qspiflash_dualflexpress_divfive-p022	qspiflash_dualflexpress_divfive	fast	1120001	rIC3 Native legacy	SAFE	0	0.440906	1800.000000	SAFE	0.094183	0	1	SAFE	0.116439	0	1
+hwmcc2020__data__2019__wolf__2018D__picorv32-check-p09	123385	mixed	fast	2020__picorv32-check-p09	picorv	fast	1120001	rIC3 Native legacy	SAFE	0	0.511554	1800.000000	SAFE	0.267596	0	4	SAFE	0.270865	0	1
+qspiflash_dualflexpress_divthree-p158	32844	mixed	fast	2020__qspiflash_dualflexpress_divthree-p158	qspiflash_dualflexpress_divthree	fast	1120001	rIC3 Native legacy	SAFE	0	0.468542	1800.000000	SAFE	0.071543	0	3	SAFE	0.096844	0	1
+qspiflash_qflexpress_divfive-p048	30045	mixed	fast	2020__qspiflash_qflexpress_divfive-p048	qspiflash_qflexpress_divfive	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.475110	1800.000000	SAFE	0.127915	0	4	SAFE	0.105765	0	2
+picorv32-check-p19	123385	mixed	fast	2020__picorv32-check-p19	picorv	fast	1120001	rIC3 Native legacy	SAFE	0	0.631235	1800.000000	SAFE	0.295297	0	4	SAFE	0.324473	0	4
+rast-p04	298174	mixed	fast	2020__rast-p04	rast	fast	1120001	rIC3 Native legacy	SAFE	0	0.368114	1800.000000	SAFE	0.140263	0	2	SAFE	0.142535	0	1
+vis_arrays_am2901	4299	mixed	fast	2020__vis_arrays_am2901	vis_arrays_am	fast	1120001	rIC3 Native legacy	UNSAFE	0	0.269472	1800.000000	UNSAFE	0.048556	0	4	UNSAFE	0.066936	0	4
+hwmcc2020__data__2019__wolf__2018D__zipcpu-busdelay-p43	38407	mixed	fast	2020__zipcpu-busdelay-p43	zipcpu	fast	1120001	rIC3 Native legacy	SAFE	0	0.249146	1800.000000	SAFE	0.059719	0	1	SAFE	0.069907	-15	4
+hwmcc2020__data__2019__wolf__2019C__zipversa_composecrc_prf-p15	17958	mixed	fast	2020__zipversa_composecrc_prf-p15	zipversa_composecrc_prf	fast	1120001	rIC3 Native legacy	SAFE	0	0.295298	1800.000000	SAFE	0.070413	0	3	SAFE	0.088750	0	2
+hwmcc2020__data__2019__wolf__2019C__vgasim_imgfifo-p047	67086	mixed	fast	2020__vgasim_imgfifo-p047	vgasim_imgfifo	fast	1120001	rIC3 Native legacy	SAFE	0	0.427626	1800.000000	SAFE	0.274703	0	1	SAFE	0.277179	0	2
+a16-p113	45307	mixed	fast	2024__a16-p113	a	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.296791	1800.000000	SAFE	0.191354	0	4	SAFE	0.179724	0	4
+ILA_AES_START_ENCRYPT_problem	90660	mixed	fast	2024__ILA_AES_START_ENCRYPT_problem	ILA_AES_START_ENCRYPT_problem	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.407698	1800.000000	SAFE	0.300626	0	2	SAFE	0.271338	0	2
+Problem02_label10	42416	mixed	fast	2024__Problem02_label10	Problem	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.373515	1800.000000	SAFE	0.210265	0	1	SAFE	0.181971	0	1
+hwmcc2024__data__2019__goel__industry__cal41__cal41	6093	mixed	fast	2024__cal41	cal	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.288417	1800.000000	SAFE	0.091339	0	1	SAFE	0.070296	0	4
+a16-p126	45307	mixed	fast	2024__a16-p126	a	fast	1120001	rIC3 Native legacy	SAFE	0	0.375888	1800.000000	SAFE	0.209941	0	3	SAFE	0.224629	0	2
+6s344rb054	394072	mixed	fast	2017__6s344rb054	6s344rb054	fast	1120001	rIC3 Native product-sum-high	SAFE	0	3.460101	1800.000000	SAFE	3.146470	0	3	SAFE	2.973780	0	3
+stack-p1	252065	mixed	fast	2020__stack-p1	stack	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.864336	1800.000000	UNSAFE	0.615315	0	3	UNSAFE	0.589669	0	1
+elevator.3.prop1-back-serstep	30909	mixed	fast	2024__elevator.3.prop1-back-serstep	elevator	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.408666	1800.000000	SAFE	0.320862	0	4	SAFE	0.295836	0	4
+minepump_spec1_product14.cil	211569	mixed	fast	2024__minepump_spec1_product14.cil	minepump_spec	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.348725	1800.000000	SAFE	0.228169	0	4	SAFE	0.213185	0	2
+float8	48935	mixed	fast	2024__float8	float	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.425981	1800.000000	SAFE	0.360627	0	4	SAFE	0.356310	0	4
+minepump_spec4_product16.cil	213972	mixed	fast	2024__minepump_spec4_product16.cil	minepump_spec	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.412951	1800.000000	SAFE	0.321444	0	2	SAFE	0.294891	0	3
+s3_srvr_1b.cil	21855	mixed	fast	2024__s3_srvr_1b.cil	s	fast	1120001	rIC3 Native legacy	SAFE	0	0.143499	1800.000000	SAFE	0.079087	0	3	SAFE	0.093248	0	2
+psyco_io_1	105795	mixed	fast	2024__psyco_io_1	psyco_io_	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.399259	1800.000000	SAFE	0.355139	0	2	SAFE	0.294757	0	4
+zipcpu-busdelay-p10	38284	mixed	fast	2024__zipcpu-busdelay-p10	zipcpu	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.118288	1800.000000	SAFE	0.090595	0	1	SAFE	0.080636	0	2
+hwmcc2024__data__2019__wolf__2018D__picorv32-check-p09	123850	mixed	fast	2024__picorv32-check-p09	picorv	fast	1120001	rIC3 Native legacy	SAFE	0	0.438169	1800.000000	SAFE	0.274437	0	1	SAFE	0.282495	0	3
+vis_arrays_vsa16a_p6	12255	mixed	fast	2024__vis_arrays_vsa16a_p6	vis_arrays_vsa	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.305008	1800.000000	UNSAFE	0.150836	0	3	UNSAFE	0.150655	0	3
+vgasim_imgfifo-p040	67092	mixed	fast	2024__vgasim_imgfifo-p040	vgasim_imgfifo	fast	1120001	rIC3 Native legacy	SAFE	0	0.370290	1800.000000	SAFE	0.260160	0	3	SAFE	0.260963	0	1
+zipversa_composecrc_prf-p12	18026	mixed	fast	2024__zipversa_composecrc_prf-p12	zipversa_composecrc_prf	fast	1120001	rIC3 Native legacy	SAFE	0	0.158638	1800.000000	SAFE	0.086134	0	2	SAFE	0.089634	0	4
+rast-p10	299806	mixed	fast	2024__rast-p10	rast	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.508324	1800.000000	SAFE	0.322880	0	3	SAFE	0.295434	0	1
+phases_2-1	50208	mixed	fast	2024__phases_2-1	phases_	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.636229	1800.000000	UNSAFE	0.532137	0	4	UNSAFE	0.503639	0	1
+zipcpu-zipmmu-p27	47167	mixed	fast	2024__zipcpu-zipmmu-p27	zipcpu	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.267678	1800.000000	SAFE	0.131907	0	4	SAFE	0.129710	0	1
+dspfilters_fastfir_second-p24	124339	mixed	fast	2024__dspfilters_fastfir_second-p24	dspfilters_fastfir_second	fast	1120001	rIC3 Native product-sum-high	SAFE	0	1.122260	1800.000000	SAFE	1.035333	0	2	SAFE	0.979950	0	3
+ILA_AES_LOAD_problem	110253	mixed	fast	2025__ILA_AES_LOAD_problem	ILA_AES_LOAD_problem	fast	1120001	rIC3 Native legacy	SAFE	0	0.412140	1800.000000	SAFE	0.277753	0	3	SAFE	0.286007	0	4
+Problem02_label43	42309	mixed	fast	2025__Problem02_label43	Problem	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.403034	1800.000000	UNSAFE	0.302740	0	2	UNSAFE	0.294974	0	1
+a16-p47	19794	mixed	fast	2025__a16-p47	a	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.267755	1800.000000	SAFE	0.190203	0	1	SAFE	0.186040	0	3
+hwmcc2025__data__safety__2019__goel__industry__cal42__cal42	6074	mixed	fast	2025__cal42	cal	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.384104	1800.000000	SAFE	0.101119	0	4	SAFE	0.072832	0	3
+a16-p114	19799	mixed	fast	2025__a16-p114	a	fast	1120001	rIC3 Native legacy	SAFE	0	0.408252	1800.000000	SAFE	0.177010	0	3	SAFE	0.206441	0	2
+hwmcc2025__data__safety__2019__goel__industry__cal40__cal40	10766	mixed	fast	2025__cal40	cal	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.424345	1800.000000	SAFE	0.157779	0	3	SAFE	0.140399	0	1
+dblclockfft_butterfly_ck3_r1-p50	21232	mixed	fast	2025__dblclockfft_butterfly_ck3_r1-p50	dblclockfft_butterfly_ck	fast	1120001	rIC3 Native legacy	SAFE	0	0.258220	1800.000000	SAFE	0.116571	0	3	SAFE	0.121814	0	4
+gen22	29932	mixed	fast	2025__gen22	gen	fast	1120001	rIC3 Native legacy	SAFE	0	0.272307	1800.000000	SAFE	0.112635	0	2	SAFE	0.118397	0	3
+jain_4-2	19378	mixed	fast	2025__jain_4-2	jain_	fast	1120001	rIC3 Native legacy	SAFE	0	0.365772	1800.000000	SAFE	0.083327	0	4	SAFE	0.090086	0	1
+benchmarks_output_btor2_example_227_miter_miter	12574	mixed	fast	2025__benchmarks_output_btor2_example_227_miter_miter	benchmarks_output_btor	fast	1120001	rIC3 Native legacy	SAFE	0	0.636196	1800.000000	SAFE	0.161304	0	1	SAFE	0.193919	0	1
+dblclockfft_butterfly_ck3_r1-p73	22353	mixed	fast	2025__dblclockfft_butterfly_ck3_r1-p73	dblclockfft_butterfly_ck	fast	1120001	rIC3 Native legacy	SAFE	0	0.373880	1800.000000	SAFE	0.137194	0	2	SAFE	0.145356	0	1
+benchmarks_output_btor2_example_212_miter_miter	10301	mixed	fast	2025__benchmarks_output_btor2_example_212_miter_miter	benchmarks_output_btor	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.722858	1800.000000	SAFE	0.522410	0	3	SAFE	0.522129	0	1
+loopv3	9830	mixed	fast	2025__loopv3	loopv	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.392226	1800.000000	SAFE	0.087068	0	4	SAFE	0.080931	0	1
+hwmcc2025__data__safety__2025__ntu__unsat__microban_1	1882	mixed	fast	2025__safety__2025__ntu__unsat__microban_1	microban_	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.343479	1800.000000	SAFE	0.052054	0	1	SAFE	0.047784	0	1
+hwmcc2025__data__safety__2025__ntu__sat__microban__microban_1	1882	mixed	fast	2025__safety__2025__ntu__sat__microban__microban_1	microban_	fast	1120001	rIC3 Native legacy	UNSAFE	0	0.374737	1800.000000	UNSAFE	0.065712	0	1	UNSAFE	0.072371	0	3
+6s355rb11080	717787	mixed	fast	2015__6s355rb11080	6s355rb11080	fast	1120001	rIC3 Native product-sum-high	SAFE	0	5.648026	1800.000000	SAFE	5.312239	0	4	SAFE	4.895935	0	3
+minepump_spec4_product33.cil	104198	mixed	fast	2025__minepump_spec4_product33.cil	minepump_spec	fast	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.509782	1800.000000	UNSAFE	0.225465	0	1	UNSAFE	0.180668	0	3
+rast-p12	39085	mixed	fast	2025__rast-p12	rast	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.500206	1800.000000	SAFE	0.244000	0	4	SAFE	0.229295	0	3
+zipcpu-zipmmu-p15	24224	mixed	fast	2025__zipcpu-zipmmu-p15	zipcpu	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.365852	1800.000000	SAFE	0.138892	0	1	SAFE	0.109179	0	1
+hwmcc2025__data__safety__2020__mann__stack-p2	128171	mixed	fast	2025__stack-p2	stack	fast	1120001	rIC3 Native product-sum-high	SAFE	0	0.467876	1800.000000	SAFE	0.063519	0	2	SAFE	0.057457	0	1
+hwmcc2015__data__6s276rb342	96525	mixed	medium	2015__6s276rb342	6s276rb342	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.620392	1800.000000	SAFE	0.555016	0	2	SAFE	0.519968	0	1
+6s277rb292	96526	mixed	medium	2015__6s277rb292	6s277rb292	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.650318	1800.000000	SAFE	0.577008	0	1	SAFE	0.499539	0	1
+hwmcc2015__data__6s355rb08740	717787	mixed	fast	2015__6s355rb08740	6s355rb08740	fast	1120001	rIC3 Native legacy	SAFE	0	6.462463	1800.000000	SAFE	4.879724	0	1	SAFE	6.278798	0	1
+6s326rb08	99560	mixed	medium	2015__6s326rb08	6s326rb08	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.813623	1800.000000	SAFE	0.741000	0	1	SAFE	0.725653	0	2
+hwmcc2015__data__6s372rb26	28096	mixed	medium	2015__6s372rb26	6s372rb26	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.461765	1800.000000	SAFE	0.432200	0	1	SAFE	0.424399	0	4
+6s400rb07819	719356	mixed	fast	2017__6s400rb07819	6s400rb07819	fast	1120001	rIC3 Native product-sum-high	SAFE	0	5.969615	1800.000000	SAFE	5.870734	0	3	SAFE	4.292741	0	3
+6s380b129	239333	mixed	medium	2015__6s380b129	6s380b129	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.733240	1800.000000	SAFE	0.710268	0	2	SAFE	0.661816	0	3
+beemmsmie1f1	5000	mixed	medium	2015__beemmsmie1f1	beemmsmie	medium	1120001	rIC3 Native legacy	SAFE	0	0.468234	1800.000000	SAFE	0.345271	0	4	SAFE	0.447257	0	2
+6s307rb09	203928	mixed	medium	2015__6s307rb09	6s307rb09	medium	1120001	rIC3 Native product-sum-high	SAFE	0	1.504282	1800.000000	SAFE	1.319231	0	4	SAFE	1.250000	0	2
+hwmcc2015__data__6s421rb083	23888	mixed	fast	2015__6s421rb083	6s421rb083	fast	1120001	rIC3 Native product-sum-high	SAFE	0	7.265691	1800.000000	SAFE	7.246375	0	1	SAFE	2.453798	0	2
+6s108	47706	mixed	medium	2015__6s108	6s108	medium	1120001	rIC3 Native legacy	SAFE	0	2.089134	1800.000000	SAFE	1.878200	0	3	SAFE	2.000653	0	3
+hwmcc2015__data__bob3	1620	mixed	medium	2015__bob3	bob	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.399738	1800.000000	SAFE	0.353202	0	2	SAFE	0.288910	0	2
+6s273b37	409697	mixed	medium	2015__6s273b37	6s273b37	medium	1120001	rIC3 Native product-sum-high	SAFE	0	2.005061	1800.000000	SAFE	1.846033	0	1	SAFE	1.613300	0	4
+bjrb07amba4andenv	56980	mixed	medium	2015__bjrb07amba4andenv	bjrb	medium	1120001	rIC3 Native product-sum-high	SAFE	0	1.245512	1800.000000	SAFE	1.199789	0	4	SAFE	1.145533	0	2
+bobsm5378d2	6793	mixed	medium	2015__bobsm5378d2	bobsm	medium	1120001	rIC3 Native product-sum-high	SAFE	0	1.099746	1800.000000	SAFE	1.041897	0	1	SAFE	0.959708	0	3
+139444p22	23346	mixed	medium	2017__139444p22	139444p22	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.947848	1800.000000	UNSAFE	0.928907	0	2	UNSAFE	0.625066	0	3
+yosyshq_appnote_123_cv32e40x-p161	268421	mixed	fast	2025__yosyshq_appnote_123_cv32e40x-p161	yosyshq_appnote_	fast	1120001	rIC3 Native product-sum-high	SAFE	0	3.222489	1800.000000	SAFE	3.123535	0	2	SAFE	2.952071	0	4
+6s209b0	217705	mixed	medium	2017__6s209b0	6s209b0	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.639288	1800.000000	SAFE	0.602879	0	4	SAFE	0.576156	0	4
+6s215rb0	33855	mixed	medium	2017__6s215rb0	6s215rb0	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.647788	1800.000000	UNSAFE	0.616053	0	3	UNSAFE	0.598099	-15	4
+6s275rb318	96494	mixed	medium	2017__6s275rb318	6s275rb318	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.501884	1800.000000	SAFE	0.483901	0	1	SAFE	0.427821	0	2
+6s384rb024	351039	mixed	medium	2017__6s384rb024	6s384rb024	medium	1120001	rIC3 Native legacy	SAFE	0	0.219983	1800.000000	SAFE	0.174393	-15	4	SAFE	0.182770	0	2
+6s216rb0	33839	mixed	medium	2017__6s216rb0	6s216rb0	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.872061	1800.000000	UNSAFE	0.841504	0	3	UNSAFE	0.771556	0	3
+abp4p2ff	2516	mixed	medium	2017__abp4p2ff	abp	medium	1120001	rIC3 Native legacy	UNSAFE	0	0.372782	1800.000000	UNSAFE	0.297445	0	1	UNSAFE	0.304024	0	1
+csmacdp2	16634	mixed	medium	2017__csmacdp2	csmacdp	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.357394	1800.000000	UNSAFE	0.334228	0	2	UNSAFE	0.303694	0	2
+bj08amba2g4f3	43152	mixed	medium	2017__bj08amba2g4f3	bj	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.816006	1800.000000	UNSAFE	0.770791	0	3	UNSAFE	0.583893	0	4
+beemskbn3f1	206323	mixed	medium	2015__beemskbn3f1	beemskbn	medium	1120001	rIC3 Native product-sum-high	SAFE	0	3.401109	1800.000000	SAFE	3.352308	0	1	SAFE	2.852973	0	3
+6s403rb1342	441620	mixed	medium	2017__6s403rb1342	6s403rb1342	medium	1120001	rIC3 Native product-sum-high	SAFE	0	1.500245	1800.000000	SAFE	1.469311	0	3	SAFE	1.410669	0	1
+bobsmi2c	6393	mixed	medium	2017__bobsmi2c	bobsmi	medium	1120001	rIC3 Native product-sum-high	SAFE	0	1.353370	1800.000000	SAFE	1.307558	0	4	SAFE	1.226861	0	3
+neclabakery001	2498	mixed	medium	2017__neclabakery001	neclabakery	medium	1120001	rIC3 Native legacy	SAFE	0	0.346092	1800.000000	SAFE	0.153647	0	2	SAFE	0.331533	0	1
+neclatcas1a001	11148	mixed	medium	2017__neclatcas1a001	neclatcas	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.204645	1800.000000	SAFE	0.183341	0	2	SAFE	0.163389	0	1
+mentorbm1p02	133400	mixed	medium	2017__mentorbm1p02	mentorbm	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.883672	1800.000000	SAFE	0.837774	0	1	SAFE	0.792628	0	4
+6s206rb025	760928	mixed	medium	2015__6s206rb025	6s206rb025	medium	1120001	rIC3 Native product-sum-high	SAFE	0	5.726360	1800.000000	SAFE	5.515677	0	4	SAFE	5.080420	0	2
+neclaftp4002	30260	mixed	medium	2017__neclaftp4002	neclaftp	medium	1120001	rIC3 Native legacy	SAFE	0	0.529006	1800.000000	SAFE	0.444313	0	3	SAFE	0.459727	0	3
+nusmvbrp	1502	mixed	medium	2017__nusmvbrp	nusmvbrp	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.309437	1800.000000	SAFE	0.248173	0	1	SAFE	0.246200	0	4
+pdtpmsretherrtf	2630	mixed	medium	2017__pdtpmsretherrtf	pdtpmsretherrtf	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.214756	1800.000000	SAFE	0.181904	0	1	SAFE	0.161947	0	3
+Heap	4326	mixed	medium	2019__Heap	Heap	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.263753	1800.000000	SAFE	0.237713	0	3	SAFE	0.224029	0	1
+hwmcc2019__data__cal78	124251	mixed	medium	2019__cal78	cal	medium	1120001	rIC3 Native legacy	SAFE	0	0.193305	1800.000000	SAFE	0.157163	-15	4	SAFE	0.162269	0	2
+hwmcc2019__data__cal27	18530	mixed	medium	2019__cal27	cal	medium	1120001	rIC3 Native legacy	SAFE	0	0.301659	1800.000000	SAFE	0.244356	0	1	SAFE	0.284102	0	1
+brp.2.prop1-func-interl	5993	mixed	medium	2019__brp.2.prop1-func-interl	brp	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.415390	1800.000000	UNSAFE	0.381399	0	3	UNSAFE	0.146194	0	1
+hwmcc2019__data__gen43	19193	mixed	medium	2019__gen43	gen	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.191301	1800.000000	SAFE	0.176534	0	1	SAFE	0.171400	0	3
+hwmcc2019__data__marlann_compute_cp_fail1-p2	45520	mixed	medium	2019__marlann_compute_cp_fail1-p2	marlann_compute_cp_fail	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.068823	1800.000000	SAFE	0.056736	0	2	SAFE	0.055331	0	1
+hwmcc2019__data__frogs.5.prop1-func-interl	33539	mixed	medium	2019__frogs.5.prop1-func-interl	frogs	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.363998	1800.000000	SAFE	0.291037	0	3	SAFE	0.268287	0	2
+hwmcc2019__data__gen44	19163	mixed	medium	2019__gen44	gen	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.307889	1800.000000	SAFE	0.268675	0	2	SAFE	0.220491	0	2
+hwmcc2019__data__marlann_compute_cp_pass-p2	45456	mixed	medium	2019__marlann_compute_cp_pass-p2	marlann_compute_cp_pass	medium	1120001	rIC3 Native legacy	SAFE	0	0.127992	1800.000000	SAFE	0.056839	0	1	SAFE	0.074803	0	4
+hwmcc2019__data__marlann_compute_cp_fail2-p0	45346	mixed	medium	2019__marlann_compute_cp_fail2-p0	marlann_compute_cp_fail	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.223235	1800.000000	SAFE	0.145603	0	4	SAFE	0.137030	0	4
+6s206rb103	760928	mixed	medium	2017__6s206rb103	6s206rb103	medium	1120001	rIC3 Native legacy	SAFE	0	4.593057	1800.000000	SAFE	4.397795	0	1	SAFE	4.422314	0	2
+qspiflash_dualflexpress_divfive-p036	32796	mixed	medium	2019__qspiflash_dualflexpress_divfive-p036	qspiflash_dualflexpress_divfive	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.172858	1800.000000	SAFE	0.145515	0	3	SAFE	0.123487	0	4
+picorv32-check-p18	123481	mixed	medium	2019__picorv32-check-p18	picorv	medium	1120001	rIC3 Native legacy	SAFE	0	0.366615	1800.000000	SAFE	0.327828	0	4	SAFE	0.334198	0	3
+intel061	8035	mixed	medium	2017__intel061	intel	medium	1120001	rIC3 Native legacy	SAFE	0	2.427912	1800.000000	SAFE	2.340090	0	1	SAFE	2.397628	0	2
+cmuperiodic	4163	mixed	medium	2015__cmuperiodic	cmuperiodic	medium	1120001	rIC3 Native product-sum-high	SAFE	0	4.946115	1800.000000	SAFE	4.796384	0	4	SAFE	3.713786	0	4
+qspiflash_dualflexpress_divthree-p112	32716	mixed	medium	2019__qspiflash_dualflexpress_divthree-p112	qspiflash_dualflexpress_divthree	medium	1120001	rIC3 Native legacy	SAFE	0	0.278849	1800.000000	SAFE	0.136508	0	1	SAFE	0.155801	0	4
+intel056	7829	mixed	medium	2017__intel056	intel	medium	1120001	rIC3 Native product-sum-high	SAFE	0	2.708129	1800.000000	SAFE	2.561929	0	1	SAFE	1.589654	0	3
+hwmcc2019__data__picorv32-check-p22	123481	mixed	medium	2019__picorv32-check-p22	picorv	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.466653	1800.000000	SAFE	0.302228	0	4	SAFE	0.298131	0	1
+vis_arrays_two_p1	1446	mixed	medium	2019__vis_arrays_two_p1	vis_arrays_two_p	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.338269	1800.000000	UNSAFE	0.133820	0	3	UNSAFE	0.112827	0	1
+zipversa_composecrc_prf-p06	18034	mixed	medium	2019__zipversa_composecrc_prf-p06	zipversa_composecrc_prf	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.253043	1800.000000	SAFE	0.129921	0	1	SAFE	0.121118	0	4
+zipcpu-busdelay-p20	38377	mixed	medium	2019__zipcpu-busdelay-p20	zipcpu	medium	1120001	rIC3 Native legacy	SAFE	0	0.350834	1800.000000	SAFE	0.223759	0	3	SAFE	0.229954	0	3
+hwmcc2019__data__vgasim_imgfifo-p105	66883	mixed	medium	2019__vgasim_imgfifo-p105	vgasim_imgfifo	medium	1120001	rIC3 Native legacy	SAFE	0	0.451286	1800.000000	SAFE	0.316786	0	3	SAFE	0.351089	0	4
+qspiflash_qflexpress_divfive-p008	30127	mixed	medium	2019__qspiflash_qflexpress_divfive-p008	qspiflash_qflexpress_divfive	medium	1120001	rIC3 Native legacy	SAFE	0	0.660220	1800.000000	SAFE	0.208308	0	4	SAFE	0.572015	0	1
+hwmcc2020__data__2019__goel__industry__cal34__cal34	18824	mixed	medium	2020__cal34	cal	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.437936	1800.000000	SAFE	0.306155	0	4	SAFE	0.249510	0	3
+cal81	236628	mixed	medium	2020__cal81	cal	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.413692	1800.000000	SAFE	0.272681	0	4	SAFE	0.271627	-15	3
+hwmcc2020__data__2019__goel__industry__gen43__gen43	19180	mixed	medium	2020__gen43	gen	medium	1120001	rIC3 Native legacy	SAFE	0	0.251263	1800.000000	SAFE	0.194858	0	3	SAFE	0.203380	0	2
+bobsynthetic2	48184	mixed	medium	2015__bobsynthetic2	bobsynthetic	medium	1120001	rIC3 Native legacy	UNSAFE	0	5.845965	1800.000000	UNSAFE	3.913796	0	4	UNSAFE	5.614318	0	2
+hwmcc2020__data__2019__wolf__2019B__marlann_compute_cp_fail1-p2	45584	mixed	medium	2020__marlann_compute_cp_fail1-p2	marlann_compute_cp_fail	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.356252	1800.000000	SAFE	0.081180	0	2	SAFE	0.079494	0	2
+hwmcc2020__data__2019__wolf__2019B__marlann_compute_cp_fail2-p0	45515	mixed	medium	2020__marlann_compute_cp_fail2-p0	marlann_compute_cp_fail	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.356217	1800.000000	SAFE	0.219420	0	4	SAFE	0.183049	0	1
+paper_v3	683	mixed	medium	2020__paper_v3	paper_v	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.229201	1800.000000	SAFE	0.112646	0	3	SAFE	0.108673	0	3
+hwmcc2020__data__2019__goel__industry__gen44__gen44	19169	mixed	medium	2020__gen44	gen	medium	1120001	rIC3 Native legacy	SAFE	0	0.434433	1800.000000	SAFE	0.266639	0	1	SAFE	0.275328	0	2
+hwmcc2020__data__2019__wolf__2019B__marlann_compute_cp_pass-p2	45561	mixed	medium	2020__marlann_compute_cp_pass-p2	marlann_compute_cp_pass	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.265396	1800.000000	SAFE	0.119114	0	2	SAFE	0.080275	0	2
+hwmcc2020__data__2019__wolf__2018D__picorv32-check-p12	123385	mixed	medium	2020__picorv32-check-p12	picorv	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.574014	1800.000000	SAFE	0.318166	0	4	SAFE	0.315866	0	4
+qspiflash_dualflexpress_divfive-p092	32755	mixed	medium	2020__qspiflash_dualflexpress_divfive-p092	qspiflash_dualflexpress_divfive	medium	1120001	rIC3 Native legacy	SAFE	0	0.360417	1800.000000	SAFE	0.138893	0	2	SAFE	0.180677	0	3
+qspiflash_dualflexpress_divthree-p006	32840	mixed	medium	2020__qspiflash_dualflexpress_divthree-p006	qspiflash_dualflexpress_divthree	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.362045	1800.000000	SAFE	0.157384	0	1	SAFE	0.142842	0	1
+qspiflash_dualflexpress_divfive-p079	32755	mixed	medium	2020__qspiflash_dualflexpress_divfive-p079	qspiflash_dualflexpress_divfive	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.367622	1800.000000	SAFE	0.170716	0	3	SAFE	0.168722	0	1
+picorv32-check-p05	123384	mixed	medium	2020__picorv32-check-p05	picorv	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.592978	1800.000000	SAFE	0.350495	0	2	SAFE	0.343074	0	2
+qspiflash_dualflexpress_divthree-p046	32841	mixed	medium	2020__qspiflash_dualflexpress_divthree-p046	qspiflash_dualflexpress_divthree	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.476113	1800.000000	SAFE	0.145183	0	2	SAFE	0.125856	0	4
+qspiflash_qflexpress_divfive-p036	30045	mixed	medium	2020__qspiflash_qflexpress_divfive-p036	qspiflash_qflexpress_divfive	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.486247	1800.000000	SAFE	0.124094	0	3	SAFE	0.097043	0	2
+hwmcc2015__data__6s271rb079	513122	mixed	medium	2015__6s271rb079	6s271rb079	medium	1120001	rIC3 Native product-sum-high	SAFE	0	8.291521	1800.000000	SAFE	7.723559	0	4	SAFE	7.710429	0	4
+hwmcc2020__data__2020__mann__stack-p2	252065	mixed	medium	2020__stack-p2	stack	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.366951	1800.000000	SAFE	0.106580	0	1	SAFE	0.097795	0	1
+shift_register_top_w16_d8_e0	10311	mixed	medium	2020__shift_register_top_w16_d8_e0	shift_register_top_w	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.689449	1800.000000	UNSAFE	0.282893	0	2	UNSAFE	0.256086	0	3
+a16-p098	45308	mixed	medium	2024__a16-p098	a	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.426907	1800.000000	SAFE	0.243047	0	2	SAFE	0.235804	0	1
+a16-p139	45308	mixed	medium	2024__a16-p139	a	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.282180	1800.000000	SAFE	0.265656	0	1	SAFE	0.248708	0	2
+hwmcc2024__data__2019__mann__safe__analog_estimation_convergence	3659	mixed	medium	2024__2019__mann__safe__analog_estimation_convergence	analog_estimation_convergence	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.639959	1800.000000	SAFE	0.496921	-15	4	SAFE	0.467384	-15	4
+a10-p04	1511363	mixed	medium	2024__a10-p04	a	medium	1120001	rIC3 Native legacy	UNSAFE	0	0.662022	1800.000000	UNSAFE	0.476902	0	1	UNSAFE	0.489611	0	2
+hwmcc2024__data__2019__goel__industry__cal27__cal27	18728	mixed	medium	2024__cal27	cal	medium	1120001	rIC3 Native legacy	SAFE	0	0.307671	1800.000000	SAFE	0.263520	0	4	SAFE	0.275220	0	3
+vgasim_imgfifo-p082	67128	mixed	medium	2020__vgasim_imgfifo-p082	vgasim_imgfifo	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.924716	1800.000000	SAFE	0.891695	0	3	SAFE	0.752170	0	4
+bobunr2p10d40l	19190	mixed	fast	2017__bobunr2p10d40l	bobunr	fast	1120001	rIC3 Native product-sum-high	SAFE	0	13.417486	1800.000000	SAFE	13.355954	0	3	SAFE	9.953799	0	2
+gen45	19036	mixed	medium	2024__gen45	gen	medium	1120001	rIC3 Native legacy	SAFE	0	0.200589	1800.000000	SAFE	0.177223	0	2	SAFE	0.187024	0	1
+anderson.3.prop1-func-interl	7491	mixed	medium	2024__anderson.3.prop1-func-interl	anderson	medium	1120001	rIC3 Native legacy	UNSAFE	0	0.960577	1800.000000	UNSAFE	0.690076	0	2	UNSAFE	0.834378	0	3
+marlann_compute_cp_fail2-p1	45618	mixed	medium	2024__marlann_compute_cp_fail2-p1	marlann_compute_cp_fail	medium	1120001	rIC3 Native legacy	UNSAFE	0	0.103872	1800.000000	UNSAFE	0.041970	0	3	UNSAFE	0.052327	0	1
+hwmcc2024__data__2019__wolf__2019C__qspiflash_qflexpress_divfive-p112	30008	mixed	medium	2024__qspiflash_qflexpress_divfive-p112	qspiflash_qflexpress_divfive	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.098649	1800.000000	SAFE	0.088835	0	2	SAFE	0.082538	0	1
+hwmcc2024__data__2020__mann__stack-p2	251380	mixed	medium	2024__stack-p2	stack	medium	1120001	rIC3 Native legacy	SAFE	0	0.111215	1800.000000	SAFE	0.070947	0	1	SAFE	0.075494	0	2
+gen102	25740	mixed	medium	2024__gen102	gen	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.838438	1800.000000	SAFE	0.808923	0	3	SAFE	0.749541	0	3
+gen112	25740	mixed	medium	2024__gen112	gen	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.832819	1800.000000	SAFE	0.815502	0	2	SAFE	0.714259	0	2
+sw_ball2004_2	1380	mixed	medium	2024__sw_ball2004_2	sw_ball	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.239616	1800.000000	SAFE	0.209926	0	2	SAFE	0.188355	0	4
+hwmcc2015__data__6s406rb067	516267	mixed	medium	2015__6s406rb067	6s406rb067	medium	1120001	rIC3 Native legacy	SAFE	0	8.802180	1800.000000	SAFE	6.297876	0	1	SAFE	8.631747	0	4
+6s271rb045	513122	mixed	medium	2015__6s271rb045	6s271rb045	medium	1120001	rIC3 Native legacy	SAFE	0	10.375097	1800.000000	SAFE	7.551245	0	3	SAFE	10.247806	0	3
+minepump_spec2_product54.cil	1374386	mixed	medium	2024__minepump_spec2_product54.cil	minepump_spec	medium	1120001	rIC3 Native product-sum-high	SAFE	0	1.346211	1800.000000	SAFE	1.296917	0	4	SAFE	1.261580	0	1
+benchmarks_output_btor2_example_186_miter_miter	15047	mixed	medium	2025__benchmarks_output_btor2_example_186_miter_miter	benchmarks_output_btor	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.968582	1800.000000	SAFE	0.955806	0	1	SAFE	0.634061	0	3
+hwmcc2025__data__safety__2019__goel__industry__cal78__cal78	123566	mixed	medium	2025__cal78	cal	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.195228	1800.000000	SAFE	0.175095	-15	2	SAFE	0.160147	-15	3
+benchmarks_output_btor2_example_230_miter_miter	17474	mixed	medium	2025__benchmarks_output_btor2_example_230_miter_miter	benchmarks_output_btor	medium	1120001	rIC3 Native legacy	SAFE	0	0.712083	1800.000000	SAFE	0.626198	0	2	SAFE	0.695177	0	1
+dblclockfft_butterfly_ck1-p160	53061	mixed	medium	2025__dblclockfft_butterfly_ck1-p160	dblclockfft_butterfly_ck	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.576283	1800.000000	SAFE	0.545240	0	3	SAFE	0.524397	0	1
+collision.1.prop1-func-interl	19023	mixed	medium	2025__collision.1.prop1-func-interl	collision	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.720516	1800.000000	SAFE	0.668719	0	3	SAFE	0.592197	0	2
+zipcpu-busdelay-p00	38407	mixed	medium	2020__zipcpu-busdelay-p00	zipcpu	medium	1120001	rIC3 Native product-sum-high	SAFE	0	3.813686	1800.000000	SAFE	3.554681	0	4	SAFE	0.960901	0	2
+dblclockfft_butterfly_ck1-p428	52219	mixed	medium	2025__dblclockfft_butterfly_ck1-p428	dblclockfft_butterfly_ck	medium	1120001	rIC3 Native legacy	SAFE	0	0.563643	1800.000000	SAFE	0.529274	0	4	SAFE	0.548997	0	1
+benchmarks_output_btor2_example_56_miter_miter	17203	mixed	medium	2025__benchmarks_output_btor2_example_56_miter_miter	benchmarks_output_btor	medium	1120001	rIC3 Native product-sum-high	SAFE	0	2.246276	1800.000000	SAFE	2.227964	0	2	SAFE	1.267445	0	4
+6s405rb611	681294	mixed	medium	2015__6s405rb611	6s405rb611	medium	1120001	rIC3 Native product-sum-high	SAFE	0	12.065389	1800.000000	SAFE	11.939332	0	1	SAFE	9.054564	0	2
+microban_33	3618	mixed	medium	2025__microban_33	microban_	medium	1120001	rIC3 Native legacy	UNSAFE	0	0.238722	1800.000000	UNSAFE	0.183371	0	4	UNSAFE	0.225851	0	1
+microban_48	4064	mixed	medium	2025__microban_48	microban_	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.274244	1800.000000	UNSAFE	0.254935	0	2	UNSAFE	0.248509	0	1
+microban_82	3908	mixed	medium	2025__microban_82	microban_	medium	1120001	rIC3 Native legacy	UNSAFE	0	0.340973	1800.000000	UNSAFE	0.212585	0	1	UNSAFE	0.299652	0	3
+qspiflash_dualflexpress_divfive-p41	10255	mixed	medium	2025__qspiflash_dualflexpress_divfive-p41	qspiflash_dualflexpress_divfive	medium	1120001	rIC3 Native legacy	SAFE	0	0.441004	1800.000000	SAFE	0.262137	0	2	SAFE	0.423375	0	1
+qspiflash_dualflexpress_divfive-p80	12007	mixed	medium	2025__qspiflash_dualflexpress_divfive-p80	qspiflash_dualflexpress_divfive	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.212654	1800.000000	SAFE	0.200559	0	1	SAFE	0.157809	0	4
+qspiflash_dualflexpress_divthree-p120	11160	mixed	medium	2025__qspiflash_dualflexpress_divthree-p120	qspiflash_dualflexpress_divthree	medium	1120001	rIC3 Native product-sum-high	SAFE	0	0.221992	1800.000000	SAFE	0.205897	0	2	SAFE	0.193839	0	4
+hwmcc2024__data__2019__goel__industry__cal182__cal182	331909	mixed	medium	2024__cal182	cal	medium	1120001	rIC3 Native legacy	SAFE	0	6.989546	1800.000000	SAFE	3.723477	0	1	SAFE	6.766740	0	3
+frogs.2.prop1-back-serstep	28429	mixed	medium	2019__frogs.2.prop1-back-serstep	frogs	medium	1120001	rIC3 Native legacy	UNSAFE	0	10.296210	1800.000000	UNSAFE	7.398501	0	3	UNSAFE	10.267348	0	2
+6s164	4236	mixed	slow	2015__6s164	6s164	slow	1120001	rIC3 Native product-sum-high	SAFE	0	1.401522	1800.000000	SAFE	1.384911	0	2	SAFE	1.044585	0	3
+yosyshq_appnote_123_cv32e40x-p179	269303	mixed	medium	2025__yosyshq_appnote_123_cv32e40x-p179	yosyshq_appnote_	medium	1120001	rIC3 Native legacy	SAFE	0	3.352251	1800.000000	SAFE	3.246511	0	1	SAFE	3.297459	0	1
+yosyshq_appnote_123_cv32e40x-p368	268458	mixed	medium	2025__yosyshq_appnote_123_cv32e40x-p368	yosyshq_appnote_	medium	1120001	rIC3 Native product-sum-high	SAFE	0	3.342181	1800.000000	SAFE	3.262226	0	4	SAFE	3.143680	0	2
+freire1_valuebound1	274784	mixed	medium	2024__freire1_valuebound1	freire	medium	1120001	rIC3 Native product-sum-high	SAFE	0	10.574799	1800.000000	SAFE	10.417502	0	4	SAFE	10.334092	0	2
+6s306rb03	234045	mixed	slow	2015__6s306rb03	6s306rb03	slow	1120001	rIC3 Native legacy	SAFE	0	1.851304	1800.000000	SAFE	1.736498	0	3	SAFE	1.789401	0	3
+6s317b14	14837	mixed	slow	2015__6s317b14	6s317b14	slow	1120001	rIC3 Native legacy	SAFE	0	2.148910	1800.000000	SAFE	1.089912	0	1	SAFE	2.091526	0	4
+fib_05	2767	mixed	medium	2025__fib_05	fib_	medium	1120001	rIC3 Native legacy	SAFE	0	9.050250	1800.000000	SAFE	5.407424	0	1	SAFE	9.013680	0	3
+beemlann2f1	3617	mixed	slow	2015__beemlann2f1	beemlann	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.310683	1800.000000	SAFE	0.271064	0	2	SAFE	0.260480	0	4
+cancel_var_through_overflow	12284	mixed	medium	2024__cancel_var_through_overflow	cancel_var_through_overflow	medium	1120001	rIC3 Native legacy	SAFE	0	13.238873	1800.000000	SAFE	5.038750	0	3	SAFE	13.197814	0	4
+elevator_spec3_product19.cil	2050522	mixed	medium	2025__elevator_spec3_product19.cil	elevator_spec	medium	1120001	rIC3 Native product-sum-high	UNSAFE	0	10.346227	1800.000000	UNSAFE	10.307103	0	2	UNSAFE	8.231533	0	1
+bob9234spec4neg	2393	mixed	slow	2015__bob9234spec4neg	bob	slow	1120001	rIC3 Native legacy	UNSAFE	0	0.097260	1800.000000	UNSAFE	0.066217	0	1	UNSAFE	0.072930	0	1
+hwmcc2015__data__beemlmprt8f1	6310	mixed	slow	2015__beemlmprt8f1	beemlmprt	slow	1120001	rIC3 Native legacy	UNSAFE	0	0.695111	1800.000000	UNSAFE	0.614491	0	1	UNSAFE	0.659052	0	4
+beemmcs6f1	5044	mixed	slow	2015__beemmcs6f1	beemmcs	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.753168	1800.000000	SAFE	0.740733	0	1	SAFE	0.727681	0	2
+hwmcc2015__data__boblivea	2031	mixed	slow	2015__boblivea	boblivea	slow	1120001	rIC3 Native legacy	SAFE	0	0.520812	1800.000000	SAFE	0.325827	0	3	SAFE	0.498275	0	1
+bobcohdoptdcd4	1290	mixed	slow	2015__bobcohdoptdcd4	bobcohdoptdcd	slow	1120001	rIC3 Native product-sum-high	SAFE	0	1.222326	1800.000000	SAFE	1.209189	0	1	SAFE	0.869794	0	2
+pdtpmsns2	7215	mixed	slow	2015__pdtpmsns2	pdtpmsns	slow	1120001	rIC3 Native product-sum-high	SAFE	0	1.209349	1800.000000	SAFE	1.195616	0	2	SAFE	0.928518	0	2
+pdtpmscoherence	3669	mixed	slow	2015__pdtpmscoherence	pdtpmscoherence	slow	1120001	rIC3 Native product-sum-high	SAFE	0	1.960690	1800.000000	SAFE	1.944481	0	1	SAFE	1.758533	0	2
+hwmcc2015__data__6s344rb150	394072	mixed	slow	2015__6s344rb150	6s344rb150	slow	1120001	rIC3 Native product-sum-high	SAFE	0	5.662025	1800.000000	SAFE	5.572201	0	3	SAFE	4.461870	0	3
+power2sum256	711	mixed	slow	2015__power2sum256	power	slow	1120001	rIC3 Native legacy	SAFE	0	0.202027	1800.000000	SAFE	0.160529	0	2	SAFE	0.174679	0	2
+oski15a14b07s	166979	mixed	slow	2015__oski15a14b07s	oski	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	2.570791	1800.000000	UNSAFE	2.545885	0	1	UNSAFE	2.370226	0	2
+hwmcc2015__data__pdtswvtma6x4p1	6649	mixed	slow	2015__pdtswvtma6x4p1	pdtswvtma	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.992483	1800.000000	SAFE	0.948117	0	3	SAFE	0.943069	0	4
+6s374b114	1382801	mixed	slow	2017__6s374b114	6s374b114	slow	1120001	rIC3 Native legacy	SAFE	0	0.770856	1800.000000	SAFE	0.674375	0	3	SAFE	0.726938	0	3
+bob05	73107	mixed	slow	2017__bob05	bob	slow	1120001	rIC3 Native product-sum-high	SAFE	0	1.775689	1800.000000	SAFE	1.750536	0	2	SAFE	1.025459	0	3
+vcegar_QF_BV_ar	202742	mixed	medium	2020__vcegar_QF_BV_ar	vcegar_QF_BV_ar	medium	1120001	rIC3 Native product-sum-high	SAFE	0	20.586675	1800.000000	SAFE	20.522762	0	2	SAFE	19.871736	0	2
+prodcellp0neg	3932	mixed	slow	2015__prodcellp0neg	prodcellp	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	5.207214	1800.000000	UNSAFE	5.154123	0	4	UNSAFE	5.097648	0	2
+irstdme6	6102	mixed	slow	2017__irstdme6	irstdme	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.350148	1800.000000	UNSAFE	0.334448	0	3	UNSAFE	0.274746	0	4
+6s173	7985	mixed	slow	2015__6s173	6s173	slow	1120001	rIC3 Native legacy	SAFE	0	13.774180	1800.000000	SAFE	13.417269	0	1	SAFE	13.761637	0	1
+6s385rb444	657301	mixed	slow	2015__6s385rb444	6s385rb444	slow	1120001	rIC3 Native product-sum-high	SAFE	0	11.915133	1800.000000	SAFE	11.737610	0	2	SAFE	9.472198	0	4
+pj2018	85817	mixed	slow	2015__pj2018	pj	slow	1120001	rIC3 Native product-sum-high	SAFE	0	6.742654	1800.000000	SAFE	6.700624	0	1	SAFE	4.895590	0	1
+adding.5.prop1-func-interl	2505	mixed	slow	2019__adding.5.prop1-func-interl	adding	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.467661	1800.000000	UNSAFE	0.447508	0	2	UNSAFE	0.284774	0	2
+intel007	40800	mixed	slow	2017__intel007	intel	slow	1120001	rIC3 Native product-sum-high	SAFE	0	5.483707	1800.000000	SAFE	5.458126	0	3	SAFE	4.845725	0	2
+pj2016	115260	mixed	slow	2017__pj2016	pj	slow	1120001	rIC3 Native product-sum-high	SAFE	0	3.471152	1800.000000	SAFE	3.446658	0	2	SAFE	2.991443	0	2
+bc57sensorsp0	5670	mixed	slow	2015__bc57sensorsp0	bc	slow	1120001	rIC3 Native legacy	UNSAFE	0	14.490606	1800.000000	UNSAFE	12.339077	0	2	UNSAFE	14.449709	0	4
+hwmcc2019__data__cal100	87433	mixed	slow	2019__cal100	cal	slow	1120001	rIC3 Native legacy	SAFE	0	4.220291	1800.000000	SAFE	4.157715	0	1	SAFE	4.172328	0	3
+cal128	87223	mixed	slow	2019__cal128	cal	slow	1120001	rIC3 Native product-sum-high	SAFE	0	4.087045	1800.000000	SAFE	4.030821	0	4	SAFE	3.757936	0	2
+picorv32-check-p06	123482	mixed	slow	2019__picorv32-check-p06	picorv	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.342471	1800.000000	SAFE	0.310699	0	1	SAFE	0.297466	0	1
+yosyshq_appnote_123_veer-p15	1286373	mixed	medium	2024__yosyshq_appnote_123_veer-p15	yosyshq_appnote_	medium	1120001	rIC3 Native legacy	SAFE	0	26.972671	1800.000000	SAFE	26.209949	0	2	SAFE	26.763139	0	3
+hwmcc2019__data__picorv32-check-p12	123482	mixed	slow	2019__picorv32-check-p12	picorv	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.348961	1800.000000	SAFE	0.307037	0	4	SAFE	0.299951	0	3
+hwmcc2019__data__cal140	85573	mixed	slow	2019__cal140	cal	slow	1120001	rIC3 Native product-sum-high	SAFE	0	3.654754	1800.000000	SAFE	3.588261	0	3	SAFE	3.181450	0	2
+hwmcc2019__data__qspiflash_dualflexpress_divfive-p120	32797	mixed	slow	2019__qspiflash_dualflexpress_divfive-p120	qspiflash_dualflexpress_divfive	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.307569	1800.000000	SAFE	0.284928	0	1	SAFE	0.275122	0	4
+qspiflash_dualflexpress_divfive-p137	32796	mixed	slow	2019__qspiflash_dualflexpress_divfive-p137	qspiflash_dualflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	0.206555	1800.000000	SAFE	0.184064	0	3	SAFE	0.192026	0	4
+hwmcc2019__data__cal142	86237	mixed	slow	2019__cal142	cal	slow	1120001	rIC3 Native product-sum-high	SAFE	0	3.127904	1800.000000	SAFE	3.106899	0	2	SAFE	2.903771	0	3
+qspiflash_dualflexpress_divthree-p048	32716	mixed	slow	2019__qspiflash_dualflexpress_divthree-p048	qspiflash_dualflexpress_divthree	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.313304	1800.000000	SAFE	0.274107	0	4	SAFE	0.223253	0	3
+qspiflash_qflexpress_divfive-p058	30128	mixed	slow	2019__qspiflash_qflexpress_divfive-p058	qspiflash_qflexpress_divfive	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.377131	1800.000000	SAFE	0.365448	0	1	SAFE	0.313568	0	2
+productioncellp0	3932	mixed	slow	2017__productioncellp0	productioncellp	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	6.144831	1800.000000	UNSAFE	6.127216	0	2	UNSAFE	5.999988	0	2
+zipcpu-pfcache-p15	251792	mixed	slow	2019__zipcpu-pfcache-p15	zipcpu	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.224745	1800.000000	SAFE	0.212538	0	1	SAFE	0.192339	0	2
+qspiflash_dualflexpress_divfive-p012	32803	mixed	slow	2019__qspiflash_dualflexpress_divfive-p012	qspiflash_dualflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	1.155238	1800.000000	SAFE	0.840965	0	1	SAFE	1.125690	0	2
+hwmcc2019__data__qspiflash_qflexpress_divfive-p128	30189	mixed	slow	2019__qspiflash_qflexpress_divfive-p128	qspiflash_qflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	0.682904	1800.000000	SAFE	0.633477	0	4	SAFE	0.639300	0	3
+hwmcc2019__data__zipcpu-pfcache-p20	251792	mixed	slow	2019__zipcpu-pfcache-p20	zipcpu	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.234269	1800.000000	SAFE	0.222235	0	1	SAFE	0.201262	0	2
+hwmcc2019__data__zipcpu-zipmmu-p39	47301	mixed	slow	2019__zipcpu-zipmmu-p39	zipcpu	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.271221	1800.000000	SAFE	0.258738	0	1	SAFE	0.244646	0	1
+hwmcc2019__data__zipcpu-pfcache-p13	251792	mixed	slow	2019__zipcpu-pfcache-p13	zipcpu	slow	1120001	rIC3 Native legacy	SAFE	0	0.703196	1800.000000	SAFE	0.658906	0	3	SAFE	0.668215	0	1
+bc57sensorsp2	6342	mixed	slow	2017__bc57sensorsp2	bc	slow	1120001	rIC3 Native legacy	UNSAFE	0	12.814598	1800.000000	UNSAFE	11.734935	0	4	UNSAFE	12.757860	0	4
+cal89	74387	mixed	slow	2019__cal89	cal	slow	1120001	rIC3 Native product-sum-high	SAFE	0	3.207178	1800.000000	SAFE	3.159209	0	3	SAFE	2.816205	0	2
+hwmcc2019__data__cal143	87134	mixed	slow	2019__cal143	cal	slow	1120001	rIC3 Native product-sum-high	SAFE	0	4.417946	1800.000000	SAFE	4.371560	0	4	SAFE	4.335889	0	2
+qspiflash_dualflexpress_divfive-p164	32755	mixed	slow	2020__qspiflash_dualflexpress_divfive-p164	qspiflash_dualflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	0.312347	1800.000000	SAFE	0.264417	0	2	SAFE	0.280190	0	2
+qspiflash_dualflexpress_divthree-p005	32841	mixed	slow	2020__qspiflash_dualflexpress_divthree-p005	qspiflash_dualflexpress_divthree	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.459388	1800.000000	SAFE	0.433583	0	3	SAFE	0.361237	0	4
+qspiflash_dualflexpress_divthree-p111	32840	mixed	slow	2020__qspiflash_dualflexpress_divthree-p111	qspiflash_dualflexpress_divthree	slow	1120001	rIC3 Native legacy	SAFE	0	0.323840	1800.000000	SAFE	0.122763	0	3	SAFE	0.289558	0	2
+cal84	68444	mixed	slow	2020__cal84	cal	slow	1120001	rIC3 Native legacy	SAFE	0	3.041891	1800.000000	SAFE	2.756536	0	2	SAFE	3.010172	0	1
+qspiflash_dualflexpress_divthree-p141	32840	mixed	slow	2020__qspiflash_dualflexpress_divthree-p141	qspiflash_dualflexpress_divthree	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.176216	1800.000000	SAFE	0.142375	0	1	SAFE	0.136032	0	4
+cal87	76540	mixed	slow	2020__cal87	cal	slow	1120001	rIC3 Native legacy	SAFE	0	2.986944	1800.000000	SAFE	2.775537	0	4	SAFE	2.849484	0	2
+qspiflash_dualflexpress_divthree-p164	32840	mixed	slow	2020__qspiflash_dualflexpress_divthree-p164	qspiflash_dualflexpress_divthree	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.236414	1800.000000	SAFE	0.223540	0	1	SAFE	0.154820	0	3
+hwmcc2020__data__2019__goel__industry__cal86__cal86	76116	mixed	slow	2020__cal86	cal	slow	1120001	rIC3 Native product-sum-high	SAFE	0	3.258530	1800.000000	SAFE	3.227043	0	2	SAFE	3.060305	0	4
+hwmcc2020__data__2019__wolf__2019C__qspiflash_qflexpress_divfive-p113	30061	mixed	slow	2020__qspiflash_qflexpress_divfive-p113	qspiflash_qflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	0.303552	1800.000000	SAFE	0.223872	0	1	SAFE	0.248728	0	3
+qspiflash_qflexpress_divfive-p139	30045	mixed	slow	2020__qspiflash_qflexpress_divfive-p139	qspiflash_qflexpress_divfive	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.348967	1800.000000	SAFE	0.336870	0	1	SAFE	0.319222	0	3
+qspiflash_qflexpress_divfive-p121	30046	mixed	slow	2020__qspiflash_qflexpress_divfive-p121	qspiflash_qflexpress_divfive	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.522188	1800.000000	SAFE	0.507445	0	2	SAFE	0.426565	0	3
+hwmcc2020__data__2019__goel__industry__cal90__cal90	77042	mixed	slow	2020__cal90	cal	slow	1120001	rIC3 Native legacy	SAFE	0	3.487816	1800.000000	SAFE	2.999137	0	4	SAFE	3.426714	0	2
+hwmcc2020__data__2019__wolf__2019C__vgasim_imgfifo-p099	67131	mixed	slow	2020__vgasim_imgfifo-p099	vgasim_imgfifo	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.446551	1800.000000	SAFE	0.401489	0	4	SAFE	0.389983	0	3
+zipcpu-busdelay-p15	38407	mixed	slow	2020__zipcpu-busdelay-p15	zipcpu	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.216373	1800.000000	SAFE	0.181891	0	1	SAFE	0.169011	0	1
+hwmcc2020__data__2019__mann__data-integrity__unsafe__shift_register_top_w32_d8_e0	20399	mixed	slow	2020__shift_register_top_w32_d8_e0	shift_register_top_w	slow	1120001	rIC3 Native legacy	UNSAFE	0	0.608356	1800.000000	UNSAFE	0.495646	0	4	UNSAFE	0.568327	-15	4
+minepump_spec3_product49.cil	176965	mixed	medium	2025__minepump_spec3_product49.cil	minepump_spec	medium	1120001	rIC3 Native product-sum-high	SAFE	0	28.704606	1800.000000	SAFE	28.567000	0	4	SAFE	24.077413	0	2
+hwmcc2020__data__2019__wolf__2018D__zipcpu-zipmmu-p39	47284	mixed	slow	2020__zipcpu-zipmmu-p39	zipcpu	slow	1120001	rIC3 Native legacy	SAFE	0	0.259639	1800.000000	SAFE	0.211284	0	1	SAFE	0.224444	0	3
+hwmcc2020__data__2019__wolf__2018D__zipcpu-pfcache-p13	250943	mixed	slow	2020__zipcpu-pfcache-p13	zipcpu	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.676133	1800.000000	SAFE	0.651921	0	1	SAFE	0.650246	0	1
+brp2.3.prop2-func-interl	11544	mixed	slow	2024__brp2.3.prop2-func-interl	brp	slow	1120001	rIC3 Native legacy	SAFE	0	0.485121	1800.000000	SAFE	0.425926	0	4	SAFE	0.459018	0	3
+gen103	24946	mixed	slow	2024__gen103	gen	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.700368	1800.000000	SAFE	0.674180	0	1	SAFE	0.631557	0	1
+gen53	24946	mixed	slow	2024__gen53	gen	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.703035	1800.000000	SAFE	0.688597	0	3	SAFE	0.649361	0	2
+qspiflash_dualflexpress_divfive-p040	32714	mixed	slow	2024__qspiflash_dualflexpress_divfive-p040	qspiflash_dualflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	0.369896	1800.000000	SAFE	0.203171	0	2	SAFE	0.331794	0	3
+zipcpu-zipmmu-p12	47167	mixed	slow	2024__zipcpu-zipmmu-p12	zipcpu	slow	1120001	rIC3 Native legacy	SAFE	0	0.828340	1800.000000	SAFE	0.696807	0	2	SAFE	0.807137	0	1
+hwmcc2020__data__2019__wolf__2019C__dspfilters_fastfir_second-p21	134572	mixed	slow	2020__dspfilters_fastfir_second-p21	dspfilters_fastfir_second	slow	1120001	rIC3 Native legacy	SAFE	0	5.377580	1800.000000	SAFE	4.159096	0	3	SAFE	5.345941	0	1
+intel026	17526	mixed	slow	2017__intel026	intel	slow	1120001	rIC3 Native legacy	SAFE	0	16.029752	1800.000000	SAFE	14.994784	0	3	SAFE	15.988216	0	2
+NO_04	39628	mixed	slow	2025__NO_04	NO_	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.562870	1800.000000	UNSAFE	0.507462	0	4	UNSAFE	0.451260	0	1
+arbitrated_top_n4_w16_d8_e0	47250	mixed	slow	2025__arbitrated_top_n4_w16_d8_e0	arbitrated_top_n	slow	1120001	rIC3 Native legacy	UNSAFE	0	0.496873	1800.000000	UNSAFE	0.430221	0	4	UNSAFE	0.463717	-15	4
+Problem10_label21	415577	mixed	medium	2025__Problem10_label21	Problem	medium	1120001	rIC3 Native legacy	SAFE	0	37.084859	1800.000000	SAFE	36.451856	0	1	SAFE	36.971462	0	1
+yosyshq_appnote_123_veer_axi-p32	1320449	mixed	medium	2024__yosyshq_appnote_123_veer_axi-p32	yosyshq_appnote_	medium	1120001	rIC3 Native legacy	SAFE	0	37.792574	1800.000000	SAFE	22.447786	0	2	SAFE	37.625878	0	1
+hwmcc2020__data__2019__wolf__2019C__dspfilters_fastfir_second-p04	134598	mixed	slow	2020__dspfilters_fastfir_second-p04	dspfilters_fastfir_second	slow	1120001	rIC3 Native product-sum-high	SAFE	0	10.787693	1800.000000	SAFE	10.747164	0	3	SAFE	7.219021	0	1
+Problem04_label27	430824	mixed	slow	2024__Problem04_label27	Problem	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	7.560078	1800.000000	UNSAFE	7.494104	0	2	UNSAFE	5.416771	0	1
+benchmarks_output_btor2_example_410_miter_miter	33764	mixed	slow	2025__benchmarks_output_btor2_example_410_miter_miter	benchmarks_output_btor	slow	1120001	rIC3 Native product-sum-high	SAFE	0	1.961962	1800.000000	SAFE	1.948374	0	2	SAFE	1.312768	0	1
+benchmarks_output_btor2_example_162_miter_miter	47703	mixed	slow	2025__benchmarks_output_btor2_example_162_miter_miter	benchmarks_output_btor	slow	1120001	rIC3 Native product-sum-high	SAFE	0	2.951515	1800.000000	SAFE	2.927212	0	1	SAFE	1.804438	0	1
+dblclockfft_butterfly_ck2_r0-p229	68739	mixed	slow	2025__dblclockfft_butterfly_ck2_r0-p229	dblclockfft_butterfly_ck	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.700371	1800.000000	SAFE	0.671130	0	2	SAFE	0.669564	0	1
+gen119	24948	mixed	slow	2025__gen119	gen	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.694356	1800.000000	SAFE	0.669641	0	2	SAFE	0.611752	0	4
+gen93	24948	mixed	slow	2025__gen93	gen	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.713730	1800.000000	SAFE	0.683978	0	3	SAFE	0.627141	0	3
+hwmcc2025__data__safety__2019__goel__industry__cal86__cal86	77073	mixed	slow	2025__cal86	cal	slow	1120001	rIC3 Native legacy	SAFE	0	3.444168	1800.000000	SAFE	3.286256	0	4	SAFE	3.391754	0	3
+hwmcc2025__data__safety__2019__goel__industry__cal90__cal90	76477	mixed	slow	2025__cal90	cal	slow	1120001	rIC3 Native legacy	SAFE	0	3.454990	1800.000000	SAFE	3.242450	0	1	SAFE	3.420407	0	1
+hwmcc2025__data__safety__2019__wolf__2019C__qspiflash_dualflexpress_divthree-p161	11918	mixed	slow	2025__qspiflash_dualflexpress_divthree-p161	qspiflash_dualflexpress_divthree	slow	1120001	rIC3 Native product-sum-high	SAFE	0	0.695844	1800.000000	SAFE	0.666778	0	4	SAFE	0.381720	0	2
+qspiflash_dualflexpress_divthree-p46	10151	mixed	slow	2025__qspiflash_dualflexpress_divthree-p46	qspiflash_dualflexpress_divthree	slow	1120001	rIC3 Native legacy	SAFE	0	0.667141	1800.000000	SAFE	0.381820	0	3	SAFE	0.628817	0	3
+hwmcc2025__data__safety__2019__wolf__2019C__qspiflash_qflexpress_divfive-p128	10489	mixed	slow	2025__qspiflash_qflexpress_divfive-p128	qspiflash_qflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	0.667635	1800.000000	SAFE	0.595297	0	1	SAFE	0.654842	0	1
+qspiflash_qflexpress_divfive-p39	10165	mixed	slow	2025__qspiflash_qflexpress_divfive-p39	qspiflash_qflexpress_divfive	slow	1120001	rIC3 Native legacy	SAFE	0	0.352592	1800.000000	SAFE	0.213213	0	4	SAFE	0.311229	0	3
+dspfilters_fastfir_second-p50	127870	mixed	slow	2025__dspfilters_fastfir_second-p50	dspfilters_fastfir_second	slow	1120001	rIC3 Native product-sum-high	SAFE	0	5.713193	1800.000000	SAFE	5.654403	0	4	SAFE	4.515278	0	2
+hwmcc2025__data__safety__2024__yosyshq__appnote_123__cv32e40x__yosyshq_appnote_123_cv32e40x-p724	270837	mixed	slow	2025__yosyshq_appnote_123_cv32e40x-p724	yosyshq_appnote_	slow	1120001	rIC3 Native product-sum-high	SAFE	0	3.380674	1800.000000	SAFE	3.331635	0	4	SAFE	3.240168	0	2
+newton_1_5	427618	mixed	slow	2024__newton_1_5	newton_	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	16.435207	1800.000000	UNSAFE	16.301431	0	2	UNSAFE	11.657828	0	4
+benchmarks_output_btor2_example_110_miter_miter	59726	mixed	slow	2025__benchmarks_output_btor2_example_110_miter_miter	benchmarks_output_btor	slow	1120001	rIC3 Native legacy	SAFE	0	19.246371	1800.000000	SAFE	4.713901	0	2	SAFE	19.211997	0	2
+Problem03_label05	177038	mixed	slow	2025__Problem03_label05	Problem	slow	1120001	rIC3 Native legacy	SAFE	0	35.397755	1800.000000	SAFE	23.817910	0	1	SAFE	35.355774	0	3
+pc_sfifo_3.cil+token_ring.01.cil-2	325265	mixed	slow	2025__pc_sfifo_3.cil+token_ring.01.cil-2	pc_sfifo_	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	37.006753	1800.000000	UNSAFE	36.934945	0	2	UNSAFE	33.886717	0	2
+zonotope_2	126573	mixed	slow	2024__zonotope_2	zonotope_	slow	1120001	rIC3 Native legacy	SAFE	0	47.637106	1800.000000	SAFE	43.087473	0	1	SAFE	47.585247	0	1
+elevator_spec3_product18.cil	22763958	mixed	medium	2025__elevator_spec3_product18.cil	elevator_spec	medium	1120001	rIC3 Native product-sum-high	SAFE	0	84.878525	1800.000000	SAFE	84.376708	0	1	SAFE	69.371808	0	1
+hwmcc2019__data__vgasim_imgfifo-p070	67115	mixed	slow	2019__vgasim_imgfifo-p070	vgasim_imgfifo	slow	1120001	rIC3 Native product-sum-high	SAFE	0	204.965494	1800.000000	SAFE	204.617768	0	1	SAFE	82.554155	0	1
+geo1-u_valuebound100	123205	mixed	slow	2025__geo1-u_valuebound100	geo	slow	1120001	rIC3 Native product-sum-high	UNSAFE	0	202.791060	1800.000000	UNSAFE	202.718674	0	4	UNSAFE	149.406851	0	4
+hwmcc2015__data__6s404rb1	490480	mixed	timeout	2015__6s404rb1	6s404rb1	timeout	1120001	rIC3 Native legacy	SAFE	0	9.566583	1800.000000	SAFE	8.264839	0	3	SAFE	9.512692	0	2
+6s43	26573	mixed	timeout	2015__6s43	6s43	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	2.879214	1800.000000	SAFE	2.826894	0	4	SAFE	2.661293	0	3
+6s350rb35	8167549	mixed	timeout	2015__6s350rb35	6s350rb35	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	268.085615	1800.000000	UNSAFE	267.320670	0	2	UNSAFE	263.287995	0	3
+6s350rb46	8167549	mixed	timeout	2015__6s350rb46	6s350rb46	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	268.486678	1800.000000	UNSAFE	267.801278	0	1	UNSAFE	263.732182	0	2
+Problem07_label01	10562031	mixed	slow	2024__Problem07_label01	Problem	slow	1120001	rIC3 Native legacy	SAFE	0	332.776535	1800.000000	SAFE	80.678627	0	4	SAFE	332.147283	0	2
+beembrptwo6b1	11693	mixed	timeout	2015__beembrptwo6b1	beembrptwo	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	25.597256	1800.000000	UNSAFE	25.582890	0	2	UNSAFE	4.817449	0	1
+6s52	4477	mixed	timeout	2015__6s52	6s52	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	177.770894	1800.000000	SAFE	177.649277	0	4	SAFE	125.491425	0	1
+hwmcc2020__data__2019__wolf__2019C__vgasim_imgfifo-p109	67243	mixed	slow	2020__vgasim_imgfifo-p109	vgasim_imgfifo	slow	1120001	rIC3 Native product-sum-high	SAFE	0	545.959795	1800.000000	SAFE	545.590319	0	3	SAFE	76.509399	0	4
+beemfwt2b2	41126	mixed	timeout	2015__beemfwt2b2	beemfwt	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	35.680936	1800.000000	SAFE	35.655932	0	1	SAFE	25.318615	0	2
+beemandrsn4b1	5357	mixed	timeout	2015__beemandrsn4b1	beemandrsn	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	749.960796	1800.000000	SAFE	749.935117	0	2	SAFE	747.093046	0	3
+6s342rb131	1722353	mixed	timeout	2015__6s342rb131	6s342rb131	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	1212.055079	1800.000000	SAFE	1211.915859	0	2	SAFE	14.011341	0	3
+gcd_2+newton_3_7	1306359	mixed	medium	2024__gcd_2+newton_3_7	gcd_	medium	1120001		UNKNOWN	0	1800.117591	1800.000000	TIMEOUT	1800.066288	-15	1	TIMEOUT	1800.065460	-15	1
+AllInterval-020	312209	mixed	slow	2025__AllInterval-020	AllInterval	slow	1120001		UNKNOWN	0	1800.059319	1800.000000	TIMEOUT	1800.017505	-15	1	TIMEOUT	1800.017100	-15	1
+6s404rb4	490480	mixed	timeout	2017__6s404rb4	6s404rb4	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	10.124413	1800.000000	SAFE	10.054207	0	1	SAFE	9.624671	0	4
+6s340rb27	166563	mixed	timeout	2015__6s340rb27	6s340rb27	timeout	1120001		UNKNOWN	0	1800.106502	1800.000000	TIMEOUT	1800.065645	-15	1	TIMEOUT	1800.064914	-15	1
+6s340rb63	166563	mixed	timeout	2015__6s340rb63	6s340rb63	timeout	1120001		UNKNOWN	0	1800.083760	1800.000000	TIMEOUT	1800.065588	-15	1	TIMEOUT	1800.065875	-15	1
+hwmcc2015__data__6s341r	156684	mixed	timeout	2015__6s341r	6s341r	timeout	1120001		UNKNOWN	0	1800.077109	1800.000000	TIMEOUT	1800.032230	-15	1	TIMEOUT	1800.032752	-15	1
+hwmcc2015__data__6s342rb122	1722353	mixed	timeout	2015__6s342rb122	6s342rb122	timeout	1120001		UNKNOWN	0	1800.160994	1800.000000	TIMEOUT	1800.066079	-15	1	TIMEOUT	1800.115349	-15	1
+6s362rb0	34836	mixed	timeout	2015__6s362rb0	6s362rb0	timeout	1120001		UNKNOWN	0	1800.303398	1800.000000	TIMEOUT	1800.166030	-15	1	TIMEOUT	1800.115310	-15	1
+cmudme2	1404	mixed	timeout	2017__cmudme2	cmudme	timeout	1120001	rIC3 Native legacy	SAFE	0	9.778187	1800.000000	SAFE	8.538836	0	4	SAFE	9.716366	0	4
+hwmcc2015__data__6s377r	385693	mixed	timeout	2015__6s377r	6s377r	timeout	1120001		UNKNOWN	0	1800.095963	1800.000000	TIMEOUT	1800.066316	-15	1	TIMEOUT	1800.065929	-15	1
+intel044	19291	mixed	timeout	2017__intel044	intel	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	36.118725	1800.000000	UNSAFE	36.085416	0	2	UNSAFE	32.535145	0	4
+intel046	19291	mixed	timeout	2017__intel046	intel	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	36.455333	1800.000000	UNSAFE	36.427475	0	2	UNSAFE	30.190200	0	3
+intel047	19287	mixed	timeout	2017__intel047	intel	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	34.017964	1800.000000	UNSAFE	33.993876	0	1	UNSAFE	32.836294	0	1
+beembkry8b1	15961	mixed	timeout	2015__beembkry8b1	beembkry	timeout	1120001		UNKNOWN	0	1800.058602	1800.000000	TIMEOUT	1800.016964	-15	1	TIMEOUT	1800.016275	-15	1
+mentorbm1and	133446	mixed	timeout	2017__mentorbm1and	mentorbm	timeout	1120001	rIC3 Native legacy	UNSAFE	0	2.410447	1800.000000	UNSAFE	2.126105	0	2	UNSAFE	2.350297	0	3
+beemcmbrdg7f2	23513	mixed	timeout	2015__beemcmbrdg7f2	beemcmbrdg	timeout	1120001		UNKNOWN	0	1800.072817	1800.000000	TIMEOUT	1800.033576	-15	1	TIMEOUT	1800.033152	-15	1
+beemextnc1f1	13960	mixed	timeout	2015__beemextnc1f1	beemextnc	timeout	1120001		UNKNOWN	0	1800.065609	1800.000000	TIMEOUT	1800.033087	-15	1	TIMEOUT	1800.032804	-15	1
+beemhanoi4b1	37990	mixed	timeout	2015__beemhanoi4b1	beemhanoi	timeout	1120001		UNKNOWN	0	1800.057503	1800.000000	TIMEOUT	1800.008060	-15	1	TIMEOUT	1800.017033	-15	1
+beemkrebs4b1	10215	mixed	timeout	2015__beemkrebs4b1	beemkrebs	timeout	1120001		UNKNOWN	0	1800.052202	1800.000000	TIMEOUT	1800.032926	-15	1	TIMEOUT	1800.017587	-15	1
+6s351rb15	86741	mixed	timeout	2017__6s351rb15	6s351rb15	timeout	1120001		UNKNOWN	0	1800.147736	1800.000000	TIMEOUT	1800.065395	-15	1	TIMEOUT	1800.066715	-15	1
+pdtswvtma6x6p3	8865	mixed	timeout	2017__pdtswvtma6x6p3	pdtswvtma	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	248.323311	1800.000000	SAFE	248.266216	0	3	SAFE	246.754928	0	4
+oc8051gm49pc	36309	mixed	timeout	2017__oc8051gm49pc	oc	timeout	1120001	rIC3 Native legacy	SAFE	0	977.257202	1800.000000	SAFE	761.581821	0	2	SAFE	977.203327	0	2
+cal93	87822	mixed	timeout	2019__cal93	cal	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	31.546770	1800.000000	SAFE	31.511633	0	1	SAFE	28.287214	0	2
+6s37	13950	mixed	timeout	2017__6s37	6s37	timeout	1120001		UNKNOWN	0	1800.067529	1800.000000	TIMEOUT	1800.033211	-15	1	TIMEOUT	1800.033288	-15	1
+6s41	14458	mixed	timeout	2017__6s41	6s41	timeout	1120001		UNKNOWN	0	1800.095052	1800.000000	TIMEOUT	1800.032672	-15	1	TIMEOUT	1800.033650	-15	4
+6s42	30922	mixed	timeout	2017__6s42	6s42	timeout	1120001		UNKNOWN	0	1800.062063	1800.000000	TIMEOUT	1800.033110	-15	1	TIMEOUT	1800.033269	-15	1
+beemandrsn6b1	13318	mixed	timeout	2017__beemandrsn6b1	beemandrsn	timeout	1120001		UNKNOWN	0	1800.062422	1800.000000	TIMEOUT	1800.017220	-15	1	TIMEOUT	1800.017235	-15	1
+beemcmbrdg1b1	19597	mixed	timeout	2017__beemcmbrdg1b1	beemcmbrdg	timeout	1120001		UNKNOWN	0	1800.041103	1800.000000	TIMEOUT	1800.016556	-15	1	TIMEOUT	1800.016637	-15	1
+qspiflash_dualflexpress_divfive-p057	32796	mixed	timeout	2019__qspiflash_dualflexpress_divfive-p057	qspiflash_dualflexpress_divfive	timeout	1120001	rIC3 Native legacy	SAFE	0	0.567873	1800.000000	SAFE	0.447678	0	2	SAFE	0.551156	0	1
+qspiflash_qflexpress_divfive-p005	30127	mixed	timeout	2019__qspiflash_qflexpress_divfive-p005	qspiflash_qflexpress_divfive	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	0.797187	1800.000000	SAFE	0.778100	0	2	SAFE	0.465173	0	1
+hwmcc2019__data__qspiflash_dualflexpress_divthree-p094	32716	mixed	timeout	2019__qspiflash_dualflexpress_divthree-p094	qspiflash_dualflexpress_divthree	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	3.423807	1800.000000	SAFE	3.407148	0	1	SAFE	2.505982	0	2
+rether.4.prop1-back-serstep	39130	mixed	timeout	2019__rether.4.prop1-back-serstep	rether	timeout	1120001	rIC3 Native legacy	UNSAFE	0	2.849842	1800.000000	UNSAFE	2.334177	0	1	UNSAFE	2.808128	0	3
+hwmcc2019__data__shift_register_top_w64_d8_e0	40699	mixed	timeout	2019__shift_register_top_w64_d8_e0	shift_register_top_w	timeout	1120001	rIC3 Native legacy	UNSAFE	0	1.754145	1800.000000	UNSAFE	1.479967	0	1	UNSAFE	1.707873	0	4
+beemptrsn4b1	7913	mixed	timeout	2017__beemptrsn4b1	beemptrsn	timeout	1120001		UNKNOWN	0	1800.055333	1800.000000	TIMEOUT	1800.016740	-15	1	TIMEOUT	1800.017020	-15	1
+telephony.6.prop1-func-interl	18844	mixed	timeout	2019__telephony.6.prop1-func-interl	telephony	timeout	1120001	rIC3 Native legacy	UNSAFE	0	2.434713	1800.000000	UNSAFE	1.592518	0	4	UNSAFE	2.409470	0	1
+intel025	38989	mixed	timeout	2017__intel025	intel	timeout	1120001		UNKNOWN	0	1800.081987	1800.000000	TIMEOUT	1800.034373	-15	1	TIMEOUT	1800.032399	-15	3
+synapse.7.prop1-func-interl	106658	mixed	timeout	2019__synapse.7.prop1-func-interl	synapse	timeout	1120001	rIC3 Native legacy	SAFE	0	44.038330	1800.000000	SAFE	27.095355	0	1	SAFE	43.973298	0	4
+hwmcc2019__data__vis_arrays_buf_bug	1217	mixed	timeout	2019__vis_arrays_buf_bug	vis_arrays_buf_bug	timeout	1120001	rIC3 Native legacy	UNSAFE	0	9.235831	1800.000000	UNSAFE	6.772657	0	3	UNSAFE	9.173183	0	4
+zipcpu-busdelay-p24	38378	mixed	timeout	2019__zipcpu-busdelay-p24	zipcpu	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	0.923427	1800.000000	SAFE	0.875036	0	4	SAFE	0.344618	0	3
+intel066	40299	mixed	timeout	2017__intel066	intel	timeout	1120001		UNKNOWN	0	1800.041369	1800.000000	TIMEOUT	1800.016934	-15	1	TIMEOUT	1800.008526	-15	1
+oc8051gm49acc	36259	mixed	timeout	2017__oc8051gm49acc	oc	timeout	1120001		UNKNOWN	0	1800.069213	1800.000000	TIMEOUT	1800.017151	-15	1	TIMEOUT	1800.017294	-15	1
+oc8051gm4biram	36265	mixed	timeout	2017__oc8051gm4biram	oc	timeout	1120001		UNKNOWN	0	1800.056990	1800.000000	TIMEOUT	1800.033454	-15	1	TIMEOUT	1800.033006	-15	1
+cal107	88803	mixed	timeout	2020__cal107	cal	timeout	1120001	rIC3 Native legacy	SAFE	0	42.746396	1800.000000	SAFE	36.314404	0	1	SAFE	42.676533	0	3
+picorv32_mutAY_nomem-p8	283383	mixed	timeout	2019__picorv32_mutAY_nomem-p8	picorv	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	465.111109	1800.000000	UNSAFE	465.013434	0	4	UNSAFE	428.580685	0	2
+dspfilters_fastfir_second-p29	134091	mixed	timeout	2019__dspfilters_fastfir_second-p29	dspfilters_fastfir_second	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	581.852239	1800.000000	SAFE	581.752311	0	2	SAFE	536.843843	0	4
+oc8051gm4dacc	36260	mixed	timeout	2017__oc8051gm4dacc	oc	timeout	1120001		UNKNOWN	0	1800.050417	1800.000000	TIMEOUT	1800.033298	-15	1	TIMEOUT	1800.033478	-15	1
+pgm_protocol.7.prop1-back-serstep	137448	mixed	timeout	2020__pgm_protocol.7.prop1-back-serstep	pgm_protocol	timeout	1120001	rIC3 Native legacy	SAFE	0	68.438426	1800.000000	SAFE	62.182531	0	4	SAFE	68.397394	0	1
+dspfilters_fastfir_second-p42	134766	mixed	timeout	2020__dspfilters_fastfir_second-p42	dspfilters_fastfir_second	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	258.582282	1800.000000	SAFE	258.531329	0	1	SAFE	212.100548	0	4
+arbitrated_top_n3_w16_d64_e0	264801	mixed	timeout	2019__arbitrated_top_n3_w16_d64_e0	arbitrated_top_n	timeout	1120001	rIC3 Native legacy	UNSAFE	0	1413.448300	1800.000000	UNSAFE	1139.048252	0	1	UNSAFE	1413.348163	0	2
+hwmcc2020__data__2019__wolf__2019C__qspiflash_dualflexpress_divfive-p007	32755	mixed	timeout	2020__qspiflash_dualflexpress_divfive-p007	qspiflash_dualflexpress_divfive	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	1.309251	1800.000000	SAFE	1.279731	0	4	SAFE	0.617955	0	3
+qspiflash_dualflexpress_divthree-p007	32840	mixed	timeout	2020__qspiflash_dualflexpress_divthree-p007	qspiflash_dualflexpress_divthree	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	0.682388	1800.000000	SAFE	0.670036	0	1	SAFE	0.431752	0	1
+qspiflash_qflexpress_divfive-p094	30046	mixed	timeout	2020__qspiflash_qflexpress_divfive-p094	qspiflash_qflexpress_divfive	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	0.334983	1800.000000	SAFE	0.294458	0	3	SAFE	0.267128	0	2
+rast-p00	298174	mixed	timeout	2020__rast-p00	rast	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	13.352318	1800.000000	SAFE	13.306235	0	4	SAFE	12.818477	0	3
+rushhour.4.prop1-func-interl	211761	mixed	timeout	2020__rushhour.4.prop1-func-interl	rushhour	timeout	1120001	rIC3 Native legacy	SAFE	0	4.348838	1800.000000	SAFE	2.891873	0	2	SAFE	4.310968	0	3
+hwmcc2020__data__2019__mann__data-integrity__unsafe__shift_register_top_w64_d8_e0	40755	mixed	timeout	2020__shift_register_top_w64_d8_e0	shift_register_top_w	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	1.847179	1800.000000	UNSAFE	1.815840	-15	4	UNSAFE	1.626588	0	3
+hwmcc2019__data__VexRiscv-regch0-20-p0	168021	mixed	timeout	2019__VexRiscv-regch0-20-p0	VexRiscv	timeout	1120001		UNKNOWN	0	1800.084448	1800.000000	TIMEOUT	1800.065258	-15	1	TIMEOUT	1800.032873	-15	3
+hwmcc2019__data__circular_pointer_top_w16_d64_e0	77807	mixed	timeout	2019__circular_pointer_top_w16_d64_e0	circular_pointer_top_w	timeout	1120001		UNKNOWN	0	1800.072912	1800.000000	TIMEOUT	1800.032784	-15	1	TIMEOUT	1800.033890	-15	1
+hwmcc2020__data__2019__goel__opensource__vcegar_arrays_itc99_b12_p2__vcegar_arrays_itc99_b12_p2	13187	mixed	timeout	2020__vcegar_arrays_itc99_b12_p2	vcegar_arrays_itc	timeout	1120001	rIC3 Native legacy	UNSAFE	0	571.112525	1800.000000	UNSAFE	320.837329	0	2	UNSAFE	570.988435	0	4
+arbitrated_top_n4_w8_d64_e0	179375	mixed	timeout	2020__arbitrated_top_n4_w8_d64_e0	arbitrated_top_n	timeout	1120001	rIC3 Native legacy	UNSAFE	0	1491.268498	1800.000000	UNSAFE	918.322234	0	3	UNSAFE	1491.121654	0	4
+hwmcc2019__data__mul3	790374	mixed	timeout	2019__mul3	mul	timeout	1120001		UNKNOWN	0	1800.315351	1800.000000	TIMEOUT	1800.215834	-15	1	TIMEOUT	1800.266569	-15	1
+hwmcc2019__data__vcegar_arrays_itc99_b12_p2	13147	mixed	timeout	2019__vcegar_arrays_itc99_b12_p2	vcegar_arrays_itc	timeout	1120001		UNKNOWN	0	1800.133776	1800.000000	TIMEOUT	1800.115356	-15	1	TIMEOUT	1800.116299	-15	1
+vgasim_imgfifo-p039	66838	mixed	timeout	2019__vgasim_imgfifo-p039	vgasim_imgfifo	timeout	1120001		UNKNOWN	0	1800.143503	1800.000000	TIMEOUT	1800.064714	-15	2	TIMEOUT	1800.065453	-15	1
+ILA_Piccolo_LW_sanity	763280	mixed	timeout	2024__ILA_Piccolo_LW_sanity	ILA_Piccolo_LW_sanity	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	25.017683	1800.000000	UNSAFE	24.919881	0	1	UNSAFE	22.285524	0	1
+hwmcc2019__data__vis_arrays_bufferAlloc	1304	mixed	timeout	2019__vis_arrays_bufferAlloc	vis_arrays_bufferAlloc	timeout	1120001		UNKNOWN	0	1800.048743	1800.000000	TIMEOUT	1800.008166	-15	1	TIMEOUT	1800.009614	-15	1
+ILA_Piccolo_SRLI_sanity	761720	mixed	timeout	2024__ILA_Piccolo_SRLI_sanity	ILA_Piccolo_SRLI_sanity	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	17.582766	1800.000000	SAFE	17.509045	0	2	SAFE	11.844396	0	4
+ILA_Piccolo_LHU_sanity	758105	mixed	timeout	2024__ILA_Piccolo_LHU_sanity	ILA_Piccolo_LHU_sanity	timeout	1120001	rIC3 Native legacy	UNSAFE	0	51.839093	1800.000000	UNSAFE	16.451586	0	2	UNSAFE	51.707072	0	2
+hwmcc2019__data__zipversa_composecrc_prf-p03	18043	mixed	timeout	2019__zipversa_composecrc_prf-p03	zipversa_composecrc_prf	timeout	1120001		UNKNOWN	0	1800.041356	1800.000000	TIMEOUT	1800.009944	-15	1	TIMEOUT	1800.008295	-15	1
+ILA_Piccolo_SW_sanity	763202	mixed	timeout	2024__ILA_Piccolo_SW_sanity	ILA_Piccolo_SW_sanity	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	11.520648	1800.000000	UNSAFE	11.431804	0	4	UNSAFE	9.418233	0	3
+hwmcc2020__data__2019__wolf__2018D__VexRiscv-regch0-30-p1	168311	mixed	timeout	2020__VexRiscv-regch0-30-p1	VexRiscv	timeout	1120001		UNKNOWN	0	1800.154442	1800.000000	TIMEOUT	1800.114736	-15	2	TIMEOUT	1800.065238	-15	3
+hwmcc2020__data__2019__mann__data-integrity__unsafe__circular_pointer_top_w32_d32_e0	80501	mixed	timeout	2020__circular_pointer_top_w32_d32_e0	circular_pointer_top_w	timeout	1120001	rIC3 Native legacy	UNSAFE	0	1800.056399	1800.000000	UNSAFE	1766.761832	0	3	TIMEOUT	1800.016693	-15	1
+hwmcc2020__data__2019__goel__industry__mul3__mul3	785802	mixed	timeout	2020__mul3	mul	timeout	1120001		UNKNOWN	0	1800.287684	1800.000000	TIMEOUT	1800.216327	-15	1	TIMEOUT	1800.215845	-15	2
+hwmcc2020__data__2019__wolf__2018D__picorv32-pcregs-p2	145900	mixed	timeout	2020__picorv32-pcregs-p2	picorv	timeout	1120001		UNKNOWN	0	1800.070478	1800.000000	TIMEOUT	1800.033206	-15	1	TIMEOUT	1800.016803	-15	1
+ponylink-slaveTXlen-unsat	197893	mixed	timeout	2020__ponylink-slaveTXlen-unsat	ponylink	timeout	1120001		UNKNOWN	0	1800.342331	1800.000000	TIMEOUT	1800.265263	-15	1	TIMEOUT	1800.215295	-15	1
+Problem10_label08	425354	mixed	timeout	2024__Problem10_label08	Problem	timeout	1120001	rIC3 Native legacy	SAFE	0	54.558026	1800.000000	SAFE	48.780966	0	1	SAFE	54.282564	0	2
+a16-p012	45308	mixed	timeout	2024__a16-p012	a	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	182.641476	1800.000000	SAFE	182.572398	0	3	SAFE	145.029351	0	1
+vgasim_imgfifo-p036	67086	mixed	timeout	2020__vgasim_imgfifo-p036	vgasim_imgfifo	timeout	1120001		UNKNOWN	0	1800.122399	1800.000000	TIMEOUT	1800.064330	-15	1	TIMEOUT	1800.064577	-15	1
+hwmcc2024__data__2019__goel__industry__cal97__cal97	88392	mixed	timeout	2024__cal97	cal	timeout	1120001	rIC3 Native legacy	SAFE	0	32.670348	1800.000000	SAFE	29.542348	0	4	SAFE	32.637270	0	1
+hwmcc2020__data__2019__goel__opensource__vis_arrays_bufferAlloc__vis_arrays_bufferAlloc	1307	mixed	timeout	2020__vis_arrays_bufferAlloc	vis_arrays_bufferAlloc	timeout	1120001		UNKNOWN	0	1800.051838	1800.000000	TIMEOUT	1800.008535	-15	1	TIMEOUT	1800.008585	-15	1
+fib_30	1323	mixed	timeout	2024__fib_30	fib_	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	0.048847	1800.000000	SAFE	0.033496	0	2	SAFE	0.028688	0	3
+zipcpu-zipmmu-p48	47284	mixed	timeout	2020__zipcpu-zipmmu-p48	zipcpu	timeout	1120001		UNKNOWN	0	1800.079999	1800.000000	TIMEOUT	1800.033085	-15	1	TIMEOUT	1800.033186	-15	1
+Problem01_label22	80339	mixed	timeout	2025__Problem01_label22	Problem	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	0.768233	1800.000000	UNSAFE	0.734600	0	4	UNSAFE	0.714564	0	2
+a16-p1	20422	mixed	timeout	2025__a16-p1	a	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	14.805606	1800.000000	UNSAFE	14.784794	0	4	UNSAFE	1.560644	0	3
+arbitrated_top_n4_w128_d8_e0	370772	mixed	timeout	2025__arbitrated_top_n4_w128_d8_e0	arbitrated_top_n	timeout	1120001	rIC3 Native legacy	UNSAFE	0	2.530963	1800.000000	UNSAFE	2.352684	-15	2	UNSAFE	2.486381	0	3
+hwmcc2020__data__2019__wolf__2019C__zipversa_composecrc_prf-p03	17962	mixed	timeout	2020__zipversa_composecrc_prf-p03	zipversa_composecrc_prf	timeout	1120001		UNKNOWN	0	1800.058480	1800.000000	TIMEOUT	1800.008513	-15	1	TIMEOUT	1800.008480	-15	1
+ILA_Piccolo_LHU_problem	742933	mixed	timeout	2024__ILA_Piccolo_LHU_problem	ILA_Piccolo_LHU_problem	timeout	1120001		UNKNOWN	0	1800.117418	1800.000000	TIMEOUT	1800.033109	-15	1	TIMEOUT	1800.032509	-15	1
+benchmarks_output_btor2_example_494_miter_miter	114881	mixed	timeout	2025__benchmarks_output_btor2_example_494_miter_miter	benchmarks_output_btor	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	7.586340	1800.000000	SAFE	7.546136	0	3	SAFE	5.052162	0	1
+ILA_Ridecore_ANDI_sanity	2611265	mixed	timeout	2024__ILA_Ridecore_ANDI_sanity	ILA_Ridecore_ANDI_sanity	timeout	1120001		UNKNOWN	0	1800.154573	1800.000000	TIMEOUT	1800.115976	-15	1	TIMEOUT	1800.116029	-15	1
+ILA_Ridecore_AND_sanity	2627136	mixed	timeout	2024__ILA_Ridecore_AND_sanity	ILA_Ridecore_AND_sanity	timeout	1120001		UNKNOWN	0	1800.157881	1800.000000	TIMEOUT	1800.116204	-15	1	TIMEOUT	1800.115985	-15	1
+ILA_Ridecore_LBU_problem	2560188	mixed	timeout	2024__ILA_Ridecore_LBU_problem	ILA_Ridecore_LBU_problem	timeout	1120001		UNKNOWN	0	1800.173127	1800.000000	TIMEOUT	1800.143296	-15	2	TIMEOUT	1800.139089	-15	2
+microban_64	4803	mixed	timeout	2025__microban_64	microban_	timeout	1120001	rIC3 Native legacy	UNSAFE	0	1.170130	1800.000000	UNSAFE	1.074984	0	2	UNSAFE	1.155784	0	1
+ILA_Ridecore_SLT_sanity	2616300	mixed	timeout	2024__ILA_Ridecore_SLT_sanity	ILA_Ridecore_SLT_sanity	timeout	1120001	rIC3 Native legacy	UNSAFE	0	1800.169664	1800.000000	UNSAFE	420.213403	0	1	TIMEOUT	1800.065678	-15	1
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__circular_pointer_top_w128_d8_e0	95158	mixed	timeout	2025__circular_pointer_top_w128_d8_e0	circular_pointer_top_w	timeout	1120001	rIC3 Native product-sum-high	UNSAFE	0	69.211554	1800.000000	UNSAFE	69.173846	-15	3	UNSAFE	67.054644	-15	4
+pc_sfifo_2.cil-2+token_ring.09.cil-1	1514162	mixed	timeout	2025__pc_sfifo_2.cil-2+token_ring.09.cil-1	pc_sfifo_	timeout	1120001	rIC3 Native legacy	UNSAFE	0	46.266933	1800.000000	UNSAFE	28.782765	0	2	UNSAFE	46.165415	0	1
+ILA_Ridecore_SRAI_sanity	2621076	mixed	timeout	2024__ILA_Ridecore_SRAI_sanity	ILA_Ridecore_SRAI_sanity	timeout	1120001		UNKNOWN	0	1800.205878	1800.000000	TIMEOUT	1800.165874	-15	1	TIMEOUT	1800.114806	-15	3
+mem_slave_tlm.4.cil	761863	mixed	timeout	2025__mem_slave_tlm.4.cil	mem_slave_tlm	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	257.236265	1800.000000	SAFE	257.119934	0	3	SAFE	188.560817	0	2
+hwmcc2025__data__safety__2019__wolf__2019C__qspiflash_dualflexpress_divfive-p133	11210	mixed	timeout	2025__qspiflash_dualflexpress_divfive-p133	qspiflash_dualflexpress_divfive	timeout	1120001	rIC3 Native legacy	SAFE	0	1.852730	1800.000000	SAFE	0.712095	0	3	SAFE	1.808268	0	3
+ILA_Ridecore_SRLI_problem	2559275	mixed	timeout	2024__ILA_Ridecore_SRLI_problem	ILA_Ridecore_SRLI_problem	timeout	1120001		UNKNOWN	0	1800.177872	1800.000000	TIMEOUT	1800.064296	-15	1	TIMEOUT	1800.114773	-15	2
+ILA_Ridecore_SW_problem	2563646	mixed	timeout	2024__ILA_Ridecore_SW_problem	ILA_Ridecore_SW_problem	timeout	1120001		UNKNOWN	0	1800.193951	1800.000000	TIMEOUT	1800.166125	-15	1	TIMEOUT	1800.065034	-15	4
+egcd3-ll_unwindbound2	447978	mixed	timeout	2024__egcd3-ll_unwindbound2	egcd	timeout	1120001	rIC3 Native legacy	UNSAFE	0	1070.553149	1800.000000	UNSAFE	995.190646	0	3	UNSAFE	1070.345667	0	2
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__shift_register_top_w128_d16_e0	160355	mixed	timeout	2025__shift_register_top_w128_d16_e0	shift_register_top_w	timeout	1120001	rIC3 Native legacy	UNSAFE	0	48.526693	1800.000000	UNSAFE	38.368441	0	2	UNSAFE	48.476015	-15	3
+ILA_Ridecore_XOR_sanity	2627296	mixed	timeout	2024__ILA_Ridecore_XOR_sanity	ILA_Ridecore_XOR_sanity	timeout	1120001		UNKNOWN	0	1800.172984	1800.000000	TIMEOUT	1800.115246	-15	3	TIMEOUT	1800.114752	-15	1
+arbitrated_top_n5_w128_d128_e0	7516493	mixed	timeout	2024__arbitrated_top_n5_w128_d128_e0	arbitrated_top_n	timeout	1120001		UNKNOWN	0	1800.430765	1800.000000	TIMEOUT	1800.366244	-15	2	TIMEOUT	1800.367395	-15	3
+gauss_sum.i.p+lhb-reducer	36370	mixed	timeout	2024__gauss_sum.i.p+lhb-reducer	gauss_sum	timeout	1120001		UNKNOWN	0	1800.146274	1800.000000	TIMEOUT	1800.064712	-15	2	TIMEOUT	1800.064771	-15	3
+benchmarks_initial_output_btor2_example_10_miter_miter	542313	mixed	timeout	2025__benchmarks_initial_output_btor2_example_10_miter_miter	benchmarks_initial_output_btor	timeout	1120001		UNKNOWN	0	1800.151917	1800.000000	TIMEOUT	1800.065151	-15	1	TIMEOUT	1800.064996	-15	2
+hwmcc2025__data__safety__2019__goel__industry__cal206__cal206	276805	mixed	timeout	2025__cal206	cal	timeout	1120001		UNKNOWN	0	1800.056959	1800.000000	TIMEOUT	1800.016656	-15	1	TIMEOUT	1800.016963	-15	1
+level_5	29802	mixed	timeout	2025__level_5	level_	timeout	1120001		UNKNOWN	0	1800.070521	1800.000000	TIMEOUT	1800.016050	-15	1	TIMEOUT	1800.016634	-15	1
+pals_opt-floodmax.4.ufo.UNBOUNDED.pals	103562	mixed	timeout	2025__pals_opt-floodmax.4.ufo.UNBOUNDED.pals	pals_opt	timeout	1120001		UNKNOWN	0	1800.119873	1800.000000	TIMEOUT	1800.032422	-15	2	TIMEOUT	1800.032700	-15	2
+pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label00	4345875	mixed	timeout	2025__pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label00	pals_lcr	timeout	1120001		UNKNOWN	0	1800.806179	1800.000000	TIMEOUT	1800.717343	-15	4	TIMEOUT	1800.768048	-15	1
+pgm_protocol.8.prop6-func-interl	88138	mixed	timeout	2025__pgm_protocol.8.prop6-func-interl	pgm_protocol	timeout	1120001		UNKNOWN	0	1800.086542	1800.000000	TIMEOUT	1800.032424	-15	3	TIMEOUT	1800.033322	-15	1
+prodbin-ll_unwindbound50	101628	mixed	timeout	2025__prodbin-ll_unwindbound50	prodbin	timeout	1120001		UNKNOWN	0	1800.087560	1800.000000	TIMEOUT	1800.032388	-15	1	TIMEOUT	1800.032617	-15	1
+hwmcc2025__data__safety__2020__mann__rast-p17	39092	mixed	timeout	2025__rast-p17	rast	timeout	1120001		UNKNOWN	0	1800.510159	1800.000000	TIMEOUT	1800.214624	-15	3	TIMEOUT	1800.165082	-15	2
+rocket_1937	6963149	mixed	timeout	2025__rocket_1937	rocket_	timeout	1120001		UNKNOWN	0	1800.571442	1800.000000	TIMEOUT	1800.214861	-15	2	TIMEOUT	1800.164951	-15	3
+sqrt1-ll_valuebound100	111970	mixed	timeout	2025__sqrt1-ll_valuebound100	sqrt	timeout	1120001	rIC3 Native product-sum-high	SAFE	0	1800.105367	1800.000000	TIMEOUT	1800.032388	-15	1	SAFE	38.636832	0	3

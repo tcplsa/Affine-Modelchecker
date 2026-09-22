@@ -1,0 +1,1218 @@
+{
+  "bad_cone_threshold": 30,
+  "bucket_counts": {
+    "1-9": 30,
+    "10-29": 30,
+    "100+": 30,
+    "30-99": 30,
+    "zero": 30
+  },
+  "candidate_policy": "use width=2 iff bad_cone_xors == 0 or bad_cone_xors >= 100",
+  "description": "Independent confirmation holdout for non-monotonic BVE width policy",
+  "ids": [
+    "2015__6s23",
+    "2017__6s218b2950",
+    "2019__VexRiscv-regch0-20-p1",
+    "2020__VexRiscv-regch0-15-p0",
+    "2024__Problem10_label07",
+    "2025__Problem10_label27",
+    "2015__6s309b034",
+    "2017__6s221rb14",
+    "2019__dspfilters_fastfir_second-p20",
+    "2020__brp2.6.prop3-back-serstep",
+    "2024__a16-p148",
+    "2025__a16-p76",
+    "2015__6s309b046",
+    "2017__6s269r",
+    "2019__picorv32-pcregs-p2",
+    "2020__peg_solitaire.3.prop1-back-serstep",
+    "2024__egcd-ll_unwindbound10",
+    "2025__fifo-p0",
+    "2015__6s339rb19",
+    "2017__6s319r",
+    "2019__ponylink-slaveTXlen-sat",
+    "2020__pgm_protocol.3.prop5-func-interl",
+    "2024__elevator_spec1_product19.cil",
+    "2025__geo2-ll2_unwindbound1",
+    "2015__6s339rb22",
+    "2017__6s343b08",
+    "2019__qspiflash_dualflexpress_divfive-p054",
+    "2020__picorv32-pcregs-p0",
+    "2024__fib_37",
+    "2025__id_build.i.p+nlh-reducer",
+    "2015__6s343b31",
+    "2017__oc8051topo08",
+    "2019__picorv32_mutCX_nomem-p7",
+    "2020__picorv32_mutBY_nomem-p3",
+    "2015__6s35",
+    "2019__picorv32_mutBX_nomem-p0",
+    "2020__picorv32_mutCY_nomem-p0",
+    "2015__6s366r",
+    "2019__picorv32_mutBX_nomem-p1",
+    "2020__picorv32_mutCY_nomem-p3",
+    "2015__6s367r",
+    "2019__picorv32_mutBX_nomem-p3",
+    "2020__picorv32_mutAY_nomem-p1",
+    "2015__6s387rb181",
+    "2019__picorv32_mutCX_nomem-p3",
+    "2020__picorv32_mutBX_nomem-p5",
+    "2015__6s387rb291",
+    "2019__picorv32_mutAX_nomem-p4",
+    "2015__6s401rb051",
+    "2020__picorv32_mutBX_nomem-p0",
+    "2015__6s406rb111",
+    "2020__picorv32_mutCX_nomem-p0",
+    "2015__6s407rb296",
+    "2020__picorv32_mutAX_nomem-p5",
+    "2015__6s413b398",
+    "2020__picorv32_mutAX_nomem-p0",
+    "2015__6s54",
+    "2020__picorv32_mutAX_nomem-p2",
+    "2015__beemldfilt3f1",
+    "2015__beemptrsn7f1",
+    "2015__eijkbs3271",
+    "2019__arbitrated_top_n2_w8_d128_e0",
+    "2020__arbitrated_top_n5_w8_d32_e0",
+    "2025__arbitrated_top_n2_w8_d128_e0",
+    "2015__oski15a14b05s",
+    "2019__circular_pointer_top_w8_d64_e0",
+    "2020__circular_pointer_top_w16_d128_e0",
+    "2025__arbitrated_top_n3_w8_d128_e0",
+    "2015__pdtvistimeout0",
+    "2019__dspfilters_fastfir_second-p04",
+    "2020__dspfilters_fastfir_second-p10",
+    "2025__arbitrated_top_n5_w16_d64_e0",
+    "2015__oski15a14b06s",
+    "2019__shift_register_top_w8_d64_e0",
+    "2020__shift_register_top_w16_d64_e0",
+    "2025__arbitrated_top_n3_w16_d128_e0",
+    "2015__oski15a14b30s",
+    "2020__arbitrated_top_n3_w16_d32_e0",
+    "2019__vgasim_imgfifo-p107",
+    "2020__dspfilters_fastfir_second-p45",
+    "2019__arbitrated_top_n5_w16_d32_e0",
+    "2020__shift_register_top_w16_d128_e0",
+    "2019__circular_pointer_top_w16_d32_e0",
+    "2020__arbitrated_top_n4_w16_d32_e0",
+    "2019__dspfilters_fastfir_second-p17",
+    "2020__dspfilters_fastfir_second-p14",
+    "2019__shift_register_top_w8_d128_e0",
+    "2020__arbitrated_top_n2_w8_d128_e0",
+    "2019__vgasim_imgfifo-p111",
+    "2020__dspfilters_fastfir_second-p43",
+    "2015__prodcellp1",
+    "2019__arbitrated_top_n5_w32_d32_e0",
+    "2020__arbitrated_top_n5_w32_d32_e0",
+    "2025__arbitrated_top_n5_w32_d16_e0",
+    "2019__cal203",
+    "2020__cal156",
+    "2025__benchmarks_initial_output_btor2_example_82_miter_miter",
+    "2019__circular_pointer_top_w32_d32_e0",
+    "2020__circular_pointer_top_w64_d8_e0",
+    "2025__benchmarks_output_btor2_example_291_miter_miter",
+    "2019__dspfilters_fastfir_second-p21",
+    "2020__dspfilters_fastfir_second-p25",
+    "2025__cal222",
+    "2019__picorv32_mutCY_nomem-p8",
+    "2020__picorv32_mutCX_nomem-p8",
+    "2025__circular_pointer_top_w64_d16_e0",
+    "2019__shift_register_top_w32_d8_e0",
+    "2020__shift_register_top_w32_d16_e0",
+    "2025__dspfilters_fastfir_second-p45",
+    "2019__toy_lock_4",
+    "2020__vgasim_imgfifo-p075",
+    "2025__mul1",
+    "2019__vgasim_imgfifo-p088",
+    "2020__zipversa_composecrc_prf-p10",
+    "2025__shift_register_top_w32_d32_e0",
+    "2019__arbitrated_top_n2_w32_d128_e0",
+    "2020__arbitrated_top_n5_w64_d16_e0",
+    "2025__arbitrated_top_n2_w64_d32_e0",
+    "2019__cal222",
+    "2020__cal224",
+    "2015__bob12s03",
+    "2017__oc8051gm81pc",
+    "2019__arbitrated_top_n4_w128_d16_e0",
+    "2020__arbitrated_top_n4_w128_d16_e0",
+    "2024__ILA_Flute_XORI_sanity",
+    "2025__Problem01_label05",
+    "2015__bobsmmem",
+    "2017__oc8051gm7daddr",
+    "2019__cal144",
+    "2020__cal106",
+    "2024__ILA_Piccolo_ADDI_problem",
+    "2025__arbitrated_top_n3_w128_d8_e0",
+    "2015__bobsmmips",
+    "2017__oc8051gmecacc",
+    "2019__mul9",
+    "2020__circular_pointer_top_w128_d128_e0",
+    "2024__ILA_Piccolo_BEQ_sanity",
+    "2025__benchmarks_initial_output_btor2_example_95_miter_miter",
+    "2015__oski15a10b07s",
+    "2017__oc8051gm64pc",
+    "2019__shift_register_top_w128_d64_e0",
+    "2020__mul2",
+    "2024__ILA_Piccolo_BGEU_sanity",
+    "2025__benchmarks_output_btor2_example_263_miter_miter",
+    "2015__pdtvisvsa16a29",
+    "2017__oc8051gm0caddr",
+    "2019__arbitrated_top_n5_w128_d16_e0",
+    "2020__shift_register_top_w128_d64_e0",
+    "2024__ILA_Piccolo_JALR_sanity",
+    "2025__cal135"
+  ],
+  "models": [
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s23",
+      "id": "2015__6s23",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s218b2950",
+      "id": "2017__6s218b2950",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "VexRiscv",
+      "id": "2019__VexRiscv-regch0-20-p1",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "VexRiscv",
+      "id": "2020__VexRiscv-regch0-15-p0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "Problem",
+      "id": "2024__Problem10_label07",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "Problem",
+      "id": "2025__Problem10_label27",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s309b034",
+      "id": "2015__6s309b034",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s221rb14",
+      "id": "2017__6s221rb14",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "dspfilters_fastfir_second",
+      "id": "2019__dspfilters_fastfir_second-p20",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "brp",
+      "id": "2020__brp2.6.prop3-back-serstep",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "a",
+      "id": "2024__a16-p148",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "a",
+      "id": "2025__a16-p76",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s309b046",
+      "id": "2015__6s309b046",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s269r",
+      "id": "2017__6s269r",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "picorv",
+      "id": "2019__picorv32-pcregs-p2",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "peg_solitaire",
+      "id": "2020__peg_solitaire.3.prop1-back-serstep",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "egcd",
+      "id": "2024__egcd-ll_unwindbound10",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "fifo",
+      "id": "2025__fifo-p0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s339rb19",
+      "id": "2015__6s339rb19",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s319r",
+      "id": "2017__6s319r",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "ponylink",
+      "id": "2019__ponylink-slaveTXlen-sat",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "pgm_protocol",
+      "id": "2020__pgm_protocol.3.prop5-func-interl",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "elevator_spec",
+      "id": "2024__elevator_spec1_product19.cil",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "geo",
+      "id": "2025__geo2-ll2_unwindbound1",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s339rb22",
+      "id": "2015__6s339rb22",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "6s343b08",
+      "id": "2017__6s343b08",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "qspiflash_dualflexpress_divfive",
+      "id": "2019__qspiflash_dualflexpress_divfive-p054",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "picorv",
+      "id": "2020__picorv32-pcregs-p0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "fib_",
+      "id": "2024__fib_37",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 0,
+      "bucket": "zero",
+      "family": "id_build",
+      "id": "2025__id_build.i.p+nlh-reducer",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 6,
+      "bucket": "1-9",
+      "family": "6s343b31",
+      "id": "2015__6s343b31",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "oc",
+      "id": "2017__oc8051topo08",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2019__picorv32_mutCX_nomem-p7",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutBY_nomem-p3",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "6s35",
+      "id": "2015__6s35",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2019__picorv32_mutBX_nomem-p0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutCY_nomem-p0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "6s366r",
+      "id": "2015__6s366r",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2019__picorv32_mutBX_nomem-p1",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutCY_nomem-p3",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "6s367r",
+      "id": "2015__6s367r",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2019__picorv32_mutBX_nomem-p3",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutAY_nomem-p1",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "6s387rb181",
+      "id": "2015__6s387rb181",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2019__picorv32_mutCX_nomem-p3",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 4,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutBX_nomem-p5",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "6s387rb291",
+      "id": "2015__6s387rb291",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2019__picorv32_mutAX_nomem-p4",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "6s401rb051",
+      "id": "2015__6s401rb051",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutBX_nomem-p0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 2,
+      "bucket": "1-9",
+      "family": "6s406rb111",
+      "id": "2015__6s406rb111",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutCX_nomem-p0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 9,
+      "bucket": "1-9",
+      "family": "6s407rb296",
+      "id": "2015__6s407rb296",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 4,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutAX_nomem-p5",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1,
+      "bucket": "1-9",
+      "family": "6s413b398",
+      "id": "2015__6s413b398",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutAX_nomem-p0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 6,
+      "bucket": "1-9",
+      "family": "6s54",
+      "id": "2015__6s54",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 8,
+      "bucket": "1-9",
+      "family": "picorv",
+      "id": "2020__picorv32_mutAX_nomem-p2",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 2,
+      "bucket": "1-9",
+      "family": "beemldfilt",
+      "id": "2015__beemldfilt3f1",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 4,
+      "bucket": "1-9",
+      "family": "beemptrsn",
+      "id": "2015__beemptrsn7f1",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 14,
+      "bucket": "10-29",
+      "family": "eijkbs",
+      "id": "2015__eijkbs3271",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 18,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n2_w8_d128_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 16,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n5_w8_d32_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 18,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n2_w8_d128_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 19,
+      "bucket": "10-29",
+      "family": "oski",
+      "id": "2015__oski15a14b05s",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 17,
+      "bucket": "10-29",
+      "family": "circular_pointer_top_w",
+      "id": "2019__circular_pointer_top_w8_d64_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 26,
+      "bucket": "10-29",
+      "family": "circular_pointer_top_w",
+      "id": "2020__circular_pointer_top_w16_d128_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 18,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n3_w8_d128_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 15,
+      "bucket": "10-29",
+      "family": "pdtvistimeout",
+      "id": "2015__pdtvistimeout0",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 18,
+      "bucket": "10-29",
+      "family": "dspfilters_fastfir_second",
+      "id": "2019__dspfilters_fastfir_second-p04",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 26,
+      "bucket": "10-29",
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p10",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 25,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n5_w16_d64_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 10,
+      "bucket": "10-29",
+      "family": "oski",
+      "id": "2015__oski15a14b06s",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 16,
+      "bucket": "10-29",
+      "family": "shift_register_top_w",
+      "id": "2019__shift_register_top_w8_d64_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 24,
+      "bucket": "10-29",
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w16_d64_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 26,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n3_w16_d128_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 10,
+      "bucket": "10-29",
+      "family": "oski",
+      "id": "2015__oski15a14b30s",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 24,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n3_w16_d32_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 12,
+      "bucket": "10-29",
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p107",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 26,
+      "bucket": "10-29",
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p45",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 24,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n5_w16_d32_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 25,
+      "bucket": "10-29",
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w16_d128_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 24,
+      "bucket": "10-29",
+      "family": "circular_pointer_top_w",
+      "id": "2019__circular_pointer_top_w16_d32_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 24,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n4_w16_d32_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 26,
+      "bucket": "10-29",
+      "family": "dspfilters_fastfir_second",
+      "id": "2019__dspfilters_fastfir_second-p17",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 26,
+      "bucket": "10-29",
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p14",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 17,
+      "bucket": "10-29",
+      "family": "shift_register_top_w",
+      "id": "2019__shift_register_top_w8_d128_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 18,
+      "bucket": "10-29",
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n2_w8_d128_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 10,
+      "bucket": "10-29",
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p111",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 26,
+      "bucket": "10-29",
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p43",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 62,
+      "bucket": "30-99",
+      "family": "prodcellp",
+      "id": "2015__prodcellp1",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 40,
+      "bucket": "30-99",
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n5_w32_d32_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 40,
+      "bucket": "30-99",
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n5_w32_d32_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 39,
+      "bucket": "30-99",
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n5_w32_d16_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 92,
+      "bucket": "30-99",
+      "family": "cal",
+      "id": "2019__cal203",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 92,
+      "bucket": "30-99",
+      "family": "cal",
+      "id": "2020__cal156",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 33,
+      "bucket": "30-99",
+      "family": "benchmarks_initial_output_btor",
+      "id": "2025__benchmarks_initial_output_btor2_example_82_miter_miter",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 40,
+      "bucket": "30-99",
+      "family": "circular_pointer_top_w",
+      "id": "2019__circular_pointer_top_w32_d32_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 70,
+      "bucket": "30-99",
+      "family": "circular_pointer_top_w",
+      "id": "2020__circular_pointer_top_w64_d8_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 97,
+      "bucket": "30-99",
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_291_miter_miter",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 40,
+      "bucket": "30-99",
+      "family": "dspfilters_fastfir_second",
+      "id": "2019__dspfilters_fastfir_second-p21",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 48,
+      "bucket": "30-99",
+      "family": "dspfilters_fastfir_second",
+      "id": "2020__dspfilters_fastfir_second-p25",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 32,
+      "bucket": "30-99",
+      "family": "cal",
+      "id": "2025__cal222",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 32,
+      "bucket": "30-99",
+      "family": "picorv",
+      "id": "2019__picorv32_mutCY_nomem-p8",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 32,
+      "bucket": "30-99",
+      "family": "picorv",
+      "id": "2020__picorv32_mutCX_nomem-p8",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 71,
+      "bucket": "30-99",
+      "family": "circular_pointer_top_w",
+      "id": "2025__circular_pointer_top_w64_d16_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 37,
+      "bucket": "30-99",
+      "family": "shift_register_top_w",
+      "id": "2019__shift_register_top_w32_d8_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 38,
+      "bucket": "30-99",
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w32_d16_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 48,
+      "bucket": "30-99",
+      "family": "dspfilters_fastfir_second",
+      "id": "2025__dspfilters_fastfir_second-p45",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 48,
+      "bucket": "30-99",
+      "family": "toy_lock_",
+      "id": "2019__toy_lock_4",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 56,
+      "bucket": "30-99",
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p075",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 64,
+      "bucket": "30-99",
+      "family": "mul",
+      "id": "2025__mul1",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 57,
+      "bucket": "30-99",
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p088",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 32,
+      "bucket": "30-99",
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p10",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 39,
+      "bucket": "30-99",
+      "family": "shift_register_top_w",
+      "id": "2025__shift_register_top_w32_d32_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 42,
+      "bucket": "30-99",
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n2_w32_d128_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 71,
+      "bucket": "30-99",
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n5_w64_d16_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 72,
+      "bucket": "30-99",
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n2_w64_d32_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 32,
+      "bucket": "30-99",
+      "family": "cal",
+      "id": "2019__cal222",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 32,
+      "bucket": "30-99",
+      "family": "cal",
+      "id": "2020__cal224",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 375,
+      "bucket": "100+",
+      "family": "bob",
+      "id": "2015__bob12s03",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 144,
+      "bucket": "100+",
+      "family": "oc",
+      "id": "2017__oc8051gm81pc",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 135,
+      "bucket": "100+",
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n4_w128_d16_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 135,
+      "bucket": "100+",
+      "family": "arbitrated_top_n",
+      "id": "2020__arbitrated_top_n4_w128_d16_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1638,
+      "bucket": "100+",
+      "family": "ILA_Flute_XORI_sanity",
+      "id": "2024__ILA_Flute_XORI_sanity",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 265,
+      "bucket": "100+",
+      "family": "Problem",
+      "id": "2025__Problem01_label05",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 152,
+      "bucket": "100+",
+      "family": "bobsmmem",
+      "id": "2015__bobsmmem",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 142,
+      "bucket": "100+",
+      "family": "oc",
+      "id": "2017__oc8051gm7daddr",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 633,
+      "bucket": "100+",
+      "family": "cal",
+      "id": "2019__cal144",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 798,
+      "bucket": "100+",
+      "family": "cal",
+      "id": "2020__cal106",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 2050,
+      "bucket": "100+",
+      "family": "ILA_Piccolo_ADDI_problem",
+      "id": "2024__ILA_Piccolo_ADDI_problem",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 134,
+      "bucket": "100+",
+      "family": "arbitrated_top_n",
+      "id": "2025__arbitrated_top_n3_w128_d8_e0",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 1239,
+      "bucket": "100+",
+      "family": "bobsmmips",
+      "id": "2015__bobsmmips",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 155,
+      "bucket": "100+",
+      "family": "oc",
+      "id": "2017__oc8051gmecacc",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 128,
+      "bucket": "100+",
+      "family": "mul",
+      "id": "2019__mul9",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 138,
+      "bucket": "100+",
+      "family": "circular_pointer_top_w",
+      "id": "2020__circular_pointer_top_w128_d128_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1481,
+      "bucket": "100+",
+      "family": "ILA_Piccolo_BEQ_sanity",
+      "id": "2024__ILA_Piccolo_BEQ_sanity",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 159,
+      "bucket": "100+",
+      "family": "benchmarks_initial_output_btor",
+      "id": "2025__benchmarks_initial_output_btor2_example_95_miter_miter",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 271,
+      "bucket": "100+",
+      "family": "oski",
+      "id": "2015__oski15a10b07s",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 164,
+      "bucket": "100+",
+      "family": "oc",
+      "id": "2017__oc8051gm64pc",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 136,
+      "bucket": "100+",
+      "family": "shift_register_top_w",
+      "id": "2019__shift_register_top_w128_d64_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 128,
+      "bucket": "100+",
+      "family": "mul",
+      "id": "2020__mul2",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1481,
+      "bucket": "100+",
+      "family": "ILA_Piccolo_BGEU_sanity",
+      "id": "2024__ILA_Piccolo_BGEU_sanity",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 223,
+      "bucket": "100+",
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_263_miter_miter",
+      "year": 2025
+    },
+    {
+      "bad_cone_xors": 240,
+      "bucket": "100+",
+      "family": "pdtvisvsa",
+      "id": "2015__pdtvisvsa16a29",
+      "year": 2015
+    },
+    {
+      "bad_cone_xors": 148,
+      "bucket": "100+",
+      "family": "oc",
+      "id": "2017__oc8051gm0caddr",
+      "year": 2017
+    },
+    {
+      "bad_cone_xors": 135,
+      "bucket": "100+",
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n5_w128_d16_e0",
+      "year": 2019
+    },
+    {
+      "bad_cone_xors": 136,
+      "bucket": "100+",
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w128_d64_e0",
+      "year": 2020
+    },
+    {
+      "bad_cone_xors": 1481,
+      "bucket": "100+",
+      "family": "ILA_Piccolo_JALR_sanity",
+      "id": "2024__ILA_Piccolo_JALR_sanity",
+      "year": 2024
+    },
+    {
+      "bad_cone_xors": 853,
+      "bucket": "100+",
+      "family": "cal",
+      "id": "2025__cal135",
+      "year": 2025
+    }
+  ],
+  "selection_rule": "tier=timeout; exclude width development and first blind holdout; 30 per bad-cone XOR bucket",
+  "version": 1
+}

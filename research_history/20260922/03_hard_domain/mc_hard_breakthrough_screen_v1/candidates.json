@@ -1,0 +1,5793 @@
+{
+  "models": [
+    {
+      "diagnostic_depth": 6.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s100",
+      "id": "2015__6s100",
+      "mc_previously_run": true,
+      "name": "6s100",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s100.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3155906,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 10.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s105",
+      "id": "2015__6s105",
+      "mc_previously_run": true,
+      "name": "6s105",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s105.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 7999,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "6s13",
+      "id": "2015__6s13",
+      "mc_previously_run": true,
+      "name": "6s13",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s13.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 82441,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s131",
+      "id": "2015__6s131",
+      "mc_previously_run": true,
+      "name": "6s131",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s131.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 77766,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s160",
+      "id": "2015__6s160",
+      "mc_previously_run": true,
+      "name": "6s160",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s160.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 27685,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 23.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s171",
+      "id": "2015__6s171",
+      "mc_previously_run": true,
+      "name": "6s171",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s171.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 31101,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s177",
+      "id": "2015__6s177",
+      "mc_previously_run": true,
+      "name": "6s177",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s177.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 2461,
+      "structural_class": "state-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s179",
+      "id": "2015__6s179",
+      "mc_previously_run": true,
+      "name": "6s179",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s179.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 4731,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "6s184",
+      "id": "2015__6s184",
+      "mc_previously_run": true,
+      "name": "6s184",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s184.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 46837,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s185",
+      "id": "2015__6s185",
+      "mc_previously_run": true,
+      "name": "6s185",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s185.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 7981,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s186",
+      "id": "2015__6s186",
+      "mc_previously_run": true,
+      "name": "6s186",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s186.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 8066,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s187",
+      "id": "2015__6s187",
+      "mc_previously_run": true,
+      "name": "6s187",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s187.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 8144,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 20.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s188",
+      "id": "2015__6s188",
+      "mc_previously_run": true,
+      "name": "6s188",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s188.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 20989,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 15.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s190",
+      "id": "2015__6s190",
+      "mc_previously_run": true,
+      "name": "6s190",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s190.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 26944,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s195",
+      "id": "2015__6s195",
+      "mc_previously_run": true,
+      "name": "6s195",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s195.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 31754,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 192.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s198",
+      "id": "2015__6s198",
+      "mc_previously_run": true,
+      "name": "6s198",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s198.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 4497,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "6s267rb3",
+      "id": "2015__6s267rb3",
+      "mc_previously_run": true,
+      "name": "6s267rb3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s267rb3.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 63327,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 53.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s268r",
+      "id": "2015__6s268r",
+      "mc_previously_run": true,
+      "name": "6s268r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s268r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 29847,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 38.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s274r",
+      "id": "2015__6s274r",
+      "mc_previously_run": true,
+      "name": "6s274r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s274r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 35047,
+      "structural_class": "state-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s280r",
+      "id": "2015__6s280r",
+      "mc_previously_run": true,
+      "name": "6s280r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s280r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 24538,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 15.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "6s29",
+      "id": "2015__6s29",
+      "mc_previously_run": true,
+      "name": "6s29",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s29.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 41159,
+      "structural_class": "state-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s31",
+      "id": "2015__6s31",
+      "mc_previously_run": true,
+      "name": "6s31",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s31.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 4605,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s33",
+      "id": "2015__6s33",
+      "mc_previously_run": true,
+      "name": "6s33",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s33.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 3326,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 32.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s339rb22",
+      "id": "2015__6s339rb22",
+      "mc_previously_run": true,
+      "name": "6s339rb22",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s339rb22.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 52062,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 36.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s35",
+      "id": "2015__6s35",
+      "mc_previously_run": true,
+      "name": "6s35",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s35.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 38918,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s357r",
+      "id": "2015__6s357r",
+      "mc_previously_run": true,
+      "name": "6s357r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s357r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 4302,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 19.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s36",
+      "id": "2015__6s36",
+      "mc_previously_run": true,
+      "name": "6s36",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s36.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 26658,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 146.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s362rb0",
+      "id": "2015__6s362rb0",
+      "mc_previously_run": true,
+      "name": "6s362rb0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s362rb0.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 34836,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 14.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s365r",
+      "id": "2015__6s365r",
+      "mc_previously_run": true,
+      "name": "6s365r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s365r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 3218,
+      "structural_class": "state-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 54.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s366r",
+      "id": "2015__6s366r",
+      "mc_previously_run": true,
+      "name": "6s366r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s366r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 76826,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 28.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s367r",
+      "id": "2015__6s367r",
+      "mc_previously_run": true,
+      "name": "6s367r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s367r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36408,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s382r",
+      "id": "2015__6s382r",
+      "mc_previously_run": true,
+      "name": "6s382r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s382r.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 8051790,
+      "structural_class": "very-large",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s387rb181",
+      "id": "2015__6s387rb181",
+      "mc_previously_run": true,
+      "name": "6s387rb181",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s387rb181.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1498013,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s387rb291",
+      "id": "2015__6s387rb291",
+      "mc_previously_run": true,
+      "name": "6s387rb291",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s387rb291.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1498013,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 18.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s39",
+      "id": "2015__6s39",
+      "mc_previously_run": true,
+      "name": "6s39",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s39.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 22651,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s392r",
+      "id": "2015__6s392r",
+      "mc_previously_run": true,
+      "name": "6s392r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s392r.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 7211587,
+      "structural_class": "very-large",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s394r",
+      "id": "2015__6s394r",
+      "mc_previously_run": true,
+      "name": "6s394r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s394r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 3478,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s398b09",
+      "id": "2015__6s398b09",
+      "mc_previously_run": true,
+      "name": "6s398b09",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s398b09.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 40671,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s398b16",
+      "id": "2015__6s398b16",
+      "mc_previously_run": true,
+      "name": "6s398b16",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s398b16.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 40671,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s399b02",
+      "id": "2015__6s399b02",
+      "mc_previously_run": true,
+      "name": "6s399b02",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s399b02.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 25684,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s399b03",
+      "id": "2015__6s399b03",
+      "mc_previously_run": true,
+      "name": "6s399b03",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s399b03.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 25684,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s401rb051",
+      "id": "2015__6s401rb051",
+      "mc_previously_run": true,
+      "name": "6s401rb051",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s401rb051.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 855949,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s402rb0342",
+      "id": "2015__6s402rb0342",
+      "mc_previously_run": true,
+      "name": "6s402rb0342",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s402rb0342.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1090447,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s413b398",
+      "id": "2015__6s413b398",
+      "mc_previously_run": true,
+      "name": "6s413b398",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s413b398.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 205491,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s44",
+      "id": "2015__6s44",
+      "mc_previously_run": true,
+      "name": "6s44",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s44.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 32042,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s45",
+      "id": "2015__6s45",
+      "mc_previously_run": true,
+      "name": "6s45",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s45.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 18360,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s514r",
+      "id": "2015__6s514r",
+      "mc_previously_run": true,
+      "name": "6s514r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s514r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 12486,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "6s516r",
+      "id": "2015__6s516r",
+      "mc_previously_run": true,
+      "name": "6s516r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s516r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 24502,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "6s54",
+      "id": "2015__6s54",
+      "mc_previously_run": true,
+      "name": "6s54",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s54.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 49121,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "beemcmbrdg",
+      "id": "2015__beemcmbrdg7f2",
+      "mc_previously_run": true,
+      "name": "beemcmbrdg7f2",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemcmbrdg7f2.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 23513,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "beemextnc",
+      "id": "2015__beemextnc1f1",
+      "mc_previously_run": true,
+      "name": "beemextnc1f1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemextnc1f1.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 13960,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "beemextnc",
+      "id": "2015__beemextnc3f1",
+      "mc_previously_run": true,
+      "name": "beemextnc3f1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemextnc3f1.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 17687,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "high-query-volume",
+        "sat-heavy-query"
+      ],
+      "family": "beemhanoi",
+      "id": "2015__beemhanoi4b1",
+      "mc_previously_run": true,
+      "name": "beemhanoi4b1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemhanoi4b1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 37990,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 42.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "beemkrebs",
+      "id": "2015__beemkrebs4b1",
+      "mc_previously_run": true,
+      "name": "beemkrebs4b1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemkrebs4b1.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 10215,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "beemloyd",
+      "id": "2015__beemloyd3b1",
+      "mc_previously_run": true,
+      "name": "beemloyd3b1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemloyd3b1.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 11561,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "beemndhm",
+      "id": "2015__beemndhm4b3",
+      "mc_previously_run": true,
+      "name": "beemndhm4b3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemndhm4b3.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 61429,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 19.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "beempgsol",
+      "id": "2015__beempgsol4f1",
+      "mc_previously_run": true,
+      "name": "beempgsol4f1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beempgsol4f1.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 5525,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "beemrwtrs",
+      "id": "2015__beemrwtrs2b1",
+      "mc_previously_run": true,
+      "name": "beemrwtrs2b1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemrwtrs2b1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 6890,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "beemskbn",
+      "id": "2015__beemskbn2b1",
+      "mc_previously_run": true,
+      "name": "beemskbn2b1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/beemskbn2b1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 81269,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "bob",
+      "id": "2015__bob12s08",
+      "mc_previously_run": true,
+      "name": "bob12s08",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/bob12s08.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 103574,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 16.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence",
+        "sat-heavy-query"
+      ],
+      "family": "bobpcihm",
+      "id": "2015__bobpcihm",
+      "mc_previously_run": true,
+      "name": "bobpcihm",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/bobpcihm.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36999,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 25.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "bobsm",
+      "id": "2015__bobsm9234",
+      "mc_previously_run": true,
+      "name": "bobsm9234",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/bobsm9234.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 9237,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "high-query-volume",
+        "sat-heavy-query"
+      ],
+      "family": "bobsmcodic",
+      "id": "2015__bobsmcodic",
+      "mc_previously_run": true,
+      "name": "bobsmcodic",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/bobsmcodic.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 69644,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "bobsmmips",
+      "id": "2015__bobsmmips",
+      "mc_previously_run": true,
+      "name": "bobsmmips",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/bobsmmips.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 131985,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "eijkbs",
+      "id": "2015__eijkbs6669",
+      "mc_previously_run": true,
+      "name": "eijkbs6669",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/eijkbs6669.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 13644,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 86.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "ndista",
+      "id": "2015__ndista262144",
+      "mc_previously_run": true,
+      "name": "ndista262144",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/ndista262144.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 455,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "nusmvdme",
+      "id": "2015__nusmvdme116",
+      "mc_previously_run": true,
+      "name": "nusmvdme116",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/nusmvdme116.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 6416,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 25.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "nusmvdme",
+      "id": "2015__nusmvdme216",
+      "mc_previously_run": true,
+      "name": "nusmvdme216",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/nusmvdme216.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 8913,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b00s",
+      "mc_previously_run": true,
+      "name": "oski15a01b00s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b00s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 1257136,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b01s",
+      "mc_previously_run": true,
+      "name": "oski15a01b01s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b01s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255907,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b06s",
+      "mc_previously_run": true,
+      "name": "oski15a01b06s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b06s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255911,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b08s",
+      "mc_previously_run": true,
+      "name": "oski15a01b08s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b08s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1255914,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b12s",
+      "mc_previously_run": true,
+      "name": "oski15a01b12s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b12s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255940,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b18s",
+      "mc_previously_run": false,
+      "name": "oski15a01b18s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b18s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255911,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b26s",
+      "mc_previously_run": true,
+      "name": "oski15a01b26s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b26s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b28s",
+      "mc_previously_run": true,
+      "name": "oski15a01b28s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b28s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b30s",
+      "mc_previously_run": true,
+      "name": "oski15a01b30s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b30s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256031,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b32s",
+      "mc_previously_run": true,
+      "name": "oski15a01b32s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b32s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b34s",
+      "mc_previously_run": true,
+      "name": "oski15a01b34s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b34s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b36s",
+      "mc_previously_run": true,
+      "name": "oski15a01b36s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b36s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256035,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b38s",
+      "mc_previously_run": true,
+      "name": "oski15a01b38s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b38s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1255915,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b40s",
+      "mc_previously_run": true,
+      "name": "oski15a01b40s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b40s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 1257136,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b41s",
+      "mc_previously_run": false,
+      "name": "oski15a01b41s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b41s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1255907,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b43s",
+      "mc_previously_run": true,
+      "name": "oski15a01b43s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b43s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1255909,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b46s",
+      "mc_previously_run": true,
+      "name": "oski15a01b46s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b46s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255911,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b48s",
+      "mc_previously_run": true,
+      "name": "oski15a01b48s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b48s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1255914,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b50s",
+      "mc_previously_run": true,
+      "name": "oski15a01b50s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b50s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255948,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b52s",
+      "mc_previously_run": true,
+      "name": "oski15a01b52s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b52s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255940,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b54s",
+      "mc_previously_run": false,
+      "name": "oski15a01b54s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b54s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255911,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b58s",
+      "mc_previously_run": true,
+      "name": "oski15a01b58s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b58s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1255911,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b60s",
+      "mc_previously_run": true,
+      "name": "oski15a01b60s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b60s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b62s",
+      "mc_previously_run": true,
+      "name": "oski15a01b62s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b62s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b64s",
+      "mc_previously_run": true,
+      "name": "oski15a01b64s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b64s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256025,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b66s",
+      "mc_previously_run": true,
+      "name": "oski15a01b66s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b66s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b68s",
+      "mc_previously_run": true,
+      "name": "oski15a01b68s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b68s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b70s",
+      "mc_previously_run": true,
+      "name": "oski15a01b70s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b70s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256031,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b72s",
+      "mc_previously_run": true,
+      "name": "oski15a01b72s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b72s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b74s",
+      "mc_previously_run": true,
+      "name": "oski15a01b74s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b74s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256027,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b76s",
+      "mc_previously_run": true,
+      "name": "oski15a01b76s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b76s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1256035,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a01b78s",
+      "mc_previously_run": true,
+      "name": "oski15a01b78s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a01b78s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 1255915,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a07b0s",
+      "mc_previously_run": true,
+      "name": "oski15a07b0s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a07b0s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 449582,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a07b2s",
+      "mc_previously_run": true,
+      "name": "oski15a07b2s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a07b2s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 449582,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a07b4s",
+      "mc_previously_run": true,
+      "name": "oski15a07b4s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a07b4s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 449582,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b00s",
+      "mc_previously_run": false,
+      "name": "oski15a08b00s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b00s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3065603,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b02s",
+      "mc_previously_run": true,
+      "name": "oski15a08b02s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b02s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3066048,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b04s",
+      "mc_previously_run": false,
+      "name": "oski15a08b04s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b04s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3066194,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b05s",
+      "mc_previously_run": true,
+      "name": "oski15a08b05s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b05s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3065333,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b06s",
+      "mc_previously_run": false,
+      "name": "oski15a08b06s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b06s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3066770,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b07s",
+      "mc_previously_run": true,
+      "name": "oski15a08b07s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b07s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3065332,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b08s",
+      "mc_previously_run": true,
+      "name": "oski15a08b08s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b08s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3066768,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b09s",
+      "mc_previously_run": false,
+      "name": "oski15a08b09s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b09s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3065330,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b10s",
+      "mc_previously_run": true,
+      "name": "oski15a08b10s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b10s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3066048,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b12s",
+      "mc_previously_run": true,
+      "name": "oski15a08b12s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b12s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3066194,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b13s",
+      "mc_previously_run": true,
+      "name": "oski15a08b13s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b13s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3065333,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b14s",
+      "mc_previously_run": false,
+      "name": "oski15a08b14s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b14s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3071084,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b15s",
+      "mc_previously_run": true,
+      "name": "oski15a08b15s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b15s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3065332,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b16s",
+      "mc_previously_run": false,
+      "name": "oski15a08b16s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b16s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3071082,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a08b17s",
+      "mc_previously_run": true,
+      "name": "oski15a08b17s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a08b17s.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3065330,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a14b02s",
+      "mc_previously_run": true,
+      "name": "oski15a14b02s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a14b02s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 166981,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "oski",
+      "id": "2015__oski15a14b06s",
+      "mc_previously_run": true,
+      "name": "oski15a14b06s",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a14b06s.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 166982,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "pdtvisvsa",
+      "id": "2015__pdtvisvsa16a29",
+      "mc_previously_run": true,
+      "name": "pdtvisvsa16a29",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/pdtvisvsa16a29.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 22394,
+      "structural_class": "mixed-control-data",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 86.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "shift",
+      "id": "2015__shift1add262144",
+      "mc_previously_run": true,
+      "name": "shift1add262144",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/shift1add262144.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 473,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": 85.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "shift",
+      "id": "2015__shift1add524288",
+      "mc_previously_run": true,
+      "name": "shift1add524288",
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/shift1add524288.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 491,
+      "structural_class": "affine-heavy",
+      "year": 2015
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s128",
+      "id": "2017__6s128",
+      "mc_previously_run": true,
+      "name": "6s128",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s128.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2292993,
+      "structural_class": "affine-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "6s130",
+      "id": "2017__6s130",
+      "mc_previously_run": true,
+      "name": "6s130",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s130.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 77766,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 32.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s134",
+      "id": "2017__6s134",
+      "mc_previously_run": true,
+      "name": "6s134",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s134.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 8470,
+      "structural_class": "state-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume",
+        "sat-heavy-query"
+      ],
+      "family": "6s158",
+      "id": "2017__6s158",
+      "mc_previously_run": true,
+      "name": "6s158",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s158.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 71863,
+      "structural_class": "affine-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "6s163",
+      "id": "2017__6s163",
+      "mc_previously_run": true,
+      "name": "6s163",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s163.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 7243613,
+      "structural_class": "very-large",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 18.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s191",
+      "id": "2017__6s191",
+      "mc_previously_run": true,
+      "name": "6s191",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s191.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 22378,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 38.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s319r",
+      "id": "2017__6s319r",
+      "mc_previously_run": true,
+      "name": "6s319r",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s319r.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 3096,
+      "structural_class": "state-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 14.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s37",
+      "id": "2017__6s37",
+      "mc_previously_run": true,
+      "name": "6s37",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s37.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 13950,
+      "structural_class": "state-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 18.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s41",
+      "id": "2017__6s41",
+      "mc_previously_run": true,
+      "name": "6s41",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s41.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 14458,
+      "structural_class": "state-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "6s42",
+      "id": "2017__6s42",
+      "mc_previously_run": true,
+      "name": "6s42",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/6s42.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 30922,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "beemandrsn",
+      "id": "2017__beemandrsn6b1",
+      "mc_previously_run": true,
+      "name": "beemandrsn6b1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/beemandrsn6b1.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 13318,
+      "structural_class": "affine-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "bobsmfpu",
+      "id": "2017__bobsmfpu",
+      "mc_previously_run": true,
+      "name": "bobsmfpu",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/bobsmfpu.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 148252,
+      "structural_class": "affine-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 30.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "intel",
+      "id": "2017__intel025",
+      "mc_previously_run": true,
+      "name": "intel025",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/intel025.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 38989,
+      "structural_class": "affine-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "intel",
+      "id": "2017__intel032",
+      "mc_previously_run": true,
+      "name": "intel032",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/intel032.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 47967,
+      "structural_class": "affine-heavy",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm03acc",
+      "mc_previously_run": true,
+      "name": "oc8051gm03acc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm03acc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 35063,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm3bacc",
+      "mc_previously_run": true,
+      "name": "oc8051gm3bacc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm3bacc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36435,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm49acc",
+      "mc_previously_run": true,
+      "name": "oc8051gm49acc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm49acc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36259,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 10.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm4biram",
+      "mc_previously_run": true,
+      "name": "oc8051gm4biram",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm4biram.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36265,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm4dacc",
+      "mc_previously_run": true,
+      "name": "oc8051gm4dacc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm4dacc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36260,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm63iram",
+      "mc_previously_run": true,
+      "name": "oc8051gm63iram",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm63iram.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 41126,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm81pc",
+      "mc_previously_run": true,
+      "name": "oc8051gm81pc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm81pc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 35898,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gm95pc",
+      "mc_previously_run": true,
+      "name": "oc8051gm95pc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gm95pc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 38455,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gmb6acc",
+      "mc_previously_run": true,
+      "name": "oc8051gmb6acc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gmb6acc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39390,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gmbfpc",
+      "mc_previously_run": true,
+      "name": "oc8051gmbfpc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gmbfpc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39390,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gmd7acc",
+      "mc_previously_run": true,
+      "name": "oc8051gmd7acc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gmd7acc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36379,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "oc",
+      "id": "2017__oc8051gmf2iram",
+      "mc_previously_run": true,
+      "name": "oc8051gmf2iram",
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gmf2iram.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 35168,
+      "structural_class": "mixed-control-data",
+      "year": 2017
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal156",
+      "mc_previously_run": true,
+      "name": "cal156",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal156.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 276553,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal198",
+      "mc_previously_run": true,
+      "name": "cal198",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal198.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 279764,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal203",
+      "mc_previously_run": true,
+      "name": "cal203",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal203.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 279664,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal222",
+      "mc_previously_run": true,
+      "name": "cal222",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal222.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 336381,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal225",
+      "mc_previously_run": true,
+      "name": "cal225",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal225.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 581356,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal226",
+      "mc_previously_run": true,
+      "name": "cal226",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal226.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 578860,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal228",
+      "mc_previously_run": true,
+      "name": "cal228",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal228.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 331832,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2019__cal229",
+      "mc_previously_run": true,
+      "name": "cal229",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/cal229.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 332938,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "circular_pointer_top_w",
+      "id": "2019__circular_pointer_top_w8_d128_e0",
+      "mc_previously_run": true,
+      "name": "circular_pointer_top_w8_d128_e0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/circular_pointer_top_w8_d128_e0.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 77884,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "circular_pointer_top_w",
+      "id": "2019__circular_pointer_top_w8_d64_e0",
+      "mc_previously_run": true,
+      "name": "circular_pointer_top_w8_d64_e0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/circular_pointer_top_w8_d64_e0.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39749,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "mul",
+      "id": "2019__mul1",
+      "mc_previously_run": true,
+      "name": "mul1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/mul1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 48889,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "mul",
+      "id": "2019__mul10",
+      "mc_previously_run": true,
+      "name": "mul10",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/mul10.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 49289,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "mul",
+      "id": "2019__mul3",
+      "mc_previously_run": true,
+      "name": "mul3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/mul3.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 790374,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "mul",
+      "id": "2019__mul4",
+      "mc_previously_run": true,
+      "name": "mul4",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/mul4.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 47765,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "mul",
+      "id": "2019__mul9",
+      "mc_previously_run": true,
+      "name": "mul9",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/mul9.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 49289,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "picorv",
+      "id": "2019__picorv32-pcregs-p2",
+      "mc_previously_run": true,
+      "name": "picorv32-pcregs-p2",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/picorv32-pcregs-p2.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 146198,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 37.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "ponylink",
+      "id": "2019__ponylink-slaveTXlen-sat",
+      "mc_previously_run": true,
+      "name": "ponylink-slaveTXlen-sat",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/ponylink-slaveTXlen-sat.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 197737,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "shift_register_top_w",
+      "id": "2019__shift_register_top_w128_d64_e0",
+      "mc_previously_run": true,
+      "name": "shift_register_top_w128_d64_e0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/shift_register_top_w128_d64_e0.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 626358,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 40.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p039",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p039",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/vgasim_imgfifo-p039.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 66838,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 50.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p051",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p051",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/vgasim_imgfifo-p051.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 66847,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 34.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p088",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p088",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/vgasim_imgfifo-p088.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67083,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 38.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p091",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p091",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/vgasim_imgfifo-p091.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 66965,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 33.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p107",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p107",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/vgasim_imgfifo-p107.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 66977,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 63.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2019__vgasim_imgfifo-p111",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p111",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/vgasim_imgfifo-p111.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 66989,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 17.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vis_arrays_bufferAlloc",
+      "id": "2019__vis_arrays_bufferAlloc",
+      "mc_previously_run": true,
+      "name": "vis_arrays_bufferAlloc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/vis_arrays_bufferAlloc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 1304,
+      "structural_class": "mixed-control-data",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "zipcpu",
+      "id": "2019__zipcpu-zipmmu-p10",
+      "mc_previously_run": true,
+      "name": "zipcpu-zipmmu-p10",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/zipcpu-zipmmu-p10.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 47320,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 15.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "zipcpu",
+      "id": "2019__zipcpu-zipmmu-p24",
+      "mc_previously_run": true,
+      "name": "zipcpu-zipmmu-p24",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/zipcpu-zipmmu-p24.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 47301,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "zipversa_composecrc_prf",
+      "id": "2019__zipversa_composecrc_prf-p03",
+      "mc_previously_run": true,
+      "name": "zipversa_composecrc_prf-p03",
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/zipversa_composecrc_prf-p03.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 18043,
+      "structural_class": "affine-heavy",
+      "year": 2019
+    },
+    {
+      "diagnostic_depth": 17.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "brp",
+      "id": "2020__brp2.6.prop3-back-serstep",
+      "mc_previously_run": true,
+      "name": "brp2.6.prop3-back-serstep",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/beem/brp2.6.prop3-back-serstep.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 19347,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal156",
+      "mc_previously_run": true,
+      "name": "cal156",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal156/cal156.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 276048,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal192",
+      "mc_previously_run": true,
+      "name": "cal192",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal192/cal192.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 276682,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal2",
+      "mc_previously_run": true,
+      "name": "cal2",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal2/cal2.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 62887,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal201",
+      "mc_previously_run": true,
+      "name": "cal201",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal201/cal201.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 277210,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal206",
+      "mc_previously_run": true,
+      "name": "cal206",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal206/cal206.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 276354,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal209",
+      "mc_previously_run": true,
+      "name": "cal209",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal209/cal209.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 274870,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal210",
+      "mc_previously_run": true,
+      "name": "cal210",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal210/cal210.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 276354,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal220",
+      "mc_previously_run": true,
+      "name": "cal220",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal220/cal220.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 332615,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal224",
+      "mc_previously_run": true,
+      "name": "cal224",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal224/cal224.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 462410,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal227",
+      "mc_previously_run": true,
+      "name": "cal227",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal227/cal227.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 331433,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2020__cal234",
+      "mc_previously_run": true,
+      "name": "cal234",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/cal234/cal234.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 335943,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "krebs",
+      "id": "2020__krebs.3.prop1-func-interl",
+      "mc_previously_run": true,
+      "name": "krebs.3.prop1-func-interl",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/beem/krebs.3.prop1-func-interl.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 6584,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "mcs",
+      "id": "2020__mcs.3.prop1-back-serstep",
+      "mc_previously_run": true,
+      "name": "mcs.3.prop1-back-serstep",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/beem/mcs.3.prop1-back-serstep.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 11948,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "mul",
+      "id": "2020__mul1",
+      "mc_previously_run": true,
+      "name": "mul1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/mul1/mul1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 46752,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "mul",
+      "id": "2020__mul2",
+      "mc_previously_run": true,
+      "name": "mul2",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/mul2/mul2.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 193613,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "mul",
+      "id": "2020__mul3",
+      "mc_previously_run": true,
+      "name": "mul3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/mul3/mul3.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 785802,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "mul",
+      "id": "2020__mul9",
+      "mc_previously_run": true,
+      "name": "mul9",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/industry/mul9/mul9.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 48709,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "peg_solitaire",
+      "id": "2020__peg_solitaire.3.prop1-back-serstep",
+      "mc_previously_run": true,
+      "name": "peg_solitaire.3.prop1-back-serstep",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/beem/peg_solitaire.3.prop1-back-serstep.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 74468,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "picorv",
+      "id": "2020__picorv32-pcregs-p2",
+      "mc_previously_run": true,
+      "name": "picorv32-pcregs-p2",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2018D/picorv32-pcregs-p2.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 145900,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 30.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "ponylink",
+      "id": "2020__ponylink-slaveTXlen-unsat",
+      "mc_previously_run": true,
+      "name": "ponylink-slaveTXlen-unsat",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2018D/ponylink-slaveTXlen-unsat.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 197893,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "ridecore",
+      "id": "2020__ridecore",
+      "mc_previously_run": true,
+      "name": "ridecore",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/mann/unknown/ridecore.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 6342412,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "shift_register_top_w",
+      "id": "2020__shift_register_top_w128_d64_e0",
+      "mc_previously_run": true,
+      "name": "shift_register_top_w128_d64_e0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/mann/data-integrity/unsafe/shift_register_top_w128_d64_e0.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 626533,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p036",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p036",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/vgasim_imgfifo-p036.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67086,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 12.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p075",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p075",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/vgasim_imgfifo-p075.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67131,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 73.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p088",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p088",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/vgasim_imgfifo-p088.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67131,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 14.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p110",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p110",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/vgasim_imgfifo-p110.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67491,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 89.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vgasim_imgfifo",
+      "id": "2020__vgasim_imgfifo-p111",
+      "mc_previously_run": true,
+      "name": "vgasim_imgfifo-p111",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/vgasim_imgfifo-p111.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 67237,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 16.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "vis_arrays_bufferAlloc",
+      "id": "2020__vis_arrays_bufferAlloc",
+      "mc_previously_run": true,
+      "name": "vis_arrays_bufferAlloc",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/goel/opensource/vis_arrays_bufferAlloc/vis_arrays_bufferAlloc.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 1307,
+      "structural_class": "mixed-control-data",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 11.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "zipcpu",
+      "id": "2020__zipcpu-zipmmu-p14",
+      "mc_previously_run": true,
+      "name": "zipcpu-zipmmu-p14",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2018D/zipcpu-zipmmu-p14.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 47285,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "zipcpu",
+      "id": "2020__zipcpu-zipmmu-p26",
+      "mc_previously_run": true,
+      "name": "zipcpu-zipmmu-p26",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2018D/zipcpu-zipmmu-p26.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 47285,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p03",
+      "mc_previously_run": true,
+      "name": "zipversa_composecrc_prf-p03",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/zipversa_composecrc_prf-p03.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 17962,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "high-query-volume",
+        "sat-heavy-query"
+      ],
+      "family": "zipversa_composecrc_prf",
+      "id": "2020__zipversa_composecrc_prf-p10",
+      "mc_previously_run": true,
+      "name": "zipversa_composecrc_prf-p10",
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/wolf/2019C/zipversa_composecrc_prf-p10.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 18276,
+      "structural_class": "affine-heavy",
+      "year": 2020
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_AND_problem",
+      "id": "2024__ILA_Flute_AND_problem",
+      "mc_previously_run": false,
+      "name": "ILA_Flute_AND_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_AND_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16447918,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 6.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_LB_problem",
+      "id": "2024__ILA_Flute_LB_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_LB_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_LB_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16440167,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SB_sanity",
+      "id": "2024__ILA_Flute_SB_sanity",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_SB_sanity",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_SB_sanity.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16465442,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 9.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SLL_problem",
+      "id": "2024__ILA_Flute_SLL_problem",
+      "mc_previously_run": false,
+      "name": "ILA_Flute_SLL_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_SLL_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16467964,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 6.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SLTI_problem",
+      "id": "2024__ILA_Flute_SLTI_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_SLTI_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_SLTI_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16461568,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SLTI_sanity",
+      "id": "2024__ILA_Flute_SLTI_sanity",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_SLTI_sanity",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_SLTI_sanity.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16481374,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SUB_sanity",
+      "id": "2024__ILA_Flute_SUB_sanity",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_SUB_sanity",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_SUB_sanity.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16489518,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SW_problem",
+      "id": "2024__ILA_Flute_SW_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_SW_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_SW_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16444351,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_XORI_sanity",
+      "id": "2024__ILA_Flute_XORI_sanity",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_XORI_sanity",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Flute_XORI_sanity.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16490902,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 6.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Piccolo_LHU_problem",
+      "id": "2024__ILA_Piccolo_LHU_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Piccolo_LHU_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Piccolo_LHU_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 742933,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Ridecore_LBU_problem",
+      "id": "2024__ILA_Ridecore_LBU_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Ridecore_LBU_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Ridecore_LBU_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2560188,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Ridecore_SRAI_sanity",
+      "id": "2024__ILA_Ridecore_SRAI_sanity",
+      "mc_previously_run": true,
+      "name": "ILA_Ridecore_SRAI_sanity",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Ridecore_SRAI_sanity.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2621076,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Ridecore_SRLI_problem",
+      "id": "2024__ILA_Ridecore_SRLI_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Ridecore_SRLI_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/refinement_checking/bv/ILA_Ridecore_SRLI_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2559275,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem06_label40",
+      "mc_previously_run": true,
+      "name": "Problem06_label40",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem06_label40.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 740417,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem11_label26",
+      "mc_previously_run": true,
+      "name": "Problem11_label26",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem11_label26.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1075636,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem11_label40",
+      "mc_previously_run": true,
+      "name": "Problem11_label40",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem11_label40.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1075645,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem11_label48",
+      "mc_previously_run": false,
+      "name": "Problem11_label48",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem11_label48.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1075646,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem13_label23",
+      "mc_previously_run": true,
+      "name": "Problem13_label23",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem13_label23.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 6386943,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem16_label07",
+      "mc_previously_run": true,
+      "name": "Problem16_label07",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem16_label07.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1101831,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 0.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem17",
+      "mc_previously_run": false,
+      "name": "Problem17",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2018/Problem17.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2396951682,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem17_label03",
+      "mc_previously_run": true,
+      "name": "Problem17_label03",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem17_label03.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4635711,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem18_label15",
+      "mc_previously_run": false,
+      "name": "Problem18_label15",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem18_label15.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2315800,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem19_label00",
+      "mc_previously_run": false,
+      "name": "Problem19_label00",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem19_label00.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 11167082,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem19_label14",
+      "mc_previously_run": false,
+      "name": "Problem19_label14",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem19_label14.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 11167000,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "Problem",
+      "id": "2024__Problem19_label36",
+      "mc_previously_run": true,
+      "name": "Problem19_label36",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/eca-rers2012/Problem19_label36.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 11167068,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "a",
+      "id": "2024__a07-p14",
+      "mc_previously_run": true,
+      "name": "a07-p14",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/hku/x-epic/a07-p14.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 7017921,
+      "structural_class": "very-large",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 22.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "benchmark",
+      "id": "2024__benchmark04_conjunctive",
+      "mc_previously_run": true,
+      "name": "benchmark04_conjunctive",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-zilu/benchmark04_conjunctive.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 19988,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2024__cal205",
+      "mc_previously_run": true,
+      "name": "cal205",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2019/goel/industry/cal205/cal205.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 276605,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2024__cal235",
+      "mc_previously_run": true,
+      "name": "cal235",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2019/goel/industry/cal235/cal235.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 342228,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 142.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "deep",
+      "id": "2024__deep-nested",
+      "mc_previously_run": true,
+      "name": "deep-nested",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-simple/deep-nested.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 29381,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "dijkstra",
+      "id": "2024__dijkstra-u_valuebound1",
+      "mc_previously_run": true,
+      "name": "dijkstra-u_valuebound1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/nla-digbench-scaling/dijkstra-u_valuebound1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 329727,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "egcd",
+      "id": "2024__egcd-ll_unwindbound10",
+      "mc_previously_run": true,
+      "name": "egcd-ll_unwindbound10",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/nla-digbench-scaling/egcd-ll_unwindbound10.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 342253,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 133.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "gauss_sum",
+      "id": "2024__gauss_sum.i.p+lhb-reducer",
+      "mc_previously_run": true,
+      "name": "gauss_sum.i.p+lhb-reducer",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-new/gauss_sum.i.p+lhb-reducer.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 36370,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "gcd_",
+      "id": "2024__gcd_4+newton_3_3",
+      "mc_previously_run": true,
+      "name": "gcd_4+newton_3_3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/combinations/gcd_4+newton_3_3.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1430295,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 10.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "jm",
+      "id": "2024__jm2006.c.i.v+cfa-reducer",
+      "mc_previously_run": true,
+      "name": "jm2006.c.i.v+cfa-reducer",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-lit/jm2006.c.i.v+cfa-reducer.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 29028,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "lcm",
+      "id": "2024__lcm1_unwindbound2",
+      "mc_previously_run": true,
+      "name": "lcm1_unwindbound2",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/nla-digbench-scaling/lcm1_unwindbound2.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 71346,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "lcm",
+      "id": "2024__lcm1_valuebound100",
+      "mc_previously_run": true,
+      "name": "lcm1_valuebound100",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/nla-digbench-scaling/lcm1_valuebound100.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 68154,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "lcm",
+      "id": "2024__lcm2_unwindbound50",
+      "mc_previously_run": true,
+      "name": "lcm2_unwindbound50",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/nla-digbench-scaling/lcm2_unwindbound50.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 67196,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "loop",
+      "id": "2024__loop3",
+      "mc_previously_run": true,
+      "name": "loop3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-floats-scientific-comp/loop3.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 300575,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "mod",
+      "id": "2024__mod3.c.v+sep-reducer",
+      "mc_previously_run": true,
+      "name": "mod3.c.v+sep-reducer",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-industry-pattern/mod3.c.v+sep-reducer.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 62081,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 83.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "mono",
+      "id": "2024__mono-crafted_8",
+      "mc_previously_run": true,
+      "name": "mono-crafted_8",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loops-crafted-1/mono-crafted_8.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 11478,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "mul",
+      "id": "2024__mul9",
+      "mc_previously_run": true,
+      "name": "mul9",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2019/goel/industry/mul9/mul9.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 49504,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "pals_lcr",
+      "id": "2024__pals_lcr.5.1.ufo.UNBOUNDED.pals+Problem12_label04",
+      "mc_previously_run": true,
+      "name": "pals_lcr.5.1.ufo.UNBOUNDED.pals+Problem12_label04",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/combinations/pals_lcr.5.1.ufo.UNBOUNDED.pals+Problem12_label04.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4383808,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "pals_lcr",
+      "id": "2024__pals_lcr.5.ufo.BOUNDED-10.pals+Problem12_label02",
+      "mc_previously_run": false,
+      "name": "pals_lcr.5.ufo.BOUNDED-10.pals+Problem12_label02",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/combinations/pals_lcr.5.ufo.BOUNDED-10.pals+Problem12_label02.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4388484,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "pals_lcr",
+      "id": "2024__pals_lcr.5_overflow.ufo.UNBOUNDED.pals+Problem12_label02",
+      "mc_previously_run": false,
+      "name": "pals_lcr.5_overflow.ufo.UNBOUNDED.pals+Problem12_label02",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/combinations/pals_lcr.5_overflow.ufo.UNBOUNDED.pals+Problem12_label02.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4383486,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "pals_lcr",
+      "id": "2024__pals_lcr.6.1.ufo.UNBOUNDED.pals+Problem12_label09",
+      "mc_previously_run": false,
+      "name": "pals_lcr.6.1.ufo.UNBOUNDED.pals+Problem12_label09",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/combinations/pals_lcr.6.1.ufo.UNBOUNDED.pals+Problem12_label09.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4396994,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "pc_sfifo_",
+      "id": "2024__pc_sfifo_2.cil-1+token_ring.11.cil-2",
+      "mc_previously_run": true,
+      "name": "pc_sfifo_2.cil-1+token_ring.11.cil-2",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/combinations/pc_sfifo_2.cil-1+token_ring.11.cil-2.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1976321,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 42.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "ponylink",
+      "id": "2024__ponylink-slaveTXlen-sat",
+      "mc_previously_run": true,
+      "name": "ponylink-slaveTXlen-sat",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2019/wolf/2018D/ponylink-slaveTXlen-sat.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 197942,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "sqrt_Newton_pseudoconstant",
+      "id": "2024__sqrt_Newton_pseudoconstant",
+      "mc_previously_run": true,
+      "name": "sqrt_Newton_pseudoconstant",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/float-benchs/sqrt_Newton_pseudoconstant.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1479367,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 60.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "up",
+      "id": "2024__up",
+      "mc_previously_run": true,
+      "name": "up",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/loop-invgen/up.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 23329,
+      "structural_class": "affine-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p061",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p061",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p061.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p062",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p062",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p062.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p092",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p092",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p092.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708462,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p097",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p097",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p097.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708462,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p105",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p105",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p105.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708462,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p142",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p142",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p142.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p255",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p255",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p255.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p266",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p266",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p266.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708462,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p311",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p311",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p311.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p365",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p365",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p365.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708463,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p377",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p377",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p377.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p417",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p417",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p417.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p418",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p418",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p418.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p426",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p426",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p426.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p429",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p429",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p429.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p456",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p456",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p456.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p465",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p465",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p465.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708463,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p505",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p505",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p505.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708462,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p545",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p545",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p545.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p610",
+      "mc_previously_run": false,
+      "name": "yosyshq_appnote_123_cv32e40x-p610",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p610.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708464,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p760",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_cv32e40x-p760",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p760.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 5708463,
+      "structural_class": "state-heavy",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_veer-p08",
+      "mc_previously_run": true,
+      "name": "yosyshq_appnote_123_veer-p08",
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/veer/yosyshq_appnote_123_veer-p08.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1285284,
+      "structural_class": "mixed-control-data",
+      "year": 2024
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_BGEU_problem",
+      "id": "2025__ILA_Flute_BGEU_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_BGEU_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Flute_BGEU_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16448262,
+      "structural_class": "very-large",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_BLT_problem",
+      "id": "2025__ILA_Flute_BLT_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Flute_BLT_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Flute_BLT_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16440822,
+      "structural_class": "very-large",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 6.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Flute_SRAI_problem",
+      "id": "2025__ILA_Flute_SRAI_problem",
+      "mc_previously_run": false,
+      "name": "ILA_Flute_SRAI_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Flute_SRAI_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 16476795,
+      "structural_class": "very-large",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 6.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Piccolo_ADD_problem",
+      "id": "2025__ILA_Piccolo_ADD_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Piccolo_ADD_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Piccolo_ADD_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 756056,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Piccolo_BGEU_problem",
+      "id": "2025__ILA_Piccolo_BGEU_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Piccolo_BGEU_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Piccolo_BGEU_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 745496,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Piccolo_SUB_problem",
+      "id": "2025__ILA_Piccolo_SUB_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Piccolo_SUB_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Piccolo_SUB_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 756040,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Ridecore_BNE_sanity",
+      "id": "2025__ILA_Ridecore_BNE_sanity",
+      "mc_previously_run": true,
+      "name": "ILA_Ridecore_BNE_sanity",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Ridecore_BNE_sanity.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2613474,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 5.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "ILA_Ridecore_JAL_problem",
+      "id": "2025__ILA_Ridecore_JAL_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Ridecore_JAL_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Ridecore_JAL_problem.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2548670,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization"
+      ],
+      "family": "ILA_Ridecore_SLL_problem",
+      "id": "2025__ILA_Ridecore_SLL_problem",
+      "mc_previously_run": true,
+      "name": "ILA_Ridecore_SLL_problem",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/refinement_checking/bv/ILA_Ridecore_SLL_problem.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 2563979,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 169.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "Mono",
+      "id": "2025__Mono6_1",
+      "mc_previously_run": true,
+      "name": "Mono6_1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/loops-crafted-1/Mono6_1.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 11644,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem11_label08",
+      "mc_previously_run": true,
+      "name": "Problem11_label08",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/eca-rers2012/Problem11_label08.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 1075586,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem13_label56",
+      "mc_previously_run": false,
+      "name": "Problem13_label56",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/eca-rers2012/Problem13_label56.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 6387070,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem13_label59",
+      "mc_previously_run": false,
+      "name": "Problem13_label59",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/eca-rers2012/Problem13_label59.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 6387047,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem15_label35",
+      "mc_previously_run": true,
+      "name": "Problem15_label35",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-func/eca-rers2012/Problem15_label35.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3002472,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem15_label37",
+      "mc_previously_run": false,
+      "name": "Problem15_label37",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/eca-rers2012/Problem15_label37.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2988709,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem15_label46",
+      "mc_previously_run": true,
+      "name": "Problem15_label46",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-rel/eca-rers2012/Problem15_label46.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3010369,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem17_label22",
+      "mc_previously_run": true,
+      "name": "Problem17_label22",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-rel/eca-rers2012/Problem17_label22.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4677168,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem17_label44",
+      "mc_previously_run": false,
+      "name": "Problem17_label44",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/eca-rers2012/Problem17_label44.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4635687,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "Problem",
+      "id": "2025__Problem19_label01",
+      "mc_previously_run": true,
+      "name": "Problem19_label01",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/eca-rers2012/Problem19_label01.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 11167119,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume"
+      ],
+      "family": "a",
+      "id": "2025__a16-p75",
+      "mc_previously_run": true,
+      "name": "a16-p75",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/x-epic/a16-p75.aig",
+      "selection_reasons": [
+        "generalization-frontier"
+      ],
+      "size_bytes": 24151,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 6.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "benchmarks_output_btor",
+      "id": "2025__benchmarks_output_btor2_example_263_miter_miter",
+      "mc_previously_run": true,
+      "name": "benchmarks_output_btor2_example_263_miter_miter",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/hkust/benchmarks_output_btor2_example_263_miter_miter.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 67239,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2025__cal157",
+      "mc_previously_run": true,
+      "name": "cal157",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/goel/industry/cal157/cal157.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 277898,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2025__cal188",
+      "mc_previously_run": true,
+      "name": "cal188",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/goel/industry/cal188/cal188.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 278382,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2025__cal191",
+      "mc_previously_run": true,
+      "name": "cal191",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/goel/industry/cal191/cal191.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 277520,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": -1.0,
+      "failure_labels": [
+        "front-end-or-few-query"
+      ],
+      "family": "cal",
+      "id": "2025__cal206",
+      "mc_previously_run": true,
+      "name": "cal206",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/goel/industry/cal206/cal206.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 276805,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2025__cal211",
+      "mc_previously_run": true,
+      "name": "cal211",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/goel/industry/cal211/cal211.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 282846,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 4.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "cal",
+      "id": "2025__cal222",
+      "mc_previously_run": true,
+      "name": "cal222",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/goel/industry/cal222/cal222.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 330734,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 19.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck3_r0-p76",
+      "mc_previously_run": true,
+      "name": "dblclockfft_butterfly_ck3_r0-p76",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/wolf/2019C/dblclockfft_butterfly_ck3_r0-p76.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 63471,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "fermat",
+      "id": "2025__fermat1-ll",
+      "mc_previously_run": true,
+      "name": "fermat1-ll",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-func/nla-digbench/fermat1-ll.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 177381,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "fifo",
+      "id": "2025__fifo-p0",
+      "mc_previously_run": true,
+      "name": "fifo-p0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/fifo-p0.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 124350,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 3.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "geo",
+      "id": "2025__geo2-ll2_unwindbound1",
+      "mc_previously_run": true,
+      "name": "geo2-ll2_unwindbound1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-rel/nla-digbench-scaling/geo2-ll2_unwindbound1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 100088,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 14.0,
+      "failure_labels": [
+        "high-query-volume",
+        "sat-heavy-query"
+      ],
+      "family": "level_",
+      "id": "2025__level_5",
+      "mc_previously_run": true,
+      "name": "level_5",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/ntu/sat/xsokoban/level_5.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 29802,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "mul",
+      "id": "2025__mul1",
+      "mc_previously_run": true,
+      "name": "mul1",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/goel/industry/mul1/mul1.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 46446,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "pals_lcr",
+      "id": "2025__pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label00",
+      "mc_previously_run": false,
+      "name": "pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label00",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-rel/combinations/pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label00.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4345875,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "pals_lcr",
+      "id": "2025__pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label01",
+      "mc_previously_run": false,
+      "name": "pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label01",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/combinations/pals_lcr.3.ufo.BOUNDED-6.pals+Problem12_label01.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4363162,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "pals_lcr",
+      "id": "2025__pals_lcr.7.1.ufo.BOUNDED-14.pals+Problem12_label01",
+      "mc_previously_run": true,
+      "name": "pals_lcr.7.1.ufo.BOUNDED-14.pals+Problem12_label01",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-rel/combinations/pals_lcr.7.1.ufo.BOUNDED-14.pals+Problem12_label01.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 4377644,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 7.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "pals_opt",
+      "id": "2025__pals_opt-floodmax.4.ufo.UNBOUNDED.pals",
+      "mc_previously_run": true,
+      "name": "pals_opt-floodmax.4.ufo.UNBOUNDED.pals",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-rel/seq-mthreaded/pals_opt-floodmax.4.ufo.UNBOUNDED.pals.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 103562,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "pals_opt",
+      "id": "2025__pals_opt-floodmax.5_overflow.ufo.UNBOUNDED.pals",
+      "mc_previously_run": true,
+      "name": "pals_opt-floodmax.5_overflow.ufo.UNBOUNDED.pals",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-func/seq-mthreaded/pals_opt-floodmax.5_overflow.ufo.UNBOUNDED.pals.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 176848,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "sat-heavy-query"
+      ],
+      "family": "prodbin",
+      "id": "2025__prodbin-ll_unwindbound10",
+      "mc_previously_run": true,
+      "name": "prodbin-ll_unwindbound10",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/nla-digbench-scaling/prodbin-ll_unwindbound10.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 120938,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "sat-heavy-query"
+      ],
+      "family": "prodbin",
+      "id": "2025__prodbin-ll_unwindbound50",
+      "mc_previously_run": true,
+      "name": "prodbin-ll_unwindbound50",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-func/nla-digbench-scaling/prodbin-ll_unwindbound50.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 101628,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 149.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "rast",
+      "id": "2025__rast-p16",
+      "mc_previously_run": true,
+      "name": "rast-p16",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/rast-p16.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39105,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "rast",
+      "id": "2025__rast-p17",
+      "mc_previously_run": true,
+      "name": "rast-p17",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/rast-p17.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39092,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 18.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "rast",
+      "id": "2025__rast-p20",
+      "mc_previously_run": true,
+      "name": "rast-p20",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/rast-p20.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 39097,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 8.0,
+      "failure_labels": [
+        "high-query-volume"
+      ],
+      "family": "gcd_bit_width_large",
+      "id": "2025__safety__2024__hkust__seq__gcd_2_3__gcd_bit_width_large",
+      "mc_previously_run": true,
+      "name": "safety__2024__hkust__seq__gcd_2_3__gcd_bit_width_large",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/seq/gcd_2_3/gcd_bit_width_large.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 9182,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__safety__2024__sosylab__eca-rers2012__Problem15_label58",
+      "mc_previously_run": false,
+      "name": "safety__2024__sosylab__eca-rers2012__Problem15_label58",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/eca-rers2012/Problem15_label58.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 2988736,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 1.0,
+      "failure_labels": [
+        "front-end-or-few-query",
+        "sat-heavy-query"
+      ],
+      "family": "Problem",
+      "id": "2025__safety__2025__sosylab__safety-rel__eca-rers2012__Problem15_label58",
+      "mc_previously_run": true,
+      "name": "safety__2025__sosylab__safety-rel__eca-rers2012__Problem15_label58",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2025/sosylab/safety-rel/eca-rers2012/Problem15_label58.aig",
+      "selection_reasons": [
+        "phase-sat-frontier"
+      ],
+      "size_bytes": 3010382,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 2.0,
+      "failure_labels": [
+        "early-obligation-generalization",
+        "high-query-volume",
+        "sat-heavy-query"
+      ],
+      "family": "stack",
+      "id": "2025__stack-p0",
+      "mc_previously_run": true,
+      "name": "stack-p0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2020/mann/stack-p0.aig",
+      "selection_reasons": [
+        "phase-sat-frontier",
+        "generalization-frontier"
+      ],
+      "size_bytes": 102471,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 103.0,
+      "failure_labels": [
+        "high-query-volume",
+        "push-convergence"
+      ],
+      "family": "sumt",
+      "id": "2025__sumt3",
+      "mc_previously_run": true,
+      "name": "sumt3",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/sosylab/loops-crafted-1/sumt3.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 38186,
+      "structural_class": "affine-heavy",
+      "year": 2025
+    },
+    {
+      "diagnostic_depth": 13.0,
+      "failure_labels": [
+        "push-convergence"
+      ],
+      "family": "xepic_a",
+      "id": "2025__xepic_a17-p0",
+      "mc_previously_run": true,
+      "name": "xepic_a17-p0",
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/hkust/x-epic/xepic_a17-p0.aig",
+      "selection_reasons": [
+        "induction-convergence-frontier"
+      ],
+      "size_bytes": 113907,
+      "structural_class": "mixed-control-data",
+      "year": 2025
+    }
+  ],
+  "schema": "mc-hard-breakthrough-candidates-v1",
+  "selection": {
+    "excluded": "120-second solves and historical MC-AIG solves",
+    "families": 152,
+    "reason_counts": {
+      "generalization-frontier": 38,
+      "induction-convergence-frontier": 114,
+      "phase-sat-frontier": 196
+    },
+    "rules": {
+      "generalization-frontier": "early obligation/generalization signature",
+      "induction-convergence-frontier": "depth >= 7 and push/high-query",
+      "phase-sat-frontier": "depth <= 9 and front-end/few-query or SAT-heavy"
+    }
+  }
+}

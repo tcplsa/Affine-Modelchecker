@@ -1,0 +1,241 @@
+name	size_bytes	year	group	model_id	family	tier	seed_block	winner	outcome	outcome_conflict	benchmark_wall_seconds	timeout_seconds	ric3_width_w0_status	ric3_width_w0_wall_seconds	ric3_width_w0_exit_code	ric3_width_w0_replica
+6s102	25199	mixed	timeout	2015__6s102	6s102	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1.025817	1800.000000	SAFE	0.996962	0	1
+exit.5.prop1-func-interl	12957	mixed	timeout	2019__exit.5.prop1-func-interl	exit	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1.823764	1800.000000	SAFE	1.801666	0	1
+eijks1423	3883	mixed	timeout	2015__eijks1423	eijks	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	2.944985	1800.000000	SAFE	2.929873	0	1
+hwmcc2020__data__2019__mann__safe__intersymbol_analog_estimation_convergence	7941	mixed	timeout	2020__intersymbol_analog_estimation_convergence	intersymbol_analog_estimation_convergence	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	5.911084	1800.000000	SAFE	5.891410	-15	4
+byte_add_1-1	45878	mixed	timeout	2024__byte_add_1-1	byte_add_	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	8.006650	1800.000000	SAFE	7.907054	0	3
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__circular_pointer_top_w8_d16_e0	11546	mixed	timeout	2025__circular_pointer_top_w8_d16_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	11.141200	1800.000000	UNSAFE	11.019194	-15	4
+hwmcc2024__data__2019__mann__data-integrity__unsafe__circular_pointer_top_w64_d8_e0	47177	mixed	timeout	2024__circular_pointer_top_w64_d8_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	19.598229	1800.000000	UNSAFE	19.535356	-15	4
+circular_pointer_top_w16_d16_e0	21626	mixed	timeout	2019__circular_pointer_top_w16_d16_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	28.685877	1800.000000	UNSAFE	28.640558	0	2
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__arbitrated_top_n2_w8_d32_e0	45454	mixed	timeout	2025__arbitrated_top_n2_w8_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	29.594859	1800.000000	UNSAFE	29.521693	0	2
+lamport_nonatomic.5.prop1-func-interl	24833	mixed	timeout	2019__lamport_nonatomic.5.prop1-func-interl	lamport_nonatomic	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	6.025423	1800.000000	SAFE	6.008905	0	3
+at.6.prop1-back-serstep	12197	mixed	timeout	2020__at.6.prop1-back-serstep	at	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	38.412158	1800.000000	UNSAFE	38.334174	0	1
+qspiflash_dualflexpress_divthree-p011	32722	mixed	timeout	2019__qspiflash_dualflexpress_divthree-p011	qspiflash_dualflexpress_divthree	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	4.673672	1800.000000	SAFE	4.659865	0	3
+arbitrated_top_n3_w8_d32_e0	67948	mixed	timeout	2025__arbitrated_top_n3_w8_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	52.969457	1800.000000	UNSAFE	52.803109	0	4
+hwmcc2020__data__2019__mann__data-integrity__unsafe__circular_pointer_top_w128_d8_e0	95109	mixed	timeout	2020__circular_pointer_top_w128_d8_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	66.079528	1800.000000	UNSAFE	66.038851	0	4
+a16-p128	45307	mixed	timeout	2024__a16-p128	a	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	63.671050	1800.000000	SAFE	63.657172	0	1
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__circular_pointer_top_w32_d16_e0	42503	mixed	timeout	2025__circular_pointer_top_w32_d16_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	77.389545	1800.000000	UNSAFE	77.253346	-15	4
+hwmcc2020__data__2019__mann__data-integrity__unsafe__circular_pointer_top_w32_d16_e0	42508	mixed	timeout	2020__circular_pointer_top_w32_d16_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	79.695705	1800.000000	UNSAFE	79.581338	-15	4
+hwmcc2015__data__bobtuttt	29279	mixed	timeout	2015__bobtuttt	bobtuttt	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	23.135677	1800.000000	UNSAFE	23.103779	0	4
+6s0	10448	mixed	timeout	2017__6s0	6s0	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	103.170013	1800.000000	SAFE	103.148179	0	2
+arbitrated_top_n3_w32_d32_e0	263097	mixed	timeout	2019__arbitrated_top_n3_w32_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	74.606764	1800.000000	UNSAFE	74.581492	0	2
+arbitrated_top_n2_w16_d32_e0	86825	mixed	timeout	2019__arbitrated_top_n2_w16_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	32.655301	1800.000000	UNSAFE	32.623052	0	4
+bobsmhdlc1	6069	mixed	timeout	2015__bobsmhdlc1	bobsmhdlc	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	97.920741	1800.000000	SAFE	97.896368	0	3
+kalman_bit_width_small	4571	mixed	timeout	2024__kalman_bit_width_small	kalman_bit_width_small	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	5.882210	1800.000000	SAFE	5.868604	0	3
+hwmcc2019__data__circular_pointer_top_w32_d16_e0	42521	mixed	timeout	2019__circular_pointer_top_w32_d16_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	90.103222	1800.000000	UNSAFE	90.085313	0	1
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__circular_pointer_top_w8_d32_e0	20978	mixed	timeout	2025__circular_pointer_top_w8_d32_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	166.360737	1800.000000	UNSAFE	166.294293	0	3
+a16-p32	19841	mixed	timeout	2025__a16-p32	a	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	168.596786	1800.000000	SAFE	168.565112	0	1
+cal99	87256	mixed	timeout	2020__cal99	cal	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	5.114087	1800.000000	SAFE	5.083887	0	3
+bobsmhdlc3	5979	mixed	timeout	2017__bobsmhdlc3	bobsmhdlc	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	171.855670	1800.000000	SAFE	171.824484	0	3
+hwmcc2019__data__circular_pointer_top_w8_d32_e0	21007	mixed	timeout	2019__circular_pointer_top_w8_d32_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	181.828802	1800.000000	UNSAFE	181.775826	0	4
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__arbitrated_top_n4_w16_d32_e0	175132	mixed	timeout	2025__arbitrated_top_n4_w16_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	55.704732	1800.000000	UNSAFE	55.677434	-15	4
+hwmcc2020__data__2019__mann__data-integrity__unsafe__shift_register_top_w128_d16_e0	160249	mixed	timeout	2020__shift_register_top_w128_d16_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	38.915955	1800.000000	UNSAFE	38.881384	0	4
+hwmcc2015__data__pdtfifo1to0	6114	mixed	timeout	2015__pdtfifo1to0	pdtfifo	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	238.484613	1800.000000	SAFE	238.432531	0	2
+hwmcc2020__data__2019__mann__data-integrity__unsafe__arbitrated_top_n2_w8_d32_e0	45453	mixed	timeout	2020__arbitrated_top_n2_w8_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	19.203871	1800.000000	UNSAFE	19.186458	0	4
+oc8051gmfbaddr	35045	mixed	timeout	2017__oc8051gmfbaddr	oc	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	253.348261	1800.000000	SAFE	253.322157	0	1
+hwmcc2024__data__2024__hku__seq__diffeq_1_4__diffeq	4209	mixed	timeout	2024__diffeq	diffeq	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	268.209439	1800.000000	SAFE	267.967322	0	2
+h_RCU	8153	mixed	timeout	2020__h_RCU	h_RCU	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	299.176943	1800.000000	SAFE	299.103620	0	1
+arbitrated_top_n2_w32_d32_e0	171809	mixed	timeout	2024__arbitrated_top_n2_w32_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	66.478647	1800.000000	UNSAFE	66.451833	0	3
+hwmcc2019__data__shift_register_top_w128_d32_e0	313702	mixed	timeout	2019__shift_register_top_w128_d32_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	365.813972	1800.000000	UNSAFE	365.757802	0	3
+hwmcc2019__data__arbitrated_top_n5_w8_d32_e0	113749	mixed	timeout	2019__arbitrated_top_n5_w8_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	41.442268	1800.000000	UNSAFE	41.413365	0	2
+bakery.3.prop1-func-interl	6787	mixed	timeout	2025__bakery.3.prop1-func-interl	bakery	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1.075982	1800.000000	SAFE	1.048803	0	1
+shift_register_top_w8_d32_e0	18092	mixed	timeout	2019__shift_register_top_w8_d32_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	3.669656	1800.000000	UNSAFE	3.638852	0	3
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__shift_register_top_w16_d16_e0	18889	mixed	timeout	2025__shift_register_top_w16_d16_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1.207339	1800.000000	UNSAFE	1.184790	-15	3
+arbitrated_top_n3_w64_d8_e0	134511	mixed	timeout	2025__arbitrated_top_n3_w64_d8_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	0.941338	1800.000000	UNSAFE	0.917889	0	2
+hwmcc2025__data__safety__2019__mann__data-integrity__unsafe__shift_register_top_w8_d128_e0	70690	mixed	timeout	2025__shift_register_top_w8_d128_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	343.753172	1800.000000	UNSAFE	343.695668	0	3
+hwmcc2020__data__2019__mann__data-integrity__unsafe__circular_pointer_top_w16_d32_e0	40207	mixed	timeout	2020__circular_pointer_top_w16_d32_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	592.440342	1800.000000	UNSAFE	592.394563	-15	4
+shift_register_top_w32_d64_e0	149747	mixed	timeout	2024__shift_register_top_w32_d64_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	393.718458	1800.000000	UNSAFE	393.667997	0	3
+6s7	9885	mixed	timeout	2015__6s7	6s7	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1130.723026	1800.000000	UNSAFE	1130.644261	0	1
+oc8051gme0pc	35334	mixed	timeout	2017__oc8051gme0pc	oc	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1340.848149	1800.000000	SAFE	1340.785754	0	4
+hwmcc2020__data__2019__mann__data-integrity__unsafe__shift_register_top_w8_d128_e0	70683	mixed	timeout	2020__shift_register_top_w8_d128_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	292.867701	1800.000000	UNSAFE	292.799220	0	4
+hwmcc2015__data__6s516r	24502	mixed	timeout	2015__6s516r	6s516r	timeout	1040001		UNKNOWN	0	1800.033226	1800.000000	TIMEOUT	1800.016646	-15	1
+lann.4.prop1-back-serstep	15886	mixed	timeout	2019__lann.4.prop1-back-serstep	lann	timeout	1040001		UNKNOWN	0	1800.069210	1800.000000	TIMEOUT	1800.011703	-15	1
+hwmcc2015__data__eijkbs6669	13644	mixed	timeout	2015__eijkbs6669	eijkbs	timeout	1040001		UNKNOWN	0	1800.083813	1800.000000	TIMEOUT	1800.007921	-15	1
+hwmcc2025__data__safety__2024__hkust__seq__gcd_2_4__gcd_bit_width_large	13604	mixed	timeout	2025__safety__2024__hkust__seq__gcd_2_4__gcd_bit_width_large	gcd_bit_width_large	timeout	1040001		UNKNOWN	0	1800.096784	1800.000000	TIMEOUT	1800.022193	-15	2
+krebs.3.prop1-func-interl	6584	mixed	timeout	2020__krebs.3.prop1-func-interl	krebs	timeout	1040001		UNKNOWN	0	1800.110653	1800.000000	TIMEOUT	1800.016702	-15	1
+hwmcc2025__data__safety__2024__hkust__seq__gcd_2_3__gcd_bit_width_large	9182	mixed	timeout	2025__safety__2024__hkust__seq__gcd_2_3__gcd_bit_width_large	gcd_bit_width_large	timeout	1040001		UNKNOWN	0	1800.153805	1800.000000	TIMEOUT	1800.015908	-15	1
+hwmcc2020__data__2019__wolf__2018D__VexRiscv-regch0-20-p0	167971	mixed	timeout	2020__VexRiscv-regch0-20-p0	VexRiscv	timeout	1040001		UNKNOWN	0	1800.178155	1800.000000	TIMEOUT	1800.046399	-15	1
+hwmcc2020__data__2019__mann__data-integrity__unsafe__shift_register_top_w16_d16_e0	18882	mixed	timeout	2020__shift_register_top_w16_d16_e0	shift_register_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1.438069	1800.000000	UNSAFE	1.407858	0	4
+dblclockfft_butterfly_ck3_r0-p100	30047	mixed	timeout	2025__dblclockfft_butterfly_ck3_r0-p100	dblclockfft_butterfly_ck	timeout	1040001		UNKNOWN	0	1800.049753	1800.000000	TIMEOUT	1800.032594	-15	1
+dblclockfft_butterfly_ck3_r0-p76	63471	mixed	timeout	2025__dblclockfft_butterfly_ck3_r0-p76	dblclockfft_butterfly_ck	timeout	1040001		UNKNOWN	0	1800.043239	1800.000000	TIMEOUT	1800.032519	-15	1
+arbitrated_top_n2_w128_d16_e0	361648	mixed	timeout	2019__arbitrated_top_n2_w128_d16_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	9.280349	1800.000000	UNSAFE	9.229590	0	3
+brp2.3.prop1-back-serstep	19279	mixed	timeout	2020__brp2.3.prop1-back-serstep	brp	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1.409722	1800.000000	UNSAFE	1.390610	0	3
+qspiflash_dualflexpress_divfive-p004	32809	mixed	timeout	2019__qspiflash_dualflexpress_divfive-p004	qspiflash_dualflexpress_divfive	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	8.740612	1800.000000	SAFE	8.724004	0	1
+hwmcc2020__data__2019__mann__data-integrity__unsafe__circular_pointer_top_w8_d16_e0	11546	mixed	timeout	2020__circular_pointer_top_w8_d16_e0	circular_pointer_top_w	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	12.216057	1800.000000	UNSAFE	12.168449	0	4
+cal146	87229	mixed	timeout	2019__cal146	cal	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	5.001823	1800.000000	SAFE	4.984256	0	1
+collision.6.prop1-func-interl	43545	mixed	timeout	2019__collision.6.prop1-func-interl	collision	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	6.881845	1800.000000	SAFE	6.857434	0	1
+hwmcc2015__data__bobsm9234	9237	mixed	timeout	2015__bobsm9234	bobsm	timeout	1040001		UNKNOWN	0	1800.067660	1800.000000	TIMEOUT	1800.032459	-15	2
+hwmcc2015__data__6s517rb0	52132	mixed	timeout	2015__6s517rb0	6s517rb0	timeout	1040001		UNKNOWN	0	1800.033111	1800.000000	TIMEOUT	1800.017140	-15	1
+fib_23	1886	mixed	timeout	2025__fib_23	fib_	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	0.048062	1800.000000	SAFE	0.031112	0	2
+6s191	22378	mixed	timeout	2017__6s191	6s191	timeout	1040001		UNKNOWN	0	1800.052195	1800.000000	TIMEOUT	1800.032359	-15	1
+hwmcc2020__data__2019__beem__frogs.5.prop1-func-interl	33867	mixed	timeout	2020__frogs.5.prop1-func-interl	frogs	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	0.310786	1800.000000	SAFE	0.283309	0	4
+eijks444	1020	mixed	timeout	2017__eijks444	eijks	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	0.194852	1800.000000	SAFE	0.182773	0	2
+hwmcc2024__data__2019__mann__data-integrity__unsafe__arbitrated_top_n4_w8_d32_e0	90559	mixed	timeout	2024__arbitrated_top_n4_w8_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	36.944055	1800.000000	UNSAFE	36.907339	0	3
+arbitrated_top_n4_w16_d16_e0	89171	mixed	timeout	2020__arbitrated_top_n4_w16_d16_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	3.185218	1800.000000	UNSAFE	3.160161	-15	4
+gcd	3598	mixed	timeout	2024__gcd	gcd	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	4.290708	1800.000000	SAFE	4.279259	0	2
+msmie.3.prop1-func-interl	18717	mixed	timeout	2020__msmie.3.prop1-func-interl	msmie	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	38.430221	1800.000000	SAFE	38.395820	0	4
+brp2.3.prop3-func-interl	11629	mixed	timeout	2025__brp2.3.prop3-func-interl	brp	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	6.058185	1800.000000	SAFE	6.036712	0	4
+beempgmprot1f2	65454	mixed	timeout	2015__beempgmprot1f2	beempgmprot	timeout	1040001		UNKNOWN	0	1800.040309	1800.000000	TIMEOUT	1800.016697	-15	1
+cal94	86990	mixed	timeout	2019__cal94	cal	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	26.168240	1800.000000	SAFE	26.130802	0	4
+6s130	77766	mixed	timeout	2017__6s130	6s130	timeout	1040001		UNKNOWN	0	1800.031288	1800.000000	TIMEOUT	1800.008072	-15	1
+hwmcc2020__data__2019__mann__data-integrity__unsafe__circular_pointer_top_w16_d64_e0	77814	mixed	timeout	2020__circular_pointer_top_w16_d64_e0	circular_pointer_top_w	timeout	1040001		UNKNOWN	0	1800.026397	1800.000000	TIMEOUT	1800.016792	-15	1
+bobsmfpu	148252	mixed	timeout	2017__bobsmfpu	bobsmfpu	timeout	1040001		UNKNOWN	0	1800.020394	1800.000000	TIMEOUT	1800.008052	-15	1
+bobsm38584	70744	mixed	timeout	2015__bobsm38584	bobsm	timeout	1040001		UNKNOWN	0	1800.041314	1800.000000	TIMEOUT	1800.016631	-15	1
+6s207rb28	134798	mixed	timeout	2017__6s207rb28	6s207rb28	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	6.926709	1800.000000	UNSAFE	6.879562	0	4
+hwmcc2015__data__bobpcihm	36999	mixed	timeout	2015__bobpcihm	bobpcihm	timeout	1040001		UNKNOWN	0	1800.128134	1800.000000	TIMEOUT	1800.064206	-15	2
+benchmark04_conjunctive	19988	mixed	timeout	2024__benchmark04_conjunctive	benchmark	timeout	1040001		UNKNOWN	0	1800.042760	1800.000000	TIMEOUT	1800.032903	-15	1
+hwmcc2020__data__2019__goel__industry__mul1__mul1	46752	mixed	timeout	2020__mul1	mul	timeout	1040001		UNKNOWN	0	1800.035473	1800.000000	TIMEOUT	1800.008169	-15	1
+bob12s10	13517	mixed	timeout	2015__bob12s10	bob	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	182.127212	1800.000000	SAFE	182.043772	0	1
+6s4	7777	mixed	timeout	2017__6s4	6s4	timeout	1040001		UNKNOWN	0	1800.037899	1800.000000	TIMEOUT	1800.016195	-15	1
+hwmcc2020__data__2019__wolf__2019C__dspfilters_fastfir_second-p07	134705	mixed	timeout	2020__dspfilters_fastfir_second-p07	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	25.174803	1800.000000	SAFE	25.109170	0	4
+hwmcc2019__data__mul1	48889	mixed	timeout	2019__mul1	mul	timeout	1040001		UNKNOWN	0	1800.034189	1800.000000	TIMEOUT	1800.008547	-15	1
+Problem03_label51	177025	mixed	timeout	2024__Problem03_label51	Problem	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	76.074854	1800.000000	SAFE	76.048290	0	1
+oc8051gme2addr	35358	mixed	timeout	2017__oc8051gme2addr	oc	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	380.912515	1800.000000	SAFE	380.876975	0	1
+arbitrated_top_n2_w8_d64_e0	87902	mixed	timeout	2020__arbitrated_top_n2_w8_d64_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1501.264111	1800.000000	UNSAFE	1501.213344	0	3
+cambridge.7.prop2-back-serstep	89169	mixed	timeout	2019__cambridge.7.prop2-back-serstep	cambridge	timeout	1040001		UNKNOWN	0	1800.023814	1800.000000	TIMEOUT	1800.008968	-15	1
+hwmcc2024__data__2019__wolf__2019A__picorv32_mutCY_nomem-p8	282463	mixed	timeout	2024__picorv32_mutCY_nomem-p8	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	343.871268	1800.000000	UNSAFE	343.812905	0	3
+mul10	49289	mixed	timeout	2019__mul10	mul	timeout	1040001		UNKNOWN	0	1800.023185	1800.000000	TIMEOUT	1800.008388	-15	1
+ILA_Rocket_AND_problem	619948	mixed	timeout	2025__ILA_Rocket_AND_problem	ILA_Rocket_AND_problem	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	10.802546	1800.000000	UNSAFE	10.745409	0	3
+arbitrated_top_n5_w128_d8_e0	467034	mixed	timeout	2020__arbitrated_top_n5_w128_d8_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	2.831305	1800.000000	UNSAFE	2.796751	0	3
+picorv32_mutBY_nomem-p8	283371	mixed	timeout	2019__picorv32_mutBY_nomem-p8	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	364.924766	1800.000000	UNSAFE	364.852108	0	4
+picorv32_mutBY_nomem-p6	280677	mixed	timeout	2020__picorv32_mutBY_nomem-p6	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	602.807807	1800.000000	UNSAFE	602.756180	0	2
+bc57sensorsp1	6345	mixed	timeout	2015__bc57sensorsp1	bc	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	17.795107	1800.000000	UNSAFE	17.763290	0	3
+hwmcc2015__data__eijkbs1512	3681	mixed	timeout	2015__eijkbs1512	eijkbs	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	0.331156	1800.000000	SAFE	0.317014	0	3
+bob12s08	103574	mixed	timeout	2015__bob12s08	bob	timeout	1040001		UNKNOWN	0	1800.132316	1800.000000	TIMEOUT	1800.115258	-15	1
+picorv32_mutBY_nomem-p4	280677	mixed	timeout	2020__picorv32_mutBY_nomem-p4	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	789.502803	1800.000000	UNSAFE	789.436453	0	4
+benchmarks_output_btor2_example_324_miter_miter	47618	mixed	timeout	2025__benchmarks_output_btor2_example_324_miter_miter	benchmarks_output_btor	timeout	1040001		UNKNOWN	0	1800.035804	1800.000000	TIMEOUT	1800.016560	-15	1
+hwmcc2019__data__arbitrated_top_n2_w128_d32_e0	731431	mixed	timeout	2019__arbitrated_top_n2_w128_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	115.663218	1800.000000	UNSAFE	115.592038	0	2
+hwmcc2024__data__2019__wolf__2019C__dspfilters_fastfir_second-p06	134067	mixed	timeout	2024__dspfilters_fastfir_second-p06	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1062.467190	1800.000000	SAFE	1062.400893	0	1
+hwmcc2019__data__intersymbol_analog_estimation_convergence	15133	mixed	timeout	2019__intersymbol_analog_estimation_convergence	intersymbol_analog_estimation_convergence	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1504.115897	1800.000000	UNSAFE	1504.075275	0	4
+picorv32_mutBY_nomem-p1	280782	mixed	timeout	2020__picorv32_mutBY_nomem-p1	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	926.621537	1800.000000	UNSAFE	926.554179	0	4
+6s158	71863	mixed	timeout	2017__6s158	6s158	timeout	1040001		UNKNOWN	0	1800.028509	1800.000000	TIMEOUT	1800.017079	-15	1
+qspiflash_dualflexpress_divthree-p004	32729	mixed	timeout	2019__qspiflash_dualflexpress_divthree-p004	qspiflash_dualflexpress_divthree	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	6.850433	1800.000000	SAFE	6.838402	0	1
+picorv32_mutCY_nomem-p4	282940	mixed	timeout	2019__picorv32_mutCY_nomem-p4	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1085.936118	1800.000000	UNSAFE	1085.891381	0	1
+arbitrated_top_n4_w32_d32_e0	356408	mixed	timeout	2020__arbitrated_top_n4_w32_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	41.536643	1800.000000	UNSAFE	41.483234	0	2
+oc8051gmf2iram	35168	mixed	timeout	2017__oc8051gmf2iram	oc	timeout	1040001		UNKNOWN	0	1800.027425	1800.000000	TIMEOUT	1800.016147	-15	1
+hwmcc2020__data__2019__goel__industry__mul9__mul9	48709	mixed	timeout	2020__mul9	mul	timeout	1040001		UNKNOWN	0	1800.032823	1800.000000	TIMEOUT	1800.016512	-15	1
+leader_election.3.prop1-back-serstep	139273	mixed	timeout	2019__leader_election.3.prop1-back-serstep	leader_election	timeout	1040001		UNKNOWN	0	1800.043909	1800.000000	TIMEOUT	1800.017539	-15	2
+arbitrated_top_n5_w64_d8_e0	225838	mixed	timeout	2024__arbitrated_top_n5_w64_d8_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1.272998	1800.000000	UNSAFE	1.237104	-15	4
+mul4	47765	mixed	timeout	2019__mul4	mul	timeout	1040001		UNKNOWN	0	1800.037487	1800.000000	TIMEOUT	1800.016838	-15	1
+prodcellp2neg	3935	mixed	timeout	2015__prodcellp2neg	prodcellp	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	8.331118	1800.000000	UNSAFE	8.311889	0	1
+oc8051gm03acc	35063	mixed	timeout	2017__oc8051gm03acc	oc	timeout	1040001		UNKNOWN	0	1800.032518	1800.000000	TIMEOUT	1800.016327	-15	1
+cal2	62887	mixed	timeout	2020__cal2	cal	timeout	1040001		UNKNOWN	0	1800.033471	1800.000000	TIMEOUT	1800.016610	-15	1
+bc57sensorsp1neg	6345	mixed	timeout	2015__bc57sensorsp1neg	bc	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	10.993102	1800.000000	UNSAFE	10.965329	0	4
+mcs.3.prop1-back-serstep	11948	mixed	timeout	2020__mcs.3.prop1-back-serstep	mcs	timeout	1040001		UNKNOWN	0	1800.036830	1800.000000	TIMEOUT	1800.008035	-15	1
+cal157	277898	mixed	timeout	2025__cal157	cal	timeout	1040001		UNKNOWN	0	1800.041011	1800.000000	TIMEOUT	1800.016536	-15	1
+zipcpu-zipmmu-p10	47320	mixed	timeout	2019__zipcpu-zipmmu-p10	zipcpu	timeout	1040001		UNKNOWN	0	1800.081196	1800.000000	TIMEOUT	1800.064560	-15	1
+hwmcc2020__data__2019__wolf__2019C__dspfilters_fastfir_second-p16	134687	mixed	timeout	2020__dspfilters_fastfir_second-p16	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	55.607222	1800.000000	SAFE	55.564163	0	3
+picorv32_mutCX_nomem-p2	347616	mixed	timeout	2024__picorv32_mutCX_nomem-p2	picorv	timeout	1040001		UNKNOWN	0	1800.032242	1800.000000	TIMEOUT	1800.016315	-15	2
+hwmcc2015__data__6s274r	35047	mixed	timeout	2015__6s274r	6s274r	timeout	1040001		UNKNOWN	0	1800.090129	1800.000000	TIMEOUT	1800.032681	-15	3
+picorv32_mutCX_nomem-p1	347616	mixed	timeout	2024__picorv32_mutCX_nomem-p1	picorv	timeout	1040001		UNKNOWN	0	1800.032929	1800.000000	TIMEOUT	1800.016934	-15	1
+hwmcc2015__data__6s268r	29847	mixed	timeout	2015__6s268r	6s268r	timeout	1040001		UNKNOWN	0	1800.035593	1800.000000	TIMEOUT	1800.016202	-15	1
+oski15a14b03s	166979	mixed	timeout	2015__oski15a14b03s	oski	timeout	1040001		UNKNOWN	0	1800.045928	1800.000000	TIMEOUT	1800.033353	-15	1
+hwmcc2020__data__2019__mann__data-integrity__unsafe__arbitrated_top_n2_w128_d32_e0	731359	mixed	timeout	2020__arbitrated_top_n2_w128_d32_e0	arbitrated_top_n	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	111.702671	1800.000000	UNSAFE	111.659196	0	2
+Problem03_label32	177024	mixed	timeout	2025__Problem03_label32	Problem	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	48.962820	1800.000000	SAFE	48.926123	0	3
+hwmcc2020__data__2019__goel__industry__cal97__cal97	87081	mixed	timeout	2020__cal97	cal	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	31.444025	1800.000000	SAFE	31.411492	0	3
+6s134	8470	mixed	timeout	2017__6s134	6s134	timeout	1040001		UNKNOWN	0	1800.047839	1800.000000	TIMEOUT	1800.032847	-15	2
+6s151	48875	mixed	timeout	2015__6s151	6s151	timeout	1040001		UNKNOWN	0	1800.060228	1800.000000	TIMEOUT	1800.032615	-15	1
+hwmcc2020__data__2019__wolf__2019A__picorv32_mutBX_nomem-p8	347327	mixed	timeout	2020__picorv32_mutBX_nomem-p8	picorv	timeout	1040001		UNKNOWN	0	1800.037481	1800.000000	TIMEOUT	1800.016657	-15	1
+picorv32_mutBX_nomem-p7	348397	mixed	timeout	2019__picorv32_mutBX_nomem-p7	picorv	timeout	1040001		UNKNOWN	0	1800.036505	1800.000000	TIMEOUT	1800.017245	-15	2
+6s148	165083	mixed	timeout	2015__6s148	6s148	timeout	1040001		UNKNOWN	0	1800.053081	1800.000000	TIMEOUT	1800.032847	-15	1
+picorv32_mutCX_nomem-p4	348398	mixed	timeout	2019__picorv32_mutCX_nomem-p4	picorv	timeout	1040001		UNKNOWN	0	1800.039296	1800.000000	TIMEOUT	1800.016124	-15	1
+hwmcc2020__data__2019__wolf__2019C__dspfilters_fastfir_second-p09	134740	mixed	timeout	2020__dspfilters_fastfir_second-p09	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	75.398563	1800.000000	SAFE	75.372262	0	1
+hwmcc2019__data__cal156	276553	mixed	timeout	2019__cal156	cal	timeout	1040001		UNKNOWN	0	1800.041349	1800.000000	TIMEOUT	1800.016917	-15	1
+hwmcc2019__data__picorv32_mutAY_nomem-p4	282946	mixed	timeout	2019__picorv32_mutAY_nomem-p4	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1020.527926	1800.000000	UNSAFE	1020.477805	0	1
+Float_div.i.p+cfa-reducer	70256	mixed	timeout	2025__Float_div.i.p+cfa-reducer	Float_div	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	10.198513	1800.000000	SAFE	10.164028	0	2
+hwmcc2020__data__2019__wolf__2019A__picorv32_mutAY_nomem-p4	280688	mixed	timeout	2020__picorv32_mutAY_nomem-p4	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	984.573837	1800.000000	UNSAFE	984.490191	0	4
+hwmcc2024__data__2019__wolf__2018D__VexRiscv-regch0-20-p1	168697	mixed	timeout	2024__VexRiscv-regch0-20-p1	VexRiscv	timeout	1040001		UNKNOWN	0	1800.051185	1800.000000	TIMEOUT	1800.016584	-15	4
+6s288r	283008	mixed	timeout	2017__6s288r	6s288r	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	3.350570	1800.000000	SAFE	3.267988	0	2
+picorv32_mutCY_nomem-p5	282985	mixed	timeout	2019__picorv32_mutCY_nomem-p5	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	933.000997	1800.000000	UNSAFE	932.939157	0	4
+hwmcc2015__data__6s195	31754	mixed	timeout	2015__6s195	6s195	timeout	1040001		UNKNOWN	0	1800.050558	1800.000000	TIMEOUT	1800.032379	-15	2
+picorv32_mutBY_nomem-p7	280680	mixed	timeout	2020__picorv32_mutBY_nomem-p7	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1216.181649	1800.000000	UNSAFE	1216.098752	0	3
+6s284rb1	75587	mixed	timeout	2015__6s284rb1	6s284rb1	timeout	1040001		UNKNOWN	0	1800.052267	1800.000000	TIMEOUT	1800.032427	-15	1
+hwmcc2025__data__safety__2019__wolf__2019C__dspfilters_fastfir_second-p10	127955	mixed	timeout	2025__dspfilters_fastfir_second-p10	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1382.360506	1800.000000	SAFE	1382.267248	0	3
+oski15a14b00s	167256	mixed	timeout	2015__oski15a14b00s	oski	timeout	1040001		UNKNOWN	0	1800.052222	1800.000000	TIMEOUT	1800.016433	-15	1
+pgm_protocol.2.prop5-back-serstep	133256	mixed	timeout	2019__pgm_protocol.2.prop5-back-serstep	pgm_protocol	timeout	1040001		UNKNOWN	0	1800.034399	1800.000000	TIMEOUT	1800.017018	-15	1
+6s410rb043	561897	mixed	timeout	2015__6s410rb043	6s410rb043	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	7.501167	1800.000000	SAFE	7.397090	0	2
+dspfilters_fastfir_second-p28	124364	mixed	timeout	2019__dspfilters_fastfir_second-p28	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1158.342692	1800.000000	SAFE	1158.274106	0	4
+hwmcc2020__data__2019__wolf__2019C__vgasim_imgfifo-p111	67237	mixed	timeout	2020__vgasim_imgfifo-p111	vgasim_imgfifo	timeout	1040001		UNKNOWN	0	1800.132040	1800.000000	TIMEOUT	1800.064912	-15	4
+cal220	332615	mixed	timeout	2020__cal220	cal	timeout	1040001		UNKNOWN	0	1800.053064	1800.000000	TIMEOUT	1800.016724	-15	1
+cal176	279411	mixed	timeout	2020__cal176	cal	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1.232020	1800.000000	SAFE	1.200136	0	4
+circular_pointer_top_w128_d64_e0	689528	mixed	timeout	2020__circular_pointer_top_w128_d64_e0	circular_pointer_top_w	timeout	1040001		UNKNOWN	0	1800.048673	1800.000000	TIMEOUT	1800.033024	-15	1
+dspfilters_fastfir_second-p30	134063	mixed	timeout	2019__dspfilters_fastfir_second-p30	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1747.014802	1800.000000	SAFE	1746.897359	0	4
+pgm_protocol.4.prop2-func-interl	84020	mixed	timeout	2019__pgm_protocol.4.prop2-func-interl	pgm_protocol	timeout	1040001		UNKNOWN	0	1800.038508	1800.000000	TIMEOUT	1800.016140	-15	2
+6s204b19	940546	mixed	timeout	2015__6s204b19	6s204b19	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	6.166926	1800.000000	SAFE	6.105491	0	4
+6s301rb106	1140785	mixed	timeout	2015__6s301rb106	6s301rb106	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	37.101946	1800.000000	UNSAFE	37.036107	0	1
+cal227	331433	mixed	timeout	2020__cal227	cal	timeout	1040001		UNKNOWN	0	1800.055719	1800.000000	TIMEOUT	1800.016503	-15	1
+Mono6_1	11644	mixed	timeout	2025__Mono6_1	Mono	timeout	1040001		UNKNOWN	0	1800.148279	1800.000000	TIMEOUT	1800.115155	-15	1
+oc8051xiommuo5	26928	mixed	timeout	2017__oc8051xiommuo5	oc	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	3.038436	1800.000000	SAFE	3.019607	0	1
+counter_bit_width_large	12706	mixed	timeout	2024__counter_bit_width_large	counter_bit_width_large	timeout	1040001		UNKNOWN	0	1800.081775	1800.000000	TIMEOUT	1800.033031	-15	1
+vgasim_imgfifo-p091	66965	mixed	timeout	2019__vgasim_imgfifo-p091	vgasim_imgfifo	timeout	1040001		UNKNOWN	0	1800.119468	1800.000000	TIMEOUT	1800.065014	-15	1
+fermat1-ll	177381	mixed	timeout	2025__fermat1-ll	fermat	timeout	1040001		UNKNOWN	0	1800.045942	1800.000000	TIMEOUT	1800.033155	-15	1
+6s290	476219	mixed	timeout	2017__6s290	6s290	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	6.062912	1800.000000	SAFE	5.992078	0	4
+6s380b511	239333	mixed	timeout	2017__6s380b511	6s380b511	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	0.376192	1800.000000	UNSAFE	0.358079	0	3
+dspfilters_fastfir_second-p08	134078	mixed	timeout	2019__dspfilters_fastfir_second-p08	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	760.344624	1800.000000	SAFE	760.295337	0	1
+ILA_Piccolo_LUI_sanity	746453	mixed	timeout	2025__ILA_Piccolo_LUI_sanity	ILA_Piccolo_LUI_sanity	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	17.440222	1800.000000	SAFE	17.380750	0	3
+6s198	4497	mixed	timeout	2015__6s198	6s198	timeout	1040001		UNKNOWN	0	1800.074761	1800.000000	TIMEOUT	1800.064895	-15	1
+6s374b029	1382801	mixed	timeout	2017__6s374b029	6s374b029	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	241.270781	1800.000000	UNSAFE	241.140135	0	1
+cal211	282846	mixed	timeout	2025__cal211	cal	timeout	1040001		UNKNOWN	0	1800.036764	1800.000000	TIMEOUT	1800.016426	-15	2
+cal235	342228	mixed	timeout	2024__cal235	cal	timeout	1040001		UNKNOWN	0	1800.036882	1800.000000	TIMEOUT	1800.017019	-15	2
+ILA_Piccolo_BLTU_problem	745094	mixed	timeout	2024__ILA_Piccolo_BLTU_problem	ILA_Piccolo_BLTU_problem	timeout	1040001		UNKNOWN	0	1800.027375	1800.000000	TIMEOUT	1800.016731	-15	1
+elevator_spec2_product25.cil	4646451	mixed	timeout	2025__elevator_spec2_product25.cil	elevator_spec	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	436.455561	1800.000000	SAFE	436.253693	0	3
+hwmcc2019__data__VexRiscv-regch0-30-p1	167814	mixed	timeout	2019__VexRiscv-regch0-30-p1	VexRiscv	timeout	1040001		UNKNOWN	0	1800.085464	1800.000000	TIMEOUT	1800.032375	-15	4
+cal234	335943	mixed	timeout	2020__cal234	cal	timeout	1040001		UNKNOWN	0	1800.037938	1800.000000	TIMEOUT	1800.016846	-15	1
+digits_bad_for	252306	mixed	timeout	2024__digits_bad_for	digits_bad_for	timeout	1040001		UNKNOWN	0	1800.037953	1800.000000	TIMEOUT	1800.017319	-15	1
+picorv32_mutAY_nomem-p7	282949	mixed	timeout	2019__picorv32_mutAY_nomem-p7	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1576.526630	1800.000000	UNSAFE	1576.443338	0	3
+hwmcc2019__data__dspfilters_fastfir_second-p22	134095	mixed	timeout	2019__dspfilters_fastfir_second-p22	dspfilters_fastfir_second	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	1300.177447	1800.000000	SAFE	1300.109887	0	4
+dijkstra-u_valuebound1	329727	mixed	timeout	2024__dijkstra-u_valuebound1	dijkstra	timeout	1040001		UNKNOWN	0	1800.081320	1800.000000	TIMEOUT	1800.033083	-15	1
+hwmcc2015__data__6s119	543366	mixed	timeout	2015__6s119	6s119	timeout	1040001		UNKNOWN	0	1800.081674	1800.000000	TIMEOUT	1800.064538	-15	2
+ILA_Piccolo_BGEU_problem	745496	mixed	timeout	2025__ILA_Piccolo_BGEU_problem	ILA_Piccolo_BGEU_problem	timeout	1040001		UNKNOWN	0	1800.040943	1800.000000	TIMEOUT	1800.016237	-15	2
+cal229	332938	mixed	timeout	2019__cal229	cal	timeout	1040001		UNKNOWN	0	1800.050493	1800.000000	TIMEOUT	1800.017087	-15	1
+picorv32_mutAY_nomem-p6	280688	mixed	timeout	2020__picorv32_mutAY_nomem-p6	picorv	timeout	1040001	rIC3 Native legacy width=0	UNSAFE	0	1458.523989	1800.000000	UNSAFE	1458.441784	0	1
+hwmcc2015__data__6s376r	389925	mixed	timeout	2015__6s376r	6s376r	timeout	1040001		UNKNOWN	0	1800.054508	1800.000000	TIMEOUT	1800.032753	-15	1
+ILA_Piccolo_SUB_problem	756040	mixed	timeout	2025__ILA_Piccolo_SUB_problem	ILA_Piccolo_SUB_problem	timeout	1040001		UNKNOWN	0	1800.035012	1800.000000	TIMEOUT	1800.016718	-15	1
+cal228	331832	mixed	timeout	2019__cal228	cal	timeout	1040001		UNKNOWN	0	1800.034348	1800.000000	TIMEOUT	1800.016555	-15	1
+6s382r	8051790	mixed	timeout	2015__6s382r	6s382r	timeout	1040001		UNKNOWN	0	1800.244043	1800.000000	TIMEOUT	1800.215616	-15	1
+6s329rb20	872092	mixed	timeout	2015__6s329rb20	6s329rb20	timeout	1040001		UNKNOWN	0	1800.117317	1800.000000	TIMEOUT	1800.065068	-15	2
+hwmcc2019__data__circular_pointer_top_w128_d128_e0	1389052	mixed	timeout	2019__circular_pointer_top_w128_d128_e0	circular_pointer_top_w	timeout	1040001		UNKNOWN	0	1800.083619	1800.000000	TIMEOUT	1800.064361	-15	1
+yosyshq_appnote_123_veer-p08	1285284	mixed	timeout	2024__yosyshq_appnote_123_veer-p08	yosyshq_appnote_	timeout	1040001		UNKNOWN	0	1800.121099	1800.000000	TIMEOUT	1800.065501	-15	1
+benchmarks_initial_output_btor2_example_52_miter_miter	467607	mixed	timeout	2025__benchmarks_initial_output_btor2_example_52_miter_miter	benchmarks_initial_output_btor	timeout	1040001		UNKNOWN	0	1800.071322	1800.000000	TIMEOUT	1800.032552	-15	2
+6s145	802372	mixed	timeout	2017__6s145	6s145	timeout	1040001		UNKNOWN	0	1800.038920	1800.000000	TIMEOUT	1800.016937	-15	2
+6s202b00	2478178	mixed	timeout	2015__6s202b00	6s202b00	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	69.610212	1800.000000	SAFE	69.214900	0	2
+6s292rb037	98814	mixed	timeout	2017__6s292rb037	6s292rb037	timeout	1040001		UNKNOWN	0	1800.133273	1800.000000	TIMEOUT	1800.065290	-15	1
+deep-nested	29381	mixed	timeout	2024__deep-nested	deep	timeout	1040001		UNKNOWN	0	1800.182492	1800.000000	TIMEOUT	1800.114931	-15	3
+6s348b53	865387	mixed	timeout	2017__6s348b53	6s348b53	timeout	1040001		UNKNOWN	0	1800.085946	1800.000000	TIMEOUT	1800.065092	-15	1
+ILA_Piccolo_ADD_problem	756056	mixed	timeout	2025__ILA_Piccolo_ADD_problem	ILA_Piccolo_ADD_problem	timeout	1040001		UNKNOWN	0	1800.053952	1800.000000	TIMEOUT	1800.016747	-15	1
+hwmcc2015__data__6s329rb19	872092	mixed	timeout	2015__6s329rb19	6s329rb19	timeout	1040001		UNKNOWN	0	1800.136297	1800.000000	TIMEOUT	1800.064688	-15	2
+6s203b41	2480438	mixed	timeout	2015__6s203b41	6s203b41	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	95.629763	1800.000000	SAFE	95.326902	0	3
+6s205b20	2476746	mixed	timeout	2017__6s205b20	6s205b20	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	349.086202	1800.000000	SAFE	348.903305	0	3
+bob12s06	946208	mixed	timeout	2015__bob12s06	bob	timeout	1040001		UNKNOWN	0	1800.170246	1800.000000	TIMEOUT	1800.065247	-15	1
+6s147	735440	mixed	timeout	2015__6s147	6s147	timeout	1040001		UNKNOWN	0	1800.074054	1800.000000	TIMEOUT	1800.033006	-15	3
+buggy_ridecore	6352335	mixed	timeout	2020__buggy_ridecore	buggy_ridecore	timeout	1040001		UNKNOWN	0	1800.085595	1800.000000	TIMEOUT	1800.065083	-15	2
+hwmcc2015__data__6s281b35	10113024	mixed	timeout	2015__6s281b35	6s281b35	timeout	1040001	rIC3 Native legacy width=0	SAFE	0	30.929468	1800.000000	SAFE	30.783327	0	4
+6s392r	7211587	mixed	timeout	2015__6s392r	6s392r	timeout	1040001		UNKNOWN	0	1800.218662	1800.000000	TIMEOUT	1800.165275	-15	2
+hwmcc2024__data__2019__mann__unknown__ridecore	6347562	mixed	timeout	2024__ridecore	ridecore	timeout	1040001		UNKNOWN	0	1800.079967	1800.000000	TIMEOUT	1800.033381	-15	4
+6s316b421	1385954	mixed	timeout	2017__6s316b421	6s316b421	timeout	1040001		UNKNOWN	0	1800.083342	1800.000000	TIMEOUT	1800.064516	-15	1
+6s163	7243613	mixed	timeout	2017__6s163	6s163	timeout	1040001		UNKNOWN	0	1800.268062	1800.000000	TIMEOUT	1800.164888	-15	4
+ILA_Ridecore_BNE_sanity	2613474	mixed	timeout	2025__ILA_Ridecore_BNE_sanity	ILA_Ridecore_BNE_sanity	timeout	1040001		UNKNOWN	0	1800.084551	1800.000000	TIMEOUT	1800.064275	-15	1
+ILA_Ridecore_SLL_problem	2563979	mixed	timeout	2025__ILA_Ridecore_SLL_problem	ILA_Ridecore_SLL_problem	timeout	1040001		UNKNOWN	0	1800.082317	1800.000000	TIMEOUT	1800.032475	-15	4
+6s149	404161	mixed	timeout	2015__6s149	6s149	timeout	1040001		UNKNOWN	0	1800.082727	1800.000000	TIMEOUT	1800.065271	-15	1
+hwmcc2020__data__2019__mann__unknown__ridecore	6342412	mixed	timeout	2020__ridecore	ridecore	timeout	1040001		UNKNOWN	0	1800.090347	1800.000000	TIMEOUT	1800.033110	-15	1
+hwmcc2019__data__ridecore	6349544	mixed	timeout	2019__ridecore	ridecore	timeout	1040001		UNKNOWN	0	1800.077081	1800.000000	TIMEOUT	1800.032430	-15	2
+6s128	2292993	mixed	timeout	2017__6s128	6s128	timeout	1040001		UNKNOWN	0	1800.085853	1800.000000	TIMEOUT	1800.032325	-15	4
+ILA_Ridecore_JAL_problem	2548670	mixed	timeout	2025__ILA_Ridecore_JAL_problem	ILA_Ridecore_JAL_problem	timeout	1040001		UNKNOWN	0	1800.091233	1800.000000	TIMEOUT	1800.064512	-15	1
+hwmcc2015__data__6s322rb646	3056919	mixed	timeout	2015__6s322rb646	6s322rb646	timeout	1040001		UNKNOWN	0	1800.174988	1800.000000	TIMEOUT	1800.114628	-15	2
+hwmcc2015__data__6s402rb0342	1090447	mixed	timeout	2015__6s402rb0342	6s402rb0342	timeout	1040001		UNKNOWN	0	1800.049633	1800.000000	TIMEOUT	1800.032512	-15	1
+6s100	3155906	mixed	timeout	2015__6s100	6s100	timeout	1040001		UNKNOWN	0	1801.943224	1800.000000	TIMEOUT	1800.852214	-15	3
+6s204b16	940546	mixed	timeout	2017__6s204b16	6s204b16	timeout	1040001		UNKNOWN	0	1800.256816	1800.000000	TIMEOUT	1800.114220	-15	1
+6s316b460	1385954	mixed	timeout	2017__6s316b460	6s316b460	timeout	1040001		UNKNOWN	0	1800.166731	1800.000000	TIMEOUT	1800.071323	-15	2
+6s202b41	2478178	mixed	timeout	2017__6s202b41	6s202b41	timeout	1040001		UNKNOWN	0	1800.364984	1800.000000	TIMEOUT	1800.164717	-15	3
+ILA_Flute_SB_sanity	16465442	mixed	timeout	2024__ILA_Flute_SB_sanity	ILA_Flute_SB_sanity	timeout	1040001		UNKNOWN	0	1801.012214	1800.000000	TIMEOUT	1800.615462	-15	1
+ILA_Flute_SUB_sanity	16489518	mixed	timeout	2024__ILA_Flute_SUB_sanity	ILA_Flute_SUB_sanity	timeout	1040001		UNKNOWN	0	1800.741190	1800.000000	TIMEOUT	1800.564812	-15	2
+ILA_Flute_BGEU_problem	16448262	mixed	timeout	2025__ILA_Flute_BGEU_problem	ILA_Flute_BGEU_problem	timeout	1040001		UNKNOWN	0	1800.514548	1800.000000	TIMEOUT	1800.164912	-15	2
+ILA_Flute_LB_problem	16440167	mixed	timeout	2024__ILA_Flute_LB_problem	ILA_Flute_LB_problem	timeout	1040001		UNKNOWN	0	1800.782975	1800.000000	TIMEOUT	1800.264848	-15	2
+ILA_Flute_SLTI_sanity	16481374	mixed	timeout	2024__ILA_Flute_SLTI_sanity	ILA_Flute_SLTI_sanity	timeout	1040001		UNKNOWN	0	1800.859279	1800.000000	TIMEOUT	1800.214509	-15	1
+ILA_Flute_SLL_problem	16467964	mixed	timeout	2024__ILA_Flute_SLL_problem	ILA_Flute_SLL_problem	timeout	1040001		UNKNOWN	0	1801.150987	1800.000000	TIMEOUT	1800.568044	-15	3
+ILA_Flute_BLT_problem	16440822	mixed	timeout	2025__ILA_Flute_BLT_problem	ILA_Flute_BLT_problem	timeout	1040001		UNKNOWN	0	1800.995800	1800.000000	TIMEOUT	1800.715818	-15	3
+ILA_Flute_SW_problem	16444351	mixed	timeout	2024__ILA_Flute_SW_problem	ILA_Flute_SW_problem	timeout	1040001		UNKNOWN	0	1800.317773	1800.000000	TIMEOUT	1800.164599	-15	2
+ILA_Flute_AND_problem	16447918	mixed	timeout	2024__ILA_Flute_AND_problem	ILA_Flute_AND_problem	timeout	1040001		UNKNOWN	0	1800.925077	1800.000000	TIMEOUT	1800.564742	-15	4
+ILA_Flute_SLTI_problem	16461568	mixed	timeout	2024__ILA_Flute_SLTI_problem	ILA_Flute_SLTI_problem	timeout	1040001		UNKNOWN	0	1800.915569	1800.000000	TIMEOUT	1800.664913	-15	2
+ILA_Flute_SRAI_problem	16476795	mixed	timeout	2025__ILA_Flute_SRAI_problem	ILA_Flute_SRAI_problem	timeout	1040001		UNKNOWN	0	1801.319545	1800.000000	TIMEOUT	1800.314538	-15	1
+hwmcc2015__data__6s299b685	22658446	mixed	timeout	2015__6s299b685	6s299b685	timeout	1040001		UNKNOWN	0	1801.192767	1800.000000	TIMEOUT	1800.815871	-15	1

@@ -1,0 +1,500 @@
+{
+  "schema": "ric3-hardness-v1",
+  "tier": "frontier_1800_3600",
+  "source_manifest": "<WORKSPACE>/test_tools/compare/results/ric3_hard_3600_v1/candidates_1800.json",
+  "source_results": [
+    "<WORKSPACE>/test_tools/compare/results/ric3_hard_3600_v1/stock_ric3_3600.tsv"
+  ],
+  "models": [
+    {
+      "aig_ands": 4904114,
+      "and_reduction": 0.019119,
+      "bad_cone_xors": 3,
+      "bad_xor_density": 0.2,
+      "baseline_seconds": 60.766238,
+      "baseline_status": "TIMEOUT",
+      "family": "6s299b685",
+      "id": "2015__6s299b685",
+      "name": "6s299b685",
+      "next_cone_xors": 29658,
+      "next_xor_density": 0.006066,
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s299b685.aig",
+      "recognized_xors": 31254,
+      "shard": "full",
+      "shared_cone_xors": 0,
+      "size_bytes": 22658446,
+      "tier": "timeout",
+      "year": 2015,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "UNSAFE",
+        "wall_seconds": 3502.437146,
+        "replica": "4"
+      }
+    },
+    {
+      "aig_ands": 796,
+      "and_reduction": 0.03392,
+      "bad_cone_xors": 1,
+      "bad_xor_density": 0.001572,
+      "baseline_seconds": 60.008199,
+      "baseline_status": "TIMEOUT",
+      "family": "6s48p1",
+      "id": "2015__6s48p1",
+      "name": "6s48p1",
+      "next_cone_xors": 9,
+      "next_xor_density": 0.011392,
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/6s48p1.aig",
+      "recognized_xors": 9,
+      "shard": "full",
+      "shared_cone_xors": 1,
+      "size_bytes": 2475,
+      "tier": "timeout",
+      "year": 2015,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_0_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 1859.632626,
+        "replica": "1"
+      }
+    },
+    {
+      "aig_ands": 42906,
+      "and_reduction": 0.146063,
+      "bad_cone_xors": 41,
+      "bad_xor_density": 0.012283,
+      "baseline_seconds": 60.03297,
+      "baseline_status": "TIMEOUT",
+      "family": "oski",
+      "id": "2015__oski15a14b00s",
+      "name": "oski15a14b00s",
+      "next_cone_xors": 2057,
+      "next_xor_density": 0.04807,
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a14b00s.aig",
+      "recognized_xors": 2089,
+      "shard": "full",
+      "shared_cone_xors": 9,
+      "size_bytes": 167256,
+      "tier": "timeout",
+      "year": 2015,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 3094.199919,
+        "replica": "1"
+      }
+    },
+    {
+      "aig_ands": 42794,
+      "and_reduction": 0.144202,
+      "bad_cone_xors": 9,
+      "bad_xor_density": 0.002202,
+      "baseline_seconds": 60.033106,
+      "baseline_status": "TIMEOUT",
+      "family": "oski",
+      "id": "2015__oski15a14b22s",
+      "name": "oski15a14b22s",
+      "next_cone_xors": 2057,
+      "next_xor_density": 0.04807,
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/oski15a14b22s.aig",
+      "recognized_xors": 2057,
+      "shard": "full",
+      "shared_cone_xors": 9,
+      "size_bytes": 166983,
+      "tier": "timeout",
+      "year": 2015,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_0_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 2886.933456,
+        "replica": "1"
+      }
+    },
+    {
+      "aig_ands": 2743,
+      "and_reduction": 0.18374,
+      "bad_cone_xors": 75,
+      "bad_xor_density": 0.250836,
+      "baseline_seconds": 60.008315,
+      "baseline_status": "TIMEOUT",
+      "family": "pdtvsarmultip",
+      "id": "2015__pdtvsarmultip29",
+      "name": "pdtvsarmultip29",
+      "next_cone_xors": 38,
+      "next_xor_density": 0.01813,
+      "path": "<WORKSPACE>/test_tools/hwmcc2015/data/pdtvsarmultip29.aig",
+      "recognized_xors": 168,
+      "shard": "full",
+      "shared_cone_xors": 5,
+      "size_bytes": 8321,
+      "tier": "timeout",
+      "year": 2015,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 2592.411339,
+        "replica": "2"
+      }
+    },
+    {
+      "aig_ands": 10847,
+      "and_reduction": 0.103715,
+      "bad_cone_xors": 276,
+      "bad_xor_density": 0.070193,
+      "baseline_seconds": 60.016767,
+      "baseline_status": "TIMEOUT",
+      "family": "oc",
+      "id": "2017__oc8051gma4pc",
+      "name": "oc8051gma4pc",
+      "next_cone_xors": 375,
+      "next_xor_density": 0.034585,
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gma4pc.aig",
+      "recognized_xors": 375,
+      "shard": "full",
+      "shared_cone_xors": 276,
+      "size_bytes": 36817,
+      "tier": "timeout",
+      "year": 2017,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 1860.081391,
+        "replica": "2"
+      }
+    },
+    {
+      "aig_ands": 11186,
+      "and_reduction": 0.067853,
+      "bad_cone_xors": 154,
+      "bad_xor_density": 0.054649,
+      "baseline_seconds": 60.016372,
+      "baseline_status": "TIMEOUT",
+      "family": "oc",
+      "id": "2017__oc8051gmadacc",
+      "name": "oc8051gmadacc",
+      "next_cone_xors": 253,
+      "next_xor_density": 0.022626,
+      "path": "<WORKSPACE>/test_tools/hwmcc2017/data/oc8051gmadacc.aig",
+      "recognized_xors": 253,
+      "shard": "full",
+      "shared_cone_xors": 154,
+      "size_bytes": 38294,
+      "tier": "timeout",
+      "year": 2017,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 2760.153175,
+        "replica": "4"
+      }
+    },
+    {
+      "aig_ands": 107054,
+      "and_reduction": 0.010032,
+      "bad_cone_xors": 73,
+      "bad_xor_density": 0.00116,
+      "baseline_seconds": 60.064436,
+      "baseline_status": "TIMEOUT",
+      "family": "arbitrated_top_n",
+      "id": "2019__arbitrated_top_n5_w64_d64_e0",
+      "name": "arbitrated_top_n5_w64_d64_e0",
+      "next_cone_xors": 293,
+      "next_xor_density": 0.006652,
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/arbitrated_top_n5_w64_d64_e0.aig",
+      "recognized_xors": 358,
+      "shard": "full",
+      "shared_cone_xors": 9,
+      "size_bytes": 1840597,
+      "tier": "timeout",
+      "year": 2019,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "UNSAFE",
+        "wall_seconds": 2851.954556,
+        "replica": "3"
+      }
+    },
+    {
+      "aig_ands": 33687,
+      "and_reduction": 0.009885,
+      "bad_cone_xors": 72,
+      "bad_xor_density": 0.239203,
+      "baseline_seconds": 60.0161,
+      "baseline_status": "TIMEOUT",
+      "family": "shift_register_top_w",
+      "id": "2019__shift_register_top_w64_d64_e0",
+      "name": "shift_register_top_w64_d64_e0",
+      "next_cone_xors": 46,
+      "next_xor_density": 0.001376,
+      "path": "<WORKSPACE>/test_tools/hwmcc2019/data/shift_register_top_w64_d64_e0.aig",
+      "recognized_xors": 111,
+      "shard": "full",
+      "shared_cone_xors": 8,
+      "size_bytes": 305945,
+      "tier": "timeout",
+      "year": 2019,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_0_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "UNSAFE",
+        "wall_seconds": 1798.134042,
+        "replica": "2"
+      }
+    },
+    {
+      "aig_ands": 545019,
+      "and_reduction": 0.066069,
+      "bad_cone_xors": 48,
+      "bad_xor_density": 0.251309,
+      "baseline_seconds": 60.164356,
+      "baseline_status": "TIMEOUT",
+      "family": "buggy_ridecore",
+      "id": "2020__buggy_ridecore",
+      "name": "buggy_ridecore",
+      "next_cone_xors": 11954,
+      "next_xor_density": 0.021941,
+      "path": "<WORKSPACE>/test_tools/hwmcc2020/data/2019/mann/unsafe/buggy_ridecore.aig",
+      "recognized_xors": 12003,
+      "shard": "full",
+      "shared_cone_xors": 0,
+      "size_bytes": 6352335,
+      "tier": "timeout",
+      "year": 2020,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_2_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "UNSAFE",
+        "wall_seconds": 2696.23674,
+        "replica": "2"
+      }
+    },
+    {
+      "aig_ands": 61390,
+      "and_reduction": 0.755595,
+      "bad_cone_xors": 0,
+      "bad_xor_density": 0.0,
+      "baseline_seconds": 60.016174,
+      "baseline_status": "TIMEOUT",
+      "family": "AllInterval",
+      "id": "2024__AllInterval-019",
+      "name": "AllInterval-019",
+      "next_cone_xors": 15462,
+      "next_xor_density": 0.251869,
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/sosylab/xcsp/AllInterval-019.aig",
+      "recognized_xors": 15462,
+      "shard": "full",
+      "shared_cone_xors": 0,
+      "size_bytes": 332250,
+      "tier": "timeout",
+      "year": 2024,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "UNSAFE",
+        "wall_seconds": 2910.730559,
+        "replica": "1"
+      }
+    },
+    {
+      "aig_ands": 903673,
+      "and_reduction": 0.067508,
+      "bad_cone_xors": 0,
+      "bad_xor_density": 0.0,
+      "baseline_seconds": 60.315774,
+      "baseline_status": "TIMEOUT",
+      "family": "yosyshq_appnote_",
+      "id": "2024__yosyshq_appnote_123_cv32e40x-p649",
+      "name": "yosyshq_appnote_123_cv32e40x-p649",
+      "next_cone_xors": 20333,
+      "next_xor_density": 0.022501,
+      "path": "<WORKSPACE>/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p649.aig",
+      "recognized_xors": 20335,
+      "shard": "full",
+      "shared_cone_xors": 0,
+      "size_bytes": 5708464,
+      "tier": "timeout",
+      "year": 2024,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_2_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 2246.636418,
+        "replica": "3"
+      }
+    },
+    {
+      "aig_ands": 2871,
+      "and_reduction": 0.236155,
+      "bad_cone_xors": 50,
+      "bad_xor_density": 0.274725,
+      "baseline_seconds": 60.01619,
+      "baseline_status": "TIMEOUT",
+      "family": "dblclockfft_butterfly_ck",
+      "id": "2025__dblclockfft_butterfly_ck3_r0-p100",
+      "name": "dblclockfft_butterfly_ck3_r0-p100",
+      "next_cone_xors": 176,
+      "next_xor_density": 0.066415,
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2019/wolf/2019C/dblclockfft_butterfly_ck3_r0-p100.aig",
+      "recognized_xors": 226,
+      "shard": "full",
+      "shared_cone_xors": 0,
+      "size_bytes": 30047,
+      "tier": "timeout",
+      "year": 2025,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_2_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 2187.828839,
+        "replica": "4"
+      }
+    },
+    {
+      "aig_ands": 60709,
+      "and_reduction": 0.074272,
+      "bad_cone_xors": 0,
+      "bad_xor_density": 0.0,
+      "baseline_seconds": 60.032762,
+      "baseline_status": "TIMEOUT",
+      "family": "yosyshq_appnote_",
+      "id": "2025__yosyshq_appnote_123_cv32e40x-p524",
+      "name": "yosyshq_appnote_123_cv32e40x-p524",
+      "next_cone_xors": 1501,
+      "next_xor_density": 0.024734,
+      "path": "<WORKSPACE>/test_tools/hwmcc2025/data/safety/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p524.aig",
+      "recognized_xors": 1503,
+      "shard": "full",
+      "shared_cone_xors": 0,
+      "size_bytes": 268631,
+      "tier": "timeout",
+      "year": 2025,
+      "screen_1800": {
+        "source": "<WORKSPACE>/test_tools/compare/results/bve_full_campaign_v1/ric3_shard_1_of_3.tsv",
+        "timeout_seconds": 1800.0,
+        "statuses": {
+          "native_legacy4": "TIMEOUT",
+          "native_product_high4": "TIMEOUT",
+          "native_local4": "TIMEOUT"
+        }
+      },
+      "hardness_tier": "frontier_1800_3600",
+      "stock_ric3_3600": {
+        "status": "SAFE",
+        "wall_seconds": 2860.363567,
+        "replica": "3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+model_id	name	year	tier	category	run	paired_seed	config	representation	origin	translation_order	lift_order	status	wall_seconds	timeout_seconds	exit_code	winner_thread	trace_key	trace_files	trace_bytes
+2015__oski15a01b22s	oski15a01b22s	2015	medium	stable-loss	5	360000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	5.519949	60.000000	0	0	42114f3bef3b89af4ee6	4	42213117
+2025__benchmarks_output_btor2_example_162_miter_miter	benchmarks_output_btor2_example_162_miter_miter	2025	slow	seed-reversal	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	8.009365	60.000000	0	0	994fe233d2cbe244d9a8	13	42791631
+2015__6s380b129	6s380b129	2015	medium	stable-win	5	360000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	5.049646	60.000000	0	0	d4d4a0af478856020fad	16	34635378
+2025__ILA_Piccolo_LUI_sanity	ILA_Piccolo_LUI_sanity	2025	timeout	seed-reversal	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	13.652298	60.000000	-15	0	533d88b309a4430f9af6	8	143168466
+2025__qspiflash_qflexpress_divfive-p39	qspiflash_qflexpress_divfive-p39	2025	slow	seed-reversal	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	18.418171	60.000000	0	0	c41c96cd1fb7d29af510	57	91715396
+2025__benchmarks_output_btor2_example_412_miter_miter	benchmarks_output_btor2_example_412_miter_miter	2025	medium	stable-win	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	6.898908	60.000000	0	0	c89561215f2ba5500a2a	11	43840662
+2024__yosyshq_appnote_123_cv32e40x-p220	yosyshq_appnote_123_cv32e40x-p220	2024	medium	stable-loss	6	370000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	15.682164	60.000000	0	0	87fcd7f8164563436d4a	4	113868878
+2025__ILA_Piccolo_LUI_sanity	ILA_Piccolo_LUI_sanity	2025	timeout	seed-reversal	1	120000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	25.331662	60.000000	-15	0	b69437b61e9a9dc65468	12	136740252
+2015__6s344rb150	6s344rb150	2015	slow	seed-reversal	3	140000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	25.367066	60.000000	-15	0	a519bfc6ba63e95b1681	13	138204721
+2025__qspiflash_qflexpress_divfive-p39	qspiflash_qflexpress_divfive-p39	2025	slow	seed-reversal	4	350000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	26.458984	60.000000	0	0	78ade29e0fbf600dd194	60	120832454
+2025__benchmarks_output_btor2_example_162_miter_miter	benchmarks_output_btor2_example_162_miter_miter	2025	slow	seed-reversal	5	360000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	28.609328	60.000000	-15	0	323cab3be8dc039d84aa	17	138247692
+2015__6s344rb150	6s344rb150	2015	slow	seed-reversal	4	350000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	29.717992	60.000000	-15	0	4a69d3dfbc2f8851934c	12	136725436
+2024__zonotope_2	zonotope_2	2024	slow	seed-reversal	4	350000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	31.206942	60.000000	0	0	d48d3b227442208da7c6	48	75986243
+2015__prodcellp2neg	prodcellp2neg	2015	timeout	stable-loss	5	360000	xag_canonical-cnf	xag	numeric__first	numeric	first	TRACE_LIMIT	33.157106	60.000000	-15	0	73f3d086ffcb468524c6	91	134837972
+2024__zonotope_2	zonotope_2	2024	slow	seed-reversal	2	130000	xag_canonical-cnf	xag	numeric__first	numeric	first	SAFE	38.798982	60.000000	0	0	ad0a3b2554de68e2bcab	53	86743882

@@ -1,0 +1,16 @@
+model_id	name	year	tier	category	run	paired_seed	config	representation	origin	translation_order	lift_order	status	wall_seconds	timeout_seconds	exit_code	winner_thread	trace_key	trace_files	trace_bytes
+2025__fib_23	fib_23	2025	timeout	seed-reversal	3	140000	aig_canonical-cnf	aig	numeric__first	numeric	first	SAFE	2.868036	60.000000	0	0	b5b64c67848b5c85b6cf	77	17912103
+2024__a10-p41	a10-p41	2024	medium	stable-loss	5	360000	aig_canonical-cnf	aig	numeric__first	numeric	first	SAFE	7.172953	60.000000	0	0	49e4a995b4603ab4fa93	7	67216783
+2020__qspiflash_dualflexpress_divthree-p076	qspiflash_dualflexpress_divthree-p076	2020	slow	seed-reversal	4	350000	aig_canonical-cnf	aig	numeric__first	numeric	first	SAFE	9.206027	60.000000	0	0	3d2b09317e2500d366dd	44	60231586
+2024__yosyshq_appnote_123_cv32e40x-p334	yosyshq_appnote_123_cv32e40x-p334	2024	medium	stable-loss	5	360000	aig_canonical-cnf	aig	numeric__first	numeric	first	SAFE	15.066184	60.000000	0	0	bf5736146a941849db79	4	113914182
+2015__shift1add512	shift1add512	2015	medium	stable-win	2	130000	aig_canonical-cnf	aig	numeric__first	numeric	first	SAFE	8.592244	60.000000	0	0	25a944c4830f17adad19	108	42507119
+2020__qspiflash_dualflexpress_divthree-p076	qspiflash_dualflexpress_divthree-p076	2020	slow	seed-reversal	3	140000	aig_canonical-cnf	aig	numeric__first	numeric	first	SAFE	16.786493	60.000000	0	0	7a1e1596c1dfbc9d246c	39	87329166
+2024__yosyshq_appnote_123_cv32e40x-p413	yosyshq_appnote_123_cv32e40x-p413	2024	medium	stable-loss	6	370000	aig_canonical-cnf	aig	numeric__first	numeric	first	SAFE	15.509690	60.000000	0	0	de9b3eed3bf658ba7bd1	4	113917941
+2024__Problem05_label42+token_ring.08.cil-2	Problem05_label42+token_ring.08.cil-2	2024	timeout	seed-reversal	3	140000	aig_canonical-cnf	aig	numeric__first	numeric	first	TRACE_LIMIT	28.161756	60.000000	-15	0	315d7e73ef4ca8dcd198	8	135790402
+2024__Problem05_label42+token_ring.08.cil-2	Problem05_label42+token_ring.08.cil-2	2024	timeout	seed-reversal	1	120000	aig_canonical-cnf	aig	numeric__first	numeric	first	TRACE_LIMIT	29.019587	60.000000	-15	0	86375f25aecd9a041bdb	8	136446542
+2025__shift_register_top_w16_d16_e0	shift_register_top_w16_d16_e0	2025	timeout	seed-reversal	4	350000	aig_canonical-cnf	aig	numeric__first	numeric	first	TRACE_LIMIT	48.122539	60.000000	-15	0	7a0d42980bc2c20fd94c	21	134259058
+2019__cal131	cal131	2019	slow	stable-win	4	350000	aig_canonical-cnf	aig	numeric__first	numeric	first	TRACE_LIMIT	39.294836	60.000000	-15	0	1003331a6acb280d47d7	11	135000085
+2025__shift_register_top_w16_d16_e0	shift_register_top_w16_d16_e0	2025	timeout	seed-reversal	2	130000	aig_canonical-cnf	aig	numeric__first	numeric	first	TRACE_LIMIT	55.325302	60.000000	-15	0	88ee53f45bfb8c5b9779	22	136615214
+2019__collision.6.prop1-func-interl	collision.6.prop1-func-interl	2019	timeout	seed-reversal	5	360000	aig_canonical-cnf	aig	numeric__first	numeric	first	TIMEOUT	60.065841	60.000000	-15	0	63be0f0c17ea15c61b32	20	96518506
+2019__collision.6.prop1-func-interl	collision.6.prop1-func-interl	2019	timeout	seed-reversal	1	120000	aig_canonical-cnf	aig	numeric__first	numeric	first	TIMEOUT	60.067177	60.000000	-15	0	c5363d2e084b74221978	22	91561982
+2025__fib_23	fib_23	2025	timeout	seed-reversal	1	120000	aig_canonical-cnf	aig	numeric__first	numeric	first	TIMEOUT	60.065805	60.000000	-15	0	36c61ae5ba59d9622bde	74	130652699

@@ -1,0 +1,4 @@
+baseline	models	retain248_wins	retain248_losses	neutral	aggregate_improvement_pct	geomean_speedup
+aig	144	23	17	104	-5.884684	1.074394
+compact_aig	144	25	16	103	-9.156342	1.059418
+full_xag	144	23	22	99	4.256534	0.981486
