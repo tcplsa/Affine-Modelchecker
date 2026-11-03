@@ -106,6 +106,16 @@ PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
     use_pr(pr),
     use_plusone_count(ao),
     direction(search_direction){
+    const bool constructor_trace = env_bool("MC_PDR_CONSTRUCTOR_TRACE", false);
+    auto trace_constructor = [&](const char *phase,
+                                 const std::chrono::steady_clock::time_point &start){
+        if(!constructor_trace)
+            return;
+        const double elapsed = std::chrono::duration<double>(
+            std::chrono::steady_clock::now() - start).count();
+        cerr << "c PDR_CONSTRUCTOR phase=" << phase
+             << " elapsed=" << elapsed << endl;
+    };
     auto conversion_start = std::chrono::steady_clock::now();
     conversion_original_ands = aiger->num_ands;
     requested_representation = representation_override == PDRRepresentation::Default
@@ -143,6 +153,7 @@ PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
     }
     conversion_runtime = std::chrono::duration<double>(
         std::chrono::steady_clock::now() - conversion_start).count();
+    trace_constructor("representation", conversion_start);
     affine_island_summary_enabled = env_bool(
         "MC_PDR_AFFINE_ISLAND_SUMMARY", false);
     affine_island_replace_enabled = env_bool(
@@ -157,8 +168,15 @@ PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
         "MC_PDR_AFFINE_ISLAND_MIN_XORS", affine_island_min_xors));
     affine_island_max_support = std::max(3, env_int(
         "MC_PDR_AFFINE_ISLAND_MAX_SUPPORT", affine_island_max_support));
+    auto affine_transition_start = std::chrono::steady_clock::now();
     analyze_affine_transition();
-    analyze_affine_islands();
+    trace_constructor("affine-transition", affine_transition_start);
+    auto affine_island_start = std::chrono::steady_clock::now();
+    const bool affine_island_telemetry = env_bool(
+        "MC_PDR_AFFINE_ISLAND_TELEMETRY", false);
+    if(affine_island_summary_enabled || affine_island_telemetry)
+        analyze_affine_islands();
+    trace_constructor("affine-islands", affine_island_start);
     if(affine_island_summary_enabled
        && env_bool("MC_PDR_AFFINE_ISLAND_VALIDATE", false)){
         affine_island_validation_attempted = true;
@@ -204,9 +222,11 @@ PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
         && plain_affine_coverage >= affine_invariants_guarded_min_coverage;
     if(guarded_affine_enabled || guarded_affine_auto_enabled
        || invariant_guard_search){
+        auto guarded_affine_start = std::chrono::steady_clock::now();
         if(guarded_affine_enabled)
             affine_summary_enabled = true;
         analyze_guarded_affine_transition();
+        trace_constructor("guarded-affine", guarded_affine_start);
     }
     cadical_affine_hints_enabled = env_bool(
         "MC_PDR_CADICAL_AFFINE_HINTS", false);
@@ -243,6 +263,7 @@ PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
     }
     if(guarded_affine_enabled
        && env_bool("MC_PDR_GUARDED_AFFINE_VALIDATE", false)){
+        auto guarded_validation_start = std::chrono::steady_clock::now();
         guarded_affine_validation_attempted = true;
         guarded_affine_validation_passed = validate_guarded_affine_transition();
         if(!guarded_affine_validation_passed){
@@ -251,6 +272,7 @@ PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao,
             guarded_affine_enabled = false;
             affine_summary_enabled = env_bool("MC_PDR_AFFINE_SUMMARY", false);
         }
+        trace_constructor("guarded-validation", guarded_validation_start);
     }
     if(affine_invariants_enabled)
         analyze_affine_invariants();

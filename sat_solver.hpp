@@ -127,6 +127,8 @@ public:
         if(gauss == nullptr || (gauss[0] != '\0' && gauss[0] != '0')) {
             cmsat_enable_gauss(solver);
             gauss_enabled = true;
+        } else {
+            cmsat_disable_gauss(solver);
         }
         const char *simplify = std::getenv("MC_PDR_CMSAT_SIMPLIFY");
         if(simplify == nullptr || simplify[0] == '\0' || simplify[0] == '0')
