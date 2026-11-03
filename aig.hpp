@@ -4,13 +4,14 @@
 #include <sstream>
 #include <vector>
 #include <map>
+#include <atomic>
 #include <mutex>
 #include <assert.h> //#include <cassert>
 #include "basic.hpp"
 #ifndef TIMESTAMP
 #define TIMESTAMP
     extern unsigned long long state_count;
-    extern int RESULT; // 0 means safe in PORTFOLIO; 10 finds a bug; 20 proves safety
+    extern std::atomic<int> RESULT; // 0 means safe in PORTFOLIO; 10 finds a bug; 20 proves safety
     extern std::mutex result_mutex;  
 #endif
 

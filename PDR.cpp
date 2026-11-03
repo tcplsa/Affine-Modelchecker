@@ -49,9 +49,12 @@ Frame::Frame(){
     cubes.clear();
 }
 
-PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao):
+PDR::PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao, LemmaBus *bus):
     Aiger(*aiger),
+    lemma_bus(bus),
     thread_index(Thread_index),
+    lemma_cursor(0),
+    received_shared_lemmas(0),
     use_acc(acc),
     use_pr(pr),
     use_plusone_count(ao){
@@ -202,6 +205,8 @@ void PDR::print_stats(int result){
          << " core_reduced=" << nCoreReduced
          << " abort_join=" << nAbortJoin
          << " abort_mic=" << nAbortMic << endl;
+    cout << "c LEMMA_STATS received=" << received_shared_lemmas
+         << " cursor=" << lemma_cursor << endl;
     auto avg = [](double total, int count) -> double {
         return count > 0 ? total / count : 0.0;
     };
@@ -743,6 +748,8 @@ void PDR::add_cube(Cube &cube, int k, bool to_all, bool ispropagate, int prtimes
 
     if(cfg_use_heuristic and !ispropagate)
         updateLitOrder(cube, k);
+        if (lemma_bus != nullptr && !ispropagate && k > 0)
+            lemma_bus->publish(cube, k, thread_index);
 }
 
 bool PDR::is_init(vector<int> &latches){ //to be optimized
@@ -1164,6 +1171,16 @@ bool PDR::get_pre_of_bad(State *s){
     }
 }
 
+void PDR::collect_shared_lemmas() {
+    if (lemma_bus == nullptr) return;
+    std::vector<SharedLemma> unseen = lemma_bus->read_from(lemma_cursor);
+    for (const SharedLemma& lemma : unseen) {
+        if (lemma.producer != thread_index) {
+            ++received_shared_lemmas;
+        }
+    }
+}
+
 bool PDR::rec_block_cube(){
     ScopedTimer timer(&tBlock);
     ++nBlock;
@@ -1171,13 +1188,34 @@ bool PDR::rec_block_cube(){
     vector<State *> states;
     int ct = 0;
     while(!obligation_queue.empty()){
-        if(RESULT!=0) return RESULT;
+        if(RESULT.load() !=0) return RESULT.load();
         Obligation obl = *obligation_queue.begin();
 
         if(output_stats_for_recblock){
             cout << "\nRemaining " << obligation_queue.size() << " Obligation\n";
             cout << "Handling Frames[" << obl.frame_k << "]'s " << "Obligation, depth = " << obl.depth << " , stamp = " << ((obl.state)->index);
             show_state(obl.state);
+        }
+        // An obligation intersecting Init is already reachable.  This base case
+        // must be checked before trying to prove the cube relatively inductive.
+        if(is_init(obl.state->latches)){
+            State *init_state = new State();
+            for(int i=0; i<num_inputs; ++i){
+                int input = init->val(unprimed_first_dimacs + i);
+                if(input != 0)
+                    init_state->inputs.push_back(input);
+            }
+            for(int i=0; i<num_latches; ++i){
+                int latch = init->val(unprimed_first_dimacs + num_inputs + i);
+                if(latch != 0)
+                    init_state->latches.push_back(latch);
+            }
+            init_state->inputs = obl.state->inputs;
+            init_state->next = obl.state->next;
+            cex_state_idx = init_state;
+            find_cex = true;
+            log_witness();
+            return false;
         }
         // check SAT?[Fk /\ -s /\ T /\ s']
         SATSolver * sat = frames[obl.frame_k].solver;
@@ -1321,8 +1359,11 @@ bool PDR::propagate(){
             cout << "frame="<<i << " ckeep=" << ckeep << " cprop=" << cprop  << endl;
         if(frames[i].cubes.size() == 0){
             std::lock_guard<std::mutex> lock(result_mutex);
-            if(RESULT != 0) return true;
-            RESULT = 20;
+            if(RESULT.load() != 0) return false;
+            int expected = 0;
+            if (!RESULT.compare_exchange_strong(expected, 20)) {
+                return false;
+            }
             int invariant;
             int new_and_gate;
             bool first_cube = 1;
@@ -1357,12 +1398,12 @@ bool PDR::propagate(){
                         if(abs(new_and_gate) > abs(l)) ands.push_back(And(o, new_and_gate, l));
                         else ands.push_back(And(o, l, new_and_gate));
                         new_and_gate = o;
-                        num_ands++;
+                    num_ands++;
                     }
                     if(first_cube){
                         invariant = -new_and_gate;
-                        first_cube = 0;
-                        continue;
+                    first_cube = 0;
+                    continue;
                     }
                     int o = 1+num_inputs+num_latches+num_ands+1;
                     if(abs(new_and_gate) > abs(invariant)) ands.push_back(And(o, -new_and_gate, invariant));
@@ -1535,17 +1576,21 @@ int PDR::check(){
 
     if(!check_BMC0()) {
         std::lock_guard<std::mutex> lock(result_mutex);
-        if(RESULT == 0){
-            RESULT = 10;
-            show_witness();
+        if(RESULT.load() == 0){
+            int expected = 0;
+            if (RESULT.compare_exchange_strong(expected, 10)) {
+                show_witness();
+            }
         }
         return 10;
     }
     if(!check_BMC1()) {
         std::lock_guard<std::mutex> lock(result_mutex);
-        if(RESULT == 0){
-            RESULT = 10;
-            show_witness();
+        if(RESULT.load() == 0){
+            int expected = 0;
+            if (RESULT.compare_exchange_strong(expected, 10)) {
+                show_witness();
+            }
         }
         return 10;
     }
@@ -1559,7 +1604,8 @@ int PDR::check(){
     int result = 10;
     int ct = 0;
     while(true){
-        if(RESULT!=0) return 0;
+        collect_shared_lemmas();
+        if(RESULT.load()!=0) return 0;
         if(restart and depth() > restart_depth){
             for(auto f : frames){
                 if(f.solver != nullptr)
@@ -1588,9 +1634,11 @@ int PDR::check(){
                 // find counter-example
                 std::lock_guard<std::mutex> lock(result_mutex);
                 result = 10;
-                if(RESULT==0) {
-                    RESULT = 10;
-                    show_witness();
+                if(RESULT.load()==0) {
+                    int expected = 0;
+                    if (RESULT.compare_exchange_strong(expected, 10)) {
+                        show_witness();
+                    }
                 }
                 break;
             }else{
@@ -1603,7 +1651,6 @@ int PDR::check(){
             if(propagate()){
                 // find invariants
                 result = 20;
-                RESULT = 20;
                 break;
             }
             if(output_stats_for_conclusion){

@@ -6,6 +6,7 @@
 #include "aig.hpp"
 #include "aig2xag.hpp"
 #include "sat_solver.hpp"
+#include "lemma.hpp"
 //#include <atomic>
 
 // Cone: constraints, bad, latches
@@ -89,7 +90,7 @@ public:
     }
 };
 
-typedef vector<int> Cube; // the lits in the cube must be sorted
+
 
 class Cube_CMP{
 public:
@@ -117,10 +118,12 @@ public:
 class PDR : public Aiger
 {
     Aiger *uaiger;
-    
+    LemmaBus *lemma_bus;
+
     // the interal data structure for Aiger (in CNF dimacs format).
     int thread_index;
-    
+    std::size_t lemma_cursor;
+    std::size_t received_shared_lemmas;
     // for IC3
     minisatSimp *satelite = nullptr;
     minisatSimp *satelite2 = nullptr;
@@ -153,7 +156,7 @@ public:
     std::chrono::_V2::steady_clock::time_point start_time;
     const int option_mic_tries = 3;
     const int option_ctg_tries = 3;
-    const int option_ctg_max_depth = 0;
+    const int option_ctg_max_depth = 1;
     const int option_max_joins = 1<<20;
     bool cfg_use_xag, cfg_use_heuristic, cfg_use_punishment, cfg_use_earliest_strengthened_frame;
     bool cfg_assumption_allsort, cfg_stats;
@@ -168,7 +171,7 @@ public:
     // for incremental check
     bool first_incremental_check;
 
-    PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao);
+    PDR(Aiger *aiger, int Thread_index, bool acc, bool pr, bool ao, LemmaBus *bus);
     ~PDR(){
         if(satelite != nullptr) delete satelite;
         if(lift != nullptr) delete lift;
@@ -181,7 +184,6 @@ public:
     void initialize(); 
     void translate_to_dimacs();
     void show_uaiger();
-
     // auxiliary functions
     int prime_var(int var);
     int prime_lit(int lit);
@@ -213,6 +215,7 @@ public:
 
     void clear_po();
     void add_cube(Cube &cube, int k, bool to_all=true, bool ispropagate = false, int prtimes = 0);
+    void collect_shared_lemmas();
     int  depth(){return frames.size() - 2;}
     bool cube_is_null(Cube &c){return c.size() == 0;}
     bool state_is_null(State *s){return s->latches.size() == 0;}

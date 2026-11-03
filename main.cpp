@@ -6,11 +6,19 @@
 #include <errno.h>
 using namespace std::chrono;
 
-int pdr_thread = 0, current_pdr_execution = 0, bmc_thread = 0, current_bmc_execution = 0, nframes = INT_MAX-1;
+int pdr_thread = 0, bmc_thread = 0, nframes = INT_MAX-1;
 
-void *thread_start_bmc(void *aiger){
-    int thread_index = current_bmc_execution++; //start from 0
-    Aiger* aiger_data = ((Aiger *)aiger); 
+struct ThreadArgs{
+    Aiger* aiger;
+    LemmaBus* lemma_bus;
+    int thread_index;
+};
+
+
+void *thread_start_bmc(void *arg){
+    auto *args = static_cast<ThreadArgs *>(arg);
+    Aiger* aiger_data = args->aiger;
+    int thread_index = args->thread_index;
     BMC bmc(aiger_data, nframes + 1, thread_index, bmc_thread);
     int res_bmc = bmc.check(); 
     if(aiger_data->moreinfo_for_bmc and res_bmc) 
@@ -18,10 +26,11 @@ void *thread_start_bmc(void *aiger){
     pthread_exit(NULL); 
 }
 
-void *thread_start_pdr(void *aiger){
-    int thread_index = current_pdr_execution++; //start from 0
-    Aiger* aiger_data = ((Aiger *)aiger);
-    PDR pdr(aiger_data, thread_index, 1, 1, 1);
+void *thread_start_pdr(void *arg){
+    auto *args = static_cast<ThreadArgs *>(arg);
+    Aiger* aiger_data = args->aiger;
+    int thread_index = args->thread_index;
+    PDR pdr(aiger_data, thread_index, 1, 1, 1, args->lemma_bus);
     int res_pdr = pdr.check();   
     if(moreinfo_for_pdr and res_pdr) 
         cout << "best configuration: pdr thread " + to_string(thread_index) + "\n";
@@ -91,41 +100,51 @@ int main(int argc, char **argv){
         }
     }
     Aiger *aiger = load_aiger_from_file(string(argv[argc-1]), property_index, witness, certificate, find_bug_only, log);
-    apply_pdr_perturbations(aiger);
+    // apply_pdr_perturbations(aiger);
     aiger->use_xag_for_pdr = use_xag_for_pdr;
     aiger->translate_to_dimacs();
 
     if(find_bug_only){
+        std::vector<ThreadArgs> bmc_args(aiger->num_property);
         pthread_t tbug[64];
         bmc_thread = 1;
         aiger->output_witness = 1;
         aiger->moreinfo_for_bmc = 0;
         for(int t = 0; t < aiger->num_property; t++){
+            bmc_args[t] = {aiger, nullptr, t};
             // aiger->bad = aiger->allbad[t];
             // aiger->propertyIndex = 0;
-            int ret_bmc = pthread_create (&tbug[t], NULL, thread_start_bmc, (void *)aiger); 
+            int ret_bmc = pthread_create (&tbug[t], NULL, thread_start_bmc, &bmc_args[t]); 
         }    
         for(int t = 0; t < aiger->num_property; t++)
             pthread_join(tbug[t], NULL);    
     }
     else if(pdr_thread == 0 and bmc_thread == 0){
         cerr << "Warning: Both -bmc and -pdr thread counts are set to 0. Defaulting to single-threaded PDR." << endl;
-        PDR pdr(aiger, -1, uc, pr, 1);
+        PDR pdr(aiger, -1, uc, pr, 1, nullptr);
         int res_pdr = pdr.check();  
     }
     else{
+        LemmaBus lemma_bus;
+        std::vector<ThreadArgs> pdr_args(pdr_thread);
+        std::vector<ThreadArgs> bmc_args(bmc_thread);
         pthread_t tpdr[8], tbmc[16];
         for(int t = 0; t < pdr_thread; t++){
-            int ret_pdr = pthread_create (&tpdr[t], NULL, thread_start_pdr, (void *)aiger); 
+            
+            pdr_args[t] = {aiger, &lemma_bus, t};
+            int ret_pdr = pthread_create (&tpdr[t], NULL, thread_start_pdr, &pdr_args[t]); 
         }
         for(int t = 0; t < bmc_thread; t++){
-            int ret_bmc = pthread_create (&tbmc[t], NULL, thread_start_bmc, (void *)aiger); 
+            bmc_args[t] = {aiger, nullptr, t};
+            int ret_bmc = pthread_create (&tbmc[t], NULL, thread_start_bmc, &bmc_args[t]); 
         }
         
         for(int t = 0; t < pdr_thread; t++)
             pthread_join(tpdr[t], NULL);
         for(int t = 0; t < bmc_thread; t++)
             pthread_join(tbmc[t], NULL);
+        if (log)
+            cout << "c LEMMA_BUS published=" << lemma_bus.size() << '\n';
     }
 
     if(find_bug_only){

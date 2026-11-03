@@ -145,6 +145,6 @@ public:
     void show_litvec(vector<int> &lv) const;
 
     static int terminate_callback(void * state) {
-        return (RESULT != 0);  // Return the value of the global variable 'result'
+        return (RESULT.load() != 0);  // Return the value of the global variable 'result'
     }
 };

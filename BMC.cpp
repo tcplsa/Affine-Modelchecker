@@ -294,45 +294,48 @@ int BMC::check(){
     initialize();
     int res;
     for(bmc_frame_k = 1; bmc_frame_k <= nframes; bmc_frame_k++){
-        if(RESULT!=0) return 0; 
+        if(RESULT.load()!=0) return 0; 
         unfold();
         res = solve_one_frame();
         if (res == 10) {
             std::lock_guard<std::mutex> lock(result_mutex);
-            if(RESULT == 0){
-                RESULT = 10;
-                if(moreinfo_for_bmc) uaiger->show_statistics();
-                if(moreinfo_for_bmc) cout << "Output was asserted in frame." << endl;
-                if(output_witness){
-                    cout << "1\n";
-                    cout << "b0\n";
-                    vector<char> a(num_inputs + num_latches + 2, 'x');
-                    for(int latch: init_state)
-                        a[abs(latch)] = (latch>0?'1':'0');
-                    for(int i=0; i<num_latches; ++i){
-                        int latch_index = unprimed_first_dimacs + num_inputs + i;
-                        //cout << latch_index << " ";
-                        if(a[latch_index] == 'x'){
-                            int assignment = bmcSolver->val(unprimed_first_dimacs + i);
-                            if(assignment != 0)
-                                a[latch_index] = (assignment<0?'0':'1');
+            if(RESULT.load() == 0){
+                int expected = 0;
+                if (RESULT.compare_exchange_strong(expected, 10)) {
+                    if(moreinfo_for_bmc) uaiger->show_statistics();
+                    if(moreinfo_for_bmc) cout << "Output was asserted in frame." << endl;
+                    if(output_witness){
+                        cout << "1\n";
+                        cout << "b0\n";
+                        vector<char> a(num_inputs + num_latches + 2, 'x');
+                        for(int latch: init_state)
+                            a[abs(latch)] = (latch>0?'1':'0');
+                        for(int i=0; i<num_latches; ++i){
+                            int latch_index = unprimed_first_dimacs + num_inputs + i;
+                            //cout << latch_index << " ";
+                            if(a[latch_index] == 'x'){
+                                int assignment = bmcSolver->val(unprimed_first_dimacs + i);
+                                if(assignment != 0)
+                                    a[latch_index] = (assignment<0?'0':'1');
+                            }
+                            //cout << a[latch_index] << " ";
+                            cout << a[latch_index];
                         }
-                        //cout << a[latch_index] << " ";
-                        cout << a[latch_index];
-                    }
-                    cout << endl;
-                    int inputCount = 0;
-                    for(int i : uaiger->inputs){
-                        int assignment = bmcSolver->val(i);
-                        if(assignment != 0)
-                            cout << (assignment<0?'0':'1');
-                        else 
-                            cout << 'x';
-                        inputCount++;
-                        if(inputCount % num_inputs == 0)  cout << '\n';
-                    }
-                    cout << ".\n";    
-                }   
+                        cout << endl;
+                        int inputCount = 0;
+                        for(int i : uaiger->inputs){
+                            int assignment = bmcSolver->val(i);
+                            if(assignment != 0)
+                                cout << (assignment<0?'0':'1');
+                            else 
+                                cout << 'x';
+                            inputCount++;
+                            if(inputCount % num_inputs == 0)  cout << '\n';
+                        }
+                        cout << ".\n";    
+                    }   
+                }
+                
             }
             return 10;
         } 
