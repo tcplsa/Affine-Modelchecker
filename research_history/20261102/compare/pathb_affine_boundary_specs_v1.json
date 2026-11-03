@@ -1,0 +1,38 @@
+[
+  {
+    "family": "affine_equiv",
+    "width": 64,
+    "weight": 32,
+    "rounds": 2,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 96,
+    "weight": 48,
+    "rounds": 2,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 48,
+    "weight": 24,
+    "rounds": 3,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 64,
+    "weight": 32,
+    "rounds": 3,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  }
+]

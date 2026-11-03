@@ -1,0 +1,32 @@
+桥接检查的小实验
+================
+
+调用：
+  python3 netlist_research/bridge_checks.py --input MODEL.aag --partition PARTITION_DIR --out NEW_DIR
+Python接口：run(model_path, partition_directory, out_directory) -> dict。
+PARTITION_DIR必须由partition.py产生，包含partition_manifest.json和物理子AAG。
+输出目录必须不存在。返回PASS/FAIL/UNKNOWN，退出码0表示PASS，2表示未通过。
+
+检查内容：
+1. 从实际子AAG和桥接清单重连，不把保存的original.aag直接当作重连结果。
+   调用全状态/全输入等价检查，包含初始化、下一状态、bad和constraint。
+2. 分别删除桥、错接源、反相生产端，要求被拒绝或产生MISMATCH。
+   另一个固定样例还真正反相子AAG的消费端，并更新文件SHA；它必须在语义比较中MISMATCH。
+3. 独立实现状态遍历，只从合法初始化出发，每步保留全部AIGER约束。
+   原电路与精确重连应有相同安全结果。PASS不是电路SAFE的同义词。
+4. 把实际切口消费端变成互相独立的自由输入，演示过近似。
+   若自由输入使总输入加状态超过12位，此项明确UNKNOWN。
+   自由切口轨迹未在原电路回放，original_counterexample_replay标为NOT_CHECKED。
+   只有原电路完整遍历为SAFE时，才明确original_circuit_counterexample为false。
+
+bridge_spurious.aag是单独的小反例演示，不属于用户或LLM所选切分：
+两个寄存器初值都是0，每步都保存同一个data；约束要求forbidden输入恒为0。
+data仍可任意变化。原模型及精确重连都是SAFE。
+比较器独立自由读取两个寄存器后，可以虚构不相等：这个SAT标记为
+SPURIOUS（属于ABSTRACT_ONLY），同时记录被破坏的同周期桥接等式。
+它不是原电路的反例，也不能作为原电路UNSAFE结论。
+
+限制：只支持partition.py支持的规范ASCII AAG；拒绝J/F，输入加状态最多12位、
+AND最多512个，时间预算30秒。遍历的是这个有限小模型的全部可达状态。
+初始化0/1/self保留，约束不转成已证明性质，不增加公平性假设。
+这不证明整核正确，也不证明任意模块合同都可组合；当前桥接是精确同周期等式。

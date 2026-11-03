@@ -1,0 +1,54 @@
+历史报告已集中归档（2026-10-30）
+
+旧报告原文保存在：/home/wudl/test_tools/archives/maintenance_20261030/historical_reports.tar.gz
+当前论文或代码仍引用的报告保留在原位置。
+只读查看一份归档报告，不重新展开整个目录：
+  tar -xOzf /home/wudl/test_tools/archives/maintenance_20261030/historical_reports.tar.gz <下方的原相对路径>
+
+恢复一份报告到原位置：
+  cd /home/wudl/test_tools/archives/maintenance_20261030
+  sha256sum -c historical_reports.tar.gz.sha256
+  tar -xzf historical_reports.tar.gz -C /home/wudl <下方的原相对路径>
+
+本目录已收起的报告：
+  test_tools/compare/ABSTRACT_DISTANCE_GUIDED_PDR.md
+  test_tools/compare/AES_XOR_ISLAND_REPORT_ZH.md
+  test_tools/compare/AFFINE_DATAPATH_TECHNICAL_ROUTE.md
+  test_tools/compare/AFFINE_PDR_ADVISOR_WORK_SUMMARY_ZH.md
+  test_tools/compare/AFFINE_PDR_PAPER_DRAFT_ZH.md
+  test_tools/compare/BVE_AIG_HARD_DOMAIN_PREREGISTRATION.md
+  test_tools/compare/BVE_CAUSAL_MECHANISM_EXPERIMENT.md
+  test_tools/compare/BVE_PAPER_STRUCTURE_REVIEW.md
+  test_tools/compare/BVE_WIDTH_EXPERIMENT.md
+  test_tools/compare/BVE_WIDTH_PRELIMINARY_RESULTS.md
+  test_tools/compare/CNF_PRESENTATION_CAUSAL_EXPERIMENT.md
+  test_tools/compare/CNF_PRESENTATION_RESEARCH_PLAN.md
+  test_tools/compare/COMPOSECRC_INNARD_FEASIBILITY_ZH.md
+  test_tools/compare/FIRST_PRE_MODEL_EXPERIMENT.md
+  test_tools/compare/GAUSSIAN_HWMCC_AND_GENERATOR_REPORT_ZH.md
+  test_tools/compare/GAUSSIAN_RIC3_FOLLOWUP_PLAN.md
+  test_tools/compare/HARD_3600_FOLLOWUP_PLAN.md
+  test_tools/compare/HARD_CIRCUIT_READING_NOTES.md
+  test_tools/compare/HARD_INSTANCE_BREAKTHROUGH_PLAN.md
+  test_tools/compare/INITIAL_STATE_GROUPED_TRAINING_2020_2024.md
+  test_tools/compare/INITIAL_STATE_SEARCH.md
+  test_tools/compare/INPUT_ORDER_LEARNING.md
+  test_tools/compare/MECHANISM_LEARNING_EXPERIMENT.md
+  test_tools/compare/NATIVE_XOR_GAUSS_CADICAL.md
+  test_tools/compare/PDR_DEBUG_PLAN.md
+  test_tools/compare/PREDECESSOR_PHASE_PORTFOLIO.md
+  test_tools/compare/PROGRESSIVE_TRANSFORM_LEARNING.md
+  test_tools/compare/REAL_RTL_AFFINE_TARGETS_ZH.md
+  test_tools/compare/RIC3_FOUR_CORE_BASELINE.md
+  test_tools/compare/STATIC_XAG_SELECTOR.md
+  test_tools/compare/STRUCTURAL_PREDICATE_FEEDBACK_EXPERIMENT.md
+  test_tools/compare/STRUCTURE_AWARE_BVE_PAPER_DRAFT.md
+  test_tools/compare/STRUCTURE_AWARE_BVE_SUBMISSION_CHECKLIST.md
+  test_tools/compare/STRUCTURE_SOLVABILITY_SUMMARY.md
+  test_tools/compare/VARIABLE_ORDER_OVERNIGHT.md
+  test_tools/compare/XAG_PDR_PAPER_FRAMEWORK.md
+  test_tools/compare/XOR_CAUSAL_ABLATION.md
+  test_tools/compare/XOR_CAUSAL_MECHANISM.md
+  test_tools/compare/XOR_REFINEMENT_PHASE5.md
+  test_tools/compare/XOR_SHAPLEY_PHASE4.md
+  test_tools/compare/XOR_SPECIALIZATION_STATUS.md

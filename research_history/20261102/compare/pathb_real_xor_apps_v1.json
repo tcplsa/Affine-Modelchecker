@@ -1,0 +1,226 @@
+[
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 1,
+    "topology": "serial",
+    "seed": 980001
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 1,
+    "topology": "balanced",
+    "seed": 980501
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 4,
+    "topology": "serial",
+    "seed": 980004
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 4,
+    "topology": "balanced",
+    "seed": 980504
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 8,
+    "topology": "serial",
+    "seed": 980008
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 8,
+    "topology": "balanced",
+    "seed": 980508
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 16,
+    "topology": "serial",
+    "seed": 980016
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 16,
+    "topology": "balanced",
+    "seed": 980516
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 32,
+    "topology": "serial",
+    "seed": 980032
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 32,
+    "topology": "balanced",
+    "seed": 980532
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 64,
+    "topology": "serial",
+    "seed": 980064
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 64,
+    "topology": "balanced",
+    "seed": 980564
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 96,
+    "topology": "serial",
+    "seed": 980096
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 96,
+    "topology": "balanced",
+    "seed": 980596
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 128,
+    "topology": "serial",
+    "seed": 980128
+  },
+  {
+    "family": "scrambler_recovery",
+    "category": "link-coding",
+    "semantic": "64b/66b self-synchronous scrambler lock recovery",
+    "source": "IEEE 802.3 PCS polynomial 1 + x^39 + x^58",
+    "symbol_bits": 128,
+    "topology": "balanced",
+    "seed": 980628
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 8,
+    "seed": 981168
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 16,
+    "seed": 981176
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 32,
+    "seed": 981192
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 64,
+    "seed": 981224
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 8,
+    "seed": 981328
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 16,
+    "seed": 981336
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 32,
+    "seed": 981352
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial-versus-parallel CRC alignment after SOF",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 64,
+    "seed": 981384
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {"family":"affine_warmup","width":8,"weight":6,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":12,"weight":9,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":16,"weight":12,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":20,"weight":15,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":24,"weight":18,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":28,"weight":21,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":32,"weight":24,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":8,"weight":6,"rounds":2,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":12,"weight":9,"rounds":2,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":16,"weight":12,"rounds":2,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":20,"weight":15,"rounds":2,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":24,"weight":18,"rounds":2,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":28,"weight":21,"rounds":2,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_warmup","width":32,"weight":24,"rounds":2,"delay":3,"inputs":4,"topology":"balanced","seed":840001}
+]

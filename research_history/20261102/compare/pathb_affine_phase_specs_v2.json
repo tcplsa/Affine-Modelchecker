@@ -1,0 +1,110 @@
+[
+  {
+    "family": "affine_equiv",
+    "width": 96,
+    "weight": 48,
+    "rounds": 1,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 128,
+    "weight": 64,
+    "rounds": 1,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 160,
+    "weight": 80,
+    "rounds": 1,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 192,
+    "weight": 96,
+    "rounds": 1,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 48,
+    "weight": 24,
+    "rounds": 2,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 64,
+    "weight": 32,
+    "rounds": 2,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 96,
+    "weight": 48,
+    "rounds": 2,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 128,
+    "weight": 64,
+    "rounds": 2,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 24,
+    "weight": 12,
+    "rounds": 3,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 32,
+    "weight": 16,
+    "rounds": 3,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 48,
+    "weight": 24,
+    "rounds": 3,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  },
+  {
+    "family": "affine_equiv",
+    "width": 64,
+    "weight": 32,
+    "rounds": 3,
+    "inputs": 4,
+    "topology": "balanced",
+    "seed": 730001
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {"family": "affine_equiv", "width": 8, "weight": 4, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 12, "weight": 6, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 16, "weight": 8, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 24, "weight": 12, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 32, "weight": 16, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 48, "weight": 24, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 64, "weight": 32, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 96, "weight": 48, "rounds": 1, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 16, "weight": 8, "rounds": 2, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 32, "weight": 16, "rounds": 2, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 48, "weight": 24, "rounds": 2, "inputs": 4, "topology": "balanced", "seed": 730001},
+  {"family": "affine_equiv", "width": 64, "weight": 32, "rounds": 2, "inputs": 4, "topology": "balanced", "seed": 730001}
+]

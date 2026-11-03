@@ -1,0 +1,667 @@
+CV32E40X困难目标：已有证据与接入条件
+==================================
+2026-10-25，只读审查；本次没有启动求解器、模型服务或重新构建。
+相对路径均相对于 /home/wudl/circuit-analysis-proof/。
+当前进展：冻结的LSU P1及P0安全目标已沿自动原子任务路径闭合，
+完整记录与成本见第六、七节；不表示全部LSU功能或整核已验证。
+第一至五节保留最初目标筛选与接入条件的审查依据。
+
+一、优先目标：原LSU请求稳定性
+----------------------------
+建议优先接入 verification/lsu/runs/baseline/property-1/model.aig。
+它已经在两个后端分别达到120秒预算，不需要人为制造更宽的电路。
+目标是完整请求要求，尤其是未获grant时请求及81位事务负载跨拍保持。
+
+P1 bus_requests：
+  AIG：verification/lsu/runs/baseline/property-1/model.aig
+  SHA-256：1a211a4e0fc74f2ac83a9903aacad1b8209dd3838c6a119d91ddd023a7a566fc
+  196输入，295 latch，7638 AND，1 bad，4 constraints。
+  rIC3 ic3：UNKNOWN，TIMEOUT，120.011150576秒。
+  显式仿射模式：UNKNOWN，TIMEOUT，120.006477356秒。
+
+同一版本的完整LSU安全合取P0也可作为根参照：
+  AIG：verification/lsu/runs/baseline/property-0/model.aig
+  SHA-256：2598a713f6c0611bdb22f0f4f739b46a7f434c9be103b065408414932cbdf40b
+  294输入，382 latch，11271 AND，1 bad，4 constraints。
+  rIC3 ic3：UNKNOWN，TIMEOUT，120.011628941秒。
+  显式仿射模式：UNKNOWN，TIMEOUT，120.007848822秒。
+
+这不是求解器已经证明目标成立但花了120秒，而是在预算内未判定。
+原始时间、超时与模型身份：
+  verification/lsu/runs/baseline/results.json
+  verification/lsu/runs/baseline/property-1/ric3/solver.log
+  verification/lsu/runs/baseline/property-1/affine/solver.log
+  verification/lsu/runs/baseline/property-0/ric3/solver.log
+  verification/lsu/runs/baseline/manifest.json
+
+冻结配置与独立规格
+  RTL提交：1d56e0e1eae6925c62fbbf2fea8a3fe155ac802a。
+  包含真实完整LSU、MPU/PMA、response filter、write buffer和OBI适配器。
+  A_EXT=0、PMA_NUM_REGIONS=0，无Xif，无controller kill/halt。
+  固定wrapper：verification/lsu/runs/baseline/lsu_formal.sv
+  wrapper SHA：6d6a15cbd4220bf477667675506b5025ef1b4ca46c9ac620abba3650e8fdeada
+  PROPERTY=1断言request_ok；PROPERTY=0断言request_ok&&load_ok&&control_ok。
+  请求规格逐字节计算地址、byte enable、有效store字节和属性；load规格
+  用独立事务FIFO、拆分相位及64位字节窗口，不读DUT私有寄存器作答案。
+
+环境边界
+  wrapper:20-24构造初始一拍复位，随后永久释放。
+  :90-99仅允许合法size，等待期间上游保持valid及103位源字段。
+  :167-174允许响应先前接受的请求，按FIFO顺序、最早下一拍返回。
+  grant/response无等待上限，返回数据与error自由，无公平性假设。
+  ready_1_i=1，ready_0_i=ready_1_o，valid_1_i跟随原生阶段握手。
+  上游保持是本子系统环境合同，尚未在此证明完整CPU满足它。
+  这里只检查事务与数据转换，没有统一架构内存或完整指令集语义。
+
+二、另有百秒实测的dataflow条件任务
+---------------------------------
+旧运行verification/dataflow/runs/composed保留：
+
+P19 protocol_core：
+  AIG：verification/dataflow/runs/composed/property-19/model.aig
+  SHA-256：104183646256fbe19146e4e6737ff2767aeaa134f70f687aeaf3bb2c901db67e
+  rIC3 ic3条件SAFE，111.335438974秒。
+P20 protocol_metadata：
+  AIG：verification/dataflow/runs/composed/property-20/model.aig
+  SHA-256：edea23530af5433c19fbc74be7e08e4facaee4363145abeaaa076782c2706fbc
+  rIC3 ic3 UNKNOWN，TIMEOUT，120.021867476秒。
+两者均630输入、3303 latch、105912 AND、1 bad、3 constraints。
+
+这些任务有合法总线环境、严格过去B和当前decode/protection前提。
+SAFE只能称CONDITIONAL_PROVED，不能单独当作原子系统无条件保证。
+该轮P20未闭合，不能凭P19的SAFE宣称旧运行整体已证明。
+源、环境及时间见该目录build_metadata.json、suite.json、results.json，
+公式见dataflow_formal.sv与verification/dataflow/PROOF_METHOD_ZH.txt。
+
+后续composed-02改变了缓存参考并新增FIFO指针/计数奇偶关系；其P19
+实际87.982575536秒。旧P19/P20与最终版本不能拼接，也不能直接求加速比。
+最终整轮519.528秒包括约317.196秒构建、192.070秒全部查询求解，
+不能把整轮时间说成一个根目标耗时。pipeline整轮96.983秒也包含构建；
+其最终安全查询最长约6.953秒，不满足单任务百秒门槛。
+
+三、已保存但尚未直接求解的完整参照
+---------------------------------
+LSU最终同规格P0：
+  verification/lsu/runs/reference/property-0/model.aig
+  SHA：cbc460b5cc837e6ecccf7055a489be48253a00de268fee4479af3fad30b5accb
+  382 latch，11269 AND，1 bad，4 constraints。
+  wrapper SHA：c6d7c752786ba502b23686a909b9bc86251eaee60cc5ce0f8ad1ba6bc134dbc9。
+  此版本用于最终人工函数分解，但其P0未直接求解。相对baseline少2个
+  AND，wrapper也不同；不能把旧120秒超时自动算作该二进制的实测。
+
+流水线P0：
+  verification/pipeline/runs/reference/property-0/model.aig
+  SHA：51a51b457af07717f4ca84907a5d0e5f4aec29752001cde34899574f45a274ea
+  1251 latch，65911 AND，1 bad，2 constraints；只构建，未直接求解。
+
+最终dataflow P0：
+  verification/dataflow/runs/reference/property-0/model.aig
+  SHA：bec99dda50043aeb28f75f7cf708aa4041cae8691e7b0c7cfb10d3a4a271468e
+  3379 latch，106472 AND，1 bad，1 constraint；只构建，未直接求解。
+  P0为原始完整安全合取，无过去/当前引理或索引目标替换。
+  wrapper SHA：b2f5e3d3004cb33f1fec08475738b3d97a62095aa7edba91eaa76ab7f25286c5。
+  真实RF/bypass/ID/EX/WB/LSU/controller已接入，但指令域仅load/store/ADDI。
+  统一架构内存、完整取指/CSR/ISA提交和进展不在当前证明范围。
+三个参照的构建、模型身份与空求解结果分别见各目录manifest.json、
+build_metadata.json和results.json。没有实测前不能把规模当成耗时保证。
+
+四、接入自动流程还差什么
+-----------------------
+上述AIG可以直接复用作同模型求解基准。要自动拆分RTL，必须把原环境、
+参考状态和断言留在规格一侧，只切分实际DUT逻辑；不能把已证明目标
+复制为假设。现wrapper将这些内容写在一起，尚不是只有leaf实例的parent。
+无异步复位的监视寄存器、formal单元及未知值也需按各自语义处理，
+不能将整个wrapper直接送入当前结构合同生成器并默认为受支持。
+
+dataflow人工分解是在同一完整DUT上检查九组性质，默认使用十一条安全
+子查询；通过严格过去B、当前无环依赖、P6分片及全坐标恢复再闭合。
+它没有切断内部RTL。泛化需要任务化记录和检查这些条件、索引独立性
+与首个违例的归纳推理，不能只将所有局部SAFE做合取。
+
+当前自动结构合同完整保留原状态与逻辑，验证无条件端口关系；它可以
+作为保真基线，但没有状态压缩收益。固定原子性质分解、依赖锥裁剪
+和严格同构覆盖已按第六、七节独立处理同一normalized JSON，保留与
+原根目标的精确覆盖关系。它们尚不等于实际RTL模块的接口合同分解。
+
+五、baseline的词级中间输入是否已有保存
+------------------------------------
+baseline保存了各property-N/build.ys、AIG/AAG、map、statistics和日志，
+没有model.json或RTLIL，也没有保存当时的build_and_run.py脚本副本。
+旧runner哈希在build_metadata.json中；恢复输入优先使用实际build.ys，
+不要直接调用当前runner读取已改成最终版本的wrapper。
+
+原P1命令顺序为read_slang(--top cap_lsu_formal，-G PROPERTY=1)，然后
+prep、async2sync、flatten、memory_map、formalff -clk2ff、opt -noff、
+techmap、dffunmap、setundef -undriven -anyseq、aigmap、opt_clean和导出。
+若在opt -noff之后另存JSON/RTLIL，可保留词级组合算子和隐式时钟$ff。
+该位置在原setundef之前，可能仍有x或未驱动值，不能未经检查称其已完成
+二值规范化。把setundef提前会生成新的流程变体，需要检查其与原模型的
+对应；不应直接借用旧AIG的超时作为新模型精确性能结论。
+
+原undefined策略不只处理未驱动线：setundef默认替换x常量，-undriven
+额外覆盖未驱动线，-anyseq使它们成为自由逐步选择。没有-init，因此
+不能补零未知FF初态。依据是已安装工具passes/cmds/setundef.cc。
+保留原流程、在setundef之后导出JSON最贴近旧AIG路径，但此时组合逻辑
+与FF已被techmap细化，不能再称为保留宽算子的词级输入。
+
+核对与信任边界
+--------------
+此次核对139份绑定源码/wrapper/extra文件哈希，27个唯一Git对象与冻结
+提交逐个比对，均一致；列出的候选AIG实际SHA与manifest一致。
+只读检查没有重新证明规格或转换。SAFE仍属solver_reported，独立安全
+证书NOT_RUN；有限见证回放不等于无界证明。整核结果保持UNKNOWN。
+
+六、原P1精确恢复后，固定原子任务路径已闭合
+----------------------------------------
+恢复证据：netlist_research/workflow/runs/lsu-recovered-01/result.json。
+仅在原build.ys插入两处write_json，不改变原lowering、setundef位置或初态。
+再生model.aig和model.aag与第一节原P1文件逐字节相同；不是换一个较弱的
+目标继续使用旧超时记录。normalized.json SHA为：
+  9670f3fdd056d29169a0010836c5c9d80f87660ee0ed246e55a13e43954140f4。
+恢复完整墙钟2.564488秒，不包含后续证明成本。
+
+修复后首轮完整证明：
+  netlist_research/workflow/runs/lsu-slices-repaired-02/result.json
+  status=ACCEPTED，source_safety=SAFE，composition=CLOSED。
+  路径为固定CNF分解、初态满射和全状态恒等检查、时序依赖锥、
+  严格图同构复用，以及固定ic3-kind后端策略；没有调用模型或手修候选。
+  这是性质分解，不是把实际LSU切成若干接口合同模块。
+
+核对的覆盖范围
+  原P1的1个断言分成165个安全义务，4个环境假设等价分成12个约束。
+  165项经精确同构归为147个代表；全部代表SAFE且覆盖全部原子，
+  无缺项或重复覆盖错误。每个实际切片完整保留12个环境约束。
+  全atomic模型为193输入、467 latch、3684 AND、165 bad、12 constraints；
+  单切片140至221 latch、763至3109 AND。增加了检查状态，不能把
+  467 latch说成对原295 latch的状态压缩。
+  三个被重定时的原FF初态均为1，新状态初态仍为1；EN逐原子保持。
+  恒等检查切断原FF和anyseq，没有环境假设或初态约束参与。
+  因而在记录的工具及安全语义下，所有切片证明可组合回原P1。
+  它不代表P0、全部LSU功能或完整CV32E40X已经证明。
+
+完整成本，包含失败尝试
+  下列是每项3秒预算的repaired-02记录，供完整成本参照。
+  完整runner墙钟：186.808838秒。
+  IC3共147次：101次SAFE，46次在每项3秒预算内超时后转kind；
+    全部IC3耗时151.134155秒，包含这46次超时成本。
+  kind共46次：全部SAFE，耗时5.086197秒；end=64且保留基例检查。
+  后端求解合计156.220352秒，其余约30.588486秒是转换、恒等检查、
+  依赖锥、同构、输入和证据处理等成本。恢复的2.564488秒另计。
+  SAFE仍是求解器报告，未独立核验归纳或k-induction证明证书。
+
+统一1秒调度的完整重验
+  netlist_research/workflow/runs/lsu-slices-short-01/result.json
+  所有代表统一使用--solver-seconds 1，仍是固定ic3-kind策略；不改模型、
+  候选、性质，也不按已知答案选择位。结果ACCEPTED、source_safety=SAFE、
+  composition=CLOSED，147个代表全部SAFE，恢复全部165项义务。
+  从normalized JSON输入开始的runner完整墙钟96.948796秒，包含以下
+  全部成功、超时与回退成本：
+    IC3共147次：99次SAFE、48次TIMEOUT，共59.040788秒。
+    kind共48次：全部SAFE，共5.239628秒，end=64且启用基例。
+    后端共64.280415秒；其余转换、检查与证据处理32.668381秒。
+  原模型恢复2.564488秒另计；新增独立审计9.504242秒亦另计。
+  三部分实测相加为109.017526秒，约109.02秒。这是保存记录的成本
+  总和，包含恢复和本次独立审计；96.95秒不能用作这个更宽口径。
+  没有模型调用或手工候选修补。
+
+  两轮实际source.json、整个atomic AAG和165份切片共167份文件的SHA
+  逐一相同，7份实现快照也相同，改变的是全局单项时间预算。
+  整个atomic AAG的SHA为：
+    8e65da6ca090b30e6e921ebc9622017e6d2f3202c2a93ec8f6e5835210fcdb32。
+  因而本次时间差没有通过换目标、换模型或省略未闭合项取得。
+
+32.668381秒附加成本如何理解
+  该差额是runner墙钟减去后端rIC3进程时间，不能简称为全部“非求解”
+  成本，因为它包含Yosys SAT恒等证明。已保存的独立墙钟记录为：
+    atomization共7.646101秒，其中恒等检查Yosys进程2.844511秒，
+      其余生成、复制及序列化等合计4.801590秒。
+    后续lowering的Yosys进程2.014291秒。
+    147次后端策略函数总墙钟比rIC3进程合计多1.142208秒。
+    剩余21.865780秒没有独立阶段计时，不能强行分配到某一算法。
+  原子化的7.646101秒是现有记录中最大的独立实测组件；更大的剩余
+  差额包含多个步骤，尚不能按其总数确定单一热点。
+  计时依据为short-01下atomization/manifest.json、
+  lowering/build_result.json，以及result.json中各representative的
+  wall_seconds和total_solver_seconds；均为已有记录，未再运行求解。
+
+  文件mtime结合固定代码顺序仅能给出阶段近似：写完constraint_policy
+  到最后一份投影证书约12.75秒，随后到coverage写完约3.56秒。
+  前者包含165次依赖锥生成、投影复核、序列化及文件写入；后者包含
+  同构分组与覆盖记录写入。mtime不是精确CPU profile，不能据此区分
+  Python计算、系统等待和磁盘耗时，也不能与上面的计时重复相加。
+
+  可后续测量再缓存的重复工作包括：同一源AAG在每份投影中反复构造
+  与校验索引、每份投影重复序列化AAG、相同模型重复试预算时重新做
+  原子化/恒等检查/lowering/全部投影与分组，以及每个代表结束后重写
+  累积result.partial.json。缓存需绑定源码、工具、实现与语义策略SHA，
+  保留实际证据复核；本轮未实现缓存，也没有扣除这些实测成本。
+
+审计可复现
+  程序：netlist_research/workflow/fixtures/audit_recovered_slices.py。
+  报告：netlist_research/workflow/runs/lsu-slices-repaired-02/audit-01/report.json。
+  该报告重新计算407份来源/实现/模型/日志等文件哈希，重新纯检查165份
+  投影与165份同构成员映射，核对实际B/C绑定、全部12约束、完整SAFE
+  覆盖以及每次后端尝试的成本，均通过；没有启动求解器。
+  audit-01中保留本次审计程序快照，未修改原result或任务证据。
+  short-01的同一审计程序重新核对409份哈希、165份投影、165份同构
+  成员映射、实际formal绑定及全部12约束，也通过。报告与跨轮模型
+  SHA比较保存在：
+    netlist_research/workflow/runs/lsu-slices-short-01/audit-01/report.json
+    netlist_research/workflow/runs/lsu-slices-short-01/audit-01/cross_run_models.json
+  复核时必须使用新输出目录，例如：
+    python3 -B netlist_research/workflow/fixtures/audit_recovered_slices.py \
+      --run netlist_research/workflow/runs/lsu-slices-repaired-02 \
+      --out netlist_research/workflow/runs/lsu-slices-repaired-02/audit-new
+
+修复与对照边界
+  新切片lowering用opt -noff -keepdc，避免合并具有独立未知初态的同D FF。
+  对应小负例确认保留独立自由初态并得到有效反例；修复前的切片结果
+  不作为本次闭合证据。原恢复脚本保留历史命令以核对原AIG，未被覆盖。
+  当前CNF小验收在slice-cnf-acceptance-01保存init0/1/free及独立未知
+  初态负例；四项恒等检查通过，错误初态性质仍UNSAFE、见证VALID。
+
+  新的串行整模型kind对照在
+  netlist_research/workflow/runs/lsu-kind-controls-01/result.json：
+  原始AAG自然UNKNOWN，15.286786秒；整个atomic AAG也自然UNKNOWN，
+  16.297724秒。均end=64且基例启用，不是达到120秒墙钟上限。
+  这支持“只换kind或只生成整个atomic模型仍未完成本轮证明”的观察，
+  但不能把UNKNOWN的运行时间当作证明耗时来计算加速比。
+  新的串行整模型IC3对照在
+  netlist_research/workflow/runs/lsu-ic3-controls-01/result.json：
+  原始AAG在200.013034秒TIMEOUT、UNKNOWN；整个atomic AAG在
+  200.014061秒TIMEOUT、UNKNOWN。两个输入实际SHA与本次原目标及
+  整atomic AAG一致；工具、实现和日志绑定已核对。runner的COMPLETED
+  只表示对照程序执行完毕，不表示性质已证明。
+
+  可以陈述的有限观察是：这个固定CV32E40X LSU请求目标，经自动
+  分解后约96.95秒完整闭合，而本轮原模型及整atomic模型各200秒的
+  直接IC3均未完成；只换kind或只做整个CNF重写也未闭合。
+  这是一条真实难题上的方法可行性证据。每种配置仅单轮、使用同机
+  有限预算，UNKNOWN耗时是截尾结果；本记录不提供通用加速倍数或
+  求解器排名，也不保证原IC3更长时间仍不能完成。SAFE证书未独立
+  核验，RTL前端仍在信任边界内，整核结果保持UNKNOWN。
+
+七、原P0安全合取的精确恢复与尾项续跑
+---------------------------------
+对象仍是第一节baseline PROPERTY=0，即request_ok、load_ok、control_ok
+的完整安全合取，环境也仍是该冻结wrapper声明的LSU事务环境。
+这里的“完整”仅指这组三项规格，不含未写入目标的LSU功能或完整CPU。
+
+原输入精确恢复
+  netlist_research/workflow/runs/lsu-p0-recovered-01/result.json
+  status=EXACT_MATCH；在PROPERTY=0原build.ys中只插入两处write_json，
+  原lowering、未定义值处理和初态未改。再生AIG与原baseline逐字节相同：
+    AIG SHA：2598a713f6c0611bdb22f0f4f739b46a7f434c9be103b065408414932cbdf40b
+    AAG SHA：202d29b7779ea1701a9799af3ea7a9b0fdf320da570f1e9aea518956b833390c
+    normalized JSON SHA：
+      3f964dbbb3558e612106ca3695a58fb187c4c75425ea9d85b9ad0d50c34c1bd5
+  恢复3.371123秒。原120秒超时记录因此能精确绑定这一输入，不能将
+  verification/lsu/runs/reference的另一wrapper或模型混入这条证明链。
+
+早期两条未闭合支路，保留原记录
+  lsu-p0-slices-01/result.json：较粗CNF分解为96个义务、12个约束，
+  87个图代表中86个SAFE、1个UNKNOWN；整体OPEN，66.990609秒。
+  它没有通过局部结果把source标成SAFE，不能作为P0闭合证据。
+
+  lsu-p0-factors-01/result.json：先提取正合取因子的固定CNF尝试，
+  全状态恒等检查通过，计划199个assert原子、207个assume原子，
+  但lowering将4个重复assert合并，实际后端B195/C207。
+  raw A/EN完整绑定门拒绝该覆盖缺口，状态UNKNOWN，18.278458秒，
+  尚未调用rIC3。后续为formal单元加keep保留其身份与数量，再允许
+  独立图检查复用求解工作；小验收formal-binding-gates-02确认重复
+  B2/C2均保留、两义务归一组SAFE，四种raw A/EN扰动仍全部拒绝。
+  这两条支路是独立探索成本，没有混入后述最终模型或拼接局部结果。
+
+最终分解与首轮结果
+  netlist_research/workflow/runs/lsu-p0-factors-02/result.json
+  固定cnf-factors分解安全目标；环境假设使用较保守的等价合取分解。
+  原1个断言变为199个义务，4个外部假设变为12个约束，每个切片完整
+  保留12个约束。全状态恒等、初态覆盖、原EN、投影和图映射均受检查。
+  模型为290输入、583 latch、5840 AND、199 bad、12 constraints。
+  全atomic AAG SHA：
+    b05b7f3d4bb5167618233ca21696930346d46ee4b8c5a87b728128735c22fc8b
+  199义务经严格同构归为177类；首轮175类SAFE、2类UNKNOWN，整体OPEN。
+  从normalized JSON开始的首轮完整墙钟117.570000秒。
+  后端IC3共177次，127次SAFE、50次超时，64.431018秒；kind共50次，
+  48次SAFE、2次超时，7.504923秒。后端共71.935941秒，保留全部失败
+  尝试成本；没有把UNKNOWN删除或当成已证明。
+
+只续跑两项，最后组合闭合
+  netlist_research/workflow/runs/lsu-p0-retry-01/result.json
+  固定slice_resume入口先深审计原OPEN运行，再只复制并重试UNKNOWN
+  代表；没有重建原子、修改假设/初态、重新选择分组或更换AAG。
+  base_audit.json记录PASS，核对686份绑定文件哈希、199份投影、199份
+  同构成员映射及全部约束；三个重定时FF的原初态均为1并保持。
+  这次原base及外部来源前后SHA不变，新实现、复制模型与日志也未变。
+
+  复用175个已SAFE代表；原group 2与3使用统一20秒每engine预算，
+  由IC3分别在3.180411秒和1.581728秒证明SAFE，共4.762139秒。
+  两项复制AAG的SHA分别为：
+    36648b736d8e9983ec2a96fc7fef88daff80caa2da124a1d0c30b2c4921bb934
+    5b5360ccf0ecb43146483defe9d8683d5fe0aaabff9782ed3a70c3ab177d3ed0
+  与各自原代表完全相同。最终177类全部SAFE，恢复全部199项义务，
+  status=ACCEPTED、source_safety=SAFE、composition=CLOSED。
+
+成本口径与限制
+  续跑完整22.154338秒，含14.843991秒深审计、4.762139秒新求解以及
+  其余复制、哈希与证据处理；不能只报两次新solver时间为完整成本。
+  首轮与续跑累计139.724339秒；加精确恢复3.371123秒为143.095462秒。
+  累计后端76.698080秒，包含原50次IC3超时、2次kind超时及两次重试。
+  最终representatives数组替换了两项旧UNKNOWN；直接对该数组求和
+  会漏掉旧失败尝试，应使用total_solver_seconds_including_base。
+  早期coarse与绑定拒绝支路、另外的性能对照和独立最终审计另列，
+  不属于上述已选定证明路径的139.72秒累计值。
+
+  独立最终审计：
+    netlist_research/workflow/runs/lsu-p0-retry-01/audit-01/result.json
+  status=PASS，1284份证据哈希一致，原base的1236份文件前后未变；
+  重新复核全部199投影与同构覆盖、175份旧SAFE和两份新UNSAT日志，
+  两尾项分别保留202/172个自由初态位，没有补零；全程未调用solver。
+  该次审计18.091006秒另计。若将恢复、首轮、续跑和这次独立最终审计
+  全部计入，按各阶段记录相加为161.186468秒，约161.19秒。
+
+  本结果仍是solver_reported，SAFE证书未独立检查；源RTL前端和既定
+  规格仍在信任边界内。P0串行整模型kind对照已完成，证据为
+    netlist_research/workflow/runs/lsu-p0-kind-controls-01/result.json
+  原始AAG在120.012485秒TIMEOUT、UNKNOWN；整个atomic AAG在
+  120.014686秒TIMEOUT、UNKNOWN。配置均end=64且启用基例检查，
+  与P1的自然UNKNOWN不同，本次均达到墙钟上限。两个实际AAG SHA
+  与本节原目标及整个atomic模型一致，工具、实现和日志哈希已核对。
+  更长的P0串行整模型IC3对照也已完成，证据为
+    netlist_research/workflow/runs/lsu-p0-ic3-controls-01/result.json
+  原始AAG在200.014982秒TIMEOUT、UNKNOWN；整个atomic AAG在
+  200.015419秒TIMEOUT、UNKNOWN。两份实际输入SHA与上述P0目标及
+  整atomic模型一致，工具、实现和日志哈希已核对。
+  本轮观察是分解并自动组合能闭合此固定目标，两种直接整模型方式
+  在所给预算内均未完成。单题单轮、共享机器和截尾结果不支持通用
+  倍率或求解器排名；当前记录不作P0加速主张。
+  这条结果不代表完整ISA、架构内存或整核验证已完成。
+
+八、P0由固定单入口自动完成两阶段
+------------------------------
+  netlist_research/workflow/runs/lsu-p0-pipeline-01/result.json
+  proof_pipeline固定入口冻结代码与输入，先统一短预算，再在全部分组
+  都有SAFE/UNKNOWN记录时，自动审计并续跑未定代表；无需人工读结果
+  挑选group。此轮首阶段175类SAFE、2类UNKNOWN，自动续跑group 2和3，
+  最终ACCEPTED、source_safety=SAFE、composition=CLOSED。
+  仍是199项义务、12个外部约束、177个严格图代表，没有新假设或初态修改。
+
+  独立只读核对根snapshot、request、两阶段receipt与source/base绑定、
+  全部阶段模型及日志等1312次SHA比较，涉及1303个不同路径，均一致。
+  还将source.json、atoms.json、atoms_keyed.json、整个atomic AAG、
+  coverage.json及199份任务AAG与factors-02逐项比较：204份文件全同。
+  因此该单入口运行与第七节既有目标、分组和整模型对照使用相同模型。
+  根phase_artifacts、runtime_tools、snapshot_and_inputs和两阶段receipt
+  的unchanged字段全部为true；没有启动额外solver做本次审查。
+
+  真实单入口墙钟147.970036秒，包含冻结、worker、两个阶段及退出
+  哈希检查；其中首阶段119.668387秒、自动续跑24.187949秒。
+  后端累计78.464159秒，包含首阶段全部超时和续跑，solver_cost_complete=true。
+  历史精确恢复3.371123秒另计，完整入口加恢复为151.341158秒。
+  costs.cumulative_phase_wall_seconds_including_recovery=147.227458秒
+  仅是两个阶段与恢复之和，未含根入口其他成本，不能作为完整入口口径。
+  这次记录与第七节分两次启动的旧记录分别保留，不混拼计时。
+
+  单入口在structural OPEN时拒绝当前不支持的可选保证救援；正常取消
+  的tiny门确认清理所见solver、回收已保存阶段成本并保持UNKNOWN。
+  未落盘的中断attempt成本标partial。SAFE早停与自然UNKNOWN自动续跑
+  的真实tiny验收见proof-pipeline-gates-03；它们不是额外硬件证明。
+  此轮安全结果仍属solver_reported，独立SAFE证书NOT_RUN，整核UNKNOWN。
+
+九、选做：一个真实P0代表的归纳不变式证书检查
+----------------------------------------
+  netlist_research/workflow/runs/lsu-p0-certificate-01/result.json
+  此次只对单入口救援group 2的原AAG检查证书，源SHA为第七节所列
+  36648b736d8e9983ec2a96fc7fef88daff80caa2da124a1d0c30b2c4921bb934。
+  原模型236输入、220 latch、2576 AND、1 bad、12 constraints；与
+  pipeline实际任务及factors-02的对应任务逐字节一致。
+
+  固定入口先执行IC3判定，再对同一AAG另跑IC3导出候选不变式；
+  候选AAG为236输入、220 latch、16067 AND、1 bad、12 constraints，
+  无辅助输入或辅助状态，全部原PI和FF有唯一正向映射。
+  候选AAG SHA：
+    678ab8d59468e93a7f02bc37abc61cf0dd31769fac6d9daaa9ec70ea0cf7beaf。
+  checker取J=not proof_bad，保留原模型的全部初态、D和环境约束，
+  将候选映射FF的init/D仅作元数据；proof自身的12约束不作为前提。
+  三个独立组合SAT义务为初态推出J、原转移保持J、J推出原bad不成立。
+  两帧输入独立；保持义务使用原C和Cprime，安全义务只用当前原C。
+
+  BASE 8.217082秒、STEP 13.730374秒、SAFE 8.365600秒，均UNSAT且
+  正常退出。根36份保护记录及checker全部模型/实现/脚本/日志哈希
+  一致，得到CHECKED、INVARIANT_SAT_CHECKED。
+  26项tiny门槛另验证原D/init权威、环境与双帧输入、aux总扩展以及
+  执行中harness/script/input变化的拒绝；见invariant-check-gates-03。
+
+  本次完整39.117022秒为额外选做成本；两次IC3共6.465407秒，三次
+  Yosys SAT共30.313056秒，两者合36.778463秒；checker完整31.564328秒
+  已包含这三次SAT，不能再重复相加。当前receipt的costs.solver_seconds
+  字段只统计IC3，不能将它当成全部求解成本。
+
+  这个代表完成了独立归纳检查，P0其余代表尚未逐项检查同类证书，
+  整个P0仍保留原solver_reported等级，早先结果文件未被改写。
+  检查信任边界包含AAG解析/映射/组合harness编译器与Yosys SAT；
+  DRAT/LRAT检查NOT_RUN，整核UNKNOWN。这项选做成本不混入前述
+  151.34秒单入口证明路径或直接整模型性能对照。
+
+十、同一真实证书的直接CNF检查与完整入口
+--------------------------------------
+  netlist_research/workflow/runs/lsu-p0-cnf-check-01/result.json
+  使用第九节已经保存的原AAG与候选证书，不重新运行IC3。两者SHA
+  分别仍为36648b73...921bb934与678ab8d5...0cf7beaf，逐字节一致。
+  新检查器直接生成BASE、STEP、SAFE三个组合CNF，保留原I/D和
+  全部12个环境约束；proof约束、映射FF的init/D仍不作为前提。
+  BASE/SAFE各19100个SAT变量，STEP为37979个；子句数分别为
+  55961、111885、55944，三个CaDiCaL调用均唯一报告UNSAT并返回20。
+  本次CHECKED，检查完整墙钟5.732735秒，SAT合1.983829秒；不含
+  既有IC3导出成本，也不能与第九节39.12秒完整入口直接比较。
+
+  netlist_research/workflow/runs/lsu-p0-certificate-cnf-01/result.json
+  固定certificate_run入口显式选择--check-engine cadical，重新完成
+  同一输入的IC3判定、IC3导出及直接CNF检查。原AAG和导出证书SHA
+  与第九节均完全相同；入口核对实际checker、工具、source/proof绑定。
+  结果CHECKED，完整11.807178秒；两次IC3共6.397356秒，三次SAT共
+  1.703149秒，全部solver共8.100505秒。checker完整5.174826秒已经
+  包含SAT，不能再加一次。两种检查器得到相同局部结论，不据单次
+  共享机器记录推导通用性能倍率。
+
+  直接CNF的34项小验收中复用旧Yosys预期并增加CNF专门门槛，本轮
+  不曾重新运行Yosys或IC3；
+  另3项取消门保留真实spawn后setup异常的部分成本和日志，不能称为
+  SAT搜索中SIGTERM验收。见invariant-cnf-gates-01与
+  invariant-cnf-cancel-02。信任边界为共用AAG解析/数值叶映射、独立
+  帧替换与Tseitin编译器、CaDiCaL；DRAT/LRAT仍NOT_RUN。仅第九节
+  同一代表获得检查，其余176个P0代表与整核未因此升级。
+
+十一、较大CV32模块的本地模型自动切分参照
+--------------------------------------
+  netlist_research/workflow/runs/cv32-mult-vector-04/result.json
+  netlist_research/workflow/runs/cv32-div-vector-03/result.json
+  两例均从冻结RTL提交1d56e0e1eae6925c62fbbf2fea8a3fe155ac802a
+  提取对应mult/div模块与公共package。源码快照和Git对象SHA相符。
+  本地Qwen只给出每个已有cell的分组编号；固定程序负责预检、端口
+  别名恢复、逐位桥接、原cell身份核对、严格pins全状态重组等价和
+  各叶AIG导出，未人工修补中间网表。两例完整状态均ACCEPTED，
+  implementation_unchanged与stopped_by_workflow均true，无外部API调用。
+
+  mult：38个字级cell、35个状态位，分7区；323个唯一跨区信号位，
+  按接收分区计368位。完整51.393382秒，其中唯一模型请求43.155434秒，
+  3323个prompt token、80个completion token。35个FF位全部集中在p0，
+  其余6区为组合逻辑；整体AIG为71输入、35 latch、34输出、7269 AND。
+  整体AAG SHA：
+    08451e148335aad9dda0c044f591a5f25db7e7b4a63345ff87faa665a97e9e30
+
+  div：87个字级cell、107个状态位，分8区；557个唯一跨区信号位，
+  按接收分区计790位。完整111.985857秒，包含首个模型请求90.099338秒
+  超时及第二次14.093955秒；成功请求6800个prompt token中6770个缓存，
+  输出178个token，不能把14.09秒称为无缓存的完整处理成本。
+  整体AIG为110输入、107 latch、74输出、3477 AND；整体AAG SHA：
+    4bf89834715e3ba8c5ed7926aea7cf468f97aef3e7a9351110b71b7a25cd9433
+
+  两例原组合输入中的108/81个x，分别先被提升为独立自由输入，证明
+  对输出、有效更新时的FF D及formal谓词均无影响，才替换为0；没有
+  补零初态。实际切分后的重组仍使用默认严格pins等价，不以环境假设
+  或可达性限制放宽。所有叶与整体均保存新的aiger_symbol_table_v1
+  JSON索引，按实际AAG根literal绑定；标签作为完整字符串保留。
+
+  这两例的整体AIG均B=0、C=0，没有独立功能根性质或已闭合叶合同，
+  functional_property仍NOT_CHECKED。ACCEPTED仅证明转换/切分/接回的
+  保真流程完成，不能称为乘除法正确性已证，也不是新的百秒求解难题。
+  mult候选按排序cell成段分配，div候选是0到7循环分配；当前只能确认
+  模型接口能产出可检查的分区，尚无证据说明它找到了有利于求解的
+  语义边界。需要补独立性质及合同闭合后，才适合比较证明成本。
+
+十二、加权输入编码与重复请求早停的离线验收
+----------------------------------------
+  netlist_research/workflow/runs/prompt-v2-gates-02/result.json
+  只读审计绑定该运行的implementation快照：model.py为5854fbe6...a1bd425，
+  run.py为f6d3a856...cdd10d3。输入索引按cells数组实际位置生成，保留原
+  cell ID，未把ID的数字后缀当位置。每个port.from可逆；提供的依赖边
+  必须端点有效、无重复、权重为正整数，且与全部port.from边集合相同。
+  缺少dependencies时明确UNAVAILABLE，区别于有字段但边集确实为空；
+  自环不删除。权重由固定describe按每对cell共享的原bit集合计数，
+  compact阶段检查图一致性，不另从原网表重算权重。
+
+  请求指纹包含编码版本、完整analysis、补齐默认值的model配置与完整
+  feedback，字典键顺序作规范化，数组顺序仍保留。仅登记确实进入
+  transport的尝试；同一运行内遇到完全相同的已请求输入就提前停止，
+  不发送新请求。原返回向量仍保存，非法全零分区不自动修复。
+  固定离线transport例中，重复反馈只调用2次，第3项NOT_SENT且没有
+  model目录；新反馈则允许第3次请求，随后真实Yosys转换/重组验收
+  ACCEPTED。模型耗时分别0.014849/0.023150秒只是stub控制流成本，
+  不能当作真实Qwen速度。NOT_SENT的模型耗时为0，指纹和控制开销
+  仍计入整个运行墙钟。本轮network_calls与real_model_calls均为0。
+
+  独审未见影响转换正确性的阻断。研究上的限制是边权按cell对计数，
+  多目标fanout会重复贡献，和最终唯一物理cut不是同一指标；减少边权
+  也不保证证明变快。早停只依据本次运行的完全相同输入，不包含服务
+  缓存或内部非确定性状态，因此属于调用预算策略，不能证明重发绝无
+  可能获得不同候选。本门槛没有验证新prompt能改善真实模型分区质量。
+
+  随后的真实本地模型二分尝试：
+    netlist_research/workflow/runs/cv32-mult-weighted-two-parts-01/result.json
+  使用第十一节mult完全相同的word JSON，max_partitions=2、v2加权输入。
+  独立从原word的连接逐bit重算，61个有向cell对及其全部权重均与
+  analysis和两次实际请求一致，权重总和453；每个port.from也可逆。
+  该453是全部cell对的权重和，不是跨分区cut，不能与323/368直接比较。
+
+  两次原始回答都完整给出38个0，未出现非空的第二组；原答/selection
+  保存一致，严格校验拒绝，未生成proposal或进入物理转换。首请求
+  43.728840秒，3510个prompt token、80个completion token、无缓存；
+  带反馈的第二请求5.389592秒，3535个prompt token中3504个缓存，输出
+  80个token。累计模型49.118432秒，完整运行54.557199秒，未漏掉首轮。
+  第三项与第二次请求的完整指纹相同，记录NOT_SENT、调用=false、模型
+  耗时0且不存在model目录；实际只调用2次，服务已由工作流关闭。
+  最终NO_ACCEPTED_CANDIDATE，功能性质仍NOT_CHECKED。
+
+  这条负例说明加权信息和明确的二分提示尚不足以使当前本地模型
+  满足最基本的非空分区约束。vector模式的输出schema只限制每项取
+  0或1，非空性由后续校验负责；不能把语法合法的全零回答当成有效
+  切分，更不能靠程序移一个cell来改成成功。该失败作为真实模型
+  能力与调用成本记录保留，不与前述离线transport门槛混算。
+
+十三、真实DeepSeek完成LSU分区，但切出的是环境小监视器
+--------------------------------------------------
+  netlist_research/workflow/runs/
+    lsu-p0-deepseek-20261025-122646-1849297/result.json
+  本次固定word入口实际调用deepseek-flash一次，原回答通过校验并按原样
+  展开，转换/原cell身份/严格pins全状态重组/AIG导出均ACCEPTED。
+  完整28.928412秒，其中API请求19.430606秒；provider记录7186个prompt
+  token、3593个completion token（其中3549为reasoning），本次无缓存。
+  external_api_calls=1表示HTTP dispatch尝试，不是单独核实的计费事件。
+  输入与冻结实现、阶段文件集合在退出时均未变；只读核对35份输入、
+  模型原答、提案与导出产物SHA，原447个cell覆盖及小叶6个身份一致。
+
+输入和验收范围
+  来源是lsu-p0-recovered-01/word_before_lowering.json，SHA：
+    9b0fc4392faf7ad65c6b1733f0b270173120229272e4c10b5bab204dce69d3f0
+  其中158个显式组合输入x按独立自由PI符号化，保留原整数信号fanout
+  与初态；得到word SHA：
+    4c72920e6d8cc7cda73fd2bba005312be8fc4b1869d8d33976270089722a019b
+  16个pmux的58对选择信号经无环境假设、自由FF.Q的组合查询证明互斥。
+  这些是明确的二值输入政策与pmux门，未检查完整RTL前端等价，也不
+  宣称覆盖一般隐含未定义行为或四值仿真语义。
+
+  输入447个字级cell：57个$ff，共392个状态位；385个组合cell；
+  5个formal cell，即1个$assert和4个$assume。组合类型包括156个$mux、
+  16个$pmux、2个$bmux、43个$eq、74个$logic_and等，不能把所有组合
+  逻辑都归为DUT，因为其中还含独立参考规格与环境合同。
+  固定heavy-edge收缩得到20个proposal unit，模型只选择这些unit归属。
+  原cell对权重总和3201，收缩后58条有向unit边；这些数不是物理cut。
+
+实际二分
+               原cell  字级FF数  字级状态位  组合cell  assert  assume
+    p0           441      55         390        382       1       3
+    p1             6       2           2          3       0       1
+
+  原回答是20项groups，仅第二项为1，其余19项全为0；即只将u0001
+  单独分出，未手工改组。p0保留全部LSU主逻辑、根性质、参考模型和
+  其余环境合同。按实际导出AIG统计：
+    whole：296输入，382 latch，7146 AND，B1/C4；
+    p0：   295输入，380 latch，7144 AND，B1/C3，另有1个边界输出；
+    p1：     4输入，  2 latch，   5 AND，B0/C1，无输出。
+  字级392状态位与lowering后382 latch是两个阶段的统计，不能混报。
+  whole AAG SHA：
+    c2dab1433d2ba70ce34ff79e45e60e84641c2206de1b0f7f37af92237a149ac2
+  该AAG不同于第七节原P0的294输入/11271 AND及2598a713...cbdf40b；
+  origin只绑定输入资料身份，不能把旧120/200秒耗时直接移给当前AIG。
+
+p1具体是什么
+  查看analysis.json、attempt-01/proposal.json及
+  attempt-01/conversion/leaves/p1/leaf.v，可逐项追踪：
+    c0001、c0005：两个1位$ff；
+    c0115：$ne，比较access_size[1:0] != 2'b11；
+    c0269：$assume；
+    c0335、c0336：两个$mux，组合request_valid与started/rst_n使能。
+  mux的src属性指向verification/lsu/runs/baseline/lsu_formal.sv:90-94，
+  对应原环境条件：复位释放后，request_valid时排除access_size=11，
+  将本实验的访问尺寸限定为byte/half/word。
+  两个FF是形式性质lowering生成的采样记录，不是独立LSU功能状态：
+    E初态0，E下一拍 = started && request_valid；
+    A初态1，A下一拍 = (access_size != 2'b11)；
+    原assume要求 E -> A。
+
+  bridge_manifest.json只记录1个跨分区bit：原word bit159，即
+  started/rst_n，由p0的c0316传入p1的c0336。request_valid和access_size
+  的另3位是两分区共用的原PI，保留相同身份，没有算成模块间桥。
+  p1不反馈任何普通输出给p0；其作用是限制整个组合系统允许的环境
+  轨迹。p1没有bad，因此即使将来单独得到SAFE，也不能解释为这个
+  环境assume已经被证明，组合证明仍必须保留/说明该环境条件。
+
+分区质量判断
+  单独隔离这20个已有unit时，u0001的pair-cut=1是最小值，其他unit
+  的单独隔离分数至少2；该结果来自已有图的直接计数，未运行新solver。
+  模型选择符合当前“小cut+至少两非空组”目标，但没有实质拆开主要
+  验证任务：p0仍有380个AIG状态位和7144个AND，B1完整留在p0。
+  此处是目标函数奖励了小型环境监视器的分离，并非桥接算错或候选
+  被人工修补。全局assume对共享PI的语义约束也无法仅靠cut宽度表达。
+
+  本轮说明API模型能够提出合法unit分区，固定工具能够保真展开和接回。
+  它没有产生已闭合叶合同，没有求解根性质；functional_property仍
+  NOT_CHECKED、whole_core仍UNKNOWN。后续应区分DUT/参考规格/环境
+  角色，报告主任务保留规模和性质COI，再评价合同闭合及真实求解成本。
+  本次不宣称验证加速、功能闭合或有用的LSU主逻辑分解已经完成。
+
+新增：真实LSU字级输入与自动转换
+------------------------------
+  入口与全部范围：workflow/WORD_INPUT_ZH.txt。
+  原input为冻结恢复的word_before_lowering，不借位级normalized充当word。
+  纯$ff支持、literal x显式独立PI、pmux onehot0前置门和20unit重边收缩
+  均已接入独立word_run。它只给LLM分区归属，连线/原状态不由模型修改。
+
+  P1 lsu-p1-unit-conversion-02：ACCEPTED69.293803秒，287cells/298word
+  state bits，20units由真实本地Qwen给8区。首轮20个0被拒，第二轮原答
+  循环0..7后精确展开；模型57.809717秒，第二请求使用provider缓存。
+  62处x保留独立PI，11pmux/38pairs自由Q下全部互斥，strict pins等价
+  无assumptions；实际跨区79unique/87p2p，pair代理cut129/外边和135。
+  10套whole/rejoined/leaf AAG+binary+map均导出；334项独审通过，原桥
+  和所有seal/初态/来源绑定无异常，服务已关闭。不是模型语义推理或
+  分区加速实证。新的whole200I295L4789AND B1C4在200秒IC3仍UNKNOWN。
+
+  P0 lsu-p0-unit-conversion-01：NO_ACCEPTED_CANDIDATE110.756440秒；
+  447cells/392word bits、158x及16pmux/58pairs输入门通过，20units。
+  冷请求90秒超时后两次全0，均在实际提取前拒绝；未手工修分组。
+  新输入带显式不定值约定，不能继承前面旧字节AIG的SAFE。
+  当前root转换functional_property=NOT_CHECKED，whole_core=UNKNOWN。
+  默认RTL入口未自动启用此policy，C++只检查新AIG输入，尚未集成链路。
+  新DeepSeek后备已离线接好，真实P0空key路径3.806秒NEEDS_CONFIG/
+  零外部HTTP；没有真实远端模型结果，配置说明见workflow/DEEPSEEK_ZH.txt。

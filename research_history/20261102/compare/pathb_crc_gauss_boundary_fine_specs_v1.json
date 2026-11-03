@@ -1,0 +1,212 @@
+[
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 320,
+    "seed": 1002320
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 384,
+    "seed": 1002384
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 448,
+    "seed": 1002448
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 512,
+    "seed": 1002512
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 640,
+    "seed": 1002640
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 768,
+    "seed": 1002768
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 1024,
+    "seed": 1003024
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 272,
+    "seed": 1018272
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 288,
+    "seed": 1018288
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 304,
+    "seed": 1018304
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 320,
+    "seed": 1018320
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 336,
+    "seed": 1018336
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 352,
+    "seed": 1018352
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 368,
+    "seed": 1018368
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 100,
+    "seed": 1050100
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 104,
+    "seed": 1050104
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 108,
+    "seed": 1050108
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 112,
+    "seed": 1050112
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 116,
+    "seed": 1050116
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 120,
+    "seed": 1050120
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 124,
+    "seed": 1050124
+  }
+]

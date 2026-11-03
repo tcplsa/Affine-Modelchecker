@@ -1,0 +1,88 @@
+输出预算扩展与p530重试
+日期：2026-10-29
+
+结论
+
+允许更多token是有必要的。上轮两组的32768额度全部用在推理，最终候选为空；
+本轮提高上限后，两组均以finish_reason=stop正常结束，得到完整候选。
+CIll组实际输出44260 token，确实超过旧上限。
+但完整候选不等于完成证明：本轮原始p530仍然是UNKNOWN，没有新增CPU性质SAFE。
+
+1. 已落地配置
+
+研究入口默认max_tokens从32768提高到131072，可显式设置1至393216。
+新增--api-seconds，默认1200秒，可设1至3600秒，仍受每组剩余总预算约束。
+DeepSeek传输响应容量单独提高到16MiB；原本地模型传输的2MiB限制没有修改。
+推理和最终回答共享输出额度；上限不是必须耗尽的定额。
+提供商默认模型仍为deepseek-flash，reasoning_effort仍为high。
+API文档依据（2026-10-29读取）：
+https://api-docs.deepseek.com/api/create-chat-completion/
+文档给出的max_tokens最大值为384K，即393216。
+
+2. 本轮对照设置
+
+冻结问题包：verification/whole_core/runs/framework-v1-20261029/p530。
+本轮输出：verification/whole_core/runs/framework-v1-20261029/p530-token131k-comparison。
+两组均为：单核CPU8、16GiB、每组1800秒、每次后端240秒、短查询30秒，
+每次API最多131072 token/1200秒，最多一轮。两组顺序执行，共2次API调用。
+原始模型、实际发送的图上下文和源码上下文在两组之间相同。
+输入模型SHA256：
+40deaa3030eb0870c4258656fdd3b2b134f328fbbb51e55acaa10216c89d66d2。
+分析提示和证明后端不同；这是适配的CIll后端对照，非论文完整代理复现。
+
+3. 实测结果
+
+方法                  我们的拆分路线          CIll路线
+API耗时               175.440秒                277.186秒
+输入token             24400                    24415
+输出token             28060                    44260
+其中推理token         27713                    43836
+总token               52460                    68675
+结束原因              stop                     stop
+候选关系数量          5                        5
+候选格式/位宽检查     通过                     通过
+原性质最终结果        UNKNOWN                  UNKNOWN
+候选验收              原目标归纳步骤SAT        后端240.051秒超时
+整个流程墙钟          185.439秒                738.719秒
+
+总计121135 token，其中输出72320 token；没有用满两组的额度。
+两组均未完成原始性质，不能把185秒对739秒解读为成功求解加速。
+我方SMT的SAT是归纳反例，不代表从初始化可达，更不是电路UNSAFE。
+CIll验收超时也不能说明它提出的关系一定错误。
+
+4. 对我方候选的额外独立检查
+
+模型提出以下5个寄存器对不能同时为1：
+  (3222,3229)、(3224,3231)、(3226,3233)、(3227,3234)、(3228,3235)。
+这些编号来自冻结BTOR；没有额外人工补写候选关系。
+
+为避免“依赖尚未证明的原性质才成立”，另建helper-validation：
+从候选模型中只移除原始bad 3238作为验证目标，保留初始化、转移、环境，
+单独联合证明这5条关系。CPU10、16GiB、无API，7.141秒得到SAFE。
+构造记录、输入哈希、完整公式和证明结果均保留。
+该SAFE仅属于5条辅助关系，绝不属于原始p530性质。
+
+原性质检查的是3235 & !3228不能成立；互斥关系只排除“二者同时为1”，
+单靠互斥并不能排除3235=1、3228=0。完整转移上的归纳检查也仍有反例。
+因此，这轮区分出了“关系正确”与“关系足够有用”：前者已做到，后者未做到。
+
+5. 比较限制及回归
+
+本轮图/源码上下文与上轮一致，但沿用了上轮之后修复的BMC适配器和scope说明。
+同时模型生成有随机性。我方本轮只用28060输出token就完成，不能据此声称
+提高上限必然使每次调用成功；CIll这次确实需要超过旧上限的输出。
+
+运行期间实现文件没有改变，每组保存了源码快照及工具、输入哈希。
+新增预算、超限拒绝、大响应脱敏检查，加上原6项流程检查，共9项测试通过：
+  cd proof_workflow
+  python3 -B -m unittest test_api_budget.py test_workflow.py
+
+扩额重试命令（NEW_RUN须为未使用目录；会各调用一次API）：
+  ./circuit-analysis-proof --workflow compare \
+    verification/whole_core/runs/framework-v1-20261029/p530 \
+    --out NEW_RUN --methods split cill --provider deepseek \
+    --max-rounds 1 --max-tokens 131072 --api-seconds 1200 \
+    --reasoning-effort high --seconds 1800 --check-seconds 240 \
+    --query-seconds 30 --cpu 8 --memory-gib 16
+
+本轮所有实验已结束，旧32K记录保留，不会自动追加付费请求。

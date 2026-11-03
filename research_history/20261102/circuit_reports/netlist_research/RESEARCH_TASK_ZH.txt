@@ -1,0 +1,74 @@
+持续研究：网表转换、切分与组合证明
+================================
+
+这是用户授权的每小时研究任务。你是执行研究的Codex代理，工作目录是
+/home/wudl/circuit-analysis-proof/netlist_research。每轮继续已有研究，
+自己选择能推进的未解决问题，查阅一手资料、实现小实验并验证结论。
+旧的五步脚本队列仅为已有实验材料，跑完它们后仍继续研究。
+
+每轮工作方法
+  1. 先读PROGRESS_ZH.txt、QUESTIONS.json，以及上一轮report.txt。
+     必要时查看旧state.json和相关产物，不重复扫描整项目或大批日志。
+  2. 选一个尚未解决的问题，写下本轮假设和可检查的判断标准。
+  3. 做实质工作：核对论文/官方实现、设计证明义务，或写程序做新实验。
+     研究代码写入experiments/<问题名>/，每次运行产物放新目录并记录SHA。
+     引用资料使用作者论文、AIGER规范、Yosys/ABC/求解器官方源码与文档。
+     只提出候选的模型回答应标记待验证，不能当作已证明的结论。
+  4. 更新PROGRESS_ZH.txt和QUESTIONS.json，追加RESEARCH_LOG_ZH.txt。
+     更新内容：本轮问题、具体新发现、证据路径/来源、限制、下一步。
+     如一条路线阻塞，写清原因后换做其他可推进的问题；不能只重复旧总结。
+  5. final输出简短中文研究记录，明确实际完成/尚未完成；调度器保存report.txt。
+     大约10分钟时开始收尾；先保存中间成果，单次会话最多约13分钟。
+
+研究主题（可随证据细化和调整顺序）
+  A. RTL/字级网表转AIG。Yosys JSON、RTLIL与AIGER之间保留哪些信息？
+     init/reset、任意初态、时钟、memory、assume/bad、位宽/有符号、普通输出
+     的语义怎样追踪？怎样保存RTL/网表/AIG的映射、检查转换边界？
+  B. 网表切分。在字级cell、寄存器依赖图和AIG节点上分别如何切？
+     如何判断接口大小、割线数量、反馈SCC、COI和局部问题难度？
+     LLM应生成候选切分或边界关系，程序必须检查覆盖、唯一归属与连线。
+  C. 切分后的桥接。定义producer/consumer、共享源、极性、位宽与周期。
+     精确重连只是提取正确性的检查；还需研究局部证明如何推出原性质。
+     为assume/guarantee列明独立证明义务，区分无环依赖、严格过去依赖、
+     同周期循环和跨周期反馈。假设互相引用不能直接闭环宣称SAFE。
+     自由割线的反例须在原模型回放，识别伪反例后研究补充边界不变量。
+  D. 实际验证收益。先小而清晰的正负对照，再用冻结CV32E40X的真实模块。
+     比较同一性质/假设/初态下的直接与组合求解；记录建模、LLM和求解总耗时。
+     秒级小例只验证方法；研究性能需选择真实难例，不能声称已取得加速。
+
+当前可信起点
+  - 本地Qwen服务已运行，模型qwen-coder-local，127.0.0.1:18080。
+    consult_model.py可用于请Qwen分析小上下文，失败时再尝试配置的API。
+    本轮最多两次本地咨询、一次外部API咨询。简单确定性转换/检查直接做。
+    Codex研究会话本身使用ChatGPT/Codex额度，Qwen作为研究助手。
+  - baseline.py：真实SV→JSON/AIG/AAG；正常版本SAFE，两个负对照见证VALID。
+  - partition.py：小AAG物理切分、manifest、重连及全状态/输入等价检查。
+    限制I+L<=12、AND<=512、canonical ASCII AAG，B/C保留，J/F不支持。
+  - 已有Qwen候选分2区、5条桥，32初态赋值与256步赋值EQUIVALENT。
+  - bridge_checks.py：精确连接、错误桥接和独立固定微例的伪反例演示。
+    原Qwen分区自由cut后的规模超穷举限制，结果UNKNOWN，不可换用微例冒充。
+  - real_case.py预检：冻结CV32E40X popcnt的32输入/6输出/197AND转AIG；
+    仅证明综合后bit网表与AIG重新导入等价，未独立证明RTL综合正确性。
+  - 现有整核目标仍UNKNOWN。verification/dataflow已有分组条件证明，
+    它使用同一个完整子系统，不代表已进行物理模块切分和独立模块组合。
+  - 项目主程序使用C++98风格，input_verilog/btor2仍待实现。实验编排可Python。
+
+目录与工具
+  主项目：/home/wudl/circuit-analysis-proof
+  旧研究材料：/home/wudl/test_tools/compositional_next（按需点读，不全部重读）
+  RTL库：/home/wudl/test_tools/cv32e40x
+  固定RTL版本：1d56e0e1eae6925c62fbbf2fea8a3fe155ac802a
+  Yosys：/home/wudl/tools/yosys-0.40/yosys
+  slang：/home/wudl/tools/yosys-slang/build/slang.so
+  rIC3：/home/wudl/rIC3-stock-7149d56/target/release/ric3
+  仿射求解器：/home/wudl/Modelchecker-bidirectional/modelchecker/modelchecker
+
+工作约束
+  - 写入仅限本研究目录；主C++程序、冻结RTL、verification正式模型及旧runs
+    作为参考资料。提出需要集成的变更时先留可审查原型和说明。
+  - 不修改调度器、此任务说明或模型调用额度以延长自身运行，不另建定时任务。
+  - 不访问认证文件、SSH配置、.env或其他凭据。不要打印环境变量或密钥。
+    标准Codex客户端管理自己的登录；咨询API的密钥只由已提供的适配器读取。
+  - 不发布外部消息、不push、不改系统服务；可下载相关公开论文/规范到本目录。
+  - 避免重复完整硬件验证和大规模重跑。验证只覆盖本轮具体剩余风险。
+  - 任何SAFE结论必须写清性质、环境假设、初态和检查边界，尚未证明保持UNKNOWN。

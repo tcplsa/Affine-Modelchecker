@@ -1,0 +1,129 @@
+网表切分、AIG转换与桥接证明：本轮技术路线核对
+==========================================
+日期：2026-10-24。本笔记为直接研究产物，不依赖后台调度。
+只读了本目录原型说明/partition.py和现有dataflow证明方法，未改变正式模型。
+下面的接口与实验顺序是项目设计建议；论文的原始结论另行标明。
+
+一、先做哪个问题
+----------------
+第一步应把“切分保持原电路”和“切开后可独立证明”设成两种任务。
+目前重连等价解决前一种；后一种仍要产生并消解切口环境假设。
+在可选技术中，优先实现非循环、单向A/G闭合，再增加严格过去互归纳。
+保留有位宽的网表作为分析输入；先AIG化仍作为统一求解基线。
+不建议先开发从AIG恢复任意RTL，也不建议一次实现通用自动机学习。
+
+二、四项可用技术及其准确边界
+----------------------------
+1. 非循环A/G：让LLM只提接口合同，两个义务由后端独立验证。
+   Gupta、McMillan、Fu，Automated Assumption Generation for
+   Compositional Verification，FMSD 2008，作者公开原文第1—2页：
+   https://mcmil.net/pubs/FMSD08.pdf
+   原文规则是 L(M1) subset L(A)，以及
+   L(A) intersect L(M2) intersect L(not P) = empty，推出组合满足P。
+   含义：提供端真实行为必须落在合同A中，消费端在A允许的全部行为下安全。
+   论文用有限自动机、样本和SAT学习小合同；没有替用户解决电路如何切分。
+   对本项目的建议：先让合同是有类型的布尔/位向量谓词或小监视器；
+   LLM提A，固定程序生成“提供端违约”与“消费端违反P”两类bad。
+   提供端义务不得再假设目标P或同一个未证明A；否则不满足上面的第一前提。
+   A可能正确却太弱，消费端仍失败；也可能太强，提供端失败。这应驱动修正。
+   论文的最小自动机算法及其性能结论不可直接等同本地Qwen候选质量。
+
+2. 严格过去互归纳：处理真实硬件有反馈、同拍合同却不能循环的问题。
+   Jhala、McMillan，Microarchitecture Verification by Compositional
+   Model Checking，CAV 2001，作者原文第2—3页：
+   https://mcmil.net/pubs/CAV01.pdf
+   原文明确：证明phi_i(t)时，可以假设所有相关关系在每个k<t成立；
+   同拍关系只能在不形成循环时使用。原文把严格过去蕴含写成not(q U not p)。
+   工程实现建议：H(0)=true；H(t+1)=H(t) AND all_i(phi_i(t))；
+   每个义务检查 H(t) AND 当前无环前驱合同 => phi_i(t)。
+   初态t=0必须在H=true下检查；不准先假设当前phi_i再更新H来屏蔽当前bad。
+   若全部义务成立，取最早违约时刻即可证明闭合。这是本方案的证明解释。
+   这里的phi依赖应和电路连线图分开：寄存器反馈不等于逻辑上的循环假设。
+   把phi_i(k<t)替换成仅phi_i(t-1)，会改变前提，不能自动复用同一证明。
+   论文面向微架构参考关系及抽象模型，未证明本项目任意切口提取器正确。
+
+3. Cutpoint过近似与必要时合区：切线很容易，保持有用关系才困难。
+   Yosys官方cutpoint说明：
+   https://yosyshq.readthedocs.io/projects/yosys/en/v0.55/cmd/cutpoint.html
+   默认以$anyseq驱动切口，-undef则改为X；这两个选项不应混成一种语义。
+   项目解释：删除内部定义、保留其余语义且把切口放宽为自由输入时，
+   原行为属于抽象行为。抽象SAFE可支持安全结论；抽象SAT须回到原模型确认。
+   共同源的两个消费端若各自自由化，丢掉相等关系，会出现伪反例。
+   EQY官方提供join/group/bind、sticky合区、amend补入源定义等具体机制：
+   https://yosyshq.readthedocs.io/projects/eqy/en/latest/config.html
+   可借鉴“保留源定义/合并难切边界”的退路；EQY解决等价检查，
+   不能只因其分区全部通过就替代任意安全性质的A/G闭合证明。
+   所以切分目标函数应加入接口合同成本，不能只优化割边数/节点平衡。
+
+4. 字级与AIG共用转移语义：上层组合检查不依赖底层文件后缀。
+   Niemetz、Preiner、Wolf、Biere，BTOR2, BtorMC and Boolector 3.0，
+   CAV 2018，作者所在研究组原文第1—5页：
+   https://cca.informatik.uni-freiburg.de/papers/NiemetzPreinerWolfBiere-CAV18.pdf
+   已核对：BTOR2有bit-vector/array sort、state、init、next、bad、constraint。
+   未声明init允许任意初态；没有next的state按自由输入行为处理。
+   bad见证必须满足初始化和全程constraint；输出output与bad不是同一类别。
+   有符号性由运算符等语义体现，不是把每个bit-vector sort标成signed即可。
+   本项目建议桥接用有限位向量AST，eq/concat/slice/明确宽度扩展；
+   SAT后端编成AIG，SMT后端编成BV，固定程序检查两份桥接的位序与含义一致。
+   含array的叶子保留SMT；首版不允许数组跨后端桥接，先用有限读写事务接口。
+   该论文中的BtorMC是有界检查器，不能把有界未发现bad标成无界SAFE。
+
+三、四类接口最少应提供的字段
+--------------------------
+所有文件：schema_version、原模型SHA、生成工具/版本、输入/输出产物SHA。
+analysis：
+  语义：clock_domain/step定义，reset与init策略，二值/X处理与未驱动策略。
+  对象：稳定signal/cell/state ID、sort/width、操作数、init/next引用。
+  结构：PI与共享源、状态唯一归属、组合SCC、原始层次名/源码位置映射。
+  目标：bad/output/constraint分开，原性质ID、环境合同ID、支持/拒绝特征。
+  禁止把“看起来像32位加法器”升级成已经验证的语义结论。
+partition：
+  part ID、cell/state归属、共享PI、输入/输出端口、桥ID、原模型引用。
+  state只能有一个语义所有者；复制参考状态必须有关系义务与明确初值。
+  允许为求解复制组合锥，但须记录复制来源，避免把副本当独立自由逻辑。
+  exact_extraction和abstract_cut分别标识，遗漏逻辑/约束必须显式拒绝。
+bridge：
+  producer(part,port,bits)、consumers(part,port,bits)、sort/width、位序/极性。
+  source_id说明同源别名，mode=exact_eq或contract，sample_phase/clock_domain。
+  latency=0为原连线；如出现过去值，显式生成有初值的history monitor，
+  不可为让证明更容易而给原电路直接插一拍。原电路没有的延迟不是精确重连。
+  合同AST、适用guard、monitor init/next、环境来源、证明义务ID和依赖时刻。
+  guard意味着何时需要值，不意味着其他时刻可以随便约束环境或丢掉行为。
+obligation：
+  ID、kind、model/bridge SHA、asserted目标、每个assumption及其证明来源。
+  kind至少为EXTRACTION_EQUIV、CONTRACT_VALIDITY、LOCAL_SAFETY、ROOT_CLOSURE。
+  对候选归纳不变量另列INIT和STEP；STEP可用不变量当前值证下一值，
+  仍必须先有INIT及闭合，不能把同拍“假设结论”当作STEP。
+  depends_on区分current_dag、strict_past和外部环境；当前依赖必须拓扑排序。
+  backend/encoding/property映射、状态/输入见证映射、命令与资源上限。
+  status区分PROPOSED/VALIDATED/PROVED/REFUTED/UNKNOWN，证据路径及可信等级。
+  组合器核对完整闭包、模型绑定与语义条件，不能只按叶子的SAFE字符串计数。
+
+四、LLM候选怎么独立检查
+----------------------
+1. 固定白名单AST解析和ID/类型/宽度检查，不执行模型生成的脚本/代码。
+2. 验证全覆盖分区、每条割边和同源身份；初值、next、bad、constraint均需保留。
+3. 从实际子网表重连，产生等价义务；不把保存的original直接冒充重连结果。
+4. 合同分别检查提供端合法性与消费端充分性；时序候选增加监视器初态/步进。
+5. 反例在原模型回放/可实现性检查；仅切口赋值不相容时标SPURIOUS。
+6. 加负对照：错误初值、反相/错源/漏桥、同源自由化、同拍循环假设、不可满足合同。
+   cover“能接受请求/能提交”等仅发现某些空洞性，不能证明所有假设合理。
+7. 正确但无加速也是研究结果；统一计入提取/候选调用/合同证明/重连检查总时间。
+
+五、本机可复用能力与近期具体实验
+------------------------------
+已实查本机 /home/wudl/tools/yosys-0.40/yosys 的help：
+  cutpoint有$anyseq和-undef，没有新版文档中的-blackbox选项。
+  submod可按cell属性/selection提取子模块，但要求没有process和memory。
+  所以保留word-level memory的分支不能直接把submod当通用提取器。
+  write_aiger有-map/-vmap/-ywmap；write_btor有-i/-ywmap；scc可检查组合环。
+  AIG输出要求flatten并降为AND/NOT、简单FF及formal cell；assert→B、assume→C。
+官方命令来源：
+https://yosyshq.readthedocs.io/projects/yosys/en/v0.48/cmd/write_aiger.html
+https://yosyshq.readthedocs.io/projects/yosys/en/0.43/cmd/write_btor.html
+BTOR2官方C解析器和btorsim见证检查器可复用，当前未安装/实测这些新依赖：
+https://github.com/hwmcc/btor2tools/blob/master/README.md
+近期实验顺序：同源双寄存器→1深度ready/valid反馈→真实CV32E40X顺序模块。
+每个实验保留整体验证、精确重连、自由cut、合同cut、错误合同五种版本。
+先建立非循环闭合凭据；再让Qwen提出合同，对比固定简单合同和自由cut的差异。
+最终要观察：合同确实减小求解锥且费用下降，而不是把完整证明转移到合同义务中。

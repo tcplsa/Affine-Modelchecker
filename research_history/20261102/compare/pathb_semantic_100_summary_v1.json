@@ -1,0 +1,19 @@
+{
+  "total": 100,
+  "categories": {
+    "arithmetic-add": 18,
+    "arithmetic-mul": 15,
+    "coding-affine": 7,
+    "crypto-arx": 18,
+    "crypto-linear": 42
+  },
+  "families": {
+    "adder_equiv": 18,
+    "aes_linear_equiv": 12,
+    "affine_phase_sync": 7,
+    "arx_equiv": 18,
+    "crc_equiv": 18,
+    "keccak_linear_equiv": 12,
+    "mac_equiv": 15
+  }
+}

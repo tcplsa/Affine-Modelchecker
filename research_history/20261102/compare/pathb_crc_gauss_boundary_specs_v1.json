@@ -1,0 +1,232 @@
+[
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 32,
+    "seed": 1001032
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 64,
+    "seed": 1001064
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 96,
+    "seed": 1001096
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 128,
+    "seed": 1001128
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 192,
+    "seed": 1001192
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-16-CCITT",
+    "width": 16,
+    "polynomial": 4129,
+    "symbol_bits": 256,
+    "seed": 1001256
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 8,
+    "seed": 1017008
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 16,
+    "seed": 1017016
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 32,
+    "seed": 1017032
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 64,
+    "seed": 1017064
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 96,
+    "seed": 1017096
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 128,
+    "seed": 1017128
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 160,
+    "seed": 1017160
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 192,
+    "seed": 1017192
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 256,
+    "seed": 1017256
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-32/IEEE",
+    "width": 32,
+    "polynomial": 79764919,
+    "symbol_bits": 384,
+    "seed": 1017384
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 8,
+    "seed": 1049008
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 16,
+    "seed": 1049016
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 32,
+    "seed": 1049032
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 64,
+    "seed": 1049064
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 96,
+    "seed": 1049096
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 128,
+    "seed": 1049128
+  },
+  {
+    "family": "crc_frame_align",
+    "category": "link-coding",
+    "semantic": "serial/matrix CRC alignment after a frame boundary",
+    "source": "CRC-64/ECMA-182",
+    "width": 64,
+    "polynomial": 4823603603198064275,
+    "symbol_bits": 160,
+    "seed": 1049160
+  }
+]

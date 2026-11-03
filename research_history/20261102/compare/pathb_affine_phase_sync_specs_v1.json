@@ -1,0 +1,22 @@
+[
+  {"family":"affine_phase_sync","width":12,"weight":9,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":16,"weight":13,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":20,"weight":15,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":24,"weight":19,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":28,"weight":21,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":32,"weight":25,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":40,"weight":31,"rounds":2,"delay":2,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":12,"weight":9,"rounds":2,"delay":4,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":16,"weight":13,"rounds":2,"delay":4,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":20,"weight":15,"rounds":2,"delay":4,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":24,"weight":19,"rounds":2,"delay":4,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":28,"weight":21,"rounds":2,"delay":4,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":32,"weight":25,"rounds":2,"delay":4,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":40,"weight":31,"rounds":2,"delay":4,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":12,"weight":9,"rounds":3,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":16,"weight":13,"rounds":3,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":20,"weight":15,"rounds":3,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":24,"weight":19,"rounds":3,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":28,"weight":21,"rounds":3,"delay":3,"inputs":4,"topology":"balanced","seed":840001},
+  {"family":"affine_phase_sync","width":32,"weight":25,"rounds":3,"delay":3,"inputs":4,"topology":"balanced","seed":840001}
+]

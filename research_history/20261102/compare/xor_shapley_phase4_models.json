@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "bucket_axes": [
+    "in_next",
+    "fanout_lt_2",
+    "private_aig_implementation"
+  ],
+  "models": [
+    {
+      "arm": "benefit",
+      "year": 2015,
+      "name": "beemfwt3f3",
+      "historical_gain_percent": 49.6,
+      "path": "/home/wudl/test_tools/hwmcc2015/data/beemfwt3f3.aig"
+    },
+    {
+      "arm": "benefit",
+      "year": 2015,
+      "name": "mentorbm1p05",
+      "historical_gain_percent": 47.4,
+      "path": "/home/wudl/test_tools/hwmcc2015/data/mentorbm1p05.aig"
+    },
+    {
+      "arm": "benefit",
+      "year": 2019,
+      "name": "qspiflash_dualflexpress_divfive-p053",
+      "historical_gain_percent": 55.4,
+      "path": "/home/wudl/test_tools/hwmcc2019/data/qspiflash_dualflexpress_divfive-p053.aig"
+    },
+    {
+      "arm": "benefit",
+      "year": 2019,
+      "name": "zipcpu-pfcache-p25",
+      "historical_gain_percent": 22.9,
+      "path": "/home/wudl/test_tools/hwmcc2019/data/zipcpu-pfcache-p25.aig"
+    },
+    {
+      "arm": "benefit",
+      "year": 2020,
+      "name": "frogs.5.prop1-func-interl",
+      "historical_gain_percent": 25.5,
+      "path": "/home/wudl/test_tools/hwmcc2020/data/2019/beem/frogs.5.prop1-func-interl.aig"
+    },
+    {
+      "arm": "benefit",
+      "year": 2020,
+      "name": "qspiflash_dualflexpress_divfive-p128",
+      "historical_gain_percent": 65.8,
+      "path": "/home/wudl/test_tools/hwmcc2020/data/2019/wolf/2019C/qspiflash_dualflexpress_divfive-p128.aig"
+    },
+    {
+      "arm": "harm",
+      "year": 2015,
+      "name": "6s344rb150",
+      "historical_gain_percent": -304.4,
+      "path": "/home/wudl/test_tools/hwmcc2015/data/6s344rb150.aig"
+    },
+    {
+      "arm": "harm",
+      "year": 2015,
+      "name": "6s385rb444",
+      "historical_gain_percent": -1330.5,
+      "path": "/home/wudl/test_tools/hwmcc2015/data/6s385rb444.aig"
+    },
+    {
+      "arm": "harm",
+      "year": 2017,
+      "name": "mentorbm1and",
+      "historical_gain_percent": -55.1,
+      "path": "/home/wudl/test_tools/hwmcc2017/data/mentorbm1and.aig"
+    },
+    {
+      "arm": "harm",
+      "year": 2024,
+      "name": "a16-p139",
+      "historical_gain_percent": -96.5,
+      "path": "/home/wudl/test_tools/hwmcc2024/data/2024/hku/x-epic/a16-p139.aig"
+    },
+    {
+      "arm": "harm",
+      "year": 2024,
+      "name": "yosyshq_appnote_123_veer_axi-p31",
+      "historical_gain_percent": -30.0,
+      "path": "/home/wudl/test_tools/hwmcc2024/data/2024/yosyshq/appnote_123/veer_axi/yosyshq_appnote_123_veer_axi-p31.aig"
+    },
+    {
+      "arm": "harm",
+      "year": 2024,
+      "name": "zonotope_2",
+      "historical_gain_percent": -60.7,
+      "path": "/home/wudl/test_tools/hwmcc2024/data/2024/sosylab/float-benchs/zonotope_2.aig"
+    }
+  ]
+}

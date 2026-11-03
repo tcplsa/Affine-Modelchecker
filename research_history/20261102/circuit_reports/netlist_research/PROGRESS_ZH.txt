@@ -1,0 +1,271 @@
+网表研究进度（更新2026-10-26）
+=========================
+
+先读：RESEARCH_RESULTS_20261024_ZH.txt。
+固定转换工作流的最新入口和验收见workflow/README_ZH.txt。
+自动合同补充及两端证明见workflow/CONTRACTS_ZH.txt。
+真实四分区自动生成精确合同及组合见workflow/STRUCTURAL_ZH.txt。
+性质分解、时序裁剪、同构复用与LSU真实难例见workflow/SLICES_ZH.txt。
+更大字级输入、提案收缩、本地模型及真实LSU转换见workflow/WORD_INPUT_ZH.txt。
+新global-tick状态模拟、无条件提供端及接口弱化见workflow/TRANSITION_COMPOSITION_ZH.txt。
+整体进度按能力及模型作用域记录，见../MILESTONES_ZH.txt。
+这份集中报告包含实测、失败原因、接口建议、证据路径和未完成部分。
+一手资料及原始规则见LITERATURE_ROUTE_ZH.txt。
+完整核结构交付见../verification/whole_core/README_ZH.txt；新增形式化入口
+见../verification/whole_core/FORMAL_README_ZH.txt。同一完整母图的13条安全
+性质中12 SAFE、1 UNKNOWN，5个cover均有VALID回放；完整ISA功能仍UNKNOWN。
+最新母图04、自动谓词分解及字级SMT见../verification/whole_core/PROOF_PROGRESS_ZH.txt。
+
+本轮完成的研究
+  1. 真实冻结CV32E40X写缓冲器三种物理切分均通过重连等价：
+     控制/数据2位接口，寄存器/组合84位，地址单独切出34个不同位。
+     坏push桥被反驳；定位并修复部分向量驱动导致的inout/无驱动问题。
+     word FF层等价已检查；AIG原不定初态仍保留，异步时序转换边界另记。
+  2. 自建真实时序SV提取两叶，分别证明完整端口合同，再以原连接+
+     合同抽象证明顶层。所有预期结果通过，坏初态和漏桥见证VALID。
+  3. 弱合同局部正确但消费端失败；明确所缺的enable更新引理。
+     已有完整合同给出SAFE对照，没有声称自动精化算法已经实现。
+  4. 同一字级IR导出SMT2/BTOR2/AIG。1/8/32位正例与两个32位负例，
+     SMT基例+k归纳与rIC3结果一致；BTOR2仅导出未求解。
+  5. 本地Qwen两次候选生成未成功。规范化已保存JSON包装后，原AST在
+     真实叶子上被反驳，见证VALID；错误候选没有进入上级假设。
+  6. 同一真实write_buffer已完成两叶合同到事务顶层的闭合链：真实控制、
+     完整81位数据合同C=0均SAFE；只含同一合同和原连接的顶层SAFE，
+     整体事务参照也SAFE。错复位/断桥与包含真实端口历史的覆盖见证VALID。
+     证据见experiments/cv32_contract/README_ZH.txt及runs/final/result.json。
+  7. 固定RTL->本地模型分区->实际提取/桥接->AIG->重连等价流程已运行。
+     真实CV32的24个单元一次生成完整分区，4模块、7个不同跨区位，
+     全状态等价EQUIVALENT，总33.95秒。没有手工修候选/中间网表。
+     离线拒绝/断桥、不定值、形式谓词保留及自动重试/取消均通过验收。
+     证据见workflow/runs/cv32-vector-01/result.json。
+  8. 固定受限合同语言、反例反馈、有限搜索、提供端及消费端证明已接通。
+     1位使能和8位每拍寄存器均自动补全，零模型调用，约5.09/1.68秒。
+     成功来自有限语法枚举，本地Qwen在两例中的候选均未成功。
+     基础合同按同一网表机械转为假设，恶意模式切换不能假闭合。
+     验收PASS；证据见workflow/CONTRACTS_ZH.txt及三个contract-*-final运行。
+  9. 真实自动四分区产物已由compose_run.py衔接精确结构合同及组合证明，
+     新全状态等价EQUIVALENT，四提供端C0 SAFE，原根消费端C5 SAFE。
+     完整2.299秒，复用历史模型分区、本轮模型0调用；保留82位原行为状态
+     并加2位复位历史。错复位、弱合同、断桥和来源identity gate均验收。
+ 10. 新slice_run.py在真实结构合同消费端将83义务归为4类，单查询保留
+     8..11 latch，完整3.730秒；原82位行为状态未全局删去。
+     同一固定流程接入原LSU P1困难基准，精确恢复旧AIG/AAG来源后，
+     165义务/147类全部SAFE，全部12个等价环境C保留，完整186.809秒。
+     101类IC3直接SAFE，46类经3秒IC3超时再kind SAFE，超时成本计入。
+     原整体及整体CNF的kind64对照均UNKNOWN，尚无通用加速结论。
+     后续统一1秒预算版仍全SAFE，完整96.949秒；同源原整体和整体CNF的
+     IC3各200秒仍TIMEOUT，已有此单个真实基准的有效改善证据。
+ 11. 已复现并修正未知初态FF被opt_merge合并导致的错误SAFE：当前
+     slicer、共享证明及转换路径保留状态的opt增加keepdc。最小负例
+     保留两个自由初态并回放初帧反例；CNF init0/1/free与独立初态负例
+     新验收PASS。旧降低流程的LSU部分成绩不再作为形式保证。
+ 12. 相同固定流程已扩展P0请求/load/控制总合取：等价因子CNF产生199
+     义务/177类。首轮175类SAFE、2类超时；通用slice_resume.py独立核验
+     并冻结旧证据，仅对两份同SHA未定AAG增加预算，IC3各3.18/1.58秒
+     证明，最终全部闭合。首轮加续跑139.724秒，含恢复143.095秒，另加
+     独立审计共161.186秒。原整体及整体CNF的kind各120秒、IC3各200秒
+     仍超时。全部12个原环境C保持，没有手工改模型或增加引理假设。
+ 13. 新proof_pipeline.py单次自动入口已真实闭合相同P0，175类首轮SAFE，
+     两类UNKNOWN由程序自动选出同AAG续跑。全入口147.970秒，包含快照、
+     两阶段及退出核验，另加历史基准恢复共151.341秒。真实取消门也检查
+     续跑子进程退出与partial成本；无需交互式人工触发第二阶段。
+ 14. 独立不变式检查已落地，在一个真实P0代表的相同220状态/12环境C上
+     分别核初态、归纳步和原安全目标，均UNSAT，额外39.117秒。26个语义/
+     映射/证据变更小门槛通过。仅该代表INVARIANT_SAT_CHECKED，未升级
+     P0/P1全部证明；仍信任AAG转换及Yosys SAT，DRAT/LRAT尚未检查。
+ 15. 同一自动转换入口已扩展真实乘法器和除法器，38/87单元、35/107状态，
+     均本地Qwen分区、原native身份/严格pins重连等价及所有AIG导出通过，
+     完整51.393/111.986秒。修复了原始D脚过强观察的保守拒绝、端口别名
+     提取及Yosys native-map别名崩溃；未知初态保持。跨区323/557位很宽，
+     功能性质NOT_CHECKED，继续评估分区质量，记录见workflow/ARITHMETIC_ZH.txt。
+ 16. 同一P0真实证明通过新直接CNF/CaDiCaL三义务重检，5.733秒；完整
+     certificate_run --check-engine cadical入口11.807秒，source/proof
+     与旧39.117秒入口字节相同。34个语义门及setup取消门通过，仅同一
+     代表升级，原P0/P1整体SAFE仍按原后端证据，DRAT/LRAT未查。
+ 17. 用户实际运行DeepSeek后备，P0字级转换一次API请求ACCEPTED，
+     完整28.928412秒、模型19.430606秒，255项只读证据独审PASS。
+     447cells/392位字级状态、20units分为2区，仅1位跨区；但分别
+     441/6cells、390/2位字级状态，小区只是access_size合法性环境
+     假设及采样历史。主逻辑和根性质仍留大区，功能NOT_CHECKED。
+     转换通过未形成有效主逻辑分解，也不继承旧P0时间基线或SAFE。
+     本地失败及空key NEEDS_CONFIG/零调用记录保留。证据见workflow/runs/
+     lsu-p0-deepseek-20261025-122646-1849297/result.json与
+     lsu-p0-deepseek-audit-01/result.json；质量分析见HARD_TARGETS_ZH.txt。
+ 18. 通用性质cone质量报告已验收：34项纯数据门、28项unit transport
+     stub门及13项word入口门（13.911秒、小例真实Yosys、零真实模型）。
+     旧API候选421个性质单元/48FF/281位性质状态全部p0，显式要求FAIL，
+     原ACCEPTED不变。word_run始终出报告，可选
+     --require-property-state-split在engine前拒绝并给机器反馈。
+     多assert按并集评估，仅为必要结构条件，不能保证DUT分解或收益。
+     新角色提示随后已在本地真实运行八区和两区；旧API只读评分证据见
+     workflow/runs/lsu-p0-deepseek-quality-01/result.json。
+ 19. 本地容量门按完整schema请求、实际模板及token数组检查ctx；元数据
+     HTTP不算推理，失败/证据异常零模型调用且不重试。新P0八区/两区
+     单次真实请求转换ACCEPTED，完整124.304/129.912秒。八区原答循环
+     编号，性质状态177/3/3/6/7/71/11/3；两区3/278位，实际桥114/13位。
+     两次只读audit PASS，分别重核212/140个pin及7个seal，未手修答复。
+     证据：workflow/runs/lsu-p0-property-state-local-01、lsu-p0-property-two-local-01、
+     lsu-p0-property-state-local-audit-01、lsu-p0-property-two-audit-01。
+ 20. 纯数据coarsen调查：原性质FF最大32位，u8却捆173位；cap64被
+     非性质103位原生FF拒绝，cap128/target20停在26units，target32虽READY
+     但完整提示25538字节超24576限制，未发送或估算token。
+     同20units全部524287种非空二分的精确代理最优：仅非空cut1，性质
+     跨区cut2（280/1位），最大性质占比≤0.9/0.75均cut34（210/71位），
+     ≤0.6无解。真实八区/两区代理cut204/16；参考不是模型候选或实际桥宽。
+     证据：workflow/runs/lsu-p0-coarsen-quality-survey-01、
+     lsu-p0-two-part-proxy-optimum-01；均纯数据、原模型未修改。
+ 21. 新implicit-tick状态模拟合同保留0/1/free初态和全部word状态，提供端
+     用共享自由Q核输出/FF.D，不使用其它合同或原assume。源assert/assume
+     的A/EN按原tick提升回根，原parent连接保持；同初态ghost覆盖原轨迹。
+     接口投影独立证明full_relation=>selected_relation，只删多余比较。
+     P0/P1各8个provider及各8份弱化通过，word状态仍392/298位。
+ 22. 真实完整接口/投影consumer均IC3 60秒UNKNOWN；P0完整入口
+     94.814/226.149秒，P1为88.676/107.011秒。P0投影入口包含原单体
+     同SHA AAG另跑120.022秒UNKNOWN参照，不能将总墙钟当consumer时间。
+     投影去掉P0/P1多余180/177个自由观察输入，仍无功能闭合或收益结论。
+     证据：workflow/TRANSITION_COMPOSITION_ZH.txt及其中四份真实组合run。
+ 23. 新word_smt_run用Z3真实检查原新word P0/P1，保原B1/C4、init及
+     global tick，不补时钟/初值。0..7帧base PASSED，归纳FAILED，
+     完整22.672/9.701秒，均UNKNOWN；任意态归纳反例不是原可达bug。
+     证据：workflow/runs/lsu-p0-word-smt-01、lsu-p1-word-smt-01。
+ 24. 性质状态cap与完整表格提示已实现：coarsen-property-gates-02的23项、
+     unit-model-gates-06的30项及word-entry-gates-08的15项通过；后两者
+     为明确transport stub，入口小例使用真实Yosys，不当作真实模型成功。
+     新P0 READY32，每unit性质状态≤64，非性质103位FF保持完整，全部
+     labels/ports/edges/roles逐字段往返。cap限制unit，不限制最后partition。
+ 25. 新cap64首次真实126.231秒，32全0原答被拒，无proposal或conversion。
+     另一次固定两请求运行首轮仍全0；仅追加该轮保存的机器反馈后，第二
+     次原答[0,1×31]转换ACCEPTED，总139.610秒，模型共125.899秒。
+     第二次8531+512=9043≤ctx12288，缓存8498 prompt tokens，9.424秒；
+     无截断、手工改答或中间网表。失败及恢复各自独审PASS。
+     新两区10/437cells、2/390位word、2/279位性质状态，实际桥6位；
+     小区两个FF.Q直接驱动原根assert.EN/A。恢复说明反馈能纠正单区非法
+     答案，仍未显示有效DUT拆分或功能证明收益。
+     证据：workflow/runs/lsu-p0-property-cap64-local-01、
+     lsu-p0-property-cap64-audit-01、lsu-p0-property-cap64-local-retry-01、
+     lsu-p0-property-cap64-retry-audit-01。
+ 26. 独立SCC/非零路径FF后继诊断已完成，partition-structure-gates-01
+     的11项纯数据门PASS。P0性质281位中循环196位、FF后继279位、终端
+     2位；新cap64小区只有终端2位，循环/后继状态全在大区。
+     旧八区切开一个10FF/15位SCC（全部成员3区、FF2区），另1位SCC
+     仅组合成员跨区。总27个循环SCC，最大性质SCC32位/1FF/9cells；
+     196是合计，不是一个大SCC。只报告，未接入口/改acceptance，不做
+     DUT角色分类、好分区或性能判断，也不否定无环流水线。
+     证据：workflow/runs/partition-structure-lsu-p0-01/result.json。
+ 27. 新word_houdini_run从原word JSON机械生成有限完整FF字级模板，以原I
+     的BASE（不含E）、联合J的STEP（不含P）剔除候选，再fresh检查原源、
+     最终池及P充分性，零模型/API。语言40项0.093秒、真实查询13项31.683秒、
+     真实集成7组47.508秒PASS；独立free初态、联合归纳、错误源拒证和
+     pool SHA拒收均有小例，测试expected未喂给生成器。
+     真实v1的02统一128/16轮/每查询3秒/总90秒，P0/P1各13轮128→1，
+     完整17.691/15.841秒，后端求解2.401/1.842秒，Z3执行37/38次；fresh
+     BASE/STEP UNSAT、SAFE SAT，只有INVARIANT_SOLVER_REPORTED，功能未证。
+     唯一J为启动后两个32位FF相等，原D各started?selfQ:0，是清零后保持
+     的源结构关系。01历史P0 62.797秒截止未固定点、剩2；P1 70.047秒
+     只证明同一J。P0计数器候选在02被删除，暂时幸存不算成立。
+     02优化重复工具哈希开销，不把入口墙钟下降写成根功能求解收益。
+ 28. 显式可选guarded_constants_v2增加完整word守护0/全1模板，默认v1
+     原池不变；新版语言45项0.147秒、启动常量2组真实集成25.223秒PASS。
+     同一自由3bit清零源，v1不充分而v2自动J使原P SAFE；启动赋1坏源的
+     守护零在STEP被剔除，未给free初态补0或把SAT叫可达bug。
+     真实v2统一128/24轮/3秒/90秒，P0/P1实际11/12轮128→3/7，完整
+     21.080/21.042秒，后端求解2.273/1.778秒，Z3执行33/35次。fresh
+     BASE/STEP UNSAT、SAFE仍SAT，原P未闭合；word状态保持392/298位。
+     新池有限配额改变，不保证是v1超集；更多源J不代表有效切口合同或收益。
+     证据：workflow/runs/word-invariant-language-gates-02、
+     word-invariant-query-gates-02、word-houdini-gates-02、
+     word-invariant-language-gates-03、word-houdini-startup-gates-01；
+     lsu-p0-word-houdini-01、lsu-p1-word-houdini-01、
+     lsu-p0-word-houdini-02、lsu-p1-word-houdini-02、
+     lsu-p0-word-houdini-guarded-v2-01、lsu-p1-word-houdini-guarded-v2-01。
+ 29. 受限word_state_normalize已实现：整word初态free、guard init0/D恒1，
+     每个单J在E=true且无其它J前提下重证BASE/STEP；fresh checker重建并
+     核实际mux。用mux(g,const,freshPI)替原Q全部用途，首拍自由值保留，
+     启动后常量；隐藏新增PI后是原接口双向trace对应，不是逐态一一映射。
+     P0 392→328位/57→55 FF，2条接受删64位，完整22.334秒，求解
+     1.038秒/8次Z3；P1 298→224位/43→39 FF，5选4删74位，完整
+     25.722秒，求解1.167秒/19次Z3。P1 j0109的6位无E单J STEP SAT，
+     保守保留；更强门失败不能直接归因为仅依赖E。两份实际改写fresh
+     TRACE_EQUIVALENCE_SOLVER_REPORTED，原功能NOT_CHECKED。
+     三组真实门34.997秒绑定41c9版；真实231492版仅补deadline控制，
+     两项故障mock通过。固定keepdc/AIG同预算IC3对照已完成：P0原/新
+     I/L/A为296/382/7146→360/318/6765，P1为200/295/4789→274/221/4285，
+     原B1/C4保持。PI增加64/74位保存初拍free选择，tick1后屏蔽；AND下降
+     381/504。四次IC3均120.01秒UNKNOWN，比较完整245.773/245.904秒，
+     COMPARISON_COMPLETE仅执行完成，功能NOT_CHECKED，证据complete且
+     finalized/unchanged。规范化加新AIG导出/求解144.554/147.851秒，
+     未含Houdini21.080/21.042秒，不是同一次流水线墙钟，无性能收益结论。
+     导出依赖可信Yosys，尚未独立检查word到AIG等价，原trace lifting未接。
+     证据：workflow/WORD_STATE_NORMALIZE_ZH.txt、
+     workflow/runs/word-state-normalize-gates-01、lsu-p0-word-state-normalize-01、
+     lsu-p1-word-state-normalize-01、lsu-p0-word-state-compare-01、
+     lsu-p1-word-state-compare-01（均位于workflow/runs，各以自身result.json及快照为准）。
+ 30. 完整固定CV32E40X结构模型已真实导出：core-structure-04为
+     CORE_STRUCTURE_EXPORTED，59.140秒，finalized/unchanged。RTL固定
+     1d56e0e1，51个展开module无blackbox；51普通端口逐位identity、18项
+     参数绑定一致，6 XIF打包后70组端口，原输入534位/输出394位。
+     层次/word JSON、SMT2、BTOR2、ASCII/binary AIG均产出；AIG
+     I/L/A/O=13264/5732/94734/394，B/C/J/F全0。输入增加11028个literal x
+     选择及1702位pmux多选自由字，121个pmux零/单选定义保留，多选自由字
+     共享fanout，无onehot假设；各后端统一政策，没有新状态或改原初态。
+     真实clock gate/latch保留，clk2fflogic一步为全局采样tick非CPU周期；
+     原2886自由位保留，word9108采样位，bit/AIG5732位初态
+     free2886/zero2844/one2。clock audit逐位映射至不同bitFF且组合无环，
+     新core-state-map-01以-vmap唯一短导出6.680秒（入口12.196秒）取得
+     字节相同AIG，5732 bitFF到不同AIG latch，原2886自由初态载体经history
+     的映射链完整；原RTL当前Q可经异步mux，不概同latch当前值。另2.797秒
+     纯数据检查5732个D/Q/init与AAG next/current/reset literal一致，0 mismatch，
+     未重跑fullbuild或性质求解。双格式完整图/符号/初态EQUAL，C++均INPUT_READY。没有ISA参考/性质/环境/复位假设或LLM
+     拆分；功能NOT_CHECKED、整核UNKNOWN，未集成证明主流程。
+     01 raw与02/03失败保留，未覆盖；可信Slang/Yosys及二态解释不是
+     独立RTL等价证明。证据见../verification/whole_core/README_ZH.txt、
+     clock_audit.json和runs/core-structure-04/result.json、compare_aiger.json；
+     runs/core-state-map-01/result.json、state_mapping.json、state_connections.json。
+     新映射/连接收据扩展旧clock_audit的literal范围，未修改旧04或审计。
+上述run目录各自的result.json与implementation为对应版本权威。
+
+当前可信边界
+  这些是方法/提取与局部性质证明，不是整核验证，也没有通用加速结论。
+  三条真实切分的总AIG仍为82 latch/997 AND；合同监视器可能增加规模。
+  真实写缓冲器整体求解0.1038秒，两个局部加合同顶层0.4730秒，未加速。
+  旧bit级P0/P1切片SAFE仍采用原后端报告；一个真实代表已另核不变式，DRAT未查。
+  旧SAFE不传给新word输入，新word直接/组合/SMT均未闭合；整核UNKNOWN。
+  实验未并入C++主程序，正式verification模型及历史运行结果未修改。
+  真实CV32自动分区到精确结构合同已接通，已有按目标缩小查询的固定流程；
+  尚未获得通用于其它模块的较小语义合同。
+  独立根性质及其完整性仍需任务提供者负责；结构合同不能替代功能规范。
+  模型4区方案的7位接口未优于既有研究两区方案的2位，没有加速结论。
+  真实API的1位cut方案仅隔离环境监视器；非空分区和小cut不足以验收
+  对根性质有效的主逻辑拆分，环境假设本身也不能以局部SAFE代为消解。
+
+下一步
+  优先在新完整核结构上建立ISA参考/退休观察、合法时钟复位和总线合同，
+  增加实际功能性质及负例，再接自动拆分、独立模块证明和组合回整核。
+  当前结构导出B/C全0，不将输出、INPUT_READY或格式EQUAL当作功能SAFE。
+  以下LSU模板、规范化和分区质量路线保留为辅助研究，不替代整核主任务。
+  性质状态unit上限与表格提示已验收，真实反馈恢复仍给出2/279位的
+  退化分组，SCC报告进一步定位它只分出终端状态。具名API key可用时，
+  用run_deepseek_p0.sh --fine-units做同完整图对照，不人工修候选。
+  有限字级Houdini、可选守护常量族及受限状态规范化已实现，原P仍未证。
+  同预算原/规范化对照已完成，四次120秒均UNKNOWN。新纯数据调查中，
+  P0/P1原比较器60/41个，state-only20/10、含PI40/31；加布尔组合后有
+  66/35个一位源原子，正反132/70个仅为待证候选，图支持最多19/4位。
+  它们达到真实counter/queue节点，不等于敏感性或不变式；所选不含signed/
+  算术cone。调查0原生工具/solver/model/API，见workflow/runs/
+  word-state-atom-survey-01/result.json。下一步拟以sourceSHA/top/cell/Ybit/
+  cellSHA/polarity及fresh Bool alias读取原SMT表达式，checker重核无PI、
+  止于FF.Q不穿D，守护适配free初态，不手译算术或以原assert真假作前提。
+  该原子接口尚未接AST、生产或求解；通用谓词抽象及接口依赖消解仍待完成；
+  workflow/WORD_CONTRACT_ROUTE_ZH.txt所列完整路线尚未完成，本地研究无需等API key。
+  先区分DUT、参考规格和环境监视器，验收根性质与真实功能状态的结构
+  划分，再证明边界合同及其假设消解；不以cut或状态平衡单项代替质量。
+  以已接通的真实精确合同为参照，寻找更小且充分的语义合同，继续排除
+  中间人工修补；逐项扩展明确拒绝项和受限候选语法。
+  LSU百秒级P0/P1已闭合并完成整体对照，短预算及只重试未定任务已接入
+  单次自动入口，继续增加独立不变式检查；不能把当前LSU合同当全部整核。
+  无条件提供端下的反馈组合已有状态模拟参照；带相互环境前提的一般
+  assume-guarantee规则、LLM有效紧凑语义合同和通用C++集成仍待实现。
+
+运行方式
+  按用户最新指示已移除cron，config.enabled=false，后台代理未启用。
+  当前结果由本会话直接研究产生；会话结束后没有定时研究继续运行。
